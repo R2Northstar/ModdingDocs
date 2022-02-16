@@ -1,0 +1,205 @@
+from pygments.lexer import RegexLexer, words, include, default, bygroups, using, this
+from pygments.token import (
+    Text,
+    Generic,
+    Keyword,
+    String,
+    Name,
+    Comment,
+    Number,
+    Operator,
+    Punctuation,
+    Whitespace,
+)
+
+
+class SquirrelLexer(RegexLexer):
+    name = "Squirrel"
+    aliases = ["squirrel"]
+    filenames = ["*.nut", "*.gnut"]
+
+    tokens = {
+        "root": [
+            include("preproc"),
+            include("whitespace"),
+            include("types"),
+            include("comments"),
+            include("strings"),
+            include("operators"),
+            (r"(function)(\s+)", bygroups(Keyword, Whitespace), "funcname"),
+            (r"(class)(\s+)", bygroups(Keyword, Whitespace), "classname"),
+            (
+                r"(\S+)(\.)(\S+)(\()",
+                bygroups(Name, Punctuation, Name.Function, Punctuation),
+            ),
+            (
+                r"(\S+)(\.)(\S+)",
+                bygroups(Name, Punctuation, Name.Variable),
+            ),
+            (
+                r"(\S+)(\s*)(\=)",
+                bygroups(Name, Whitespace, Operator),
+            ),
+            include("keywords"),
+            include("numbers"),
+            (r"[\[\]{}:(),;\<\>]", Punctuation),
+        ],
+        "whitespace": [
+            (r"\n", Whitespace),
+            (r"[^\S\n]+", Whitespace),
+        ],
+        "funcname": [(r"[a-zA-Z_]\w*", Name.Function, "#pop"), default("#pop")],
+        "classname": [(r"[a-zA-Z_]\w*", Name.Class, "#pop")],
+        "numbers": [
+            (r"(0x[0-9a-fA-F]+|0[0-7]+|[0-9]+|'[a-f]')", Number.Integer),
+            (r"([0-9]+(([.]([0-9]+)?)(e[-]?[0-9]+)?))", Number.Float),
+        ],
+        "strings": [(r"(\"(\\.|.)*?[\"\n])", String)],
+        "preproc": [
+            (r"#.*", Comment.Preproc),
+        ],
+        "types": [
+            (
+                words(
+                    (
+                        "string",
+                        "void",
+                        "bool",
+                        "int",
+                        "entity",
+                        "ornull",
+                        "array",
+                        "functionref",
+                        "vector",
+                        "float",
+                        "table",
+                    ),
+                    suffix=r"\b",
+                ),
+                Name.Builtin.Type,
+                "name",
+            ),
+        ],
+        "name": [
+            include("whitespace"),
+            include("keywords"),
+            (r"\S+\b(?!\s*=)", Name),
+            default("#pop"),
+        ],
+        "operators": [
+            (words(("in", "and", "or", "not"), suffix=r"\b"), Operator.Word),
+            (
+                words(
+                    (
+                        "!",
+                        "!=",
+                        "||",
+                        "==",
+                        "&&",
+                        "<=",
+                        "=>",
+                        "> ",
+                        "+",
+                        "+=",
+                        "-",
+                        "-=",
+                        "/",
+                        "/=",
+                        "*",
+                        "*= ",
+                        "%",
+                        "%=",
+                        "++",
+                        "--",
+                        "<-",
+                        "=",
+                        "&",
+                        "^ ",
+                        "|",
+                        "~",
+                        ">>",
+                        "<<",
+                        ">>>",
+                        "=",
+                        "!",
+                    ),
+                ),
+                Operator,
+            ),
+        ],
+        "comments": [
+            (r"(//.*?$)", Comment.Single),
+            (r"/\*", Comment.Multiline, "comment_multiline"),
+        ],
+        "comment_multiline": [
+            (r"[^*/]", Comment.Multiline),
+            (r"/\*", Comment.Multiline, "#push"),
+            (r"\*/", Comment.Multiline, "#pop"),
+            (r"[*/]", Comment.Multiline),
+        ],
+        "keywords": [
+            (
+                words(
+                    (
+                        "break",
+                        "case",
+                        "catch",
+                        "clone",
+                        "continue",
+                        "default",
+                        "delegate",
+                        "delete",
+                        "else",
+                        "extends",
+                        "for",
+                        "if",
+                        "local",
+                        "resume",
+                        "return",
+                        "switch",
+                        "this",
+                        "throw",
+                        "try",
+                        "typeof",
+                        "while",
+                        "parent",
+                        "yield",
+                        "vargc",
+                        "vargv",
+                        "instanceof",
+                        "static",
+                        "untyped",
+                        "globalize_all_functions",
+                    ),
+                    suffix=r"\b",
+                ),
+                Keyword,
+            ),
+            (
+                words(
+                    (
+                        "function",
+                        "constructor",
+                        "global",
+                        "class",
+                        "const",
+                        "static",
+                        "local",
+                    ),
+                    suffix=r"\b",
+                ),
+                Keyword.Declaration,
+            ),
+            (
+                words(
+                    (
+                        "true",
+                        "false",
+                        "null",
+                    ),
+                    suffix=r"\b",
+                ),
+                Keyword.Constant,
+            ),
+        ],
+    }
