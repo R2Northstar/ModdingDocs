@@ -10,6 +10,19 @@ from pygments.token import (
     Operator,
     Punctuation,
     Whitespace,
+    Token,
+)
+
+# test: py -m pygments -v -x -f html -O full,debug_token_types -l pygments-squirrel/lexer.py:SquirrelLexer sq.gnut > test.html; start test.html
+
+print(
+    words(
+        (
+            "a",
+            "b",
+        ),
+        suffix=r"\b",
+    )
 )
 
 
@@ -18,73 +31,146 @@ class SquirrelLexer(RegexLexer):
     aliases = ["squirrel"]
     filenames = ["*.nut", "*.gnut"]
 
+    _types = [
+        "void",
+        "bool",
+        "int",
+        "float",
+        "entity",
+        "string",
+        "TitanLoadoutDef",
+        "vector",
+        "asset",
+    ]
     tokens = {
+        "values": [
+            (r"[^\S\n]+", Whitespace),
+            (r"(\"(\\.|.)*?[\"\n])", String),
+            (r"-?([0-9]+(([.]([0-9]+)?)(e[-]?[0-9]+)?))", Number.Float),
+            (r"(0x[0-9a-fA-F]+|0[0-7]+|-?[0-9]+|'[a-f]')", Number.Integer),
+            include("constants"),
+            include("statement"),
+            (r"[a-zA-Z_]\w*", Name),
+        ],
+        "value": [include("values"), default("#pop")],
         "root": [
-            include("preproc"),
-            include("whitespace"),
-            include("types"),
+            (r"(\"(\\.|.)*?[\"\n])", String),
             include("comments"),
-            include("strings"),
+            include("keywords"),
             include("operators"),
+            include("statement"),
+            # include("generic"),
+        ],
+        "statement": [
+            (r"#.*", Comment.Preproc),
             (r"(function)(\s+)", bygroups(Keyword, Whitespace), "funcname"),
             (r"(class)(\s+)", bygroups(Keyword, Whitespace), "classname"),
             (
-                r"(\S+)(\.)(\S+)(\()",
-                bygroups(Name, Punctuation, Name.Function, Punctuation),
+                r"([a-zA-Z_]\w*)(\s*?)(\()",
+                bygroups(Name.Function, Whitespace, Punctuation),
+                "arguments",
             ),
+            include("declarations"),
+            (r"struct", Name.Class),
+            include("type"),
             (
-                r"(\S+)(\.)(\S+)",
-                bygroups(Name, Punctuation, Name.Variable),
+                r"([a-zA-Z_]\w*)(\s*)(=)",
+                bygroups(Name.Variable, Whitespace, Punctuation),
+                "value",
             ),
-            (
-                r"(\S+)(\s*)(\=)",
-                bygroups(Name, Whitespace, Operator),
-            ),
-            include("keywords"),
-            include("numbers"),
-            (r"[\[\]{}:(),;\<\>]", Punctuation),
+            (r"[a-zA-Z_]\w*", Name),
         ],
+        "funcname": [
+            (r"[a-zA-Z_]\w*", Name.Function),
+            (r"[(]", Punctuation, "sig"),
+            default("#pop"),
+        ],
+        "sig": [
+            (
+                r"(?<=[,(])(\s*?)(?=[a-zA-Z_]\w*\s*?[,)])",  # only one type, not type space name
+                bygroups(Whitespace),
+                "typeb",
+            ),
+            (
+                r"([a-zA-Z_]\w*)(\s*?)(?=[,)])",
+                bygroups(Name.Variable, Whitespace),
+            ),
+            (r",", Punctuation),
+            (r"=", Punctuation, "value"),
+            (r"[)]", Punctuation, "#pop"),
+            include("type_unknown"),
+        ],
+        "itype": [
+            (r"[>]", Punctuation, "#pop"),
+            include("type_unknown"),
+        ],
+        "funcref": [
+            (
+                r"(\s*?)(functionref)(\()",
+                bygroups(Whitespace, Name.Builtin.Type, Punctuation),
+                "sig",
+            )
+        ],
+        "typeb": [
+            include("type_unknown"),
+            default("#pop"),
+        ],
+        "type_unknown": [
+            include("type"),
+            (r"[a-zA-Z_]\w*", Name),
+        ],
+        "type": [
+            (
+                r"(array|table)(\s*?)(<)",
+                bygroups(Keyword.Builtin, Whitespace, Punctuation),
+                "itype",
+            ),
+            (
+                words(_types, suffix=r"\b"),
+                Name.Builtin.Type,
+            ),
+            (",", Punctuation),
+            include("funcref"),
+            include("whitespace"),
+        ],
+        "classname": [(r"[a-zA-Z_]\w*", Name.Class, "#pop")],
         "whitespace": [
             (r"\n", Whitespace),
             (r"[^\S\n]+", Whitespace),
         ],
-        "funcname": [(r"[a-zA-Z_]\w*", Name.Function, "#pop"), default("#pop")],
-        "classname": [(r"[a-zA-Z_]\w*", Name.Class, "#pop")],
-        "numbers": [
-            (r"(0x[0-9a-fA-F]+|0[0-7]+|[0-9]+|'[a-f]')", Number.Integer),
-            (r"([0-9]+(([.]([0-9]+)?)(e[-]?[0-9]+)?))", Number.Float),
+        "arguments": [
+            (r"\)", Punctuation, "#pop"),  # end of arguments
+            (r"(,)", Punctuation),  # end of argument
+            (r"\[", Punctuation, "array"),
+            (r"{", Punctuation, "structure"),
+            include("operators"),
+            include("values"),
+            # (r"[a-zA-Z_]\w*", Name.Variable),
+            include("namedargs"),
         ],
-        "strings": [(r"(\"(\\.|.)*?[\"\n])", String)],
-        "preproc": [
-            (r"#.*", Comment.Preproc),
+        "namedargs": [(r"(\w+?)(=)", bygroups(Name.Variable, Punctuation))],
+        "structure": [
+            (r"}", Punctuation, "#pop"),  # end of structure
+            (r"(,)( )", bygroups(Punctuation, Whitespace)),  # end of member
+            (r"\[", Punctuation, "array"),
+            include("namedargs"),
+            (r"\.\.\.", Punctuation),
         ],
-        "types": [
-            (
-                words(
-                    (
-                        "string",
-                        "void",
-                        "bool",
-                        "int",
-                        "entity",
-                        "ornull",
-                        "array",
-                        "functionref",
-                        "vector",
-                        "float",
-                        "table",
-                    ),
-                    suffix=r"\b",
-                ),
-                Name.Builtin.Type,
-                "name",
-            ),
+        "array": [
+            (r"\]", Punctuation, "#pop"),
+            (r"(,)( )", bygroups(Punctuation, Whitespace)),  # end of member
+            (r" ", Whitespace),  # end of member
+            (r"/\*.+?\*/", Comment),
         ],
-        "name": [
-            include("whitespace"),
-            include("keywords"),
-            (r"\S+\b(?!\s*=)", Name),
-            default("#pop"),
+        "comments": [
+            (r"(//.*?$)", Comment.Single),
+            (r"/\*", Comment.Multiline, "comment_multiline"),
+        ],
+        "comment_multiline": [
+            (r"[^*/]", Comment.Multiline),
+            (r"/\*", Comment.Multiline, "#push"),
+            (r"\*/", Comment.Multiline, "#pop"),
+            (r"[*/]", Comment.Multiline),
         ],
         "operators": [
             (words(("in", "and", "or", "not"), suffix=r"\b"), Operator.Word),
@@ -112,7 +198,6 @@ class SquirrelLexer(RegexLexer):
                         "++",
                         "--",
                         "<-",
-                        "=",
                         "&",
                         "^ ",
                         "|",
@@ -120,22 +205,39 @@ class SquirrelLexer(RegexLexer):
                         ">>",
                         "<<",
                         ">>>",
-                        "=",
                         "!",
                     ),
                 ),
                 Operator,
             ),
         ],
-        "comments": [
-            (r"(//.*?$)", Comment.Single),
-            (r"/\*", Comment.Multiline, "comment_multiline"),
+        "declarations": [
+            (
+                words(
+                    (
+                        "global",
+                        "class",
+                        "const",
+                        "static",
+                        "local",
+                    ),
+                    suffix=r"\b",
+                ),
+                Keyword.Declaration,
+            ),
         ],
-        "comment_multiline": [
-            (r"[^*/]", Comment.Multiline),
-            (r"/\*", Comment.Multiline, "#push"),
-            (r"\*/", Comment.Multiline, "#pop"),
-            (r"[*/]", Comment.Multiline),
+        "constants": [
+            (
+                words(
+                    (
+                        "true",
+                        "false",
+                        "null",
+                    ),
+                    suffix=r"\b",
+                ),
+                Keyword.Constant,
+            ),
         ],
         "keywords": [
             (
@@ -152,6 +254,7 @@ class SquirrelLexer(RegexLexer):
                         "else",
                         "extends",
                         "for",
+                        "foreach",
                         "if",
                         "local",
                         "resume",
@@ -170,36 +273,15 @@ class SquirrelLexer(RegexLexer):
                         "static",
                         "untyped",
                         "globalize_all_functions",
+                        "wait",
+                        "thread",
+                        "unreachable",
                     ),
                     suffix=r"\b",
                 ),
                 Keyword,
             ),
-            (
-                words(
-                    (
-                        "function",
-                        "constructor",
-                        "global",
-                        "class",
-                        "const",
-                        "static",
-                        "local",
-                    ),
-                    suffix=r"\b",
-                ),
-                Keyword.Declaration,
-            ),
-            (
-                words(
-                    (
-                        "true",
-                        "false",
-                        "null",
-                    ),
-                    suffix=r"\b",
-                ),
-                Keyword.Constant,
-            ),
+            include("declarations"),
+            include("constants"),
         ],
     }

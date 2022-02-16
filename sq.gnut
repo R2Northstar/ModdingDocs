@@ -14,6 +14,12 @@ global const C_PLAYFX_LOOP		= 2
 
 global const MUTEALLFADEIN 		= 2
 
+bool function ClientCommand_DoomTitan( entity player, array<string> args )
+
+void function WaitUntilNumDeadWithTimeout( array<void functionref( array<void functionref( entity titan, TitanLoadoutDef newTitanLoadout )> )> guys, int numDead, float timeout )
+
+
+
 global struct ZipLine
 {
 	entity start
@@ -33,7 +39,124 @@ global struct ShieldDamageModifier
 {
 	float permanentDamageFrac = TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC
 	bool normalizeShieldDamage = false
-	float damageScale = 1.0
+	float damageScale = -1.0
+}
+
+
+global struct SvGlobals
+{
+	entity worldspawn
+
+	array<spawnCallbackFuncArray> 					spawnCallbackFuncs
+	array<spawnCallbackEditorClassFuncArray>		spawnCallbackEditorClassFuncs
+	array<spawnCallbackFuncArray_scriptNoteworthy>	spawnCallbackFuncs_scriptNoteworthy
+
+	table<string, array<void functionref( entity )> > spawnCallbacks_scriptName
+
+	array<pilotEliminationDialogueCallbackType> 	pilotEliminationDialogueCallbacks
+	table<string, array<bool functionref( entity player, entity healthpack)> > onTouchHealthKitCallbacks
+	array<void functionref( entity )> onClientConnectedCallbacks
+	array<void functionref(entity)> onPlayerRespawnedCallbacks
+	array<void functionref( entity player, entity npc_titan )> onPilotBecomesTitanCallbacks
+	array<void functionref( entity player, entity npc_titan )> onTitanBecomesPilotCallbacks
+	array<void functionref( entity, entity, entity) > soulTransferFuncs
+	array<void functionref( entity titanSoul )> soulSettingsChangeFuncs
+	array<void functionref( entity titanSoul )> soulInitFuncs
+	table<string, array<void functionref( entity, var )> > damageByCallbacks
+
+	bool functionref( entity ) gameModeAbandonPenaltyApplies
+
+	bool functionref() timelimitCompleteFunc
+	bool functionref( entity ) titanAvailabilityCheck
+	bool cloakBreaksOnMelee = true //Reexamine if still needed if we have same behavior for cloak in MP/SP.
+	float defaultPilotLeechTime = 2.8
+	int winReason
+	string winReasonText
+	string lossReasonText
+	string gameWonAnnouncement
+	string gameLostAnnouncement
+
+	table< int, int > npcsSpawnedThisFrame_scriptManagedArray
+
+	float pilotRespawnDelay = 0.0
+
+	array<void functionref( entity, var )> 		soulDeathFuncs
+
+	table<string, void functionref(entity)> globalAnimEventCallbacks
+
+	array<void functionref( entity titan, TitanLoadoutDef newTitanLoadout )> onTitanGetsNewLoadoutCallbacks
+	array<void functionref( entity player, PilotLoadoutDef newTitanLoadout )> onPlayerGetsNewPilotLoadoutCallbacks
+	array<void functionref( TitanLoadoutDef newTitanLoadout )> onUpdateDerivedTitanLoadoutCallbacks
+	array<void functionref( entity player, TitanLoadoutDef newTitanLoadout )> onUpdateDerivedPlayerTitanLoadoutCallbacks
+	array<void functionref( PilotLoadoutDef newPilotLoadout )> onUpdateDerivedPilotLoadoutCallbacks
+
+	array<void functionref( entity victim, entity attacker, var damageInfo )> onPlayerKilledCallbacks
+	array<void functionref( entity victim, entity attacker, var damageInfo )> onNPCKilledCallbacks
+
+	array<void functionref( entity victim, var damageInfo )> onTitanDoomedCallbacks
+	array<void functionref( entity victim, entity attacker )> onTitanHealthSegmentLostCallbacks
+	array<void functionref( entity player )> onClientConnectingCallbacks
+	array<void functionref( entity player )> onClientDisconnectedCallbacks
+	array<void functionref( entity attacker, entity victim )> onPlayerAssistCallbacks
+
+	array<void functionref( entity player )> onPlayerDropsScriptedItemsCallbacks
+	array<void functionref( entity player )> onPlayerClassChangedCallbacks
+
+	array<void functionref( entity ship, string anim )> onWaveSpawnDropshipSpawned
+
+	table<string, array<void functionref( entity ent )> >onEntityChangedTeamCallbacks
+
+	table<string, bool functionref( entity player, array<string>args )> clientCommandCallbacks
+	array<void functionref()>[ eGameState._count_ ] gameStateEnterCallbacks
+
+	bool allowPointsOverLimit = false
+
+	bool bubbleShieldEnabled = true
+
+	entity levelEnt
+
+	//TODO: Get rid of these and use the new StartParticleEffectInWorld_ReturnEntity etc functions
+	entity fx_CP_color_enemy //Used for setting control points on FX
+	entity fx_CP_color_friendly //Used for setting control points on FX
+	entity fx_CP_color_neutral //Used for setting control points on FX
+
+	array<entity>[ TEAM_COUNT ] classicMPDropships
+	bool evacEnabled = false
+
+	void functionref( entity player ) observerFunc
+	array<void functionref()> playingThinkFuncTable
+	array<void functionref()> thirtySecondsLeftFuncTable
+	void functionref( int progress ) matchProgressAnnounceFunc
+
+	void functionref( entity player ) cp_VO_NagFunc
+	void functionref( entity player, entity hardpoint, float distance ) cp_VO_ApproachFunc
+	void functionref( entity touchEnt, entity hardpoint ) cp_VO_LeftTriggerWithoutCappingFunc
+
+	table<int, string> hardpointStringIDs
+
+	entity[ TEAM_COUNT ] flagSpawnPoints
+
+	vector distCheckTestPoint
+
+	void functionref() scoreEventOverrideFunc
+
+	array<void functionref( entity, entity )> onLeechedCustomCallbackFunc
+
+	bool forceSpawnAsTitan = false
+	bool forceSpawnIntoTitan = false
+	bool forceDisableTitanfalls = false
+	bool titanfallEnabled = true
+
+	//RoundWinningKillReplay related
+	entity roundWinningKillReplayViewEnt = null
+	entity roundWinningKillReplayVictim = null
+	int roundWinningKillReplayInflictorEHandle = -1
+	bool watchingRoundWinningKillReplay = false
+
+	bool forceNoFinalRoundDraws = false //Setting this to true will force a round based mode to keep playing rounds until a winner is determined. Game will not end on draw.
+
+	bool roundBasedTeamScore_RoundReset = true //if true, reset team scores at the start of each round.
+	bool isInPilotGracePeriod = false // if true, all players will be allowed to switch loadouts
 }
 
 
