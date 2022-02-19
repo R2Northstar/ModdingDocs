@@ -99,6 +99,8 @@ Functions for getting player, and methods of the player object
 
     .. cpp:function::  vector GetOrigin()
 
+            (x, y, z)
+
     .. cpp:function::  entity GetParent()
 
     .. cpp:function::  int GetPersistentSpawnLoadoutIndex( player, "pilot" )
@@ -124,6 +126,8 @@ Functions for getting player, and methods of the player object
     .. cpp:function::  string GetPlayerName()
 
     .. cpp:function::  string GetPlayerNameWithClanTag()
+
+        networks are disabled in northstar
 
     .. cpp:function::  bool GetPlayerNetBool( net_bool_name )
 
@@ -162,6 +166,8 @@ Functions for getting player, and methods of the player object
     .. cpp:function::  vector GetViewUp()
 
     .. cpp:function::  vector GetViewVector()
+
+            vector representation of your look direction. <0, 0, 1> -> looking straight up
 
     .. cpp:function::  int GetWeaponAmmoStockpile()
 
