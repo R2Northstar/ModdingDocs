@@ -2,8 +2,7 @@ Crosshair Modding
 ==================
 
 
-Example Mod
-^^^^^^^^^^^^^^^^^^^^^
+Example Mod: 
 `Custom.Crosshairs <https://github.com/MysteriousRSA/Custom.Crosshairs>`__
 
 How To Modify Crosshairs:
@@ -137,10 +136,6 @@ Extra Info
 
 Thank you to ``Cpone#0001`` and ``Nixie#8251`` from the `Northstar
 Discord <https://northstar.tf/discord>`__ for helping me figure this out
-
-Any Issues? Create an issue, or message me on Discord
-``Mysterious#7899``
-
 
 .. |location| image:: https://user-images.githubusercontent.com/45333346/149657078-86db15a0-0ecc-4d53-9265-23d80a072cea.jpg
 .. |triandaltCH| image:: https://user-images.githubusercontent.com/45333346/149623038-64937ab7-bb0f-450c-ba92-97c625e715bf.png
