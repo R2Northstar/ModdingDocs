@@ -129,7 +129,7 @@ Extra Info
 ^^^^^^^^^^
 
 
-* It is recommended to test this out in a private match first. Save any changes you made to the desired weapon's file and type ``reload`` in your console
+* As with any mod, it is recommended to test this out in a private match first. Save any changes you made to the desired weapon's file and type ``reload`` in your console
 
 
 * Keep in mind that some weapons have animated or dynamic crosshairs. Weapons like the Charge Rifle, Cold War, Frag Grenade, etc... have custom animations for their crosshairs. which can cause weirdness or jank when used on other weapons or when using other crosshairs on them. 
