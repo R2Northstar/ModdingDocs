@@ -1,4 +1,4 @@
-Player
+Titan
 ------
 
 Functions for getting titan, and methods of the titan object
@@ -15,7 +15,9 @@ Functions for getting titan, and methods of the titan object
 
     .. cpp:function:: entity GetOffhandWeapon()
     
-    .. cpp:function:: float GetTitanSoulNetFloat( string ) // e.g. "coreAvailableFrac"
+    .. cpp:function:: float GetTitanSoulNetFloat( string )
+    
+        e.g. "coreAvailableFrac"
     
     .. cpp:function:: void SetShieldHealth()
     
