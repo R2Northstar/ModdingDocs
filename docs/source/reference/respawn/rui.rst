@@ -22,6 +22,7 @@ Functions for creating a rui, and methods of the rui object
             RuiDestroy( rui )
      
 Drawgroups
+
 .. code-block:: javascript
 
         RUI_DRAW_WORLD
@@ -30,6 +31,7 @@ Drawgroups
         RUI_DRAW_NONE
 
 Trackers
+
 .. code-block:: javascript
 
         // VECTOR TYPES
@@ -100,11 +102,15 @@ Trackers
     
     .. cpp:function:: void RuiSetFloat( rui, argName, value )
     
-    .. cpp:function:: void RuiSetFloat2( rui, argName, value )  // value is a vector; only x and y are used
+    .. cpp:function:: void RuiSetFloat2( rui, argName, value )  
+    
+        value is a vector; only x and y are used
     
     .. cpp:function:: void RuiSetFloat3( rui, argName, value )
     
-    .. cpp:function:: void RuiSetColorAlpha( rui, argName, color, alpha )  // color is a vector
+    .. cpp:function:: void RuiSetColorAlpha( rui, argName, color, alpha )  
+    
+        color is a vector
 
     .. cpp:function:: void RuiDestroyIfAlive( rui )
     
