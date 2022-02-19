@@ -15,32 +15,32 @@ from pygments.token import (
 
 # test: py -m pygments -v -x -f html -O full,debug_token_types -l pygments-squirrel/lexer.py:SquirrelLexer sq.gnut > test.html; start test.html
 
-print(
-    words(
-        (
-            "a",
-            "b",
-        ),
-        suffix=r"\b",
-    )
-)
-
 
 class SquirrelLexer(RegexLexer):
     name = "Squirrel"
     aliases = ["squirrel"]
     filenames = ["*.nut", "*.gnut"]
 
-    _types = [
+    _keyword_types = [
         "void",
         "bool",
         "int",
         "float",
         "entity",
         "string",
-        "TitanLoadoutDef",
         "vector",
         "asset",
+        "var",
+    ]
+    _builtin_names = [
+        "TitanLoadoutDef",
+        "PilotLoadoutDef",
+    ]
+    _declarations = [
+        "global",
+        "const",
+        "static",
+        "local",
     ]
     tokens = {
         "values": [
@@ -49,8 +49,6 @@ class SquirrelLexer(RegexLexer):
             (r"-?([0-9]+(([.]([0-9]+)?)(e[-]?[0-9]+)?))", Number.Float),
             (r"(0x[0-9a-fA-F]+|0[0-7]+|-?[0-9]+|'[a-f]')", Number.Integer),
             include("constants"),
-            include("statement"),
-            (r"[a-zA-Z_]\w*", Name),
         ],
         "value": [include("values"), default("#pop")],
         "root": [
@@ -65,20 +63,22 @@ class SquirrelLexer(RegexLexer):
             (r"#.*", Comment.Preproc),
             (r"(function)(\s+)", bygroups(Keyword, Whitespace), "funcname"),
             (r"(class)(\s+)", bygroups(Keyword, Whitespace), "classname"),
-            (
-                r"([a-zA-Z_]\w*)(\s*?)(\()",
-                bygroups(Name.Function, Whitespace, Punctuation),
-                "arguments",
-            ),
             include("declarations"),
             (r"struct", Name.Class),
+            (r"enum", Name.Class),
+            (
+                r"(\.?)([a-zA-Z_]\w*)(\s*?)(\()",
+                bygroups(Punctuation, Name.Function, Whitespace, Punctuation),
+                "arguments",
+            ),
             include("type"),
+            (r"(?<=\w)(\.\w+)", Name.Attribute),
             (
                 r"([a-zA-Z_]\w*)(\s*)(=)",
                 bygroups(Name.Variable, Whitespace, Punctuation),
-                "value",
             ),
-            (r"[a-zA-Z_]\w*", Name),
+            include("values"),
+            (r"[a-zA-Z_.]\w*", Name.Variable),
         ],
         "funcname": [
             (r"[a-zA-Z_]\w*", Name.Function),
@@ -87,7 +87,8 @@ class SquirrelLexer(RegexLexer):
         ],
         "sig": [
             (
-                r"(?<=[,(])(\s*?)(?=[a-zA-Z_]\w*\s*?[,)])",  # only one type, not type space name
+                r"(?<=[,(])(\s*?)(?=[a-zA-Z_]\w*\s*?[,)])",
+                # only one type, not type space name (note: what did i mean?)
                 bygroups(Whitespace),
                 "typeb",
             ),
@@ -98,39 +99,34 @@ class SquirrelLexer(RegexLexer):
             (r",", Punctuation),
             (r"=", Punctuation, "value"),
             (r"[)]", Punctuation, "#pop"),
-            include("type_unknown"),
+            include("typed_name"),
         ],
         "itype": [
             (r"[>]", Punctuation, "#pop"),
-            include("type_unknown"),
-        ],
-        "funcref": [
-            (
-                r"(\s*?)(functionref)(\()",
-                bygroups(Whitespace, Name.Builtin.Type, Punctuation),
-                "sig",
-            )
+            include("typed_name"),
         ],
         "typeb": [
-            include("type_unknown"),
+            include("typed_name"),
             default("#pop"),
         ],
-        "type_unknown": [
+        "typed_name": [
             include("type"),
-            (r"[a-zA-Z_]\w*", Name),
+            (r"[a-zA-Z_]\w*", Generic.Error),
         ],
         "type": [
             (
                 r"(array|table)(\s*?)(<)",
-                bygroups(Keyword.Builtin, Whitespace, Punctuation),
+                bygroups(Keyword.Type, Whitespace, Punctuation),
                 "itype",
             ),
+            (words(_keyword_types, suffix=r"\b"), Keyword.Type),
+            (words(_builtin_names, suffix=r"\b"), Name.Builtin),
             (
-                words(_types, suffix=r"\b"),
-                Name.Builtin.Type,
+                r"(\s*?)(functionref)(\()",
+                bygroups(Whitespace, Name.Builtin.Type, Punctuation),
+                "sig",
             ),
             (",", Punctuation),
-            include("funcref"),
             include("whitespace"),
         ],
         "classname": [(r"[a-zA-Z_]\w*", Name.Class, "#pop")],
@@ -212,19 +208,7 @@ class SquirrelLexer(RegexLexer):
             ),
         ],
         "declarations": [
-            (
-                words(
-                    (
-                        "global",
-                        "class",
-                        "const",
-                        "static",
-                        "local",
-                    ),
-                    suffix=r"\b",
-                ),
-                Keyword.Declaration,
-            ),
+            (words(_declarations, suffix=r"\b"), Keyword.Declaration),
         ],
         "constants": [
             (
@@ -276,6 +260,7 @@ class SquirrelLexer(RegexLexer):
                         "wait",
                         "thread",
                         "unreachable",
+                        "expect",
                     ),
                     suffix=r"\b",
                 ),
