@@ -90,7 +90,12 @@ Trackers
 
 .. cpp:class:: rui : public var	
 
-    .. cpp:function:: void RuiSetResolution(rui, GetScreenSize()[0], GetScreenSize()[1])
+    .. cpp:function:: void RuiSetResolution(rui, screenSizeX, screenSizey)
+    
+        .. code-block:: javascript
+        
+                screenSizeX = GetScreenSize()[0]
+                screenSizeY = GetScreenSize()[1]
     
     .. cpp:function:: void RuiSetDrawGroup( rui, drawGroup )
 
