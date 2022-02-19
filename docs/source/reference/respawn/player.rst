@@ -80,7 +80,9 @@ Functions for getting player, and methods of the player object
 
     .. cpp:function::  unknown GetOffhandWeapons()
 
-    .. cpp:function::  Vector GetOrigin() // (x, y, z)
+    .. cpp:function::  Vector GetOrigin() 
+            
+            (x, y, z)
 
     .. cpp:function::  unknown GetParent()
 
@@ -106,7 +108,9 @@ Functions for getting player, and methods of the player object
 
     .. cpp:function::  string GetPlayerName()
 
-    .. cpp:function::  string GetPlayerNameWithClanTag() // networks are disabled in northstar
+    .. cpp:function::  string GetPlayerNameWithClanTag() 
+    
+        networks are disabled in northstar
 
     .. cpp:function::  unknown GetPlayerNetBool( net_bool_name )
 
@@ -144,7 +148,9 @@ Functions for getting player, and methods of the player object
 
     .. cpp:function::  unknown GetViewUp()
 
-    .. cpp:function::  Vector GetViewVector() // vector representation of your look direction. <0, 0, 1> -> looking straight up
+    .. cpp:function::  Vector GetViewVector() 
+    
+        vector representation of your look direction. <0, 0, 1> -> looking straight up
 
     .. cpp:function::  unknown GetWeaponAmmoStockpile()
 
