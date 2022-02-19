@@ -21,8 +21,10 @@ Functions for getting player, and methods of the player object
 
     returns list of every player in ``team`` sorted by ``compareFunc``. If ``team`` is 0 returns a sorted array of every player.
     `squirrel compare function example <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#array.sort>`_
+
     .. code-block:: javascript
-        GetSortedPlayers(function(entity player1, entity player2) {
+
+        GetSortedPlayers(int function(entity player1, entity player2) {
             if(player1.GetPlayerGameStat(PGS_PING)>player2.GetPlayerGameStat(PGS_PING))
                 return 1
 
