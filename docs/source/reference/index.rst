@@ -18,4 +18,5 @@ Respawn API
     /reference/respawn/player
     /reference/respawn/weapon
     /reference/respawn/titan
+    /reference/respawn/rui
     /reference/respawn/clientcommands
