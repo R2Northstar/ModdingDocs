@@ -60,7 +60,8 @@ into one**
 **To add more crosshairs add another Crosshair\_\ X following the
 formating in the script above.**
 
-**The limit for this seems to be 4 Crosshairs onscreen at once**
+.. note::
+    The limit for this seems to be 4 Crosshairs onscreen at once
 
 How the script above appears:
 -----------------------------
