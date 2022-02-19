@@ -20,6 +20,7 @@ Functions for creating a Topology, and methods of the Topology object
             )
 
 Topologies
+
 .. code-block:: javascript
             
             clGlobal.topoFullScreen
@@ -45,4 +46,6 @@ Topologies
     
     .. cpp:function:: void RuiTopology_UpdatePos( topoInfo.topo, updateOrg, right, down )
         
-    .. cpp:function:: void RuiTopology_ShareWithCode( topology, ruiCode ) // not sure what ruiCode is. examples: RUI_CODE_TOPO_ANIMATED_COCKPIT, RUI_CODE_TOPO_PERMANENT_COCKPIT 
+    .. cpp:function:: void RuiTopology_ShareWithCode( topology, ruiCode ) 
+            
+            not sure what ruiCode is. examples: RUI_CODE_TOPO_ANIMATED_COCKPIT, RUI_CODE_TOPO_PERMANENT_COCKPIT 
