@@ -3,7 +3,9 @@ Classes
 
 .. note::
 
-   This is by no means complete. Please add anything you know.
+    The version Respawn is using differs in some places from classes that are in use in Squirrel 3.x 
+
+    This is by no means complete. Please add anything you know.
 
 Declaring Classes
 -----------------
@@ -68,10 +70,10 @@ Every object has a reference to itself called ``this``. You can change parameter
 
 You can't use the class name as a type. Instead use ``var`` instead. You can't ``expect`` them either.
 
-Declaring Objects
------------------
+Instantiating Objects
+---------------------
 
-To declare an object, do:
+To create an instance, do:
 
 .. code-block:: javascript
 
@@ -89,12 +91,37 @@ To declare an object, do:
 
 Like the example above shows you can manipulate properties of a class directly. There is no way to make a private property.
 
-You can't add an index to an instance at runtime. Fields have to be defined at compile time.
+It's possible to insert more properties into a class at runtime. To achieve this, use the ``<-`` operator.
 
 .. code-block:: javascript
 
     // Using ``ExampleClass`` and ``exampleObject`` from example above
-    exampleObject.nonExistantProperty // Asserts error 'The index "nonExistantProperty" does not exist in this instance'
+    ExampleClass.newProperty <- "New property in class"
+    // The value of the new index may be of any type.
+    ExampleClass.newFunc <- function(){return "Function return value";}
+
+The ``::`` operator may be used as well for adding functions to classes in a way similar to C++:
+
+.. code-block:: javascript
+
+    // Using ``ExampleClass`` and ``exampleObject`` from example above
+    ExampleClass::NewFunction(){return 0;}
+    exampleObject.NewFunction(); // 0
+
+.. note::
+
+    It is not possible to insert new fields into an instance or a class *after instantiation*
+
+    .. code-block:: javascript
+
+        var ExampleErrorClass;
+
+        func(){
+            class ExampleErrorClass {};
+            var eInst = ExampleErrorClass()
+            eInst.e <- "Instance error value"; // Asserts error: class instances do not support the new slot operator
+            ExampleErrorClass.e <- "Class error value"; // Fails because an instance of class ExampleErrorClass has already been created. Asserts error: trying to modify a class that has already been instantiated
+        }
 
 Unlike other types, passing an object does not pass a copy of the object, but a reference to itself. This means that any modifications inside of a function are applied to the original object.
 
