@@ -35,13 +35,13 @@ Most classes use a constructor. A constructor is a function of the instance that
 
 You can require parameters in the constructor. Keep in mind that you have to pass those when creating an object.
 
-The types of the parameters have to be ``var``, but you can ``expect`` types in the constructor as usual.
+The type of passed parameters to the constructor have to be ``var``, but they don't require the type keyword. ``constructor( parameter ) {}`` and ``constructor ( var parameter ) {}`` are both correct.
 
 .. code-block:: javascript
 
     class ExampleClass {
-            propertyString // Actual type is var
-            propertyInt // Actual type is var
+            propertyString = null // Actual type is var
+            propertyInt = null // Actual type is var
             constructor( var pString, var pInt ) {
                 this.propertyString = expect string(pString);
                 this.propertyInt = expect int(pInt); 
@@ -68,7 +68,7 @@ Every object has a reference to itself called ``this``. You can change parameter
         }
     }
 
-You can't use the class name as a type. Instead use ``var`` instead. You can't ``expect`` them either.
+You can't use the class name as a type. Use ``var`` instead. You can't ``expect`` them either.
 
 Instantiating Objects
 ---------------------
@@ -171,8 +171,25 @@ Functions of a class do not have a return type. Define them like this:
 
 .. code-block:: javascript
 
-    function func(){
-        return variable; // variable can be of any type
+    global var ExampleClass;
+    void function initClassF(){
+        class ExampleClass {
+            variable = "default value"
+
+            // Set field 'variable' of this instance to passed parameter
+            function setV( pV ){
+                this.variable = pV
+            }
+
+            // Return field 'variable' of this instance
+            function getV(){
+                return this.variable; // return value can be of any type
+            }
+        }
+        var inst = ExampleClass();
+        print(inst.getV()); // -> default value
+        inst.setV("new value");
+        print(inst.getV()); // -> new value
     }
 
 .. warning::
