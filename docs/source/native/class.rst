@@ -35,7 +35,7 @@ Most classes use a constructor. A constructor is a function of the instance that
 
 You can require parameters in the constructor. Keep in mind that you have to pass those when creating an object.
 
-The type of passed parameters to the constructor have to be ``var``, but they don't require the type keyword. ``constructor( parameter ) {}`` and ``constructor ( var parameter ) {}`` are both correct.
+Function parameters are passed as type ``var``, but the type keyword is not required. ``constructor( parameter ){}; func( parameter ){};`` and ``constructor( var parameter ){}; func( var parameter ){};`` are both correct.
 
 .. code-block:: javascript
 
@@ -99,14 +99,6 @@ It's possible to insert more properties into a class at runtime. To achieve this
     ExampleClass.newProperty <- "New property in class"
     // The value of the new index may be of any type.
     ExampleClass.newFunc <- function(){return "Function return value";}
-
-The ``::`` operator may be used as well for adding functions to classes in a way similar to C++:
-
-.. code-block:: javascript
-
-    // Using ``ExampleClass`` and ``exampleObject`` from example above
-    ExampleClass::NewFunction(){return 0;}
-    exampleObject.NewFunction(); // 0
 
 .. note::
 
