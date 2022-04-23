@@ -1,4 +1,5 @@
 Client Command; Arguments; Description
+Sv_cheats; 0 or 1; Allow developer and otherwise "cheat" console commands to be used. Most console commands require this to be true
 PrivateMatchSetMode; mode shortname; Player changed the mode in private lobby menu
 SetCustomMap; map name; Player changed the map in private lobby menu 
 PrivateMatchSetPlaylistVarOverride; playlistvaroverride, value; Player changed the playlistvaroverride to value in private lobby menu
@@ -9,3 +10,10 @@ vban; number;unknown, logged with number 0
 HoldToRodeo; number0;unknown, logged with number 0
 ClientStatus; number;unknown, logged with number 0
 AllDialogueFinished;;unknown
+Map; <map> ex. mp_glitch; used to change the map in private matches 
+give; weapon or item name; give the player a weapon or item
+disconnect;; sends client to main menu
+ent_create; <entity type>; creates a entity at crosshair
+ent_throw; <entity type>; throws a entity
+ent_info; <entity type>; gives info on an entity
+bind; key command you want it to execute; binds a key to any console command. ex. `bind m "sv_cheats 1"`
