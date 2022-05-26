@@ -7,7 +7,7 @@ Each entry in the following list has three sub entries: The class available to t
 
 .. note::
 
-	If not otherwise specified are the following Classes inherited from CBaseEntity or C_BaseEntity respectively.
+	Pay attention to the ``extends`` keyword for each class! You can use every property of that the parent class has access to!
 
 	This List of Classes and their Methods is incomplete!
 
@@ -22,441 +22,672 @@ Shared
 
 .. cpp:class:: CBaseEntity / C_BaseEntity
 
-	.. cpp:function:: unknown Hide( unknown )
+	.. cpp:function:: void Hide()
 
-	.. cpp:function:: unknown Destroy( unknown )
+	.. cpp:function:: void Destroy()
 
-	.. cpp:function:: unknown Signal( unknown )
+	.. cpp:function:: void Signal( string signal )
 
-	.. cpp:function:: unknown GetOrigin( unknown )
+	.. cpp:function:: vector GetOrigin()
 
-	.. cpp:function:: unknown GetBossPlayer( unknown )
+	.. cpp:function:: entity GetBossPlayer()
 
-	.. cpp:function:: unknown GetClassName( unknown )
+	.. cpp:function:: string GetClassName()
 
-	.. cpp:function:: unknown IsNPC( unknown )
+	.. cpp:function:: bool IsNPC()
 
-	.. cpp:function:: unknown IsTitan( unknown )
+	.. cpp:function:: bool IsTitan()
 
-	.. cpp:function:: unknown IsHuman( unknown )
+	.. cpp:function:: bool IsHuman()
 
-	.. cpp:function:: unknown IsPhaseShifted( unknown )
+	.. cpp:function:: bool IsPhaseShifted()
 
-	.. cpp:function:: unknown IsPlayer( unknown )
+	.. cpp:function:: bool IsPlayer()
 
-	.. cpp:function:: unknown IsProjectile( unknown )
+	.. cpp:function:: bool IsProjectile()
 
-	.. cpp:function:: unknown GetModelName( unknown )
+	.. cpp:function:: asset GetModelName()
 
-	.. cpp:function:: unknown SetParent( unknown )
+	.. cpp:function:: void SetParent( entity parent, ..., string type = "" )
 
-	.. cpp:function:: unknown SetValueForEffectNameKey( unknown )
+	.. cpp:function:: void SetValueForEffectNameKey( asset effect )
 
-	.. cpp:function:: unknown CreateTableFromModelKeyValues( unknown )
+	.. cpp:function:: table CreateTableFromModelKeyValues()
 
-	.. cpp:function:: unknown EndSignal( unknown )
+	.. cpp:function:: void EndSignal( string signal )
 
-	.. cpp:function:: unknown GetArmorType( unknown )
+	.. cpp:function:: int GetArmorType()
 
-	.. cpp:function:: unknown GetMaxHealth( unknown )
+	.. cpp:function:: int GetMaxHealth()
 
-	.. cpp:function:: unknown HasGibModel( unknown )
+	.. cpp:function:: bool HasGibModel()
 
-	.. cpp:function:: unknown HasKey( unknown )
+	.. cpp:function:: bool HasKey( string key )
 
-	.. cpp:function:: unknown IsMarkedForDeletion( unknown )
+	.. cpp:function:: bool IsMarkedForDeletion()
 
-	.. cpp:function:: unknown IsMechanical( unknown )
+	.. cpp:function:: bool IsMechanical()
 
-	.. cpp:function:: unknown SetOrigin( unknown )
+	.. cpp:function:: void SetOrigin( vector position )
 
-	.. cpp:function:: unknown GetTargetName( unknown )
+	.. cpp:function:: string GetTargetName()
 
-	.. cpp:function:: unknown GetTeam( unknown )
+	.. cpp:function:: int GetTeam()
 
-	.. cpp:function:: unknown GetAngles( unknown )
+	.. cpp:function:: vector GetAngles()
 
-	.. cpp:function:: unknown EyePosition( unknown )
+	.. cpp:function:: vector EyePosition()
 
-	.. cpp:function:: unknown GetValueForKey( unknown )
+	.. cpp:function:: var GetValueForKey( string key )
 
-	.. cpp:function:: unknown WaitSignal( unknown )
+	.. cpp:function:: void WaitSignal( string signal )
 
-	.. cpp:function:: unknown GetVelocity( unknown )
+	.. cpp:function:: vector GetVelocity()
 
-	.. cpp:function:: unknown Kill_Deprecated_UseDestroyInstead( unknown )
+	.. cpp:function:: void Kill_Deprecated_UseDestroyInstead()
 
-	.. cpp:function:: unknown GetBoundingMaxs( unknown )
+		You should use Destroy instead. Both function do exactly the same.
 
-	.. cpp:function:: unknown GetBoundingMins( unknown )
+	.. cpp:function:: vector GetBoundingMaxs()
 
-	.. cpp:function:: unknown SetAngles( unknown )
+	.. cpp:function:: vector GetBoundingMins()
 
-	.. cpp:function:: unknown ClearParent( unknown )
+	.. cpp:function:: vector SetAngles( vector angle)
 
-	.. cpp:function:: unknown SetValueForModelKey( unknown )
+	.. cpp:function:: void ClearParent( entity parent )
 
-	.. cpp:function:: unknown Show( unknown )
+	.. cpp:function:: void SetValueForModelKey( asset model )
 
-	.. cpp:function:: unknown IsInvulnerable( unknown )
+	.. cpp:function:: void Show()
 
-	.. cpp:function:: unknown GetParent( unknown )
+	.. cpp:function:: bool IsInvulnerable()
 
-	.. cpp:function:: unknown GetWorldSpaceCenter( unknown )
+	.. cpp:function:: entity GetParent()
 
-	.. cpp:function:: unknown Highlight_GetCurrentContext( unknown )
+	.. cpp:function:: vector GetWorldSpaceCenter()
 
-	.. cpp:function:: unknown Highlight_GetCurrentInsideOpacity( unknown )
+	.. cpp:function:: int Highlight_GetCurrentContext()
 
-	.. cpp:function:: unknown Highlight_GetCurrentOutlineOpacity( unknown )
+	.. cpp:function:: float Highlight_GetCurrentInsideOpacity()
 
-	.. cpp:function:: unknown Highlight_GetInheritHighlight( unknown )
+	.. cpp:function:: float Highlight_GetCurrentOutlineOpacity()
 
-	.. cpp:function:: unknown Highlight_GetInsideFunction( unknown )
+	.. cpp:function:: unknown Highlight_GetInheritHighlight()
 
-	.. cpp:function:: unknown Highlight_GetOutlineFunction( unknown )
+	.. cpp:function:: int Highlight_GetInsideFunction( int contextID )
 
-	.. cpp:function:: unknown Highlight_GetOutlineRadius( unknown )
+	.. cpp:function:: int Highlight_GetOutlineFunction( int contextID )
 
-	.. cpp:function:: unknown Highlight_GetParam( unknown )
+	.. cpp:function:: float Highlight_GetOutlineRadius()
 
-	.. cpp:function:: unknown Highlight_GetState( unknown )
+	.. cpp:function:: unknown Highlight_GetParam( int contextID, int parameterNum )
 
-	.. cpp:function:: unknown Highlight_HideInside( unknown )
+	.. cpp:function:: int Highlight_GetState( int contextID )
 
-	.. cpp:function:: unknown Highlight_HideOutline( unknown )
+	.. cpp:function:: void Highlight_HideInside( float duration )
 
-	.. cpp:function:: unknown Highlight_IsAfterPostProcess( unknown )
+	.. cpp:function:: void Highlight_HideOutline( float duration )
 
-	.. cpp:function:: unknown Highlight_IsEntityVisible( unknown )
+	.. cpp:function:: bool Highlight_IsAfterPostProcess( int contextID )
 
-	.. cpp:function:: unknown Highlight_SetCurrentContext( unknown )
+	.. cpp:function:: bool Highlight_IsEntityVisible( int contextID )
 
-	.. cpp:function:: unknown Highlight_SetFunctions( unknown )
+	.. cpp:function:: void Highlight_SetCurrentContext( int contextID )
 
-	.. cpp:function:: unknown Highlight_SetParam( unknown )
+	.. cpp:function:: void Highlight_SetFunctions( int contextID, int hightlightFillID, bool entityVisible, int colorMode, float radius, int highlightID, bool afterPostProcess)
 
-	.. cpp:function:: unknown Highlight_ShowInside( unknown )
+	.. cpp:function:: void Highlight_SetParam( int contextID, int parameterID, vector highlightColor )
 
-	.. cpp:function:: unknown Highlight_ShowOutline( unknown )
+	.. cpp:function:: void Highlight_ShowInside( float duration )
 
-	.. cpp:function:: unknown GetEntIndex( unknown )
+	.. cpp:function:: void Highlight_ShowOutline( float duration )
 
-	.. cpp:function:: unknown GetOwner( unknown )
+	.. cpp:function:: int GetEntIndex()
 
-	.. cpp:function:: unknown GetShieldHealth( unknown )
+	.. cpp:function:: entity GetOwner()
 
-	.. cpp:function:: unknown GetShieldHealthMax( unknown )
+	.. cpp:function:: int GetShieldHealth()
 
-	.. cpp:function:: unknown SetScriptName( unknown )
+	.. cpp:function:: int GetShieldHealthMax()
 
-	.. cpp:function:: unknown GetLinkEntArray( unknown )
+	.. cpp:function:: void SetScriptName( string name )
 
-	.. cpp:function:: unknown GetLinkEnt( unknown )
+	.. cpp:function:: array<entity> GetLinkEntArray()
 
-	.. cpp:function:: unknown Code_SetTeam( unknown )
+	.. cpp:function:: entity GetLinkEnt()
 
-	.. cpp:function:: unknown GetHealth( unknown )
+	.. cpp:function:: void Code_SetTeam( int team )
 
-	.. cpp:function:: unknown IsCloaked( unknown )
+	.. cpp:function:: int GetHealth()
 
-	.. cpp:function:: unknown IsEntAlive( unknown )
+	.. cpp:function:: bool IsCloaked()
 
-	.. cpp:function:: unknown IsValidInternal( unknown )
+	.. cpp:function:: bool IsEntAlive()
 
-	.. cpp:function:: unknown GetForwardVector( unknown )
+	.. cpp:function:: bool IsValidInternal()
 
-	.. cpp:function:: unknown GetRightVector( unknown )
+	.. cpp:function:: vector GetForwardVector()
 
-	.. cpp:function:: unknown GetUpVector( unknown )
+	.. cpp:function:: vector GetRightVector()
 
-	.. cpp:function:: unknown SetValueForKey( unknown )
+	.. cpp:function:: vector GetUpVector()
 
-	.. cpp:function:: unknown constructor( unknown )
+	.. cpp:function:: void SetValueForKey( var key, var val )
 
-	.. cpp:function:: unknown SetDoDestroyCallback( unknown )
+	.. cpp:function:: entity constructor( unknown )
 
-	.. cpp:function:: unknown GetLifeState( unknown )
+		Depends on the class.
+		
+		Returns a new instance of a class.
+		
+		You can invoke the constructor with brackets as well, for example like this: ``CBaseEntity()``
 
-	.. cpp:function:: unknown DisableDraw( unknown )
+	.. cpp:function:: void SetDoDestroyCallback( bool doCallBack )
 
-	.. cpp:function:: unknown EnableDraw( unknown )
+	.. cpp:function:: int GetLifeState()
 
-	.. cpp:function:: unknown SetCanCloak( unknown )
+	.. cpp:function:: void DisableDraw()
 
-	.. cpp:function:: unknown GetCritsPrevented( unknown )
+	.. cpp:function:: void EnableDraw()
 
-	.. cpp:function:: unknown IsHologram( unknown )
+	.. cpp:function:: void SetCanCloak( bool canCloak )
 
-	.. cpp:function:: unknown IsOnGround( unknown )
+	.. cpp:function:: bool GetCritsPrevented()
 
-	.. cpp:function:: unknown SetModel( unknown )
+	.. cpp:function:: bool IsHologram()
 
-	.. cpp:function:: unknown MarkAsNonMovingAttachment( unknown )
+	.. cpp:function:: bool IsOnGround()
 
-	.. cpp:function:: unknown GetScriptName( unknown )
+	.. cpp:function:: void SetModel( asset model )
 
-	.. cpp:function:: unknown EyeAngles( unknown )
+	.. cpp:function:: void MarkAsNonMovingAttachment()
 
-	.. cpp:function:: unknown IsBreakableGlass( unknown )
+	.. cpp:function:: string GetScriptName()
 
-	.. cpp:function:: unknown IsWorld( unknown )
+	.. cpp:function:: vector EyeAngles()
 
-	.. cpp:function:: unknown DispatchImpactEffects( unknown )
+	.. cpp:function:: bool IsBreakableGlass()
 
-	.. cpp:function:: unknown IsPlayerDecoy( unknown )
+	.. cpp:function:: bool IsWorld()
 
-	.. cpp:function:: unknown SetPassThroughDirection( unknown )
+	.. cpp:function:: void DispatchImpactEffects( entity ent, vector startPos, vector endPos, vector hitNormal, enitity prop, int propIndex, int damageType, int impactIndex, entity orig, int impactEffectFlags )
 
-	.. cpp:function:: unknown SetPassThroughThickness( unknown )
+	.. cpp:function:: void IsPlayerDecoy()
 
-	.. cpp:function:: unknown SetTakeDamageType( unknown )
+	.. cpp:function:: void SetPassThroughDirection( float dir )
 
-	.. cpp:function:: unknown SetVelocity( unknown )
+	.. cpp:function:: void SetPassThroughThickness( float thickness )
 
-	.. cpp:function:: unknown EnableRenderAlways( unknown )
+	.. cpp:function:: void SetTakeDamageType( int takeDamageType )
 
-	.. cpp:function:: unknown GetParentAttachment( unknown )
+		``DAMAGE_NO``, ``DAMAGE_YES``, ``DAMAGE_EVENTS_ONLY``
 
-	.. cpp:function:: unknown SetFadeDistance( unknown )
+	.. cpp:function:: void SetVelocity( vector vel )
 
-	.. cpp:function:: unknown Highlight_SetInheritHighlight( unknown )
+	.. cpp:function:: void EnableRenderAlways()
 
-	.. cpp:function:: unknown DisableRenderAlways( unknown )
+	.. cpp:function:: entity GetParentAttachment()
 
-	.. cpp:function:: unknown SetLocalOrigin( unknown )
+	.. cpp:function:: void SetFadeDistance( int distance )
 
-	.. cpp:function:: unknown HasPusherRootParent( unknown )
+	.. cpp:function:: void Highlight_SetInheritHighlight( bool set )
 
-	.. cpp:function:: unknown StopPhysics( unknown )
+	.. cpp:function:: void DisableRenderAlways()
 
-	.. cpp:function:: unknown SetPreventCrits( unknown )
+	.. cpp:function:: void SetLocalOrigin( vector origin )
 
-	.. cpp:function:: unknown HighlightDisableForTeam( unknown )
+	.. cpp:function:: bool HasPusherRootParent()
 
-	.. cpp:function:: unknown HighlightEnableForTeam( unknown )
+	.. cpp:function:: void StopPhysics()
 
-	.. cpp:function:: unknown HighlightSetTeamBitField( unknown )
+	.. cpp:function:: void SetPreventCrits( bool prevent )
 
-	.. cpp:function:: unknown SetLocalAngles( unknown )
+	.. cpp:function:: void HighlightDisableForTeam( int team )
 
-	.. cpp:function:: unknown SetParentWithHitbox( unknown )
+	.. cpp:function:: void HighlightEnableForTeam( int team )
 
-	.. cpp:function:: unknown RenderWithViewModels( unknown )
+	.. cpp:function:: void HighlightSetTeamBitField( int bitField )
 
-	.. cpp:function:: unknown SetValueForTextureKey( unknown )
+	.. cpp:function:: void SetLocalAngles( vector angles )
 
-	.. cpp:function:: unknown GetValueForModelKey( unknown )
+	.. cpp:function:: void SetParentWithHitbox( entity parent, int hitGroup, bool unknown )
 
-	.. cpp:function:: unknown GetLocalAngles( unknown )
+	.. cpp:function:: void RenderWithViewModels( bool renderWith )
 
-	.. cpp:function:: unknown GetLinkParent( unknown )
+	.. cpp:function:: void SetValueForTextureKey( asset texture )
 
-	.. cpp:function:: unknown GetNoTarget( unknown )
+	.. cpp:function:: asset GetValueForModelKey()
 
-	.. cpp:function:: unknown SetForceVisibleInPhaseShift( unknown )
+	.. cpp:function:: vector GetLocalAngles()
 
-	.. cpp:function:: unknown GetScriptScope( unknown )
+	.. cpp:function:: entity GetLinkParent()
+
+	.. cpp:function:: bool GetNoTarget()
+
+	.. cpp:function:: void SetForceVisibleInPhaseShift( bool visible )
+
+	.. cpp:function:: table GetScriptScope()
 
 CBaseEntity
 ^^^^^^^^^^^
 
 .. cpp:class:: CBaseEntity
 
-	.. cpp:function:: unknown SetHealth( unknown )
+	.. cpp:function:: int SetHealth( int health )
 
-	.. cpp:function:: unknown SetMaxHealth( unknown )
+	.. cpp:function:: int SetMaxHealth( int health )
 
-	.. cpp:function:: unknown SetOwner( unknown )
+	.. cpp:function:: void SetOwner( entity owner )
 
-	.. cpp:function:: unknown GetSpawner( unknown )
+	.. cpp:function:: entity GetSpawner()
 
-	.. cpp:function:: unknown Die( unknown )
+	.. cpp:function:: void Die()
 
-	.. cpp:function:: unknown NotSolid( unknown )
+	.. cpp:function:: bool NotSolid()
 
-	.. cpp:function:: unknown MoveTo( unknown )
+	.. cpp:function:: void MoveTo( vector pos, float moveTime, int unknown1, int unknown2 )
 
-	.. cpp:function:: unknown RotateTo( unknown )
+	.. cpp:function:: void RotateTo( vector pos, float moveTime, int unknown1, int unknown2 )
 
-	.. cpp:function:: unknown ClearInvulnerable( unknown )
+	.. cpp:function:: void ClearInvulnerable()
 
-	.. cpp:function:: unknown SetInvulnerable( unknown )
+	.. cpp:function:: void SetInvulnerable()
 
-	.. cpp:function:: unknown SetNextThinkNow( unknown )
+	.. cpp:function:: void SetNextThinkNow()
 
-	.. cpp:function:: unknown SetNoTarget( unknown )
+	.. cpp:function:: void SetNoTarget( bool noTarget )
 
-	.. cpp:function:: unknown SetNoTargetSmartAmmo( unknown )
+	.. cpp:function:: void SetNoTargetSmartAmmo( bool noTarget )
 
-	.. cpp:function:: unknown Minimap_SetClampToEdge( unknown )
+	.. cpp:function:: void Minimap_SetClampToEdge( bool clamp )
 
-	.. cpp:function:: unknown Minimap_SetCustomState( unknown )
+	.. cpp:function:: void Minimap_SetCustomState( int state )
 
-	.. cpp:function:: unknown Minimap_SetZOrder( unknown )
+	.. cpp:function:: void Minimap_SetZOrder( int order )
 
-	.. cpp:function:: unknown Minimap_SetAlignUpright( unknown )
+	.. cpp:function:: void Minimap_SetAlignUpright( bool align )
 
-	.. cpp:function:: unknown Minimap_SetObjectScale( unknown )
+	.. cpp:function:: void Minimap_SetObjectScale( float scale )
 
-	.. cpp:function:: unknown SetShieldHealth( unknown )
+	.. cpp:function:: void SetShieldHealth( int )
 
-	.. cpp:function:: unknown SetShieldHealthMax( unknown )
+	.. cpp:function:: void SetShieldHealthMax( int )
 
-	.. cpp:function:: unknown GetEncodedEHandle( unknown )
+	.. cpp:function:: int GetEncodedEHandle()
 
-	.. cpp:function:: unknown SetUsable( unknown )
+	.. cpp:function:: void SetUsable( bool usable )
 
-	.. cpp:function:: unknown SetUsableRadius( unknown )
+	.. cpp:function:: void SetUsableRadius( float distance )
 
-	.. cpp:function:: unknown Solid( unknown )
+	.. cpp:function:: void Solid()
 
-	.. cpp:function:: unknown Fire( unknown )
+	.. cpp:function:: void Fire( string unknown, string unknown1 = "", int duration )
 
-	.. cpp:function:: unknown SetUsableByGroup( unknown )
+	.. cpp:function:: void SetUsableByGroup( string group )
 
-	.. cpp:function:: unknown DisableHibernation( unknown )
+	.. cpp:function:: void DisableHibernation()
 
-	.. cpp:function:: unknown SetSize( unknown )
+	.. cpp:function:: void SetSize( float width, float height )
 
-	.. cpp:function:: unknown SetCloakFlicker( unknown )
+	.. cpp:function:: void SetCloakFlicker( float intensity, float duration )
 
-	.. cpp:function:: unknown TakeDamage( unknown )
+	.. cpp:function:: void TakeDamage( int damageAmount, entity attacker_1, entity attacker_2, table { int scriptType, int damageType, int damageSourceId, vector origin, vector force } )
 
-	.. cpp:function:: unknown GetCenter( unknown )
+	.. cpp:function:: vector GetCenter()
 
-	.. cpp:function:: unknown TraceAttackToTriggers( unknown )
+	.. cpp:function:: void TraceAttackToTriggers( int damageAmount, entity attacker_1, entity attacker_2, table { int scriptType, int damageType, int damageSourceId, vector force }, vector startPos, vector endPos, vector direction )
 
-	.. cpp:function:: unknown SetBlocksRadiusDamage( unknown )
+	.. cpp:function:: void SetBlocksRadiusDamage( bool blocks )
 
-	.. cpp:function:: unknown SetDamageNotifications( unknown )
+	.. cpp:function:: void SetDamageNotifications( bool getNotifs )
 
-	.. cpp:function:: unknown NextMovePeer( unknown )
+	.. cpp:function:: entity NextMovePeer()
 
-	.. cpp:function:: unknown SetNameVisibleToEnemy( unknown )
+	.. cpp:function:: void SetNameVisibleToEnemy( bool visible )
 
-	.. cpp:function:: unknown SetNameVisibleToFriendly( unknown )
+	.. cpp:function:: void SetNameVisibleToFriendly( bool visible )
 
-	.. cpp:function:: unknown SetNameVisibleToOwner( unknown )
+	.. cpp:function:: void SetNameVisibleToOwner( bool visible )
 
-	.. cpp:function:: unknown FirstMoveChild( unknown )
+	.. cpp:function:: entity FirstMoveChild()
 
-	.. cpp:function:: unknown GetRootMoveParent( unknown )
+	.. cpp:function:: entity GetRootMoveParent()
 
-	.. cpp:function:: unknown RemoveFromSpatialPartition( unknown )
+	.. cpp:function:: void RemoveFromSpatialPartition()
 
-	.. cpp:function:: unknown SetUsePrompts( unknown )
+	.. cpp:function:: void SetUsePrompts( string pc_prompt, string console_prompt)
 
-	.. cpp:function:: unknown SetAngularVelocity( unknown )
+	.. cpp:function:: void SetAngularVelocity( float x, float y, float z )
 
-	.. cpp:function:: unknown MakeInvisible( unknown )
+	.. cpp:function:: void MakeInvisible()
 
-	.. cpp:function:: unknown MakeVisible( unknown )
+	.. cpp:function:: void MakeVisible()
 
-	.. cpp:function:: unknown GetGroundEntity( unknown )
+	.. cpp:function:: entity GetGroundEntity()
 
-	.. cpp:function:: unknown GetGroundRelativePos( unknown )
+	.. cpp:function:: vector GetGroundRelativePos()
 
-	.. cpp:function:: unknown GetPhysicsSolidMask( unknown )
+	.. cpp:function:: int GetPhysicsSolidMask()
 
-	.. cpp:function:: unknown SetBossPlayer( unknown )
+	.. cpp:function:: void SetBossPlayer( entity boss )
 
-	.. cpp:function:: unknown EnableAttackableByAI( unknown )
+	.. cpp:function:: void EnableAttackableByAI( int ai_priority_no_threat, int unknown, int ai_ap_flag )
 
-	.. cpp:function:: unknown SetDeathNotifications( unknown )
+	.. cpp:function:: void SetDeathNotifications( bool notifs )
 
-	.. cpp:function:: unknown SetTitle( unknown )
+	.. cpp:function:: void SetTitle( string title )
 
-	.. cpp:function:: unknown LinkToEnt( unknown )
+	.. cpp:function:: void LinkToEnt( entity ent )
 
-	.. cpp:function:: unknown SetAbsAngles( unknown )
+	.. cpp:function:: void SetAbsAngles( vector angles )
 
-	.. cpp:function:: unknown SetAbsOrigin( unknown )
+	.. cpp:function:: void SetAbsOrigin( void origin )
 
-	.. cpp:function:: unknown UnsetUsable( unknown )
+	.. cpp:function:: void UnsetUsable()
 
-	.. cpp:function:: unknown Minimap_AlwaysShow( unknown )
+	.. cpp:function:: void Minimap_AlwaysShow( int team, entity ent )
 
-	.. cpp:function:: unknown RoundOriginAndAnglesToNearestNetworkValue( unknown )
+	.. cpp:function:: void RoundOriginAndAnglesToNearestNetworkValue()
 
-	.. cpp:function:: unknown ConnectOutput( unknown )
+	.. cpp:function:: void ConnectOutput( string event, void functionref( entity self, entity activator, entity caller, var value ) )
 
-	.. cpp:function:: unknown ClearBossPlayer( unknown )
+	.. cpp:function:: void ClearBossPlayer()
 
-	.. cpp:function:: unknown SetUsableValue( unknown )
+	.. cpp:function:: void SetUsableValue( int val )
 
-	.. cpp:function:: unknown Minimap_DisplayDefault( unknown )
+	.. cpp:function:: void Minimap_DisplayDefault( int team, entity ent )
 
-	.. cpp:function:: unknown FireNow( unknown )
+	.. cpp:function:: void FireNow( string s )
+
+		``s`` is either ``"Enable"`` or ``Disable``
 
 C_BaseEntity
 ^^^^^^^^^^^^
 
 .. cpp:class:: C_BaseEntity
 
-	.. cpp:function:: unknown GetSignifierName( unknown )
+	.. cpp:function:: string GetSignifierName()
 
-	.. cpp:function:: unknown LookupAttachment( unknown )
+	.. cpp:function:: int LookupAttachment( string attachName )
 
-	.. cpp:function:: unknown GetBossPlayerName( unknown )
+	.. cpp:function:: string GetBossPlayerName()
 
-	.. cpp:function:: unknown ForceShadowVisible( unknown )
+	.. cpp:function:: void ForceShadowVisible( bool visible )
 
-	.. cpp:function:: unknown clKill( unknown )
+	.. cpp:function:: void clKill()
 
-	.. cpp:function:: unknown Highlight_GetNearFadeDist( unknown )
+	.. cpp:function:: float Highlight_GetNearFadeDist()
 
-	.. cpp:function:: unknown Highlight_ResetFlags( unknown )
+	.. cpp:function:: void Highlight_ResetFlags()
 
-	.. cpp:function:: unknown Highlight_SetFadeInTime( unknown )
+	.. cpp:function:: void Highlight_SetFadeInTime( float time )
 
-	.. cpp:function:: unknown Highlight_SetFadeOutTime( unknown )
+	.. cpp:function:: void Highlight_SetFadeOutTime( float time )
 
-	.. cpp:function:: unknown Highlight_SetFarFadeDist( unknown )
+	.. cpp:function:: void Highlight_SetFarFadeDist( float dist )
 
-	.. cpp:function:: unknown Highlight_SetFlag( unknown )
+	.. cpp:function:: void Highlight_SetFlag( int highlightFlag, bool enable )
 
-	.. cpp:function:: unknown Highlight_SetLifeTime( unknown )
+	.. cpp:function:: void Highlight_SetLifeTime( float time )
 
-	.. cpp:function:: unknown Highlight_SetNearFadeDist( unknown )
+	.. cpp:function:: void Highlight_SetNearFadeDist( float dist )
 
-	.. cpp:function:: unknown Highlight_SetVisibilityType( unknown )
+	.. cpp:function:: void Highlight_SetVisibilityType( int type )
 
-	.. cpp:function:: unknown Highlight_StartOn( unknown )
+	.. cpp:function:: void Highlight_StartOn()
 
-	.. cpp:function:: unknown DisableRenderWithViewModelsNoZoom( unknown )
+		Starts the highlight
 
-	.. cpp:function:: unknown EnableRenderWithCockpit( unknown )
+	.. cpp:function:: void DisableRenderWithViewModelsNoZoom()
 
-	.. cpp:function:: unknown EnableRenderWithHud( unknown )
+	.. cpp:function:: void EnableRenderWithCockpit()
 
-	.. cpp:function:: unknown SetAttachOffsetAngles( unknown )
+	.. cpp:function:: void EnableRenderWithHud()
 
-	.. cpp:function:: unknown SetAttachOffsetOrigin( unknown )
+	.. cpp:function:: void SetAttachOffsetAngles( vector angles )
 
-	.. cpp:function:: unknown SetVisibleForLocalPlayer( unknown )
+	.. cpp:function:: void SetAttachOffsetOrigin( vector origin )
 
-	.. cpp:function:: unknown InitHudElem( unknown )
+	.. cpp:function:: void SetVisibleForLocalPlayer( int visible )
 
-	.. cpp:function:: unknown GetTitleForUI( unknown )
+	.. cpp:function:: void InitHudElem( var key )
 
-	.. cpp:function:: unknown GetCloakFadeFactor( unknown )
+	.. cpp:function:: string GetTitleForUI()
 
-	.. cpp:function:: unknown Dev_GetEncodedEHandle( unknown )
+	.. cpp:function:: float GetCloakFadeFactor()
 
-	.. cpp:function:: unknown Minimap_GetCustomState( unknown )
+	.. cpp:function:: int Dev_GetEncodedEHandle()
 
-	.. cpp:function:: unknown Minimap_GetZOrder( unknown )
+	.. cpp:function:: int Minimap_GetCustomState()
 
-	.. cpp:function:: unknown DoDeathCallback( unknown )
+	.. cpp:function:: int Minimap_GetZOrder()
 
-	.. cpp:function:: unknown EnableHealthChangedCallback( unknown )
+	.. cpp:function:: void DoDeathCallback( bool doCallback )
 
-	.. cpp:function:: unknown HideHUD( unknown )
+	.. cpp:function:: void EnableHealthChangedCallback()
 
-	.. cpp:function:: unknown ShowHUD( unknown )
+	.. cpp:function:: void HideHUD()
 
-	.. cpp:function:: unknown IsHUDVisible( unknown )
+	.. cpp:function:: void ShowHUD()
+
+	.. cpp:function:: bool IsHUDVisible()
+
+CDynamicProp / C_DynamicProp
+----------------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CDynamicProp / C_DynamicProp : extends CBaseEntity / C_BaseEntity
+
+	.. cpp:function:: vector GetAttachmentOrigin()
+
+	.. cpp:function:: int LookupAttachment( string attach )
+
+	.. cpp:function:: int FindBodyGroup( string group )
+
+	.. cpp:function:: int GetBodyGroupState( int group )
+
+	.. cpp:function:: int GetBodyGroupModelCount( int group )
+
+	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
+
+	.. cpp:function:: vector GetAttachmentAngles()
+
+	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
+
+	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
+
+	.. cpp:function:: float GetSequenceDuration( string anim )
+
+	.. cpp:function:: bool Anim_IsActive()
+
+	.. cpp:function:: void Anim_Play( string anim )
+
+	.. cpp:function:: void Anim_SetInitialTime( float time )
+
+	.. cpp:function:: void Anim_Stop()
+
+	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
+
+	.. cpp:function:: int GetSkin()
+
+	.. cpp:function:: int LookupSequence( string sequence )
+
+	.. cpp:function:: void SetSkin( int skin )
+
+	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
+
+	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
+
+	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
+
+	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
+
+	.. cpp:function:: bool Anim_HasSequence( string animation )
+
+	.. cpp:function:: void SetPlaybackRate( float rate )
+
+	.. cpp:function:: void Anim_SetStartTime( float time )
+
+	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
+
+	.. cpp:function:: void SetPoseParameter( int pose, float offset )
+
+	.. cpp:function:: vector GetAttachmentForward( int attachID )
+
+CDynamicProp
+^^^^^^^^^^^^
+
+.. cpp:class:: CDynamicProp : extends CBaseEntity
+
+	.. cpp:function:: void SetFullBodygroup( int group )
+
+	.. cpp:function:: int GetFullBodygroup()
+
+	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
+
+	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
+
+	.. cpp:function:: void Gib( vector forceVec )
+
+	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
+
+	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
+
+	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
+
+	.. cpp:function:: void Anim_EnablePlanting()
+
+	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
+
+	.. cpp:function:: void Anim_DisableUpdatePosition()
+
+C_DynamicProp
+^^^^^^^^^^^^^
+
+.. cpp:class:: C_DynamicProp : extends CBaseEntity
+
+	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
+
+	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
+
+	.. cpp:function:: void Anim_SetPaused( bool pause )
+
+	.. cpp:function:: void SetCycle( float cycle )
+
+	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+
+CBaseCombatWeapon / C_BaseCombatWeapon
+--------------------------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CBaseCombatWeapon / C_BaseCombatWeapon : extends CBaseEntity / C_BaseEntity
+
+	.. cpp:function:: vector GetAttachmentOrigin()
+
+	.. cpp:function:: int LookupAttachment( string attachment )
+
+		Returns the Attachment index.
+	.. cpp:function:: int FindBodyGroup( string group )
+
+		Returns the body group index of the entity the method is called on.
+
+	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
+
+	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
+
+	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
+
+	.. cpp:function:: vector GetAttachmentAngles()
+
+	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
+
+	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
+
+	.. cpp:function:: float GetSequenceDuration( string anim )
+
+	.. cpp:function:: bool Anim_IsActive()
+
+	.. cpp:function:: void Anim_Play( string anim )
+
+	.. cpp:function:: void Anim_SetInitialTime( float time )
+
+	.. cpp:function:: void Anim_Stop()
+
+	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
+
+	.. cpp:function:: int GetSkin()
+
+	.. cpp:function:: int LookupSequence( string sequence )
+
+	.. cpp:function:: void SetSkin( int skin )
+
+	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
+
+	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
+
+	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
+
+	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
+
+	.. cpp:function:: string GetWeaponDescription()
+
+	.. cpp:function:: bool Anim_HasSequence( string animation )
+
+	.. cpp:function:: void SetPlaybackRate( float rate )
+
+	.. cpp:function:: void Anim_SetStartTime( float time )
+
+	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
+
+	.. cpp:function:: void SetPoseParameter( int pose, float offset )
+
+	.. cpp:function:: vector GetAttachmentForward( int attachId )
+
+CBaseCombatWeapon
+^^^^^^^^^^^^^^^^^
+
+.. cpp:class:: CBaseCombatWeapon : extends CBaseEntity
+
+	.. cpp:function:: int GetFullBodygroup()
+
+	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
+
+	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
+
+	.. cpp:function:: void Gib( vector forceVec )
+
+	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
+
+	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
+
+	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
+
+	.. cpp:function:: void Anim_EnablePlanting()
+
+	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
+
+	.. cpp:function:: void Anim_DisableUpdatePosition()
+
+	.. cpp:function:: int GetFullBodygroup()
+
+C_BaseCombatWeapon
+^^^^^^^^^^^^^^^^^^
+
+.. cpp:function:: C_BaseCombatWeapon : extends C_BaseEntity
+
+	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
+
+	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
+
+	.. cpp:function:: void Anim_SetPaused( bool pause )
+
+	.. cpp:function:: void SetCycle( float cycle )
+
+	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
 
 CWeaponX / C_WeaponX
 --------------------
@@ -466,329 +697,253 @@ Weapons hold by a player or that are lying on the ground are of this type.
 Shared
 ^^^^^^
 
-.. cpp:class:: CWeaponX / C_WeaponX : extends CBaseEntity / C_BaseEntity
+.. cpp:class:: CWeaponX / C_WeaponX : extends CBaseCombatWeapon / C_BaseCombatWeapon
 
-	.. cpp:function:: unknown GetAttachmentOrigin( unknown )
+	.. cpp:function:: entity GetWeaponOwner()
 
-	.. cpp:function:: unknown LookupAttachment( unknown )
+	.. cpp:function:: bool GetAllowHeadShots()
 
-	.. cpp:function:: unknown GetWeaponOwner( unknown )
+	.. cpp:function:: float GetMaxDamageFarDist()
 
-	.. cpp:function:: unknown FindBodyGroup( unknown )
+	.. cpp:function:: bool GetWeaponSettingBool( int setting )
 
-	.. cpp:function:: unknown GetBodyGroupState( unknown )
+	.. cpp:function:: float GetWeaponSettingFloat( int setting )
 
-	.. cpp:function:: unknown GetAllowHeadShots( unknown )
+	.. cpp:function:: int GetWeaponSettingInt( int setting )
 
-	.. cpp:function:: unknown GetMaxDamageFarDist( unknown )
+	.. cpp:function:: vector GetAttackDirection()
 
-	.. cpp:function:: unknown GetWeaponSettingBool( unknown )
+	.. cpp:function:: vector GetAttackPosition()
 
-	.. cpp:function:: unknown GetWeaponSettingFloat( unknown )
+	.. cpp:function:: int GetWeaponPrimaryAmmoCount()
 
-	.. cpp:function:: unknown GetWeaponSettingInt( unknown )
+	.. cpp:function:: int GetWeaponPrimaryClipCount()
 
-	.. cpp:function:: unknown GetBodyGroupModelCount( unknown )
+	.. cpp:function:: int GetWeaponPrimaryClipCountMax()
 
-	.. cpp:function:: unknown SetBodygroup( unknown )
+	.. cpp:function:: bool IsChargeWeapon()
 
-	.. cpp:function:: unknown GetAttachmentAngles( unknown )
+	.. cpp:function:: void SetNextAttackAllowedTime( float time )
 
-	.. cpp:function:: unknown GetAttackDirection( unknown )
+		You need to set a game time as time.
 
-	.. cpp:function:: unknown GetAttackPosition( unknown )
+	.. cpp:function:: void SetWeaponChargeFractionForced( float frac )
 
-	.. cpp:function:: unknown Anim_GetAttachmentAtTime( unknown )
+	.. cpp:function:: void SetWeaponPrimaryClipCount( int )
 
-	.. cpp:function:: unknown GetScriptedAnimEventCycleFrac( unknown )
+	.. cpp:function:: string GetWeaponClassName()
 
-	.. cpp:function:: unknown GetSequenceDuration( unknown )
+	.. cpp:function:: var GetWeaponInfoFileKeyField( string key )
 
-	.. cpp:function:: unknown Anim_IsActive( unknown )
+	.. cpp:function:: float GetCoreDuration()
 
-	.. cpp:function:: unknown Anim_Play( unknown )
+	.. cpp:function:: int GetWeaponType()
 
-	.. cpp:function:: unknown Anim_SetInitialTime( unknown )
+	.. cpp:function:: array<string> GetMods()
 
-	.. cpp:function:: unknown Anim_Stop( unknown )
+	.. cpp:function:: bool IsWeaponOffhand()
 
-	.. cpp:function:: unknown Anim_GetStartForRefEntity_Old( unknown )
+	.. cpp:function:: float GetWeaponChargeFraction()
 
-	.. cpp:function:: unknown GetWeaponPrimaryAmmoCount( unknown )
+	.. cpp:function:: float GetWeaponChargeTime()
 
-	.. cpp:function:: unknown GetWeaponPrimaryClipCount( unknown )
+	.. cpp:function:: bool HasMod( string mod )
 
-	.. cpp:function:: unknown GetWeaponPrimaryClipCountMax( unknown )
+	.. cpp:function:: int GetWeaponCurrentEnergyCost()
 
-	.. cpp:function:: unknown IsChargeWeapon( unknown )
+	.. cpp:function:: bool GetMeleeCanHitHumanSized()
 
-	.. cpp:function:: unknown SetNextAttackAllowedTime( unknown )
+	.. cpp:function:: bool GetMeleeCanHitTitans()
 
-	.. cpp:function:: unknown SetWeaponChargeFractionForced( unknown )
+	.. cpp:function:: void DoMeleeHitConfirmation( float severityScale )
 
-	.. cpp:function:: unknown SetWeaponPrimaryClipCount( unknown )
+	.. cpp:function:: void EmitWeaponNpcSound_DontUpdateLastFiredTime( int volume, float time )
 
-	.. cpp:function:: unknown GetWeaponClassName( unknown )
+	.. cpp:function:: int GetDamageAmountForArmorType( int armor )
 
-	.. cpp:function:: unknown GetSkin( unknown )
+	.. cpp:function:: float GetMeleeAttackRange()
 
-	.. cpp:function:: unknown LookupSequence( unknown )
+	.. cpp:function:: float GetMeleeLungeTargetRange()
 
-	.. cpp:function:: unknown SetSkin( unknown )
+	.. cpp:function:: void SetMods( array<string> mods )
 
-	.. cpp:function:: unknown GetWeaponInfoFileKeyField( unknown )
+	.. cpp:function:: void EmitWeaponNpcSound( int volume, float duration )
 
-	.. cpp:function:: unknown Anim_GetStartForRefPoint( unknown )
+	.. cpp:function:: int GetWeaponDamageFlags()
 
-	.. cpp:function:: unknown GetCoreDuration( unknown )
+	.. cpp:function:: bool SmartAmmo_IsEnabled( unknown )
 
-	.. cpp:function:: unknown GetWeaponType( unknown )
+	.. cpp:function:: int SmartAmmo_GetNumTrackersOnEntity( entity target )
 
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( unknown )
+	.. cpp:function:: array<entity> SmartAmmo_GetTrackedEntities()
 
-	.. cpp:function:: unknown Anim_PlayWithRefPoint( unknown )
+	.. cpp:function:: bool SmartAmmo_IsVisibleTarget( entity trackedEnt )
 
-	.. cpp:function:: unknown GetMods( unknown )
+	.. cpp:function:: string GetWeaponClass()
 
-	.. cpp:function:: unknown Anim_NonScriptedPlay( unknown )
+	.. cpp:function:: void SetWeaponSkin( int skin )
 
-	.. cpp:function:: unknown GetWeaponDescription( unknown )
+	.. cpp:function:: entity FireWeaponGrenade( vector attackPos, vector throwVelocity, vector angularVelocity, float fuseTime, int contactDamageType, int explosionDamageType, bool isPredicted, bool isLagCompensated, bool bounce? )
 
-	.. cpp:function:: unknown IsWeaponOffhand( unknown )
+	.. cpp:function:: int GetScriptFlags0()
 
-	.. cpp:function:: unknown GetWeaponChargeFraction( unknown )
+	.. cpp:function:: bool ShouldPredictProjectiles()
 
-	.. cpp:function:: unknown GetWeaponChargeTime( unknown )
+	.. cpp:function:: float GetScriptTime0()
 
-	.. cpp:function:: unknown HasMod( unknown )
+	.. cpp:function:: void SetScriptTime0( float gameTime )
 
-	.. cpp:function:: unknown Anim_HasSequence( unknown )
+		``gameTime`` needs to be game time. The current game time can be retrieved with ``Time()``
 
-	.. cpp:function:: unknown SetPlaybackRate( unknown )
+	.. cpp:function:: bool IsReloading()
 
-	.. cpp:function:: unknown GetWeaponCurrentEnergyCost( unknown )
+	.. cpp:function:: void SetForcedADS()
 
-	.. cpp:function:: unknown Anim_SetStartTime( unknown )
+	.. cpp:function:: void EmitWeaponSound_1p3p(string sound1P, string sound3P)
 
-	.. cpp:function:: unknown LerpSkyScale( unknown )
+	.. cpp:function:: int GetChargeAnimIndex()
 
-	.. cpp:function:: unknown GetMeleeCanHitHumanSized( unknown )
+	.. cpp:function:: void PlayWeaponEffectNoCull(asset effect1P, asset effect3P, string tagName)
 
-	.. cpp:function:: unknown GetMeleeCanHitTitans( unknown )
+	.. cpp:function:: void RegenerateAmmoReset()
 
-	.. cpp:function:: unknown DoMeleeHitConfirmation( unknown )
+	.. cpp:function:: void SetChargeAnimIndex( int index )
 
-	.. cpp:function:: unknown EmitWeaponNpcSound_DontUpdateLastFiredTime( unknown )
+	.. cpp:function:: void SetWeaponPrimaryAmmoCount( int count )
 
-	.. cpp:function:: unknown GetDamageAmountForArmorType( unknown )
+	.. cpp:function:: void StopWeaponEffect(asset effect1P, asset effect3P)
 
-	.. cpp:function:: unknown GetMeleeAttackRange( unknown )
+	.. cpp:function:: void ClearForcedADS()
 
-	.. cpp:function:: unknown GetMeleeLungeTargetRange( unknown )
+	.. cpp:function:: int GetReloadMilestoneIndex()
 
-	.. cpp:function:: unknown SetMods( unknown )
+		Reload progress. Reloading continues from there.
 
-	.. cpp:function:: unknown EmitWeaponNpcSound( unknown )
+	.. cpp:function:: int GetAmmoPerShot()
 
-	.. cpp:function:: unknown GetWeaponDamageFlags( unknown )
+	.. cpp:function:: bool IsBurstFireInProgress()
 
-	.. cpp:function:: unknown SmartAmmo_IsEnabled( unknown )
+	.. cpp:function:: void PlayWeaponEffect(asset effect1P, asset effect3P, string tagName)
 
-	.. cpp:function:: unknown SmartAmmo_GetNumTrackersOnEntity( unknown )
+	.. cpp:function:: void StopWeaponSound(string sound)
 
-	.. cpp:function:: unknown SmartAmmo_GetTrackedEntities( unknown )
+	.. cpp:function:: float GetSustainedDischargeDuration()
 
-	.. cpp:function:: unknown SmartAmmo_IsVisibleTarget( unknown )
+	.. cpp:function:: void SetSustainedDischargeFractionForced(float frac)
 
-	.. cpp:function:: unknown GetWeaponClass( unknown )
+	.. cpp:function:: entity FireWeaponMissile(vector origin, vector dir, float missileSpeed, int contactDamageType, int explosionDamageType, bool doPopup, bool predict)
 
-	.. cpp:function:: unknown SetWeaponSkin( unknown )
+	.. cpp:function:: int GetBurstFireShotsPending()
 
-	.. cpp:function:: unknown FireWeaponGrenade( unknown )
+	.. cpp:function:: bool AllowUse()
 
-	.. cpp:function:: unknown GetScriptFlags0( unknown )
+	.. cpp:function:: void RemoveMod( string mod )
 
-	.. cpp:function:: unknown ShouldPredictProjectiles( unknown )
+	.. cpp:function:: unknown<unknown> SmartAmmo_GetTargets()
 
-	.. cpp:function:: unknown GetScriptTime0( unknown )
+	.. cpp:function:: void SmartAmmo_TrackEntity(entity hitEnt, LMG_SMART_AMMO_TRACKER_TIME)
 
-	.. cpp:function:: unknown SetScriptTime0( unknown )
+	.. cpp:function:: void EmitWeaponSound( string sound )
 
-	.. cpp:function:: unknown SetPoseParameter( unknown )
+	.. cpp:function:: float GetWeaponChargeLevel()
 
-	.. cpp:function:: unknown IsReloading( unknown )
+	.. cpp:function:: void SetWeaponBurstFireCount(int amount)
 
-	.. cpp:function:: unknown SetForcedADS( unknown )
+	.. cpp:function:: int GetCurrentAltFireIndex()
 
-	.. cpp:function:: unknown EmitWeaponSound_1p3p( unknown )
+	.. cpp:function:: void ForceRelease()
 
-	.. cpp:function:: unknown GetChargeAnimIndex( unknown )
+	.. cpp:function:: float SetWeaponChargeFraction()
 
-	.. cpp:function:: unknown PlayWeaponEffectNoCull( unknown )
+	.. cpp:function:: int GetProjectilesPerShot()
 
-	.. cpp:function:: unknown RegenerateAmmoReset( unknown )
+	.. cpp:function:: entity FireWeaponBolt(vector origin, vector dir, float projectileSpeed, int contactDamageType, int explosionDamageType, bool predict, int index)
 
-	.. cpp:function:: unknown SetChargeAnimIndex( unknown )
+	.. cpp:function:: bool IsWeaponInAds()
 
-	.. cpp:function:: unknown SetWeaponPrimaryAmmoCount( unknown )
+	.. cpp:function:: void ResetWeaponToDefaultEnergyCost()
 
-	.. cpp:function:: unknown StopWeaponEffect( unknown )
+	.. cpp:function:: void SetWeaponEnergyCost( int cost )
 
-	.. cpp:function:: unknown ClearForcedADS( unknown )
+	.. cpp:function::  entity FireWeaponBullet( vector origin, vector dir, int unknown_purpose, damageType )
 
-	.. cpp:function:: unknown GetReloadMilestoneIndex( unknown )
+	.. cpp:function:: bool IsWeaponAdsButtonPressed()
 
-	.. cpp:function:: unknown GetAmmoPerShot( unknown )
+	.. cpp:function:: float GetWeaponChargeLevelMax()
 
-	.. cpp:function:: unknown IsBurstFireInProgress( unknown )
+	.. cpp:function:: bool IsReadyToFire()
 
-	.. cpp:function:: unknown PlayWeaponEffect( unknown )
+	.. cpp:function:: void SetAttackKickRollScale(float scale)
 
-	.. cpp:function:: unknown StopWeaponSound( unknown )
+	.. cpp:function:: int GetShotCount()
 
-	.. cpp:function:: unknown GetSustainedDischargeDuration( unknown )
+	.. cpp:function:: void AddMod( string mod )
 
-	.. cpp:function:: unknown SetSustainedDischargeFractionForced( unknown )
+	.. cpp:function:: void FireWeaponBullet_Special(vector origin, vector direction, int numShots, int damageType, bool unknownPurpose1, bool unknownPurpose2, bool unknownPurpose3, bool unknownPurpose4, bool unknownPurpose5, bool activeShot, bool doTraceBrushOnly)
 
-	.. cpp:function:: unknown FireWeaponMissile( unknown )
+	.. cpp:function:: string GetWeaponSettingString( string setting )
 
-	.. cpp:function:: unknown GetBurstFireShotsPending( unknown )
+	.. cpp:function:: void SmartAmmo_UntrackEntity(entity target)
 
-	.. cpp:function:: unknown AllowUse( unknown )
+	.. cpp:function:: string GetSmartAmmoWeaponType()
 
-	.. cpp:function:: unknown RemoveMod( unknown )
+		Check if weaponType is valid: ``Assert( weaponType in VALID_WEAPON_TYPES )``
 
-	.. cpp:function:: unknown SmartAmmo_GetTargets( unknown )
+	.. cpp:function:: int GetWeaponBurstFireCount()
 
-	.. cpp:function:: unknown SmartAmmo_TrackEntity( unknown )
+	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose1, bool unknown_purpose2 )
 
-	.. cpp:function:: unknown EmitWeaponSound( unknown )
+	.. cpp:function:: vector SmartAmmo_GetFirePosition(entity target, int burstIndex)
 
-	.. cpp:function:: unknown GetWeaponChargeLevel( unknown )
+	.. cpp:function:: array<entity> SmartAmmo_GetStoredTargets()
 
-	.. cpp:function:: unknown SetWeaponBurstFireCount( unknown )
+	.. cpp:function:: void SmartAmmo_StoreTargets()
 
-	.. cpp:function:: unknown GetCurrentAltFireIndex( unknown )
+	.. cpp:function:: bool IsSustainedDischargeWeapon()
 
-	.. cpp:function:: unknown ForceRelease( unknown )
+	.. cpp:function:: int GetDamageSourceID()
 
-	.. cpp:function:: unknown SetWeaponChargeFraction( unknown )
+	.. cpp:function:: float GetGrenadeFuseTime()
 
-	.. cpp:function:: unknown GetProjectilesPerShot( unknown )
+		Note that fuse time of 0 means the grenade won't explode on its own, instead it depends on OnProjectileCollision() functions to be defined and explode there.
 
-	.. cpp:function:: unknown FireWeaponBolt( unknown )
+	.. cpp:function:: void SetWeaponPrimaryClipCountAbsolute(int clipsize)
 
-	.. cpp:function:: unknown IsWeaponInAds( unknown )
+	.. cpp:function:: entity GetWeaponUtilityEntity()
 
-	.. cpp:function:: unknown ResetWeaponToDefaultEnergyCost( unknown )
+	.. cpp:function:: bool IsForceRelease()
 
-	.. cpp:function:: unknown SetWeaponEnergyCost( unknown )
+	.. cpp:function:: bool IsWeaponRegenDraining()
 
-	.. cpp:function:: unknown FireWeaponBullet( unknown )
-
-	.. cpp:function:: unknown IsWeaponAdsButtonPressed( unknown )
-
-	.. cpp:function:: unknown GetWeaponChargeLevelMax( unknown )
-
-	.. cpp:function:: unknown IsReadyToFire( unknown )
-
-	.. cpp:function:: unknown SetAttackKickRollScale( unknown )
-
-	.. cpp:function:: unknown SetAttackKickScale( unknown )
-
-	.. cpp:function:: unknown GetShotCount( unknown )
-
-	.. cpp:function:: unknown AddMod( unknown )
-
-	.. cpp:function:: unknown FireWeaponBullet_Special( unknown )
-
-	.. cpp:function:: unknown GetWeaponSettingString( unknown )
-
-	.. cpp:function:: unknown GetAttachmentForward( unknown )
-
-	.. cpp:function:: unknown SmartAmmo_UntrackEntity( unknown )
-
-	.. cpp:function:: unknown GetSmartAmmoWeaponType( unknown )
-
-	.. cpp:function:: unknown GetWeaponBurstFireCount( unknown )
-
-	.. cpp:function:: unknown SmartAmmo_Clear( unknown )
-
-	.. cpp:function:: unknown SmartAmmo_GetFirePosition( unknown )
-
-	.. cpp:function:: unknown SmartAmmo_GetStoredTargets( unknown )
-
-	.. cpp:function:: unknown SmartAmmo_StoreTargets( unknown )
-
-	.. cpp:function:: unknown IsSustainedDischargeWeapon( unknown )
-
-	.. cpp:function:: unknown GetDamageSourceID( unknown )
-
-	.. cpp:function:: unknown GetGrenadeFuseTime( unknown )
-
-	.. cpp:function:: unknown SetWeaponPrimaryClipCountAbsolute( unknown )
-
-	.. cpp:function:: unknown GetWeaponUtilityEntity( unknown )
-
-	.. cpp:function:: unknown IsForceRelease( unknown )
-
-	.. cpp:function:: unknown IsWeaponRegenDraining( unknown )
-
-	.. cpp:function:: unknown SetWeaponPrimaryClipCountNoRegenReset( unknown )
+	.. cpp:function:: void SetWeaponPrimaryClipCountNoRegenReset(int clipsize)
 
 CWeaponX
 ^^^^^^^^
 
-.. cpp:class:: CWeaponX : extends CBaseEntity
+.. cpp:class:: CWeaponX : extends CBaseCombatWeapon
 
-	.. cpp:function:: unknown SetFullBodygroup( unknown )
+	.. cpp:function:: void SetWeaponUtilityEntity( entity ent )
 
-	.. cpp:function:: unknown BecomeRagdoll( unknown )
+	.. cpp:function:: void ForceDryfireEvent()
 
-	.. cpp:function:: unknown Dissolve( unknown )
+	.. cpp:function:: void PlayWeaponEffectOnOwner( asset effect, int bodypart )
 
-	.. cpp:function:: unknown Gib( unknown )
+	.. cpp:function:: void ForceReleaseFromServer()
 
-	.. cpp:function:: unknown SetContinueAnimatingAfterRagdoll( unknown )
+		Will eventually result in ``Grenade_OnWeaponToss_()`` or equivalent function
 
-	.. cpp:function:: unknown PlayRecordedAnimation( unknown )
-
-	.. cpp:function:: unknown SetRecordedAnimationPlaybackRate( unknown )
-
-	.. cpp:function:: unknown Anim_EnablePlanting( unknown )
-
-	.. cpp:function:: unknown LookupPoseParameterIndex( unknown )
-
-	.. cpp:function:: unknown SetWeaponUtilityEntity( unknown )
-
-	.. cpp:function:: unknown Anim_DisableUpdatePosition( unknown )
-
-	.. cpp:function:: unknown ForceDryfireEvent( unknown )
-
-	.. cpp:function:: unknown PlayWeaponEffectOnOwner( unknown )
-
-	.. cpp:function:: unknown ForceReleaseFromServer( unknown )
-
-	.. cpp:function:: unknown IsForceReleaseFromServer( unknown )
+	.. cpp:function:: bool IsForceReleaseFromServer()
 
 C_WeaponX
 ^^^^^^^^^
 
-.. cpp:class:: C_WeaponX : extends C_BaseEntity
+.. cpp:class:: C_WeaponX : extends C_BaseCombatWeapon
 
-	.. cpp:function:: unknown SetGroundEffectTable( unknown )
+	.. cpp:function:: void PlayWeaponEffectReturnViewEffectHandle( asset fpEffect, asset unknown_purpose, string tag )
 
-	.. cpp:function:: unknown GetAttachmentOrigin_ViewModelNoFOVAdjust( unknown )
+	.. cpp:function:: void SetViewmodelAmmoModelIndex( int index )
 
-	.. cpp:function:: unknown Anim_SetPaused( unknown )
-
-	.. cpp:function:: unknown SetCycle( unknown )
-
-	.. cpp:function:: unknown DoBodyGroupChangeScriptCallback( unknown )
-
-	.. cpp:function:: unknown PlayWeaponEffectReturnViewEffectHandle( unknown )
-
-	.. cpp:function:: unknown SetViewmodelAmmoModelIndex( unknown )
+		``index`` may be the number of rounds in the clip etc.
 
 CProjectile / C_Projectile
 --------------------------
@@ -798,187 +953,546 @@ Projectiles.
 Shared
 ^^^^^^
 
-.. cpp:class:: CProjectile / C_Projectile : extends CBaseEntity / C_BaseEntity
+.. cpp:class:: CProjectile / C_Projectile : extends CDynamicProp / C_DynamicProp
 
-	.. cpp:function:: unknown GetAttachmentOrigin( unknown )
+	.. cpp:function:: vector GetAttachmentOrigin()
 
-	.. cpp:function:: unknown LookupAttachment( unknown )
+	.. cpp:function:: int LookupAttachment( string attachment )
 
-	.. cpp:function:: unknown GetProjectileWeaponSettingBool( unknown )
+	.. cpp:function:: bool GetProjectileWeaponSettingBool( string setting )
 
-	.. cpp:function:: unknown GetProjectileWeaponSettingFloat( unknown )
+	.. cpp:function:: float GetProjectileWeaponSettingFloat( string setting )
 
-	.. cpp:function:: unknown FindBodyGroup( unknown )
+	.. cpp:function:: int GetProjectileWeaponSettingInt( string setting )
 
-	.. cpp:function:: unknown GetBodyGroupState( unknown )
+	.. cpp:function:: int FindBodyGroup( string group )
 
-	.. cpp:function:: unknown GetProjectileWeaponSettingInt( unknown )
+	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
 
-	.. cpp:function:: unknown GetBodyGroupModelCount( unknown )
+	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
 
-	.. cpp:function:: unknown SetBodygroup( unknown )
+	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
 
-	.. cpp:function:: unknown GetAttachmentAngles( unknown )
+	.. cpp:function:: vector GetAttachmentAngles()
 
-	.. cpp:function:: unknown Anim_GetAttachmentAtTime( unknown )
+	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
 
-	.. cpp:function:: unknown GetScriptedAnimEventCycleFrac( unknown )
+	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
 
-	.. cpp:function:: unknown GetSequenceDuration( unknown )
+	.. cpp:function:: float GetSequenceDuration( string anim )
 
-	.. cpp:function:: unknown Anim_IsActive( unknown )
+	.. cpp:function:: bool Anim_IsActive()
 
-	.. cpp:function:: unknown Anim_Play( unknown )
+	.. cpp:function:: void Anim_Play( string anim )
 
-	.. cpp:function:: unknown Anim_SetInitialTime( unknown )
+	.. cpp:function:: void Anim_SetInitialTime( float time )
 
-	.. cpp:function:: unknown Anim_Stop( unknown )
+	.. cpp:function:: void Anim_Stop()
 
-	.. cpp:function:: unknown Anim_GetStartForRefEntity_Old( unknown )
+	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
 
-	.. cpp:function:: unknown GetSkin( unknown )
+	.. cpp:function:: int GetSkin()
 
-	.. cpp:function:: unknown LookupSequence( unknown )
+	.. cpp:function:: int LookupSequence( string sequence )
 
-	.. cpp:function:: unknown SetSkin( unknown )
+	.. cpp:function:: void SetSkin( int skin )
 
-	.. cpp:function:: unknown Anim_GetStartForRefPoint( unknown )
+	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
 
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( unknown )
+	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
 
-	.. cpp:function:: unknown Anim_PlayWithRefPoint( unknown )
+	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
 
-	.. cpp:function:: unknown Anim_NonScriptedPlay( unknown )
+	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
 
-	.. cpp:function:: unknown ProjectileGetWeaponClassName( unknown )
+	.. cpp:function:: string ProjectileGetWeaponClassName()
 
-	.. cpp:function:: unknown Anim_HasSequence( unknown )
+	.. cpp:function:: bool Anim_HasSequence( string animation )
 
-	.. cpp:function:: unknown SetPlaybackRate( unknown )
+	.. cpp:function:: void SetPlaybackRate( float rate )
 
-	.. cpp:function:: unknown Anim_SetStartTime( unknown )
+	.. cpp:function:: void Anim_SetStartTime( float time )
 
-	.. cpp:function:: unknown LerpSkyScale( unknown )
+	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
 
-	.. cpp:function:: unknown SetImpactEffectTable( unknown )
+	.. cpp:function:: void SetImpactEffectTable( string fxTableHandle )
 
-	.. cpp:function:: unknown SetPoseParameter( unknown )
+	.. cpp:function:: void SetPoseParameter( int pose, float offset )
 
-	.. cpp:function:: unknown ProjectileGetMods( unknown )
+	.. cpp:function:: array<string> ProjectileGetMods()
 
-	.. cpp:function:: unknown SetProjectilTrailEffectIndex( unknown )
+	.. cpp:function:: void SetProjectilTrailEffectIndex( int index )
 
-	.. cpp:function:: unknown SetProjectileLifetime( unknown )
+	.. cpp:function:: void SetProjectileLifetime( float lifetime )
 
-	.. cpp:function:: unknown ProjectileGetWeaponInfoFileKeyField( unknown )
+	.. cpp:function:: string ProjectileGetWeaponInfoFileKeyField( string key )
 
-	.. cpp:function:: unknown SetReducedEffects( unknown )
+	.. cpp:function:: void SetReducedEffects()
 
-	.. cpp:function:: unknown GetAttachmentForward( unknown )
+	.. cpp:function:: vector GetAttachmentForward( int attachID )
 
-	.. cpp:function:: unknown GetProjectileWeaponSettingAsset( unknown )
+	.. cpp:function:: asset GetProjectileWeaponSettingAsset( string setting )
 
-	.. cpp:function:: unknown SetVortexRefired( unknown )
+	.. cpp:function:: void SetVortexRefired( bool refired )
 
-	.. cpp:function:: unknown GetProjectileCreationTime( unknown )
+		Tells the code that the projectile was refired from the vortex so that it uses "projectile_vortex_vscript"
 
-	.. cpp:function:: unknown ProjectileGetWeaponInfoFileKeyFieldAsset( unknown )
+	.. cpp:function:: float GetProjectileCreationTime()
+
+	.. cpp:function:: asset ProjectileGetWeaponInfoFileKeyFieldAsset( string key )
 
 CProjectile
 ^^^^^^^^^^^
 
-.. cpp:class:: CProjectile : extends CBaseEntity
+.. cpp:class:: CProjectile : extends CDynamicProp
 
-	.. cpp:function:: unknown SetFullBodygroup( unknown )
+	.. cpp:function:: void Anim_EnablePlanting()
 
-	.. cpp:function:: unknown BecomeRagdoll( unknown )
+	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
 
-	.. cpp:function:: unknown Dissolve( unknown )
+	.. cpp:function:: int ProjectileGetDamageSourceID()
 
-	.. cpp:function:: unknown Gib( unknown )
+	.. cpp:function:: void ProjectileSetDamageSourceID( int id )
 
-	.. cpp:function:: unknown SetContinueAnimatingAfterRagdoll( unknown )
+	.. cpp:function:: void SetWeaponClassName( string name )
 
-	.. cpp:function:: unknown PlayRecordedAnimation( unknown )
-
-	.. cpp:function:: unknown SetRecordedAnimationPlaybackRate( unknown )
-
-	.. cpp:function:: unknown Anim_EnablePlanting( unknown )
-
-	.. cpp:function:: unknown LookupPoseParameterIndex( unknown )
-
-	.. cpp:function:: unknown ProjectileGetDamageSourceID( unknown )
-
-	.. cpp:function:: unknown Anim_DisableUpdatePosition( unknown )
-
-	.. cpp:function:: unknown ProjectileSetDamageSourceID( unknown )
-
-	.. cpp:function:: unknown SetWeaponClassName( unknown )
-
-	.. cpp:function:: unknown SetProjectileImpactDamageOverride( unknown )
+	.. cpp:function:: void SetProjectileImpactDamageOverride( int flag )
 
 C_Projectile
 ^^^^^^^^^^^^
 
 .. cpp:class:: C_Projectile : extends C_BaseEntity
 
-	.. cpp:function:: unknown SetGroundEffectTable( unknown )
+	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
 
-	.. cpp:function:: unknown GetAttachmentOrigin_ViewModelNoFOVAdjust( unknown )
+	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
 
-	.. cpp:function:: unknown Anim_SetPaused( unknown )
+	.. cpp:function:: void Anim_SetPaused( bool pause )
 
-	.. cpp:function:: unknown SetCycle( unknown )
+	.. cpp:function:: void SetCycle( float cycle )
 
-	.. cpp:function:: unknown DoBodyGroupChangeScriptCallback( unknown )
+	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
 
 CBaseGrenade / C_BaseGrenade
 ----------------------------
 
-.. note::
-
-	Extends CProjectile. This means methods from CProjectile / C_Projectile are available as well.
-
-Grenades.
+Grenade entities in worldspace. Grenades that are equipped ("cooked") by players are instances from the CWeaponX class.
 
 Shared
 ^^^^^^
 
 .. cpp:class:: CBaseGrenade / C_BaseGrenade : extends CProjectile / C_Projectile
 
-	.. cpp:function:: unknown GetDamageRadius( unknown )
+	.. cpp:function:: float GetDamageRadius()
 
-	.. cpp:function:: unknown GetExplosionRadius( unknown )
+	.. cpp:function:: float GetExplosionRadius()
 
-	.. cpp:function:: unknown GrenadeExplode( unknown )
+	.. cpp:function:: void GrenadeExplode( vector unknown_purpose )
 
-	.. cpp:function:: unknown GetThrower( unknown )
+	.. cpp:function:: entity GetThrower()
 
-	.. cpp:function:: unknown GrenadeHasIgnited( unknown )
+	.. cpp:function:: bool GrenadeHasIgnited()
 
-	.. cpp:function:: unknown GrenadeIgnite( unknown )
+	.. cpp:function:: void GrenadeIgnite()
 
-	.. cpp:function:: unknown SetDoesExplode( unknown )
+	.. cpp:function:: void SetDoesExplode( bool explodes )
 
-	.. cpp:function:: unknown InitMagnetic( unknown )
+	.. cpp:function:: void InitMagnetic( float force, string attractKey )
 
-	.. cpp:function:: unknown ExplodeForCollisionCallback( unknown )
+	.. cpp:function:: void ExplodeForCollisionCallback( vector unknown_purpose )
 
-	.. cpp:function:: unknown MarkAsAttached( unknown )
+	.. cpp:function:: void MarkAsAttached()
 
 CBaseGrenade
 ^^^^^^^^^^^^
 
 .. cpp:class:: CBaseGrenade : extends CProjectile
 
-	.. cpp:function:: unknown SetGrenadeTimer( unknown )
+	.. cpp:function:: void SetGrenadeTimer( float fuseTime )
 
-	.. cpp:function:: unknown SetGrenadeIgnitionDuration( unknown )
+	.. cpp:function:: void SetGrenadeIgnitionDuration( float fuseTime )
 
 C_BaseGrenade
 ^^^^^^^^^^^^^
 
 .. cpp:class:: C_BaseGrenade : extends C_Projectile
+
+CPlayer / C_Player
+------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CPlayer / C_Player : extends CBaseCombatCharacter / C_BaseCombatCharacter
+
+	.. cpp:function:: int GetGen()
+
+	.. cpp:function:: entity GetFirstPersonProxy()
+
+	.. cpp:function:: string GetPlayerClass()
+
+	.. cpp:function:: void Lunge_ClearTarget()
+
+	.. cpp:function:: bool Lunge_IsActive()
+
+	.. cpp:function:: bool GetForcedDialogueOnly()
+
+	.. cpp:function:: float GetLastPingTime()
+
+	.. cpp:function:: int GetNumPingsAvailable()
+
+	.. cpp:function:: int GetPingGroupAccumulator()
+
+	.. cpp:function:: float GetPingGroupStartTime()
+
+	.. cpp:function:: void SetLastPingTime( float time) 
+
+	.. cpp:function:: void SetNumPingsAvailable( int num )
+
+	.. cpp:function:: void SetNumPingsUsed( int num )
+
+	.. cpp:function:: void SetPingGroupAccumulator( int acc )
+
+	.. cpp:function:: void SetPingGroupStartTime( float gametime )
+
+	.. cpp:function:: string GetPlayerName()
+
+	.. cpp:function:: int GetPlayerGameStat( int PGS )
+
+		returns the score of the player in the provided category. some categories are: PGS_KILLS, PGS_DEATHS, PGS_SCORE etc.
+
+	.. cpp:function:: entity GetPetTitan()
+
+	.. cpp:function:: bool GetTitanDisembarkEnabled()
+
+	.. cpp:function:: bool GetTitanEmbarkEnabled()
+
+	.. cpp:function:: bool IsBot()
+
+	.. cpp:function:: void SetTitanDisembarkEnabled( bool enabled )
+
+	.. cpp:function:: void SetTitanEmbarkEnabled( bool enabled )
+
+	.. cpp:function:: string GetPlayerSettings()
+
+	.. cpp:function:: int GetActiveBurnCardIndex()
+
+		Selected burn card
+
+	.. cpp:function:: int Code_GetActiveBurnCardIndex()
+
+		Use ``GetActiveBurnCardIndex`` instead
+
+	.. cpp:function:: string GetPlayerSettingsField( string field )
+
+	.. cpp:function:: int GetCinematicEventFlags()
+
+	.. cpp:function:: entity GetObserverTarget()
+
+	.. cpp:function:: vector GetViewRight()
+
+	.. cpp:function:: vector GetViewVector()
+
+	.. cpp:function:: vector GetViewForward()
+
+	.. cpp:function:: vector GetViewUp()
+
+	.. cpp:function:: int GetPersistentVarAsInt( string key )
+
+	.. cpp:function:: entity GetViewModelEntity()
+
+	.. cpp:function:: int GetOutOfBoundsDeadTime()
+
+	.. cpp:function:: int GetLevel()
+
+	.. cpp:function:: entity GetTitanSoulBeingRodeoed()
+
+	.. cpp:function:: int GetXP()
+
+	.. cpp:function:: vector CameraAngles()
+
+	.. cpp:function:: float GetObjectiveEndTime()
+
+	.. cpp:function:: entity GetObjectiveEntity()
+
+	.. cpp:function:: int GetObjectiveIndex()
+
+	.. cpp:function:: enitity GetPredictedFirstPersonProxy()
+
+	.. cpp:function:: int GetPetTitanMode()
+
+	.. cpp:function:: bool IsWallHanging()
+
+	.. cpp:function:: float GetNextTitanRespawnAvailable()
+
+	.. cpp:function:: var GetPersistentVar( string key )
+
+	.. cpp:function:: bool HasBadReputation()
+
+	.. cpp:function:: int GetObserverMode()
+
+	.. cpp:function:: float GetPlayerModHealth()
+
+	.. cpp:function:: bool IsInputCommandHeld( int flag )
+
+	.. cpp:function:: int GetPlayerNetInt( string state )
+
+	.. cpp:function:: float GetPlayerNetFloat( string state )
+
+	.. cpp:function:: entity GetHardpointEntity()
+
+	.. cpp:function:: bool GetPlayerNetBool( string key )
+
+	.. cpp:function:: bool IsCrouched()
+
+	.. cpp:function:: void IsTraversing()
+
+	.. cpp:function:: void IsWallRunning()
+
+	.. cpp:function:: vector Lunge_GetStartPositionOffset()
+
+	.. cpp:function:: void Lunge_SetTargetEntity( entity target, bool unknown_purpose )
+
+	.. cpp:function:: int PlayerMelee_GetState()
+
+	.. cpp:function:: bool PlayerMelee_IsAttackActive()
+
+	.. cpp:function:: void PlayerMelee_SetState( int state )
+
+	.. cpp:function:: void Lunge_EnableFlying()
+
+	.. cpp:function:: vector Lunge_GetEndPositionOffset()
+
+	.. cpp:function:: bool Lunge_IsGroundExecute()
+
+	.. cpp:function:: bool Lunge_IsLungingToEntity()
+
+	.. cpp:function:: void Lunge_LockPitch( bool lock )
+
+	.. cpp:function:: void Lunge_SetEndPositionOffset( vector offset )
+
+	.. cpp:function:: void Lunge_SetTargetPosition( vector pos )
+
+	.. cpp:function:: void PlayerMelee_EndAttack()
+
+	.. cpp:function:: entity PlayerMelee_GetAttackHitEntity()
+
+	.. cpp:function:: void PlayerMelee_SetAttackHitEntity( entity ent )
+
+	.. cpp:function:: void PlayerMelee_SetAttackRecoveryShouldBeQuick( bool beQuick )
+
+	.. cpp:function:: void PlayerMelee_StartAttack( int attackState )
+
+	.. cpp:function:: void SetSelectedOffhandToMelee()
+
+	.. cpp:function:: void Weapon_StartCustomActivity( string animation, bool unknown_purpose )
+
+	.. cpp:function:: float GetPlayerNetTime( string key )
+
+	.. cpp:function:: vector CameraPosition()
+
+	.. cpp:function:: entity GetPlayerNetEnt( string key )
+
+	.. cpp:function:: bool IsStanding()
+
+	.. cpp:function:: bool HasPassive( int passive )
+
+	.. cpp:function:: void Lunge_SetSmoothTime( float time )
+
+	.. cpp:function:: float SmartAmmo_GetHighestLockOnMeFraction()
+
+	.. cpp:function:: array<entity> SmartAmmo_GetHighestLocksOnMeEntities()
+
+	.. cpp:function:: float SmartAmmo_GetPreviousHighestLockOnMeFraction()
+
+	.. cpp:function:: void Grapple( vector direction )
+
+	.. cpp:function:: bool MayGrapple()
+
+	.. cpp:function:: int GetSuitGrapplePower()
+
+	.. cpp:function:: bool IsZiplining()
+
+	.. cpp:function:: array<string> GetPlayerSettingsMods()
+
+	.. cpp:function:: void ClearMeleeDisabled()
+
+	.. cpp:function:: void SetMeleeDisabled()
+
+	.. cpp:function:: void RumbleEffect( int x, int y, int z )
+
+	.. cpp:function:: float GetInputAxisForward()
+
+		Y Axis
+
+	.. cpp:function:: float GetInputAxisRight()
+
+		X Axis
+
+	.. cpp:function:: int GetDodgePower()
+
+	.. cpp:function:: void HolsterWeapon()
+
+	.. cpp:function:: void DeployWeapon()
+
+		May not work with ``DeployAndEnableWeapons()`` and ``HolsterAndDisableWeapons()``
+
+	.. cpp:function:: float GetZoomFrac()
+
+	.. cpp:function:: entity GetRemoteTurret()
+
+
+CPlayer
+^^^^^^^
+
+.. cpp:class:: CPlayer : extends CBaseCombatCharacter
+
+	.. cpp:function:: void CockpitStartDisembark()
+
+	.. cpp:function:: void NotifyDidDamage( entity damagedEnt, int hitbox, vector damagePosition, int customDamageType, float damage, int damageFlags, int hitGroup, enitity weapon, float distanceFromAttackOrigin )
+
+	.. cpp:function:: void Server_SetDodgePower( float dodgePower )
+
+	.. cpp:function:: void SetDodgePowerDelayScale( float delay )
+
+	.. cpp:function:: void SetPowerRegenRateScale( float scale )
+
+	.. cpp:function:: void SetPersistentVar( string key, var val )
+
+	.. cpp:function:: void ForceStand()
+
+	.. cpp:function:: void SetPlayerNetBool( string key, bool val )
+
+	.. cpp:function:: void UnforceStand()
+
+	.. cpp:function:: void Anim_StopGesture( int gesture )
+
+	.. cpp:function:: void PlayerCone_Disable()
+
+	.. cpp:function:: void PlayerCone_FromAnim()
+
+	.. cpp:function:: void PlayerCone_SetLerpTime( float time )
+
+	.. cpp:function:: void PlayerCone_SetMaxPitch( int maxPitch )
+
+	.. cpp:function:: void PlayerCone_SetMaxYaw( int maxYaw )
+
+	.. cpp:function:: void PlayerCone_SetMinPitch( int min )
+
+	.. cpp:function:: void PlayerCone_SetMinYaw( int min )
+
+	.. cpp:function:: entity CreateAnimatedPlayerDecoy( string decoyType )
+
+		Decoy Types: ``pt_mp_execution_attacker_hologram_01``, ``pt_mp_execution_attacker_hologram_02``, ``pt_mp_execution_attacker_hologram_03``
+
+	.. cpp:function:: void StopObserverMode()
+
+	.. cpp:function:: void CockpitStartEject()
+
+	.. cpp:function:: void FreezeControlsOnServer()
+
+	.. cpp:function:: void UnfreezeControlsOnServer()
+
+	.. cpp:function:: void CockpitStartBoot()
+
+	.. cpp:function:: void SetStaggering()
+
+	.. cpp:function:: void ForceCrouch()
+
+	.. cpp:function:: void UnforceCrouch()
+
+	.. cpp:function:: bool IsNoclipping()
+
+	.. cpp:function:: void SetCinematicEventFlags( int flag )
+
+	.. cpp:function:: void SetSyncedEntity( entity synced )
+
+	.. cpp:function:: void SnapEyeAngles( vector angles )
+
+	.. cpp:function:: void SnapFeetToEyes()
+
+	.. cpp:function:: void TouchGround()
+
+		Allows the player to double jump again.
+
+	.. cpp:function:: void ViewOffsetEntity_Clear()
+
+	.. cpp:function:: entity CreatePlayerDecoy( float stickPercentToRun )
+
+	.. cpp:function:: void SetPlayerSettingsWithMods( string settings, array<string> newMods )
+
+	.. cpp:function:: void Server_TurnOffhandWeaponsDisabledOff()
+
+	.. cpp:function:: void Server_TurnOffhandWeaponsDisabledOn()
+
+	.. cpp:function:: void SetPlayerNetInt( string key, int val )
+
+	.. cpp:function:: void Anim_PlayGesture( string anim3p, float unknown_purpose, float unknown_purpose1, float unknown_purpose2 )
+
+	.. cpp:function:: void Server_TurnDodgeDisabledOff()
+
+	.. cpp:function:: void Server_TurnDodgeDisabledOn()
+
+	.. cpp:function:: void SetGroundFrictionScale( int scale )
+
+	.. cpp:function:: void PlayerCone_SetSpecific( vector viewAngles )
+
+	.. cpp:function:: void SetSuitGrapplePower( float power )
+
+	.. cpp:function:: void GiveExtraWeaponMod( string mod )
+
+C_Player
+^^^^^^^^
+
+.. cpp:class:: C_Player : extends C_BaseCombatCharacter
+
+	.. cpp:function:: void ClientCommand( string command )
+
+	.. cpp:function:: entity GetCockpit()
+
+	.. cpp:function:: string GetBodyType()
+
+	.. cpp:function:: float GetAdsFraction()
+
+	.. cpp:function:: bool IsInThirdPersonReplay()
+
+	.. cpp:function:: float GetHotDropImpactTime( entity titan = this.titan, string animation = HOTDROP_TURBO_ANIM )
+
+		If called without paramets returns time for the player's titan drop.
+
+	.. cpp:function:: string GetPlayerNameWithClanTag()
+
+	.. cpp:function:: bool HasMic()
+
+	.. cpp:function:: bool InPartyChat()
+
+	.. cpp:function:: bool IsMuted()
+
+	.. cpp:function:: bool IsPartyLeader()
+
+	.. cpp:function:: bool IsTalking()
+
+	.. cpp:function:: void CockpitJolt( vector joltDir, float severity )
+
+	.. cpp:function:: void SetScriptMenuOff()
+
+	.. cpp:function:: void SetScriptMenuOn()
+
+	.. cpp:function:: EntityScreenSpaceBounds GetEntScreenSpaceBounds( entity ent, int padding )
+
+	.. cpp:function:: void HideCrosshairNames()
+
+	.. cpp:function:: void UnhideCrosshairNames()
+
+	.. cpp:function:: void FreezeControlsOnClient()
+
+	.. cpp:function:: void Rodeo_StartCameraSmoothing( float factor )
+
+	.. cpp:function:: void Rodeo_StopCameraSmoothing( float factor )
+
+	.. cpp:function:: void StartArcCannon()
+
+	.. cpp:function:: void StopArcCannon()
 
 CTitanSoul / C_TitanSoul
 ------------------------
@@ -988,62 +1502,64 @@ Shared
 
 .. cpp:class:: CTitanSoul / C_TitanSoul : extends CBaseEntity / C_BaseEntity
 
-	.. cpp:function:: unknown GetTitan( unknown )
+	.. cpp:function:: entity GetTitan()
 
-	.. cpp:function:: unknown HasValidTitan( unknown )
+	.. cpp:function:: bool HasValidTitan()
 
-	.. cpp:function:: unknown IsDoomed( unknown )
+	.. cpp:function:: bool IsDoomed()
 
-	.. cpp:function:: unknown GetTitanSoulNetFloat( unknown )
+	.. cpp:function:: float GetTitanSoulNetFloat( string key )
 
-	.. cpp:function:: unknown GetInvalidHealthBarEnt( unknown )
+	.. cpp:function:: entity GetInvalidHealthBarEnt()
 
-	.. cpp:function:: unknown GetTitanSoulNetInt( unknown )
+		Returns an instance of CNPC_Titan
 
-	.. cpp:function:: unknown GetLastRodeoHitTime( unknown )
+	.. cpp:function:: int GetTitanSoulNetInt( string key )
 
-	.. cpp:function:: unknown IsEjecting( unknown )
+	.. cpp:function:: float GetLastRodeoHitTime()
 
-	.. cpp:function:: unknown GetStance( unknown )
+	.. cpp:function:: bool IsEjecting()
 
-	.. cpp:function:: unknown GetPlayerSettingsNum( unknown )
+	.. cpp:function:: int GetStance()
 
-	.. cpp:function:: unknown GetCoreChargeExpireTime( unknown )
+	.. cpp:function:: int GetPlayerSettingsNum()
 
-	.. cpp:function:: unknown GetCoreChargeStartTime( unknown )
+	.. cpp:function:: float GetCoreChargeExpireTime()
 
-	.. cpp:function:: unknown GetNextCoreChargeAvailable( unknown )
+	.. cpp:function:: float GetCoreChargeStartTime()
+
+	.. cpp:function:: float GetNextCoreChargeAvailable()
 
 CTitanSoul
 ^^^^^^^^^^
 
 .. cpp:class:: CTitanSoul : extends CBaseEntity
 
-	.. cpp:function:: unknown SetEjecting( unknown )
+	.. cpp:function:: void SetEjecting( bool ejecting )
 
-	.. cpp:function:: unknown SetPlayerSettingsNum( unknown )
+	.. cpp:function:: void SetPlayerSettingsNum( int enum )
 
-	.. cpp:function:: unknown SetStance( unknown )
+	.. cpp:function:: void SetStance( int stance )
 
-	.. cpp:function:: unknown SoulDestroy( unknown )
+	.. cpp:function:: void SoulDestroy()
 
-	.. cpp:function:: unknown SetCoreChargeExpireTime( unknown )
+	.. cpp:function:: void SetCoreChargeExpireTime( float gametime )
 
-	.. cpp:function:: unknown SetTitanSoulNetFloat( unknown )
+	.. cpp:function:: void SetTitanSoulNetFloat( string key, float val )
 
-	.. cpp:function:: unknown SetTitanSoulNetFloatOverTime( unknown )
+	.. cpp:function:: void SetTitanSoulNetFloatOverTime( string key, float unknown_purpose, float val )
 
-	.. cpp:function:: unknown GetCoreUseDuration( unknown )
+	.. cpp:function:: float GetCoreUseDuration()
 
-	.. cpp:function:: unknown SetTitanSoulNetInt( unknown )
+	.. cpp:function:: void SetTitanSoulNetInt( string key, int val )
 
-	.. cpp:function:: unknown SetLastRodeoHitTime( unknown )
+	.. cpp:function:: void SetLastRodeoHitTime( float gametime )
 
-	.. cpp:function:: unknown SetCoreChargeStartTime( unknown )
+	.. cpp:function:: void SetCoreChargeStartTime( float gametime )
 
-	.. cpp:function:: unknown SetCoreUseDuration( unknown )
+	.. cpp:function:: void SetCoreUseDuration( float duration )
 
-	.. cpp:function:: unknown SetNextCoreChargeAvailable( unknown )
+	.. cpp:function:: void SetNextCoreChargeAvailable( float time )
 
 C_TitanSoul
 ^^^^^^^^^^^
@@ -1058,209 +1574,223 @@ Shared
 
 .. cpp:class:: CBaseCombatCharacter / C_BaseCombatCharacter : extends CBaseEntity / C_BaseEntity
 
-	.. cpp:function:: unknown GetAttachmentOrigin( unknown )
+	.. cpp:function:: vector GetAttachmentOrigin()
 
-	.. cpp:function:: unknown LookupAttachment( unknown )
+	.. cpp:function:: int LookupAttachment( string attachment )
 
-	.. cpp:function:: unknown GetTitanSoul( unknown )
+	.. cpp:function:: entity GetTitanSoul()
 
-	.. cpp:function:: unknown FindBodyGroup( unknown )
+	.. cpp:function:: int FindBodyGroup( string group )
 
-	.. cpp:function:: unknown GetBodyGroupState( unknown )
+	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
 
-	.. cpp:function:: unknown GetBodyGroupModelCount( unknown )
+	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
 
-	.. cpp:function:: unknown SetBodygroup( unknown )
+	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
 
-	.. cpp:function:: unknown GetAttachmentAngles( unknown )
+	.. cpp:function:: vector GetAttachmentAngles()
 
-	.. cpp:function:: unknown Anim_GetAttachmentAtTime( unknown )
+	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
 
-	.. cpp:function:: unknown GetScriptedAnimEventCycleFrac( unknown )
+	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
 
-	.. cpp:function:: unknown GetSequenceDuration( unknown )
+	.. cpp:function:: float GetSequenceDuration( string anim )
 
-	.. cpp:function:: unknown Anim_IsActive( unknown )
+	.. cpp:function:: bool Anim_IsActive()
 
-	.. cpp:function:: unknown Anim_Play( unknown )
+	.. cpp:function:: void Anim_Play( string anim )
 
-	.. cpp:function:: unknown Anim_SetInitialTime( unknown )
+	.. cpp:function:: void Anim_SetInitialTime( float time )
 
-	.. cpp:function:: unknown Anim_Stop( unknown )
+	.. cpp:function:: void Anim_Stop()
 
-	.. cpp:function:: unknown ContextAction_ClearBusy( unknown )
+	.. cpp:function:: void ContextAction_ClearBusy()
 
-	.. cpp:function:: unknown ContextAction_IsActive( unknown )
+	.. cpp:function:: bool ContextAction_IsActive()
 
-	.. cpp:function:: unknown ContextAction_IsBusy( unknown )
+	.. cpp:function:: bool ContextAction_IsBusy()
 
-	.. cpp:function:: unknown ContextAction_SetBusy( unknown )
+	.. cpp:function:: void ContextAction_SetBusy()
 
-	.. cpp:function:: unknown Anim_GetStartForRefEntity_Old( unknown )
+	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
 
-	.. cpp:function:: unknown GetMainWeapons( unknown )
+	.. cpp:function:: array<entity> GetMainWeapons()
 
-	.. cpp:function:: unknown GetOffhandWeapon( unknown )
+	.. cpp:function:: entity GetOffhandWeapon( int slot )
 
-	.. cpp:function:: unknown GetActiveWeapon( unknown )
+	.. cpp:function:: enitity GetActiveWeapon()
 
-	.. cpp:function:: unknown GetLatestPrimaryWeapon( unknown )
+	.. cpp:function:: entity GetLatestPrimaryWeapon()
 
-	.. cpp:function:: unknown GetSkin( unknown )
+	.. cpp:function:: int GetSkin()
 
-	.. cpp:function:: unknown LookupSequence( unknown )
+	.. cpp:function:: int LookupSequence( string sequence )
 
-	.. cpp:function:: unknown SetSkin( unknown )
+	.. cpp:function:: void SetSkin( int skin )
 
-	.. cpp:function:: unknown GetAntiTitanWeapon( unknown )
+	.. cpp:function:: entity GetAntiTitanWeapon()
 
-	.. cpp:function:: unknown Anim_GetStartForRefPoint( unknown )
+	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
 
-	.. cpp:function:: unknown GetPlayerOrNPCViewVector( unknown )
+	.. cpp:function:: vector GetPlayerOrNPCViewVector()
 
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( unknown )
+	.. cpp:function:: vector Anim_GetStartForRefPoint_Old( animation, origin, angles )
 
-	.. cpp:function:: unknown Anim_PlayWithRefPoint( unknown )
+	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
 
-	.. cpp:function:: unknown Anim_NonScriptedPlay( unknown )
+	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
 
-	.. cpp:function:: unknown IsWeaponDisabled( unknown )
+	.. cpp:function:: bool IsWeaponDisabled()
 
-	.. cpp:function:: unknown GetActiveWeaponPrimaryAmmoLoaded( unknown )
+	.. cpp:function:: int GetActiveWeaponPrimaryAmmoLoaded()
 
-	.. cpp:function:: unknown ContextAction_IsMeleeExecution( unknown )
+	.. cpp:function:: bool ContextAction_IsMeleeExecution()
 
-	.. cpp:function:: unknown Anim_HasSequence( unknown )
+	.. cpp:function:: bool Anim_HasSequence( string animation )
 
-	.. cpp:function:: unknown SetPlaybackRate( unknown )
+	.. cpp:function:: void SetPlaybackRate( float rate )
 
-	.. cpp:function:: unknown GetWeaponAmmoStockpile( unknown )
+	.. cpp:function:: int GetWeaponAmmoStockpile( entity weapon )
 
-	.. cpp:function:: unknown Anim_SetStartTime( unknown )
+	.. cpp:function:: void Anim_SetStartTime( float time )
 
-	.. cpp:function:: unknown LerpSkyScale( unknown )
+	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
 
-	.. cpp:function:: unknown GetMeleeWeapon( unknown )
+	.. cpp:function:: entity GetMeleeWeapon()
 
-	.. cpp:function:: unknown ContextAction_IsMeleeExecutionTarget( unknown )
+	.. cpp:function:: bool ContextAction_IsMeleeExecutionTarget()
 
-	.. cpp:function:: unknown GetFirstRodeoRider( unknown )
+	.. cpp:function:: enitity GetFirstRodeoRider()
 
-	.. cpp:function:: unknown GetNumRodeoSlots( unknown )
+		Returns the first rodeo rider found or null if there are none.
 
-	.. cpp:function:: unknown GetRodeoRider( unknown )
+	.. cpp:function:: int GetNumRodeoSlots()
 
-	.. cpp:function:: unknown PhaseShiftBegin( unknown )
+		Returns number of rodeo slots available on this entity.
 
-	.. cpp:function:: unknown PhaseShiftCancel( unknown )
+	.. cpp:function:: entity GetRodeoRider()
 
-	.. cpp:function:: unknown SetPoseParameter( unknown )
+		Returns rodeo rider (if there is one) at the given slot.
 
-	.. cpp:function:: unknown CanUseSharedEnergy( unknown )
+	.. cpp:function:: void PhaseShiftBegin( float warmUpTime, float duration )
 
-	.. cpp:function:: unknown OffsetPositionFromView( unknown )
+	.. cpp:function:: void PhaseShiftCancel()
 
-	.. cpp:function:: unknown AddSharedEnergy( unknown )
+	.. cpp:function:: void SetPoseParameter( int pose, float offset )
 
-	.. cpp:function:: unknown GetSharedEnergyTotal( unknown )
+	.. cpp:function:: vector OffsetPositionFromView( vector startPos, vector offset )
 
-	.. cpp:function:: unknown GetSharedEnergyCount( unknown )
+	.. cpp:function:: int GetWeaponAmmoLoaded( entity weapon )
 
-	.. cpp:function:: unknown GetWeaponAmmoLoaded( unknown )
+	.. cpp:function:: int GetWeaponAmmoMaxLoaded( entity weapon )
 
-	.. cpp:function:: unknown GetWeaponAmmoMaxLoaded( unknown )
+	.. cpp:function:: float GetAttackSpreadAngle()
 
-	.. cpp:function:: unknown SetSharedEnergyRegenDelay( unknown )
+	.. cpp:function:: array<entity> GetOffhandWeapons()
 
-	.. cpp:function:: unknown GetAttackSpreadAngle( unknown )
+	.. cpp:function:: vector GetAttachmentForward( int attachID )
 
-	.. cpp:function:: unknown GetOffhandWeapons( unknown )
+	.. cpp:function:: bool ContextAction_IsLeeching()
 
-	.. cpp:function:: unknown GetAttachmentForward( unknown )
+	.. cpp:function:: void DisablePhaseShiftFlags()
 
-	.. cpp:function:: unknown ContextAction_IsLeeching( unknown )
+	.. cpp:function:: void EnablePhaseShiftFlags()
 
-	.. cpp:function:: unknown DisablePhaseShiftFlags( unknown )
+	.. cpp:function:: entity GetEntityAtPhaseShiftExitPosition()
 
-	.. cpp:function:: unknown EnablePhaseShiftFlags( unknown )
+	.. cpp:function:: float PhaseShiftTimeRemaining()
 
-	.. cpp:function:: unknown GetEntityAtPhaseShiftExitPosition( unknown )
+	.. cpp:function:: bool CanUseSharedEnergy( int curCost )
 
-	.. cpp:function:: unknown PhaseShiftTimeRemaining( unknown )
+	.. cpp:function:: bool CanUseSharedEnergy( int curCost )
 
-	.. cpp:function:: unknown TakeSharedEnergy( unknown )
+	.. cpp:function:: void AddSharedEnergy( int amount )
+
+	.. cpp:function:: int GetSharedEnergyTotal()
+
+	.. cpp:function:: int GetSharedEnergyCount()
+
+	.. cpp:function:: void SetSharedEnergyRegenDelay( float delay )
+
+	.. cpp:function:: void TakeSharedEnergy( int amount )
 
 CBaseCombatCharacter
 ^^^^^^^^^^^^^^^^^^^^
 
 .. cpp:class:: CBaseCombatCharacter : extends CBaseEntity
 
-	.. cpp:function:: unknown SetFullBodygroup( unknown )
+	.. cpp:function:: void SetFullBodygroup( int group )
 
-	.. cpp:function:: unknown BecomeRagdoll( unknown )
+	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
 
-	.. cpp:function:: unknown Dissolve( unknown )
+	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
 
-	.. cpp:function:: unknown Gib( unknown )
+	.. cpp:function:: void Gib( vector forceVec )
 
-	.. cpp:function:: unknown GetSettingsHeadshotFX( unknown )
+	.. cpp:function:: void GetSettingsHeadshotFX()
 
-	.. cpp:function:: unknown GiveOffhandWeapon( unknown )
+		Looks for "headshotFX" in an AI settings file or a player set file
 
-	.. cpp:function:: unknown GiveWeapon( unknown )
+	.. cpp:function:: void GiveOffhandWeapon( string ordnanceName, int slot, array<string> mods )
 
-	.. cpp:function:: unknown SetActiveWeaponByName( unknown )
+	.. cpp:function:: void GiveWeapon( string weapon )
 
-	.. cpp:function:: unknown TakeOffhandWeapon( unknown )
+	.. cpp:function:: void SetActiveWeaponByName( string weapon )
 
-	.. cpp:function:: unknown TakeWeaponNow( unknown )
+	.. cpp:function:: void TakeOffhandWeapon( int slot )
 
-	.. cpp:function:: unknown TakeWeapon( unknown )
+	.. cpp:function:: void TakeWeaponNow( string weapon )
 
-	.. cpp:function:: unknown GetOutOfBoundsDeadTime( unknown )
+	.. cpp:function:: void TakeWeapon( string weapon )
 
-	.. cpp:function:: unknown SetContinueAnimatingAfterRagdoll( unknown )
+	.. cpp:function:: int GetOutOfBoundsDeadTime()
 
-	.. cpp:function:: unknown SetNumRodeoSlots( unknown )
+	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
 
-	.. cpp:function:: unknown SetRodeoRider( unknown )
+	.. cpp:function:: void SetNumRodeoSlots( int )
 
-	.. cpp:function:: unknown PlayRecordedAnimation( unknown )
+		Sets the maximum number of rodeo slots available on this entity.
 
-	.. cpp:function:: unknown SetRecordedAnimationPlaybackRate( unknown )
+	.. cpp:function:: void SetRodeoRider( int slot, entity rider )
 
-	.. cpp:function:: unknown SetNPCPriorityOverride_NoThreat( unknown )
+		Sets the rodeo rider at the given slot
 
-	.. cpp:function:: unknown Anim_EnablePlanting( unknown )
+	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
 
-	.. cpp:function:: unknown SetTitanSoul( unknown )
+	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
 
-	.. cpp:function:: unknown LookupPoseParameterIndex( unknown )
+	.. cpp:function:: void SetNPCPriorityOverride_NoThreat()
 
-	.. cpp:function:: unknown Anim_DisableUpdatePosition( unknown )
+	.. cpp:function:: void Anim_EnablePlanting()
 
-	.. cpp:function:: unknown GetPlayerOrNPCViewRight( unknown )
+	.. cpp:function:: void SetTitanSoul( entity soul )
 
-	.. cpp:function:: unknown ResetHealthChangeRate( unknown )
+	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
+
+	.. cpp:function:: void Anim_DisableUpdatePosition()
+
+	.. cpp:function:: vector GetPlayerOrNPCViewRight()
+
+	.. cpp:function:: void ResetHealthChangeRate()
 
 C_BaseCombatCharacter
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. cpp:class:: C_BaseCombatCharacter : extends C_BaseEntity
 
-	.. cpp:function:: unknown TraceToLocalPlayer( unknown )
+	.. cpp:function:: TraceResults TraceToLocalPlayer()
 
-	.. cpp:function:: unknown TraceToLocalPlayerSimple( unknown )
+	.. cpp:function:: float TraceToLocalPlayerSimple()
 
-	.. cpp:function:: unknown SetGroundEffectTable( unknown )
+	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
 
-	.. cpp:function:: unknown GetAttachmentOrigin_ViewModelNoFOVAdjust( unknown )
+	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
 
-	.. cpp:function:: unknown Anim_SetPaused( unknown )
+	.. cpp:function:: void Anim_SetPaused( bool pause )
 
-	.. cpp:function:: unknown SetCycle( unknown )
+	.. cpp:function:: void SetCycle( float cycle )
 
-	.. cpp:function:: unknown DoBodyGroupChangeScriptCallback( unknown )
+	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
 
 CAI_BaseNPC / C_AI_BaseNPC
 ----------------------------
@@ -1270,86 +1800,433 @@ Shared
 
 .. cpp:class:: CAI_BaseNPC / C_AI_BaseNPC : extends CBaseCombatCharacter
 
-	.. cpp:function:: unknown Dev_GetAISettingByKeyField( unknown )
+	.. cpp:function:: var Dev_GetAISettingByKeyField( string key )
 
-	.. cpp:function:: unknown IsInterruptable( unknown )
+		Expect as string
 
-	.. cpp:function:: unknown GetAIClass( unknown )
+	.. cpp:function:: bool IsInterruptable()
 
-	.. cpp:function:: unknown GetBodyType( unknown )
+	.. cpp:function:: int GetAIClass()
 
-	.. cpp:function:: unknown GetAISettingsName( unknown )
+		``AIC_SMALL_TURRET``, ``AIC_MARVIN``, ``AIC_SPECTRE``, ``AIC_STALKER_CRAWLING``, ``AIC_FRAG_DRONE``, ``AIC_HUMAN``
 
-	.. cpp:function:: unknown GetMeleeDamageMaxForTarget( unknown )
+	.. cpp:function:: string GetBodyType()
 
-	.. cpp:function:: unknown AISetting_MaxFlyingSpeed( unknown )
+	.. cpp:function:: string GetAISettingsName()
 
-	.. cpp:function:: unknown AISetting_LeechAnimSet( unknown )
+	.. cpp:function:: int GetMeleeDamageMaxForTarget( entity target )
 
-	.. cpp:function:: unknown AISetting_LeechDataKnifeTag( unknown )
+	.. cpp:function:: float AISetting_MaxFlyingSpeed( unknown )
+
+	.. cpp:function:: string AISetting_LeechAnimSet()
+
+	.. cpp:function:: string AISetting_LeechDataKnifeTag()
 
 CAI_BaseNPC
 ^^^^^^^^^^^^
 
 .. cpp:class:: CAI_BaseNPC : extends C_BaseCombatCharacter
 
-	.. cpp:function:: unknown AssaultPoint( unknown )
+	.. cpp:function:: void AssaultPoint( vector point )
 
-	.. cpp:function:: unknown DisableBehavior( unknown )
+	.. cpp:function:: void EnableBehavior( string behaviour )
 
-	.. cpp:function:: unknown SetThinkEveryFrame( unknown )
+	.. cpp:function:: void DisableBehavior( string behaviour )
 
-	.. cpp:function:: unknown ClearEnemy( unknown )
+		Possible behaviours: ``Follow``, ``Assault``
 
-	.. cpp:function:: unknown SetEnemy( unknown )
+	.. cpp:function:: void SetThinkEveryFrame( bool think )
 
-	.. cpp:function:: unknown Anim_ScriptedPlay( unknown )
+	.. cpp:function:: void ClearEnemy( entity enemy )
 
-	.. cpp:function:: unknown ForceCheckGroundEntity( unknown )
+	.. cpp:function:: void SetEnemy( entity enemy )
 
-	.. cpp:function:: unknown GetNPCState( unknown )
+	.. cpp:function:: void Anim_ScriptedPlay( string anim )
 
-	.. cpp:function:: unknown GetMaxEnemyDist( unknown )
+	.. cpp:function:: void ForceCheckGroundEntity()
 
-	.. cpp:function:: unknown GetMaxEnemyDistHeavyArmor( unknown )
+	.. cpp:function:: string GetNPCState()
 
-	.. cpp:function:: unknown GetMaxTurretYaw( unknown )
+	.. cpp:function:: float GetMaxEnemyDist()
 
-	.. cpp:function:: unknown SetSecondaryEnemy( unknown )
+		Max pilot engagement distance
 
-	.. cpp:function:: unknown DisableNPCMoveFlag( unknown )
+	.. cpp:function:: float GetMaxEnemyDistHeavyArmor()
 
-	.. cpp:function:: unknown EnableNPCMoveFlag( unknown )
+		Max titan engagement distance
 
-	.. cpp:function:: unknown SetAISettings( unknown )
+	.. cpp:function:: float GetMaxTurretYaw()
 
-	.. cpp:function:: unknown SetCapabilityFlag( unknown )
+	.. cpp:function:: void SetSecondaryEnemy( entity enemy )
 
-	.. cpp:function:: unknown Anim_ScriptedPlayActivityByName( unknown )
+	.. cpp:function:: void DisableNPCMoveFlag( int flag )
 
-	.. cpp:function:: unknown GetEnemy( unknown )
+	.. cpp:function:: void EnableNPCMoveFlag( int flag )
 
-	.. cpp:function:: unknown CanSee( unknown )
+	.. cpp:function:: void SetAISettings( string settings )
 
-	.. cpp:function:: unknown IsCrouching( unknown )
+	.. cpp:function:: void SetCapabilityFlag( int flag, bool unknown_purpose )
 
-	.. cpp:function:: unknown IsSecondaryAttack( unknown )
+	.. cpp:function:: void Anim_ScriptedPlayActivityByName( string activity, bool unknown_purpose1, float unknown_purpose2 )
 
-	.. cpp:function:: unknown EnableBehavior( unknown )
+	.. cpp:function:: entity GetEnemy()
 
-	.. cpp:function:: unknown GetFollowTarget( unknown )
+	.. cpp:function:: bool CanSee( entity ent )
 
-	.. cpp:function:: unknown InitFollowBehavior( unknown )
+	.. cpp:function:: bool IsCrouching()
 
-	.. cpp:function:: unknown DisableNPCFlag( unknown )
+	.. cpp:function:: bool IsSecondaryAttack()
 
-	.. cpp:function:: unknown EnableNPCFlag( unknown )
+	.. cpp:function:: entity GetFollowTarget()
 
-	.. cpp:function:: unknown Freeze( unknown )
+	.. cpp:function:: void InitFollowBehavior( entity followMe, string followBehaviour )
 
-	.. cpp:function:: unknown Unfreeze( unknown )
+	.. cpp:function:: void DisableNPCFlag( int flag )
+
+	.. cpp:function:: void EnableNPCFlag( int flag )
+
+	.. cpp:function:: void Freeze()
+
+	.. cpp:function:: void Unfreeze()
 
 C_AI_BaseNPC
 ^^^^^^^^^^^^^
 
 .. cpp:class:: C_AI_BaseNPC : extends C_BaseCombatCharacter
+
+CNPC_Titan / C_NPC_Titan
+------------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CNPC_Titan / C_NPC_Titan : extends CAI_BaseNPC / C_AI_BaseNPC
+
+	.. cpp:function:: bool GetCanStand()
+
+CNPC_Titan
+^^^^^^^^^^
+
+.. cpp:class:: CNPC_Titan : extends CAI_BaseNPC
+
+	.. cpp:function:: void SetCanStand( bool canStand )
+
+	.. cpp:function:: void GrappleNPC( vector dir )
+
+	.. cpp:function:: void GetFullBodygroup()
+
+C_NPC_Titan
+^^^^^^^^^^^
+
+CNPC_Dropship / C_NPC_Dropship
+------------------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CNPC_Dropship / C_NPC_Dropship : extends CAI_BaseNPC / C_AI_BaseNPC
+
+	.. cpp:function:: bool IsJetWakeFXEnabled()
+
+CNPC_Dropship
+^^^^^^^^^^^^^
+
+.. cpp:class:: CNPC_Dropship : extends CAI_BaseNPC
+
+C_NPC_Dropship
+^^^^^^^^^^^^^^
+
+.. cpp:class:: C_NPC_Dropship : extends C_AI_BaseNPC
+
+CFirstPersonProxy / C_FirstPersonProxy
+--------------------------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CFirstPersonProxy / C_FirstPersonProxy : extends CBaseEntity / C_BaseEntity
+
+	.. cpp:function:: vector GetAttachmentOrigin()
+
+	.. cpp:function:: int LookupAttachment( string attachment )
+
+	.. cpp:function:: int FindBodyGroup( string group )
+
+	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
+
+	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
+
+	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
+
+	.. cpp:function:: vector GetAttachmentAngles()
+
+	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
+
+	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
+
+	.. cpp:function:: float GetSequenceDuration( string anim )
+
+	.. cpp:function:: bool Anim_IsActive()
+
+	.. cpp:function:: void Anim_Play( string anim )
+
+	.. cpp:function:: void Anim_SetInitialTime( float time )
+
+	.. cpp:function:: void Anim_Stop()
+
+	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
+
+	.. cpp:function:: int GetSkin()
+
+	.. cpp:function:: int LookupSequence( string sequence )
+
+	.. cpp:function:: void SetSkin( int skin )
+
+	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
+
+	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
+
+	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
+
+	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
+
+	.. cpp:function:: bool Anim_HasSequence( string animation )
+
+	.. cpp:function:: void SetPlaybackRate( float rate )
+
+	.. cpp:function:: void Anim_SetStartTime( float time )
+
+	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
+
+	.. cpp:function:: void SetPoseParameter( int pose, float offset )
+
+	.. cpp:function:: vector GetAttachmentForward( int attachID )
+
+CFirstPersonProxy
+^^^^^^^^^^^^^^^^^
+
+.. cpp:class:: CFirstPersonProxy : extends CBaseEntity
+
+	.. cpp:function:: int GetFullBodygroup()
+
+	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
+
+	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
+
+	.. cpp:function:: void Gib( vector forceVec )
+
+	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
+
+	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
+
+	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
+
+	.. cpp:function:: void Anim_EnablePlanting()
+
+	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
+
+	.. cpp:function:: void Anim_DisableUpdatePosition()
+
+	.. cpp:function:: int GetFullBodygroup()
+
+C_FirstPersonProxy
+^^^^^^^^^^^^^^^^^^
+
+.. cpp:class:: C_FirstPersonProxy : extends C_BaseEntity
+
+	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
+
+	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
+
+	.. cpp:function:: void Anim_SetPaused( bool pause )
+
+	.. cpp:function:: void SetCycle( float cycle )
+
+	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+
+
+CBaseAnimating / C_BaseAnimating
+--------------------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CBaseAnimating / C_BaseAnimating : extends CBaseEntity / C_BaseEntity
+
+	.. cpp:function:: vector GetAttachmentOrigin()
+
+	.. cpp:function:: int LookupAttachment( string attachment )
+
+	.. cpp:function:: int FindBodyGroup( string group )
+
+	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
+
+	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
+
+	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
+
+	.. cpp:function:: vector GetAttachmentAngles()
+
+	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
+
+	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
+
+	.. cpp:function:: float GetSequenceDuration( string anim )
+
+	.. cpp:function:: bool Anim_IsActive()
+
+	.. cpp:function:: void Anim_Play( string anim )
+
+	.. cpp:function:: void Anim_SetInitialTime( float time )
+
+	.. cpp:function:: void Anim_Stop()
+
+	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
+
+	.. cpp:function:: int GetSkin()
+
+	.. cpp:function:: int LookupSequence( string sequence )
+
+	.. cpp:function:: void SetSkin( int skin )
+
+	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
+
+	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
+
+	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
+
+	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
+
+	.. cpp:function:: bool Anim_HasSequence( string animation )
+
+	.. cpp:function:: void SetPlaybackRate( float rate )
+
+	.. cpp:function:: void Anim_SetStartTime( float time )
+
+	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
+
+	.. cpp:function:: void SetPoseParameter( int pose, float offset )
+
+	.. cpp:function:: vector GetAttachmentForward( int attachID )
+
+
+CBaseAnimating
+^^^^^^^^^^^^^^
+
+.. cpp:class:: CBaseAnimating : extends CBaseEntity
+
+	.. cpp:function:: int GetFullBodygroup()
+
+	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
+
+	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
+
+	.. cpp:function:: void Gib( vector forceVec )
+
+	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
+
+	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
+
+	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
+
+	.. cpp:function:: void Anim_EnablePlanting()
+
+	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
+
+	.. cpp:function:: void Anim_DisableUpdatePosition()
+
+	.. cpp:function:: int GetFullBodygroup()
+
+C_BaseAnimating
+^^^^^^^^^^^^^^^
+
+.. cpp:function:: C_BaseAnimatin : extends C_BaseEntity
+
+	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
+
+	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
+
+	.. cpp:function:: void Anim_SetPaused( bool pause )
+
+	.. cpp:function:: void SetCycle( float cycle )
+
+	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+
+C_Titan_Cockpit
+---------------
+
+.. cpp:function:: C_Titan_Cockpit : extends C_BaseEntity
+
+	.. cpp:function:: vector GetAttachmentOrigin()
+
+	.. cpp:function:: int FindBodyGroup( string group )
+
+	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
+
+	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
+
+	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
+
+	.. cpp:function:: vector GetAttachmentAngles()
+
+	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
+
+	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
+
+	.. cpp:function:: float GetSequenceDuration( string anim )
+
+	.. cpp:function:: bool Anim_IsActive()
+
+	.. cpp:function:: void Anim_Play( string anim )
+
+	.. cpp:function:: void Anim_SetInitialTime( float time )
+
+	.. cpp:function:: void Anim_Stop()
+
+	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
+
+	.. cpp:function:: int GetSkin()
+
+	.. cpp:function:: int LookupSequence( string sequence )
+
+	.. cpp:function:: void SetSkin( int skin )
+
+	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
+
+	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
+
+	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
+
+	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
+
+	.. cpp:function:: void AddToTitanHudDamageHistory( int panel, int damage )
+
+	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
+
+	.. cpp:function:: void SetCaptureScreenBeforeViewmodels( bool cap )
+
+	.. cpp:function:: float GetTimeInCockpit()
+
+		Cockpit booting takes 1.3 seconds.
+
+	.. cpp:function:: void SetOpenViewmodelOffset( float a, float b, float c )
+
+	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
+
+	.. cpp:function:: bool Anim_HasSequence( string animation )
+
+	.. cpp:function:: void Anim_SetPaused( bool pause )
+
+	.. cpp:function:: void SetCycle( float cycle )
+
+	.. cpp:function:: void SetPlaybackRate( float rate )
+
+	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+
+	.. cpp:function:: void Anim_SetStartTime( float time )
+
+	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
+
+	.. cpp:function:: void SetPoseParameter( int pose, float offset )
+
+	.. cpp:function:: vector GetAttachmentForward( int attachID )
