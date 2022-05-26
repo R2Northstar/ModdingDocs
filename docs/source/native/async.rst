@@ -97,6 +97,9 @@ You have now created and threaded both functions.
 Signals and flags
 ----------------------
 
+Signals
+^^^^^^^^^^
+
 Signals and flags allow threads to wait for events before running some code.
 
 For example, if we want to tell a player not to give up after being killed several times, we can write it this way:
@@ -143,3 +146,24 @@ For example, if we want to tell a player not to give up after being killed sever
 
 In this example, the ``DontGiveUp`` method is launched at the same time as ``WatchForDeaths``; but it will not 
 run until player died 42 times.
+
+Flags
+^^^^^^^^^^
+
+``Flags`` work pretty much the same way as ``Signals``, except they can be set up without target entity:
+
+.. code-block:: javascript
+
+    // create flag
+    FlagInit( "BombHasExploded" )
+
+    // wait for it
+    FlagWait( "BombHasExploded" )
+
+    // update it
+    FlagSet( "BombHasExploded" )
+    FlagClear( "BombHasExploded" )
+    FlagToggle( "BombHasExploded" )
+
+    // get its current value (returns a boolean)
+    Flag( "BombHasExploded" )
