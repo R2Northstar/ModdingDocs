@@ -93,3 +93,53 @@ You can also set up some code to be executed when a thread ends:
 
 
 You have now created and threaded both functions.
+
+Signals and flags
+----------------------
+
+Signals and flags allow threads to wait for events before running some code.
+
+For example, if we want to tell a player not to give up after being killed several times, we can write it this way:
+
+.. code-block:: javascript
+
+    // First, we register signal we want to use
+    RegisterSignal("OnMultipleDeaths")
+
+
+    void function WatchForDeaths (entity player) 
+    {
+        int deathsCount = 0
+
+        while( GamePlayingOrSuddenDeath() )
+        {
+            if ( player.isDead() )  // This doesn't exist, don't try this at home
+            {
+                deathsCount += 1
+
+                if (deathsCount >= 42)
+                {
+                    // This sends "OnMultipleDeaths" signal on player entity
+                    player.SetSignal( "OnMultipleDeaths" )
+                } 
+            }
+        }
+    }
+
+
+    void function DontGiveUp (entity player)
+    {
+        // This is a blocking call
+        player.WaitSignal("OnMultipleDeaths");
+
+        // This will not run until entity received "OnMultipleDeaths" signal
+        SendHudMessage( player, "Don't give up!", -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
+    }
+
+    // Launch our methods in dedicated threads
+    entity player = GetPlayerArray()[0]
+    thread WatchForDeaths( player )
+    thread DontGiveUp( player )
+
+In this example, the ``DontGiveUp`` method is launched at the same time as ``WatchForDeaths``; but it will not 
+run until player died 42 times.
