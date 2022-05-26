@@ -69,4 +69,27 @@ This function will now repeat endlessly, waiting 5 seconds before each repeat. m
             }
         }
 
+You can also set up some code to be executed when a thread ends:
+
+.. code-block:: javascript
+
+    void killPlayerAfterAfewMoments(entity player) {
+        OnThreadEnd(
+            // you have to explicitely capture all variables you want to use inside function
+            function() : ( player )
+            {
+                if ( !IsValid( player ))
+                    return
+
+                SendHudMessage( player, "Time to sleep, fella!", -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
+                player.Die()
+            }
+        )
+
+        // Do something time consuming
+    }
+
+    thread killPlayerAfterAFewMoments( GetPlayerArray()[0] )
+
+
 You have now created and threaded both functions.
