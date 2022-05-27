@@ -3,7 +3,9 @@ Entities
 
 There are different Classes for Server and Client. Classes that start with ``C_`` are exclusive to the Client VM and classes that only have the ``C`` Prefix are only usable in the Server VM.
 
-Each entry in the following list has three sub entries: The class available to the SERVER, the CLIENT and methods that are available on both VMs.
+Most entries have three sub entries: The class available to the SERVER, the CLIENT and methods that are available on both VMs.
+
+For a graphic reprasentation of the Server and Client class inheritance, refer to `this chart <http://salzgrube.club/class_graph_dynamic.html.html>`_
 
 .. note::
 
@@ -408,8 +410,6 @@ C_BaseEntity
 
 	.. cpp:function:: string GetSignifierName()
 
-	.. cpp:function:: int LookupAttachment( string attachName )
-
 	.. cpp:function:: string GetBossPlayerName()
 
 	.. cpp:function:: void ForceShadowVisible( bool visible )
@@ -478,105 +478,46 @@ CDynamicProp / C_DynamicProp
 Shared
 ^^^^^^
 
-.. cpp:class:: CDynamicProp / C_DynamicProp : extends CBaseEntity / C_BaseEntity
-
-	.. cpp:function:: vector GetAttachmentOrigin()
-
-	.. cpp:function:: int LookupAttachment( string attach )
-
-	.. cpp:function:: int FindBodyGroup( string group )
-
-	.. cpp:function:: int GetBodyGroupState( int group )
-
-	.. cpp:function:: int GetBodyGroupModelCount( int group )
-
-	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
-
-	.. cpp:function:: vector GetAttachmentAngles()
-
-	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
-
-	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
-
-	.. cpp:function:: float GetSequenceDuration( string anim )
-
-	.. cpp:function:: bool Anim_IsActive()
-
-	.. cpp:function:: void Anim_Play( string anim )
-
-	.. cpp:function:: void Anim_SetInitialTime( float time )
-
-	.. cpp:function:: void Anim_Stop()
-
-	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
-
-	.. cpp:function:: int GetSkin()
-
-	.. cpp:function:: int LookupSequence( string sequence )
-
-	.. cpp:function:: void SetSkin( int skin )
-
-	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
-
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
-
-	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
-
-	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
-
-	.. cpp:function:: bool Anim_HasSequence( string animation )
-
-	.. cpp:function:: void SetPlaybackRate( float rate )
-
-	.. cpp:function:: void Anim_SetStartTime( float time )
-
-	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
-
-	.. cpp:function:: void SetPoseParameter( int pose, float offset )
-
-	.. cpp:function:: vector GetAttachmentForward( int attachID )
+.. cpp:class:: CDynamicProp / C_DynamicProp : extends CBaseAnimating / C_BaseAnimating
 
 CDynamicProp
 ^^^^^^^^^^^^
 
-.. cpp:class:: CDynamicProp : extends CBaseEntity
+.. cpp:class:: CDynamicProp : extends CBaseAnimating
 
 	.. cpp:function:: void SetFullBodygroup( int group )
-
-	.. cpp:function:: int GetFullBodygroup()
-
-	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
-
-	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
-
-	.. cpp:function:: void Gib( vector forceVec )
-
-	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
-
-	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
-
-	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
-
-	.. cpp:function:: void Anim_EnablePlanting()
-
-	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
-
-	.. cpp:function:: void Anim_DisableUpdatePosition()
 
 C_DynamicProp
 ^^^^^^^^^^^^^
 
-.. cpp:class:: C_DynamicProp : extends CBaseEntity
+.. cpp:class:: C_DynamicProp : extends C_BaseAnimating
 
-	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
+CScriptProp / C_ScriptProp
+-----------
 
-	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
+Shared
+^^^^^^
 
-	.. cpp:function:: void Anim_SetPaused( bool pause )
+.. cpp:class:: CScriptProp / C_ScriptProp : extends CDynamicProp / C_DynamicProp
 
-	.. cpp:function:: void SetCycle( float cycle )
+	.. cpp:function:: unknown SetSmartAmmoLockType( unknown )
 
-	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+	.. cpp:function:: unknown GetScriptPropFlags( unknown )
+
+CScriptProp
+^^^^^^^^^^^
+
+.. cpp:class:: CScriptProp : extends CDynamicProp
+
+	.. cpp:function:: unknown SetFootstepType( unknown )
+
+	.. cpp:function:: unknown SetArmorType( unknown )
+
+	.. cpp:function:: unknown SetScriptPropFlags( unknown )
+
+
+C_ScriptProp
+^^^^^^^^^^^^
 
 CBaseCombatWeapon / C_BaseCombatWeapon
 --------------------------------------
@@ -584,110 +525,19 @@ CBaseCombatWeapon / C_BaseCombatWeapon
 Shared
 ^^^^^^
 
-.. cpp:class:: CBaseCombatWeapon / C_BaseCombatWeapon : extends CBaseEntity / C_BaseEntity
-
-	.. cpp:function:: vector GetAttachmentOrigin()
-
-	.. cpp:function:: int LookupAttachment( string attachment )
-
-		Returns the Attachment index.
-	.. cpp:function:: int FindBodyGroup( string group )
-
-		Returns the body group index of the entity the method is called on.
-
-	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
-
-	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
-
-	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
-
-	.. cpp:function:: vector GetAttachmentAngles()
-
-	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
-
-	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
-
-	.. cpp:function:: float GetSequenceDuration( string anim )
-
-	.. cpp:function:: bool Anim_IsActive()
-
-	.. cpp:function:: void Anim_Play( string anim )
-
-	.. cpp:function:: void Anim_SetInitialTime( float time )
-
-	.. cpp:function:: void Anim_Stop()
-
-	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
-
-	.. cpp:function:: int GetSkin()
-
-	.. cpp:function:: int LookupSequence( string sequence )
-
-	.. cpp:function:: void SetSkin( int skin )
-
-	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
-
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
-
-	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
-
-	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
+.. cpp:class:: CBaseCombatWeapon / C_BaseCombatWeapon : extends CBaseAnimating / C_BaseAnimating
 
 	.. cpp:function:: string GetWeaponDescription()
-
-	.. cpp:function:: bool Anim_HasSequence( string animation )
-
-	.. cpp:function:: void SetPlaybackRate( float rate )
-
-	.. cpp:function:: void Anim_SetStartTime( float time )
-
-	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
-
-	.. cpp:function:: void SetPoseParameter( int pose, float offset )
-
-	.. cpp:function:: vector GetAttachmentForward( int attachId )
 
 CBaseCombatWeapon
 ^^^^^^^^^^^^^^^^^
 
-.. cpp:class:: CBaseCombatWeapon : extends CBaseEntity
-
-	.. cpp:function:: int GetFullBodygroup()
-
-	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
-
-	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
-
-	.. cpp:function:: void Gib( vector forceVec )
-
-	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
-
-	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
-
-	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
-
-	.. cpp:function:: void Anim_EnablePlanting()
-
-	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
-
-	.. cpp:function:: void Anim_DisableUpdatePosition()
-
-	.. cpp:function:: int GetFullBodygroup()
+.. cpp:class:: CBaseCombatWeapon : extends CBaseAnimating
 
 C_BaseCombatWeapon
 ^^^^^^^^^^^^^^^^^^
 
-.. cpp:function:: C_BaseCombatWeapon : extends C_BaseEntity
-
-	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
-
-	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
-
-	.. cpp:function:: void Anim_SetPaused( bool pause )
-
-	.. cpp:function:: void SetCycle( float cycle )
-
-	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+.. cpp:function:: C_BaseCombatWeapon : extends C_BaseAnimating
 
 CWeaponX / C_WeaponX
 --------------------
@@ -955,69 +805,15 @@ Shared
 
 .. cpp:class:: CProjectile / C_Projectile : extends CDynamicProp / C_DynamicProp
 
-	.. cpp:function:: vector GetAttachmentOrigin()
-
-	.. cpp:function:: int LookupAttachment( string attachment )
-
 	.. cpp:function:: bool GetProjectileWeaponSettingBool( string setting )
 
 	.. cpp:function:: float GetProjectileWeaponSettingFloat( string setting )
 
 	.. cpp:function:: int GetProjectileWeaponSettingInt( string setting )
 
-	.. cpp:function:: int FindBodyGroup( string group )
-
-	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
-
-	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
-
-	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
-
-	.. cpp:function:: vector GetAttachmentAngles()
-
-	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
-
-	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
-
-	.. cpp:function:: float GetSequenceDuration( string anim )
-
-	.. cpp:function:: bool Anim_IsActive()
-
-	.. cpp:function:: void Anim_Play( string anim )
-
-	.. cpp:function:: void Anim_SetInitialTime( float time )
-
-	.. cpp:function:: void Anim_Stop()
-
-	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
-
-	.. cpp:function:: int GetSkin()
-
-	.. cpp:function:: int LookupSequence( string sequence )
-
-	.. cpp:function:: void SetSkin( int skin )
-
-	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
-
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
-
-	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
-
-	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
-
 	.. cpp:function:: string ProjectileGetWeaponClassName()
 
-	.. cpp:function:: bool Anim_HasSequence( string animation )
-
-	.. cpp:function:: void SetPlaybackRate( float rate )
-
-	.. cpp:function:: void Anim_SetStartTime( float time )
-
-	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
-
 	.. cpp:function:: void SetImpactEffectTable( string fxTableHandle )
-
-	.. cpp:function:: void SetPoseParameter( int pose, float offset )
 
 	.. cpp:function:: array<string> ProjectileGetMods()
 
@@ -1028,8 +824,6 @@ Shared
 	.. cpp:function:: string ProjectileGetWeaponInfoFileKeyField( string key )
 
 	.. cpp:function:: void SetReducedEffects()
-
-	.. cpp:function:: vector GetAttachmentForward( int attachID )
 
 	.. cpp:function:: asset GetProjectileWeaponSettingAsset( string setting )
 
@@ -1046,10 +840,6 @@ CProjectile
 
 .. cpp:class:: CProjectile : extends CDynamicProp
 
-	.. cpp:function:: void Anim_EnablePlanting()
-
-	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
-
 	.. cpp:function:: int ProjectileGetDamageSourceID()
 
 	.. cpp:function:: void ProjectileSetDamageSourceID( int id )
@@ -1061,17 +851,7 @@ CProjectile
 C_Projectile
 ^^^^^^^^^^^^
 
-.. cpp:class:: C_Projectile : extends C_BaseEntity
-
-	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
-
-	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
-
-	.. cpp:function:: void Anim_SetPaused( bool pause )
-
-	.. cpp:function:: void SetCycle( float cycle )
-
-	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+.. cpp:class:: C_Projectile : extends C_DynamicProp
 
 CBaseGrenade / C_BaseGrenade
 ----------------------------
@@ -1116,6 +896,46 @@ C_BaseGrenade
 ^^^^^^^^^^^^^
 
 .. cpp:class:: C_BaseGrenade : extends C_Projectile
+
+CMissile / C_Missile
+--------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CMissile / C_Missile : extends CProjectile / C_Projectile
+
+	.. cpp:function:: void MissileExplode()
+
+	.. cpp:function:: void InitMissileForRandomDriftFromWeaponSettings( vector pos, vector dir )
+
+	.. cpp:function:: void SetHomingSpeeds( int speed, int speed_for_dodging_player )
+
+	.. cpp:function:: void SetMissileTarget( enity target, vector unknown_purpose )
+
+	.. cpp:function:: void SetMissileTargetPosition( vector pos )
+
+	.. cpp:function:: void InitMissileSpiral( vector pos, vector dir, int missileNumber, bool unknown_purpose1, bool unknown_purpose2 )
+
+	.. cpp:function:: void SetSpeed( float speed )
+
+	.. cpp:function:: entity GetMissileTarget()
+
+	.. cpp:function:: void InitMissileExpandContract( vector outward, vector inward, float launchOutTime, float launchInLerpTime, float launchInTime, float launchStraightLerpTime, vector missileEndPos, bool applyRandSpread )
+
+	.. cpp:function:: void InitMissileForRandomDrift( vector pos, vector dir )
+
+CMissile
+^^^^^^^^
+
+.. cpp:class:: CMissile : extends CProjectile
+
+C_Missile
+^^^^^^^^^
+
+.. cpp:class:: C_Missile : extends C_Projectile
+
+
 
 CPlayer / C_Player
 ------------------
@@ -1572,37 +1392,9 @@ CBaseCombatCharacter / C_BaseCombatCharacter
 Shared
 ^^^^^^
 
-.. cpp:class:: CBaseCombatCharacter / C_BaseCombatCharacter : extends CBaseEntity / C_BaseEntity
-
-	.. cpp:function:: vector GetAttachmentOrigin()
-
-	.. cpp:function:: int LookupAttachment( string attachment )
+.. cpp:class:: CBaseCombatCharacter / C_BaseCombatCharacter : extends CBaseAnimating / C_BaseAnimating
 
 	.. cpp:function:: entity GetTitanSoul()
-
-	.. cpp:function:: int FindBodyGroup( string group )
-
-	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
-
-	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
-
-	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
-
-	.. cpp:function:: vector GetAttachmentAngles()
-
-	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
-
-	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
-
-	.. cpp:function:: float GetSequenceDuration( string anim )
-
-	.. cpp:function:: bool Anim_IsActive()
-
-	.. cpp:function:: void Anim_Play( string anim )
-
-	.. cpp:function:: void Anim_SetInitialTime( float time )
-
-	.. cpp:function:: void Anim_Stop()
 
 	.. cpp:function:: void ContextAction_ClearBusy()
 
@@ -1638,23 +1430,13 @@ Shared
 
 	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
 
-	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
-
 	.. cpp:function:: bool IsWeaponDisabled()
 
 	.. cpp:function:: int GetActiveWeaponPrimaryAmmoLoaded()
 
 	.. cpp:function:: bool ContextAction_IsMeleeExecution()
 
-	.. cpp:function:: bool Anim_HasSequence( string animation )
-
-	.. cpp:function:: void SetPlaybackRate( float rate )
-
 	.. cpp:function:: int GetWeaponAmmoStockpile( entity weapon )
-
-	.. cpp:function:: void Anim_SetStartTime( float time )
-
-	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
 
 	.. cpp:function:: entity GetMeleeWeapon()
 
@@ -1676,8 +1458,6 @@ Shared
 
 	.. cpp:function:: void PhaseShiftCancel()
 
-	.. cpp:function:: void SetPoseParameter( int pose, float offset )
-
 	.. cpp:function:: vector OffsetPositionFromView( vector startPos, vector offset )
 
 	.. cpp:function:: int GetWeaponAmmoLoaded( entity weapon )
@@ -1687,8 +1467,6 @@ Shared
 	.. cpp:function:: float GetAttackSpreadAngle()
 
 	.. cpp:function:: array<entity> GetOffhandWeapons()
-
-	.. cpp:function:: vector GetAttachmentForward( int attachID )
 
 	.. cpp:function:: bool ContextAction_IsLeeching()
 
@@ -1717,15 +1495,9 @@ Shared
 CBaseCombatCharacter
 ^^^^^^^^^^^^^^^^^^^^
 
-.. cpp:class:: CBaseCombatCharacter : extends CBaseEntity
+.. cpp:class:: CBaseCombatCharacter : extends CBaseAnimating
 
 	.. cpp:function:: void SetFullBodygroup( int group )
-
-	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
-
-	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
-
-	.. cpp:function:: void Gib( vector forceVec )
 
 	.. cpp:function:: void GetSettingsHeadshotFX()
 
@@ -1745,8 +1517,6 @@ CBaseCombatCharacter
 
 	.. cpp:function:: int GetOutOfBoundsDeadTime()
 
-	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
-
 	.. cpp:function:: void SetNumRodeoSlots( int )
 
 		Sets the maximum number of rodeo slots available on this entity.
@@ -1755,19 +1525,9 @@ CBaseCombatCharacter
 
 		Sets the rodeo rider at the given slot
 
-	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
-
-	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
-
 	.. cpp:function:: void SetNPCPriorityOverride_NoThreat()
 
-	.. cpp:function:: void Anim_EnablePlanting()
-
 	.. cpp:function:: void SetTitanSoul( entity soul )
-
-	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
-
-	.. cpp:function:: void Anim_DisableUpdatePosition()
 
 	.. cpp:function:: vector GetPlayerOrNPCViewRight()
 
@@ -1776,21 +1536,11 @@ CBaseCombatCharacter
 C_BaseCombatCharacter
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. cpp:class:: C_BaseCombatCharacter : extends C_BaseEntity
+.. cpp:class:: C_BaseCombatCharacter : extends C_BaseAnimating
 
 	.. cpp:function:: TraceResults TraceToLocalPlayer()
 
 	.. cpp:function:: float TraceToLocalPlayerSimple()
-
-	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
-
-	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
-
-	.. cpp:function:: void Anim_SetPaused( bool pause )
-
-	.. cpp:function:: void SetCycle( float cycle )
-
-	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
 
 CAI_BaseNPC / C_AI_BaseNPC
 ----------------------------
@@ -1913,8 +1663,6 @@ CNPC_Titan
 
 	.. cpp:function:: void GrappleNPC( vector dir )
 
-	.. cpp:function:: void GetFullBodygroup()
-
 C_NPC_Titan
 ^^^^^^^^^^^
 
@@ -1938,112 +1686,54 @@ C_NPC_Dropship
 
 .. cpp:class:: C_NPC_Dropship : extends C_AI_BaseNPC
 
+CNPC_Drone
+----------
+
+.. cpp:class:: CNPC_Drone : extends CAI_BaseNPC
+
+	.. cpp:function:: unknown SetAttackMode( unknown )
+
+CNPC_SentryTurret / C_NPC_SentryTurret
+
+Shared
+^^^^^^
+
+.. cpp:class:: CNPC_SentryTurret / C_NPC_SentryTurret : extends CAI_BaseNPC / C_AI_BaseNPC
+
+	.. cpp:function:: unknown GetTurretState( unknown )
+
+	.. cpp:function:: unknown GetControlPanel( unknown )
+
+CNPC_SentryTurret
+^^^^^^^^^^^^^^^^^
+
+.. cpp:class:: CNPC_SentryTurret : extends CAI_BaseNPC
+
+	.. cpp:function:: unknown StartDeployed( unknown )
+
+C_NPC_SentryTurret
+^^^^^^^^^^^^^^^^^^
+
+.. cpp:class:: C_NPC_SentryTurret : extends C_AI_BaseNPC
+	
+
 CFirstPersonProxy / C_FirstPersonProxy
 --------------------------------------
 
 Shared
 ^^^^^^
 
-.. cpp:class:: CFirstPersonProxy / C_FirstPersonProxy : extends CBaseEntity / C_BaseEntity
-
-	.. cpp:function:: vector GetAttachmentOrigin()
-
-	.. cpp:function:: int LookupAttachment( string attachment )
-
-	.. cpp:function:: int FindBodyGroup( string group )
-
-	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
-
-	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
-
-	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
-
-	.. cpp:function:: vector GetAttachmentAngles()
-
-	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
-
-	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
-
-	.. cpp:function:: float GetSequenceDuration( string anim )
-
-	.. cpp:function:: bool Anim_IsActive()
-
-	.. cpp:function:: void Anim_Play( string anim )
-
-	.. cpp:function:: void Anim_SetInitialTime( float time )
-
-	.. cpp:function:: void Anim_Stop()
-
-	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
-
-	.. cpp:function:: int GetSkin()
-
-	.. cpp:function:: int LookupSequence( string sequence )
-
-	.. cpp:function:: void SetSkin( int skin )
-
-	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
-
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
-
-	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
-
-	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
-
-	.. cpp:function:: bool Anim_HasSequence( string animation )
-
-	.. cpp:function:: void SetPlaybackRate( float rate )
-
-	.. cpp:function:: void Anim_SetStartTime( float time )
-
-	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
-
-	.. cpp:function:: void SetPoseParameter( int pose, float offset )
-
-	.. cpp:function:: vector GetAttachmentForward( int attachID )
+.. cpp:class:: CFirstPersonProxy / C_FirstPersonProxy : extends CBaseAnimating / C_BaseAnimating
 
 CFirstPersonProxy
 ^^^^^^^^^^^^^^^^^
 
-.. cpp:class:: CFirstPersonProxy : extends CBaseEntity
-
-	.. cpp:function:: int GetFullBodygroup()
-
-	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
-
-	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
-
-	.. cpp:function:: void Gib( vector forceVec )
-
-	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
-
-	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
-
-	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
-
-	.. cpp:function:: void Anim_EnablePlanting()
-
-	.. cpp:function:: int LookupPoseParameterIndex( string poseParam )
-
-	.. cpp:function:: void Anim_DisableUpdatePosition()
-
-	.. cpp:function:: int GetFullBodygroup()
+.. cpp:class:: CFirstPersonProxy : extends CBaseAnimating
 
 C_FirstPersonProxy
 ^^^^^^^^^^^^^^^^^^
 
-.. cpp:class:: C_FirstPersonProxy : extends C_BaseEntity
-
-	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
-
-	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
-
-	.. cpp:function:: void Anim_SetPaused( bool pause )
-
-	.. cpp:function:: void SetCycle( float cycle )
-
-	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
-
+.. cpp:class:: C_FirstPersonProxy : extends C_BaseAnimating
 
 CBaseAnimating / C_BaseAnimating
 --------------------------------
@@ -2135,8 +1825,6 @@ CBaseAnimating
 
 	.. cpp:function:: void Anim_DisableUpdatePosition()
 
-	.. cpp:function:: int GetFullBodygroup()
-
 C_BaseAnimating
 ^^^^^^^^^^^^^^^
 
@@ -2152,56 +1840,51 @@ C_BaseAnimating
 
 	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
 
+CPlayerDecoy / C_PlayerDecoy
+----------------------------
+
+Shared
+^^^^^^
+
+.. cpp:class:: CPlayerDecoy / C_PlayerDecoy : extends CBaseAnimating / C_BaseAnimating
+
+CPlayerDecoy
+^^^^^^^^^^^^
+
+.. cpp:class:: CPlayerDecoy : extends CBaseAnimating
+
+	.. cpp:function:: void Decoy_Dissolve()
+
+	.. cpp:function:: void SetTimeout( int duration )
+
+	.. cpp:function:: void SetDecoyRandomPulseRateMax( float pulse_amount_per_second )
+
+	.. cpp:function:: void SetFriendlyFire( bool ff )
+
+	.. cpp:function:: void SetKillOnCollision( bool kill )
+
+C_PlayerDecoy
+^^^^^^^^^^^^^
+
+.. cpp:class:: CPlayerDecoy : extends CBaseAnimating
+
+CTurret
+-------
+
+.. cpp:function:: CTurret : extends CBaseAnimating
+
+	.. cpp:function:: void ClearDriver()
+
+	.. cpp:function:: entity GetDriver()
+
+	.. cpp:function:: voit SetDriver( enitity driver )
+
 C_Titan_Cockpit
 ---------------
 
 .. cpp:function:: C_Titan_Cockpit : extends C_BaseEntity
 
-	.. cpp:function:: vector GetAttachmentOrigin()
-
-	.. cpp:function:: int FindBodyGroup( string group )
-
-	.. cpp:function:: int GetBodyGroupState( int bodyGroupIndex )
-
-	.. cpp:function:: int GetBodyGroupModelCount( int bodyGroupIndex )
-
-	.. cpp:function:: void SetBodygroup( int groupIndex, int newIndex )
-
-	.. cpp:function:: vector GetAttachmentAngles()
-
-	.. cpp:function:: Attachment Anim_GetAttachmentAtTime( string animation, string attachmentName, float time )
-
-	.. cpp:function:: float GetScriptedAnimEventCycleFrac( string anim, string event )
-
-	.. cpp:function:: float GetSequenceDuration( string anim )
-
-	.. cpp:function:: bool Anim_IsActive()
-
-	.. cpp:function:: void Anim_Play( string anim )
-
-	.. cpp:function:: void Anim_SetInitialTime( float time )
-
-	.. cpp:function:: void Anim_Stop()
-
-	.. cpp:function:: vector Anim_GetStartForRefEntity_Old( string anim, vector reference, string optionalTag )
-
-	.. cpp:function:: int GetSkin()
-
-	.. cpp:function:: int LookupSequence( string sequence )
-
-	.. cpp:function:: void SetSkin( int skin )
-
-	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
-
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
-
-	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
-
-	.. cpp:function:: void Anim_NonScriptedPlay( string animation )
-
 	.. cpp:function:: void AddToTitanHudDamageHistory( int panel, int damage )
-
-	.. cpp:function:: void SetGroundEffectTable( string tableIdentifier )
 
 	.. cpp:function:: void SetCaptureScreenBeforeViewmodels( bool cap )
 
@@ -2211,22 +1894,61 @@ C_Titan_Cockpit
 
 	.. cpp:function:: void SetOpenViewmodelOffset( float a, float b, float c )
 
-	.. cpp:function:: float GetAttachmentOrigin_ViewModelNoFOVAdjust( int index )
+CParticleSystem
+---------------
 
-	.. cpp:function:: bool Anim_HasSequence( string animation )
+.. cpp:class:: CParticleSystem : extends CBaseEntity
 
-	.. cpp:function:: void Anim_SetPaused( bool pause )
+	.. cpp:function:: void FXEnableRenderAlways()
 
-	.. cpp:function:: void SetCycle( float cycle )
+	.. cpp:function:: void SetStopType( string type )
 
-	.. cpp:function:: void SetPlaybackRate( float rate )
+	.. cpp:function:: void SetControlPointEnt( int unknown_purpose, entity destEnt )
 
-	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+CVortexSphere / C_VortexSphere
+------------------------------
 
-	.. cpp:function:: void Anim_SetStartTime( float time )
+Shared
+^^^^^^
 
-	.. cpp:function:: void LerpSkyScale( float skyScale, float time )
+.. cpp:class:: CVortexSphere / C_VortexSphere : extends CBaseEntity / C_BaseEntity
 
-	.. cpp:function:: void SetPoseParameter( int pose, float offset )
+	.. cpp:function:: int GetBulletAbsorbedCount()
 
-	.. cpp:function:: vector GetAttachmentForward( int attachID )
+	.. cpp:function:: int GetProjectileAbsorbedCount()
+
+CVortexSphere
+^^^^^^^^^^^^^
+
+.. cpp:class:: CVortexSphere : extends CBaseEntity
+
+	.. cpp:function:: void SetGunVortexAngles( vector angles )
+
+	.. cpp:function:: void SetGunVortexAttachment( string attach )
+
+	.. cpp:function:: void SetOwnerWeapon( entity owner )
+
+	.. cpp:function:: void SetVortexEffect( entity fx )
+
+	.. cpp:function:: void DisableVortexBlockLOS()
+
+	.. cpp:function:: enitity GetOwnerWeapon()
+
+	.. cpp:function:: void AddBulletToSphere()
+
+	.. cpp:function:: void AddProjectileToSphere()
+
+	.. cpp:function:: void ClearAllBulletsFromSphere()
+
+	.. cpp:function:: void RemoveBulletFromSphere()
+
+	.. cpp:function:: void RemoveProjectileFromSphere()
+
+C_VortexSphere
+^^^^^^^^^^^^^^
+
+.. cpp:class:: C_VortexSphere : extends C_BaseEntity
+
+CEnvExplosion
+
+.. cpp:class:: CEnvExplosion : extends CBaseEntity
