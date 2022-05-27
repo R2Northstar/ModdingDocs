@@ -5,7 +5,7 @@ There are different Classes for Server and Client. Classes that start with ``C_`
 
 Most entries have three sub entries: The class available to the SERVER, the CLIENT and methods that are available on both VMs.
 
-For a graphic reprasentation of the Server and Client class inheritance, refer to `this chart <http://salzgrube.club/class_graph_dynamic.html.html>`_
+For a graphic reprasentation of the Server and Client class inheritance, refer to `this chart <http://salzgrube.club/class_graph_dynamic.html>`_
 
 .. note::
 
