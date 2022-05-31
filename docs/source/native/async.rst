@@ -147,6 +147,8 @@ For example, if we want to tell a player not to give up after being killed sever
 In this example, the ``DontGiveUp`` method is launched at the same time as ``WatchForDeaths``; but it will not 
 run until player died 42 times.
 
+When you don't need the flag anymore, you can free it: ``player.EndSignal( "OnMultipleDeaths" )``.
+
 Flags
 ^^^^^^^^^^
 
