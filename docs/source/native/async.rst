@@ -123,7 +123,7 @@ For example, if we want to tell a player not to give up after being killed sever
                 if (deathsCount >= 42)
                 {
                     // This sends "OnMultipleDeaths" signal on player entity
-                    player.SetSignal( "OnMultipleDeaths" )
+                    player.Signal( "OnMultipleDeaths" )
                 } 
             }
         }
