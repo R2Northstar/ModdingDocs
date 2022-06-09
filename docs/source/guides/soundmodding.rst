@@ -1,4 +1,4 @@
-**Sound Modding & Audio Overriding**
+Sound Modding & Audio Overriding
 =====================================
 
 Some of the terms and their meanings in this article;
