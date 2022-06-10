@@ -5,8 +5,46 @@ Located at your mod's root folder, the `mod.json` file is the entrypoint of your
 it contains human-readable information about it, which scripts to load, and a bunch
 of interesting stuff.
 
-This section will dig into each of the possible `mod.json` fields. Please note that 
+This guide will dig into each of the possible `mod.json` fields. Please note that 
 `mod.json` keys must start with an uppercase letter.
+
+This is what a well-formatted ``mod.json`` looks like:
+
+.. code-block:: json
+
+    {
+        "Name": "Northstar.CustomServers",
+        "Description": "Attempts to recreate the behaviour of vanilla Titanfall 2 servers, as well as changing some scripts to allow better support for mods",
+        "Version": "1.5.0",
+        "LoadPriority": 0,
+        "ConVars": [
+            {
+                "Name": "ns_private_match_last_mode",
+                "DefaultValue": "tdm"
+            },
+            {
+                "Name": "ns_private_match_last_map",
+                "DefaultValue": "mp_forwardbase_kodai"
+            }
+        ],
+        "Scripts": [
+            {
+                "Path": "sh_northstar_utils.gnut",
+                "RunOn": "CLIENT || SERVER || UI"
+            },
+            {
+                "Path": "mp/_classic_mp_dropship_intro.gnut",
+                "RunOn": "SERVER && MP"
+            }
+        ],
+        "Localisation": [
+            "resource/northstar_custom_%language%.txt"
+        ]
+    }
+
+.. note::
+    The real ``Northstar.CustomServers`` mod contains more convars and scripts, some
+    have been removed for the readability of the example.
 
 Name and description
 ------------------------
