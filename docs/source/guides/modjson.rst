@@ -83,10 +83,16 @@ value, or its default value if it hasn't been specified in configuration file:
 
    All ``Northstar.CustomServers`` ConVars are listed here: https://r2northstar.gitbook.io/r2northstar-wiki/hosting-a-server-with-northstar/basic-listen-server
 
-## scripts and RunOn
+Scripts
+------------------------
 
-RunOn syntax
+Strip off "gettingstarted" section?
 
-## Keyvalues
+* array of scripts
+* path + runOn fields
+  * client VM vs server VM
+  * RunOn syntax
+* client and server callbacks  
 
 ## Localisation
+
