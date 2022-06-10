@@ -16,6 +16,17 @@ to display in-game information about your mod in the main screen `Mods` menu.
 
 Best pratice for your mod's name is to use the ``Author.ModName`` convention.
 
+Version
+------------------------
+
+This field specifies version of your mod using ``X.Y.Z`` scheme; this field must be
+updated each time you release a new version of your mod.
+
+Common use is to increase *Z* when you publish a fix (*e.g.* ``1.5.0`` to ``1.5.1``), and 
+increase *Y* when you release new features (*e.g.* ``1.5.1`` to ``1.6.0``).
+
+Best practise is to follow semantic versioning (https://semver.org/).
+
 LoadPriority
 ------------------------
 
