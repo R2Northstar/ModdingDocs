@@ -16,11 +16,14 @@ to display in-game information about your mod in the main screen `Mods` menu.
 
 Best pratice for your mod's name is to use the ``Author.ModName`` convention.
 
-## how does Load Priority work
+LoadPriority
+------------------------
 
-## what are convars and how do they work
+This field defines the order in which all mods will be loaded by Northstar. For example,
+a mod with `"LoadPriority": 1` will be loaded after a mod with `"LoadPriority": 0`.
 
-they have to be json strings, otherwise the game wont start
+If your mod uses code from another mod, make sure to set a greater LoadPriority than the 
+mod you're using code from.
 
 ## scripts and RunOn
 
