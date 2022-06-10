@@ -1,12 +1,12 @@
 mod.json architecture
 ================================
 
-Located at your mod's root folder, the `mod.json` file is the entrypoint of your mod; 
+Located at your mod's root folder, the ``mod.json`` file is the entrypoint of your mod; 
 it contains human-readable information about it, which scripts to load, and a bunch
 of interesting stuff.
 
-This guide will dig into each of the possible `mod.json` fields. Please note that 
-`mod.json` keys must start with an uppercase letter.
+This guide will dig into each of the possible ``mod.json`` fields. Please note that 
+``mod.json`` keys must start with an uppercase letter.
 
 This is what a well-formatted ``mod.json`` looks like:
 
@@ -50,7 +50,7 @@ Name and description
 ------------------------
 
 Those ones are pretty self-explanatory. Both fields are used by Northstar itself 
-to display in-game information about your mod in the main screen `Mods` menu.
+to display in-game information about your mod in the main screen ``Mods`` menu.
 
 Best pratice for your mod's name is to use the ``Author.ModName`` convention.
 
@@ -69,7 +69,7 @@ LoadPriority
 ------------------------
 
 This field defines the order in which all mods will be loaded by Northstar. For example,
-a mod with `"LoadPriority": 1` will be loaded after a mod with `"LoadPriority": 0`.
+a mod with ``"LoadPriority": 1`` will be loaded after a mod with ``"LoadPriority": 0``.
 
 If your mod uses code from another mod, make sure to set a greater LoadPriority than the 
 mod you're using code from.
@@ -93,7 +93,7 @@ Example
 ^^^^^^^^^^^^^^^^^^^^^^^^ 
 
 If I don't want to wait 15 seconds for matchs to start on my server, ``Northstar.CustomServers`` 
-mod exposes a ConVar named `ns_private_match_countdown_length` in its ``mod.json`` manifesto:
+mod exposes a ConVar named ``ns_private_match_countdown_length`` in its ``mod.json`` manifesto:
 
 .. code-block:: json
 
@@ -128,8 +128,8 @@ Strip off "gettingstarted" section?
 
 * array of scripts
 * path + runOn fields
-  * client VM vs server VM
-  * RunOn syntax
+    * client VM vs server VM
+    * RunOn syntax
 * client and server callbacks  
 
 Localisation
