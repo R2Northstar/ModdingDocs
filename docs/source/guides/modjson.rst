@@ -124,13 +124,54 @@ value, or its default value if it hasn't been specified in configuration file:
 Scripts
 ------------------------
 
-Strip off "gettingstarted" section?
+The scripts field lets you declare an array of Squirrel files to import into your mod.
 
-* array of scripts
-* path + runOn fields
-    * client VM vs server VM
-    * RunOn syntax
-* client and server callbacks  
+Each script entry must have a "Path" value and a "RunOn" value.
+
+.. code-block:: json
+    
+    "Scripts": [
+        {
+            "Path": "path/to/file.nut",
+            "RunOn": "( CLIENT || SERVER ) && MP"
+        },
+        {
+            "Path": "path/to/another_file.nut",
+            "RunOn": "( CLIENT || SERVER ) && MP",
+            "ClientCallback": {
+                "Before": "ClientPreMapspawnThing",
+                "After": "AfterMapspawnClientThing"
+            },
+            "ServerCallback": {
+                "Before": "ServerPreMapspawncrap",
+                "After": "ServerAfterMapspawnWoo"
+            }
+        }
+   ]
+		
+
+Path
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Path of the Squirrel file to import, without ``mod/scripts/vscripts`` prefix (that's 
+where your script files should go).
+
+RunOn
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Squirrel VM context in which this script should be run.
+
+Expression examples:
+
+* ``"SP"``
+* ``"SERVER && MP"``
+* ``"( CLIENT || SERVER ) && MP"``
+
+ClientCallback / ServerCallback
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Specify methods that will be called before/after map spawn.
+
 
 Localisation
 ------------------------
