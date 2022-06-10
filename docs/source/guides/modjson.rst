@@ -94,5 +94,9 @@ Strip off "gettingstarted" section?
   * RunOn syntax
 * client and server callbacks  
 
-## Localisation
+Localisation
+------------------------
 
+This field is an array listing localisation files relative paths.
+
+For more info about localisation works on Northstar, read the :doc:`localisation` section.
