@@ -25,6 +25,53 @@ a mod with `"LoadPriority": 1` will be loaded after a mod with `"LoadPriority": 
 If your mod uses code from another mod, make sure to set a greater LoadPriority than the 
 mod you're using code from.
 
+ConVars
+------------------------
+
+This field lists configuration variables, that can be set by servers owners to modify 
+behaviour of your mod.
+
+Each configuration variable must have a ``"Name"`` and a ``"DefaultValue"``.
+
+You can access configuration variables from squirrel code using ``GetConVarInt``, 
+``GetConVarFloat``, ``GetConVarBool`` or ``GetConVarString`` calls.
+
+.. warning::
+
+   No matter the type of your variables, they have to be JSON strings, otherwise game won't start!
+
+Example
+^^^^^^^^^^^^^^^^^^^^^^^^ 
+
+If I don't want to wait 15 seconds for matchs to start on my server, ``Northstar.CustomServers`` 
+mod exposes a ConVar named `ns_private_match_countdown_length` in its ``mod.json`` manifesto:
+
+.. code-block:: json
+
+    "ConVars": [
+        {
+            "Name": "ns_private_match_countdown_length",
+            "DefaultValue": "15"
+        },
+
+        ...
+    ]
+
+I can setup the ``ns_private_match_countdown_length`` variable in my 
+``R2Northstar/mods/Northstar.CustomServers/mod/cfg/autoexec_ns_server.cfg`` configuration file.
+
+When starting a match, ``Northstar.CustomServers`` mod will retrieve the configuration variable
+value, or its default value if it hasn't been specified in configuration file:
+
+.. code-block:: javascript
+
+    // start countdown
+    SetUIVar( level, "gameStartTime", Time() + GetConVarFloat( "ns_private_match_countdown_length" ) ) 
+
+.. note::
+
+   All ``Northstar.CustomServers`` ConVars are listed here: https://r2northstar.gitbook.io/r2northstar-wiki/hosting-a-server-with-northstar/basic-listen-server
+
 ## scripts and RunOn
 
 RunOn syntax
