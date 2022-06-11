@@ -75,11 +75,11 @@ mod publicly.**
 
 Audio folder must contain your audio files as ``WAV`` format either
 ``48000hz`` or ``44100hz`` sample rate and folder name must be the ``Event
-ID.``
+ID``.
 
 For example let's say we are making a Grapple sound mod;
 
--  ``event_id_here`` (folder, your ``wav`` file must be in it)
+-  ``event_id_here`` (folder, your .wav file must be in it)
 -  ``event_id_here.json`` (don't forget to edit)
 
 JSON files must contain both EventID and AudioSelectionStrategy.
