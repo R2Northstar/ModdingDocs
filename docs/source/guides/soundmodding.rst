@@ -3,22 +3,20 @@ Sound Modding
 
 **Some of the terms and their meanings in this article;**
 
+-  ``mod.json`` documented here: :doc:`/guides/gettingstarted`. You can find an example template in this article.
 -  ``AudioSelectionStrategy`` (``sequential`` or ``random``): Selection
-   strategy for multiple override samples. If you have more than one
-   sounds, you can choose ``random`` to randomize them, if you have only
-   one sound, or more than one sound but you want to play them in alphabetical order, you can simply use ``sequential``
--  ``mod.json`` is a required file that informs the game engine how to set
-   up and use a mod. You can find an example template in this article.
--  ``Audio Event IDs`` Every event has different IDs. In order for the game
+   strategy for multiple override samples. If you have one sound or you want to play them in alphabetical order,
+   choose ``sequential``. If you have more than one sound and you want to randomize them, you can choose ``random``.
+-  ``Audio Event IDs`` Every event has a different ID. In order for the game
    to choose the sound it should play at that moment, it must first know
-   its ID. And so do you, to start to change them, you must identify the
-   exact sound first.
+   its event ID. To start to change sounds, you must identify the 
+   event ID which plays it first.
 
 Audio Type
 -----------
 
--  Use only ``WAV`` format and either ``48000hz`` or ``44100hz`` sample rate.
--  Check the last section of this article for more info and recommended tools.
+-  You will need to use ``WAV`` format and either ``48000hz`` or ``44100hz`` sample rate.
+-  more details later in :ref:`Creating Your Sound`
 
 Step 1 - Identifying the Sound
 -------------------------------
@@ -27,10 +25,10 @@ First you need to identify the exact sound. There's a command for this:
 ``ns_print_played_sounds 1`` It will show all the audio events that
 are happening at that moment on the console.
 
-For example, use your Grapple and open the console the ID will be
+For example, use your Grapple and open the console the event ID will be
 ``pilot_grapple_fire``
 
-A console example: |console|
+Hot it looks in the console: |console|
 
 All weapons, boosts, tacticals have different events IDs on different surfaces (concrete, solidmetal, wood, dirt etc.)
 That's why you must identify the exact event/s. Examples based on Grapple:
@@ -49,11 +47,18 @@ Step 2 - Creating Folders
 --------------------------
 
 When you successfully identified your event and have the audio file/s
-ready. It's time to making it.
-First of all, you need 2 things:
+ready it's time to set up the folder structure.
+Assuming the event name is ``pilot_grapple_fire``, the folder structure of your mod should look like this:
 
-- Audio Folder - Put your sound file/s in ``Audio`` folder.
-- Mod file - Basic json file. There's a template below.
+.. code-block::
+   
+   author.mod/
+   ├── audio/
+   │   ├── pilot_grapple_fire/
+   │   │   └── my_audio.wav
+   │   └── pilot_grapple_fire.json
+   └── mod.json
+   
 
 Example of a ``mod.json``
 
@@ -62,29 +67,18 @@ Example of a ``mod.json``
    {
      "Name": "MOD_NAME_HERE",
      "Description": "DESCRIPTION_HERE",
-     "Version": "1.0.0",
+     "Version": "0.1.0",
      "LoadPriority": 2
    }
 
-**Note: Version number is not that important if you don't want to release the
-mod publicly.**
 
-**Audio Folder example:**
+**Inside the ``audio/`` folder:**
 
-|audiofolder|
+-  ``pilot_grapple_fire/`` folder which needs to contain your .wav file(s)
+-  ``pilot_grapple_fire.json`` json used to configure the sound override, dont forget to edit.
 
-Audio folder must contain your audio files as ``WAV`` format either
-``48000hz`` or ``44100hz`` sample rate and folder name must be the ``Event
-ID``.
-
-For example let's say we are making a Grapple sound mod;
-
--  ``event_id_here`` (folder, your .wav file must be in it)
--  ``event_id_here.json`` (don't forget to edit)
-
-JSON files must contain both EventID and AudioSelectionStrategy.
-
-- Example ``event_id_here.json`` based on this imaginary Grapple sound mod:
+You will have to add that folder with your sound and the json for each event you want to override.
+The event JSON files must contain both EventId and AudioSelectionStrategy like this:
 
 .. code-block:: json
 
@@ -92,8 +86,6 @@ JSON files must contain both EventID and AudioSelectionStrategy.
        "EventId": [ "pilot_grapple_fire" ],
        "AudioSelectionStrategy": "sequential"
    }
-
-After the whole process you should have ``Audio`` folder and ``mod.json`` file with the all additions I just explained.
 
 Creating Your Sound
 --------------------
@@ -108,8 +100,6 @@ metadata.
 
 Installation
 -------------
--  Basic methods apply.
--  Once you are done with the mod, copy or drag the folder (which contains audio folder and mod.json) to "Titanfall 2/r2Northstar/Mods" and that's all.
+-  As with any mod, the folder which contains your ``mod.json`` needs to be inside ``Titanfall 2/r2Northstar/Mods/``.
 
-.. |audiofolder| image:: https://raw.githubusercontent.com/rwynx/audio-overriding-northstar/main/Images/audiofolder3.png
 .. |console| image:: https://raw.githubusercontent.com/rwynx/audio-overriding-northstar/main/Images/audioeventeample.png
