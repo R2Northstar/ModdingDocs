@@ -154,7 +154,8 @@ ConVars
 This field lists configuration variables, that can be set by servers owners to modify 
 behaviour of your mod.
 
-Each configuration variable must have a ``"Name"`` and a ``"DefaultValue"``.
+Each configuration variable must have a ``"Name"`` and a ``"DefaultValue"``; it can also
+feature a ``"Flags"`` field (optional).
 
 You can access configuration variables from squirrel code using ``GetConVarInt``, 
 ``GetConVarFloat``, ``GetConVarBool`` or ``GetConVarString`` calls.
@@ -194,6 +195,68 @@ value, or its default value if it hasn't been specified in configuration file:
 .. note::
 
    All ``Northstar.CustomServers`` ConVars are listed here: https://r2northstar.gitbook.io/r2northstar-wiki/hosting-a-server-with-northstar/basic-listen-server
+
+Flags
+^^^^^
+
+You can assign flags to configuration variables; to use several flags at once, just add their values.
+
+.. list-table:: Configuration variable flags
+   :widths: 20 15 55
+   :header-rows: 1
+
+   * - Name
+     - Value
+     - Description
+   * - FCVAR_UNREGISTERED
+     - 1
+     - If this is set, don't add to linked list, etc.
+   * - FCVAR_DEVELOPMENTONLY
+     - 2
+     - Hidden in released products. Flag is removed automatically if ALLOW_DEVELOPMENT_CVARS is defined.
+   * - FCVAR_GAMEDLL
+     - 4
+     - Defined by the game DLL
+   * - FCVAR_CLIENTDLL
+     - 8
+     - Defined by the client DLL
+   * - FCVAR_HIDDEN 
+     - 16
+     - Hidden. Doesn't appear in find or auto complete. Not deterred by ALLOW_DEVELOPMENT_CVARS.
+   * - FCVAR_PROTECTED
+     - 32
+     - It's a server cvar, but we don't send the data since it's a password, etc.  Sends 1 if it's not bland/zero, 0 otherwise as value.
+   * - FCVAR_SPONLY
+     - 64
+     - This cvar cannot be changed by clients connected to a multiplayer server.
+   * - FCVAR_ARCHIVE
+     - 128
+     - Save this ConVar's value to vars.rc - this works both server and client-side.
+   * - FCVAR_NOTIFY 
+     - 256
+     - Notifies players when this ConVar's value was changed.
+   * - FCVAR_REPLICATED (AKA FCVAR_SERVER)
+     - 8192
+     - This value is set by server and replicated by clients.
+   * - FCVAR_CHEAT
+     - 16384
+     - Do NOT allow changing of this convar by console, unless sv_cheats is 1.
+   * - FCVAR_DEMO
+     - 65536
+     - Record this cvar in a demo.
+   * - FCVAR_DONTRECORD
+     - 131072
+     - Don't record this.
+   * - FCVAR_RELEASE
+     - 524288
+     - This value is available to the end user.
+   * - FCVAR_ARCHIVE_PLAYERPROFILE
+     - 16777216
+     - Save this, but to profile.cfg instead - meaning this only works for clients.
+
+.. note::
+
+    Some flags have been skipped due to them being generally useless unless you have very specific requirements.
 
 Scripts
 -------
