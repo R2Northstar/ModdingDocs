@@ -37,23 +37,23 @@ def writeBulletPoints(f, gl):
 
 
 def bulletPoint(tp: str, val: str):
-    return f"\t* {tp}: {val}\n\n"
+    return f"* {tp}: {val}\n\n"
 
 
 with open(SERVER_P, "w") as f:
+    f.write("SERVER Globals\n=====\n")
     for gl in globals_server:
-        f.write("SERVER Globals\n=====\n")
         f.write("\n``" + gl["name"] + "``\n^^^^^^^^^^\n\n")
         writeBulletPoints(f, gl)
 
 with open(CLIENT_P, "w") as f:
+    f.write("CLIENT Globals\n=====\n")
     for gl in globals_client:
-        f.write("CLIENT Globals\n=====\n")
         f.write("\n``" + gl["name"] + "``\n^^^^^^^^^^\n\n")
         writeBulletPoints(f, gl)
 
 with open(UI_P, "w") as f:
+    f.write("UI Globals\n=====\n")
     for gl in globals_ui:
-        f.write("UI Globals\n=====\n")
         f.write("\n``" + gl["name"] + "``\n^^^^^^^^^^\n\n")
         writeBulletPoints(f, gl)

@@ -4,26 +4,20 @@ CLIENT Globals
 ``AttackerDamage``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``DamageHistoryStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``AssistingPlayerStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``CHARGE_TOOL``
 ^^^^^^^^^^
@@ -32,12 +26,10 @@ CLIENT Globals
 
 	CHARGE_TOOL is constant
 
-	* type: string
+* type: string
 
-	* value: "sp_weapon_arc_tool"
+* value: "sp_weapon_arc_tool"
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_NONE``
 ^^^^^^^^^^
@@ -46,12 +38,10 @@ CLIENT Globals
 
 	TRIG_FLAG_NONE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_PLAYERONLY``
 ^^^^^^^^^^
@@ -60,12 +50,10 @@ CLIENT Globals
 
 	TRIG_FLAG_PLAYERONLY is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0001
+* value: 0x0001
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_NPCONLY``
 ^^^^^^^^^^
@@ -74,12 +62,10 @@ CLIENT Globals
 
 	TRIG_FLAG_NPCONLY is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0002
+* value: 0x0002
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_NOCONTEXTBUSY``
 ^^^^^^^^^^
@@ -88,12 +74,10 @@ CLIENT Globals
 
 	TRIG_FLAG_NOCONTEXTBUSY is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0004
+* value: 0x0004
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_ONCE``
 ^^^^^^^^^^
@@ -102,12 +86,10 @@ CLIENT Globals
 
 	TRIG_FLAG_ONCE is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0008
+* value: 0x0008
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_EXCLUSIVE``
 ^^^^^^^^^^
@@ -116,12 +98,10 @@ CLIENT Globals
 
 	TRIG_FLAG_EXCLUSIVE is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0010
+* value: 0x0010
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_DEVDRAW``
 ^^^^^^^^^^
@@ -130,12 +110,10 @@ CLIENT Globals
 
 	TRIG_FLAG_DEVDRAW is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0020
+* value: 0x0020
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_START_DISABLED``
 ^^^^^^^^^^
@@ -144,12 +122,10 @@ CLIENT Globals
 
 	TRIG_FLAG_START_DISABLED is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0040
+* value: 0x0040
 
-CLIENT Globals
-=====
 
 ``TRIG_FLAG_NO_PHASE_SHIFT``
 ^^^^^^^^^^
@@ -158,12 +134,10 @@ CLIENT Globals
 
 	TRIG_FLAG_NO_PHASE_SHIFT is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0080
+* value: 0x0080
 
-CLIENT Globals
-=====
 
 ``MAP_EXTENTS``
 ^^^^^^^^^^
@@ -172,12 +146,10 @@ CLIENT Globals
 
 	MAP_EXTENTS is constant
 
-	* type: float
+* type: float
 
-	* value: 128*128
+* value: 128*128
 
-CLIENT Globals
-=====
 
 ``TRIGGER_INTERNAL_SIGNAL``
 ^^^^^^^^^^
@@ -186,12 +158,10 @@ CLIENT Globals
 
 	TRIGGER_INTERNAL_SIGNAL is constant
 
-	* type: string
+* type: string
 
-	* value: "OnTrigger"
+* value: "OnTrigger"
 
-CLIENT Globals
-=====
 
 ``CALCULATE_SEQUENCE_BLEND_TIME``
 ^^^^^^^^^^
@@ -200,68 +170,52 @@ CLIENT Globals
 
 	CALCULATE_SEQUENCE_BLEND_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: -1.0
+* value: -1.0
 
-CLIENT Globals
-=====
 
 ``ArrayDistanceEntry``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``GravityLandData``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``FirstPersonSequenceStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``FrontRightDotProductsStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``RaySphereIntersectStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``eDamageSourceId``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eModSourceId``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``modNameStrings``
 ^^^^^^^^^^
@@ -270,36 +224,28 @@ CLIENT Globals
 
 	modNameStrings is constant
 
-	* type: table
+* type: table
 
-	* value: {
+* value: {
 
-CLIENT Globals
-=====
 
 ``Frontline``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``SyncedMelee``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``SyncedMeleeChooser``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``KNIFE_MODEL``
 ^^^^^^^^^^
@@ -308,12 +254,10 @@ CLIENT Globals
 
 	KNIFE_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/weapons/combat_knife/w_combat_knife.mdl"
+* value: $"models/weapons/combat_knife/w_combat_knife.mdl"
 
-CLIENT Globals
-=====
 
 ``PULSE_BLADE_MODEL``
 ^^^^^^^^^^
@@ -322,12 +266,10 @@ CLIENT Globals
 
 	PULSE_BLADE_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/weapons/kunai/w_kunai.mdl"
+* value: $"models/weapons/kunai/w_kunai.mdl"
 
-CLIENT Globals
-=====
 
 ``WINGMAN_MODEL``
 ^^^^^^^^^^
@@ -336,12 +278,10 @@ CLIENT Globals
 
 	WINGMAN_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/weapons/b3wing/w_b3wing.mdl"
+* value: $"models/weapons/b3wing/w_b3wing.mdl"
 
-CLIENT Globals
-=====
 
 ``AWALL_MODEL``
 ^^^^^^^^^^
@@ -350,12 +290,10 @@ CLIENT Globals
 
 	AWALL_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/weapons/sentry_shield/sentry_shield_proj.mdl"
+* value: $"models/weapons/sentry_shield/sentry_shield_proj.mdl"
 
-CLIENT Globals
-=====
 
 ``REVIVE_ENABLED``
 ^^^^^^^^^^
@@ -364,36 +302,28 @@ CLIENT Globals
 
 	REVIVE_ENABLED is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``LeechActionInfo``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``LeechData``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``eRodeoDirection``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``RODEO_DRAIN_TIME``
 ^^^^^^^^^^
@@ -402,12 +332,10 @@ CLIENT Globals
 
 	RODEO_DRAIN_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``OFFER_RODEO_BATTERY_COOLDOWN``
 ^^^^^^^^^^
@@ -416,12 +344,10 @@ CLIENT Globals
 
 	OFFER_RODEO_BATTERY_COOLDOWN is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``REQUEST_RODEO_BATTERY_COOLDOWN``
 ^^^^^^^^^^
@@ -430,12 +356,10 @@ CLIENT Globals
 
 	REQUEST_RODEO_BATTERY_COOLDOWN is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``REQUEST_RODEO_BATTERY_HINT_COOLDOWN``
 ^^^^^^^^^^
@@ -444,12 +368,10 @@ CLIENT Globals
 
 	REQUEST_RODEO_BATTERY_HINT_COOLDOWN is constant
 
-	* type: float
+* type: float
 
-	* value: 30.0
+* value: 30.0
 
-CLIENT Globals
-=====
 
 ``REQUEST_RODEO_BATTERY_SHOW_ICON_TIME``
 ^^^^^^^^^^
@@ -458,12 +380,10 @@ CLIENT Globals
 
 	REQUEST_RODEO_BATTERY_SHOW_ICON_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 30.0
+* value: 30.0
 
-CLIENT Globals
-=====
 
 ``REQUEST_RODEO_BATTERY_HEALTH_PERCENTAGE_THRESHOLD``
 ^^^^^^^^^^
@@ -472,28 +392,22 @@ CLIENT Globals
 
 	REQUEST_RODEO_BATTERY_HEALTH_PERCENTAGE_THRESHOLD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.8
+* value: 0.8
 
-CLIENT Globals
-=====
 
 ``eRodeoPositions``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eRodeoClamberDirection``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``RODEO_BATTERY_THIEF_ICON_DURATION``
 ^^^^^^^^^^
@@ -502,12 +416,10 @@ CLIENT Globals
 
 	RODEO_BATTERY_THIEF_ICON_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``SENTRY_TURRET_PLACEMENT_RANGE``
 ^^^^^^^^^^
@@ -516,20 +428,16 @@ CLIENT Globals
 
 	SENTRY_TURRET_PLACEMENT_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``SentryTurretPlacementInfo``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``GRENADE_INDICATOR_ARROW_MODEL``
 ^^^^^^^^^^
@@ -538,12 +446,10 @@ CLIENT Globals
 
 	GRENADE_INDICATOR_ARROW_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/hud/grenade_indicator/grenade_indicator_arrow.mdl"
+* value: $"models/hud/grenade_indicator/grenade_indicator_arrow.mdl"
 
-CLIENT Globals
-=====
 
 ``GRENADE_INDICATOR_FRAG_MODEL``
 ^^^^^^^^^^
@@ -552,12 +458,10 @@ CLIENT Globals
 
 	GRENADE_INDICATOR_FRAG_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/hud/grenade_indicator/grenade_indicator_frag.mdl"
+* value: $"models/hud/grenade_indicator/grenade_indicator_frag.mdl"
 
-CLIENT Globals
-=====
 
 ``GRENADE_INDICATOR_SONAR_MODEL``
 ^^^^^^^^^^
@@ -566,12 +470,10 @@ CLIENT Globals
 
 	GRENADE_INDICATOR_SONAR_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/hud/grenade_indicator/grenade_indicator_sonar.mdl"
+* value: $"models/hud/grenade_indicator/grenade_indicator_sonar.mdl"
 
-CLIENT Globals
-=====
 
 ``GRENADE_MODEL``
 ^^^^^^^^^^
@@ -580,12 +482,10 @@ CLIENT Globals
 
 	GRENADE_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/weapons/grenades/m20_f_grenade.mdl"
+* value: $"models/weapons/grenades/m20_f_grenade.mdl"
 
-CLIENT Globals
-=====
 
 ``DAMAGEARROW_MODEL``
 ^^^^^^^^^^
@@ -594,20 +494,16 @@ CLIENT Globals
 
 	DAMAGEARROW_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/weapons/bullets/damage_arrow.mdl"
+* value: $"models/weapons/bullets/damage_arrow.mdl"
 
-CLIENT Globals
-=====
 
 ``damageTypes``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``GENERIC_PILOT``
 ^^^^^^^^^^
@@ -616,12 +512,10 @@ CLIENT Globals
 
 	GENERIC_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``BLISK_ID``
 ^^^^^^^^^^
@@ -630,12 +524,10 @@ CLIENT Globals
 
 	BLISK_ID is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``SPYGLASS_ID``
 ^^^^^^^^^^
@@ -644,12 +536,10 @@ CLIENT Globals
 
 	SPYGLASS_ID is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``GRAVES_ID``
 ^^^^^^^^^^
@@ -658,20 +548,16 @@ CLIENT Globals
 
 	GRAVES_ID is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``ConversationStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``CLASSIC_MP_SKYSHOW_DOGFIGHTS_DELAY``
 ^^^^^^^^^^
@@ -680,12 +566,10 @@ CLIENT Globals
 
 	CLASSIC_MP_SKYSHOW_DOGFIGHTS_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 75.0
+* value: 75.0
 
-CLIENT Globals
-=====
 
 ``DROP_MIN_X``
 ^^^^^^^^^^
@@ -694,12 +578,10 @@ CLIENT Globals
 
 	DROP_MIN_X is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``ANALYSIS_STEPS``
 ^^^^^^^^^^
@@ -708,12 +590,10 @@ CLIENT Globals
 
 	ANALYSIS_STEPS is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``ANALYSIS_YAW_STEP``
 ^^^^^^^^^^
@@ -722,12 +602,10 @@ CLIENT Globals
 
 	ANALYSIS_YAW_STEP is constant
 
-	* type: float
+* type: float
 
-	* value: 360.0
+* value: 360.0
 
-CLIENT Globals
-=====
 
 ``FIRST_ONLY``
 ^^^^^^^^^^
@@ -736,12 +614,10 @@ CLIENT Globals
 
 	FIRST_ONLY is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``SPAWNPOINT_USE_TIME``
 ^^^^^^^^^^
@@ -750,12 +626,10 @@ CLIENT Globals
 
 	SPAWNPOINT_USE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``MAX_ANALYSIS_COUNT``
 ^^^^^^^^^^
@@ -764,12 +638,10 @@ CLIENT Globals
 
 	MAX_ANALYSIS_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 64
+* value: 64
 
-CLIENT Globals
-=====
 
 ``DESCRIPTION_MULTIPLIER``
 ^^^^^^^^^^
@@ -778,12 +650,10 @@ CLIENT Globals
 
 	DESCRIPTION_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0006
+* value: 0.0006
 
-CLIENT Globals
-=====
 
 ``DROPSHIP_VERTICAL``
 ^^^^^^^^^^
@@ -792,12 +662,10 @@ CLIENT Globals
 
 	DROPSHIP_VERTICAL is constant
 
-	* type: string
+* type: string
 
-	* value: "dropship_flyer_attack_vertical_successful"
+* value: "dropship_flyer_attack_vertical_successful"
 
-CLIENT Globals
-=====
 
 ``DROPSHIP_STRAFE``
 ^^^^^^^^^^
@@ -806,12 +674,10 @@ CLIENT Globals
 
 	DROPSHIP_STRAFE is constant
 
-	* type: string
+* type: string
 
-	* value: "gd_goblin_zipline_strafe"
+* value: "gd_goblin_zipline_strafe"
 
-CLIENT Globals
-=====
 
 ``DROPSHIP_FLYER_ATTACK_ANIM``
 ^^^^^^^^^^
@@ -820,12 +686,10 @@ CLIENT Globals
 
 	DROPSHIP_FLYER_ATTACK_ANIM is constant
 
-	* type: string
+* type: string
 
-	* value: "dropship_flyer_attack"
+* value: "dropship_flyer_attack"
 
-CLIENT Globals
-=====
 
 ``DROPSHIP_FLYER_ATTACK_ANIM_VERTICAL``
 ^^^^^^^^^^
@@ -834,12 +698,10 @@ CLIENT Globals
 
 	DROPSHIP_FLYER_ATTACK_ANIM_VERTICAL is constant
 
-	* type: string
+* type: string
 
-	* value: "dropship_flyer_attack_vertical"
+* value: "dropship_flyer_attack_vertical"
 
-CLIENT Globals
-=====
 
 ``DROPSHIP_DROP_ANIM``
 ^^^^^^^^^^
@@ -848,12 +710,10 @@ CLIENT Globals
 
 	DROPSHIP_DROP_ANIM is constant
 
-	* type: string
+* type: string
 
-	* value: "gd_goblin_zipline_strafe"
+* value: "gd_goblin_zipline_strafe"
 
-CLIENT Globals
-=====
 
 ``DROPSHIP_MODEL``
 ^^^^^^^^^^
@@ -862,12 +722,10 @@ CLIENT Globals
 
 	DROPSHIP_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/vehicle/goblin_dropship/goblin_dropship.mdl"
+* value: $"models/vehicle/goblin_dropship/goblin_dropship.mdl"
 
-CLIENT Globals
-=====
 
 ``STRATON_FLIGHT_ANIM``
 ^^^^^^^^^^
@@ -876,12 +734,10 @@ CLIENT Globals
 
 	STRATON_FLIGHT_ANIM is constant
 
-	* type: string
+* type: string
 
-	* value: "st_gunship_dogfight_C"
+* value: "st_gunship_dogfight_C"
 
-CLIENT Globals
-=====
 
 ``STRATON_DOGFIGHT_ANIM1``
 ^^^^^^^^^^
@@ -890,12 +746,10 @@ CLIENT Globals
 
 	STRATON_DOGFIGHT_ANIM1 is constant
 
-	* type: string
+* type: string
 
-	* value: "st_Dogfight_Target_1"
+* value: "st_Dogfight_Target_1"
 
-CLIENT Globals
-=====
 
 ``STRATON_DOGFIGHT_ANIM2``
 ^^^^^^^^^^
@@ -904,12 +758,10 @@ CLIENT Globals
 
 	STRATON_DOGFIGHT_ANIM2 is constant
 
-	* type: string
+* type: string
 
-	* value: "st_Dogfight_Target_2"
+* value: "st_Dogfight_Target_2"
 
-CLIENT Globals
-=====
 
 ``STRATON_DOGFIGHT_ANIM3``
 ^^^^^^^^^^
@@ -918,12 +770,10 @@ CLIENT Globals
 
 	STRATON_DOGFIGHT_ANIM3 is constant
 
-	* type: string
+* type: string
 
-	* value: "st_Dogfight_Target_3"
+* value: "st_Dogfight_Target_3"
 
-CLIENT Globals
-=====
 
 ``STRATON_DOGFIGHT_ANIM1_PERSUER``
 ^^^^^^^^^^
@@ -932,12 +782,10 @@ CLIENT Globals
 
 	STRATON_DOGFIGHT_ANIM1_PERSUER is constant
 
-	* type: string
+* type: string
 
-	* value: "st_Dogfight_Persuer_1"
+* value: "st_Dogfight_Persuer_1"
 
-CLIENT Globals
-=====
 
 ``STRATON_DOGFIGHT_ANIM2_PERSUER``
 ^^^^^^^^^^
@@ -946,12 +794,10 @@ CLIENT Globals
 
 	STRATON_DOGFIGHT_ANIM2_PERSUER is constant
 
-	* type: string
+* type: string
 
-	* value: "st_Dogfight_Persuer_2"
+* value: "st_Dogfight_Persuer_2"
 
-CLIENT Globals
-=====
 
 ``STRATON_DOGFIGHT_ANIM3_PERSUER``
 ^^^^^^^^^^
@@ -960,12 +806,10 @@ CLIENT Globals
 
 	STRATON_DOGFIGHT_ANIM3_PERSUER is constant
 
-	* type: string
+* type: string
 
-	* value: "st_Dogfight_Persuer_3"
+* value: "st_Dogfight_Persuer_3"
 
-CLIENT Globals
-=====
 
 ``STRATON_ATTACK_FULL``
 ^^^^^^^^^^
@@ -974,12 +818,10 @@ CLIENT Globals
 
 	STRATON_ATTACK_FULL is constant
 
-	* type: string
+* type: string
 
-	* value: "st_AngelCity_IMC_Win_Full"
+* value: "st_AngelCity_IMC_Win_Full"
 
-CLIENT Globals
-=====
 
 ``FX_HORNET_DEATH``
 ^^^^^^^^^^
@@ -988,12 +830,10 @@ CLIENT Globals
 
 	FX_HORNET_DEATH is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_veh_exp_hornet_HS"
+* value: $"P_veh_exp_hornet_HS"
 
-CLIENT Globals
-=====
 
 ``HOTDROP_TURBO_ANIM``
 ^^^^^^^^^^
@@ -1002,12 +842,10 @@ CLIENT Globals
 
 	HOTDROP_TURBO_ANIM is constant
 
-	* type: string
+* type: string
 
-	* value: "at_hotdrop_drop_2knee_turbo"
+* value: "at_hotdrop_drop_2knee_turbo"
 
-CLIENT Globals
-=====
 
 ``TURBO_WARP_FX``
 ^^^^^^^^^^
@@ -1016,12 +854,10 @@ CLIENT Globals
 
 	TURBO_WARP_FX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_warp_in_atlas"
+* value: $"P_warp_in_atlas"
 
-CLIENT Globals
-=====
 
 ``TURBO_WARP_COMPANY``
 ^^^^^^^^^^
@@ -1030,12 +866,10 @@ CLIENT Globals
 
 	TURBO_WARP_COMPANY is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"hotdrop_hld_warp"
+* value: $"hotdrop_hld_warp"
 
-CLIENT Globals
-=====
 
 ``FX_GUNSHIP_CRASH_EXPLOSION``
 ^^^^^^^^^^
@@ -1044,12 +878,10 @@ CLIENT Globals
 
 	FX_GUNSHIP_CRASH_EXPLOSION is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"droppod_impact_black"
+* value: $"droppod_impact_black"
 
-CLIENT Globals
-=====
 
 ``FX_GUNSHIP_CRASH_EXPLOSION_ENTRANCE``
 ^^^^^^^^^^
@@ -1058,12 +890,10 @@ CLIENT Globals
 
 	FX_GUNSHIP_CRASH_EXPLOSION_ENTRANCE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"veh_gunship_warp_FULL"
+* value: $"veh_gunship_warp_FULL"
 
-CLIENT Globals
-=====
 
 ``FX_GUNSHIP_CRASH_EXPLOSION_EXIT``
 ^^^^^^^^^^
@@ -1072,76 +902,58 @@ CLIENT Globals
 
 	FX_GUNSHIP_CRASH_EXPLOSION_EXIT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"veh_gunship_warp_OUT_FULL"
+* value: $"veh_gunship_warp_OUT_FULL"
 
-CLIENT Globals
-=====
 
 ``NodeFP``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``DropTable``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``CallinData``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``SpawnPointFP``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``AttachPoint``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``NullNodeFP``
 ^^^^^^^^^^
 
-	* type: NodeFP
+* type: NodeFP
 
-CLIENT Globals
-=====
 
 ``nodeFPOrNull``
 ^^^^^^^^^^
 
-	* type: typedef
+* type: typedef
 
-CLIENT Globals
-=====
 
 ``FlightPath``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ANALYSIS_PREVIEW_TIME``
 ^^^^^^^^^^
@@ -1150,12 +962,10 @@ CLIENT Globals
 
 	ANALYSIS_PREVIEW_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``FLYER_MODEL``
 ^^^^^^^^^^
@@ -1164,20 +974,16 @@ CLIENT Globals
 
 	FLYER_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/Creatures/flyer/r2_flyer.mdl"
+* value: $"models/Creatures/flyer/r2_flyer.mdl"
 
-CLIENT Globals
-=====
 
 ``FlyerAnim``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_COLOR_NEUTRAL``
 ^^^^^^^^^^
@@ -1186,12 +992,10 @@ CLIENT Globals
 
 	HIGHLIGHT_COLOR_NEUTRAL is constant
 
-	* type: vector
+* type: vector
 
-	* value: <1.0,1.0,1.0>
+* value: <1.0,1.0,1.0>
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_COLOR_FRIENDLY``
 ^^^^^^^^^^
@@ -1200,12 +1004,10 @@ CLIENT Globals
 
 	HIGHLIGHT_COLOR_FRIENDLY is constant
 
-	* type: vector
+* type: vector
 
-	* value: <0.34,0.59,0.86>
+* value: <0.34,0.59,0.86>
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_COLOR_ENEMY``
 ^^^^^^^^^^
@@ -1214,12 +1016,10 @@ CLIENT Globals
 
 	HIGHLIGHT_COLOR_ENEMY is constant
 
-	* type: vector
+* type: vector
 
-	* value: <1.0,0.36,0.12>
+* value: <1.0,0.36,0.12>
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_COLOR_INTERACT``
 ^^^^^^^^^^
@@ -1228,12 +1028,10 @@ CLIENT Globals
 
 	HIGHLIGHT_COLOR_INTERACT is constant
 
-	* type: vector
+* type: vector
 
-	* value: <0.63,0.80,1.0>
+* value: <0.63,0.80,1.0>
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_COLOR_OBJECTIVE``
 ^^^^^^^^^^
@@ -1242,12 +1040,10 @@ CLIENT Globals
 
 	HIGHLIGHT_COLOR_OBJECTIVE is constant
 
-	* type: vector
+* type: vector
 
-	* value: <0.90,0.63,0.09>
+* value: <0.90,0.63,0.09>
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_OUTLINE_WEAPON_PICKUP``
 ^^^^^^^^^^
@@ -1256,12 +1052,10 @@ CLIENT Globals
 
 	HIGHLIGHT_OUTLINE_WEAPON_PICKUP is constant
 
-	* type: int
+* type: int
 
-	* value: 104
+* value: 104
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_OUTLINE_INTERACT_BUTTON``
 ^^^^^^^^^^
@@ -1270,12 +1064,10 @@ CLIENT Globals
 
 	HIGHLIGHT_OUTLINE_INTERACT_BUTTON is constant
 
-	* type: int
+* type: int
 
-	* value: 105
+* value: 105
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_OUTLINE_BOSS_TITAN``
 ^^^^^^^^^^
@@ -1284,12 +1076,10 @@ CLIENT Globals
 
 	HIGHLIGHT_OUTLINE_BOSS_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 108
+* value: 108
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_OUTLINE_OBJECTIVE``
 ^^^^^^^^^^
@@ -1298,12 +1088,10 @@ CLIENT Globals
 
 	HIGHLIGHT_OUTLINE_OBJECTIVE is constant
 
-	* type: int
+* type: int
 
-	* value: 125
+* value: 125
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_FILL_OBJECTIVE``
 ^^^^^^^^^^
@@ -1312,12 +1100,10 @@ CLIENT Globals
 
 	HIGHLIGHT_FILL_OBJECTIVE is constant
 
-	* type: int
+* type: int
 
-	* value: 126
+* value: 126
 
-CLIENT Globals
-=====
 
 ``MAP_SCAN_FADE_DISTANCE``
 ^^^^^^^^^^
@@ -1326,12 +1112,10 @@ CLIENT Globals
 
 	MAP_SCAN_FADE_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 16000
+* value: 16000
 
-CLIENT Globals
-=====
 
 ``MFD_MINIMAP_FRIENDLY_MATERIAL``
 ^^^^^^^^^^
@@ -1340,12 +1124,10 @@ CLIENT Globals
 
 	MFD_MINIMAP_FRIENDLY_MATERIAL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/minimap_mfd_friendly"
+* value: $"vgui/HUD/minimap_mfd_friendly"
 
-CLIENT Globals
-=====
 
 ``MFD_MINIMAP_PENDING_MARK_FRIENDLY_MATERIAL``
 ^^^^^^^^^^
@@ -1354,12 +1136,10 @@ CLIENT Globals
 
 	MFD_MINIMAP_PENDING_MARK_FRIENDLY_MATERIAL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/minimap_mfd_pre_friendly"
+* value: $"vgui/HUD/minimap_mfd_pre_friendly"
 
-CLIENT Globals
-=====
 
 ``MFD_MINIMAP_ENEMY_MATERIAL``
 ^^^^^^^^^^
@@ -1368,44 +1148,34 @@ CLIENT Globals
 
 	MFD_MINIMAP_ENEMY_MATERIAL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/minimap_mfd_enemy"
+* value: $"vgui/HUD/minimap_mfd_enemy"
 
-CLIENT Globals
-=====
 
 ``eMinimapObject_info_hardpoint``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eMinimapObject_prop_script``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eMinimapObject_npc``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eMinimapObject_npc_titan``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``MARKER_TOWERDEFENSEGENERATOR``
 ^^^^^^^^^^
@@ -1414,12 +1184,10 @@ CLIENT Globals
 
 	MARKER_TOWERDEFENSEGENERATOR is constant
 
-	* type: string
+* type: string
 
-	* value: "TowerDefenseGeneratorEnt"
+* value: "TowerDefenseGeneratorEnt"
 
-CLIENT Globals
-=====
 
 ``MARKER_ENT_CLASSNAME``
 ^^^^^^^^^^
@@ -1428,12 +1196,10 @@ CLIENT Globals
 
 	MARKER_ENT_CLASSNAME is constant
 
-	* type: string
+* type: string
 
-	* value: "script_ref"
+* value: "script_ref"
 
-CLIENT Globals
-=====
 
 ``MARKET_ENT_MARKED_NAME``
 ^^^^^^^^^^
@@ -1442,12 +1208,10 @@ CLIENT Globals
 
 	MARKET_ENT_MARKED_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "mfd_marked"
+* value: "mfd_marked"
 
-CLIENT Globals
-=====
 
 ``MARKET_ENT_PENDING_MARKED_NAME``
 ^^^^^^^^^^
@@ -1456,12 +1220,10 @@ CLIENT Globals
 
 	MARKET_ENT_PENDING_MARKED_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "mfd_pending_marked"
+* value: "mfd_pending_marked"
 
-CLIENT Globals
-=====
 
 ``EARN_REF_COLUMN_NAME``
 ^^^^^^^^^^
@@ -1470,12 +1232,10 @@ CLIENT Globals
 
 	EARN_REF_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "itemRef"
+* value: "itemRef"
 
-CLIENT Globals
-=====
 
 ``EARN_TYPE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -1484,12 +1244,10 @@ CLIENT Globals
 
 	EARN_TYPE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "earnType"
+* value: "earnType"
 
-CLIENT Globals
-=====
 
 ``EARN_BUILDING_IMAGE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -1498,12 +1256,10 @@ CLIENT Globals
 
 	EARN_BUILDING_IMAGE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "buildingImage"
+* value: "buildingImage"
 
-CLIENT Globals
-=====
 
 ``EARN_READY_IMAGE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -1512,12 +1268,10 @@ CLIENT Globals
 
 	EARN_READY_IMAGE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "readyImage"
+* value: "readyImage"
 
-CLIENT Globals
-=====
 
 ``EARN_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -1526,12 +1280,10 @@ CLIENT Globals
 
 	EARN_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "nameText"
+* value: "nameText"
 
-CLIENT Globals
-=====
 
 ``EARNMETER_HOLDTIME``
 ^^^^^^^^^^
@@ -1540,12 +1292,10 @@ CLIENT Globals
 
 	EARNMETER_HOLDTIME is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``CORE_SMOKE_FRAC``
 ^^^^^^^^^^
@@ -1554,12 +1304,10 @@ CLIENT Globals
 
 	CORE_SMOKE_FRAC is constant
 
-	* type: float
+* type: float
 
-	* value: 0.20
+* value: 0.20
 
-CLIENT Globals
-=====
 
 ``CORE_SMOKE_WEAPON``
 ^^^^^^^^^^
@@ -1568,52 +1316,40 @@ CLIENT Globals
 
 	CORE_SMOKE_WEAPON is constant
 
-	* type: string
+* type: string
 
-	* value: "mp_titanability_electric_smoke"
+* value: "mp_titanability_electric_smoke"
 
-CLIENT Globals
-=====
 
 ``eEarnMeterMode``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eRewardState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``EarnObject``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``EarnStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``earn``
 ^^^^^^^^^^
 
-	* type: EarnStruct
+* type: EarnStruct
 
-CLIENT Globals
-=====
 
 ``TITAN_EJECT_SCREECH``
 ^^^^^^^^^^
@@ -1622,12 +1358,10 @@ CLIENT Globals
 
 	TITAN_EJECT_SCREECH is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_eject_screech"
+* value: "titan_eject_screech"
 
-CLIENT Globals
-=====
 
 ``TITAN_DECAY_LIMIT``
 ^^^^^^^^^^
@@ -1636,12 +1370,10 @@ CLIENT Globals
 
 	TITAN_DECAY_LIMIT is constant
 
-	* type: float
+* type: float
 
-	* value: 0.35
+* value: 0.35
 
-CLIENT Globals
-=====
 
 ``TITAN_NUCLEAR_CORE_FX_3P``
 ^^^^^^^^^^
@@ -1650,12 +1382,10 @@ CLIENT Globals
 
 	TITAN_NUCLEAR_CORE_FX_3P is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_exp_nuke_3P_alt"
+* value: $"P_xo_exp_nuke_3P_alt"
 
-CLIENT Globals
-=====
 
 ``TITAN_NUCLEAR_CORE_FX_1P``
 ^^^^^^^^^^
@@ -1664,12 +1394,10 @@ CLIENT Globals
 
 	TITAN_NUCLEAR_CORE_FX_1P is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_exp_nuke_1P_alt"
+* value: $"P_xo_exp_nuke_1P_alt"
 
-CLIENT Globals
-=====
 
 ``TITAN_NUCLEAR_CORE_NUKE_FX``
 ^^^^^^^^^^
@@ -1678,20 +1406,16 @@ CLIENT Globals
 
 	TITAN_NUCLEAR_CORE_NUKE_FX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_nuke_warn_flare"
+* value: $"P_xo_nuke_warn_flare"
 
-CLIENT Globals
-=====
 
 ``eCockpitState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ION_ENERGY_REGEN_INTERVAL``
 ^^^^^^^^^^
@@ -1700,12 +1424,10 @@ CLIENT Globals
 
 	ION_ENERGY_REGEN_INTERVAL is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``ION_ENERGY_MAX``
 ^^^^^^^^^^
@@ -1714,12 +1436,10 @@ CLIENT Globals
 
 	ION_ENERGY_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 1000
+* value: 1000
 
-CLIENT Globals
-=====
 
 ``DEFAULT_ARC_CANNON_FOVDOT``
 ^^^^^^^^^^
@@ -1728,12 +1448,10 @@ CLIENT Globals
 
 	DEFAULT_ARC_CANNON_FOVDOT is constant
 
-	* type: float
+* type: float
 
-	* value: 0.98
+* value: 0.98
 
-CLIENT Globals
-=====
 
 ``DEFAULT_ARC_CANNON_FOVDOT_MISSILE``
 ^^^^^^^^^^
@@ -1742,12 +1460,10 @@ CLIENT Globals
 
 	DEFAULT_ARC_CANNON_FOVDOT_MISSILE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.95
+* value: 0.95
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_RANGE_CHAIN``
 ^^^^^^^^^^
@@ -1756,12 +1472,10 @@ CLIENT Globals
 
 	ARC_CANNON_RANGE_CHAIN is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_TITAN_RANGE_CHAIN``
 ^^^^^^^^^^
@@ -1770,12 +1484,10 @@ CLIENT Globals
 
 	ARC_CANNON_TITAN_RANGE_CHAIN is constant
 
-	* type: int
+* type: int
 
-	* value: 900
+* value: 900
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_CHAIN_COUNT_MIN``
 ^^^^^^^^^^
@@ -1784,12 +1496,10 @@ CLIENT Globals
 
 	ARC_CANNON_CHAIN_COUNT_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_CHAIN_COUNT_MAX``
 ^^^^^^^^^^
@@ -1798,12 +1508,10 @@ CLIENT Globals
 
 	ARC_CANNON_CHAIN_COUNT_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_CHAIN_COUNT_NPC``
 ^^^^^^^^^^
@@ -1812,12 +1520,10 @@ CLIENT Globals
 
 	ARC_CANNON_CHAIN_COUNT_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_FORK_COUNT_MAX``
 ^^^^^^^^^^
@@ -1826,12 +1532,10 @@ CLIENT Globals
 
 	ARC_CANNON_FORK_COUNT_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_FORK_DELAY``
 ^^^^^^^^^^
@@ -1840,12 +1544,10 @@ CLIENT Globals
 
 	ARC_CANNON_FORK_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_RANGE_CHAIN_BURN``
 ^^^^^^^^^^
@@ -1854,12 +1556,10 @@ CLIENT Globals
 
 	ARC_CANNON_RANGE_CHAIN_BURN is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_TITAN_RANGE_CHAIN_BURN``
 ^^^^^^^^^^
@@ -1868,12 +1568,10 @@ CLIENT Globals
 
 	ARC_CANNON_TITAN_RANGE_CHAIN_BURN is constant
 
-	* type: int
+* type: int
 
-	* value: 900
+* value: 900
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_CHAIN_COUNT_MIN_BURN``
 ^^^^^^^^^^
@@ -1882,12 +1580,10 @@ CLIENT Globals
 
 	ARC_CANNON_CHAIN_COUNT_MIN_BURN is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_CHAIN_COUNT_MAX_BURN``
 ^^^^^^^^^^
@@ -1896,12 +1592,10 @@ CLIENT Globals
 
 	ARC_CANNON_CHAIN_COUNT_MAX_BURN is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_CHAIN_COUNT_NPC_BURN``
 ^^^^^^^^^^
@@ -1910,12 +1604,10 @@ CLIENT Globals
 
 	ARC_CANNON_CHAIN_COUNT_NPC_BURN is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_FORK_COUNT_MAX_BURN``
 ^^^^^^^^^^
@@ -1924,12 +1616,10 @@ CLIENT Globals
 
 	ARC_CANNON_FORK_COUNT_MAX_BURN is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BEAM_LIFETIME_BURN``
 ^^^^^^^^^^
@@ -1938,12 +1628,10 @@ CLIENT Globals
 
 	ARC_CANNON_BEAM_LIFETIME_BURN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BOLT_RADIUS_MIN``
 ^^^^^^^^^^
@@ -1952,12 +1640,10 @@ CLIENT Globals
 
 	ARC_CANNON_BOLT_RADIUS_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 32
+* value: 32
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BOLT_RADIUS_MAX``
 ^^^^^^^^^^
@@ -1966,12 +1652,10 @@ CLIENT Globals
 
 	ARC_CANNON_BOLT_RADIUS_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 640
+* value: 640
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BOLT_WIDTH_MIN``
 ^^^^^^^^^^
@@ -1980,12 +1664,10 @@ CLIENT Globals
 
 	ARC_CANNON_BOLT_WIDTH_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BOLT_WIDTH_MAX``
 ^^^^^^^^^^
@@ -1994,12 +1676,10 @@ CLIENT Globals
 
 	ARC_CANNON_BOLT_WIDTH_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 26
+* value: 26
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BOLT_WIDTH_NPC``
 ^^^^^^^^^^
@@ -2008,12 +1688,10 @@ CLIENT Globals
 
 	ARC_CANNON_BOLT_WIDTH_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BEAM_COLOR``
 ^^^^^^^^^^
@@ -2022,12 +1700,10 @@ CLIENT Globals
 
 	ARC_CANNON_BEAM_COLOR is constant
 
-	* type: string
+* type: string
 
-	* value: "150
+* value: "150
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BEAM_LIFETIME``
 ^^^^^^^^^^
@@ -2036,12 +1712,10 @@ CLIENT Globals
 
 	ARC_CANNON_BEAM_LIFETIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.75
+* value: 0.75
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_TITAN_SCREEN_SFX``
 ^^^^^^^^^^
@@ -2050,12 +1724,10 @@ CLIENT Globals
 
 	ARC_CANNON_TITAN_SCREEN_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "Null_Remove_SoundHook"
+* value: "Null_Remove_SoundHook"
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_PILOT_SCREEN_SFX``
 ^^^^^^^^^^
@@ -2064,12 +1736,10 @@ CLIENT Globals
 
 	ARC_CANNON_PILOT_SCREEN_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "Null_Remove_SoundHook"
+* value: "Null_Remove_SoundHook"
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_EMP_DURATION_MIN``
 ^^^^^^^^^^
@@ -2078,12 +1748,10 @@ CLIENT Globals
 
 	ARC_CANNON_EMP_DURATION_MIN is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_EMP_DURATION_MAX``
 ^^^^^^^^^^
@@ -2092,12 +1760,10 @@ CLIENT Globals
 
 	ARC_CANNON_EMP_DURATION_MAX is constant
 
-	* type: float
+* type: float
 
-	* value: 1.8
+* value: 1.8
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_EMP_FADEOUT_DURATION``
 ^^^^^^^^^^
@@ -2106,12 +1772,10 @@ CLIENT Globals
 
 	ARC_CANNON_EMP_FADEOUT_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_SCREEN_EFFECTS_MIN``
 ^^^^^^^^^^
@@ -2120,12 +1784,10 @@ CLIENT Globals
 
 	ARC_CANNON_SCREEN_EFFECTS_MIN is constant
 
-	* type: float
+* type: float
 
-	* value: 0.01
+* value: 0.01
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_SCREEN_EFFECTS_MAX``
 ^^^^^^^^^^
@@ -2134,12 +1796,10 @@ CLIENT Globals
 
 	ARC_CANNON_SCREEN_EFFECTS_MAX is constant
 
-	* type: float
+* type: float
 
-	* value: 0.02
+* value: 0.02
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_SCREEN_THRESHOLD``
 ^^^^^^^^^^
@@ -2148,12 +1808,10 @@ CLIENT Globals
 
 	ARC_CANNON_SCREEN_THRESHOLD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.3385
+* value: 0.3385
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_3RD_PERSON_EFFECT_MIN_DURATION``
 ^^^^^^^^^^
@@ -2162,12 +1820,10 @@ CLIENT Globals
 
 	ARC_CANNON_3RD_PERSON_EFFECT_MIN_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 0.2
+* value: 0.2
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_DAMAGE_FALLOFF_SCALER``
 ^^^^^^^^^^
@@ -2176,12 +1832,10 @@ CLIENT Globals
 
 	ARC_CANNON_DAMAGE_FALLOFF_SCALER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.75
+* value: 0.75
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_DAMAGE_CHARGE_RATIO``
 ^^^^^^^^^^
@@ -2190,12 +1844,10 @@ CLIENT Globals
 
 	ARC_CANNON_DAMAGE_CHARGE_RATIO is constant
 
-	* type: float
+* type: float
 
-	* value: 0.85
+* value: 0.85
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_DAMAGE_CHARGE_RATIO_BURN``
 ^^^^^^^^^^
@@ -2204,12 +1856,10 @@ CLIENT Globals
 
 	ARC_CANNON_DAMAGE_CHARGE_RATIO_BURN is constant
 
-	* type: float
+* type: float
 
-	* value: 0.676
+* value: 0.676
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_CAPACITOR_CHARGE_RATIO``
 ^^^^^^^^^^
@@ -2218,12 +1868,10 @@ CLIENT Globals
 
 	ARC_CANNON_CAPACITOR_CHARGE_RATIO is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_TARGETS_MISSILES``
 ^^^^^^^^^^
@@ -2232,12 +1880,10 @@ CLIENT Globals
 
 	ARC_CANNON_TARGETS_MISSILES is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``OVERCHARGE_MAX_SHIELD_DECAY``
 ^^^^^^^^^^
@@ -2246,12 +1892,10 @@ CLIENT Globals
 
 	OVERCHARGE_MAX_SHIELD_DECAY is constant
 
-	* type: float
+* type: float
 
-	* value: 0.2
+* value: 0.2
 
-CLIENT Globals
-=====
 
 ``OVERCHARGE_SHIELD_DECAY_MULTIPLIER``
 ^^^^^^^^^^
@@ -2260,12 +1904,10 @@ CLIENT Globals
 
 	OVERCHARGE_SHIELD_DECAY_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.04
+* value: 0.04
 
-CLIENT Globals
-=====
 
 ``OVERCHARGE_BONUS_CHARGE_FRACTION``
 ^^^^^^^^^^
@@ -2274,12 +1916,10 @@ CLIENT Globals
 
 	OVERCHARGE_BONUS_CHARGE_FRACTION is constant
 
-	* type: float
+* type: float
 
-	* value: 0.05
+* value: 0.05
 
-CLIENT Globals
-=====
 
 ``SPLITTER_DAMAGE_FALLOFF_SCALER``
 ^^^^^^^^^^
@@ -2288,12 +1928,10 @@ CLIENT Globals
 
 	SPLITTER_DAMAGE_FALLOFF_SCALER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.6
+* value: 0.6
 
-CLIENT Globals
-=====
 
 ``SPLITTER_FORK_COUNT_MAX``
 ^^^^^^^^^^
@@ -2302,12 +1940,10 @@ CLIENT Globals
 
 	SPLITTER_FORK_COUNT_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_SIGNAL_DEACTIVATED``
 ^^^^^^^^^^
@@ -2316,12 +1952,10 @@ CLIENT Globals
 
 	ARC_CANNON_SIGNAL_DEACTIVATED is constant
 
-	* type: string
+* type: string
 
-	* value: "ArcCannonDeactivated"
+* value: "ArcCannonDeactivated"
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_SIGNAL_CHARGEEND``
 ^^^^^^^^^^
@@ -2330,12 +1964,10 @@ CLIENT Globals
 
 	ARC_CANNON_SIGNAL_CHARGEEND is constant
 
-	* type: string
+* type: string
 
-	* value: "ArcCannonChargeEnd"
+* value: "ArcCannonChargeEnd"
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BEAM_EFFECT``
 ^^^^^^^^^^
@@ -2344,12 +1976,10 @@ CLIENT Globals
 
 	ARC_CANNON_BEAM_EFFECT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"wpn_arc_cannon_beam"
+* value: $"wpn_arc_cannon_beam"
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_BEAM_EFFECT_MOD``
 ^^^^^^^^^^
@@ -2358,12 +1988,10 @@ CLIENT Globals
 
 	ARC_CANNON_BEAM_EFFECT_MOD is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"wpn_arc_cannon_beam_mod"
+* value: $"wpn_arc_cannon_beam_mod"
 
-CLIENT Globals
-=====
 
 ``ARC_CANNON_FX_TABLE``
 ^^^^^^^^^^
@@ -2372,12 +2000,10 @@ CLIENT Globals
 
 	ARC_CANNON_FX_TABLE is constant
 
-	* type: string
+* type: string
 
-	* value: "exp_arc_cannon"
+* value: "exp_arc_cannon"
 
-CLIENT Globals
-=====
 
 ``ArcCannonTargetClassnames``
 ^^^^^^^^^^
@@ -2386,12 +2012,10 @@ CLIENT Globals
 
 	ArcCannonTargetClassnames is constant
 
-	* type: table
+* type: table
 
-	* value: {
+* value: {
 
-CLIENT Globals
-=====
 
 ``DEFAULT_MAX_COOK_TIME``
 ^^^^^^^^^^
@@ -2400,12 +2024,10 @@ CLIENT Globals
 
 	DEFAULT_MAX_COOK_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 99999.9
+* value: 99999.9
 
-CLIENT Globals
-=====
 
 ``PROXIMITY_MINE_EXPLOSION_DELAY``
 ^^^^^^^^^^
@@ -2414,12 +2036,10 @@ CLIENT Globals
 
 	PROXIMITY_MINE_EXPLOSION_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 1.2
+* value: 1.2
 
-CLIENT Globals
-=====
 
 ``PROXIMITY_MINE_ARMING_DELAY``
 ^^^^^^^^^^
@@ -2428,12 +2048,10 @@ CLIENT Globals
 
 	PROXIMITY_MINE_ARMING_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``THERMITE_GRENADE_FX``
 ^^^^^^^^^^
@@ -2442,12 +2060,10 @@ CLIENT Globals
 
 	THERMITE_GRENADE_FX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_grenade_thermite"
+* value: $"P_grenade_thermite"
 
-CLIENT Globals
-=====
 
 ``CLUSTER_BASE_FX``
 ^^^^^^^^^^
@@ -2456,12 +2072,10 @@ CLIENT Globals
 
 	CLUSTER_BASE_FX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_wpn_meteor_exp"
+* value: $"P_wpn_meteor_exp"
 
-CLIENT Globals
-=====
 
 ``ProximityTargetClassnames``
 ^^^^^^^^^^
@@ -2470,12 +2084,10 @@ CLIENT Globals
 
 	ProximityTargetClassnames is constant
 
-	* type: table
+* type: table
 
-	* value: {
+* value: {
 
-CLIENT Globals
-=====
 
 ``PROTO_AMPED_WALL``
 ^^^^^^^^^^
@@ -2484,12 +2096,10 @@ CLIENT Globals
 
 	PROTO_AMPED_WALL is constant
 
-	* type: string
+* type: string
 
-	* value: "proto_amped_wall"
+* value: "proto_amped_wall"
 
-CLIENT Globals
-=====
 
 ``GUN_SHIELD_WALL``
 ^^^^^^^^^^
@@ -2498,12 +2108,10 @@ CLIENT Globals
 
 	GUN_SHIELD_WALL is constant
 
-	* type: string
+* type: string
 
-	* value: "gun_shield_wall"
+* value: "gun_shield_wall"
 
-CLIENT Globals
-=====
 
 ``VORTEX_REFIRE_NONE``
 ^^^^^^^^^^
@@ -2512,12 +2120,10 @@ CLIENT Globals
 
 	VORTEX_REFIRE_NONE is constant
 
-	* type: string
+* type: string
 
-	* value: ""
+* value: ""
 
-CLIENT Globals
-=====
 
 ``VORTEX_REFIRE_ABSORB``
 ^^^^^^^^^^
@@ -2526,12 +2132,10 @@ CLIENT Globals
 
 	VORTEX_REFIRE_ABSORB is constant
 
-	* type: string
+* type: string
 
-	* value: "absorb"
+* value: "absorb"
 
-CLIENT Globals
-=====
 
 ``VORTEX_REFIRE_BULLET``
 ^^^^^^^^^^
@@ -2540,12 +2144,10 @@ CLIENT Globals
 
 	VORTEX_REFIRE_BULLET is constant
 
-	* type: string
+* type: string
 
-	* value: "bullet"
+* value: "bullet"
 
-CLIENT Globals
-=====
 
 ``VORTEX_REFIRE_EXPLOSIVE_ROUND``
 ^^^^^^^^^^
@@ -2554,12 +2156,10 @@ CLIENT Globals
 
 	VORTEX_REFIRE_EXPLOSIVE_ROUND is constant
 
-	* type: string
+* type: string
 
-	* value: "explosive_round"
+* value: "explosive_round"
 
-CLIENT Globals
-=====
 
 ``VORTEX_REFIRE_ROCKET``
 ^^^^^^^^^^
@@ -2568,12 +2168,10 @@ CLIENT Globals
 
 	VORTEX_REFIRE_ROCKET is constant
 
-	* type: string
+* type: string
 
-	* value: "rocket"
+* value: "rocket"
 
-CLIENT Globals
-=====
 
 ``VORTEX_REFIRE_GRENADE``
 ^^^^^^^^^^
@@ -2582,12 +2180,10 @@ CLIENT Globals
 
 	VORTEX_REFIRE_GRENADE is constant
 
-	* type: string
+* type: string
 
-	* value: "grenade"
+* value: "grenade"
 
-CLIENT Globals
-=====
 
 ``VORTEX_REFIRE_GRENADE_LONG_FUSE``
 ^^^^^^^^^^
@@ -2596,12 +2192,10 @@ CLIENT Globals
 
 	VORTEX_REFIRE_GRENADE_LONG_FUSE is constant
 
-	* type: string
+* type: string
 
-	* value: "grenade_long_fuse"
+* value: "grenade_long_fuse"
 
-CLIENT Globals
-=====
 
 ``PROJECTILE_PREDICTED``
 ^^^^^^^^^^
@@ -2610,12 +2204,10 @@ CLIENT Globals
 
 	PROJECTILE_PREDICTED is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``PROJECTILE_NOT_PREDICTED``
 ^^^^^^^^^^
@@ -2624,12 +2216,10 @@ CLIENT Globals
 
 	PROJECTILE_NOT_PREDICTED is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``PROJECTILE_LAG_COMPENSATED``
 ^^^^^^^^^^
@@ -2638,12 +2228,10 @@ CLIENT Globals
 
 	PROJECTILE_LAG_COMPENSATED is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``PROJECTILE_NOT_LAG_COMPENSATED``
 ^^^^^^^^^^
@@ -2652,20 +2240,16 @@ CLIENT Globals
 
 	PROJECTILE_NOT_LAG_COMPENSATED is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``RadiusDamageData``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``DECOY_FADE_DISTANCE``
 ^^^^^^^^^^
@@ -2674,12 +2258,10 @@ CLIENT Globals
 
 	DECOY_FADE_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 16000
+* value: 16000
 
-CLIENT Globals
-=====
 
 ``DECOY_DURATION``
 ^^^^^^^^^^
@@ -2688,12 +2270,10 @@ CLIENT Globals
 
 	DECOY_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``HOLOPILOT_ANGLE_SEGMENT``
 ^^^^^^^^^^
@@ -2702,12 +2282,10 @@ CLIENT Globals
 
 	HOLOPILOT_ANGLE_SEGMENT is constant
 
-	* type: vector
+* type: vector
 
-	* value: <0,25,0>
+* value: <0,25,0>
 
-CLIENT Globals
-=====
 
 ``SP_PARTICLE_WALL_DURATION``
 ^^^^^^^^^^
@@ -2716,12 +2294,10 @@ CLIENT Globals
 
 	SP_PARTICLE_WALL_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 8.0
+* value: 8.0
 
-CLIENT Globals
-=====
 
 ``MP_PARTICLE_WALL_DURATION``
 ^^^^^^^^^^
@@ -2730,12 +2306,10 @@ CLIENT Globals
 
 	MP_PARTICLE_WALL_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``TITAN_GUN_SHIELD_RADIUS``
 ^^^^^^^^^^
@@ -2744,12 +2318,10 @@ CLIENT Globals
 
 	TITAN_GUN_SHIELD_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 105
+* value: 105
 
-CLIENT Globals
-=====
 
 ``TITAN_GUN_SHIELD_HEALTH``
 ^^^^^^^^^^
@@ -2758,12 +2330,10 @@ CLIENT Globals
 
 	TITAN_GUN_SHIELD_HEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 2500
+* value: 2500
 
-CLIENT Globals
-=====
 
 ``PAS_LEGION_SHEILD_HEALTH``
 ^^^^^^^^^^
@@ -2772,12 +2342,10 @@ CLIENT Globals
 
 	PAS_LEGION_SHEILD_HEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 5000
+* value: 5000
 
-CLIENT Globals
-=====
 
 ``FLIGHT_CORE_IMPACT_FX``
 ^^^^^^^^^^
@@ -2786,12 +2354,10 @@ CLIENT Globals
 
 	FLIGHT_CORE_IMPACT_FX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"droppod_impact"
+* value: $"droppod_impact"
 
-CLIENT Globals
-=====
 
 ``PROJECTILE_SPEED_40MM``
 ^^^^^^^^^^
@@ -2800,12 +2366,10 @@ CLIENT Globals
 
 	PROJECTILE_SPEED_40MM is constant
 
-	* type: float
+* type: float
 
-	* value: 8000.0
+* value: 8000.0
 
-CLIENT Globals
-=====
 
 ``TITAN_40MM_SHELL_EJECT``
 ^^^^^^^^^^
@@ -2814,12 +2378,10 @@ CLIENT Globals
 
 	TITAN_40MM_SHELL_EJECT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/Weapons/shellejects/shelleject_40mm.mdl"
+* value: $"models/Weapons/shellejects/shelleject_40mm.mdl"
 
-CLIENT Globals
-=====
 
 ``TANK_BUSTER_40MM_SFX_LOOP``
 ^^^^^^^^^^
@@ -2828,12 +2390,10 @@ CLIENT Globals
 
 	TANK_BUSTER_40MM_SFX_LOOP is constant
 
-	* type: string
+* type: string
 
-	* value: "Weapon_Vortex_Gun.ExplosiveWarningBeep"
+* value: "Weapon_Vortex_Gun.ExplosiveWarningBeep"
 
-CLIENT Globals
-=====
 
 ``TITAN_40MM_EXPLOSION_SOUND``
 ^^^^^^^^^^
@@ -2842,12 +2402,10 @@ CLIENT Globals
 
 	TITAN_40MM_EXPLOSION_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "Weapon.Explosion_Med"
+* value: "Weapon.Explosion_Med"
 
-CLIENT Globals
-=====
 
 ``MORTAR_SHOT_SFX_LOOP``
 ^^^^^^^^^^
@@ -2856,12 +2414,10 @@ CLIENT Globals
 
 	MORTAR_SHOT_SFX_LOOP is constant
 
-	* type: string
+* type: string
 
-	* value: "Weapon_Sidwinder_Projectile"
+* value: "Weapon_Sidwinder_Projectile"
 
-CLIENT Globals
-=====
 
 ``FLAME_WALL_THERMITE_DURATION``
 ^^^^^^^^^^
@@ -2870,12 +2426,10 @@ CLIENT Globals
 
 	FLAME_WALL_THERMITE_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 5.2
+* value: 5.2
 
-CLIENT Globals
-=====
 
 ``PAS_SCORCH_FIREWALL_DURATION``
 ^^^^^^^^^^
@@ -2884,12 +2438,10 @@ CLIENT Globals
 
 	PAS_SCORCH_FIREWALL_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 5.2
+* value: 5.2
 
-CLIENT Globals
-=====
 
 ``SP_FLAME_WALL_DURATION_SCALE``
 ^^^^^^^^^^
@@ -2898,12 +2450,10 @@ CLIENT Globals
 
 	SP_FLAME_WALL_DURATION_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 1.75
+* value: 1.75
 
-CLIENT Globals
-=====
 
 ``SP_THERMITE_DURATION_SCALE``
 ^^^^^^^^^^
@@ -2912,12 +2462,10 @@ CLIENT Globals
 
 	SP_THERMITE_DURATION_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 1.25
+* value: 1.25
 
-CLIENT Globals
-=====
 
 ``METEOR_FX_TRAIL``
 ^^^^^^^^^^
@@ -2926,12 +2474,10 @@ CLIENT Globals
 
 	METEOR_FX_TRAIL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_wpn_meteor_exp_trail"
+* value: $"P_wpn_meteor_exp_trail"
 
-CLIENT Globals
-=====
 
 ``METEOR_FX_BASE``
 ^^^^^^^^^^
@@ -2940,12 +2486,10 @@ CLIENT Globals
 
 	METEOR_FX_BASE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_wpn_meteor_exp"
+* value: $"P_wpn_meteor_exp"
 
-CLIENT Globals
-=====
 
 ``METEOR_THERMITE_DAMAGE_RADIUS_DEF``
 ^^^^^^^^^^
@@ -2954,12 +2498,10 @@ CLIENT Globals
 
 	METEOR_THERMITE_DAMAGE_RADIUS_DEF is constant
 
-	* type: int
+* type: int
 
-	* value: 45
+* value: 45
 
-CLIENT Globals
-=====
 
 ``SWORD_GLOW_FP``
 ^^^^^^^^^^
@@ -2968,12 +2510,10 @@ CLIENT Globals
 
 	SWORD_GLOW_FP is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_sword_core_hld_FP"
+* value: $"P_xo_sword_core_hld_FP"
 
-CLIENT Globals
-=====
 
 ``SWORD_GLOW``
 ^^^^^^^^^^
@@ -2982,12 +2522,10 @@ CLIENT Globals
 
 	SWORD_GLOW is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_sword_core_hld"
+* value: $"P_xo_sword_core_hld"
 
-CLIENT Globals
-=====
 
 ``SWORD_GLOW_PRIME_FP``
 ^^^^^^^^^^
@@ -2996,12 +2534,10 @@ CLIENT Globals
 
 	SWORD_GLOW_PRIME_FP is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_sword_core_PRM_FP"
+* value: $"P_xo_sword_core_PRM_FP"
 
-CLIENT Globals
-=====
 
 ``SWORD_GLOW_PRIME``
 ^^^^^^^^^^
@@ -3010,12 +2546,10 @@ CLIENT Globals
 
 	SWORD_GLOW_PRIME is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_sword_core_PRM"
+* value: $"P_xo_sword_core_PRM"
 
-CLIENT Globals
-=====
 
 ``PROJECTILE_SPEED_FLAK``
 ^^^^^^^^^^
@@ -3024,12 +2558,10 @@ CLIENT Globals
 
 	PROJECTILE_SPEED_FLAK is constant
 
-	* type: float
+* type: float
 
-	* value: 7500.0
+* value: 7500.0
 
-CLIENT Globals
-=====
 
 ``FX_ELECTRIC_SMOKESCREEN_PILOT``
 ^^^^^^^^^^
@@ -3038,12 +2570,10 @@ CLIENT Globals
 
 	FX_ELECTRIC_SMOKESCREEN_PILOT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_wpn_smk_electric_pilot"
+* value: $"P_wpn_smk_electric_pilot"
 
-CLIENT Globals
-=====
 
 ``FX_ELECTRIC_SMOKESCREEN_PILOT_AIR``
 ^^^^^^^^^^
@@ -3052,12 +2582,10 @@ CLIENT Globals
 
 	FX_ELECTRIC_SMOKESCREEN_PILOT_AIR is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_wpn_smk_electric_pilot_air"
+* value: $"P_wpn_smk_electric_pilot_air"
 
-CLIENT Globals
-=====
 
 ``GUNSHIPMINE_LAUNCH_VELOCITY``
 ^^^^^^^^^^
@@ -3066,12 +2594,10 @@ CLIENT Globals
 
 	GUNSHIPMINE_LAUNCH_VELOCITY is constant
 
-	* type: float
+* type: float
 
-	* value: 3000.0
+* value: 3000.0
 
-CLIENT Globals
-=====
 
 ``GUNSHIPMINE_MIN_MINE_FUSE_TIME``
 ^^^^^^^^^^
@@ -3080,12 +2606,10 @@ CLIENT Globals
 
 	GUNSHIPMINE_MIN_MINE_FUSE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``GUNSHIPMINE_MAX_MINE_FUSE_TIME``
 ^^^^^^^^^^
@@ -3094,12 +2618,10 @@ CLIENT Globals
 
 	GUNSHIPMINE_MAX_MINE_FUSE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``GUNSHIPMINE_MINE_FIELD_ACTIVATION_TIME``
 ^^^^^^^^^^
@@ -3108,12 +2630,10 @@ CLIENT Globals
 
 	GUNSHIPMINE_MINE_FIELD_ACTIVATION_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 1.15
+* value: 1.15
 
-CLIENT Globals
-=====
 
 ``GUNSHIPMINE_MINE_FIELD_EXPLODE_TELL_TIME``
 ^^^^^^^^^^
@@ -3122,12 +2642,10 @@ CLIENT Globals
 
 	GUNSHIPMINE_MINE_FIELD_EXPLODE_TELL_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 3.00
+* value: 3.00
 
-CLIENT Globals
-=====
 
 ``GUNSHIPMINE_MINE_FIELD_TITAN_ONLY``
 ^^^^^^^^^^
@@ -3136,12 +2654,10 @@ CLIENT Globals
 
 	GUNSHIPMINE_MINE_FIELD_TITAN_ONLY is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``GUNSHIPMINE_NUM_SHOTS``
 ^^^^^^^^^^
@@ -3150,12 +2666,10 @@ CLIENT Globals
 
 	GUNSHIPMINE_NUM_SHOTS is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``GUNSHIP_PROX_MINE_RANGE``
 ^^^^^^^^^^
@@ -3164,12 +2678,10 @@ CLIENT Globals
 
 	GUNSHIP_PROX_MINE_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 35
+* value: 35
 
-CLIENT Globals
-=====
 
 ``GUNSHIP_PROX_MINE_HEALTH``
 ^^^^^^^^^^
@@ -3178,12 +2690,10 @@ CLIENT Globals
 
 	GUNSHIP_PROX_MINE_HEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``DEPLOYABLE_THROW_POWER``
 ^^^^^^^^^^
@@ -3192,12 +2702,10 @@ CLIENT Globals
 
 	DEPLOYABLE_THROW_POWER is constant
 
-	* type: float
+* type: float
 
-	* value: 500.0
+* value: 500.0
 
-CLIENT Globals
-=====
 
 ``SHIFTER_START_SOUND_1P``
 ^^^^^^^^^^
@@ -3206,12 +2714,10 @@ CLIENT Globals
 
 	SHIFTER_START_SOUND_1P is constant
 
-	* type: string
+* type: string
 
-	* value: "Pilot_PhaseShift_Activate_1P"
+* value: "Pilot_PhaseShift_Activate_1P"
 
-CLIENT Globals
-=====
 
 ``SHIFTER_START_SOUND_3P``
 ^^^^^^^^^^
@@ -3220,12 +2726,10 @@ CLIENT Globals
 
 	SHIFTER_START_SOUND_3P is constant
 
-	* type: string
+* type: string
 
-	* value: "Pilot_PhaseShift_Activate_3P"
+* value: "Pilot_PhaseShift_Activate_3P"
 
-CLIENT Globals
-=====
 
 ``SHIFTER_END_SOUND_1P``
 ^^^^^^^^^^
@@ -3234,12 +2738,10 @@ CLIENT Globals
 
 	SHIFTER_END_SOUND_1P is constant
 
-	* type: string
+* type: string
 
-	* value: "Pilot_PhaseShift_End_1P"
+* value: "Pilot_PhaseShift_End_1P"
 
-CLIENT Globals
-=====
 
 ``SHIFTER_END_SOUND_3P``
 ^^^^^^^^^^
@@ -3248,12 +2750,10 @@ CLIENT Globals
 
 	SHIFTER_END_SOUND_3P is constant
 
-	* type: string
+* type: string
 
-	* value: "Pilot_PhaseShift_End_3P"
+* value: "Pilot_PhaseShift_End_3P"
 
-CLIENT Globals
-=====
 
 ``SHIFTER_START_SOUND_1P_TITAN``
 ^^^^^^^^^^
@@ -3262,12 +2762,10 @@ CLIENT Globals
 
 	SHIFTER_START_SOUND_1P_TITAN is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_phasedash_activate_1p"
+* value: "titan_phasedash_activate_1p"
 
-CLIENT Globals
-=====
 
 ``SHIFTER_START_SOUND_3P_TITAN``
 ^^^^^^^^^^
@@ -3276,12 +2774,10 @@ CLIENT Globals
 
 	SHIFTER_START_SOUND_3P_TITAN is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_phasedash_activate_3p"
+* value: "titan_phasedash_activate_3p"
 
-CLIENT Globals
-=====
 
 ``SHIFTER_END_SOUND_1P_TITAN``
 ^^^^^^^^^^
@@ -3290,12 +2786,10 @@ CLIENT Globals
 
 	SHIFTER_END_SOUND_1P_TITAN is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_phasedash_end_1p"
+* value: "titan_phasedash_end_1p"
 
-CLIENT Globals
-=====
 
 ``SHIFTER_END_SOUND_3P_TITAN``
 ^^^^^^^^^^
@@ -3304,28 +2798,22 @@ CLIENT Globals
 
 	SHIFTER_END_SOUND_3P_TITAN is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_phasedash_end_3p"
+* value: "titan_phasedash_end_3p"
 
-CLIENT Globals
-=====
 
 ``COCKPIT_STIM_FX``
 ^^^^^^^^^^
 
-	* type: int
+* type: int
 
-CLIENT Globals
-=====
 
 ``PILOT_STIM_HLD_FX``
 ^^^^^^^^^^
 
-	* type: int
+* type: int
 
-CLIENT Globals
-=====
 
 ``STIM_EFFECT_SEVERITY``
 ^^^^^^^^^^
@@ -3334,12 +2822,10 @@ CLIENT Globals
 
 	STIM_EFFECT_SEVERITY is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``TRIPLETHREAT_LAUNCH_VELOCITY``
 ^^^^^^^^^^
@@ -3348,12 +2834,10 @@ CLIENT Globals
 
 	TRIPLETHREAT_LAUNCH_VELOCITY is constant
 
-	* type: float
+* type: float
 
-	* value: 1100.0
+* value: 1100.0
 
-CLIENT Globals
-=====
 
 ``TRIPLETHREAT_MIN_MINE_FUSE_TIME``
 ^^^^^^^^^^
@@ -3362,12 +2846,10 @@ CLIENT Globals
 
 	TRIPLETHREAT_MIN_MINE_FUSE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 8.2
+* value: 8.2
 
-CLIENT Globals
-=====
 
 ``TRIPLETHREAT_MAX_MINE_FUSE_TIME``
 ^^^^^^^^^^
@@ -3376,12 +2858,10 @@ CLIENT Globals
 
 	TRIPLETHREAT_MAX_MINE_FUSE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 8.8
+* value: 8.8
 
-CLIENT Globals
-=====
 
 ``TRIPLETHREAT_MINE_FIELD_ACTIVATION_TIME``
 ^^^^^^^^^^
@@ -3390,12 +2870,10 @@ CLIENT Globals
 
 	TRIPLETHREAT_MINE_FIELD_ACTIVATION_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 1.15
+* value: 1.15
 
-CLIENT Globals
-=====
 
 ``TRIPLETHREAT_MINE_FIELD_TITAN_ONLY``
 ^^^^^^^^^^
@@ -3404,12 +2882,10 @@ CLIENT Globals
 
 	TRIPLETHREAT_MINE_FIELD_TITAN_ONLY is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``TRIPLETHREAT_MINE_FIELD_MAX_MINES``
 ^^^^^^^^^^
@@ -3418,12 +2894,10 @@ CLIENT Globals
 
 	TRIPLETHREAT_MINE_FIELD_MAX_MINES is constant
 
-	* type: int
+* type: int
 
-	* value: 9
+* value: 9
 
-CLIENT Globals
-=====
 
 ``TRIPLETHREAT_MINE_FIELD_LAUNCH_VELOCITY``
 ^^^^^^^^^^
@@ -3432,12 +2906,10 @@ CLIENT Globals
 
 	TRIPLETHREAT_MINE_FIELD_LAUNCH_VELOCITY is constant
 
-	* type: int
+* type: int
 
-	* value: 1100
+* value: 1100
 
-CLIENT Globals
-=====
 
 ``TRIPLETHREAT_NUM_SHOTS``
 ^^^^^^^^^^
@@ -3446,12 +2918,10 @@ CLIENT Globals
 
 	TRIPLETHREAT_NUM_SHOTS is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``PROX_MINE_RANGE``
 ^^^^^^^^^^
@@ -3460,28 +2930,22 @@ CLIENT Globals
 
 	PROX_MINE_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``GauntletWorldspaceDisplay``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``IntFromEntityCompare``
 ^^^^^^^^^^
 
-	* type: typedef
+* type: typedef
 
-CLIENT Globals
-=====
 
 ``DEVSCRIPTS``
 ^^^^^^^^^^
@@ -3490,12 +2954,10 @@ CLIENT Globals
 
 	DEVSCRIPTS is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``NETWORK_INVITE``
 ^^^^^^^^^^
@@ -3504,12 +2966,10 @@ CLIENT Globals
 
 	NETWORK_INVITE is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``PRE_RELEASE_DEMO``
 ^^^^^^^^^^
@@ -3518,12 +2978,10 @@ CLIENT Globals
 
 	PRE_RELEASE_DEMO is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``DIFFICULTY_EASY``
 ^^^^^^^^^^
@@ -3532,12 +2990,10 @@ CLIENT Globals
 
 	DIFFICULTY_EASY is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``DIFFICULTY_NORMAL``
 ^^^^^^^^^^
@@ -3546,12 +3002,10 @@ CLIENT Globals
 
 	DIFFICULTY_NORMAL is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``DIFFICULTY_HARD``
 ^^^^^^^^^^
@@ -3560,12 +3014,10 @@ CLIENT Globals
 
 	DIFFICULTY_HARD is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``DIFFICULTY_MASTER``
 ^^^^^^^^^^
@@ -3574,20 +3026,16 @@ CLIENT Globals
 
 	DIFFICULTY_MASTER is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``Point``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``T_DAY``
 ^^^^^^^^^^
@@ -3596,12 +3044,10 @@ CLIENT Globals
 
 	T_DAY is constant
 
-	* type: string
+* type: string
 
-	* value: "tday"
+* value: "tday"
 
-CLIENT Globals
-=====
 
 ``TEAM_DEATHMATCH``
 ^^^^^^^^^^
@@ -3610,12 +3056,10 @@ CLIENT Globals
 
 	TEAM_DEATHMATCH is constant
 
-	* type: string
+* type: string
 
-	* value: "tdm"
+* value: "tdm"
 
-CLIENT Globals
-=====
 
 ``PILOT_SKIRMISH``
 ^^^^^^^^^^
@@ -3624,12 +3068,10 @@ CLIENT Globals
 
 	PILOT_SKIRMISH is constant
 
-	* type: string
+* type: string
 
-	* value: "ps"
+* value: "ps"
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT``
 ^^^^^^^^^^
@@ -3638,12 +3080,10 @@ CLIENT Globals
 
 	CAPTURE_POINT is constant
 
-	* type: string
+* type: string
 
-	* value: "cp"
+* value: "cp"
 
-CLIENT Globals
-=====
 
 ``ATTRITION``
 ^^^^^^^^^^
@@ -3652,12 +3092,10 @@ CLIENT Globals
 
 	ATTRITION is constant
 
-	* type: string
+* type: string
 
-	* value: "at"
+* value: "at"
 
-CLIENT Globals
-=====
 
 ``CAPTURE_THE_FLAG``
 ^^^^^^^^^^
@@ -3666,12 +3104,10 @@ CLIENT Globals
 
 	CAPTURE_THE_FLAG is constant
 
-	* type: string
+* type: string
 
-	* value: "ctf"
+* value: "ctf"
 
-CLIENT Globals
-=====
 
 ``MARKED_FOR_DEATH``
 ^^^^^^^^^^
@@ -3680,12 +3116,10 @@ CLIENT Globals
 
 	MARKED_FOR_DEATH is constant
 
-	* type: string
+* type: string
 
-	* value: "mfd"
+* value: "mfd"
 
-CLIENT Globals
-=====
 
 ``MARKED_FOR_DEATH_PRO``
 ^^^^^^^^^^
@@ -3694,12 +3128,10 @@ CLIENT Globals
 
 	MARKED_FOR_DEATH_PRO is constant
 
-	* type: string
+* type: string
 
-	* value: "mfdp"
+* value: "mfdp"
 
-CLIENT Globals
-=====
 
 ``LAST_TITAN_STANDING``
 ^^^^^^^^^^
@@ -3708,12 +3140,10 @@ CLIENT Globals
 
 	LAST_TITAN_STANDING is constant
 
-	* type: string
+* type: string
 
-	* value: "lts"
+* value: "lts"
 
-CLIENT Globals
-=====
 
 ``WINGMAN_LAST_TITAN_STANDING``
 ^^^^^^^^^^
@@ -3722,12 +3152,10 @@ CLIENT Globals
 
 	WINGMAN_LAST_TITAN_STANDING is constant
 
-	* type: string
+* type: string
 
-	* value: "wlts"
+* value: "wlts"
 
-CLIENT Globals
-=====
 
 ``LTS_BOMB``
 ^^^^^^^^^^
@@ -3736,12 +3164,10 @@ CLIENT Globals
 
 	LTS_BOMB is constant
 
-	* type: string
+* type: string
 
-	* value: "ltsbomb"
+* value: "ltsbomb"
 
-CLIENT Globals
-=====
 
 ``AI_TDM``
 ^^^^^^^^^^
@@ -3750,12 +3176,10 @@ CLIENT Globals
 
 	AI_TDM is constant
 
-	* type: string
+* type: string
 
-	* value: "aitdm"
+* value: "aitdm"
 
-CLIENT Globals
-=====
 
 ``BOMB``
 ^^^^^^^^^^
@@ -3764,12 +3188,10 @@ CLIENT Globals
 
 	BOMB is constant
 
-	* type: string
+* type: string
 
-	* value: "bomb"
+* value: "bomb"
 
-CLIENT Globals
-=====
 
 ``FFA``
 ^^^^^^^^^^
@@ -3778,12 +3200,10 @@ CLIENT Globals
 
 	FFA is constant
 
-	* type: string
+* type: string
 
-	* value: "ffa"
+* value: "ffa"
 
-CLIENT Globals
-=====
 
 ``SST``
 ^^^^^^^^^^
@@ -3792,12 +3212,10 @@ CLIENT Globals
 
 	SST is constant
 
-	* type: string
+* type: string
 
-	* value: "sst"
+* value: "sst"
 
-CLIENT Globals
-=====
 
 ``COLISEUM``
 ^^^^^^^^^^
@@ -3806,12 +3224,10 @@ CLIENT Globals
 
 	COLISEUM is constant
 
-	* type: string
+* type: string
 
-	* value: "coliseum"
+* value: "coliseum"
 
-CLIENT Globals
-=====
 
 ``WINGMAN_PILOT_SKIRMISH``
 ^^^^^^^^^^
@@ -3820,12 +3236,10 @@ CLIENT Globals
 
 	WINGMAN_PILOT_SKIRMISH is constant
 
-	* type: string
+* type: string
 
-	* value: "wps"
+* value: "wps"
 
-CLIENT Globals
-=====
 
 ``HARDCORE_TDM``
 ^^^^^^^^^^
@@ -3834,12 +3248,10 @@ CLIENT Globals
 
 	HARDCORE_TDM is constant
 
-	* type: string
+* type: string
 
-	* value: "htdm"
+* value: "htdm"
 
-CLIENT Globals
-=====
 
 ``FREE_AGENCY``
 ^^^^^^^^^^
@@ -3848,12 +3260,10 @@ CLIENT Globals
 
 	FREE_AGENCY is constant
 
-	* type: string
+* type: string
 
-	* value: "fra"
+* value: "fra"
 
-CLIENT Globals
-=====
 
 ``FORT_WAR``
 ^^^^^^^^^^
@@ -3862,12 +3272,10 @@ CLIENT Globals
 
 	FORT_WAR is constant
 
-	* type: string
+* type: string
 
-	* value: "fw"
+* value: "fw"
 
-CLIENT Globals
-=====
 
 ``HUNTED``
 ^^^^^^^^^^
@@ -3876,12 +3284,10 @@ CLIENT Globals
 
 	HUNTED is constant
 
-	* type: string
+* type: string
 
-	* value: "hunted"
+* value: "hunted"
 
-CLIENT Globals
-=====
 
 ``DON``
 ^^^^^^^^^^
@@ -3890,12 +3296,10 @@ CLIENT Globals
 
 	DON is constant
 
-	* type: string
+* type: string
 
-	* value: "don"
+* value: "don"
 
-CLIENT Globals
-=====
 
 ``SPEEDBALL``
 ^^^^^^^^^^
@@ -3904,12 +3308,10 @@ CLIENT Globals
 
 	SPEEDBALL is constant
 
-	* type: string
+* type: string
 
-	* value: "speedball"
+* value: "speedball"
 
-CLIENT Globals
-=====
 
 ``RAID``
 ^^^^^^^^^^
@@ -3918,12 +3320,10 @@ CLIENT Globals
 
 	RAID is constant
 
-	* type: string
+* type: string
 
-	* value: "raid"
+* value: "raid"
 
-CLIENT Globals
-=====
 
 ``ATCOOP``
 ^^^^^^^^^^
@@ -3932,12 +3332,10 @@ CLIENT Globals
 
 	ATCOOP is constant
 
-	* type: string
+* type: string
 
-	* value: "atcoop"
+* value: "atcoop"
 
-CLIENT Globals
-=====
 
 ``CONQUEST``
 ^^^^^^^^^^
@@ -3946,12 +3344,10 @@ CLIENT Globals
 
 	CONQUEST is constant
 
-	* type: string
+* type: string
 
-	* value: "cq"
+* value: "cq"
 
-CLIENT Globals
-=====
 
 ``FD``
 ^^^^^^^^^^
@@ -3960,12 +3356,10 @@ CLIENT Globals
 
 	FD is constant
 
-	* type: string
+* type: string
 
-	* value: "fd"
+* value: "fd"
 
-CLIENT Globals
-=====
 
 ``FD_EASY``
 ^^^^^^^^^^
@@ -3974,12 +3368,10 @@ CLIENT Globals
 
 	FD_EASY is constant
 
-	* type: string
+* type: string
 
-	* value: "fd_easy"
+* value: "fd_easy"
 
-CLIENT Globals
-=====
 
 ``FD_NORMAL``
 ^^^^^^^^^^
@@ -3988,12 +3380,10 @@ CLIENT Globals
 
 	FD_NORMAL is constant
 
-	* type: string
+* type: string
 
-	* value: "fd_normal"
+* value: "fd_normal"
 
-CLIENT Globals
-=====
 
 ``FD_HARD``
 ^^^^^^^^^^
@@ -4002,12 +3392,10 @@ CLIENT Globals
 
 	FD_HARD is constant
 
-	* type: string
+* type: string
 
-	* value: "fd_hard"
+* value: "fd_hard"
 
-CLIENT Globals
-=====
 
 ``FD_MASTER``
 ^^^^^^^^^^
@@ -4016,12 +3404,10 @@ CLIENT Globals
 
 	FD_MASTER is constant
 
-	* type: string
+* type: string
 
-	* value: "fd_master"
+* value: "fd_master"
 
-CLIENT Globals
-=====
 
 ``FD_INSANE``
 ^^^^^^^^^^
@@ -4030,12 +3416,10 @@ CLIENT Globals
 
 	FD_INSANE is constant
 
-	* type: string
+* type: string
 
-	* value: "fd_insane"
+* value: "fd_insane"
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX``
 ^^^^^^^^^^
@@ -4044,12 +3428,10 @@ CLIENT Globals
 
 	PVE_SANDBOX is constant
 
-	* type: string
+* type: string
 
-	* value: "pve_sandbox"
+* value: "pve_sandbox"
 
-CLIENT Globals
-=====
 
 ``TITAN_BRAWL``
 ^^^^^^^^^^
@@ -4058,12 +3440,10 @@ CLIENT Globals
 
 	TITAN_BRAWL is constant
 
-	* type: string
+* type: string
 
-	* value: "ttdm"
+* value: "ttdm"
 
-CLIENT Globals
-=====
 
 ``VERBOSE_DAMAGE_PRINTOUTS``
 ^^^^^^^^^^
@@ -4072,12 +3452,10 @@ CLIENT Globals
 
 	VERBOSE_DAMAGE_PRINTOUTS is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``SAVEGAME_VERSION``
 ^^^^^^^^^^
@@ -4086,12 +3464,10 @@ CLIENT Globals
 
 	SAVEGAME_VERSION is constant
 
-	* type: int
+* type: int
 
-	* value: 18
+* value: 18
 
-CLIENT Globals
-=====
 
 ``PERSISTENCE_INIT_VERSION``
 ^^^^^^^^^^
@@ -4100,12 +3476,10 @@ CLIENT Globals
 
 	PERSISTENCE_INIT_VERSION is constant
 
-	* type: int
+* type: int
 
-	* value: 231
+* value: 231
 
-CLIENT Globals
-=====
 
 ``TEMP_NETWORTH_VAR``
 ^^^^^^^^^^
@@ -4114,12 +3488,10 @@ CLIENT Globals
 
 	TEMP_NETWORTH_VAR is constant
 
-	* type: string
+* type: string
 
-	* value: "activeBCID"
+* value: "activeBCID"
 
-CLIENT Globals
-=====
 
 ``NETWORTH_VAR``
 ^^^^^^^^^^
@@ -4128,12 +3500,10 @@ CLIENT Globals
 
 	NETWORTH_VAR is constant
 
-	* type: string
+* type: string
 
-	* value: "netWorth"
+* value: "netWorth"
 
-CLIENT Globals
-=====
 
 ``TESTCONST``
 ^^^^^^^^^^
@@ -4142,12 +3512,10 @@ CLIENT Globals
 
 	TESTCONST is constant
 
-	* type: int
+* type: int
 
-	* value: 99
+* value: 99
 
-CLIENT Globals
-=====
 
 ``TEAM_BOTH``
 ^^^^^^^^^^
@@ -4156,12 +3524,10 @@ CLIENT Globals
 
 	TEAM_BOTH is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``TEAM_COUNT``
 ^^^^^^^^^^
@@ -4170,12 +3536,10 @@ CLIENT Globals
 
 	TEAM_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 31
+* value: 31
 
-CLIENT Globals
-=====
 
 ``MAX_GAME_HISTORY``
 ^^^^^^^^^^
@@ -4184,12 +3548,10 @@ CLIENT Globals
 
 	MAX_GAME_HISTORY is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``NON_RARES_PER_RARE``
 ^^^^^^^^^^
@@ -4198,12 +3560,10 @@ CLIENT Globals
 
 	NON_RARES_PER_RARE is constant
 
-	* type: int
+* type: int
 
-	* value: 12
+* value: 12
 
-CLIENT Globals
-=====
 
 ``MAX_RANK``
 ^^^^^^^^^^
@@ -4212,12 +3572,10 @@ CLIENT Globals
 
 	MAX_RANK is constant
 
-	* type: int
+* type: int
 
-	* value: 24
+* value: 24
 
-CLIENT Globals
-=====
 
 ``MAX_GEN``
 ^^^^^^^^^^
@@ -4226,12 +3584,10 @@ CLIENT Globals
 
 	MAX_GEN is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``CPU_LEVEL_MINSPEC``
 ^^^^^^^^^^
@@ -4240,12 +3596,10 @@ CLIENT Globals
 
 	CPU_LEVEL_MINSPEC is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``CPU_LEVEL_DURANGO``
 ^^^^^^^^^^
@@ -4254,12 +3608,10 @@ CLIENT Globals
 
 	CPU_LEVEL_DURANGO is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``CPU_LEVEL_HIGHEND``
 ^^^^^^^^^^
@@ -4268,12 +3620,10 @@ CLIENT Globals
 
 	CPU_LEVEL_HIGHEND is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``MAX_WORLD_COORD``
 ^^^^^^^^^^
@@ -4282,12 +3632,10 @@ CLIENT Globals
 
 	MAX_WORLD_COORD is constant
 
-	* type: float
+* type: float
 
-	* value: (
+* value: (
 
-CLIENT Globals
-=====
 
 ``COORD_RANGE``
 ^^^^^^^^^^
@@ -4296,12 +3644,10 @@ CLIENT Globals
 
 	COORD_RANGE is constant
 
-	* type: float
+* type: float
 
-	* value: MAX_WORLD_COORD
+* value: MAX_WORLD_COORD
 
-CLIENT Globals
-=====
 
 ``MAX_WORLD_RANGE``
 ^^^^^^^^^^
@@ -4310,12 +3656,10 @@ CLIENT Globals
 
 	MAX_WORLD_RANGE is constant
 
-	* type: float
+* type: float
 
-	* value: sqrt(
+* value: sqrt(
 
-CLIENT Globals
-=====
 
 ``INVERT_CONVAR_GAMEPAD``
 ^^^^^^^^^^
@@ -4324,12 +3668,10 @@ CLIENT Globals
 
 	INVERT_CONVAR_GAMEPAD is constant
 
-	* type: string
+* type: string
 
-	* value: "joy_inverty"
+* value: "joy_inverty"
 
-CLIENT Globals
-=====
 
 ``INVERT_CONVAR_MOUSE``
 ^^^^^^^^^^
@@ -4338,12 +3680,10 @@ CLIENT Globals
 
 	INVERT_CONVAR_MOUSE is constant
 
-	* type: string
+* type: string
 
-	* value: "m_invert_pitch"
+* value: "m_invert_pitch"
 
-CLIENT Globals
-=====
 
 ``AUTOSPRINT_CONVAR_NAME``
 ^^^^^^^^^^
@@ -4352,12 +3692,10 @@ CLIENT Globals
 
 	AUTOSPRINT_CONVAR_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "autosprint_type"
+* value: "autosprint_type"
 
-CLIENT Globals
-=====
 
 ``AI_HARD_LIMIT``
 ^^^^^^^^^^
@@ -4366,12 +3704,10 @@ CLIENT Globals
 
 	AI_HARD_LIMIT is constant
 
-	* type: int
+* type: int
 
-	* value: 36
+* value: 36
 
-CLIENT Globals
-=====
 
 ``MID_SPEC_PLAYER_CUTOFF``
 ^^^^^^^^^^
@@ -4380,12 +3716,10 @@ CLIENT Globals
 
 	MID_SPEC_PLAYER_CUTOFF is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``MID_SPEC_MAX_AI_COUNT``
 ^^^^^^^^^^
@@ -4394,12 +3728,10 @@ CLIENT Globals
 
 	MID_SPEC_MAX_AI_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 9
+* value: 9
 
-CLIENT Globals
-=====
 
 ``ZERO_VECTOR``
 ^^^^^^^^^^
@@ -4408,36 +3740,28 @@ CLIENT Globals
 
 	ZERO_VECTOR is constant
 
-	* type: vector
+* type: vector
 
-	* value: <0,0,0>
+* value: <0,0,0>
 
-CLIENT Globals
-=====
 
 ``PilotLoadoutDef``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``TitanLoadoutDef``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``eBeaconType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``GRUNT_EXECUTE_MIN_DIST_FROM_PLAYER``
 ^^^^^^^^^^
@@ -4446,12 +3770,10 @@ CLIENT Globals
 
 	GRUNT_EXECUTE_MIN_DIST_FROM_PLAYER is constant
 
-	* type: int
+* type: int
 
-	* value: 768
+* value: 768
 
-CLIENT Globals
-=====
 
 ``GRUNT_EXECUTE_COOLDOWN_MIN``
 ^^^^^^^^^^
@@ -4460,12 +3782,10 @@ CLIENT Globals
 
 	GRUNT_EXECUTE_COOLDOWN_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``GRUNT_EXECUTE_COOLDOWN_MAX``
 ^^^^^^^^^^
@@ -4474,12 +3794,10 @@ CLIENT Globals
 
 	GRUNT_EXECUTE_COOLDOWN_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``MAX_GRUNTS_TO_EXECUTE_AT_ONCE``
 ^^^^^^^^^^
@@ -4488,12 +3806,10 @@ CLIENT Globals
 
 	MAX_GRUNTS_TO_EXECUTE_AT_ONCE is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``GRUNT_EXECUTE_GROUP_COOLDOWN_MIN``
 ^^^^^^^^^^
@@ -4502,12 +3818,10 @@ CLIENT Globals
 
 	GRUNT_EXECUTE_GROUP_COOLDOWN_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``GRUNT_EXECUTE_GROUP_COOLDOWN_MAX``
 ^^^^^^^^^^
@@ -4516,12 +3830,10 @@ CLIENT Globals
 
 	GRUNT_EXECUTE_GROUP_COOLDOWN_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 31
+* value: 31
 
-CLIENT Globals
-=====
 
 ``CONNECT_TIME_DEFAULT``
 ^^^^^^^^^^
@@ -4530,12 +3842,10 @@ CLIENT Globals
 
 	CONNECT_TIME_DEFAULT is constant
 
-	* type: int
+* type: int
 
-	* value: 23
+* value: 23
 
-CLIENT Globals
-=====
 
 ``OUT_OF_BOUNDS_TIME_LIMIT``
 ^^^^^^^^^^
@@ -4544,12 +3854,10 @@ CLIENT Globals
 
 	OUT_OF_BOUNDS_TIME_LIMIT is constant
 
-	* type: float
+* type: float
 
-	* value: 8.0
+* value: 8.0
 
-CLIENT Globals
-=====
 
 ``OUT_OF_BOUNDS_DECAY_TIME``
 ^^^^^^^^^^
@@ -4558,12 +3866,10 @@ CLIENT Globals
 
 	OUT_OF_BOUNDS_DECAY_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 15.0
+* value: 15.0
 
-CLIENT Globals
-=====
 
 ``OUT_OF_BOUNDS_DECAY_DELAY``
 ^^^^^^^^^^
@@ -4572,12 +3878,10 @@ CLIENT Globals
 
 	OUT_OF_BOUNDS_DECAY_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``MAX_TRACKED_CHALLENGES``
 ^^^^^^^^^^
@@ -4586,12 +3890,10 @@ CLIENT Globals
 
 	MAX_TRACKED_CHALLENGES is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``FRIENDLY_R``
 ^^^^^^^^^^
@@ -4600,12 +3902,10 @@ CLIENT Globals
 
 	FRIENDLY_R is constant
 
-	* type: int
+* type: int
 
-	* value: 87
+* value: 87
 
-CLIENT Globals
-=====
 
 ``FRIENDLY_G``
 ^^^^^^^^^^
@@ -4614,12 +3914,10 @@ CLIENT Globals
 
 	FRIENDLY_G is constant
 
-	* type: int
+* type: int
 
-	* value: 151
+* value: 151
 
-CLIENT Globals
-=====
 
 ``FRIENDLY_B``
 ^^^^^^^^^^
@@ -4628,12 +3926,10 @@ CLIENT Globals
 
 	FRIENDLY_B is constant
 
-	* type: int
+* type: int
 
-	* value: 219
+* value: 219
 
-CLIENT Globals
-=====
 
 ``ENEMY_R``
 ^^^^^^^^^^
@@ -4642,12 +3938,10 @@ CLIENT Globals
 
 	ENEMY_R is constant
 
-	* type: int
+* type: int
 
-	* value: 255
+* value: 255
 
-CLIENT Globals
-=====
 
 ``ENEMY_G``
 ^^^^^^^^^^
@@ -4656,12 +3950,10 @@ CLIENT Globals
 
 	ENEMY_G is constant
 
-	* type: int
+* type: int
 
-	* value: 120
+* value: 120
 
-CLIENT Globals
-=====
 
 ``ENEMY_B``
 ^^^^^^^^^^
@@ -4670,12 +3962,10 @@ CLIENT Globals
 
 	ENEMY_B is constant
 
-	* type: int
+* type: int
 
-	* value: 32
+* value: 32
 
-CLIENT Globals
-=====
 
 ``LOCAL_R``
 ^^^^^^^^^^
@@ -4684,12 +3974,10 @@ CLIENT Globals
 
 	LOCAL_R is constant
 
-	* type: int
+* type: int
 
-	* value: 254
+* value: 254
 
-CLIENT Globals
-=====
 
 ``LOCAL_G``
 ^^^^^^^^^^
@@ -4698,12 +3986,10 @@ CLIENT Globals
 
 	LOCAL_G is constant
 
-	* type: int
+* type: int
 
-	* value: 184
+* value: 184
 
-CLIENT Globals
-=====
 
 ``LOCAL_B``
 ^^^^^^^^^^
@@ -4712,12 +3998,10 @@ CLIENT Globals
 
 	LOCAL_B is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``PARTY_R``
 ^^^^^^^^^^
@@ -4726,12 +4010,10 @@ CLIENT Globals
 
 	PARTY_R is constant
 
-	* type: int
+* type: int
 
-	* value: 91
+* value: 91
 
-CLIENT Globals
-=====
 
 ``PARTY_G``
 ^^^^^^^^^^
@@ -4740,12 +4022,10 @@ CLIENT Globals
 
 	PARTY_G is constant
 
-	* type: int
+* type: int
 
-	* value: 255
+* value: 255
 
-CLIENT Globals
-=====
 
 ``PARTY_B``
 ^^^^^^^^^^
@@ -4754,12 +4034,10 @@ CLIENT Globals
 
 	PARTY_B is constant
 
-	* type: int
+* type: int
 
-	* value: 31
+* value: 31
 
-CLIENT Globals
-=====
 
 ``BURN_R``
 ^^^^^^^^^^
@@ -4768,12 +4046,10 @@ CLIENT Globals
 
 	BURN_R is constant
 
-	* type: int
+* type: int
 
-	* value: 246
+* value: 246
 
-CLIENT Globals
-=====
 
 ``BURN_G``
 ^^^^^^^^^^
@@ -4782,12 +4058,10 @@ CLIENT Globals
 
 	BURN_G is constant
 
-	* type: int
+* type: int
 
-	* value: 134
+* value: 134
 
-CLIENT Globals
-=====
 
 ``BURN_B``
 ^^^^^^^^^^
@@ -4796,12 +4070,10 @@ CLIENT Globals
 
 	BURN_B is constant
 
-	* type: int
+* type: int
 
-	* value: 40
+* value: 40
 
-CLIENT Globals
-=====
 
 ``TEAM_COLOR_ENEMY``
 ^^^^^^^^^^
@@ -4810,12 +4082,10 @@ CLIENT Globals
 
 	TEAM_COLOR_ENEMY is constant
 
-	* type: vector
+* type: vector
 
-	* value: <ENEMY_R,ENEMY_G,ENEMY_B>
+* value: <ENEMY_R,ENEMY_G,ENEMY_B>
 
-CLIENT Globals
-=====
 
 ``TEAM_COLOR_FRIENDLY``
 ^^^^^^^^^^
@@ -4824,12 +4094,10 @@ CLIENT Globals
 
 	TEAM_COLOR_FRIENDLY is constant
 
-	* type: vector
+* type: vector
 
-	* value: <FRIENDLY_R,FRIENDLY_G,FRIENDLY_B>
+* value: <FRIENDLY_R,FRIENDLY_G,FRIENDLY_B>
 
-CLIENT Globals
-=====
 
 ``TEAM_COLOR_PARTY``
 ^^^^^^^^^^
@@ -4838,12 +4106,10 @@ CLIENT Globals
 
 	TEAM_COLOR_PARTY is constant
 
-	* type: vector
+* type: vector
 
-	* value: <PARTY_R,PARTY_G,PARTY_B>
+* value: <PARTY_R,PARTY_G,PARTY_B>
 
-CLIENT Globals
-=====
 
 ``TEAM_COLOR_YOU``
 ^^^^^^^^^^
@@ -4852,12 +4118,10 @@ CLIENT Globals
 
 	TEAM_COLOR_YOU is constant
 
-	* type: vector
+* type: vector
 
-	* value: <LOCAL_R,LOCAL_G,LOCAL_B>
+* value: <LOCAL_R,LOCAL_G,LOCAL_B>
 
-CLIENT Globals
-=====
 
 ``BURN_COLOR``
 ^^^^^^^^^^
@@ -4866,12 +4130,10 @@ CLIENT Globals
 
 	BURN_COLOR is constant
 
-	* type: vector
+* type: vector
 
-	* value: <BURN_R,BURN_G,BURN_B>
+* value: <BURN_R,BURN_G,BURN_B>
 
-CLIENT Globals
-=====
 
 ``TIME_ZOFFSET``
 ^^^^^^^^^^
@@ -4880,12 +4142,10 @@ CLIENT Globals
 
 	TIME_ZOFFSET is constant
 
-	* type: int
+* type: int
 
-	* value: 11520
+* value: 11520
 
-CLIENT Globals
-=====
 
 ``LOCALPLAYER_NAME_COLOR``
 ^^^^^^^^^^
@@ -4894,12 +4154,10 @@ CLIENT Globals
 
 	LOCALPLAYER_NAME_COLOR is constant
 
-	* type: array
+* type: array
 
-	* value: [
+* value: [
 
-CLIENT Globals
-=====
 
 ``FRIENDLY_COLOR``
 ^^^^^^^^^^
@@ -4908,12 +4166,10 @@ CLIENT Globals
 
 	FRIENDLY_COLOR is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: TEAM_COLOR_FRIENDLY
+* value: TEAM_COLOR_FRIENDLY
 
-CLIENT Globals
-=====
 
 ``ENEMY_COLOR``
 ^^^^^^^^^^
@@ -4922,12 +4178,10 @@ CLIENT Globals
 
 	ENEMY_COLOR is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: TEAM_COLOR_ENEMY
+* value: TEAM_COLOR_ENEMY
 
-CLIENT Globals
-=====
 
 ``FRIENDLY_COLOR_FX``
 ^^^^^^^^^^
@@ -4936,12 +4190,10 @@ CLIENT Globals
 
 	FRIENDLY_COLOR_FX is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: TEAM_COLOR_FRIENDLY
+* value: TEAM_COLOR_FRIENDLY
 
-CLIENT Globals
-=====
 
 ``ENEMY_COLOR_FX``
 ^^^^^^^^^^
@@ -4950,12 +4202,10 @@ CLIENT Globals
 
 	ENEMY_COLOR_FX is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: TEAM_COLOR_ENEMY
+* value: TEAM_COLOR_ENEMY
 
-CLIENT Globals
-=====
 
 ``NEUTRAL_COLOR_FX``
 ^^^^^^^^^^
@@ -4964,12 +4214,10 @@ CLIENT Globals
 
 	NEUTRAL_COLOR_FX is constant
 
-	* type: vector
+* type: vector
 
-	* value: <220,220,220>
+* value: <220,220,220>
 
-CLIENT Globals
-=====
 
 ``FRIENDLY_CROSSHAIR_COLOR``
 ^^^^^^^^^^
@@ -4978,12 +4226,10 @@ CLIENT Globals
 
 	FRIENDLY_CROSSHAIR_COLOR is constant
 
-	* type: array
+* type: array
 
-	* value: [FRIENDLY_R,
+* value: [FRIENDLY_R,
 
-CLIENT Globals
-=====
 
 ``ENEMY_CROSSHAIR_COLOR``
 ^^^^^^^^^^
@@ -4992,12 +4238,10 @@ CLIENT Globals
 
 	ENEMY_CROSSHAIR_COLOR is constant
 
-	* type: array
+* type: array
 
-	* value: [ENEMY_R,
+* value: [ENEMY_R,
 
-CLIENT Globals
-=====
 
 ``OBITUARY_COLOR_BURN_WEAPON``
 ^^^^^^^^^^
@@ -5006,12 +4250,10 @@ CLIENT Globals
 
 	OBITUARY_COLOR_BURN_WEAPON is constant
 
-	* type: vector
+* type: vector
 
-	* value: <246,134,40>
+* value: <246,134,40>
 
-CLIENT Globals
-=====
 
 ``BURN_CARD_WEAPON_HUD_COLOR``
 ^^^^^^^^^^
@@ -5020,12 +4262,10 @@ CLIENT Globals
 
 	BURN_CARD_WEAPON_HUD_COLOR is constant
 
-	* type: array
+* type: array
 
-	* value: [
+* value: [
 
-CLIENT Globals
-=====
 
 ``BURN_CARD_WEAPON_HUD_COLOR_VECTOR``
 ^^^^^^^^^^
@@ -5034,12 +4274,10 @@ CLIENT Globals
 
 	BURN_CARD_WEAPON_HUD_COLOR_VECTOR is constant
 
-	* type: vector
+* type: vector
 
-	* value: <0.965,0.525,0.157>
+* value: <0.965,0.525,0.157>
 
-CLIENT Globals
-=====
 
 ``SQUAD_SIZE``
 ^^^^^^^^^^
@@ -5048,36 +4286,28 @@ CLIENT Globals
 
 	SQUAD_SIZE is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``eWeaponProficiency``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eCodeDialogueID``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eTitanVO``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``CURRENT_TARGET_FORGET_TIME``
 ^^^^^^^^^^
@@ -5086,20 +4316,16 @@ CLIENT Globals
 
 	CURRENT_TARGET_FORGET_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 8.0
+* value: 8.0
 
-CLIENT Globals
-=====
 
 ``scoreEventPointType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``BLINKING_BLUE_LIGHT_PARTICLE``
 ^^^^^^^^^^
@@ -5108,28 +4334,22 @@ CLIENT Globals
 
 	BLINKING_BLUE_LIGHT_PARTICLE is constant
 
-	* type: string
+* type: string
 
-	* value: "blue_light_large_blink"
+* value: "blue_light_large_blink"
 
-CLIENT Globals
-=====
 
 ``eNPCTitanMode``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eGruntCombatState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``MAX_BULLET_PER_SHOT``
 ^^^^^^^^^^
@@ -5138,12 +4358,10 @@ CLIENT Globals
 
 	MAX_BULLET_PER_SHOT is constant
 
-	* type: int
+* type: int
 
-	* value: 35
+* value: 35
 
-CLIENT Globals
-=====
 
 ``ELIMINATION_FUSE_TIME``
 ^^^^^^^^^^
@@ -5152,36 +4370,28 @@ CLIENT Globals
 
 	ELIMINATION_FUSE_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 45
+* value: 45
 
-CLIENT Globals
-=====
 
 ``ePanelState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``crosshairPriorityLevel``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eSpectreSpawnStyle``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``USE_TIME_INFINITE``
 ^^^^^^^^^^
@@ -5190,12 +4400,10 @@ CLIENT Globals
 
 	USE_TIME_INFINITE is constant
 
-	* type: int
+* type: int
 
-	* value: -1
+* value: -1
 
-CLIENT Globals
-=====
 
 ``CL_HIGHLIGHT_ARROW_X``
 ^^^^^^^^^^
@@ -5204,12 +4412,10 @@ CLIENT Globals
 
 	CL_HIGHLIGHT_ARROW_X is constant
 
-	* type: float
+* type: float
 
-	* value: 0.85
+* value: 0.85
 
-CLIENT Globals
-=====
 
 ``CL_HIGHLIGHT_ARROW_Y``
 ^^^^^^^^^^
@@ -5218,12 +4424,10 @@ CLIENT Globals
 
 	CL_HIGHLIGHT_ARROW_Y is constant
 
-	* type: float
+* type: float
 
-	* value: 0.80
+* value: 0.80
 
-CLIENT Globals
-=====
 
 ``CL_HIGHLIGHT_ICON_X``
 ^^^^^^^^^^
@@ -5232,12 +4436,10 @@ CLIENT Globals
 
 	CL_HIGHLIGHT_ICON_X is constant
 
-	* type: float
+* type: float
 
-	* value: 0.80
+* value: 0.80
 
-CLIENT Globals
-=====
 
 ``CL_HIGHLIGHT_ICON_Y``
 ^^^^^^^^^^
@@ -5246,12 +4448,10 @@ CLIENT Globals
 
 	CL_HIGHLIGHT_ICON_Y is constant
 
-	* type: float
+* type: float
 
-	* value: 0.75
+* value: 0.75
 
-CLIENT Globals
-=====
 
 ``CL_HIGHLIGHT_LABEL_X``
 ^^^^^^^^^^
@@ -5260,12 +4460,10 @@ CLIENT Globals
 
 	CL_HIGHLIGHT_LABEL_X is constant
 
-	* type: float
+* type: float
 
-	* value: 0.80
+* value: 0.80
 
-CLIENT Globals
-=====
 
 ``CL_HIGHLIGHT_LABEL_Y``
 ^^^^^^^^^^
@@ -5274,12 +4472,10 @@ CLIENT Globals
 
 	CL_HIGHLIGHT_LABEL_Y is constant
 
-	* type: float
+* type: float
 
-	* value: 0.75
+* value: 0.75
 
-CLIENT Globals
-=====
 
 ``MFD_COUNTDOWN_TIME``
 ^^^^^^^^^^
@@ -5288,12 +4484,10 @@ CLIENT Globals
 
 	MFD_COUNTDOWN_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``MFDP_COUNTDOWN_TIME``
 ^^^^^^^^^^
@@ -5302,12 +4496,10 @@ CLIENT Globals
 
 	MFDP_COUNTDOWN_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``MFD_BETWEEN_MARKS_TIME``
 ^^^^^^^^^^
@@ -5316,12 +4508,10 @@ CLIENT Globals
 
 	MFD_BETWEEN_MARKS_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 7
+* value: 7
 
-CLIENT Globals
-=====
 
 ``MFD_ESCORT_RADIUS``
 ^^^^^^^^^^
@@ -5330,12 +4520,10 @@ CLIENT Globals
 
 	MFD_ESCORT_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 700
+* value: 700
 
-CLIENT Globals
-=====
 
 ``MFD_ROUNDS_SKIPPED_AFTER_BEING_MARKED``
 ^^^^^^^^^^
@@ -5344,12 +4532,10 @@ CLIENT Globals
 
 	MFD_ROUNDS_SKIPPED_AFTER_BEING_MARKED is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``MFD_PRO_KILL_ANNOUNCEMENT_WAIT``
 ^^^^^^^^^^
@@ -5358,12 +4544,10 @@ CLIENT Globals
 
 	MFD_PRO_KILL_ANNOUNCEMENT_WAIT is constant
 
-	* type: float
+* type: float
 
-	* value: 0.12
+* value: 0.12
 
-CLIENT Globals
-=====
 
 ``MAX_STAR_COUNT``
 ^^^^^^^^^^
@@ -5372,12 +4556,10 @@ CLIENT Globals
 
 	MAX_STAR_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``SHIELD_WALL_CHARGE_TIME``
 ^^^^^^^^^^
@@ -5386,12 +4568,10 @@ CLIENT Globals
 
 	SHIELD_WALL_CHARGE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 15.0
+* value: 15.0
 
-CLIENT Globals
-=====
 
 ``SHIELD_WALL_MAX_CHARGES``
 ^^^^^^^^^^
@@ -5400,12 +4580,10 @@ CLIENT Globals
 
 	SHIELD_WALL_MAX_CHARGES is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TANK_MISSILE_DELAY``
 ^^^^^^^^^^
@@ -5414,12 +4592,10 @@ CLIENT Globals
 
 	TANK_MISSILE_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 1.5
+* value: 1.5
 
-CLIENT Globals
-=====
 
 ``TANK_MISSILE_VELOCITY``
 ^^^^^^^^^^
@@ -5428,12 +4604,10 @@ CLIENT Globals
 
 	TANK_MISSILE_VELOCITY is constant
 
-	* type: int
+* type: int
 
-	* value: 1800
+* value: 1800
 
-CLIENT Globals
-=====
 
 ``DEFAULT_WARNING_SFX``
 ^^^^^^^^^^
@@ -5442,12 +4616,10 @@ CLIENT Globals
 
 	DEFAULT_WARNING_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "Weapon_R1_Satchel.ArmedBeep"
+* value: "Weapon_R1_Satchel.ArmedBeep"
 
-CLIENT Globals
-=====
 
 ``FORCE_SONAR_DEACTIVATE``
 ^^^^^^^^^^
@@ -5456,12 +4628,10 @@ CLIENT Globals
 
 	FORCE_SONAR_DEACTIVATE is constant
 
-	* type: string
+* type: string
 
-	* value: "SonarDeactivate"
+* value: "SonarDeactivate"
 
-CLIENT Globals
-=====
 
 ``BURN_CARD_SATCHEL_BURST_COUNT``
 ^^^^^^^^^^
@@ -5470,12 +4640,10 @@ CLIENT Globals
 
 	BURN_CARD_SATCHEL_BURST_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``BURN_CARD_SATCHEL_BURST_RANGE``
 ^^^^^^^^^^
@@ -5484,12 +4652,10 @@ CLIENT Globals
 
 	BURN_CARD_SATCHEL_BURST_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``NOT_IN_TITAN_QUEUE``
 ^^^^^^^^^^
@@ -5498,12 +4664,10 @@ CLIENT Globals
 
 	NOT_IN_TITAN_QUEUE is constant
 
-	* type: int
+* type: int
 
-	* value: -1
+* value: -1
 
-CLIENT Globals
-=====
 
 ``TITAN_REQUEST_WAITING_FOR_WAVE``
 ^^^^^^^^^^
@@ -5512,12 +4676,10 @@ CLIENT Globals
 
 	TITAN_REQUEST_WAITING_FOR_WAVE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_REQUEST_WAVE_INCOMING``
 ^^^^^^^^^^
@@ -5526,12 +4688,10 @@ CLIENT Globals
 
 	TITAN_REQUEST_WAVE_INCOMING is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_REQUEST_WAVE_RESULTS``
 ^^^^^^^^^^
@@ -5540,12 +4700,10 @@ CLIENT Globals
 
 	TITAN_REQUEST_WAVE_RESULTS is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_REQUEST_WAVE_RESULTS_TIME``
 ^^^^^^^^^^
@@ -5554,12 +4712,10 @@ CLIENT Globals
 
 	TITAN_REQUEST_WAVE_RESULTS_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 3.5
+* value: 3.5
 
-CLIENT Globals
-=====
 
 ``MGL_MAGNETIC_FORCE``
 ^^^^^^^^^^
@@ -5568,12 +4724,10 @@ CLIENT Globals
 
 	MGL_MAGNETIC_FORCE is constant
 
-	* type: int
+* type: int
 
-	* value: 1600
+* value: 1600
 
-CLIENT Globals
-=====
 
 ``TT_MAGNETIC_FORCE``
 ^^^^^^^^^^
@@ -5582,12 +4736,10 @@ CLIENT Globals
 
 	TT_MAGNETIC_FORCE is constant
 
-	* type: float
+* type: float
 
-	* value: 1600.0
+* value: 1600.0
 
-CLIENT Globals
-=====
 
 ``PROX_MINE_MARKER_TIME``
 ^^^^^^^^^^
@@ -5596,12 +4748,10 @@ CLIENT Globals
 
 	PROX_MINE_MARKER_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``VANGUARD_SHOULDER_MISSILE_SPEED``
 ^^^^^^^^^^
@@ -5610,12 +4760,10 @@ CLIENT Globals
 
 	VANGUARD_SHOULDER_MISSILE_SPEED is constant
 
-	* type: int
+* type: int
 
-	* value: 2200
+* value: 2200
 
-CLIENT Globals
-=====
 
 ``VANGUARD_CORE8_HEALTH_AMOUNT``
 ^^^^^^^^^^
@@ -5624,12 +4772,10 @@ CLIENT Globals
 
 	VANGUARD_CORE8_HEALTH_AMOUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 5000
+* value: 5000
 
-CLIENT Globals
-=====
 
 ``MEGA_TURRET_REPAIR_TIME``
 ^^^^^^^^^^
@@ -5638,12 +4784,10 @@ CLIENT Globals
 
 	MEGA_TURRET_REPAIR_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``LIGHT_TURRET_REPAIR_TIME``
 ^^^^^^^^^^
@@ -5652,12 +4796,10 @@ CLIENT Globals
 
 	LIGHT_TURRET_REPAIR_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``EMBARKABLE_NEVER``
 ^^^^^^^^^^
@@ -5666,12 +4808,10 @@ CLIENT Globals
 
 	EMBARKABLE_NEVER is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``EMBARKABLE_INFRONT``
 ^^^^^^^^^^
@@ -5680,12 +4820,10 @@ CLIENT Globals
 
 	EMBARKABLE_INFRONT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``EMBARKABLE_ANY``
 ^^^^^^^^^^
@@ -5694,12 +4832,10 @@ CLIENT Globals
 
 	EMBARKABLE_ANY is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``EMBARKABLE_ANY_PLAYER``
 ^^^^^^^^^^
@@ -5708,12 +4844,10 @@ CLIENT Globals
 
 	EMBARKABLE_ANY_PLAYER is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_BURST_COUNT``
 ^^^^^^^^^^
@@ -5722,12 +4856,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_BURST_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_BURST_COUNT_BURN``
 ^^^^^^^^^^
@@ -5736,12 +4868,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_BURST_COUNT_BURN is constant
 
-	* type: int
+* type: int
 
-	* value: 32
+* value: 32
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_BURST_COUNT_MOD``
 ^^^^^^^^^^
@@ -5750,12 +4880,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_BURST_COUNT_MOD is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_BURST_DELAY``
 ^^^^^^^^^^
@@ -5764,12 +4892,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_BURST_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_BURST_OFFSET``
 ^^^^^^^^^^
@@ -5778,12 +4904,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_BURST_OFFSET is constant
 
-	* type: float
+* type: float
 
-	* value: 0.3
+* value: 0.3
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_BURST_RANGE``
 ^^^^^^^^^^
@@ -5792,12 +4916,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_BURST_RANGE is constant
 
-	* type: float
+* type: float
 
-	* value: 250.0
+* value: 250.0
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_BURST_GROUP_SIZE``
 ^^^^^^^^^^
@@ -5806,12 +4928,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_BURST_GROUP_SIZE is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_BASE_FIRERATE``
 ^^^^^^^^^^
@@ -5820,12 +4940,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_BASE_FIRERATE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_DURATION``
 ^^^^^^^^^^
@@ -5834,12 +4952,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``PAS_NORTHSTAR_CLUSTER_ROCKET_DURATION``
 ^^^^^^^^^^
@@ -5848,12 +4964,10 @@ CLIENT Globals
 
 	PAS_NORTHSTAR_CLUSTER_ROCKET_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 8.0
+* value: 8.0
 
-CLIENT Globals
-=====
 
 ``CLUSTER_ROCKET_FX_TABLE``
 ^^^^^^^^^^
@@ -5862,12 +4976,10 @@ CLIENT Globals
 
 	CLUSTER_ROCKET_FX_TABLE is constant
 
-	* type: string
+* type: string
 
-	* value: "exp_rocket_cluster_secondary"
+* value: "exp_rocket_cluster_secondary"
 
-CLIENT Globals
-=====
 
 ``DAMAGE_BREAK_MELEE_ASSIST``
 ^^^^^^^^^^
@@ -5876,12 +4988,10 @@ CLIENT Globals
 
 	DAMAGE_BREAK_MELEE_ASSIST is constant
 
-	* type: int
+* type: int
 
-	* value: 1400
+* value: 1400
 
-CLIENT Globals
-=====
 
 ``TITAN_FOOTSTEP_DAMAGE``
 ^^^^^^^^^^
@@ -5890,12 +5000,10 @@ CLIENT Globals
 
 	TITAN_FOOTSTEP_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 350
+* value: 350
 
-CLIENT Globals
-=====
 
 ``TITAN_FOOTSTEP_DAMAGE_WAIT``
 ^^^^^^^^^^
@@ -5904,12 +5012,10 @@ CLIENT Globals
 
 	TITAN_FOOTSTEP_DAMAGE_WAIT is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``REVIVE_TIME_TO_REVIVE``
 ^^^^^^^^^^
@@ -5918,36 +5024,28 @@ CLIENT Globals
 
 	REVIVE_TIME_TO_REVIVE is constant
 
-	* type: float
+* type: float
 
-	* value: 4.0
+* value: 4.0
 
-CLIENT Globals
-=====
 
 ``eRankEnabledModes``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eOutpostCannonTargets``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eDiggerState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``O2_EPILOGUE_DURATION``
 ^^^^^^^^^^
@@ -5956,28 +5054,22 @@ CLIENT Globals
 
 	O2_EPILOGUE_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 51.5
+* value: 51.5
 
-CLIENT Globals
-=====
 
 ``eEvents``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eHardpoint``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``BLISK``
 ^^^^^^^^^^
@@ -5986,12 +5078,10 @@ CLIENT Globals
 
 	BLISK is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``GRAVES``
 ^^^^^^^^^^
@@ -6000,12 +5090,10 @@ CLIENT Globals
 
 	GRAVES is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``BISH``
 ^^^^^^^^^^
@@ -6014,12 +5102,10 @@ CLIENT Globals
 
 	BISH is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``BARKER``
 ^^^^^^^^^^
@@ -6028,12 +5114,10 @@ CLIENT Globals
 
 	BARKER is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``CRASHTIME``
 ^^^^^^^^^^
@@ -6042,12 +5126,10 @@ CLIENT Globals
 
 	CRASHTIME is constant
 
-	* type: float
+* type: float
 
-	* value: 16.05
+* value: 16.05
 
-CLIENT Globals
-=====
 
 ``WAKEUPTIME``
 ^^^^^^^^^^
@@ -6056,12 +5138,10 @@ CLIENT Globals
 
 	WAKEUPTIME is constant
 
-	* type: float
+* type: float
 
-	* value: 1.5
+* value: 1.5
 
-CLIENT Globals
-=====
 
 ``GATEVDUTIME``
 ^^^^^^^^^^
@@ -6070,12 +5150,10 @@ CLIENT Globals
 
 	GATEVDUTIME is constant
 
-	* type: float
+* type: float
 
-	* value: 9.2
+* value: 9.2
 
-CLIENT Globals
-=====
 
 ``LEVEL_UNLOCKS_COUNT``
 ^^^^^^^^^^
@@ -6084,12 +5162,10 @@ CLIENT Globals
 
 	LEVEL_UNLOCKS_COUNT is constant
 
-	* type: array
+* type: array
 
-	* value: [
+* value: [
 
-CLIENT Globals
-=====
 
 ``OFFHAND_HUD_COLOR_FULL``
 ^^^^^^^^^^
@@ -6098,12 +5174,10 @@ CLIENT Globals
 
 	OFFHAND_HUD_COLOR_FULL is constant
 
-	* type: string
+* type: string
 
-	* value: "180
+* value: "180
 
-CLIENT Globals
-=====
 
 ``OFFHAND_HUD_COLOR_EMPTY``
 ^^^^^^^^^^
@@ -6112,12 +5186,10 @@ CLIENT Globals
 
 	OFFHAND_HUD_COLOR_EMPTY is constant
 
-	* type: string
+* type: string
 
-	* value: "200
+* value: "200
 
-CLIENT Globals
-=====
 
 ``EJECT_FADE_TIME``
 ^^^^^^^^^^
@@ -6126,12 +5198,10 @@ CLIENT Globals
 
 	EJECT_FADE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``PROGRESS_BAR_FULL``
 ^^^^^^^^^^
@@ -6140,12 +5210,10 @@ CLIENT Globals
 
 	PROGRESS_BAR_FULL is constant
 
-	* type: string
+* type: string
 
-	* value: "49
+* value: "49
 
-CLIENT Globals
-=====
 
 ``PROGRESS_BAR_EMPTY``
 ^^^^^^^^^^
@@ -6154,20 +5222,16 @@ CLIENT Globals
 
 	PROGRESS_BAR_EMPTY is constant
 
-	* type: string
+* type: string
 
-	* value: "229
+* value: "229
 
-CLIENT Globals
-=====
 
 ``eDevStats``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``DEVSTATS_VERSION``
 ^^^^^^^^^^
@@ -6176,12 +5240,10 @@ CLIENT Globals
 
 	DEVSTATS_VERSION is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``DEVSTATS_V2_VERSION``
 ^^^^^^^^^^
@@ -6190,12 +5252,10 @@ CLIENT Globals
 
 	DEVSTATS_V2_VERSION is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``DEVSTATS_SEPARATOR``
 ^^^^^^^^^^
@@ -6204,12 +5264,10 @@ CLIENT Globals
 
 	DEVSTATS_SEPARATOR is constant
 
-	* type: string
+* type: string
 
-	* value: ";"
+* value: ";"
 
-CLIENT Globals
-=====
 
 ``DEV_STAT``
 ^^^^^^^^^^
@@ -6218,12 +5276,10 @@ CLIENT Globals
 
 	DEV_STAT is constant
 
-	* type: string
+* type: string
 
-	* value: "DEV_STAT"
+* value: "DEV_STAT"
 
-CLIENT Globals
-=====
 
 ``NUM_GAMES_TRACK_KDRATIO``
 ^^^^^^^^^^
@@ -6232,12 +5288,10 @@ CLIENT Globals
 
 	NUM_GAMES_TRACK_KDRATIO is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``NUM_GAMES_TRACK_WINLOSS_HISTORY``
 ^^^^^^^^^^
@@ -6246,12 +5300,10 @@ CLIENT Globals
 
 	NUM_GAMES_TRACK_WINLOSS_HISTORY is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``CONSTFLYERHEALTH``
 ^^^^^^^^^^
@@ -6260,12 +5312,10 @@ CLIENT Globals
 
 	CONSTFLYERHEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``CONSTFLYERHEALTHZERO``
 ^^^^^^^^^^
@@ -6274,60 +5324,46 @@ CLIENT Globals
 
 	CONSTFLYERHEALTHZERO is constant
 
-	* type: int
+* type: int
 
-	* value: 100000
+* value: 100000
 
-CLIENT Globals
-=====
 
 ``eFlyerType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eFlyerPathScale``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eDropStyle``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eNPCStateCP``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eCapPointAIScoring``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eFighterAngles``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``DEATHCAM_TIME``
 ^^^^^^^^^^
@@ -6336,12 +5372,10 @@ CLIENT Globals
 
 	DEATHCAM_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 3.5
+* value: 3.5
 
-CLIENT Globals
-=====
 
 ``KILL_REPLAY_BEFORE_KILL_TIME_PILOT``
 ^^^^^^^^^^
@@ -6350,12 +5384,10 @@ CLIENT Globals
 
 	KILL_REPLAY_BEFORE_KILL_TIME_PILOT is constant
 
-	* type: float
+* type: float
 
-	* value: 3.5
+* value: 3.5
 
-CLIENT Globals
-=====
 
 ``KILL_REPLAY_BEFORE_KILL_TIME_TITAN``
 ^^^^^^^^^^
@@ -6364,12 +5396,10 @@ CLIENT Globals
 
 	KILL_REPLAY_BEFORE_KILL_TIME_TITAN is constant
 
-	* type: float
+* type: float
 
-	* value: 6.8
+* value: 6.8
 
-CLIENT Globals
-=====
 
 ``KILL_REPLAY_BEFORE_KILL_TIME_DROPPOD``
 ^^^^^^^^^^
@@ -6378,12 +5408,10 @@ CLIENT Globals
 
 	KILL_REPLAY_BEFORE_KILL_TIME_DROPPOD is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``KILL_REPLAY_AFTER_KILL_TIME``
 ^^^^^^^^^^
@@ -6392,12 +5420,10 @@ CLIENT Globals
 
 	KILL_REPLAY_AFTER_KILL_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``DEATHCAM_TIME_SHORT``
 ^^^^^^^^^^
@@ -6406,12 +5432,10 @@ CLIENT Globals
 
 	DEATHCAM_TIME_SHORT is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``KILL_REPLAY_BEFORE_KILL_TIME_SHORT``
 ^^^^^^^^^^
@@ -6420,12 +5444,10 @@ CLIENT Globals
 
 	KILL_REPLAY_BEFORE_KILL_TIME_SHORT is constant
 
-	* type: float
+* type: float
 
-	* value: 3.5
+* value: 3.5
 
-CLIENT Globals
-=====
 
 ``KILL_REPLAY_AFTER_KILL_TIME_SHORT``
 ^^^^^^^^^^
@@ -6434,12 +5456,10 @@ CLIENT Globals
 
 	KILL_REPLAY_AFTER_KILL_TIME_SHORT is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``RESPAWN_BUTTON_BUFFER``
 ^^^^^^^^^^
@@ -6448,12 +5468,10 @@ CLIENT Globals
 
 	RESPAWN_BUTTON_BUFFER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``DEFAULT_SCRIPTED_ANIMATION_BLEND_TIME``
 ^^^^^^^^^^
@@ -6462,12 +5480,10 @@ CLIENT Globals
 
 	DEFAULT_SCRIPTED_ANIMATION_BLEND_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.2
+* value: 0.2
 
-CLIENT Globals
-=====
 
 ``DEFAULT_SCRIPTED_ARRIVAL_DISTANCE``
 ^^^^^^^^^^
@@ -6476,12 +5492,10 @@ CLIENT Globals
 
 	DEFAULT_SCRIPTED_ARRIVAL_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 16
+* value: 16
 
-CLIENT Globals
-=====
 
 ``RODEO_APPROACH_FALLING_FROM_ABOVE``
 ^^^^^^^^^^
@@ -6490,12 +5504,10 @@ CLIENT Globals
 
 	RODEO_APPROACH_FALLING_FROM_ABOVE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``RODEO_APPROACH_JUMP_ON``
 ^^^^^^^^^^
@@ -6504,12 +5516,10 @@ CLIENT Globals
 
 	RODEO_APPROACH_JUMP_ON is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``SAFE_TITANFALL_DISTANCE``
 ^^^^^^^^^^
@@ -6518,12 +5528,10 @@ CLIENT Globals
 
 	SAFE_TITANFALL_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 125
+* value: 125
 
-CLIENT Globals
-=====
 
 ``SAFE_TITANFALL_DISTANCE_CTF``
 ^^^^^^^^^^
@@ -6532,12 +5540,10 @@ CLIENT Globals
 
 	SAFE_TITANFALL_DISTANCE_CTF is constant
 
-	* type: int
+* type: int
 
-	* value: 270
+* value: 270
 
-CLIENT Globals
-=====
 
 ``NUM_PERSISTENT_PILOT_LOADOUTS``
 ^^^^^^^^^^
@@ -6546,12 +5552,10 @@ CLIENT Globals
 
 	NUM_PERSISTENT_PILOT_LOADOUTS is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``NUM_PERSISTENT_TITAN_LOADOUTS``
 ^^^^^^^^^^
@@ -6560,12 +5564,10 @@ CLIENT Globals
 
 	NUM_PERSISTENT_TITAN_LOADOUTS is constant
 
-	* type: int
+* type: int
 
-	* value: 7
+* value: 7
 
-CLIENT Globals
-=====
 
 ``EMBARK_TIMEOUT``
 ^^^^^^^^^^
@@ -6574,12 +5576,10 @@ CLIENT Globals
 
 	EMBARK_TIMEOUT is constant
 
-	* type: float
+* type: float
 
-	* value: 13.0
+* value: 13.0
 
-CLIENT Globals
-=====
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MIN``
 ^^^^^^^^^^
@@ -6588,12 +5588,10 @@ CLIENT Globals
 
 	EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MIN is constant
 
-	* type: float
+* type: float
 
-	* value: 1.5
+* value: 1.5
 
-CLIENT Globals
-=====
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MAX``
 ^^^^^^^^^^
@@ -6602,12 +5600,10 @@ CLIENT Globals
 
 	EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MAX is constant
 
-	* type: float
+* type: float
 
-	* value: 2.5
+* value: 2.5
 
-CLIENT Globals
-=====
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_FADE``
 ^^^^^^^^^^
@@ -6616,12 +5612,10 @@ CLIENT Globals
 
 	EMP_GRENADE_PILOT_SCREEN_EFFECTS_FADE is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_MIN``
 ^^^^^^^^^^
@@ -6630,12 +5624,10 @@ CLIENT Globals
 
 	EMP_GRENADE_PILOT_SCREEN_EFFECTS_MIN is constant
 
-	* type: float
+* type: float
 
-	* value: 0.15
+* value: 0.15
 
-CLIENT Globals
-=====
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_MAX``
 ^^^^^^^^^^
@@ -6644,12 +5636,10 @@ CLIENT Globals
 
 	EMP_GRENADE_PILOT_SCREEN_EFFECTS_MAX is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``EMP_IMPARED_SOUND``
 ^^^^^^^^^^
@@ -6658,12 +5648,10 @@ CLIENT Globals
 
 	EMP_IMPARED_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "EMP_VisualImpair"
+* value: "EMP_VisualImpair"
 
-CLIENT Globals
-=====
 
 ``AIN_REV``
 ^^^^^^^^^^
@@ -6672,12 +5660,10 @@ CLIENT Globals
 
 	AIN_REV is constant
 
-	* type: int
+* type: int
 
-	* value: 21
+* value: 21
 
-CLIENT Globals
-=====
 
 ``VOICE_COUNT``
 ^^^^^^^^^^
@@ -6686,12 +5672,10 @@ CLIENT Globals
 
 	VOICE_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``TEST_ALL_ALIASES``
 ^^^^^^^^^^
@@ -6700,12 +5684,10 @@ CLIENT Globals
 
 	TEST_ALL_ALIASES is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``ARMOR_TYPE_HEAVY``
 ^^^^^^^^^^
@@ -6714,12 +5696,10 @@ CLIENT Globals
 
 	ARMOR_TYPE_HEAVY is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``ARMOR_TYPE_NORMAL``
 ^^^^^^^^^^
@@ -6728,12 +5708,10 @@ CLIENT Globals
 
 	ARMOR_TYPE_NORMAL is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``SKYBOXLEVEL``
 ^^^^^^^^^^
@@ -6742,12 +5720,10 @@ CLIENT Globals
 
 	SKYBOXLEVEL is constant
 
-	* type: string
+* type: string
 
-	* value: "skybox_cam_level"
+* value: "skybox_cam_level"
 
-CLIENT Globals
-=====
 
 ``SKYBOXSPACE``
 ^^^^^^^^^^
@@ -6756,12 +5732,10 @@ CLIENT Globals
 
 	SKYBOXSPACE is constant
 
-	* type: string
+* type: string
 
-	* value: "skybox_cam_intro"
+* value: "skybox_cam_intro"
 
-CLIENT Globals
-=====
 
 ``WARPINFXTIME``
 ^^^^^^^^^^
@@ -6770,12 +5744,10 @@ CLIENT Globals
 
 	WARPINFXTIME is constant
 
-	* type: float
+* type: float
 
-	* value: 2.7
+* value: 2.7
 
-CLIENT Globals
-=====
 
 ``MATCH_PROGRESS_RED_EYE_AND_ARMADA``
 ^^^^^^^^^^
@@ -6784,12 +5756,10 @@ CLIENT Globals
 
 	MATCH_PROGRESS_RED_EYE_AND_ARMADA is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``MATCH_PROGRESS_AIR_ZINGERS``
 ^^^^^^^^^^
@@ -6798,12 +5768,10 @@ CLIENT Globals
 
 	MATCH_PROGRESS_AIR_ZINGERS is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``MATCH_PROGRESS_REFUEL_GOBLINS``
 ^^^^^^^^^^
@@ -6812,12 +5780,10 @@ CLIENT Globals
 
 	MATCH_PROGRESS_REFUEL_GOBLINS is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_SPACE``
 ^^^^^^^^^^
@@ -6826,12 +5792,10 @@ CLIENT Globals
 
 	SKYSCALE_SPACE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_DEFAULT``
 ^^^^^^^^^^
@@ -6840,12 +5804,10 @@ CLIENT Globals
 
 	SKYSCALE_DEFAULT is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_FRACTURE_WARP``
 ^^^^^^^^^^
@@ -6854,12 +5816,10 @@ CLIENT Globals
 
 	SKYSCALE_FRACTURE_WARP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_FRACTURE_DOOROPEN_ACTOR``
 ^^^^^^^^^^
@@ -6868,12 +5828,10 @@ CLIENT Globals
 
 	SKYSCALE_FRACTURE_DOOROPEN_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_FRACTURE_DOOROPEN_PLAYER``
 ^^^^^^^^^^
@@ -6882,12 +5840,10 @@ CLIENT Globals
 
 	SKYSCALE_FRACTURE_DOOROPEN_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.33
+* value: 0.33
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_FRACTURE_IMC_ACTOR``
 ^^^^^^^^^^
@@ -6896,12 +5852,10 @@ CLIENT Globals
 
 	SKYSCALE_FRACTURE_IMC_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_FRACTURE_IMC_SHIP``
 ^^^^^^^^^^
@@ -6910,12 +5864,10 @@ CLIENT Globals
 
 	SKYSCALE_FRACTURE_IMC_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_FRACTURE_IMC_PLAYER``
 ^^^^^^^^^^
@@ -6924,12 +5876,10 @@ CLIENT Globals
 
 	SKYSCALE_FRACTURE_IMC_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_COLONY_IMC_ACTOR``
 ^^^^^^^^^^
@@ -6938,12 +5888,10 @@ CLIENT Globals
 
 	SKYSCALE_COLONY_IMC_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.85
+* value: 0.85
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_COLONY_IMC_SHIP``
 ^^^^^^^^^^
@@ -6952,12 +5900,10 @@ CLIENT Globals
 
 	SKYSCALE_COLONY_IMC_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.7
+* value: 0.7
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_COLONY_IMC_PLAYER``
 ^^^^^^^^^^
@@ -6966,12 +5912,10 @@ CLIENT Globals
 
 	SKYSCALE_COLONY_IMC_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.7
+* value: 0.7
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_COLONY_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -6980,12 +5924,10 @@ CLIENT Globals
 
 	SKYSCALE_COLONY_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.65
+* value: 0.65
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_COLONY_MCOR_SHIP``
 ^^^^^^^^^^
@@ -6994,12 +5936,10 @@ CLIENT Globals
 
 	SKYSCALE_COLONY_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.65
+* value: 0.65
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_COLONY_MCOR_PLAYER``
 ^^^^^^^^^^
@@ -7008,12 +5948,10 @@ CLIENT Globals
 
 	SKYSCALE_COLONY_MCOR_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.65
+* value: 0.65
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_RELIC_IMC_ACTOR``
 ^^^^^^^^^^
@@ -7022,12 +5960,10 @@ CLIENT Globals
 
 	SKYSCALE_RELIC_IMC_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.9
+* value: 0.9
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_RELIC_IMC_SHIP``
 ^^^^^^^^^^
@@ -7036,12 +5972,10 @@ CLIENT Globals
 
 	SKYSCALE_RELIC_IMC_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_RELIC_IMC_PLAYER``
 ^^^^^^^^^^
@@ -7050,12 +5984,10 @@ CLIENT Globals
 
 	SKYSCALE_RELIC_IMC_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.85
+* value: 0.85
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_RELIC_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -7064,12 +5996,10 @@ CLIENT Globals
 
 	SKYSCALE_RELIC_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_RELIC_MCOR_SHIP``
 ^^^^^^^^^^
@@ -7078,12 +6008,10 @@ CLIENT Globals
 
 	SKYSCALE_RELIC_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_RELIC_MCOR_PLAYER``
 ^^^^^^^^^^
@@ -7092,12 +6020,10 @@ CLIENT Globals
 
 	SKYSCALE_RELIC_MCOR_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_IMC_ACTOR``
 ^^^^^^^^^^
@@ -7106,12 +6032,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_IMC_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_IMC_SHIP``
 ^^^^^^^^^^
@@ -7120,12 +6044,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_IMC_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_IMC_PLAYER``
 ^^^^^^^^^^
@@ -7134,12 +6056,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_IMC_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_DOOROPEN_IMC_ACTOR``
 ^^^^^^^^^^
@@ -7148,12 +6068,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_DOOROPEN_IMC_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.9
+* value: 0.9
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_DOOROPEN_IMC_SHIP``
 ^^^^^^^^^^
@@ -7162,12 +6080,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_DOOROPEN_IMC_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.8
+* value: 0.8
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_DOOROPEN_IMC_PLAYER``
 ^^^^^^^^^^
@@ -7176,12 +6092,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_DOOROPEN_IMC_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.9
+* value: 0.9
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -7190,12 +6104,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_MCOR_SHIP``
 ^^^^^^^^^^
@@ -7204,12 +6116,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_MCOR_PLAYER``
 ^^^^^^^^^^
@@ -7218,12 +6128,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_MCOR_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_DOOROPEN_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -7232,12 +6140,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_DOOROPEN_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_DOOROPEN_MCOR_SHIP``
 ^^^^^^^^^^
@@ -7246,12 +6152,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_DOOROPEN_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.8
+* value: 0.8
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_OUTPOST_DOOROPEN_MCOR_PLAYER``
 ^^^^^^^^^^
@@ -7260,12 +6164,10 @@ CLIENT Globals
 
 	SKYSCALE_OUTPOST_DOOROPEN_MCOR_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.6
+* value: 0.6
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -7274,12 +6176,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_MCOR_SHIP``
 ^^^^^^^^^^
@@ -7288,12 +6188,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.6
+* value: 0.6
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_MCOR_PLAYER``
 ^^^^^^^^^^
@@ -7302,12 +6200,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_MCOR_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_DOOROPEN_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -7316,12 +6212,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_DOOROPEN_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.85
+* value: 0.85
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_DOOROPEN_MCOR_SHIP``
 ^^^^^^^^^^
@@ -7330,12 +6224,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_DOOROPEN_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``0.8``
 ^^^^^^^^^^
@@ -7344,10 +6236,8 @@ CLIENT Globals
 
 	0.8 is constant
 
-	* type: SKYSCALE_BONEYARD_DOOROPEN_MCOR_PLAYER=
+* type: SKYSCALE_BONEYARD_DOOROPEN_MCOR_PLAYER=
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_IMC_ACTOR``
 ^^^^^^^^^^
@@ -7356,12 +6246,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_IMC_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_IMC_SHIP``
 ^^^^^^^^^^
@@ -7370,12 +6258,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_IMC_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.35
+* value: 0.35
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_IMC_PLAYER``
 ^^^^^^^^^^
@@ -7384,12 +6270,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_IMC_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_DOOROPEN_IMC_ACTOR``
 ^^^^^^^^^^
@@ -7398,12 +6282,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_DOOROPEN_IMC_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.8
+* value: 0.8
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_DOOROPEN_IMC_SHIP``
 ^^^^^^^^^^
@@ -7412,12 +6294,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_DOOROPEN_IMC_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_BONEYARD_DOOROPEN_IMC_PLAYER``
 ^^^^^^^^^^
@@ -7426,12 +6306,10 @@ CLIENT Globals
 
 	SKYSCALE_BONEYARD_DOOROPEN_IMC_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.8
+* value: 0.8
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_AIRBASE_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -7440,12 +6318,10 @@ CLIENT Globals
 
 	SKYSCALE_AIRBASE_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.95
+* value: 0.95
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_AIRBASE_MCOR_SHIP``
 ^^^^^^^^^^
@@ -7454,12 +6330,10 @@ CLIENT Globals
 
 	SKYSCALE_AIRBASE_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.95
+* value: 0.95
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_AIRBASE_MCOR_PLAYER``
 ^^^^^^^^^^
@@ -7468,12 +6342,10 @@ CLIENT Globals
 
 	SKYSCALE_AIRBASE_MCOR_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.95
+* value: 0.95
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_O2_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -7482,12 +6354,10 @@ CLIENT Globals
 
 	SKYSCALE_O2_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_O2_MCOR_SHIP``
 ^^^^^^^^^^
@@ -7496,12 +6366,10 @@ CLIENT Globals
 
 	SKYSCALE_O2_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_O2_MCOR_PLAYER``
 ^^^^^^^^^^
@@ -7510,12 +6378,10 @@ CLIENT Globals
 
 	SKYSCALE_O2_MCOR_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_O2_DOOROPEN_MCOR_ACTOR``
 ^^^^^^^^^^
@@ -7524,12 +6390,10 @@ CLIENT Globals
 
 	SKYSCALE_O2_DOOROPEN_MCOR_ACTOR is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_O2_DOOROPEN_MCOR_SHIP``
 ^^^^^^^^^^
@@ -7538,12 +6402,10 @@ CLIENT Globals
 
 	SKYSCALE_O2_DOOROPEN_MCOR_SHIP is constant
 
-	* type: float
+* type: float
 
-	* value: 1.1
+* value: 1.1
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_O2_DOOROPEN_MCOR_PLAYER``
 ^^^^^^^^^^
@@ -7552,12 +6414,10 @@ CLIENT Globals
 
 	SKYSCALE_O2_DOOROPEN_MCOR_PLAYER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.9
+* value: 0.9
 
-CLIENT Globals
-=====
 
 ``IMC_TRANSITION_TIME``
 ^^^^^^^^^^
@@ -7566,12 +6426,10 @@ CLIENT Globals
 
 	IMC_TRANSITION_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 18.0
+* value: 18.0
 
-CLIENT Globals
-=====
 
 ``IMC_ENTER_ATMOS_FX_TIME``
 ^^^^^^^^^^
@@ -7580,12 +6438,10 @@ CLIENT Globals
 
 	IMC_ENTER_ATMOS_FX_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 4.0
+* value: 4.0
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_O2_FIRE_BUILDUP_TIME``
 ^^^^^^^^^^
@@ -7594,12 +6450,10 @@ CLIENT Globals
 
 	SKYSCALE_O2_FIRE_BUILDUP_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 14
+* value: 14
 
-CLIENT Globals
-=====
 
 ``SKYSCALE_EJECT_TIME``
 ^^^^^^^^^^
@@ -7608,12 +6462,10 @@ CLIENT Globals
 
 	SKYSCALE_EJECT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``PICK_LOADOUT_SOUND_TIME``
 ^^^^^^^^^^
@@ -7622,28 +6474,22 @@ CLIENT Globals
 
 	PICK_LOADOUT_SOUND_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``PerfIndexClient``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``PerfIndexServer``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``PROMO_SCORE_ADVANCE_REQ``
 ^^^^^^^^^^
@@ -7652,12 +6498,10 @@ CLIENT Globals
 
 	PROMO_SCORE_ADVANCE_REQ is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``RANKED_GEM_PROGRESSION_ENABLED``
 ^^^^^^^^^^
@@ -7666,12 +6510,10 @@ CLIENT Globals
 
 	RANKED_GEM_PROGRESSION_ENABLED is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``RANKED_RECALC_TIMESLICE``
 ^^^^^^^^^^
@@ -7680,12 +6522,10 @@ CLIENT Globals
 
 	RANKED_RECALC_TIMESLICE is constant
 
-	* type: float
+* type: float
 
-	* value: 1.8
+* value: 1.8
 
-CLIENT Globals
-=====
 
 ``RANKED_PLAY``
 ^^^^^^^^^^
@@ -7694,20 +6534,16 @@ CLIENT Globals
 
 	RANKED_PLAY is constant
 
-	* type: string
+* type: string
 
-	* value: "ranked"
+* value: "ranked"
 
-CLIENT Globals
-=====
 
 ``eRankedContributionType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``RANKED_TIER_COUNT``
 ^^^^^^^^^^
@@ -7716,12 +6552,10 @@ CLIENT Globals
 
 	RANKED_TIER_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``RANKED_DIVISION_COUNT``
 ^^^^^^^^^^
@@ -7730,12 +6564,10 @@ CLIENT Globals
 
 	RANKED_DIVISION_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``RANKED_DECAY_GEMS_LOST_PER_DAY``
 ^^^^^^^^^^
@@ -7744,12 +6576,10 @@ CLIENT Globals
 
 	RANKED_DECAY_GEMS_LOST_PER_DAY is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``RANKED_INVALID_SEASON``
 ^^^^^^^^^^
@@ -7758,12 +6588,10 @@ CLIENT Globals
 
 	RANKED_INVALID_SEASON is constant
 
-	* type: int
+* type: int
 
-	* value: -12345
+* value: -12345
 
-CLIENT Globals
-=====
 
 ``RANKED_SEASON_OFFSET``
 ^^^^^^^^^^
@@ -7772,12 +6600,10 @@ CLIENT Globals
 
 	RANKED_SEASON_OFFSET is constant
 
-	* type: int
+* type: int
 
-	* value: 539
+* value: 539
 
-CLIENT Globals
-=====
 
 ``RANKED_SEASONS_PER_MONTH``
 ^^^^^^^^^^
@@ -7786,12 +6612,10 @@ CLIENT Globals
 
 	RANKED_SEASONS_PER_MONTH is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``RANKED_SPLASH_COLORS_MAIN``
 ^^^^^^^^^^
@@ -7800,12 +6624,10 @@ CLIENT Globals
 
 	RANKED_SPLASH_COLORS_MAIN is constant
 
-	* type: array
+* type: array
 
-	* value: [
+* value: [
 
-CLIENT Globals
-=====
 
 ``RANKED_SPLASH_COLORS_GLOW``
 ^^^^^^^^^^
@@ -7814,12 +6636,10 @@ CLIENT Globals
 
 	RANKED_SPLASH_COLORS_GLOW is constant
 
-	* type: array
+* type: array
 
-	* value: [
+* value: [
 
-CLIENT Globals
-=====
 
 ``RANKED_SPLASH_COLORS_MAIN_STRING``
 ^^^^^^^^^^
@@ -7828,12 +6648,10 @@ CLIENT Globals
 
 	RANKED_SPLASH_COLORS_MAIN_STRING is constant
 
-	* type: string
+* type: string
 
-	* value: "164
+* value: "164
 
-CLIENT Globals
-=====
 
 ``RANKED_SPLASH_COLORS_GLOW_STRING``
 ^^^^^^^^^^
@@ -7842,12 +6660,10 @@ CLIENT Globals
 
 	RANKED_SPLASH_COLORS_GLOW_STRING is constant
 
-	* type: string
+* type: string
 
-	* value: "34
+* value: "34
 
-CLIENT Globals
-=====
 
 ``SharedPerfIndexStart``
 ^^^^^^^^^^
@@ -7856,20 +6672,16 @@ CLIENT Globals
 
 	SharedPerfIndexStart is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``PerfIndexShared``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``TITAN_CORE_ACTIVE_TIME``
 ^^^^^^^^^^
@@ -7878,12 +6690,10 @@ CLIENT Globals
 
 	TITAN_CORE_ACTIVE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 12.6
+* value: 12.6
 
-CLIENT Globals
-=====
 
 ``TITAN_CORE_MARATHON_CORE_MULTIPLIER``
 ^^^^^^^^^^
@@ -7892,12 +6702,10 @@ CLIENT Globals
 
 	TITAN_CORE_MARATHON_CORE_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 1.42
+* value: 1.42
 
-CLIENT Globals
-=====
 
 ``TITAN_CORE_FIRST_BUILD_TIME``
 ^^^^^^^^^^
@@ -7906,12 +6714,10 @@ CLIENT Globals
 
 	TITAN_CORE_FIRST_BUILD_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``TITAN_CORE_BUILD_TIME``
 ^^^^^^^^^^
@@ -7920,12 +6726,10 @@ CLIENT Globals
 
 	TITAN_CORE_BUILD_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``TITAN_CORE_CHARGE_TIME``
 ^^^^^^^^^^
@@ -7934,12 +6738,10 @@ CLIENT Globals
 
 	TITAN_CORE_CHARGE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``TITAN_CORE_TIC_RATE``
 ^^^^^^^^^^
@@ -7948,12 +6750,10 @@ CLIENT Globals
 
 	TITAN_CORE_TIC_RATE is constant
 
-	* type: float
+* type: float
 
-	* value: 3.8
+* value: 3.8
 
-CLIENT Globals
-=====
 
 ``SHIELD_BOOST_R``
 ^^^^^^^^^^
@@ -7962,12 +6762,10 @@ CLIENT Globals
 
 	SHIELD_BOOST_R is constant
 
-	* type: int
+* type: int
 
-	* value: 255
+* value: 255
 
-CLIENT Globals
-=====
 
 ``SHIELD_BOOST_G``
 ^^^^^^^^^^
@@ -7976,12 +6774,10 @@ CLIENT Globals
 
 	SHIELD_BOOST_G is constant
 
-	* type: int
+* type: int
 
-	* value: 225
+* value: 225
 
-CLIENT Globals
-=====
 
 ``SHIELD_BOOST_B``
 ^^^^^^^^^^
@@ -7990,12 +6786,10 @@ CLIENT Globals
 
 	SHIELD_BOOST_B is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``SHIELD_BEACON_REGEN_RATE``
 ^^^^^^^^^^
@@ -8004,12 +6798,10 @@ CLIENT Globals
 
 	SHIELD_BEACON_REGEN_RATE is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``EVAC_SHIP_DAMAGE_MULTIPLIER_AGAINST_NUCLEAR_CORE``
 ^^^^^^^^^^
@@ -8018,12 +6810,10 @@ CLIENT Globals
 
 	EVAC_SHIP_DAMAGE_MULTIPLIER_AGAINST_NUCLEAR_CORE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``EVAC_SHIP_SHIELD_REGEN_TIME``
 ^^^^^^^^^^
@@ -8032,12 +6822,10 @@ CLIENT Globals
 
 	EVAC_SHIP_SHIELD_REGEN_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``EVAC_SHIP_SHIELD_REGEN_DELAY``
 ^^^^^^^^^^
@@ -8046,12 +6834,10 @@ CLIENT Globals
 
 	EVAC_SHIP_SHIELD_REGEN_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``EVAL_PASSENGER_INVULNERABILITY``
 ^^^^^^^^^^
@@ -8060,20 +6846,16 @@ CLIENT Globals
 
 	EVAL_PASSENGER_INVULNERABILITY is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``ProgressSource``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``HOTDROP_IMPACT_FX_TABLE``
 ^^^^^^^^^^
@@ -8082,12 +6864,10 @@ CLIENT Globals
 
 	HOTDROP_IMPACT_FX_TABLE is constant
 
-	* type: string
+* type: string
 
-	* value: "droppod_impact"
+* value: "droppod_impact"
 
-CLIENT Globals
-=====
 
 ``HUMAN_RAGDOLL_IMPACT_TABLE``
 ^^^^^^^^^^
@@ -8096,12 +6876,10 @@ CLIENT Globals
 
 	HUMAN_RAGDOLL_IMPACT_TABLE is constant
 
-	* type: string
+* type: string
 
-	* value: "ragdoll_human"
+* value: "ragdoll_human"
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_INTRO``
 ^^^^^^^^^^
@@ -8110,12 +6888,10 @@ CLIENT Globals
 
 	CE_FLAG_INTRO is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0002
+* value: 0x0002
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_EXECUTION``
 ^^^^^^^^^^
@@ -8124,12 +6900,10 @@ CLIENT Globals
 
 	CE_FLAG_EXECUTION is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0004
+* value: 0x0004
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_EMBARK``
 ^^^^^^^^^^
@@ -8138,12 +6912,10 @@ CLIENT Globals
 
 	CE_FLAG_EMBARK is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0008
+* value: 0x0008
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_DISEMBARK``
 ^^^^^^^^^^
@@ -8152,12 +6924,10 @@ CLIENT Globals
 
 	CE_FLAG_DISEMBARK is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0010
+* value: 0x0010
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_TITAN_HOT_DROP``
 ^^^^^^^^^^
@@ -8166,12 +6936,10 @@ CLIENT Globals
 
 	CE_FLAG_TITAN_HOT_DROP is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0020
+* value: 0x0020
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_CLASSIC_MP_SPAWNING``
 ^^^^^^^^^^
@@ -8180,12 +6948,10 @@ CLIENT Globals
 
 	CE_FLAG_CLASSIC_MP_SPAWNING is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0040
+* value: 0x0040
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_HIDE_MAIN_HUD``
 ^^^^^^^^^^
@@ -8194,12 +6960,10 @@ CLIENT Globals
 
 	CE_FLAG_HIDE_MAIN_HUD is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0080
+* value: 0x0080
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_TITAN_3P_CAM``
 ^^^^^^^^^^
@@ -8208,12 +6972,10 @@ CLIENT Globals
 
 	CE_FLAG_TITAN_3P_CAM is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0100
+* value: 0x0100
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_WAVE_SPAWNING``
 ^^^^^^^^^^
@@ -8222,12 +6984,10 @@ CLIENT Globals
 
 	CE_FLAG_WAVE_SPAWNING is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0200
+* value: 0x0200
 
-CLIENT Globals
-=====
 
 ``CE_FLAG_EOG_STAT_DISPLAY``
 ^^^^^^^^^^
@@ -8236,12 +6996,10 @@ CLIENT Globals
 
 	CE_FLAG_EOG_STAT_DISPLAY is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0400
+* value: 0x0400
 
-CLIENT Globals
-=====
 
 ``TITAN_DAMAGE_STAGE_FULL``
 ^^^^^^^^^^
@@ -8250,12 +7008,10 @@ CLIENT Globals
 
 	TITAN_DAMAGE_STAGE_FULL is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``TITAN_DAMAGE_STAGE_1``
 ^^^^^^^^^^
@@ -8264,12 +7020,10 @@ CLIENT Globals
 
 	TITAN_DAMAGE_STAGE_1 is constant
 
-	* type: float
+* type: float
 
-	* value: 0.75
+* value: 0.75
 
-CLIENT Globals
-=====
 
 ``TITAN_DAMAGE_STAGE_2``
 ^^^^^^^^^^
@@ -8278,12 +7032,10 @@ CLIENT Globals
 
 	TITAN_DAMAGE_STAGE_2 is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``TITAN_DAMAGE_STAGE_3``
 ^^^^^^^^^^
@@ -8292,12 +7044,10 @@ CLIENT Globals
 
 	TITAN_DAMAGE_STAGE_3 is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``TITAN_DAMAGE_STAGE_DOOMED``
 ^^^^^^^^^^
@@ -8306,12 +7056,10 @@ CLIENT Globals
 
 	TITAN_DAMAGE_STAGE_DOOMED is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``DOOMED_MIN_HEALTH``
 ^^^^^^^^^^
@@ -8320,12 +7068,10 @@ CLIENT Globals
 
 	DOOMED_MIN_HEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``ABILITY_STIM_SPEED_MOD``
 ^^^^^^^^^^
@@ -8334,12 +7080,10 @@ CLIENT Globals
 
 	ABILITY_STIM_SPEED_MOD is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``ABILITY_STIM_REGEN_DELAY``
 ^^^^^^^^^^
@@ -8348,12 +7092,10 @@ CLIENT Globals
 
 	ABILITY_STIM_REGEN_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``ABILITY_STIM_REGEN_MOD``
 ^^^^^^^^^^
@@ -8362,12 +7104,10 @@ CLIENT Globals
 
 	ABILITY_STIM_REGEN_MOD is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``BERSERKER_INCOMING_DAMAGE_DAMPEN``
 ^^^^^^^^^^
@@ -8376,12 +7116,10 @@ CLIENT Globals
 
 	BERSERKER_INCOMING_DAMAGE_DAMPEN is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``BERSERKER_DASH_VELOCITY``
 ^^^^^^^^^^
@@ -8390,12 +7128,10 @@ CLIENT Globals
 
 	BERSERKER_DASH_VELOCITY is constant
 
-	* type: int
+* type: int
 
-	* value: 1200
+* value: 1200
 
-CLIENT Globals
-=====
 
 ``BERSERKER_AOE_RADIUS``
 ^^^^^^^^^^
@@ -8404,12 +7140,10 @@ CLIENT Globals
 
 	BERSERKER_AOE_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 120
+* value: 120
 
-CLIENT Globals
-=====
 
 ``BERSERKER_AOE_DAMAGE``
 ^^^^^^^^^^
@@ -8418,12 +7152,10 @@ CLIENT Globals
 
 	BERSERKER_AOE_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``BERSERKER_PRE_DASH_TIME``
 ^^^^^^^^^^
@@ -8432,12 +7164,10 @@ CLIENT Globals
 
 	BERSERKER_PRE_DASH_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``BERSERKER_DASH_TIME``
 ^^^^^^^^^^
@@ -8446,12 +7176,10 @@ CLIENT Globals
 
 	BERSERKER_DASH_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.6
+* value: 0.6
 
-CLIENT Globals
-=====
 
 ``SONAR_GRENADE_RADIUS``
 ^^^^^^^^^^
@@ -8460,12 +7188,10 @@ CLIENT Globals
 
 	SONAR_GRENADE_RADIUS is constant
 
-	* type: float
+* type: float
 
-	* value: 1250.0
+* value: 1250.0
 
-CLIENT Globals
-=====
 
 ``SONAR_GRENADE_PULSE_DURATION``
 ^^^^^^^^^^
@@ -8474,12 +7200,10 @@ CLIENT Globals
 
 	SONAR_GRENADE_PULSE_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``SONAR_PULSE_SPACE``
 ^^^^^^^^^^
@@ -8488,12 +7212,10 @@ CLIENT Globals
 
 	SONAR_PULSE_SPACE is constant
 
-	* type: float
+* type: float
 
-	* value: 400.0
+* value: 400.0
 
-CLIENT Globals
-=====
 
 ``SONAR_PULSE_SPEED``
 ^^^^^^^^^^
@@ -8502,12 +7224,10 @@ CLIENT Globals
 
 	SONAR_PULSE_SPEED is constant
 
-	* type: float
+* type: float
 
-	* value: 300.0
+* value: 300.0
 
-CLIENT Globals
-=====
 
 ``DASH_MELEE_SPEED``
 ^^^^^^^^^^
@@ -8516,12 +7236,10 @@ CLIENT Globals
 
 	DASH_MELEE_SPEED is constant
 
-	* type: float
+* type: float
 
-	* value: 1.35
+* value: 1.35
 
-CLIENT Globals
-=====
 
 ``WALLRUN_CLOAK_DURATION``
 ^^^^^^^^^^
@@ -8530,12 +7248,10 @@ CLIENT Globals
 
 	WALLRUN_CLOAK_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 15.0
+* value: 15.0
 
-CLIENT Globals
-=====
 
 ``WALLRUN_CLOAK_TRANSITION_TIME``
 ^^^^^^^^^^
@@ -8544,12 +7260,10 @@ CLIENT Globals
 
 	WALLRUN_CLOAK_TRANSITION_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.2
+* value: 0.2
 
-CLIENT Globals
-=====
 
 ``WALLHANG_CLOAK_DURATION``
 ^^^^^^^^^^
@@ -8558,12 +7272,10 @@ CLIENT Globals
 
 	WALLHANG_CLOAK_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 15.0
+* value: 15.0
 
-CLIENT Globals
-=====
 
 ``WALLHANG_CLOAK_TRANSITION_TIME``
 ^^^^^^^^^^
@@ -8572,12 +7284,10 @@ CLIENT Globals
 
 	WALLHANG_CLOAK_TRANSITION_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.2
+* value: 0.2
 
-CLIENT Globals
-=====
 
 ``TITAN_HEALTHDROP_REGENFRAC``
 ^^^^^^^^^^
@@ -8586,12 +7296,10 @@ CLIENT Globals
 
 	TITAN_HEALTHDROP_REGENFRAC is constant
 
-	* type: float
+* type: float
 
-	* value: 0.3
+* value: 0.3
 
-CLIENT Globals
-=====
 
 ``TITAN_HEALTHDROP_REGENTIME``
 ^^^^^^^^^^
@@ -8600,12 +7308,10 @@ CLIENT Globals
 
 	TITAN_HEALTHDROP_REGENTIME is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``TITAN_HEALTHDROP_TIMEOUT``
 ^^^^^^^^^^
@@ -8614,12 +7320,10 @@ CLIENT Globals
 
 	TITAN_HEALTHDROP_TIMEOUT is constant
 
-	* type: float
+* type: float
 
-	* value: 30.0
+* value: 30.0
 
-CLIENT Globals
-=====
 
 ``SOLDIER_SHIELD_REGEN_THREAD``
 ^^^^^^^^^^
@@ -8628,12 +7332,10 @@ CLIENT Globals
 
 	SOLDIER_SHIELD_REGEN_THREAD is constant
 
-	* type: string
+* type: string
 
-	* value: "SoldierShieldRegenThink"
+* value: "SoldierShieldRegenThink"
 
-CLIENT Globals
-=====
 
 ``SOLDIER_SHIELD_ZEROED``
 ^^^^^^^^^^
@@ -8642,12 +7344,10 @@ CLIENT Globals
 
 	SOLDIER_SHIELD_ZEROED is constant
 
-	* type: string
+* type: string
 
-	* value: "SoldierShieldZeroed"
+* value: "SoldierShieldZeroed"
 
-CLIENT Globals
-=====
 
 ``SOLDIER_SHIELD_RESTART``
 ^^^^^^^^^^
@@ -8656,12 +7356,10 @@ CLIENT Globals
 
 	SOLDIER_SHIELD_RESTART is constant
 
-	* type: string
+* type: string
 
-	* value: "SoldierShieldRestart"
+* value: "SoldierShieldRestart"
 
-CLIENT Globals
-=====
 
 ``MAX_WEAPON_FIRE_ID``
 ^^^^^^^^^^
@@ -8670,12 +7368,10 @@ CLIENT Globals
 
 	MAX_WEAPON_FIRE_ID is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``OFFHAND_RIGHT``
 ^^^^^^^^^^
@@ -8684,12 +7380,10 @@ CLIENT Globals
 
 	OFFHAND_RIGHT is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OFFHAND_LEFT``
 ^^^^^^^^^^
@@ -8698,12 +7392,10 @@ CLIENT Globals
 
 	OFFHAND_LEFT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``OFFHAND_ANTIRODEO``
 ^^^^^^^^^^
@@ -8712,12 +7404,10 @@ CLIENT Globals
 
 	OFFHAND_ANTIRODEO is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``OFFHAND_EQUIPMENT``
 ^^^^^^^^^^
@@ -8726,12 +7416,10 @@ CLIENT Globals
 
 	OFFHAND_EQUIPMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``OFFHAND_INVENTORY``
 ^^^^^^^^^^
@@ -8740,12 +7428,10 @@ CLIENT Globals
 
 	OFFHAND_INVENTORY is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``OFFHAND_MELEE``
 ^^^^^^^^^^
@@ -8754,12 +7440,10 @@ CLIENT Globals
 
 	OFFHAND_MELEE is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``OFFHAND_TITAN_CENTER``
 ^^^^^^^^^^
@@ -8768,12 +7452,10 @@ CLIENT Globals
 
 	OFFHAND_TITAN_CENTER is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITANMENU_NO_CUSTOMIZATION``
 ^^^^^^^^^^
@@ -8782,12 +7464,10 @@ CLIENT Globals
 
 	TITANMENU_NO_CUSTOMIZATION is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00001
+* value: 0x00001
 
-CLIENT Globals
-=====
 
 ``TITANMENU_FORCE_NON_PRIME``
 ^^^^^^^^^^
@@ -8796,12 +7476,10 @@ CLIENT Globals
 
 	TITANMENU_FORCE_NON_PRIME is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00002
+* value: 0x00002
 
-CLIENT Globals
-=====
 
 ``TITANMENU_FORCE_PRIME``
 ^^^^^^^^^^
@@ -8810,12 +7488,10 @@ CLIENT Globals
 
 	TITANMENU_FORCE_PRIME is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00004
+* value: 0x00004
 
-CLIENT Globals
-=====
 
 ``OFFHAND_COUNT``
 ^^^^^^^^^^
@@ -8824,12 +7500,10 @@ CLIENT Globals
 
 	OFFHAND_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``OFFHAND_ORDNANCE``
 ^^^^^^^^^^
@@ -8838,12 +7512,10 @@ CLIENT Globals
 
 	OFFHAND_ORDNANCE is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: OFFHAND_RIGHT
+* value: OFFHAND_RIGHT
 
-CLIENT Globals
-=====
 
 ``OFFHAND_SPECIAL``
 ^^^^^^^^^^
@@ -8852,12 +7524,10 @@ CLIENT Globals
 
 	OFFHAND_SPECIAL is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: OFFHAND_LEFT
+* value: OFFHAND_LEFT
 
-CLIENT Globals
-=====
 
 ``SHIELD_REGEN_TICK_TIME``
 ^^^^^^^^^^
@@ -8866,12 +7536,10 @@ CLIENT Globals
 
 	SHIELD_REGEN_TICK_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``HARVESTER_BEAM_TICK_TIME``
 ^^^^^^^^^^
@@ -8880,12 +7548,10 @@ CLIENT Globals
 
 	HARVESTER_BEAM_TICK_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``TITAN_DOOMED_REGEN_DELAY``
 ^^^^^^^^^^
@@ -8894,12 +7560,10 @@ CLIENT Globals
 
 	TITAN_DOOMED_REGEN_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``TITAN_DOOMED_REGEN_AMOUNT``
 ^^^^^^^^^^
@@ -8908,12 +7572,10 @@ CLIENT Globals
 
 	TITAN_DOOMED_REGEN_AMOUNT is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0025
+* value: 0.0025
 
-CLIENT Globals
-=====
 
 ``TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC``
 ^^^^^^^^^^
@@ -8922,12 +7584,10 @@ CLIENT Globals
 
 	TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC_PILOT``
 ^^^^^^^^^^
@@ -8936,12 +7596,10 @@ CLIENT Globals
 
 	TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC_PILOT is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``STATIC_RANDOM``
 ^^^^^^^^^^
@@ -8950,12 +7608,10 @@ CLIENT Globals
 
 	STATIC_RANDOM is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``STATIC_HEAVY``
 ^^^^^^^^^^
@@ -8964,12 +7620,10 @@ CLIENT Globals
 
 	STATIC_HEAVY is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``STATIC_LIGHT``
 ^^^^^^^^^^
@@ -8978,12 +7632,10 @@ CLIENT Globals
 
 	STATIC_LIGHT is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``STATIC_VERY_HEAVY``
 ^^^^^^^^^^
@@ -8992,12 +7644,10 @@ CLIENT Globals
 
 	STATIC_VERY_HEAVY is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``SATCHEL_DETONATE_DELAY``
 ^^^^^^^^^^
@@ -9006,12 +7656,10 @@ CLIENT Globals
 
 	SATCHEL_DETONATE_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``MATCH_PROGRESS_EARLY``
 ^^^^^^^^^^
@@ -9020,12 +7668,10 @@ CLIENT Globals
 
 	MATCH_PROGRESS_EARLY is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``MATCH_PROGRESS_MID``
 ^^^^^^^^^^
@@ -9034,12 +7680,10 @@ CLIENT Globals
 
 	MATCH_PROGRESS_MID is constant
 
-	* type: int
+* type: int
 
-	* value: 60
+* value: 60
 
-CLIENT Globals
-=====
 
 ``MATCH_PROGRESS_LATE``
 ^^^^^^^^^^
@@ -9048,12 +7692,10 @@ CLIENT Globals
 
 	MATCH_PROGRESS_LATE is constant
 
-	* type: int
+* type: int
 
-	* value: 90
+* value: 90
 
-CLIENT Globals
-=====
 
 ``MATCH_PROGRESS_OVER_NO_ANNOUNCEMENT``
 ^^^^^^^^^^
@@ -9062,12 +7704,10 @@ CLIENT Globals
 
 	MATCH_PROGRESS_OVER_NO_ANNOUNCEMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 120
+* value: 120
 
-CLIENT Globals
-=====
 
 ``MATCH_PROGRESS_THRESHOLDS``
 ^^^^^^^^^^
@@ -9076,20 +7716,16 @@ CLIENT Globals
 
 	MATCH_PROGRESS_THRESHOLDS is constant
 
-	* type: array
+* type: array
 
-	* value: [
+* value: [
 
-CLIENT Globals
-=====
 
 ``eItemTypes``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``SFLAG_DOUBLE_XP``
 ^^^^^^^^^^
@@ -9098,12 +7734,10 @@ CLIENT Globals
 
 	SFLAG_DOUBLE_XP is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00001
+* value: 0x00001
 
-CLIENT Globals
-=====
 
 ``SFLAG_FAST_BUILD1``
 ^^^^^^^^^^
@@ -9112,12 +7746,10 @@ CLIENT Globals
 
 	SFLAG_FAST_BUILD1 is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00002
+* value: 0x00002
 
-CLIENT Globals
-=====
 
 ``SFLAG_HUNTER_GRUNT``
 ^^^^^^^^^^
@@ -9126,12 +7758,10 @@ CLIENT Globals
 
 	SFLAG_HUNTER_GRUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00004
+* value: 0x00004
 
-CLIENT Globals
-=====
 
 ``SFLAG_HUNTER_SPECTRE``
 ^^^^^^^^^^
@@ -9140,12 +7770,10 @@ CLIENT Globals
 
 	SFLAG_HUNTER_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00008
+* value: 0x00008
 
-CLIENT Globals
-=====
 
 ``SFLAG_HUNTER_PILOT``
 ^^^^^^^^^^
@@ -9154,12 +7782,10 @@ CLIENT Globals
 
 	SFLAG_HUNTER_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00010
+* value: 0x00010
 
-CLIENT Globals
-=====
 
 ``SFLAG_HUNTER_TITAN``
 ^^^^^^^^^^
@@ -9168,12 +7794,10 @@ CLIENT Globals
 
 	SFLAG_HUNTER_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00020
+* value: 0x00020
 
-CLIENT Globals
-=====
 
 ``SFLAG_FAST_BUILD2``
 ^^^^^^^^^^
@@ -9182,12 +7806,10 @@ CLIENT Globals
 
 	SFLAG_FAST_BUILD2 is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00040
+* value: 0x00040
 
-CLIENT Globals
-=====
 
 ``SFLAG_SPECTRE_VIRUS``
 ^^^^^^^^^^
@@ -9196,12 +7818,10 @@ CLIENT Globals
 
 	SFLAG_SPECTRE_VIRUS is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00200
+* value: 0x00200
 
-CLIENT Globals
-=====
 
 ``SFLAG_INSTANT_HACK``
 ^^^^^^^^^^
@@ -9210,12 +7830,10 @@ CLIENT Globals
 
 	SFLAG_INSTANT_HACK is constant
 
-	* type: int
+* type: int
 
-	* value: 0x00400
+* value: 0x00400
 
-CLIENT Globals
-=====
 
 ``SFLAG_BC_DASH_CAPACITY``
 ^^^^^^^^^^
@@ -9224,12 +7842,10 @@ CLIENT Globals
 
 	SFLAG_BC_DASH_CAPACITY is constant
 
-	* type: int
+* type: int
 
-	* value: 0x01000
+* value: 0x01000
 
-CLIENT Globals
-=====
 
 ``SFLAG_COOP_ORDNANCE_CAPACITY_1``
 ^^^^^^^^^^
@@ -9238,12 +7854,10 @@ CLIENT Globals
 
 	SFLAG_COOP_ORDNANCE_CAPACITY_1 is constant
 
-	* type: int
+* type: int
 
-	* value: 0x02000
+* value: 0x02000
 
-CLIENT Globals
-=====
 
 ``SFLAG_TITAN_SMASH``
 ^^^^^^^^^^
@@ -9252,12 +7866,10 @@ CLIENT Globals
 
 	SFLAG_TITAN_SMASH is constant
 
-	* type: int
+* type: int
 
-	* value: 0x10000
+* value: 0x10000
 
-CLIENT Globals
-=====
 
 ``RACE_HUMAN_FEMALE``
 ^^^^^^^^^^
@@ -9266,12 +7878,10 @@ CLIENT Globals
 
 	RACE_HUMAN_FEMALE is constant
 
-	* type: string
+* type: string
 
-	* value: "race_human_female"
+* value: "race_human_female"
 
-CLIENT Globals
-=====
 
 ``BURN_CARD_MAP_LOOT_DROP``
 ^^^^^^^^^^
@@ -9280,12 +7890,10 @@ CLIENT Globals
 
 	BURN_CARD_MAP_LOOT_DROP is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``BURNCARD_WARNING_COUNT``
 ^^^^^^^^^^
@@ -9294,12 +7902,10 @@ CLIENT Globals
 
 	BURNCARD_WARNING_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``MAX_BURN_CARD_PACKS_EVER``
 ^^^^^^^^^^
@@ -9308,12 +7914,10 @@ CLIENT Globals
 
 	MAX_BURN_CARD_PACKS_EVER is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``BURNCARD_INDEX_EMPTY``
 ^^^^^^^^^^
@@ -9322,12 +7926,10 @@ CLIENT Globals
 
 	BURNCARD_INDEX_EMPTY is constant
 
-	* type: int
+* type: int
 
-	* value: -1
+* value: -1
 
-CLIENT Globals
-=====
 
 ``BCGROUP_SPEED``
 ^^^^^^^^^^
@@ -9336,12 +7938,10 @@ CLIENT Globals
 
 	BCGROUP_SPEED is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``BCGROUP_STEALTH``
 ^^^^^^^^^^
@@ -9350,12 +7950,10 @@ CLIENT Globals
 
 	BCGROUP_STEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``BCGROUP_INTEL``
 ^^^^^^^^^^
@@ -9364,12 +7962,10 @@ CLIENT Globals
 
 	BCGROUP_INTEL is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``BCGROUP_BONUS``
 ^^^^^^^^^^
@@ -9378,12 +7974,10 @@ CLIENT Globals
 
 	BCGROUP_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``BCGROUP_NPC``
 ^^^^^^^^^^
@@ -9392,12 +7986,10 @@ CLIENT Globals
 
 	BCGROUP_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``BCGROUP_WEAPON``
 ^^^^^^^^^^
@@ -9406,12 +7998,10 @@ CLIENT Globals
 
 	BCGROUP_WEAPON is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``BCGROUP_MISC``
 ^^^^^^^^^^
@@ -9420,12 +8010,10 @@ CLIENT Globals
 
 	BCGROUP_MISC is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``BCGROUP_DICE``
 ^^^^^^^^^^
@@ -9434,12 +8022,10 @@ CLIENT Globals
 
 	BCGROUP_DICE is constant
 
-	* type: int
+* type: int
 
-	* value: 7
+* value: 7
 
-CLIENT Globals
-=====
 
 ``BC_GROUPINGS``
 ^^^^^^^^^^
@@ -9448,12 +8034,10 @@ CLIENT Globals
 
 	BC_GROUPINGS is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``BURNCARDS_PER_PACK``
 ^^^^^^^^^^
@@ -9462,12 +8046,10 @@ CLIENT Globals
 
 	BURNCARDS_PER_PACK is constant
 
-	* type: int
+* type: int
 
-	* value: 7
+* value: 7
 
-CLIENT Globals
-=====
 
 ``DECK_STYLE_BURNCARDS``
 ^^^^^^^^^^
@@ -9476,12 +8058,10 @@ CLIENT Globals
 
 	DECK_STYLE_BURNCARDS is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``BURN_CARD_NEVER_COLLECTED``
 ^^^^^^^^^^
@@ -9490,12 +8070,10 @@ CLIENT Globals
 
 	BURN_CARD_NEVER_COLLECTED is constant
 
-	* type: int
+* type: int
 
-	* value: -1
+* value: -1
 
-CLIENT Globals
-=====
 
 ``BURNCARD_PACK_PER_XP``
 ^^^^^^^^^^
@@ -9504,12 +8082,10 @@ CLIENT Globals
 
 	BURNCARD_PACK_PER_XP is constant
 
-	* type: float
+* type: float
 
-	* value: 8000.0
+* value: 8000.0
 
-CLIENT Globals
-=====
 
 ``BURNCARD_COMMON``
 ^^^^^^^^^^
@@ -9518,12 +8094,10 @@ CLIENT Globals
 
 	BURNCARD_COMMON is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``BURNCARD_RARE``
 ^^^^^^^^^^
@@ -9532,12 +8106,10 @@ CLIENT Globals
 
 	BURNCARD_RARE is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``CARDS_PER_PAGE``
 ^^^^^^^^^^
@@ -9546,12 +8118,10 @@ CLIENT Globals
 
 	CARDS_PER_PAGE is constant
 
-	* type: float
+* type: float
 
-	* value: 12.0
+* value: 12.0
 
-CLIENT Globals
-=====
 
 ``CARDS_PER_ROW``
 ^^^^^^^^^^
@@ -9560,12 +8130,10 @@ CLIENT Globals
 
 	CARDS_PER_ROW is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``BURN_CARD_WARMUP_TIME``
 ^^^^^^^^^^
@@ -9574,12 +8142,10 @@ CLIENT Globals
 
 	BURN_CARD_WARMUP_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``INGAME_BURN_CARDS``
 ^^^^^^^^^^
@@ -9588,12 +8154,10 @@ CLIENT Globals
 
 	INGAME_BURN_CARDS is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``MAX_BURN_CARDS``
 ^^^^^^^^^^
@@ -9602,12 +8166,10 @@ CLIENT Globals
 
 	MAX_BURN_CARDS is constant
 
-	* type: int
+* type: int
 
-	* value: 72
+* value: 72
 
-CLIENT Globals
-=====
 
 ``MAX_UNOPENED_BURNCARDS``
 ^^^^^^^^^^
@@ -9616,12 +8178,10 @@ CLIENT Globals
 
 	MAX_UNOPENED_BURNCARDS is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``MAX_UNOPENED_EXCHANGED_BURNCARDS``
 ^^^^^^^^^^
@@ -9630,12 +8190,10 @@ CLIENT Globals
 
 	MAX_UNOPENED_EXCHANGED_BURNCARDS is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``MAX_MAILED_CARDS``
 ^^^^^^^^^^
@@ -9644,12 +8202,10 @@ CLIENT Globals
 
 	MAX_MAILED_CARDS is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``MAX_UNOPENED_PACKS``
 ^^^^^^^^^^
@@ -9658,12 +8214,10 @@ CLIENT Globals
 
 	MAX_UNOPENED_PACKS is constant
 
-	* type: int
+* type: int
 
-	* value: 99
+* value: 99
 
-CLIENT Globals
-=====
 
 ``PILE_DECK``
 ^^^^^^^^^^
@@ -9672,12 +8226,10 @@ CLIENT Globals
 
 	PILE_DECK is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``PILE_ACTIVE``
 ^^^^^^^^^^
@@ -9686,12 +8238,10 @@ CLIENT Globals
 
 	PILE_ACTIVE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``PILE_COLLECTION``
 ^^^^^^^^^^
@@ -9700,12 +8250,10 @@ CLIENT Globals
 
 	PILE_COLLECTION is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``READING_NONE``
 ^^^^^^^^^^
@@ -9714,12 +8262,10 @@ CLIENT Globals
 
 	READING_NONE is constant
 
-	* type: int
+* type: int
 
-	* value: -1
+* value: -1
 
-CLIENT Globals
-=====
 
 ``READING_IN_PROGRESS``
 ^^^^^^^^^^
@@ -9728,12 +8274,10 @@ CLIENT Globals
 
 	READING_IN_PROGRESS is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``READING_WAITING_TO_CONTINUE``
 ^^^^^^^^^^
@@ -9742,12 +8286,10 @@ CLIENT Globals
 
 	READING_WAITING_TO_CONTINUE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``READING_DONE``
 ^^^^^^^^^^
@@ -9756,12 +8298,10 @@ CLIENT Globals
 
 	READING_DONE is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``BURNCARD_REWARD_VAL_1``
 ^^^^^^^^^^
@@ -9770,12 +8310,10 @@ CLIENT Globals
 
 	BURNCARD_REWARD_VAL_1 is constant
 
-	* type: int
+* type: int
 
-	* value: 80
+* value: 80
 
-CLIENT Globals
-=====
 
 ``BURNCARD_REWARD_VAL_2``
 ^^^^^^^^^^
@@ -9784,12 +8322,10 @@ CLIENT Globals
 
 	BURNCARD_REWARD_VAL_2 is constant
 
-	* type: int
+* type: int
 
-	* value: 140
+* value: 140
 
-CLIENT Globals
-=====
 
 ``BURNCARD_REWARD_VAL_3``
 ^^^^^^^^^^
@@ -9798,12 +8334,10 @@ CLIENT Globals
 
 	BURNCARD_REWARD_VAL_3 is constant
 
-	* type: int
+* type: int
 
-	* value: 260
+* value: 260
 
-CLIENT Globals
-=====
 
 ``BURNCARD_STORY_PROGRESS_NONE``
 ^^^^^^^^^^
@@ -9812,12 +8346,10 @@ CLIENT Globals
 
 	BURNCARD_STORY_PROGRESS_NONE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``BURNCARD_STORY_PROGRESS_INTRO``
 ^^^^^^^^^^
@@ -9826,12 +8358,10 @@ CLIENT Globals
 
 	BURNCARD_STORY_PROGRESS_INTRO is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``BURNCARD_STORY_PROGRESS_COMPLETE``
 ^^^^^^^^^^
@@ -9840,12 +8370,10 @@ CLIENT Globals
 
 	BURNCARD_STORY_PROGRESS_COMPLETE is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``BURNCARD_AUTO_SONAR_INTERVAL``
 ^^^^^^^^^^
@@ -9854,12 +8382,10 @@ CLIENT Globals
 
 	BURNCARD_AUTO_SONAR_INTERVAL is constant
 
-	* type: float
+* type: float
 
-	* value: 6.5
+* value: 6.5
 
-CLIENT Globals
-=====
 
 ``BURNCARD_AUTO_SONAR_IMAGE_DURATION``
 ^^^^^^^^^^
@@ -9868,84 +8394,64 @@ CLIENT Globals
 
 	BURNCARD_AUTO_SONAR_IMAGE_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 1.5
+* value: 1.5
 
-CLIENT Globals
-=====
 
 ``eTitanAvailability``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eBoostAvailability``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ePilotOverdrive``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eTitanExitEnabled``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eSpawnAsTitan``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eTeamShareEarnMeter``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eWaveSpawnType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ePilotGroundSpawnMethod``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eAllowNPCs``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``DROPSHIP_TITAN_PICKUP_RADIUS``
 ^^^^^^^^^^
@@ -9954,76 +8460,58 @@ CLIENT Globals
 
 	DROPSHIP_TITAN_PICKUP_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 256
+* value: 256
 
-CLIENT Globals
-=====
 
 ``eObjective``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eFloorIsLava``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eMinimapState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eOSPState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eAmmoLimit``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eEliminationMode``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ePlayerBleedout``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eFlagState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``COUNT_ENABLED``
 ^^^^^^^^^^
@@ -10032,12 +8520,10 @@ CLIENT Globals
 
 	COUNT_ENABLED is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``BURN_CARD_COUNT_MAX``
 ^^^^^^^^^^
@@ -10046,12 +8532,10 @@ CLIENT Globals
 
 	BURN_CARD_COUNT_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 99
+* value: 99
 
-CLIENT Globals
-=====
 
 ``CLOAK_INCLUDE_FADE_IN_TIME``
 ^^^^^^^^^^
@@ -10060,12 +8544,10 @@ CLIENT Globals
 
 	CLOAK_INCLUDE_FADE_IN_TIME is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``CLOAK_EXCLUDE_FADE_IN_TIME``
 ^^^^^^^^^^
@@ -10074,12 +8556,10 @@ CLIENT Globals
 
 	CLOAK_EXCLUDE_FADE_IN_TIME is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``MARVIN_TYPE_SHOOTER``
 ^^^^^^^^^^
@@ -10088,12 +8568,10 @@ CLIENT Globals
 
 	MARVIN_TYPE_SHOOTER is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``MARVIN_TYPE_WORKER``
 ^^^^^^^^^^
@@ -10102,12 +8580,10 @@ CLIENT Globals
 
 	MARVIN_TYPE_WORKER is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``MARVIN_TYPE_MARVINONE``
 ^^^^^^^^^^
@@ -10116,12 +8592,10 @@ CLIENT Globals
 
 	MARVIN_TYPE_MARVINONE is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``MARVIN_TYPE_FIREFIGHTER``
 ^^^^^^^^^^
@@ -10130,60 +8604,46 @@ CLIENT Globals
 
 	MARVIN_TYPE_FIREFIGHTER is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``eLobbyType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``userSignInState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eMaps``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eEventNotifications``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ePermanentEventNotifications``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ePrivateMatchStartState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``TITANFALL_INNER_RADIUS``
 ^^^^^^^^^^
@@ -10192,12 +8652,10 @@ CLIENT Globals
 
 	TITANFALL_INNER_RADIUS is constant
 
-	* type: float
+* type: float
 
-	* value: 90.0
+* value: 90.0
 
-CLIENT Globals
-=====
 
 ``TITANFALL_OUTER_RADIUS``
 ^^^^^^^^^^
@@ -10206,12 +8664,10 @@ CLIENT Globals
 
 	TITANFALL_OUTER_RADIUS is constant
 
-	* type: float
+* type: float
 
-	* value: 120.0
+* value: 120.0
 
-CLIENT Globals
-=====
 
 ``TITANHOTDROP_DISABLE_ENEMY_TITANFALL_RADIUS``
 ^^^^^^^^^^
@@ -10220,12 +8676,10 @@ CLIENT Globals
 
 	TITANHOTDROP_DISABLE_ENEMY_TITANFALL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 450
+* value: 450
 
-CLIENT Globals
-=====
 
 ``FIRST_WARNING_PROGRESS``
 ^^^^^^^^^^
@@ -10234,12 +8688,10 @@ CLIENT Globals
 
 	FIRST_WARNING_PROGRESS is constant
 
-	* type: int
+* type: int
 
-	* value: 27
+* value: 27
 
-CLIENT Globals
-=====
 
 ``SECOND_WARNING_PROGRESS``
 ^^^^^^^^^^
@@ -10248,12 +8700,10 @@ CLIENT Globals
 
 	SECOND_WARNING_PROGRESS is constant
 
-	* type: int
+* type: int
 
-	* value: 54
+* value: 54
 
-CLIENT Globals
-=====
 
 ``THIRD_WARNING_PROGRESS``
 ^^^^^^^^^^
@@ -10262,12 +8712,10 @@ CLIENT Globals
 
 	THIRD_WARNING_PROGRESS is constant
 
-	* type: int
+* type: int
 
-	* value: 76
+* value: 76
 
-CLIENT Globals
-=====
 
 ``O2_DEV_DISABLE_SKYSHOW``
 ^^^^^^^^^^
@@ -10276,12 +8724,10 @@ CLIENT Globals
 
 	O2_DEV_DISABLE_SKYSHOW is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``RESPAWN_DEBOUNCE_TIME``
 ^^^^^^^^^^
@@ -10290,20 +8736,16 @@ CLIENT Globals
 
 	RESPAWN_DEBOUNCE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.75
+* value: 0.75
 
-CLIENT Globals
-=====
 
 ``eMissionType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``WAVESPAWN_PROTECTION_TIME``
 ^^^^^^^^^^
@@ -10312,12 +8754,10 @@ CLIENT Globals
 
 	WAVESPAWN_PROTECTION_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``COOP_MAX_ACTIVE_TITANS``
 ^^^^^^^^^^
@@ -10326,12 +8766,10 @@ CLIENT Globals
 
 	COOP_MAX_ACTIVE_TITANS is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``COOP_MAX_ACTIVE_CLOAKED_DRONES``
 ^^^^^^^^^^
@@ -10340,12 +8778,10 @@ CLIENT Globals
 
 	COOP_MAX_ACTIVE_CLOAKED_DRONES is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``COOP_SENTRY_TURRET_MAX_COUNT_PET``
 ^^^^^^^^^^
@@ -10354,12 +8790,10 @@ CLIENT Globals
 
 	COOP_SENTRY_TURRET_MAX_COUNT_PET is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``COOP_SENTRY_TURRET_MAX_COUNT_INV``
 ^^^^^^^^^^
@@ -10368,12 +8802,10 @@ CLIENT Globals
 
 	COOP_SENTRY_TURRET_MAX_COUNT_INV is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``FD_VICTORY_ANNOUNCEMENT_LENGTH``
 ^^^^^^^^^^
@@ -10382,12 +8814,10 @@ CLIENT Globals
 
 	FD_VICTORY_ANNOUNCEMENT_LENGTH is constant
 
-	* type: float
+* type: float
 
-	* value: 13.0
+* value: 13.0
 
-CLIENT Globals
-=====
 
 ``FD_DEFEAT_ANNOUNCEMENT_LENGTH``
 ^^^^^^^^^^
@@ -10396,12 +8826,10 @@ CLIENT Globals
 
 	FD_DEFEAT_ANNOUNCEMENT_LENGTH is constant
 
-	* type: float
+* type: float
 
-	* value: 13.0
+* value: 13.0
 
-CLIENT Globals
-=====
 
 ``FD_EOG_TIME_BETWEEN_ANNOUNCEMENT_AND_STARS``
 ^^^^^^^^^^
@@ -10410,12 +8838,10 @@ CLIENT Globals
 
 	FD_EOG_TIME_BETWEEN_ANNOUNCEMENT_AND_STARS is constant
 
-	* type: float
+* type: float
 
-	* value: 8.0
+* value: 8.0
 
-CLIENT Globals
-=====
 
 ``FD_EOG_STAR_DISPLAY_TIME``
 ^^^^^^^^^^
@@ -10424,12 +8850,10 @@ CLIENT Globals
 
 	FD_EOG_STAR_DISPLAY_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``FD_STAR_DISPLAY_INTERVAL``
 ^^^^^^^^^^
@@ -10438,12 +8862,10 @@ CLIENT Globals
 
 	FD_STAR_DISPLAY_INTERVAL is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``GENERATOR_SHIELD_REGEN_DELAY``
 ^^^^^^^^^^
@@ -10452,12 +8874,10 @@ CLIENT Globals
 
 	GENERATOR_SHIELD_REGEN_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``GENERATOR_SHIELD_REGEN_TIME``
 ^^^^^^^^^^
@@ -10466,12 +8886,10 @@ CLIENT Globals
 
 	GENERATOR_SHIELD_REGEN_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``GENERATOR_DAMAGE_STREAK_TIMEOUT``
 ^^^^^^^^^^
@@ -10480,12 +8898,10 @@ CLIENT Globals
 
 	GENERATOR_DAMAGE_STREAK_TIMEOUT is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``GENERATOR_THREAT_WARN_STREAKDMG_GLOBAL``
 ^^^^^^^^^^
@@ -10494,12 +8910,10 @@ CLIENT Globals
 
 	GENERATOR_THREAT_WARN_STREAKDMG_GLOBAL is constant
 
-	* type: int
+* type: int
 
-	* value: 10000
+* value: 10000
 
-CLIENT Globals
-=====
 
 ``GENERATOR_THREAT_WARN_DIST_TITAN``
 ^^^^^^^^^^
@@ -10508,12 +8922,10 @@ CLIENT Globals
 
 	GENERATOR_THREAT_WARN_DIST_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 2500
+* value: 2500
 
-CLIENT Globals
-=====
 
 ``GENERATOR_THREAT_WARN_STREAKDMG_MORTAR_TITANS``
 ^^^^^^^^^^
@@ -10522,12 +8934,10 @@ CLIENT Globals
 
 	GENERATOR_THREAT_WARN_STREAKDMG_MORTAR_TITANS is constant
 
-	* type: int
+* type: int
 
-	* value: 4000
+* value: 4000
 
-CLIENT Globals
-=====
 
 ``GENERATOR_THREAT_WARN_STREAKDMG_SUICIDE_SPECTRES``
 ^^^^^^^^^^
@@ -10536,12 +8946,10 @@ CLIENT Globals
 
 	GENERATOR_THREAT_WARN_STREAKDMG_SUICIDE_SPECTRES is constant
 
-	* type: int
+* type: int
 
-	* value: 1500
+* value: 1500
 
-CLIENT Globals
-=====
 
 ``GENERATOR_THREAT_WARN_DIST_INFANTRY``
 ^^^^^^^^^^
@@ -10550,12 +8958,10 @@ CLIENT Globals
 
 	GENERATOR_THREAT_WARN_DIST_INFANTRY is constant
 
-	* type: int
+* type: int
 
-	* value: 1500
+* value: 1500
 
-CLIENT Globals
-=====
 
 ``GENERATOR_THREAT_WARN_NUM_REQ_INFANTRY``
 ^^^^^^^^^^
@@ -10564,12 +8970,10 @@ CLIENT Globals
 
 	GENERATOR_THREAT_WARN_NUM_REQ_INFANTRY is constant
 
-	* type: int
+* type: int
 
-	* value: 16
+* value: 16
 
-CLIENT Globals
-=====
 
 ``DEPLOYABLE_TURRET_ACCURACY_MULTIPLIER``
 ^^^^^^^^^^
@@ -10578,12 +8982,10 @@ CLIENT Globals
 
 	DEPLOYABLE_TURRET_ACCURACY_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``DEPLOYABLE_TURRET_HEALTH``
 ^^^^^^^^^^
@@ -10592,12 +8994,10 @@ CLIENT Globals
 
 	DEPLOYABLE_TURRET_HEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 600
+* value: 600
 
-CLIENT Globals
-=====
 
 ``TIME_BETWEEN_OBJ``
 ^^^^^^^^^^
@@ -10606,12 +9006,10 @@ CLIENT Globals
 
 	TIME_BETWEEN_OBJ is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``TIME_BEFORE_CHECKPOINT_RESTART``
 ^^^^^^^^^^
@@ -10620,12 +9018,10 @@ CLIENT Globals
 
 	TIME_BEFORE_CHECKPOINT_RESTART is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TIME_BEFORE_OBJECTIVE_RESTART``
 ^^^^^^^^^^
@@ -10634,12 +9030,10 @@ CLIENT Globals
 
 	TIME_BEFORE_OBJECTIVE_RESTART is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``MINION_BUBBLE_SHIELD_RADIUS``
 ^^^^^^^^^^
@@ -10648,12 +9042,10 @@ CLIENT Globals
 
 	MINION_BUBBLE_SHIELD_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 230
+* value: 230
 
-CLIENT Globals
-=====
 
 ``MINION_BUBBLE_SHIELD_RADIUS_SQR``
 ^^^^^^^^^^
@@ -10662,12 +9054,10 @@ CLIENT Globals
 
 	MINION_BUBBLE_SHIELD_RADIUS_SQR is constant
 
-	* type: int
+* type: int
 
-	* value: 51984
+* value: 51984
 
-CLIENT Globals
-=====
 
 ``MAX_LOADOUT_CRATE_COUNT``
 ^^^^^^^^^^
@@ -10676,12 +9066,10 @@ CLIENT Globals
 
 	MAX_LOADOUT_CRATE_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``MINIMAP_LOADOUT_CRATE_SCALE``
 ^^^^^^^^^^
@@ -10690,12 +9078,10 @@ CLIENT Globals
 
 	MINIMAP_LOADOUT_CRATE_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.075
+* value: 0.075
 
-CLIENT Globals
-=====
 
 ``RADAR_JAM_TIME``
 ^^^^^^^^^^
@@ -10704,12 +9090,10 @@ CLIENT Globals
 
 	RADAR_JAM_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``GENERATOR_DAMAGE_NUKE_CORE_MULTIPLIER``
 ^^^^^^^^^^
@@ -10718,12 +9102,10 @@ CLIENT Globals
 
 	GENERATOR_DAMAGE_NUKE_CORE_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``GENERATOR_DAMAGE_MORTAR_ROCKET_MULTIPLIER``
 ^^^^^^^^^^
@@ -10732,20 +9114,16 @@ CLIENT Globals
 
 	GENERATOR_DAMAGE_MORTAR_ROCKET_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.8
+* value: 0.8
 
-CLIENT Globals
-=====
 
 ``eTAC_ABILITY``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``HARVESTER_GRAPH_DATA_POINTS``
 ^^^^^^^^^^
@@ -10754,12 +9132,10 @@ CLIENT Globals
 
 	HARVESTER_GRAPH_DATA_POINTS is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``SPECTRE_MAX_SIGHT_DIST``
 ^^^^^^^^^^
@@ -10768,12 +9144,10 @@ CLIENT Globals
 
 	SPECTRE_MAX_SIGHT_DIST is constant
 
-	* type: int
+* type: int
 
-	* value: 3000
+* value: 3000
 
-CLIENT Globals
-=====
 
 ``ARC_TITAN_EMP_FIELD_RADIUS``
 ^^^^^^^^^^
@@ -10782,12 +9156,10 @@ CLIENT Globals
 
 	ARC_TITAN_EMP_FIELD_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 330
+* value: 330
 
-CLIENT Globals
-=====
 
 ``ARC_TITAN_EMP_FIELD_RADIUS_SQR``
 ^^^^^^^^^^
@@ -10796,12 +9168,10 @@ CLIENT Globals
 
 	ARC_TITAN_EMP_FIELD_RADIUS_SQR is constant
 
-	* type: int
+* type: int
 
-	* value: 108900
+* value: 108900
 
-CLIENT Globals
-=====
 
 ``ARC_TITAN_EMP_FIELD_INNER_RADIUS``
 ^^^^^^^^^^
@@ -10810,12 +9180,10 @@ CLIENT Globals
 
 	ARC_TITAN_EMP_FIELD_INNER_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``ARC_TITAN_EMP_FIELD_INNER_RADIUS_SQR``
 ^^^^^^^^^^
@@ -10824,12 +9192,10 @@ CLIENT Globals
 
 	ARC_TITAN_EMP_FIELD_INNER_RADIUS_SQR is constant
 
-	* type: int
+* type: int
 
-	* value: 22500
+* value: 22500
 
-CLIENT Globals
-=====
 
 ``TITAN_GRAPPLE_DAMAGE``
 ^^^^^^^^^^
@@ -10838,12 +9204,10 @@ CLIENT Globals
 
 	TITAN_GRAPPLE_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 600
+* value: 600
 
-CLIENT Globals
-=====
 
 ``TITAN_GRAPPLE_DEBOUNCE_TIME``
 ^^^^^^^^^^
@@ -10852,12 +9216,10 @@ CLIENT Globals
 
 	TITAN_GRAPPLE_DEBOUNCE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_SPEED``
 ^^^^^^^^^^
@@ -10866,12 +9228,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_SPEED is constant
 
-	* type: int
+* type: int
 
-	* value: 1800
+* value: 1800
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_ACC``
 ^^^^^^^^^^
@@ -10880,12 +9240,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_ACC is constant
 
-	* type: float
+* type: float
 
-	* value: 1.75
+* value: 1.75
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_YAWRATE``
 ^^^^^^^^^^
@@ -10894,12 +9252,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_YAWRATE is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_LOOPING_SFX``
 ^^^^^^^^^^
@@ -10908,12 +9264,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_LOOPING_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "Coop_CloakDrone_Beam"
+* value: "Coop_CloakDrone_Beam"
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_WARP_IN_SFX``
 ^^^^^^^^^^
@@ -10922,12 +9276,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_WARP_IN_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "Coop_DroneTeleport_In"
+* value: "Coop_DroneTeleport_In"
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_WARP_OUT_SFX``
 ^^^^^^^^^^
@@ -10936,12 +9288,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_WARP_OUT_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "Coop_DroneTeleport_Out"
+* value: "Coop_DroneTeleport_Out"
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_CLOAK_START_SFX``
 ^^^^^^^^^^
@@ -10950,12 +9300,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_CLOAK_START_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "CloakDrone_Cloak_On"
+* value: "CloakDrone_Cloak_On"
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_CLOAK_LOOP_SFX``
 ^^^^^^^^^^
@@ -10964,12 +9312,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_CLOAK_LOOP_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "CloakDrone_Cloak_Sustain_Loop"
+* value: "CloakDrone_Cloak_Sustain_Loop"
 
-CLIENT Globals
-=====
 
 ``CLOAKED_DRONE_HOVER_LOOP_SFX``
 ^^^^^^^^^^
@@ -10978,12 +9324,10 @@ CLIENT Globals
 
 	CLOAKED_DRONE_HOVER_LOOP_SFX is constant
 
-	* type: string
+* type: string
 
-	* value: "AngelCity_Scr_DroneSearchHover"
+* value: "AngelCity_Scr_DroneSearchHover"
 
-CLIENT Globals
-=====
 
 ``MINIMAP_CLOAKED_DRONE_SCALE``
 ^^^^^^^^^^
@@ -10992,12 +9336,10 @@ CLIENT Globals
 
 	MINIMAP_CLOAKED_DRONE_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.070
+* value: 0.070
 
-CLIENT Globals
-=====
 
 ``FD_FIRE_DAMAGE_SCALE``
 ^^^^^^^^^^
@@ -11006,12 +9348,10 @@ CLIENT Globals
 
 	FD_FIRE_DAMAGE_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 1.2
+* value: 1.2
 
-CLIENT Globals
-=====
 
 ``FD_HOT_STREAK_MULTIPLIER``
 ^^^^^^^^^^
@@ -11020,12 +9360,10 @@ CLIENT Globals
 
 	FD_HOT_STREAK_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 1.5
+* value: 1.5
 
-CLIENT Globals
-=====
 
 ``CURRENCY_COIN_WALLET_MIN``
 ^^^^^^^^^^
@@ -11034,12 +9372,10 @@ CLIENT Globals
 
 	CURRENCY_COIN_WALLET_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``CURRENCY_COIN_WALLET_MAX``
 ^^^^^^^^^^
@@ -11048,12 +9384,10 @@ CLIENT Globals
 
 	CURRENCY_COIN_WALLET_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 999999
+* value: 999999
 
-CLIENT Globals
-=====
 
 ``CURRENCY_COIN_WALLET_START_AMOUNT``
 ^^^^^^^^^^
@@ -11062,12 +9396,10 @@ CLIENT Globals
 
 	CURRENCY_COIN_WALLET_START_AMOUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 10000
+* value: 10000
 
-CLIENT Globals
-=====
 
 ``MAX_XP_TO_COINS_AMOUNT``
 ^^^^^^^^^^
@@ -11076,12 +9408,10 @@ CLIENT Globals
 
 	MAX_XP_TO_COINS_AMOUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 5000
+* value: 5000
 
-CLIENT Globals
-=====
 
 ``COIN_REWARD_SELL_COMMON``
 ^^^^^^^^^^
@@ -11090,12 +9420,10 @@ CLIENT Globals
 
 	COIN_REWARD_SELL_COMMON is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``COIN_REWARD_SELL_RARE``
 ^^^^^^^^^^
@@ -11104,12 +9432,10 @@ CLIENT Globals
 
 	COIN_REWARD_SELL_RARE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``COIN_REWARD_MATCH_COMPLETION``
 ^^^^^^^^^^
@@ -11118,12 +9444,10 @@ CLIENT Globals
 
 	COIN_REWARD_MATCH_COMPLETION is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``COIN_REWARD_MATCH_VICTORY``
 ^^^^^^^^^^
@@ -11132,12 +9456,10 @@ CLIENT Globals
 
 	COIN_REWARD_MATCH_VICTORY is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``COIN_REWARD_FIRST_WIN_OF_DAY``
 ^^^^^^^^^^
@@ -11146,12 +9468,10 @@ CLIENT Globals
 
 	COIN_REWARD_FIRST_WIN_OF_DAY is constant
 
-	* type: int
+* type: int
 
-	* value: 1000
+* value: 1000
 
-CLIENT Globals
-=====
 
 ``COIN_REWARD_DAILY_CHALLENGE``
 ^^^^^^^^^^
@@ -11160,12 +9480,10 @@ CLIENT Globals
 
 	COIN_REWARD_DAILY_CHALLENGE is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``COST_BC_MATCHLONG_UPGRADE``
 ^^^^^^^^^^
@@ -11174,52 +9492,40 @@ CLIENT Globals
 
 	COST_BC_MATCHLONG_UPGRADE is constant
 
-	* type: int
+* type: int
 
-	* value: 3000
+* value: 3000
 
-CLIENT Globals
-=====
 
 ``eShopResponseType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eCoinRewardCategory``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eCoinRewardType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eShopItemType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eChallengeCategory``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``SECONDS_PER_WEEK``
 ^^^^^^^^^^
@@ -11228,12 +9534,10 @@ CLIENT Globals
 
 	SECONDS_PER_WEEK is constant
 
-	* type: int
+* type: int
 
-	* value: 604800
+* value: 604800
 
-CLIENT Globals
-=====
 
 ``SECONDS_PER_DAY``
 ^^^^^^^^^^
@@ -11242,12 +9546,10 @@ CLIENT Globals
 
 	SECONDS_PER_DAY is constant
 
-	* type: int
+* type: int
 
-	* value: 86400
+* value: 86400
 
-CLIENT Globals
-=====
 
 ``SECONDS_PER_HOUR``
 ^^^^^^^^^^
@@ -11256,12 +9558,10 @@ CLIENT Globals
 
 	SECONDS_PER_HOUR is constant
 
-	* type: int
+* type: int
 
-	* value: 3600
+* value: 3600
 
-CLIENT Globals
-=====
 
 ``SECONDS_PER_MINUTE``
 ^^^^^^^^^^
@@ -11270,12 +9570,10 @@ CLIENT Globals
 
 	SECONDS_PER_MINUTE is constant
 
-	* type: int
+* type: int
 
-	* value: 60
+* value: 60
 
-CLIENT Globals
-=====
 
 ``FNF_SCHEDULE_RESET_SECONDS``
 ^^^^^^^^^^
@@ -11284,12 +9582,10 @@ CLIENT Globals
 
 	FNF_SCHEDULE_RESET_SECONDS is constant
 
-	* type: int
+* type: int
 
-	* value: 27000
+* value: 27000
 
-CLIENT Globals
-=====
 
 ``PST_TIME_ZONE_OFFSET``
 ^^^^^^^^^^
@@ -11298,12 +9594,10 @@ CLIENT Globals
 
 	PST_TIME_ZONE_OFFSET is constant
 
-	* type: int
+* type: int
 
-	* value: -7
+* value: -7
 
-CLIENT Globals
-=====
 
 ``DAILY_RESET_TIME_ZONE_OFFSET``
 ^^^^^^^^^^
@@ -11312,12 +9606,10 @@ CLIENT Globals
 
 	DAILY_RESET_TIME_ZONE_OFFSET is constant
 
-	* type: int
+* type: int
 
-	* value: -10
+* value: -10
 
-CLIENT Globals
-=====
 
 ``TITAN_OS_VOICE_PACK``
 ^^^^^^^^^^
@@ -11326,28 +9618,22 @@ CLIENT Globals
 
 	TITAN_OS_VOICE_PACK is constant
 
-	* type: array
+* type: array
 
-	* value: [
+* value: [
 
-CLIENT Globals
-=====
 
 ``eMusicPieceID``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eEOGRankPage``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``PILOT_HARD_LANDING_SCALE``
 ^^^^^^^^^^
@@ -11356,12 +9642,10 @@ CLIENT Globals
 
 	PILOT_HARD_LANDING_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 1.1
+* value: 1.1
 
-CLIENT Globals
-=====
 
 ``NWRP_HARD_LANDING_SCALE``
 ^^^^^^^^^^
@@ -11370,12 +9654,10 @@ CLIENT Globals
 
 	NWRP_HARD_LANDING_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``TDAY_SCORE_PILOT``
 ^^^^^^^^^^
@@ -11384,12 +9666,10 @@ CLIENT Globals
 
 	TDAY_SCORE_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TDAY_SCORE_TITAN``
 ^^^^^^^^^^
@@ -11398,12 +9678,10 @@ CLIENT Globals
 
 	TDAY_SCORE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``TDAY_SCORE_POD``
 ^^^^^^^^^^
@@ -11412,12 +9690,10 @@ CLIENT Globals
 
 	TDAY_SCORE_POD is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``400``
 ^^^^^^^^^^
@@ -11426,10 +9702,8 @@ CLIENT Globals
 
 	400 is constant
 
-	* type: ATTRITION_SCORE_BOUNTY_SURVIVAL=
+* type: ATTRITION_SCORE_BOUNTY_SURVIVAL=
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_BOSS``
 ^^^^^^^^^^
@@ -11438,12 +9712,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_BOSS is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_BOSS_DAMAGE``
 ^^^^^^^^^^
@@ -11452,12 +9724,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_BOSS_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_TITAN``
 ^^^^^^^^^^
@@ -11466,12 +9736,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_SUPER_SPECTRE``
 ^^^^^^^^^^
@@ -11480,12 +9748,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_SUPER_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_MEGATURRET``
 ^^^^^^^^^^
@@ -11494,12 +9760,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_MEGATURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_SENTRYTURRET``
 ^^^^^^^^^^
@@ -11508,12 +9772,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_SENTRYTURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_PILOT``
 ^^^^^^^^^^
@@ -11522,12 +9784,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_AIR_DRONE``
 ^^^^^^^^^^
@@ -11536,12 +9796,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_AIR_DRONE is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_PROWLER``
 ^^^^^^^^^^
@@ -11550,12 +9808,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_PROWLER is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_GRUNT``
 ^^^^^^^^^^
@@ -11564,12 +9820,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_GRUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_SPECTRE``
 ^^^^^^^^^^
@@ -11578,12 +9832,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 15
+* value: 15
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_STALKER``
 ^^^^^^^^^^
@@ -11592,12 +9844,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_STALKER is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_MARVIN``
 ^^^^^^^^^^
@@ -11606,12 +9856,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_MARVIN is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_BONUS``
 ^^^^^^^^^^
@@ -11620,12 +9868,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_BONUS_STOLEN``
 ^^^^^^^^^^
@@ -11634,12 +9880,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_BONUS_STOLEN is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_PILOT_MIN``
 ^^^^^^^^^^
@@ -11648,12 +9892,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_PILOT_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ATTRITION_SCORE_TITAN_MIN``
 ^^^^^^^^^^
@@ -11662,12 +9904,10 @@ CLIENT Globals
 
 	ATTRITION_SCORE_TITAN_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_BOUNTY_SURVIVAL``
 ^^^^^^^^^^
@@ -11676,12 +9916,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_BOUNTY_SURVIVAL is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_BOSS``
 ^^^^^^^^^^
@@ -11690,12 +9928,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_BOSS is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_BOSS_DAMAGE``
 ^^^^^^^^^^
@@ -11704,12 +9940,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_BOSS_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_TITAN``
 ^^^^^^^^^^
@@ -11718,12 +9952,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_SUPER_SPECTRE``
 ^^^^^^^^^^
@@ -11732,12 +9964,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_SUPER_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_MEGATURRET``
 ^^^^^^^^^^
@@ -11746,12 +9976,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_MEGATURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_SENTRYTURRET``
 ^^^^^^^^^^
@@ -11760,12 +9988,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_SENTRYTURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_PILOT``
 ^^^^^^^^^^
@@ -11774,12 +10000,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_AIR_DRONE``
 ^^^^^^^^^^
@@ -11788,12 +10012,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_AIR_DRONE is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_PROWLER``
 ^^^^^^^^^^
@@ -11802,12 +10024,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_PROWLER is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_GRUNT``
 ^^^^^^^^^^
@@ -11816,12 +10036,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_GRUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_SPECTRE``
 ^^^^^^^^^^
@@ -11830,12 +10048,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_STALKER``
 ^^^^^^^^^^
@@ -11844,12 +10060,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_STALKER is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_MARVIN``
 ^^^^^^^^^^
@@ -11858,12 +10072,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_MARVIN is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_BONUS``
 ^^^^^^^^^^
@@ -11872,12 +10084,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_BONUS_STOLEN``
 ^^^^^^^^^^
@@ -11886,12 +10096,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_BONUS_STOLEN is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_PILOT_MIN``
 ^^^^^^^^^^
@@ -11900,12 +10108,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_PILOT_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``ATCOOP_SCORE_TITAN_MIN``
 ^^^^^^^^^^
@@ -11914,12 +10120,10 @@ CLIENT Globals
 
 	ATCOOP_SCORE_TITAN_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_BOUNTY_SURVIVAL``
 ^^^^^^^^^^
@@ -11928,12 +10132,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_BOUNTY_SURVIVAL is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_BOSS``
 ^^^^^^^^^^
@@ -11942,12 +10144,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_BOSS is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_BOSS_DAMAGE``
 ^^^^^^^^^^
@@ -11956,12 +10156,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_BOSS_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_TITAN``
 ^^^^^^^^^^
@@ -11970,12 +10168,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_SUPER_SPECTRE``
 ^^^^^^^^^^
@@ -11984,12 +10180,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_SUPER_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_MEGATURRET``
 ^^^^^^^^^^
@@ -11998,12 +10192,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_MEGATURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_SENTRYTURRET``
 ^^^^^^^^^^
@@ -12012,12 +10204,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_SENTRYTURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_PILOT``
 ^^^^^^^^^^
@@ -12026,12 +10216,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_AIR_DRONE``
 ^^^^^^^^^^
@@ -12040,12 +10228,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_AIR_DRONE is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_PROWLER``
 ^^^^^^^^^^
@@ -12054,12 +10240,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_PROWLER is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_GRUNT``
 ^^^^^^^^^^
@@ -12068,12 +10252,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_GRUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_SPECTRE``
 ^^^^^^^^^^
@@ -12082,12 +10264,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_STALKER``
 ^^^^^^^^^^
@@ -12096,12 +10276,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_STALKER is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_MARVIN``
 ^^^^^^^^^^
@@ -12110,12 +10288,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_MARVIN is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_BONUS``
 ^^^^^^^^^^
@@ -12124,12 +10300,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_BONUS_STOLEN``
 ^^^^^^^^^^
@@ -12138,12 +10312,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_BONUS_STOLEN is constant
 
-	* type: int
+* type: int
 
-	* value: 00
+* value: 00
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_PILOT_MIN``
 ^^^^^^^^^^
@@ -12152,12 +10324,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_PILOT_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``PVE_SANDBOX_SCORE_TITAN_MIN``
 ^^^^^^^^^^
@@ -12166,12 +10336,10 @@ CLIENT Globals
 
 	PVE_SANDBOX_SCORE_TITAN_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_TITAN``
 ^^^^^^^^^^
@@ -12180,12 +10348,10 @@ CLIENT Globals
 
 	FD_SCORE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_SUPER_SPECTRE``
 ^^^^^^^^^^
@@ -12194,12 +10360,10 @@ CLIENT Globals
 
 	FD_SCORE_SUPER_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_MEGATURRET``
 ^^^^^^^^^^
@@ -12208,12 +10372,10 @@ CLIENT Globals
 
 	FD_SCORE_MEGATURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_SENTRYTURRET``
 ^^^^^^^^^^
@@ -12222,12 +10384,10 @@ CLIENT Globals
 
 	FD_SCORE_SENTRYTURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_PILOT``
 ^^^^^^^^^^
@@ -12236,12 +10396,10 @@ CLIENT Globals
 
 	FD_SCORE_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_AIR_DRONE``
 ^^^^^^^^^^
@@ -12250,12 +10408,10 @@ CLIENT Globals
 
 	FD_SCORE_AIR_DRONE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_PROWLER``
 ^^^^^^^^^^
@@ -12264,12 +10420,10 @@ CLIENT Globals
 
 	FD_SCORE_PROWLER is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_GRUNT``
 ^^^^^^^^^^
@@ -12278,12 +10432,10 @@ CLIENT Globals
 
 	FD_SCORE_GRUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_SPECTRE``
 ^^^^^^^^^^
@@ -12292,12 +10444,10 @@ CLIENT Globals
 
 	FD_SCORE_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_STALKER``
 ^^^^^^^^^^
@@ -12306,12 +10456,10 @@ CLIENT Globals
 
 	FD_SCORE_STALKER is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_MARVIN``
 ^^^^^^^^^^
@@ -12320,12 +10468,10 @@ CLIENT Globals
 
 	FD_SCORE_MARVIN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_ENEMIES``
 ^^^^^^^^^^
@@ -12334,12 +10480,10 @@ CLIENT Globals
 
 	FD_SCORE_ENEMIES is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_MVP``
 ^^^^^^^^^^
@@ -12348,12 +10492,10 @@ CLIENT Globals
 
 	FD_SCORE_MVP is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_TEAM_FINAL_WAVE``
 ^^^^^^^^^^
@@ -12362,12 +10504,10 @@ CLIENT Globals
 
 	FD_SCORE_TEAM_FINAL_WAVE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_TEAM_WAVE``
 ^^^^^^^^^^
@@ -12376,12 +10516,10 @@ CLIENT Globals
 
 	FD_SCORE_TEAM_WAVE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_TEAM_FLAWLESS_WAVE``
 ^^^^^^^^^^
@@ -12390,12 +10528,10 @@ CLIENT Globals
 
 	FD_SCORE_TEAM_FLAWLESS_WAVE is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_REPAIR_TURRET``
 ^^^^^^^^^^
@@ -12404,12 +10540,10 @@ CLIENT Globals
 
 	FD_SCORE_REPAIR_TURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_DIDNT_DIE``
 ^^^^^^^^^^
@@ -12418,12 +10552,10 @@ CLIENT Globals
 
 	FD_SCORE_DIDNT_DIE is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_SHIELD_HARVESTER``
 ^^^^^^^^^^
@@ -12432,12 +10564,10 @@ CLIENT Globals
 
 	FD_SCORE_SHIELD_HARVESTER is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_SONAR_PULSE``
 ^^^^^^^^^^
@@ -12446,12 +10576,10 @@ CLIENT Globals
 
 	FD_SCORE_SONAR_PULSE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_ARC_TRAP_TRIGGERED``
 ^^^^^^^^^^
@@ -12460,12 +10588,10 @@ CLIENT Globals
 
 	FD_SCORE_ARC_TRAP_TRIGGERED is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_TETHER_TRAP_TRIGGERED``
 ^^^^^^^^^^
@@ -12474,12 +10600,10 @@ CLIENT Globals
 
 	FD_SCORE_TETHER_TRAP_TRIGGERED is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_ARC_WAVE``
 ^^^^^^^^^^
@@ -12488,12 +10612,10 @@ CLIENT Globals
 
 	FD_SCORE_ARC_WAVE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_TEAM_HEAL``
 ^^^^^^^^^^
@@ -12502,12 +10624,10 @@ CLIENT Globals
 
 	FD_SCORE_TEAM_HEAL is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_DAMAGE_BONUS``
 ^^^^^^^^^^
@@ -12516,12 +10636,10 @@ CLIENT Globals
 
 	FD_SCORE_DAMAGE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_HEALING_BONUS``
 ^^^^^^^^^^
@@ -12530,12 +10648,10 @@ CLIENT Globals
 
 	FD_SCORE_HEALING_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_SCORE_SUPPORT_BONUS``
 ^^^^^^^^^^
@@ -12544,12 +10660,10 @@ CLIENT Globals
 
 	FD_SCORE_SUPPORT_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``ZIPLINE_IDLE_ANIM``
 ^^^^^^^^^^
@@ -12558,12 +10672,10 @@ CLIENT Globals
 
 	ZIPLINE_IDLE_ANIM is constant
 
-	* type: string
+* type: string
 
-	* value: "pt_zipline_slide_idle"
+* value: "pt_zipline_slide_idle"
 
-CLIENT Globals
-=====
 
 ``DEFAULT_CONVERSATION_DEBOUNCE_TIME``
 ^^^^^^^^^^
@@ -12572,12 +10684,10 @@ CLIENT Globals
 
 	DEFAULT_CONVERSATION_DEBOUNCE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``AI_CONVERSATION_RANGE_SQR``
 ^^^^^^^^^^
@@ -12586,12 +10696,10 @@ CLIENT Globals
 
 	AI_CONVERSATION_RANGE_SQR is constant
 
-	* type: int
+* type: int
 
-	* value: 20250000
+* value: 20250000
 
-CLIENT Globals
-=====
 
 ``AI_CONVERSATION_RANGE``
 ^^^^^^^^^^
@@ -12600,12 +10708,10 @@ CLIENT Globals
 
 	AI_CONVERSATION_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 4500
+* value: 4500
 
-CLIENT Globals
-=====
 
 ``MAX_VOICE_DIST_SQRD``
 ^^^^^^^^^^
@@ -12614,12 +10720,10 @@ CLIENT Globals
 
 	MAX_VOICE_DIST_SQRD is constant
 
-	* type: int
+* type: int
 
-	* value: 9000000
+* value: 9000000
 
-CLIENT Globals
-=====
 
 ``AI_FRIENDLY_CHATTER_RANGE_SQR``
 ^^^^^^^^^^
@@ -12628,12 +10732,10 @@ CLIENT Globals
 
 	AI_FRIENDLY_CHATTER_RANGE_SQR is constant
 
-	* type: int
+* type: int
 
-	* value: 4410000
+* value: 4410000
 
-CLIENT Globals
-=====
 
 ``AI_FRIENDLY_CHATTER_RANGE``
 ^^^^^^^^^^
@@ -12642,12 +10744,10 @@ CLIENT Globals
 
 	AI_FRIENDLY_CHATTER_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 2100
+* value: 2100
 
-CLIENT Globals
-=====
 
 ``PLAYER_SHIELD_WALL_RADIUS``
 ^^^^^^^^^^
@@ -12656,12 +10756,10 @@ CLIENT Globals
 
 	PLAYER_SHIELD_WALL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``PLAYER_SHIELD_WALL_FOV``
 ^^^^^^^^^^
@@ -12670,12 +10768,10 @@ CLIENT Globals
 
 	PLAYER_SHIELD_WALL_FOV is constant
 
-	* type: int
+* type: int
 
-	* value: 120
+* value: 120
 
-CLIENT Globals
-=====
 
 ``PLAYER_SHIELD_WALL_HEALTH``
 ^^^^^^^^^^
@@ -12684,12 +10780,10 @@ CLIENT Globals
 
 	PLAYER_SHIELD_WALL_HEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``PLAYER_SHIELD_WALL_REGEN_WAIT_TIME``
 ^^^^^^^^^^
@@ -12698,12 +10792,10 @@ CLIENT Globals
 
 	PLAYER_SHIELD_WALL_REGEN_WAIT_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``PLAYER_SHIELD_WALL_REGEN_INCREMENT``
 ^^^^^^^^^^
@@ -12712,12 +10804,10 @@ CLIENT Globals
 
 	PLAYER_SHIELD_WALL_REGEN_INCREMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``AIRVEHICLE_FLAG_AWAIT_INPUT``
 ^^^^^^^^^^
@@ -12726,12 +10816,10 @@ CLIENT Globals
 
 	AIRVEHICLE_FLAG_AWAIT_INPUT is constant
 
-	* type: int
+* type: int
 
-	* value: 0x040
+* value: 0x040
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_FAR_MAX``
 ^^^^^^^^^^
@@ -12740,12 +10828,10 @@ CLIENT Globals
 
 	HIGHLIGHT_FAR_MAX is constant
 
-	* type: float
+* type: float
 
-	* value: 999999999999999.0
+* value: 999999999999999.0
 
-CLIENT Globals
-=====
 
 ``REQUIRES_ANY``
 ^^^^^^^^^^
@@ -12754,12 +10840,10 @@ CLIENT Globals
 
 	REQUIRES_ANY is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``REQUIRES_PILOT``
 ^^^^^^^^^^
@@ -12768,12 +10852,10 @@ CLIENT Globals
 
 	REQUIRES_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``REQUIRES_TITAN``
 ^^^^^^^^^^
@@ -12782,28 +10864,22 @@ CLIENT Globals
 
 	REQUIRES_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``HighlightContext``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ShGlobals``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``GAMEMODE_SP``
 ^^^^^^^^^^
@@ -12812,20 +10888,16 @@ CLIENT Globals
 
 	GAMEMODE_SP is constant
 
-	* type: string
+* type: string
 
-	* value: "solo"
+* value: "solo"
 
-CLIENT Globals
-=====
 
 ``shGlobal``
 ^^^^^^^^^^
 
-	* type: ShGlobals
+* type: ShGlobals
 
-CLIENT Globals
-=====
 
 ``NEW_LOADOUTS``
 ^^^^^^^^^^
@@ -12834,12 +10906,10 @@ CLIENT Globals
 
 	NEW_LOADOUTS is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_FILL_DEFAULT``
 ^^^^^^^^^^
@@ -12848,12 +10918,10 @@ CLIENT Globals
 
 	HIGHLIGHT_FILL_DEFAULT is constant
 
-	* type: int
+* type: int
 
-	* value: 110
+* value: 110
 
-CLIENT Globals
-=====
 
 ``HIGHLIGHT_OUTLINE_GENERIC``
 ^^^^^^^^^^
@@ -12862,76 +10930,58 @@ CLIENT Globals
 
 	HIGHLIGHT_OUTLINE_GENERIC is constant
 
-	* type: int
+* type: int
 
-	* value: 110
+* value: 110
 
-CLIENT Globals
-=====
 
 ``ePresentationType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ePrimaryWeaponCategory``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eSecondaryWeaponCategory``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eMenuAnimClass``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eSideNotificationSystems``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ePlayerMovementEvents``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``RERUN_LAUNCH_STARTPOINT``
 ^^^^^^^^^^
 
-	* type: string
+* type: string
 
-CLIENT Globals
-=====
 
 ``eUIEvent``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_COMMON_COLUMN``
 ^^^^^^^^^^
@@ -12940,12 +10990,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_COMMON_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_COMMON_TYPE_COLUMN``
 ^^^^^^^^^^
@@ -12954,12 +11002,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_COMMON_TYPE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_COMMON_NAME_COLUMN``
 ^^^^^^^^^^
@@ -12968,12 +11014,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_COMMON_NAME_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_COMMON_DESCRIPTION_COLUMN``
 ^^^^^^^^^^
@@ -12982,12 +11026,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_COMMON_DESCRIPTION_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_COMMON_IMAGE_COLUMN``
 ^^^^^^^^^^
@@ -12996,12 +11038,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_COMMON_IMAGE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_COLUMN``
 ^^^^^^^^^^
@@ -13010,12 +11050,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_WEAPON_COLUMN``
 ^^^^^^^^^^
@@ -13024,12 +11062,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_WEAPON_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_DAMAGEDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13038,12 +11074,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_DAMAGEDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_ACCURACYDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13052,12 +11086,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_ACCURACYDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_RANGEDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13066,12 +11098,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_RANGEDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_FIRERATEDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13080,12 +11110,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_FIRERATEDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_CLIPSIZEDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13094,12 +11122,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_CLIPSIZEDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``PILOT_WEAPON_MOD_HIDDEN_COLUMN``
 ^^^^^^^^^^
@@ -13108,12 +11134,10 @@ CLIENT Globals
 
 	PILOT_WEAPON_MOD_HIDDEN_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 7
+* value: 7
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_COLUMN``
 ^^^^^^^^^^
@@ -13122,12 +11146,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_HIDDEN_COLUMN``
 ^^^^^^^^^^
@@ -13136,12 +11158,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_HIDDEN_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_COMMON_COLUMN``
 ^^^^^^^^^^
@@ -13150,12 +11170,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_COMMON_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_COMMON_NAME_COLUMN``
 ^^^^^^^^^^
@@ -13164,12 +11182,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_COMMON_NAME_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_COMMON_DESCRIPTION_COLUMN``
 ^^^^^^^^^^
@@ -13178,12 +11194,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_COMMON_DESCRIPTION_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_COMMON_IMAGE_COLUMN``
 ^^^^^^^^^^
@@ -13192,12 +11206,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_COMMON_IMAGE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_COLUMN``
 ^^^^^^^^^^
@@ -13206,12 +11218,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_WEAPON_COLUMN``
 ^^^^^^^^^^
@@ -13220,12 +11230,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_WEAPON_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_DAMAGEDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13234,12 +11242,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_DAMAGEDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_ACCURACYDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13248,12 +11254,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_ACCURACYDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_RANGEDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13262,12 +11266,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_RANGEDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_FIRERATEDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13276,12 +11278,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_FIRERATEDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_CLIPSIZEDISPLAY_COLUMN``
 ^^^^^^^^^^
@@ -13290,12 +11290,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_CLIPSIZEDISPLAY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``TITAN_PRIMARY_MOD_HIDDEN_COLUMN``
 ^^^^^^^^^^
@@ -13304,12 +11302,10 @@ CLIENT Globals
 
 	TITAN_PRIMARY_MOD_HIDDEN_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 7
+* value: 7
 
-CLIENT Globals
-=====
 
 ``TITAN_ABILITY_COLUMN``
 ^^^^^^^^^^
@@ -13318,12 +11314,10 @@ CLIENT Globals
 
 	TITAN_ABILITY_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_ABILITY_TYPE_COLUMN``
 ^^^^^^^^^^
@@ -13332,12 +11326,10 @@ CLIENT Globals
 
 	TITAN_ABILITY_TYPE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_ABILITY_DAMAGESOURCE_COLUMN``
 ^^^^^^^^^^
@@ -13346,12 +11338,10 @@ CLIENT Globals
 
 	TITAN_ABILITY_DAMAGESOURCE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_ABILITY_HIDDEN_COLUMN``
 ^^^^^^^^^^
@@ -13360,12 +11350,10 @@ CLIENT Globals
 
 	TITAN_ABILITY_HIDDEN_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``TITAN_PASSIVE_COLUMN``
 ^^^^^^^^^^
@@ -13374,12 +11362,10 @@ CLIENT Globals
 
 	TITAN_PASSIVE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_PASSIVE_TYPE_COLUMN``
 ^^^^^^^^^^
@@ -13388,12 +11374,10 @@ CLIENT Globals
 
 	TITAN_PASSIVE_TYPE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_PASSIVE_NAME_COLUMN``
 ^^^^^^^^^^
@@ -13402,12 +11386,10 @@ CLIENT Globals
 
 	TITAN_PASSIVE_NAME_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_PASSIVE_DESCRIPTION_COLUMN``
 ^^^^^^^^^^
@@ -13416,12 +11398,10 @@ CLIENT Globals
 
 	TITAN_PASSIVE_DESCRIPTION_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``TITAN_PASSIVE_LONGDESCRIPTION_COLUMN``
 ^^^^^^^^^^
@@ -13430,12 +11410,10 @@ CLIENT Globals
 
 	TITAN_PASSIVE_LONGDESCRIPTION_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``TITAN_PASSIVE_IMAGE_COLUMN``
 ^^^^^^^^^^
@@ -13444,12 +11422,10 @@ CLIENT Globals
 
 	TITAN_PASSIVE_IMAGE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``TITAN_PASSIVE_HIDDEN_COLUMN``
 ^^^^^^^^^^
@@ -13458,12 +11434,10 @@ CLIENT Globals
 
 	TITAN_PASSIVE_HIDDEN_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``TITAN_VOICE_COLUMN``
 ^^^^^^^^^^
@@ -13472,12 +11446,10 @@ CLIENT Globals
 
 	TITAN_VOICE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_VOICE_NAME_COLUMN``
 ^^^^^^^^^^
@@ -13486,12 +11458,10 @@ CLIENT Globals
 
 	TITAN_VOICE_NAME_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_VOICE_DESCRIPTION_COLUMN``
 ^^^^^^^^^^
@@ -13500,12 +11470,10 @@ CLIENT Globals
 
 	TITAN_VOICE_DESCRIPTION_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_VOICE_IMAGE_COLUMN``
 ^^^^^^^^^^
@@ -13514,12 +11482,10 @@ CLIENT Globals
 
 	TITAN_VOICE_IMAGE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``TITAN_VOICE_HIDDEN_COLUMN``
 ^^^^^^^^^^
@@ -13528,12 +11494,10 @@ CLIENT Globals
 
 	TITAN_VOICE_HIDDEN_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``BURN_REF_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13542,12 +11506,10 @@ CLIENT Globals
 
 	BURN_REF_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "itemRef"
+* value: "itemRef"
 
-CLIENT Globals
-=====
 
 ``BURN_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13556,12 +11518,10 @@ CLIENT Globals
 
 	BURN_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "name"
+* value: "name"
 
-CLIENT Globals
-=====
 
 ``BURN_DESCRIPTION_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13570,12 +11530,10 @@ CLIENT Globals
 
 	BURN_DESCRIPTION_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "description"
+* value: "description"
 
-CLIENT Globals
-=====
 
 ``BURN_IMAGE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13584,12 +11542,10 @@ CLIENT Globals
 
 	BURN_IMAGE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "image"
+* value: "image"
 
-CLIENT Globals
-=====
 
 ``BURN_COST_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13598,12 +11554,10 @@ CLIENT Globals
 
 	BURN_COST_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "activationCost"
+* value: "activationCost"
 
-CLIENT Globals
-=====
 
 ``BURN_TIER_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13612,12 +11566,10 @@ CLIENT Globals
 
 	BURN_TIER_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "tier"
+* value: "tier"
 
-CLIENT Globals
-=====
 
 ``BURN_AVAILABLE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13626,12 +11578,10 @@ CLIENT Globals
 
 	BURN_AVAILABLE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "rewardAvailableFor"
+* value: "rewardAvailableFor"
 
-CLIENT Globals
-=====
 
 ``BURN_WEAPON_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13640,12 +11590,10 @@ CLIENT Globals
 
 	BURN_WEAPON_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "weaponName"
+* value: "weaponName"
 
-CLIENT Globals
-=====
 
 ``BURN_EXTRA_WEAPON_MOD_NAME``
 ^^^^^^^^^^
@@ -13654,12 +11602,10 @@ CLIENT Globals
 
 	BURN_EXTRA_WEAPON_MOD_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "extraWeaponMod"
+* value: "extraWeaponMod"
 
-CLIENT Globals
-=====
 
 ``BATTLE_CHATTER_CONVERSATION_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13668,12 +11614,10 @@ CLIENT Globals
 
 	BATTLE_CHATTER_CONVERSATION_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "conversationname"
+* value: "conversationname"
 
-CLIENT Globals
-=====
 
 ``BATTLE_CHATTER_PRIORITY_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13682,12 +11626,10 @@ CLIENT Globals
 
 	BATTLE_CHATTER_PRIORITY_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "priority"
+* value: "priority"
 
-CLIENT Globals
-=====
 
 ``BATTLE_CHATTER_DEBOUNCE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13696,12 +11638,10 @@ CLIENT Globals
 
 	BATTLE_CHATTER_DEBOUNCE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "debounce"
+* value: "debounce"
 
-CLIENT Globals
-=====
 
 ``FACTION_DIALOGUE_CONVERSATION_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13710,12 +11650,10 @@ CLIENT Globals
 
 	FACTION_DIALOGUE_CONVERSATION_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "conversationname"
+* value: "conversationname"
 
-CLIENT Globals
-=====
 
 ``FACTION_DIALOGUE_PRIORITY_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13724,12 +11662,10 @@ CLIENT Globals
 
 	FACTION_DIALOGUE_PRIORITY_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "priority"
+* value: "priority"
 
-CLIENT Globals
-=====
 
 ``FACTION_DIALOGUE_DEBOUNCE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13738,12 +11674,10 @@ CLIENT Globals
 
 	FACTION_DIALOGUE_DEBOUNCE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "debounce"
+* value: "debounce"
 
-CLIENT Globals
-=====
 
 ``FACTION_DIALOGUE_DISABLED_LIST_NAME``
 ^^^^^^^^^^
@@ -13752,12 +11686,10 @@ CLIENT Globals
 
 	FACTION_DIALOGUE_DISABLED_LIST_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "disabledForFaction"
+* value: "disabledForFaction"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_PERSISTENCE_REF_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13766,12 +11698,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_PERSISTENCE_REF_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "persistenceRef"
+* value: "persistenceRef"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_FACTION_DIALOGUE_PREFIX_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13780,12 +11710,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_FACTION_DIALOGUE_PREFIX_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "factionDialoguePrefix"
+* value: "factionDialoguePrefix"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_IMAGE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13794,12 +11722,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_IMAGE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "image"
+* value: "image"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13808,12 +11734,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "name"
+* value: "name"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_WAVEFORM_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13822,12 +11746,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_WAVEFORM_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "usesWaveform"
+* value: "usesWaveform"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_DESCRIPTION_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13836,12 +11758,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_DESCRIPTION_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "description"
+* value: "description"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_MODEL_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13850,12 +11770,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_MODEL_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "modelName"
+* value: "modelName"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_DROPSHIP_ANIM_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13864,12 +11782,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_DROPSHIP_ANIM_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "dropshipAnimName"
+* value: "dropshipAnimName"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_DROPSHIP_ANIM_EASTEREGG``
 ^^^^^^^^^^
@@ -13878,12 +11794,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_DROPSHIP_ANIM_EASTEREGG is constant
 
-	* type: string
+* type: string
 
-	* value: "isEasterEgg"
+* value: "isEasterEgg"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_PROP_MODEL_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13892,12 +11806,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_PROP_MODEL_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "propModelName"
+* value: "propModelName"
 
-CLIENT Globals
-=====
 
 ``FACTION_LEADERS_PROP_ATTACHMENT_COLUMN_NAME``
 ^^^^^^^^^^
@@ -13906,12 +11818,10 @@ CLIENT Globals
 
 	FACTION_LEADERS_PROP_ATTACHMENT_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "propAttachment"
+* value: "propAttachment"
 
-CLIENT Globals
-=====
 
 ``NON_LOADOUT_WEAPON_COLUMN``
 ^^^^^^^^^^
@@ -13920,12 +11830,10 @@ CLIENT Globals
 
 	NON_LOADOUT_WEAPON_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``NON_LOADOUT_MOD_COLUMN``
 ^^^^^^^^^^
@@ -13934,12 +11842,10 @@ CLIENT Globals
 
 	NON_LOADOUT_MOD_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``NON_LOADOUT_MOD_PARENT_COLUMN``
 ^^^^^^^^^^
@@ -13948,12 +11854,10 @@ CLIENT Globals
 
 	NON_LOADOUT_MOD_PARENT_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``NON_LOADOUT_MOD_NAME_COLUMN``
 ^^^^^^^^^^
@@ -13962,12 +11866,10 @@ CLIENT Globals
 
 	NON_LOADOUT_MOD_NAME_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``NON_LOADOUT_MOD_DESCRIPTION_COLUMN``
 ^^^^^^^^^^
@@ -13976,12 +11878,10 @@ CLIENT Globals
 
 	NON_LOADOUT_MOD_DESCRIPTION_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``NON_LOADOUT_MOD_IMAGE_COLUMN``
 ^^^^^^^^^^
@@ -13990,12 +11890,10 @@ CLIENT Globals
 
 	NON_LOADOUT_MOD_IMAGE_COLUMN is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``PHYS_EXPLOSION_SMALL``
 ^^^^^^^^^^
@@ -14004,12 +11902,10 @@ CLIENT Globals
 
 	PHYS_EXPLOSION_SMALL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``PHYS_EXPLOSION_MEDIUM``
 ^^^^^^^^^^
@@ -14018,12 +11914,10 @@ CLIENT Globals
 
 	PHYS_EXPLOSION_MEDIUM is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``PHYS_EXPLOSION_LARGE``
 ^^^^^^^^^^
@@ -14032,12 +11926,10 @@ CLIENT Globals
 
 	PHYS_EXPLOSION_LARGE is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``PHYS_EXPLOSION_HUGE``
 ^^^^^^^^^^
@@ -14046,20 +11938,16 @@ CLIENT Globals
 
 	PHYS_EXPLOSION_HUGE is constant
 
-	* type: int
+* type: int
 
-	* value: 10000
+* value: 10000
 
-CLIENT Globals
-=====
 
 ``ePowerUps``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``COLLECTIBLE_PICKUP_EFFECT``
 ^^^^^^^^^^
@@ -14068,12 +11956,10 @@ CLIENT Globals
 
 	COLLECTIBLE_PICKUP_EFFECT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ar_item_pickup_CP"
+* value: $"ar_item_pickup_CP"
 
-CLIENT Globals
-=====
 
 ``MODEL_HARVESTER_TOWER``
 ^^^^^^^^^^
@@ -14082,12 +11968,10 @@ CLIENT Globals
 
 	MODEL_HARVESTER_TOWER is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/props/generator_coop/generator_coop.mdl"
+* value: $"models/props/generator_coop/generator_coop.mdl"
 
-CLIENT Globals
-=====
 
 ``FX_HARVESTER_BEAM``
 ^^^^^^^^^^
@@ -14096,12 +11980,10 @@ CLIENT Globals
 
 	FX_HARVESTER_BEAM is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_tw_harvester_beam_endcap"
+* value: $"P_tw_harvester_beam_endcap"
 
-CLIENT Globals
-=====
 
 ``FX_HARVESTER_HEALTH_LOW``
 ^^^^^^^^^^
@@ -14110,12 +11992,10 @@ CLIENT Globals
 
 	FX_HARVESTER_HEALTH_LOW is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_tw_harvester_damaged"
+* value: $"P_tw_harvester_damaged"
 
-CLIENT Globals
-=====
 
 ``FX_HARVESTER_OVERSHIELD``
 ^^^^^^^^^^
@@ -14124,12 +12004,10 @@ CLIENT Globals
 
 	FX_HARVESTER_OVERSHIELD is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_harvestor_shield_wall"
+* value: $"P_harvestor_shield_wall"
 
-CLIENT Globals
-=====
 
 ``FX_HARVESTER_SHIELD``
 ^^^^^^^^^^
@@ -14138,12 +12016,10 @@ CLIENT Globals
 
 	FX_HARVESTER_SHIELD is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_coop_harvester_CP"
+* value: $"P_coop_harvester_CP"
 
-CLIENT Globals
-=====
 
 ``FX_HARVESTER_SHIELD_BREAK``
 ^^^^^^^^^^
@@ -14152,12 +12028,10 @@ CLIENT Globals
 
 	FX_HARVESTER_SHIELD_BREAK is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_coop_harvester_break_CP"
+* value: $"P_coop_harvester_break_CP"
 
-CLIENT Globals
-=====
 
 ``FX_GEN_HARVESTER_BEAM``
 ^^^^^^^^^^
@@ -14166,12 +12040,10 @@ CLIENT Globals
 
 	FX_GEN_HARVESTER_BEAM is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_tw_harvester_beam_endcap"
+* value: $"P_tw_harvester_beam_endcap"
 
-CLIENT Globals
-=====
 
 ``$"models/props/generator_coop/generator_coop_blackbox.mdl"``
 ^^^^^^^^^^
@@ -14180,10 +12052,8 @@ CLIENT Globals
 
 	$"models/props/generator_coop/generator_coop_blackbox.mdl" is constant
 
-	* type: MODEL_HARVESTER_TOWER_COLLISION=
+* type: MODEL_HARVESTER_TOWER_COLLISION=
 
-CLIENT Globals
-=====
 
 ``MODEL_HARVESTER_TOWER_RINGS``
 ^^^^^^^^^^
@@ -14192,12 +12062,10 @@ CLIENT Globals
 
 	MODEL_HARVESTER_TOWER_RINGS is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/props/generator_coop/generator_coop_rings_animated.mdl"
+* value: $"models/props/generator_coop/generator_coop_rings_animated.mdl"
 
-CLIENT Globals
-=====
 
 ``LTS_TEAM_SELECTION_LENGTH``
 ^^^^^^^^^^
@@ -14206,12 +12074,10 @@ CLIENT Globals
 
 	LTS_TEAM_SELECTION_LENGTH is constant
 
-	* type: float
+* type: float
 
-	* value: 15.0
+* value: 15.0
 
-CLIENT Globals
-=====
 
 ``GAMEMODE_BOMB_SCORE_PLANT``
 ^^^^^^^^^^
@@ -14220,12 +12086,10 @@ CLIENT Globals
 
 	GAMEMODE_BOMB_SCORE_PLANT is constant
 
-	* type: int
+* type: int
 
-	* value: 1000
+* value: 1000
 
-CLIENT Globals
-=====
 
 ``GAMEMODE_BOMB_SCORE_DEFUSE``
 ^^^^^^^^^^
@@ -14234,12 +12098,10 @@ CLIENT Globals
 
 	GAMEMODE_BOMB_SCORE_DEFUSE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``GAMEMODE_BOMB_SCORE_EXPLODE``
 ^^^^^^^^^^
@@ -14248,12 +12110,10 @@ CLIENT Globals
 
 	GAMEMODE_BOMB_SCORE_EXPLODE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``GAMEMODE_BOMB_SCORE_CARRY``
 ^^^^^^^^^^
@@ -14262,12 +12122,10 @@ CLIENT Globals
 
 	GAMEMODE_BOMB_SCORE_CARRY is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``GAMEMODE_BOMB_SCORE_KILL_TITAN``
 ^^^^^^^^^^
@@ -14276,12 +12134,10 @@ CLIENT Globals
 
 	GAMEMODE_BOMB_SCORE_KILL_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``GAMEMODE_BOMB_SCORE_KILL_PILOT``
 ^^^^^^^^^^
@@ -14290,12 +12146,10 @@ CLIENT Globals
 
 	GAMEMODE_BOMB_SCORE_KILL_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``GAMEMODE_RAID_SCORE_PLANT``
 ^^^^^^^^^^
@@ -14304,12 +12158,10 @@ CLIENT Globals
 
 	GAMEMODE_RAID_SCORE_PLANT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_WEAK``
 ^^^^^^^^^^
@@ -14318,12 +12170,10 @@ CLIENT Globals
 
 	TITAN_WEAK is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_HENCH``
 ^^^^^^^^^^
@@ -14332,12 +12182,10 @@ CLIENT Globals
 
 	TITAN_HENCH is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_MERC``
 ^^^^^^^^^^
@@ -14346,12 +12194,10 @@ CLIENT Globals
 
 	TITAN_MERC is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_AUTO``
 ^^^^^^^^^^
@@ -14360,12 +12206,10 @@ CLIENT Globals
 
 	TITAN_AUTO is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``TITAN_BOSS``
 ^^^^^^^^^^
@@ -14374,12 +12218,10 @@ CLIENT Globals
 
 	TITAN_BOSS is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``COMBO_METER_MAX``
 ^^^^^^^^^^
@@ -14388,12 +12230,10 @@ CLIENT Globals
 
 	COMBO_METER_MAX is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``DREW_MODE``
 ^^^^^^^^^^
@@ -14402,12 +12242,10 @@ CLIENT Globals
 
 	DREW_MODE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``GREEN_SCREEN_MODEL``
 ^^^^^^^^^^
@@ -14416,12 +12254,10 @@ CLIENT Globals
 
 	GREEN_SCREEN_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/test/green_screen.mdl"
+* value: $"models/test/green_screen.mdl"
 
-CLIENT Globals
-=====
 
 ``DEFAULT_MENU_ENVIRONMENT_MODEL``
 ^^^^^^^^^^
@@ -14430,12 +12266,10 @@ CLIENT Globals
 
 	DEFAULT_MENU_ENVIRONMENT_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/menu/default_environment.mdl"
+* value: $"models/menu/default_environment.mdl"
 
-CLIENT Globals
-=====
 
 ``COCKPIT_UI_XOFFSET``
 ^^^^^^^^^^
@@ -14444,12 +12278,10 @@ CLIENT Globals
 
 	COCKPIT_UI_XOFFSET is constant
 
-	* type: int
+* type: int
 
-	* value: 22
+* value: 22
 
-CLIENT Globals
-=====
 
 ``COCKPIT_UI_WIDTH``
 ^^^^^^^^^^
@@ -14458,12 +12290,10 @@ CLIENT Globals
 
 	COCKPIT_UI_WIDTH is constant
 
-	* type: float
+* type: float
 
-	* value: 41.4
+* value: 41.4
 
-CLIENT Globals
-=====
 
 ``COCKPIT_UI_HEIGHT``
 ^^^^^^^^^^
@@ -14472,12 +12302,10 @@ CLIENT Globals
 
 	COCKPIT_UI_HEIGHT is constant
 
-	* type: float
+* type: float
 
-	* value: COCKPIT_UI_WIDTH
+* value: COCKPIT_UI_WIDTH
 
-CLIENT Globals
-=====
 
 ``COCKPIT_RUI_WIDTH``
 ^^^^^^^^^^
@@ -14486,12 +12314,10 @@ CLIENT Globals
 
 	COCKPIT_RUI_WIDTH is constant
 
-	* type: int
+* type: int
 
-	* value: 34
+* value: 34
 
-CLIENT Globals
-=====
 
 ``COCKPIT_RUI_HEIGHT``
 ^^^^^^^^^^
@@ -14500,12 +12326,10 @@ CLIENT Globals
 
 	COCKPIT_RUI_HEIGHT is constant
 
-	* type: float
+* type: float
 
-	* value: COCKPIT_RUI_WIDTH
+* value: COCKPIT_RUI_WIDTH
 
-CLIENT Globals
-=====
 
 ``COCKPIT_RUI_RADIUS``
 ^^^^^^^^^^
@@ -14514,12 +12338,10 @@ CLIENT Globals
 
 	COCKPIT_RUI_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 350
+* value: 350
 
-CLIENT Globals
-=====
 
 ``COCKPIT_RUI_OFFSET``
 ^^^^^^^^^^
@@ -14528,12 +12350,10 @@ CLIENT Globals
 
 	COCKPIT_RUI_OFFSET is constant
 
-	* type: vector
+* type: vector
 
-	* value: <-218,0,0>
+* value: <-218,0,0>
 
-CLIENT Globals
-=====
 
 ``COCKPIT_RUI_OFFSET_1610_TEMP``
 ^^^^^^^^^^
@@ -14542,12 +12362,10 @@ CLIENT Globals
 
 	COCKPIT_RUI_OFFSET_1610_TEMP is constant
 
-	* type: vector
+* type: vector
 
-	* value: <-216,0,0>
+* value: <-216,0,0>
 
-CLIENT Globals
-=====
 
 ``COCKPIT_RUI_SUBDIV``
 ^^^^^^^^^^
@@ -14556,12 +12374,10 @@ CLIENT Globals
 
 	COCKPIT_RUI_SUBDIV is constant
 
-	* type: float
+* type: float
 
-	* value: 3.5
+* value: 3.5
 
-CLIENT Globals
-=====
 
 ``TITAN_COCKPIT_RUI_SCREEN_WIDTH``
 ^^^^^^^^^^
@@ -14570,12 +12386,10 @@ CLIENT Globals
 
 	TITAN_COCKPIT_RUI_SCREEN_WIDTH is constant
 
-	* type: float
+* type: float
 
-	* value: 21.0
+* value: 21.0
 
-CLIENT Globals
-=====
 
 ``TITAN_COCKPIT_TOPO_RADIUS``
 ^^^^^^^^^^
@@ -14584,12 +12398,10 @@ CLIENT Globals
 
 	TITAN_COCKPIT_TOPO_RADIUS is constant
 
-	* type: float
+* type: float
 
-	* value: 150.0
+* value: 150.0
 
-CLIENT Globals
-=====
 
 ``TITAN_COCKPIT_ROTATION_ANGLE``
 ^^^^^^^^^^
@@ -14598,12 +12410,10 @@ CLIENT Globals
 
 	TITAN_COCKPIT_ROTATION_ANGLE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``TITAN_COCKPIT_LOWER_RUI_SCREEN_SQUARE_SIZE``
 ^^^^^^^^^^
@@ -14612,12 +12422,10 @@ CLIENT Globals
 
 	TITAN_COCKPIT_LOWER_RUI_SCREEN_SQUARE_SIZE is constant
 
-	* type: float
+* type: float
 
-	* value: 24.0
+* value: 24.0
 
-CLIENT Globals
-=====
 
 ``TITAN_COCKPIT_LOWER_RUI_SCREEN_HEIGHT_SCALE``
 ^^^^^^^^^^
@@ -14626,12 +12434,10 @@ CLIENT Globals
 
 	TITAN_COCKPIT_LOWER_RUI_SCREEN_HEIGHT_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 1.3125
+* value: 1.3125
 
-CLIENT Globals
-=====
 
 ``TITAN_COCKPIT_INSTRUMENT1_RUI_SCREEN_SQUARE_SIZE``
 ^^^^^^^^^^
@@ -14640,12 +12446,10 @@ CLIENT Globals
 
 	TITAN_COCKPIT_INSTRUMENT1_RUI_SCREEN_SQUARE_SIZE is constant
 
-	* type: float
+* type: float
 
-	* value: 4.5
+* value: 4.5
 
-CLIENT Globals
-=====
 
 ``SPOT_ASSIST_TIME``
 ^^^^^^^^^^
@@ -14654,12 +12458,10 @@ CLIENT Globals
 
 	SPOT_ASSIST_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``NUM_SPOTS_AVAILABLE``
 ^^^^^^^^^^
@@ -14668,12 +12470,10 @@ CLIENT Globals
 
 	NUM_SPOTS_AVAILABLE is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``SPOT_CONE_HEIGHT``
 ^^^^^^^^^^
@@ -14682,12 +12482,10 @@ CLIENT Globals
 
 	SPOT_CONE_HEIGHT is constant
 
-	* type: float
+* type: float
 
-	* value: 8000.0
+* value: 8000.0
 
-CLIENT Globals
-=====
 
 ``SPOT_CONE_ANGLE_TO_AXIS``
 ^^^^^^^^^^
@@ -14696,12 +12494,10 @@ CLIENT Globals
 
 	SPOT_CONE_ANGLE_TO_AXIS is constant
 
-	* type: float
+* type: float
 
-	* value: 4.5
+* value: 4.5
 
-CLIENT Globals
-=====
 
 ``SPOT_TRACE_DISTANCE``
 ^^^^^^^^^^
@@ -14710,12 +12506,10 @@ CLIENT Globals
 
 	SPOT_TRACE_DISTANCE is constant
 
-	* type: float
+* type: float
 
-	* value: MAX_WORLD_RANGE
+* value: MAX_WORLD_RANGE
 
-CLIENT Globals
-=====
 
 ``SPOT_HIGHLIGHT_TIME``
 ^^^^^^^^^^
@@ -14724,12 +12518,10 @@ CLIENT Globals
 
 	SPOT_HIGHLIGHT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``SPOT_HIGHLIGHT_FADE_IN_TIME``
 ^^^^^^^^^^
@@ -14738,12 +12530,10 @@ CLIENT Globals
 
 	SPOT_HIGHLIGHT_FADE_IN_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.15
+* value: 0.15
 
-CLIENT Globals
-=====
 
 ``SPOT_HIGHLIGHT_FADE_OUT_TIME``
 ^^^^^^^^^^
@@ -14752,12 +12542,10 @@ CLIENT Globals
 
 	SPOT_HIGHLIGHT_FADE_OUT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``SPOT_MODEL_SNAPSHOT_TIME``
 ^^^^^^^^^^
@@ -14766,12 +12554,10 @@ CLIENT Globals
 
 	SPOT_MODEL_SNAPSHOT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 8.0
+* value: 8.0
 
-CLIENT Globals
-=====
 
 ``GROUND_SPOT_VISIBLE_TIME``
 ^^^^^^^^^^
@@ -14780,12 +12566,10 @@ CLIENT Globals
 
 	GROUND_SPOT_VISIBLE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``SPOT_GLOBAL_VO_COOLDOWN``
 ^^^^^^^^^^
@@ -14794,28 +12578,22 @@ CLIENT Globals
 
 	SPOT_GLOBAL_VO_COOLDOWN is constant
 
-	* type: float
+* type: float
 
-	* value: 4.0
+* value: 4.0
 
-CLIENT Globals
-=====
 
 ``eWeaponStatType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eTitanStatType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``EARNMETER_MODE``
 ^^^^^^^^^^
@@ -14824,12 +12602,10 @@ CLIENT Globals
 
 	EARNMETER_MODE is constant
 
-	* type: string
+* type: string
 
-	* value: "earnMeterMode"
+* value: "earnMeterMode"
 
-CLIENT Globals
-=====
 
 ``EARNMETER_OWNEDFRAC``
 ^^^^^^^^^^
@@ -14838,12 +12614,10 @@ CLIENT Globals
 
 	EARNMETER_OWNEDFRAC is constant
 
-	* type: string
+* type: string
 
-	* value: "earnMeterOwnedFrac"
+* value: "earnMeterOwnedFrac"
 
-CLIENT Globals
-=====
 
 ``EARNMETER_EARNEDFRAC``
 ^^^^^^^^^^
@@ -14852,12 +12626,10 @@ CLIENT Globals
 
 	EARNMETER_EARNEDFRAC is constant
 
-	* type: string
+* type: string
 
-	* value: "earnMeterFrac"
+* value: "earnMeterFrac"
 
-CLIENT Globals
-=====
 
 ``EARNMETER_REWARDFRAC``
 ^^^^^^^^^^
@@ -14866,12 +12638,10 @@ CLIENT Globals
 
 	EARNMETER_REWARDFRAC is constant
 
-	* type: string
+* type: string
 
-	* value: "earnMeterRewardFrac"
+* value: "earnMeterRewardFrac"
 
-CLIENT Globals
-=====
 
 ``EARNMETER_REWARDID``
 ^^^^^^^^^^
@@ -14880,12 +12650,10 @@ CLIENT Globals
 
 	EARNMETER_REWARDID is constant
 
-	* type: string
+* type: string
 
-	* value: "earnMeterRewardId"
+* value: "earnMeterRewardId"
 
-CLIENT Globals
-=====
 
 ``EARNMETER_GOALID``
 ^^^^^^^^^^
@@ -14894,12 +12662,10 @@ CLIENT Globals
 
 	EARNMETER_GOALID is constant
 
-	* type: string
+* type: string
 
-	* value: "earnMeterGoalId"
+* value: "earnMeterGoalId"
 
-CLIENT Globals
-=====
 
 ``TOP_INVENTORY_ITEM_BURN_CARD_ID``
 ^^^^^^^^^^
@@ -14908,12 +12674,10 @@ CLIENT Globals
 
 	TOP_INVENTORY_ITEM_BURN_CARD_ID is constant
 
-	* type: string
+* type: string
 
-	* value: "topInventoryItemBurnCardID"
+* value: "topInventoryItemBurnCardID"
 
-CLIENT Globals
-=====
 
 ``ANTI_RODEO_RESULT_DURATION``
 ^^^^^^^^^^
@@ -14922,12 +12686,10 @@ CLIENT Globals
 
 	ANTI_RODEO_RESULT_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``RUI_SORT_SCREENFADE``
 ^^^^^^^^^^
@@ -14936,12 +12698,10 @@ CLIENT Globals
 
 	RUI_SORT_SCREENFADE is constant
 
-	* type: int
+* type: int
 
-	* value: 1000
+* value: 1000
 
-CLIENT Globals
-=====
 
 ``R1_VGUI_MINIMAP``
 ^^^^^^^^^^
@@ -14950,12 +12710,10 @@ CLIENT Globals
 
 	R1_VGUI_MINIMAP is constant
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``TITAN_HINT_DASH``
 ^^^^^^^^^^
@@ -14964,12 +12722,10 @@ CLIENT Globals
 
 	TITAN_HINT_DASH is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``CALLING_CARD_REF_COLUMN_NAME``
 ^^^^^^^^^^
@@ -14978,12 +12734,10 @@ CLIENT Globals
 
 	CALLING_CARD_REF_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "itemRef"
+* value: "itemRef"
 
-CLIENT Globals
-=====
 
 ``CALLING_CARD_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -14992,12 +12746,10 @@ CLIENT Globals
 
 	CALLING_CARD_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "name"
+* value: "name"
 
-CLIENT Globals
-=====
 
 ``CALLING_CARD_LAYOUT_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15006,12 +12758,10 @@ CLIENT Globals
 
 	CALLING_CARD_LAYOUT_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "layoutType"
+* value: "layoutType"
 
-CLIENT Globals
-=====
 
 ``CALLING_CARD_IMAGE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15020,12 +12770,10 @@ CLIENT Globals
 
 	CALLING_CARD_IMAGE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "image"
+* value: "image"
 
-CLIENT Globals
-=====
 
 ``CALLSIGN_ICON_REF_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15034,12 +12782,10 @@ CLIENT Globals
 
 	CALLSIGN_ICON_REF_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "itemRef"
+* value: "itemRef"
 
-CLIENT Globals
-=====
 
 ``CALLSIGN_ICON_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15048,12 +12794,10 @@ CLIENT Globals
 
 	CALLSIGN_ICON_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "name"
+* value: "name"
 
-CLIENT Globals
-=====
 
 ``CALLSIGN_ICON_IMAGE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15062,12 +12806,10 @@ CLIENT Globals
 
 	CALLSIGN_ICON_IMAGE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "image"
+* value: "image"
 
-CLIENT Globals
-=====
 
 ``CALLSIGN_ICON_SMALL_IMAGE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15076,12 +12818,10 @@ CLIENT Globals
 
 	CALLSIGN_ICON_SMALL_IMAGE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "smallImage"
+* value: "smallImage"
 
-CLIENT Globals
-=====
 
 ``CAMO_REF_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15090,12 +12830,10 @@ CLIENT Globals
 
 	CAMO_REF_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "itemRef"
+* value: "itemRef"
 
-CLIENT Globals
-=====
 
 ``CAMO_PILOT_REF_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15104,12 +12842,10 @@ CLIENT Globals
 
 	CAMO_PILOT_REF_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "pilotRef"
+* value: "pilotRef"
 
-CLIENT Globals
-=====
 
 ``CAMO_TITAN_REF_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15118,12 +12854,10 @@ CLIENT Globals
 
 	CAMO_TITAN_REF_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "titanRef"
+* value: "titanRef"
 
-CLIENT Globals
-=====
 
 ``CAMO_IMAGE_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15132,12 +12866,10 @@ CLIENT Globals
 
 	CAMO_IMAGE_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "image"
+* value: "image"
 
-CLIENT Globals
-=====
 
 ``CAMO_NAME_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15146,12 +12878,10 @@ CLIENT Globals
 
 	CAMO_NAME_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "name"
+* value: "name"
 
-CLIENT Globals
-=====
 
 ``CAMO_DESCRIPTION_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15160,12 +12890,10 @@ CLIENT Globals
 
 	CAMO_DESCRIPTION_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "description"
+* value: "description"
 
-CLIENT Globals
-=====
 
 ``CAMO_PILOT_COST_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15174,12 +12902,10 @@ CLIENT Globals
 
 	CAMO_PILOT_COST_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "pilotCost"
+* value: "pilotCost"
 
-CLIENT Globals
-=====
 
 ``CAMO_TITAN_COST_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15188,12 +12914,10 @@ CLIENT Globals
 
 	CAMO_TITAN_COST_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "titanCost"
+* value: "titanCost"
 
-CLIENT Globals
-=====
 
 ``CAMO_PILOT_WEAPON_COST_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15202,12 +12926,10 @@ CLIENT Globals
 
 	CAMO_PILOT_WEAPON_COST_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "pilotWeaponCost"
+* value: "pilotWeaponCost"
 
-CLIENT Globals
-=====
 
 ``CAMO_TITAN_WEAPON_COST_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15216,12 +12938,10 @@ CLIENT Globals
 
 	CAMO_TITAN_WEAPON_COST_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "titanWeaponCost"
+* value: "titanWeaponCost"
 
-CLIENT Globals
-=====
 
 ``CAMO_CATEGORY_COLUMN_NAME``
 ^^^^^^^^^^
@@ -15230,12 +12950,10 @@ CLIENT Globals
 
 	CAMO_CATEGORY_COLUMN_NAME is constant
 
-	* type: string
+* type: string
 
-	* value: "category"
+* value: "category"
 
-CLIENT Globals
-=====
 
 ``CAMO_INDEX_BASE``
 ^^^^^^^^^^
@@ -15244,12 +12962,10 @@ CLIENT Globals
 
 	CAMO_INDEX_BASE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``SKIN_INDEX_BASE``
 ^^^^^^^^^^
@@ -15258,12 +12974,10 @@ CLIENT Globals
 
 	SKIN_INDEX_BASE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``PILOT_SKIN_INDEX_CAMO``
 ^^^^^^^^^^
@@ -15272,12 +12986,10 @@ CLIENT Globals
 
 	PILOT_SKIN_INDEX_CAMO is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``PILOT_SKIN_INDEX_GHOST``
 ^^^^^^^^^^
@@ -15286,12 +12998,10 @@ CLIENT Globals
 
 	PILOT_SKIN_INDEX_GHOST is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_SKIN_INDEX_CAMO``
 ^^^^^^^^^^
@@ -15300,12 +13010,10 @@ CLIENT Globals
 
 	TITAN_SKIN_INDEX_CAMO is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_WARPAINT_CAMO_INDEX``
 ^^^^^^^^^^
@@ -15314,12 +13022,10 @@ CLIENT Globals
 
 	TITAN_WARPAINT_CAMO_INDEX is constant
 
-	* type: int
+* type: int
 
-	* value: -1
+* value: -1
 
-CLIENT Globals
-=====
 
 ``WEAPON_SKIN_INDEX_DEFAULT``
 ^^^^^^^^^^
@@ -15328,12 +13034,10 @@ CLIENT Globals
 
 	WEAPON_SKIN_INDEX_DEFAULT is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``WEAPON_SKIN_INDEX_CAMO``
 ^^^^^^^^^^
@@ -15342,12 +13046,10 @@ CLIENT Globals
 
 	WEAPON_SKIN_INDEX_CAMO is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``WEAPON_SKIN_INDEX_GHOST``
 ^^^^^^^^^^
@@ -15356,12 +13058,10 @@ CLIENT Globals
 
 	WEAPON_SKIN_INDEX_GHOST is constant
 
-	* type: int
+* type: int
 
-	* value: 11
+* value: 11
 
-CLIENT Globals
-=====
 
 ``FWTS_HIDDEN``
 ^^^^^^^^^^
@@ -15370,12 +13070,10 @@ CLIENT Globals
 
 	FWTS_HIDDEN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FWTS_IMC``
 ^^^^^^^^^^
@@ -15384,12 +13082,10 @@ CLIENT Globals
 
 	FWTS_IMC is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FWTS_MILITIA``
 ^^^^^^^^^^
@@ -15398,12 +13094,10 @@ CLIENT Globals
 
 	FWTS_MILITIA is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FWTS_SHIELDED``
 ^^^^^^^^^^
@@ -15412,12 +13106,10 @@ CLIENT Globals
 
 	FWTS_SHIELDED is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FWTS_THREAT``
 ^^^^^^^^^^
@@ -15426,12 +13118,10 @@ CLIENT Globals
 
 	FWTS_THREAT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``MINIMAP_Z_BASE``
 ^^^^^^^^^^
@@ -15440,12 +13130,10 @@ CLIENT Globals
 
 	MINIMAP_Z_BASE is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``MINIMAP_Z_LAYER``
 ^^^^^^^^^^
@@ -15454,12 +13142,10 @@ CLIENT Globals
 
 	MINIMAP_Z_LAYER is constant
 
-	* type: int
+* type: int
 
-	* value: MINIMAP_Z_BASE
+* value: MINIMAP_Z_BASE
 
-CLIENT Globals
-=====
 
 ``MINIMAP_Z_THREAT_WEDGES``
 ^^^^^^^^^^
@@ -15468,12 +13154,10 @@ CLIENT Globals
 
 	MINIMAP_Z_THREAT_WEDGES is constant
 
-	* type: int
+* type: int
 
-	* value: MINIMAP_Z_BASE
+* value: MINIMAP_Z_BASE
 
-CLIENT Globals
-=====
 
 ``MINIMAP_Z_YOU``
 ^^^^^^^^^^
@@ -15482,12 +13166,10 @@ CLIENT Globals
 
 	MINIMAP_Z_YOU is constant
 
-	* type: int
+* type: int
 
-	* value: MINIMAP_Z_BASE
+* value: MINIMAP_Z_BASE
 
-CLIENT Globals
-=====
 
 ``MINIMAP_Z_OBJECT``
 ^^^^^^^^^^
@@ -15496,12 +13178,10 @@ CLIENT Globals
 
 	MINIMAP_Z_OBJECT is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``MINIMAP_Z_OBJECTIVE``
 ^^^^^^^^^^
@@ -15510,12 +13190,10 @@ CLIENT Globals
 
 	MINIMAP_Z_OBJECTIVE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``MINIMAP_Z_NPC``
 ^^^^^^^^^^
@@ -15524,12 +13202,10 @@ CLIENT Globals
 
 	MINIMAP_Z_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``MINIMAP_Z_PLAYER``
 ^^^^^^^^^^
@@ -15538,12 +13214,10 @@ CLIENT Globals
 
 	MINIMAP_Z_PLAYER is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``SP_STARTING_TITAN_LOADOUT_KIT``
 ^^^^^^^^^^
@@ -15552,12 +13226,10 @@ CLIENT Globals
 
 	SP_STARTING_TITAN_LOADOUT_KIT is constant
 
-	* type: string
+* type: string
 
-	* value: "mp_titanweapon_xo16_shorty"
+* value: "mp_titanweapon_xo16_shorty"
 
-CLIENT Globals
-=====
 
 ``SP_FIRST_TITAN_LOADOUT_KIT``
 ^^^^^^^^^^
@@ -15566,12 +13238,10 @@ CLIENT Globals
 
 	SP_FIRST_TITAN_LOADOUT_KIT is constant
 
-	* type: string
+* type: string
 
-	* value: "mp_titanweapon_sticky_40mm"
+* value: "mp_titanweapon_sticky_40mm"
 
-CLIENT Globals
-=====
 
 ``HAS_WORLD_CALLSIGN``
 ^^^^^^^^^^
@@ -15580,12 +13250,10 @@ CLIENT Globals
 
 	HAS_WORLD_CALLSIGN is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``IMAGE_ATLAS_MENU``
 ^^^^^^^^^^
@@ -15594,12 +13262,10 @@ CLIENT Globals
 
 	IMAGE_ATLAS_MENU is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``IMAGE_ATLAS_HUD``
 ^^^^^^^^^^
@@ -15608,12 +13274,10 @@ CLIENT Globals
 
 	IMAGE_ATLAS_HUD is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``IMAGE_ATLAS_CALLINGCARD``
 ^^^^^^^^^^
@@ -15622,12 +13286,10 @@ CLIENT Globals
 
 	IMAGE_ATLAS_CALLINGCARD is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``IMAGE_ATLAS_FACTION_LOGO``
 ^^^^^^^^^^
@@ -15636,12 +13298,10 @@ CLIENT Globals
 
 	IMAGE_ATLAS_FACTION_LOGO is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``IMAGE_ATLAS_CAMO``
 ^^^^^^^^^^
@@ -15650,12 +13310,10 @@ CLIENT Globals
 
 	IMAGE_ATLAS_CAMO is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``IMAGE_ATLAS_COMMS``
 ^^^^^^^^^^
@@ -15664,12 +13322,10 @@ CLIENT Globals
 
 	IMAGE_ATLAS_COMMS is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``EARN_METER_CORE_MULTIPLIER``
 ^^^^^^^^^^
@@ -15678,12 +13334,10 @@ CLIENT Globals
 
 	EARN_METER_CORE_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 1.25
+* value: 1.25
 
-CLIENT Globals
-=====
 
 ``COCKPIT_COLOR_BLUE``
 ^^^^^^^^^^
@@ -15692,12 +13346,10 @@ CLIENT Globals
 
 	COCKPIT_COLOR_BLUE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``COCKPIT_COLOR_YELLOW``
 ^^^^^^^^^^
@@ -15706,12 +13358,10 @@ CLIENT Globals
 
 	COCKPIT_COLOR_YELLOW is constant
 
-	* type: float
+* type: float
 
-	* value: 0.05
+* value: 0.05
 
-CLIENT Globals
-=====
 
 ``COCKPIT_COLOR_RED``
 ^^^^^^^^^^
@@ -15720,12 +13370,10 @@ CLIENT Globals
 
 	COCKPIT_COLOR_RED is constant
 
-	* type: float
+* type: float
 
-	* value: 0.15
+* value: 0.15
 
-CLIENT Globals
-=====
 
 ``COCKPIT_COLOR_SIEGE``
 ^^^^^^^^^^
@@ -15734,12 +13382,10 @@ CLIENT Globals
 
 	COCKPIT_COLOR_SIEGE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``COCKPIT_COLOR_THREAT``
 ^^^^^^^^^^
@@ -15748,12 +13394,10 @@ CLIENT Globals
 
 	COCKPIT_COLOR_THREAT is constant
 
-	* type: float
+* type: float
 
-	* value: 0.35
+* value: 0.35
 
-CLIENT Globals
-=====
 
 ``COCKPIT_COLOR_HIDDEN``
 ^^^^^^^^^^
@@ -15762,12 +13406,10 @@ CLIENT Globals
 
 	COCKPIT_COLOR_HIDDEN is constant
 
-	* type: float
+* type: float
 
-	* value: 0.45
+* value: 0.45
 
-CLIENT Globals
-=====
 
 ``COCKPIT_COLOR_VANGUARD``
 ^^^^^^^^^^
@@ -15776,12 +13418,10 @@ CLIENT Globals
 
 	COCKPIT_COLOR_VANGUARD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.55
+* value: 0.55
 
-CLIENT Globals
-=====
 
 ``SP_RODEO_BOOST``
 ^^^^^^^^^^
@@ -15790,12 +13430,10 @@ CLIENT Globals
 
 	SP_RODEO_BOOST is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``PRO_SCREEN_INT_LIFETIME_KILLS``
 ^^^^^^^^^^
@@ -15804,12 +13442,10 @@ CLIENT Globals
 
 	PRO_SCREEN_INT_LIFETIME_KILLS is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``PRO_SCREEN_INT_MATCH_KILLS``
 ^^^^^^^^^^
@@ -15818,20 +13454,16 @@ CLIENT Globals
 
 	PRO_SCREEN_INT_MATCH_KILLS is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``achievements``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``ACHIEVEMENT_COLLECTIBLES_1_COUNT``
 ^^^^^^^^^^
@@ -15840,12 +13472,10 @@ CLIENT Globals
 
 	ACHIEVEMENT_COLLECTIBLES_1_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``ACHIEVEMENT_COLLECTIBLES_2_COUNT``
 ^^^^^^^^^^
@@ -15854,12 +13484,10 @@ CLIENT Globals
 
 	ACHIEVEMENT_COLLECTIBLES_2_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``MERIT_STATE_AVAILABLE``
 ^^^^^^^^^^
@@ -15868,12 +13496,10 @@ CLIENT Globals
 
 	MERIT_STATE_AVAILABLE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``MERIT_STATE_SUCCESS``
 ^^^^^^^^^^
@@ -15882,12 +13508,10 @@ CLIENT Globals
 
 	MERIT_STATE_SUCCESS is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``MERIT_STATE_FAILURE``
 ^^^^^^^^^^
@@ -15896,12 +13520,10 @@ CLIENT Globals
 
 	MERIT_STATE_FAILURE is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``MERIT_STATE_DISABLED``
 ^^^^^^^^^^
@@ -15910,12 +13532,10 @@ CLIENT Globals
 
 	MERIT_STATE_DISABLED is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``MERIT_STATE_HIDDEN``
 ^^^^^^^^^^
@@ -15924,12 +13544,10 @@ CLIENT Globals
 
 	MERIT_STATE_HIDDEN is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``MAX_MAIL_COUNT``
 ^^^^^^^^^^
@@ -15938,12 +13556,10 @@ CLIENT Globals
 
 	MAX_MAIL_COUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 9
+* value: 9
 
-CLIENT Globals
-=====
 
 ``TITAN_CLASS_LOCK_STATE_AVAILABLE``
 ^^^^^^^^^^
@@ -15952,12 +13568,10 @@ CLIENT Globals
 
 	TITAN_CLASS_LOCK_STATE_AVAILABLE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TITAN_CLASS_LOCK_STATE_LEVELRECOMMENDED``
 ^^^^^^^^^^
@@ -15966,12 +13580,10 @@ CLIENT Globals
 
 	TITAN_CLASS_LOCK_STATE_LEVELRECOMMENDED is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_CLASS_LOCK_STATE_LOCKED``
 ^^^^^^^^^^
@@ -15980,12 +13592,10 @@ CLIENT Globals
 
 	TITAN_CLASS_LOCK_STATE_LOCKED is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TITAN_CLASS_LOCK_STATE_LEVELREQUIRED``
 ^^^^^^^^^^
@@ -15994,12 +13604,10 @@ CLIENT Globals
 
 	TITAN_CLASS_LOCK_STATE_LEVELREQUIRED is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``TITAN_CLASS_LOCK_STATE_INUSE``
 ^^^^^^^^^^
@@ -16008,12 +13616,10 @@ CLIENT Globals
 
 	TITAN_CLASS_LOCK_STATE_INUSE is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``FD_XP_EASY_BONUS_SCALE``
 ^^^^^^^^^^
@@ -16022,12 +13628,10 @@ CLIENT Globals
 
 	FD_XP_EASY_BONUS_SCALE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_NORMAL_BONUS_SCALE``
 ^^^^^^^^^^
@@ -16036,12 +13640,10 @@ CLIENT Globals
 
 	FD_XP_NORMAL_BONUS_SCALE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_HARD_BONUS_SCALE``
 ^^^^^^^^^^
@@ -16050,12 +13652,10 @@ CLIENT Globals
 
 	FD_XP_HARD_BONUS_SCALE is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``FD_XP_MASTER_BONUS_SCALE``
 ^^^^^^^^^^
@@ -16064,12 +13664,10 @@ CLIENT Globals
 
 	FD_XP_MASTER_BONUS_SCALE is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``FD_XP_INSANE_BONUS_SCALE``
 ^^^^^^^^^^
@@ -16078,12 +13676,10 @@ CLIENT Globals
 
 	FD_XP_INSANE_BONUS_SCALE is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``FD_XP_VICTORY``
 ^^^^^^^^^^
@@ -16092,12 +13688,10 @@ CLIENT Globals
 
 	FD_XP_VICTORY is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_VICTORY_HARD_BONUS``
 ^^^^^^^^^^
@@ -16106,12 +13700,10 @@ CLIENT Globals
 
 	FD_XP_VICTORY_HARD_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_VICTORY_MASTER_BONUS``
 ^^^^^^^^^^
@@ -16120,12 +13712,10 @@ CLIENT Globals
 
 	FD_XP_VICTORY_MASTER_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``FD_XP_VICTORY_INSANE_BONUS``
 ^^^^^^^^^^
@@ -16134,12 +13724,10 @@ CLIENT Globals
 
 	FD_XP_VICTORY_INSANE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``FD_XP_EASY_WIN``
 ^^^^^^^^^^
@@ -16148,12 +13736,10 @@ CLIENT Globals
 
 	FD_XP_EASY_WIN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_NORMAL_WIN``
 ^^^^^^^^^^
@@ -16162,12 +13748,10 @@ CLIENT Globals
 
 	FD_XP_NORMAL_WIN is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_HARD_WIN``
 ^^^^^^^^^^
@@ -16176,12 +13760,10 @@ CLIENT Globals
 
 	FD_XP_HARD_WIN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``FD_XP_MASTER_WIN``
 ^^^^^^^^^^
@@ -16190,12 +13772,10 @@ CLIENT Globals
 
 	FD_XP_MASTER_WIN is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``FD_XP_INSANE_WIN``
 ^^^^^^^^^^
@@ -16204,12 +13784,10 @@ CLIENT Globals
 
 	FD_XP_INSANE_WIN is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``FD_XP_WAVE``
 ^^^^^^^^^^
@@ -16218,12 +13796,10 @@ CLIENT Globals
 
 	FD_XP_WAVE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_EASY_WAVE_BONUS``
 ^^^^^^^^^^
@@ -16232,12 +13808,10 @@ CLIENT Globals
 
 	FD_XP_EASY_WAVE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_XP_NORMAL_WAVE_BONUS``
 ^^^^^^^^^^
@@ -16246,12 +13820,10 @@ CLIENT Globals
 
 	FD_XP_NORMAL_WAVE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_XP_HARD_WAVE_BONUS``
 ^^^^^^^^^^
@@ -16260,12 +13832,10 @@ CLIENT Globals
 
 	FD_XP_HARD_WAVE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_MASTER_WAVE_BONUS``
 ^^^^^^^^^^
@@ -16274,12 +13844,10 @@ CLIENT Globals
 
 	FD_XP_MASTER_WAVE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``FD_XP_INSANE_WAVE_BONUS``
 ^^^^^^^^^^
@@ -16288,12 +13856,10 @@ CLIENT Globals
 
 	FD_XP_INSANE_WAVE_BONUS is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``FD_XP_EASY_MILESTONE``
 ^^^^^^^^^^
@@ -16302,12 +13868,10 @@ CLIENT Globals
 
 	FD_XP_EASY_MILESTONE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``FD_XP_NORMAL_MILESTONE``
 ^^^^^^^^^^
@@ -16316,12 +13880,10 @@ CLIENT Globals
 
 	FD_XP_NORMAL_MILESTONE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_HARD_MILESTONE``
 ^^^^^^^^^^
@@ -16330,12 +13892,10 @@ CLIENT Globals
 
 	FD_XP_HARD_MILESTONE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_MASTER_MILESTONE``
 ^^^^^^^^^^
@@ -16344,12 +13904,10 @@ CLIENT Globals
 
 	FD_XP_MASTER_MILESTONE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FD_XP_INSANE_MILESTONE``
 ^^^^^^^^^^
@@ -16358,76 +13916,58 @@ CLIENT Globals
 
 	FD_XP_INSANE_MILESTONE is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``eFDDifficultyLevel``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eFDTutorials``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eLaunching``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``eConsoleSettingsMenu``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``Friend``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``FriendsData``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``eFriendStatus``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``DpadCommListItem``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``WEAPONFLAG_AMPED``
 ^^^^^^^^^^
@@ -16436,12 +13976,10 @@ CLIENT Globals
 
 	WEAPONFLAG_AMPED is constant
 
-	* type: int
+* type: int
 
-	* value: (1<<0)
+* value: (1<<0)
 
-CLIENT Globals
-=====
 
 ``PROP_IS_VALID_FOR_TURRET_PLACEMENT``
 ^^^^^^^^^^
@@ -16450,12 +13988,10 @@ CLIENT Globals
 
 	PROP_IS_VALID_FOR_TURRET_PLACEMENT is constant
 
-	* type: int
+* type: int
 
-	* value: SPF_CUSTOM_SCRIPT_3
+* value: SPF_CUSTOM_SCRIPT_3
 
-CLIENT Globals
-=====
 
 ``TITAN_ARM_BADGE_ATTACHMENT``
 ^^^^^^^^^^
@@ -16464,12 +14000,10 @@ CLIENT Globals
 
 	TITAN_ARM_BADGE_ATTACHMENT is constant
 
-	* type: string
+* type: string
 
-	* value: "exp_L_shoulder"
+* value: "exp_L_shoulder"
 
-CLIENT Globals
-=====
 
 ``PERSISTENCE_LEAVECOUNT_VAR``
 ^^^^^^^^^^
@@ -16478,12 +14012,10 @@ CLIENT Globals
 
 	PERSISTENCE_LEAVECOUNT_VAR is constant
 
-	* type: string
+* type: string
 
-	* value: "abandonCountForMode"
+* value: "abandonCountForMode"
 
-CLIENT Globals
-=====
 
 ``PERSISTENCE_LAST_LEAVE_TIME``
 ^^^^^^^^^^
@@ -16492,12 +14024,10 @@ CLIENT Globals
 
 	PERSISTENCE_LAST_LEAVE_TIME is constant
 
-	* type: string
+* type: string
 
-	* value: "lastAbandonTime"
+* value: "lastAbandonTime"
 
-CLIENT Globals
-=====
 
 ``PERSISTENCE_LEAVEMODE_VAR``
 ^^^^^^^^^^
@@ -16506,12 +14036,10 @@ CLIENT Globals
 
 	PERSISTENCE_LEAVEMODE_VAR is constant
 
-	* type: string
+* type: string
 
-	* value: "lastAbandonedMode"
+* value: "lastAbandonedMode"
 
-CLIENT Globals
-=====
 
 ``TEAM_IMC_GRUNT_MODEL``
 ^^^^^^^^^^
@@ -16520,12 +14048,10 @@ CLIENT Globals
 
 	TEAM_IMC_GRUNT_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/humans/grunts/imc_grunt_rifle.mdl"
+* value: $"models/humans/grunts/imc_grunt_rifle.mdl"
 
-CLIENT Globals
-=====
 
 ``TEAM_IMC_GRUNT_MODEL_LMG``
 ^^^^^^^^^^
@@ -16534,12 +14060,10 @@ CLIENT Globals
 
 	TEAM_IMC_GRUNT_MODEL_LMG is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/humans/grunts/imc_grunt_lmg.mdl"
+* value: $"models/humans/grunts/imc_grunt_lmg.mdl"
 
-CLIENT Globals
-=====
 
 ``TEAM_IMC_GRUNT_MODEL_RIFLE``
 ^^^^^^^^^^
@@ -16548,12 +14072,10 @@ CLIENT Globals
 
 	TEAM_IMC_GRUNT_MODEL_RIFLE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/humans/grunts/imc_grunt_rifle.mdl"
+* value: $"models/humans/grunts/imc_grunt_rifle.mdl"
 
-CLIENT Globals
-=====
 
 ``TEAM_IMC_GRUNT_MODEL_ROCKET``
 ^^^^^^^^^^
@@ -16562,12 +14084,10 @@ CLIENT Globals
 
 	TEAM_IMC_GRUNT_MODEL_ROCKET is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/humans/grunts/imc_grunt_shotgun.mdl"
+* value: $"models/humans/grunts/imc_grunt_shotgun.mdl"
 
-CLIENT Globals
-=====
 
 ``TEAM_IMC_GRUNT_MODEL_SHOTGUN``
 ^^^^^^^^^^
@@ -16576,12 +14096,10 @@ CLIENT Globals
 
 	TEAM_IMC_GRUNT_MODEL_SHOTGUN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/humans/grunts/imc_grunt_shotgun.mdl"
+* value: $"models/humans/grunts/imc_grunt_shotgun.mdl"
 
-CLIENT Globals
-=====
 
 ``TEAM_IMC_GRUNT_MODEL_SMG``
 ^^^^^^^^^^
@@ -16590,12 +14108,10 @@ CLIENT Globals
 
 	TEAM_IMC_GRUNT_MODEL_SMG is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/humans/grunts/imc_grunt_smg.mdl"
+* value: $"models/humans/grunts/imc_grunt_smg.mdl"
 
-CLIENT Globals
-=====
 
 ``DATA_KNIFE_MODEL``
 ^^^^^^^^^^
@@ -16604,12 +14120,10 @@ CLIENT Globals
 
 	DATA_KNIFE_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/weapons/data_knife/v_data_knife.mdl"
+* value: $"models/weapons/data_knife/v_data_knife.mdl"
 
-CLIENT Globals
-=====
 
 ``STEAL_PISTOL_MODEL``
 ^^^^^^^^^^
@@ -16618,12 +14132,10 @@ CLIENT Globals
 
 	STEAL_PISTOL_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/weapons/p2011/w_p2011.mdl"
+* value: $"models/weapons/p2011/w_p2011.mdl"
 
-CLIENT Globals
-=====
 
 ``SENTRY_TURRET_MODEL``
 ^^^^^^^^^^
@@ -16632,12 +14144,10 @@ CLIENT Globals
 
 	SENTRY_TURRET_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/Robots/turret_plasma/turret_plasma.mdl"
+* value: $"models/Robots/turret_plasma/turret_plasma.mdl"
 
-CLIENT Globals
-=====
 
 ``ROCKET_TURRET_MODEL``
 ^^^^^^^^^^
@@ -16646,12 +14156,10 @@ CLIENT Globals
 
 	ROCKET_TURRET_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/Robots/turret_rocket/turret_rocket.mdl"
+* value: $"models/Robots/turret_rocket/turret_rocket.mdl"
 
-CLIENT Globals
-=====
 
 ``PLASMA_TURRET_MODEL``
 ^^^^^^^^^^
@@ -16660,12 +14168,10 @@ CLIENT Globals
 
 	PLASMA_TURRET_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/Robots/turret_plasma/turret_plasma.mdl"
+* value: $"models/Robots/turret_plasma/turret_plasma.mdl"
 
-CLIENT Globals
-=====
 
 ``HITSCAN_TURRET_MODEL``
 ^^^^^^^^^^
@@ -16674,12 +14180,10 @@ CLIENT Globals
 
 	HITSCAN_TURRET_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/Robots/turret_hitscan/turret_hitscan.mdl"
+* value: $"models/Robots/turret_hitscan/turret_hitscan.mdl"
 
-CLIENT Globals
-=====
 
 ``CONTROL_PANEL_MODEL``
 ^^^^^^^^^^
@@ -16688,12 +14192,10 @@ CLIENT Globals
 
 	CONTROL_PANEL_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/communication/terminal_usable_imc_01.mdl"
+* value: $"models/communication/terminal_usable_imc_01.mdl"
 
-CLIENT Globals
-=====
 
 ``RODEO_BATTERY_MODEL``
 ^^^^^^^^^^
@@ -16702,12 +14204,10 @@ CLIENT Globals
 
 	RODEO_BATTERY_MODEL is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/titans/medium/titan_medium_battery_static.mdl"
+* value: $"models/titans/medium/titan_medium_battery_static.mdl"
 
-CLIENT Globals
-=====
 
 ``MODEL_GENERATOR``
 ^^^^^^^^^^
@@ -16716,104 +14216,82 @@ CLIENT Globals
 
 	MODEL_GENERATOR is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"models/beacon/charge_generator_01_glass.mdl"
+* value: $"models/beacon/charge_generator_01_glass.mdl"
 
-CLIENT Globals
-=====
 
 ``level``
 ^^^^^^^^^^
 
-	* type: table<string,var>
+* type: table<string,var>
 
-CLIENT Globals
-=====
 
 ``reloadingScripts``
 ^^^^^^^^^^
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``reloadedScripts``
 ^^^^^^^^^^
 
-	* type: bool
+* type: bool
 
-	* value: false
+* value: false
 
-CLIENT Globals
-=====
 
 ``GAMETYPE_TEXT``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``GAMETYPE_DESC``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``GAMETYPE_ICON``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {
+* value: {
 
-CLIENT Globals
-=====
 
 ``>``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``GAMETYPE``
 ^^^^^^^^^^
 
-	* type: string
+* type: string
 
-CLIENT Globals
-=====
 
 ``MAX_TEAMS``
 ^^^^^^^^^^
 
-	* type: int
+* type: int
 
-CLIENT Globals
-=====
 
 ``GAMEDESC_CURRENT``
 ^^^^^^^^^^
 
-	* type: string
+* type: string
 
-CLIENT Globals
-=====
 
 ``>``
 ^^^^^^^^^^
@@ -16822,12 +14300,10 @@ CLIENT Globals
 
 	> is constant
 
-	* type: table
+* type: table
 
-	* value: {
+* value: {
 
-CLIENT Globals
-=====
 
 ``COOP_CUSTOMMATCH_UNLOCK_PLAYS``
 ^^^^^^^^^^
@@ -16836,12 +14312,10 @@ CLIENT Globals
 
 	COOP_CUSTOMMATCH_UNLOCK_PLAYS is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``USE_NEW_LOADOUT_MENU``
 ^^^^^^^^^^
@@ -16850,12 +14324,10 @@ CLIENT Globals
 
 	USE_NEW_LOADOUT_MENU is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MATCH_VICTORY``
 ^^^^^^^^^^
@@ -16864,12 +14336,10 @@ CLIENT Globals
 
 	POINTVALUE_MATCH_VICTORY is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MATCH_COMPLETION``
 ^^^^^^^^^^
@@ -16878,12 +14348,10 @@ CLIENT Globals
 
 	POINTVALUE_MATCH_COMPLETION is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ROUND_WIN``
 ^^^^^^^^^^
@@ -16892,12 +14360,10 @@ CLIENT Globals
 
 	POINTVALUE_ROUND_WIN is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ROUND_COMPLETION``
 ^^^^^^^^^^
@@ -16906,12 +14372,10 @@ CLIENT Globals
 
 	POINTVALUE_ROUND_COMPLETION is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL``
 ^^^^^^^^^^
@@ -16920,12 +14384,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ASSIST``
 ^^^^^^^^^^
@@ -16934,12 +14396,10 @@ CLIENT Globals
 
 	POINTVALUE_ASSIST is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_FIRETEAM_AI``
 ^^^^^^^^^^
@@ -16948,12 +14408,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_FIRETEAM_AI is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_SPECTRE``
 ^^^^^^^^^^
@@ -16962,12 +14420,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_STALKER``
 ^^^^^^^^^^
@@ -16976,12 +14432,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_STALKER is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_SUPER_SPECTRE``
 ^^^^^^^^^^
@@ -16990,12 +14444,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_SUPER_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_TITAN``
 ^^^^^^^^^^
@@ -17004,12 +14456,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ASSIST_TITAN``
 ^^^^^^^^^^
@@ -17018,12 +14468,10 @@ CLIENT Globals
 
 	POINTVALUE_ASSIST_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_AUTOTITAN``
 ^^^^^^^^^^
@@ -17032,12 +14480,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_AUTOTITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ELECTROCUTE_TITAN``
 ^^^^^^^^^^
@@ -17046,12 +14492,10 @@ CLIENT Globals
 
 	POINTVALUE_ELECTROCUTE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ELECTROCUTE_AUTOTITAN``
 ^^^^^^^^^^
@@ -17060,12 +14504,10 @@ CLIENT Globals
 
 	POINTVALUE_ELECTROCUTE_AUTOTITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_PILOT``
 ^^^^^^^^^^
@@ -17074,12 +14516,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_EXECUTE_PILOT``
 ^^^^^^^^^^
@@ -17088,12 +14528,10 @@ CLIENT Globals
 
 	POINTVALUE_EXECUTE_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_MARVIN``
 ^^^^^^^^^^
@@ -17102,12 +14540,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_MARVIN is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_TURRET``
 ^^^^^^^^^^
@@ -17116,12 +14552,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_TURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_HEAVY_TURRET``
 ^^^^^^^^^^
@@ -17130,12 +14564,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_HEAVY_TURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_LIGHT_TURRET``
 ^^^^^^^^^^
@@ -17144,12 +14576,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_LIGHT_TURRET is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_DRONE``
 ^^^^^^^^^^
@@ -17158,12 +14588,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_DRONE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_PROWLER``
 ^^^^^^^^^^
@@ -17172,12 +14600,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_PROWLER is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_SUICIDE_SPECTRE``
 ^^^^^^^^^^
@@ -17186,12 +14612,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_SUICIDE_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 15
+* value: 15
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_SNIPER_SPECTRE``
 ^^^^^^^^^^
@@ -17200,12 +14624,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_SNIPER_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 40
+* value: 40
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_TITAN``
 ^^^^^^^^^^
@@ -17214,12 +14636,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_ASSIST_TITAN``
 ^^^^^^^^^^
@@ -17228,12 +14648,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_ASSIST_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_NUKE_TITAN``
 ^^^^^^^^^^
@@ -17242,12 +14660,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_NUKE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 125
+* value: 125
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_MORTAR_TITAN``
 ^^^^^^^^^^
@@ -17256,12 +14672,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_MORTAR_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 125
+* value: 125
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_EMP_TITAN``
 ^^^^^^^^^^
@@ -17270,12 +14684,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_EMP_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 125
+* value: 125
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_CLOAKING_DRONE``
 ^^^^^^^^^^
@@ -17284,12 +14696,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_CLOAKING_DRONE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_BUBBLE_SHIELD_GRUNT``
 ^^^^^^^^^^
@@ -17298,12 +14708,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_BUBBLE_SHIELD_GRUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_KILL_BUBBLE_SHIELD_SPECTRE``
 ^^^^^^^^^^
@@ -17312,12 +14720,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_KILL_BUBBLE_SHIELD_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_AUTOTITAN_MULTIPLIER``
 ^^^^^^^^^^
@@ -17326,12 +14732,10 @@ CLIENT Globals
 
 	POINTVALUE_AUTOTITAN_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 1.00
+* value: 1.00
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_DROPPOD_KILL``
 ^^^^^^^^^^
@@ -17340,12 +14744,10 @@ CLIENT Globals
 
 	POINTVALUE_DROPPOD_KILL is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_OPERATOR_KILL``
 ^^^^^^^^^^
@@ -17354,12 +14756,10 @@ CLIENT Globals
 
 	POINTVALUE_OPERATOR_KILL is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_SPOTTING_ASSIST``
 ^^^^^^^^^^
@@ -17368,12 +14768,10 @@ CLIENT Globals
 
 	POINTVALUE_SPOTTING_ASSIST is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HEADSHOT``
 ^^^^^^^^^^
@@ -17382,12 +14780,10 @@ CLIENT Globals
 
 	POINTVALUE_HEADSHOT is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_NPC_HEADSHOT``
 ^^^^^^^^^^
@@ -17396,12 +14792,10 @@ CLIENT Globals
 
 	POINTVALUE_NPC_HEADSHOT is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FIRST_STRIKE``
 ^^^^^^^^^^
@@ -17410,12 +14804,10 @@ CLIENT Globals
 
 	POINTVALUE_FIRST_STRIKE is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_DOUBLEKILL``
 ^^^^^^^^^^
@@ -17424,12 +14816,10 @@ CLIENT Globals
 
 	POINTVALUE_DOUBLEKILL is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TRIPLEKILL``
 ^^^^^^^^^^
@@ -17438,12 +14828,10 @@ CLIENT Globals
 
 	POINTVALUE_TRIPLEKILL is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MEGAKILL``
 ^^^^^^^^^^
@@ -17452,12 +14840,10 @@ CLIENT Globals
 
 	POINTVALUE_MEGAKILL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MAYHEM``
 ^^^^^^^^^^
@@ -17466,12 +14852,10 @@ CLIENT Globals
 
 	POINTVALUE_MAYHEM is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ONSLAUGHT``
 ^^^^^^^^^^
@@ -17480,12 +14864,10 @@ CLIENT Globals
 
 	POINTVALUE_ONSLAUGHT is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILLINGSPREE``
 ^^^^^^^^^^
@@ -17494,12 +14876,10 @@ CLIENT Globals
 
 	POINTVALUE_KILLINGSPREE is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_RAMPAGE``
 ^^^^^^^^^^
@@ -17508,12 +14888,10 @@ CLIENT Globals
 
 	POINTVALUE_RAMPAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_SHOWSTOPPER``
 ^^^^^^^^^^
@@ -17522,12 +14900,10 @@ CLIENT Globals
 
 	POINTVALUE_SHOWSTOPPER is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_REVENGE``
 ^^^^^^^^^^
@@ -17536,12 +14912,10 @@ CLIENT Globals
 
 	POINTVALUE_REVENGE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_PILOTEJECTKILL``
 ^^^^^^^^^^
@@ -17550,12 +14924,10 @@ CLIENT Globals
 
 	POINTVALUE_PILOTEJECTKILL is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_REVENGE_QUICK``
 ^^^^^^^^^^
@@ -17564,12 +14936,10 @@ CLIENT Globals
 
 	POINTVALUE_REVENGE_QUICK is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_NEMESIS``
 ^^^^^^^^^^
@@ -17578,12 +14948,10 @@ CLIENT Globals
 
 	POINTVALUE_NEMESIS is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_DOMINATING``
 ^^^^^^^^^^
@@ -17592,12 +14960,10 @@ CLIENT Globals
 
 	POINTVALUE_DOMINATING is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COMEBACK``
 ^^^^^^^^^^
@@ -17606,12 +14972,10 @@ CLIENT Globals
 
 	POINTVALUE_COMEBACK is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITANPERMADAMAGE``
 ^^^^^^^^^^
@@ -17620,12 +14984,10 @@ CLIENT Globals
 
 	POINTVALUE_TITANPERMADAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITAN_STEPCRUSH``
 ^^^^^^^^^^
@@ -17634,12 +14996,10 @@ CLIENT Globals
 
 	POINTVALUE_TITAN_STEPCRUSH is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITAN_STEPCRUSH_PILOT``
 ^^^^^^^^^^
@@ -17648,12 +15008,10 @@ CLIENT Globals
 
 	POINTVALUE_TITAN_STEPCRUSH_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITAN_STEPCRUSH_SPECTRE``
 ^^^^^^^^^^
@@ -17662,12 +15020,10 @@ CLIENT Globals
 
 	POINTVALUE_TITAN_STEPCRUSH_SPECTRE is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: POINTVALUE_TITAN_STEPCRUSH
+* value: POINTVALUE_TITAN_STEPCRUSH
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITAN_STEPCRUSH_FIRETEAM_AI``
 ^^^^^^^^^^
@@ -17676,12 +15032,10 @@ CLIENT Globals
 
 	POINTVALUE_TITAN_STEPCRUSH_FIRETEAM_AI is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: POINTVALUE_TITAN_STEPCRUSH
+* value: POINTVALUE_TITAN_STEPCRUSH
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITAN_MELEE_EXECUTION``
 ^^^^^^^^^^
@@ -17690,12 +15044,10 @@ CLIENT Globals
 
 	POINTVALUE_TITAN_MELEE_EXECUTION is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITAN_MELEE_VS_PILOT``
 ^^^^^^^^^^
@@ -17704,12 +15056,10 @@ CLIENT Globals
 
 	POINTVALUE_TITAN_MELEE_VS_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITAN_MELEE_VS_HUMANSIZE_NPC``
 ^^^^^^^^^^
@@ -17718,12 +15068,10 @@ CLIENT Globals
 
 	POINTVALUE_TITAN_MELEE_VS_HUMANSIZE_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TITAN_MELEE_VS_TITAN``
 ^^^^^^^^^^
@@ -17732,12 +15080,10 @@ CLIENT Globals
 
 	POINTVALUE_TITAN_MELEE_VS_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILLED_RODEO_PILOT``
 ^^^^^^^^^^
@@ -17746,12 +15092,10 @@ CLIENT Globals
 
 	POINTVALUE_KILLED_RODEO_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_RODEO_PILOT_BEATDOWN``
 ^^^^^^^^^^
@@ -17760,12 +15104,10 @@ CLIENT Globals
 
 	POINTVALUE_RODEO_PILOT_BEATDOWN is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_SUPER_USED_SMOKESCREEN``
 ^^^^^^^^^^
@@ -17774,12 +15116,10 @@ CLIENT Globals
 
 	POINTVALUE_SUPER_USED_SMOKESCREEN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_SUPER_USED_ELECTRIC_SMOKESCREEN``
 ^^^^^^^^^^
@@ -17788,12 +15128,10 @@ CLIENT Globals
 
 	POINTVALUE_SUPER_USED_ELECTRIC_SMOKESCREEN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_SUPER_USED_EE_SMOKESCREEN``
 ^^^^^^^^^^
@@ -17802,12 +15140,10 @@ CLIENT Globals
 
 	POINTVALUE_SUPER_USED_EE_SMOKESCREEN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_GUIDED_ORBITAL_LASER``
 ^^^^^^^^^^
@@ -17816,12 +15152,10 @@ CLIENT Globals
 
 	POINTVALUE_GUIDED_ORBITAL_LASER is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_LEECH_SPECTRE``
 ^^^^^^^^^^
@@ -17830,12 +15164,10 @@ CLIENT Globals
 
 	POINTVALUE_LEECH_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_LEECH_SUPER_SPECTRE``
 ^^^^^^^^^^
@@ -17844,12 +15176,10 @@ CLIENT Globals
 
 	POINTVALUE_LEECH_SUPER_SPECTRE is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_LEECH_DRONE``
 ^^^^^^^^^^
@@ -17858,12 +15188,10 @@ CLIENT Globals
 
 	POINTVALUE_LEECH_DRONE is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_LEECH_GUNSHIP``
 ^^^^^^^^^^
@@ -17872,12 +15200,10 @@ CLIENT Globals
 
 	POINTVALUE_LEECH_GUNSHIP is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_DESTROYED_SATCHEL``
 ^^^^^^^^^^
@@ -17886,12 +15212,10 @@ CLIENT Globals
 
 	POINTVALUE_DESTROYED_SATCHEL is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_DESTROYED_PROXIMITY_MINE``
 ^^^^^^^^^^
@@ -17900,12 +15224,10 @@ CLIENT Globals
 
 	POINTVALUE_DESTROYED_PROXIMITY_MINE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_DESTROYED_LASER_MINE``
 ^^^^^^^^^^
@@ -17914,12 +15236,10 @@ CLIENT Globals
 
 	POINTVALUE_DESTROYED_LASER_MINE is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_VICTORYKILL``
 ^^^^^^^^^^
@@ -17928,12 +15248,10 @@ CLIENT Globals
 
 	POINTVALUE_VICTORYKILL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILLED_MVP``
 ^^^^^^^^^^
@@ -17942,12 +15260,10 @@ CLIENT Globals
 
 	POINTVALUE_KILLED_MVP is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_STOPPED_COMMON_BURN_CARD``
 ^^^^^^^^^^
@@ -17956,12 +15272,10 @@ CLIENT Globals
 
 	POINTVALUE_STOPPED_COMMON_BURN_CARD is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_STOPPED_UNCOMMON_BURN_CARD``
 ^^^^^^^^^^
@@ -17970,12 +15284,10 @@ CLIENT Globals
 
 	POINTVALUE_STOPPED_UNCOMMON_BURN_CARD is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_STOPPED_RARE_BURN_CARD``
 ^^^^^^^^^^
@@ -17984,12 +15296,10 @@ CLIENT Globals
 
 	POINTVALUE_STOPPED_RARE_BURN_CARD is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_EARNED_COMMON_BURN_CARD``
 ^^^^^^^^^^
@@ -17998,12 +15308,10 @@ CLIENT Globals
 
 	POINTVALUE_EARNED_COMMON_BURN_CARD is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_EARNED_RARE_BURN_CARD``
 ^^^^^^^^^^
@@ -18012,12 +15320,10 @@ CLIENT Globals
 
 	POINTVALUE_EARNED_RARE_BURN_CARD is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_USED_BURNCARD_COMMON``
 ^^^^^^^^^^
@@ -18026,12 +15332,10 @@ CLIENT Globals
 
 	POINTVALUE_USED_BURNCARD_COMMON is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_USED_BURNCARD_RARE``
 ^^^^^^^^^^
@@ -18040,12 +15344,10 @@ CLIENT Globals
 
 	POINTVALUE_USED_BURNCARD_RARE is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_BURNCARD_EXTRA_CREDIT``
 ^^^^^^^^^^
@@ -18054,12 +15356,10 @@ CLIENT Globals
 
 	POINTVALUE_BURNCARD_EXTRA_CREDIT is constant
 
-	* type: int
+* type: int
 
-	* value: 1000
+* value: 1000
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_CAPTURE``
 ^^^^^^^^^^
@@ -18068,12 +15368,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_CAPTURE is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_CAPTURE_ASSIST``
 ^^^^^^^^^^
@@ -18082,12 +15380,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_CAPTURE_ASSIST is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_NEUTRALIZE``
 ^^^^^^^^^^
@@ -18096,12 +15392,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_NEUTRALIZE is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_NEUTRALIZE_ASSIST``
 ^^^^^^^^^^
@@ -18110,12 +15404,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_NEUTRALIZE_ASSIST is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_SIEGE``
 ^^^^^^^^^^
@@ -18124,12 +15416,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_SIEGE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_SNIPE``
 ^^^^^^^^^^
@@ -18138,12 +15428,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_SNIPE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_ASSAULT``
 ^^^^^^^^^^
@@ -18152,12 +15440,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_ASSAULT is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_SIEGE_NPC``
 ^^^^^^^^^^
@@ -18166,12 +15452,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_SIEGE_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_SNIPE_NPC``
 ^^^^^^^^^^
@@ -18180,12 +15464,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_SNIPE_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_ASSAULT_NPC``
 ^^^^^^^^^^
@@ -18194,12 +15476,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_ASSAULT_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_PERIMETER_DEFENSE``
 ^^^^^^^^^^
@@ -18208,12 +15488,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_PERIMETER_DEFENSE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_DEFENSE``
 ^^^^^^^^^^
@@ -18222,12 +15500,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_DEFENSE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_PERIMETER_DEFENSE_NPC``
 ^^^^^^^^^^
@@ -18236,12 +15512,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_PERIMETER_DEFENSE_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_DEFENSE_NPC``
 ^^^^^^^^^^
@@ -18250,12 +15524,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_DEFENSE_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_HOLD``
 ^^^^^^^^^^
@@ -18264,12 +15536,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_HOLD is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_AMPED``
 ^^^^^^^^^^
@@ -18278,12 +15548,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_AMPED is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARDPOINT_AMPED_HOLD``
 ^^^^^^^^^^
@@ -18292,12 +15560,10 @@ CLIENT Globals
 
 	POINTVALUE_HARDPOINT_AMPED_HOLD is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``TEAMPOINTVALUE_HARDPOINT_CAPTURE``
 ^^^^^^^^^^
@@ -18306,12 +15572,10 @@ CLIENT Globals
 
 	TEAMPOINTVALUE_HARDPOINT_CAPTURE is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``TEAMPOINTVALUE_HARDPOINT_OWNED``
 ^^^^^^^^^^
@@ -18320,12 +15584,10 @@ CLIENT Globals
 
 	TEAMPOINTVALUE_HARDPOINT_OWNED is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TEAMPOINTVALUE_AMPED_HARDPOINT_OWNED``
 ^^^^^^^^^^
@@ -18334,12 +15596,10 @@ CLIENT Globals
 
 	TEAMPOINTVALUE_AMPED_HARDPOINT_OWNED is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TEAMPOINTVALUE_HARDPOINT_AMPED``
 ^^^^^^^^^^
@@ -18348,12 +15608,10 @@ CLIENT Globals
 
 	TEAMPOINTVALUE_HARDPOINT_AMPED is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FINAL_HARDPOINT_CAPTURE``
 ^^^^^^^^^^
@@ -18362,12 +15620,10 @@ CLIENT Globals
 
 	POINTVALUE_FINAL_HARDPOINT_CAPTURE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FINAL_HARDPOINT_CAPTURE_ASSIST``
 ^^^^^^^^^^
@@ -18376,12 +15632,10 @@ CLIENT Globals
 
 	POINTVALUE_FINAL_HARDPOINT_CAPTURE_ASSIST is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ELIMINATE_TITAN``
 ^^^^^^^^^^
@@ -18390,12 +15644,10 @@ CLIENT Globals
 
 	POINTVALUE_ELIMINATE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 450
+* value: 450
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ELIMINATE_PILOT``
 ^^^^^^^^^^
@@ -18404,12 +15656,10 @@ CLIENT Globals
 
 	POINTVALUE_ELIMINATE_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_WLTS_ELIMINATE_TITAN``
 ^^^^^^^^^^
@@ -18418,12 +15668,10 @@ CLIENT Globals
 
 	POINTVALUE_WLTS_ELIMINATE_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 375
+* value: 375
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_WLTS_ELIMINATE_PILOT``
 ^^^^^^^^^^
@@ -18432,12 +15680,10 @@ CLIENT Globals
 
 	POINTVALUE_WLTS_ELIMINATE_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 225
+* value: 225
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_WLTS_KILL_TITAN``
 ^^^^^^^^^^
@@ -18446,12 +15692,10 @@ CLIENT Globals
 
 	POINTVALUE_WLTS_KILL_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_WLTS_ASSIST_TITAN``
 ^^^^^^^^^^
@@ -18460,12 +15704,10 @@ CLIENT Globals
 
 	POINTVALUE_WLTS_ASSIST_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_WLTS_KILL_AUTOTITAN``
 ^^^^^^^^^^
@@ -18474,12 +15716,10 @@ CLIENT Globals
 
 	POINTVALUE_WLTS_KILL_AUTOTITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_WLTS_KILL_PILOT``
 ^^^^^^^^^^
@@ -18488,12 +15728,10 @@ CLIENT Globals
 
 	POINTVALUE_WLTS_KILL_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_WLTS_ASSIST``
 ^^^^^^^^^^
@@ -18502,12 +15740,10 @@ CLIENT Globals
 
 	POINTVALUE_WLTS_ASSIST is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FLAG_CAPTURE``
 ^^^^^^^^^^
@@ -18516,12 +15752,10 @@ CLIENT Globals
 
 	POINTVALUE_FLAG_CAPTURE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FLAG_TAKEN``
 ^^^^^^^^^^
@@ -18530,12 +15764,10 @@ CLIENT Globals
 
 	POINTVALUE_FLAG_TAKEN is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FLAG_CAPTURE_ASSIST``
 ^^^^^^^^^^
@@ -18544,12 +15776,10 @@ CLIENT Globals
 
 	POINTVALUE_FLAG_CAPTURE_ASSIST is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FLAG_RETURN``
 ^^^^^^^^^^
@@ -18558,12 +15788,10 @@ CLIENT Globals
 
 	POINTVALUE_FLAG_RETURN is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FLAG_CARRIER_KILL``
 ^^^^^^^^^^
@@ -18572,12 +15800,10 @@ CLIENT Globals
 
 	POINTVALUE_FLAG_CARRIER_KILL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``HARDPOINT_RANGED_ASSAULT_DIST``
 ^^^^^^^^^^
@@ -18586,12 +15812,10 @@ CLIENT Globals
 
 	HARDPOINT_RANGED_ASSAULT_DIST is constant
 
-	* type: int
+* type: int
 
-	* value: 2500
+* value: 2500
 
-CLIENT Globals
-=====
 
 ``HARDPOINT_PERIMETER_DEFENSE_RANGE``
 ^^^^^^^^^^
@@ -18600,12 +15824,10 @@ CLIENT Globals
 
 	HARDPOINT_PERIMETER_DEFENSE_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 2500
+* value: 2500
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ORE_PICKUP``
 ^^^^^^^^^^
@@ -18614,12 +15836,10 @@ CLIENT Globals
 
 	POINTVALUE_ORE_PICKUP is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MEGA_ORE_PICKUP``
 ^^^^^^^^^^
@@ -18628,12 +15848,10 @@ CLIENT Globals
 
 	POINTVALUE_MEGA_ORE_PICKUP is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ORE_DEPOSIT``
 ^^^^^^^^^^
@@ -18642,12 +15860,10 @@ CLIENT Globals
 
 	POINTVALUE_ORE_DEPOSIT is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_ORE_FROM_PLAYER_PICKUP``
 ^^^^^^^^^^
@@ -18656,12 +15872,10 @@ CLIENT Globals
 
 	POINTVALUE_ORE_FROM_PLAYER_PICKUP is constant
 
-	* type: int
+* type: int
 
-	* value: 15
+* value: 15
 
-CLIENT Globals
-=====
 
 ``MAX_ORE_PLAYER_CAN_CARRY``
 ^^^^^^^^^^
@@ -18670,12 +15884,10 @@ CLIENT Globals
 
 	MAX_ORE_PLAYER_CAN_CARRY is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MARKED_KILLED_MARKED``
 ^^^^^^^^^^
@@ -18684,12 +15896,10 @@ CLIENT Globals
 
 	POINTVALUE_MARKED_KILLED_MARKED is constant
 
-	* type: int
+* type: int
 
-	* value: 350
+* value: 350
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MARKED_TARGET_KILLED``
 ^^^^^^^^^^
@@ -18698,12 +15908,10 @@ CLIENT Globals
 
 	POINTVALUE_MARKED_TARGET_KILLED is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MARKED_ESCORT``
 ^^^^^^^^^^
@@ -18712,12 +15920,10 @@ CLIENT Globals
 
 	POINTVALUE_MARKED_ESCORT is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MARKED_SURVIVAL``
 ^^^^^^^^^^
@@ -18726,12 +15932,10 @@ CLIENT Globals
 
 	POINTVALUE_MARKED_SURVIVAL is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MARKED_OUTLASTED_ENEMY_MARKED``
 ^^^^^^^^^^
@@ -18740,12 +15944,10 @@ CLIENT Globals
 
 	POINTVALUE_MARKED_OUTLASTED_ENEMY_MARKED is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MARKED_TARGET``
 ^^^^^^^^^^
@@ -18754,12 +15956,10 @@ CLIENT Globals
 
 	POINTVALUE_MARKED_TARGET is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_WAVE_MVP``
 ^^^^^^^^^^
@@ -18768,12 +15968,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_WAVE_MVP is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_TURRET_KILL_STREAK``
 ^^^^^^^^^^
@@ -18782,12 +15980,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_TURRET_KILL_STREAK is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``COOP_TURRET_KILL_STREAK_REQUIREMENT``
 ^^^^^^^^^^
@@ -18796,12 +15992,10 @@ CLIENT Globals
 
 	COOP_TURRET_KILL_STREAK_REQUIREMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_IMMORTAL``
 ^^^^^^^^^^
@@ -18810,12 +16004,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_IMMORTAL is constant
 
-	* type: int
+* type: int
 
-	* value: 350
+* value: 350
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_COOP_SURVIVOR``
 ^^^^^^^^^^
@@ -18824,12 +16016,10 @@ CLIENT Globals
 
 	POINTVALUE_COOP_SURVIVOR is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_ASSAULT``
 ^^^^^^^^^^
@@ -18838,12 +16028,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_ASSAULT is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_DEFENSE``
 ^^^^^^^^^^
@@ -18852,12 +16040,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_DEFENSE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_PERIMETER_DEFENSE``
 ^^^^^^^^^^
@@ -18866,12 +16052,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_PERIMETER_DEFENSE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_SIEGE``
 ^^^^^^^^^^
@@ -18880,12 +16064,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_SIEGE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_SNIPE``
 ^^^^^^^^^^
@@ -18894,12 +16076,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_SNIPE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_BASE_CONSTRUCTION``
 ^^^^^^^^^^
@@ -18908,12 +16088,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_BASE_CONSTRUCTION is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_FORWARD_CONSTRUCTION``
 ^^^^^^^^^^
@@ -18922,12 +16100,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_FORWARD_CONSTRUCTION is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_INVASIVE_CONSTRUCTION``
 ^^^^^^^^^^
@@ -18936,12 +16112,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_INVASIVE_CONSTRUCTION is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_SHIELD_CONSTRUCTION``
 ^^^^^^^^^^
@@ -18950,12 +16124,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_SHIELD_CONSTRUCTION is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_RESOURCE_DENIAL``
 ^^^^^^^^^^
@@ -18964,12 +16136,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_RESOURCE_DENIAL is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_TOWER_DAMAGE``
 ^^^^^^^^^^
@@ -18978,12 +16148,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_TOWER_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_TOWER_DEFENSE``
 ^^^^^^^^^^
@@ -18992,12 +16160,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_TOWER_DEFENSE is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_TEAM_TURRET_CONTROL``
 ^^^^^^^^^^
@@ -19006,12 +16172,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_TEAM_TURRET_CONTROL is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_SECURING_RESOURCES``
 ^^^^^^^^^^
@@ -19020,12 +16184,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_SECURING_RESOURCES is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FW_DESTROY_TURRET_SHIELD``
 ^^^^^^^^^^
@@ -19034,12 +16196,10 @@ CLIENT Globals
 
 	POINTVALUE_FW_DESTROY_TURRET_SHIELD is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HUNTED_ELIMINATE_HUNTER``
 ^^^^^^^^^^
@@ -19048,12 +16208,10 @@ CLIENT Globals
 
 	POINTVALUE_HUNTED_ELIMINATE_HUNTER is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HUNTED_ELIMINATE_GRUNT``
 ^^^^^^^^^^
@@ -19062,12 +16220,10 @@ CLIENT Globals
 
 	POINTVALUE_HUNTED_ELIMINATE_GRUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HUNTED_ELIMINATE_SQUAD``
 ^^^^^^^^^^
@@ -19076,12 +16232,10 @@ CLIENT Globals
 
 	POINTVALUE_HUNTED_ELIMINATE_SQUAD is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HUNTED_AQUIRE_ASSET``
 ^^^^^^^^^^
@@ -19090,12 +16244,10 @@ CLIENT Globals
 
 	POINTVALUE_HUNTED_AQUIRE_ASSET is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HUNTED_SECURE_ASSET``
 ^^^^^^^^^^
@@ -19104,12 +16256,10 @@ CLIENT Globals
 
 	POINTVALUE_HUNTED_SECURE_ASSET is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HUNTED_EXTRACT_ASSET``
 ^^^^^^^^^^
@@ -19118,12 +16268,10 @@ CLIENT Globals
 
 	POINTVALUE_HUNTED_EXTRACT_ASSET is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HUNTED_OBJECTIVE_SURVIVAL``
 ^^^^^^^^^^
@@ -19132,12 +16280,10 @@ CLIENT Globals
 
 	POINTVALUE_HUNTED_OBJECTIVE_SURVIVAL is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HUNTED_MISSION_SURVIVAL``
 ^^^^^^^^^^
@@ -19146,12 +16292,10 @@ CLIENT Globals
 
 	POINTVALUE_HUNTED_MISSION_SURVIVAL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_CONTROL_PANEL_ACTIVATE``
 ^^^^^^^^^^
@@ -19160,12 +16304,10 @@ CLIENT Globals
 
 	POINTVALUE_CONTROL_PANEL_ACTIVATE is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_CONTROL_PANEL_ACTIVATE_LIGHT``
 ^^^^^^^^^^
@@ -19174,12 +16316,10 @@ CLIENT Globals
 
 	POINTVALUE_CONTROL_PANEL_ACTIVATE_LIGHT is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FIRST_TITANFALL``
 ^^^^^^^^^^
@@ -19188,12 +16328,10 @@ CLIENT Globals
 
 	POINTVALUE_FIRST_TITANFALL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_CALLED_IN_TITAN``
 ^^^^^^^^^^
@@ -19202,12 +16340,10 @@ CLIENT Globals
 
 	POINTVALUE_CALLED_IN_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_RODEOD``
 ^^^^^^^^^^
@@ -19216,12 +16352,10 @@ CLIENT Globals
 
 	POINTVALUE_RODEOD is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_RODEOD_FRIEND``
 ^^^^^^^^^^
@@ -19230,12 +16364,10 @@ CLIENT Globals
 
 	POINTVALUE_RODEOD_FRIEND is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FRIEND_RIDE``
 ^^^^^^^^^^
@@ -19244,12 +16376,10 @@ CLIENT Globals
 
 	POINTVALUE_FRIEND_RIDE is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_GET_TO_CHOPPER``
 ^^^^^^^^^^
@@ -19258,12 +16388,10 @@ CLIENT Globals
 
 	POINTVALUE_GET_TO_CHOPPER is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HOTZONE_EXTRACT``
 ^^^^^^^^^^
@@ -19272,12 +16400,10 @@ CLIENT Globals
 
 	POINTVALUE_HOTZONE_EXTRACT is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_SOLE_SURVIVOR``
 ^^^^^^^^^^
@@ -19286,12 +16412,10 @@ CLIENT Globals
 
 	POINTVALUE_SOLE_SURVIVOR is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FULL_TEAM_EVAC``
 ^^^^^^^^^^
@@ -19300,12 +16424,10 @@ CLIENT Globals
 
 	POINTVALUE_FULL_TEAM_EVAC is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_EVAC_DENIED``
 ^^^^^^^^^^
@@ -19314,12 +16436,10 @@ CLIENT Globals
 
 	POINTVALUE_EVAC_DENIED is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILLED_ESCAPEE``
 ^^^^^^^^^^
@@ -19328,12 +16448,10 @@ CLIENT Globals
 
 	POINTVALUE_KILLED_ESCAPEE is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FULL_TEAM_KILL``
 ^^^^^^^^^^
@@ -19342,12 +16460,10 @@ CLIENT Globals
 
 	POINTVALUE_FULL_TEAM_KILL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FULL_TEAM_KILL_SOLO``
 ^^^^^^^^^^
@@ -19356,12 +16472,10 @@ CLIENT Globals
 
 	POINTVALUE_FULL_TEAM_KILL_SOLO is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_FISHINBARREL``
 ^^^^^^^^^^
@@ -19370,12 +16484,10 @@ CLIENT Globals
 
 	POINTVALUE_FISHINBARREL is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILLED_RANKED_PILOT``
 ^^^^^^^^^^
@@ -19384,12 +16496,10 @@ CLIENT Globals
 
 	POINTVALUE_KILLED_RANKED_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILLED_TOP_RANKED_PILOT``
 ^^^^^^^^^^
@@ -19398,12 +16508,10 @@ CLIENT Globals
 
 	POINTVALUE_KILLED_TOP_RANKED_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILLED_TOP_PERF_PILOT``
 ^^^^^^^^^^
@@ -19412,12 +16520,10 @@ CLIENT Globals
 
 	POINTVALUE_KILLED_TOP_PERF_PILOT is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILLED_DOGFIGHTER``
 ^^^^^^^^^^
@@ -19426,12 +16532,10 @@ CLIENT Globals
 
 	POINTVALUE_KILLED_DOGFIGHTER is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_ANGELCITY_SEARCHDRONE``
 ^^^^^^^^^^
@@ -19440,12 +16544,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_ANGELCITY_SEARCHDRONE is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_KILL_FLYER``
 ^^^^^^^^^^
@@ -19454,12 +16556,10 @@ CLIENT Globals
 
 	POINTVALUE_KILL_FLYER is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HEALTH_PICKUP``
 ^^^^^^^^^^
@@ -19468,12 +16568,10 @@ CLIENT Globals
 
 	POINTVALUE_HEALTH_PICKUP is constant
 
-	* type: int
+* type: int
 
-	* value: 1000
+* value: 1000
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HARVEST``
 ^^^^^^^^^^
@@ -19482,12 +16580,10 @@ CLIENT Globals
 
 	POINTVALUE_HARVEST is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_RESUPPLY``
 ^^^^^^^^^^
@@ -19496,12 +16592,10 @@ CLIENT Globals
 
 	POINTVALUE_RESUPPLY is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_HEAL``
 ^^^^^^^^^^
@@ -19510,12 +16604,10 @@ CLIENT Globals
 
 	POINTVALUE_HEAL is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_DRONE_GETS_KILL``
 ^^^^^^^^^^
@@ -19524,12 +16616,10 @@ CLIENT Globals
 
 	POINTVALUE_DRONE_GETS_KILL is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_MARVIN_GETS_KILL``
 ^^^^^^^^^^
@@ -19538,12 +16628,10 @@ CLIENT Globals
 
 	POINTVALUE_MARVIN_GETS_KILL is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``POINTVALUE_TURRET_GETS_KILL``
 ^^^^^^^^^^
@@ -19552,12 +16640,10 @@ CLIENT Globals
 
 	POINTVALUE_TURRET_GETS_KILL is constant
 
-	* type: int
+* type: int
 
-	* value: 40
+* value: 40
 
-CLIENT Globals
-=====
 
 ``DOUBLEKILL_REQUIREMENT_KILLS``
 ^^^^^^^^^^
@@ -19566,12 +16652,10 @@ CLIENT Globals
 
 	DOUBLEKILL_REQUIREMENT_KILLS is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``TRIPLEKILL_REQUIREMENT_KILLS``
 ^^^^^^^^^^
@@ -19580,12 +16664,10 @@ CLIENT Globals
 
 	TRIPLEKILL_REQUIREMENT_KILLS is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``MEGAKILL_REQUIREMENT_KILLS``
 ^^^^^^^^^^
@@ -19594,12 +16676,10 @@ CLIENT Globals
 
 	MEGAKILL_REQUIREMENT_KILLS is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``CASCADINGKILL_REQUIREMENT_TIME``
 ^^^^^^^^^^
@@ -19608,12 +16688,10 @@ CLIENT Globals
 
 	CASCADINGKILL_REQUIREMENT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``ONSLAUGHT_REQUIREMENT_KILLS``
 ^^^^^^^^^^
@@ -19622,12 +16700,10 @@ CLIENT Globals
 
 	ONSLAUGHT_REQUIREMENT_KILLS is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``ONSLAUGHT_REQUIREMENT_TIME``
 ^^^^^^^^^^
@@ -19636,12 +16712,10 @@ CLIENT Globals
 
 	ONSLAUGHT_REQUIREMENT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``MAYHEM_REQUIREMENT_KILLS``
 ^^^^^^^^^^
@@ -19650,12 +16724,10 @@ CLIENT Globals
 
 	MAYHEM_REQUIREMENT_KILLS is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``MAYHEM_REQUIREMENT_TIME``
 ^^^^^^^^^^
@@ -19664,12 +16736,10 @@ CLIENT Globals
 
 	MAYHEM_REQUIREMENT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``QUICK_REVENGE_TIME_LIMIT``
 ^^^^^^^^^^
@@ -19678,12 +16748,10 @@ CLIENT Globals
 
 	QUICK_REVENGE_TIME_LIMIT is constant
 
-	* type: float
+* type: float
 
-	* value: 20.0
+* value: 20.0
 
-CLIENT Globals
-=====
 
 ``NEMESIS_KILL_REQUIREMENT``
 ^^^^^^^^^^
@@ -19692,12 +16760,10 @@ CLIENT Globals
 
 	NEMESIS_KILL_REQUIREMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``DOMINATING_KILL_REQUIREMENT``
 ^^^^^^^^^^
@@ -19706,12 +16772,10 @@ CLIENT Globals
 
 	DOMINATING_KILL_REQUIREMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``RAMPAGE_KILL_REQUIREMENT``
 ^^^^^^^^^^
@@ -19720,12 +16784,10 @@ CLIENT Globals
 
 	RAMPAGE_KILL_REQUIREMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``KILLINGSPREE_KILL_REQUIREMENT``
 ^^^^^^^^^^
@@ -19734,12 +16796,10 @@ CLIENT Globals
 
 	KILLINGSPREE_KILL_REQUIREMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``COMEBACK_DEATHS_REQUIREMENT``
 ^^^^^^^^^^
@@ -19748,12 +16808,10 @@ CLIENT Globals
 
 	COMEBACK_DEATHS_REQUIREMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``WORTHIT_REQUIREMENT_TIME``
 ^^^^^^^^^^
@@ -19762,12 +16820,10 @@ CLIENT Globals
 
 	WORTHIT_REQUIREMENT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``DROPPOD_SPEED``
 ^^^^^^^^^^
@@ -19776,12 +16832,10 @@ CLIENT Globals
 
 	DROPPOD_SPEED is constant
 
-	* type: int
+* type: int
 
-	* value: 2500
+* value: 2500
 
-CLIENT Globals
-=====
 
 ``DROPPOD_SPEED_BOOST``
 ^^^^^^^^^^
@@ -19790,12 +16844,10 @@ CLIENT Globals
 
 	DROPPOD_SPEED_BOOST is constant
 
-	* type: int
+* type: int
 
-	* value: 15000
+* value: 15000
 
-CLIENT Globals
-=====
 
 ``OPERATOR_POD_SPEED``
 ^^^^^^^^^^
@@ -19804,12 +16856,10 @@ CLIENT Globals
 
 	OPERATOR_POD_SPEED is constant
 
-	* type: int
+* type: int
 
-	* value: 2500
+* value: 2500
 
-CLIENT Globals
-=====
 
 ``OPERATOR_POD_SPEED_BOOST``
 ^^^^^^^^^^
@@ -19818,12 +16868,10 @@ CLIENT Globals
 
 	OPERATOR_POD_SPEED_BOOST is constant
 
-	* type: int
+* type: int
 
-	* value: 15000
+* value: 15000
 
-CLIENT Globals
-=====
 
 ``OPERATOR_DROP_POD_DROP_OFFSET``
 ^^^^^^^^^^
@@ -19832,12 +16880,10 @@ CLIENT Globals
 
 	OPERATOR_DROP_POD_DROP_OFFSET is constant
 
-	* type: int
+* type: int
 
-	* value: 2048
+* value: 2048
 
-CLIENT Globals
-=====
 
 ``DEFAULT_PLAYER_DROPPOD_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19846,12 +16892,10 @@ CLIENT Globals
 
 	DEFAULT_PLAYER_DROPPOD_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``DEFAULT_OPERATOR_POD_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19860,12 +16904,10 @@ CLIENT Globals
 
 	DEFAULT_OPERATOR_POD_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OPERATOR_TARGET_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19874,12 +16916,10 @@ CLIENT Globals
 
 	OPERATOR_TARGET_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 220
+* value: 220
 
-CLIENT Globals
-=====
 
 ``FIREATEAM_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19888,12 +16928,10 @@ CLIENT Globals
 
 	FIREATEAM_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``TITAN_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19902,12 +16940,10 @@ CLIENT Globals
 
 	TITAN_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``WALLRUN_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19916,12 +16952,10 @@ CLIENT Globals
 
 	WALLRUN_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``MARVIN_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19930,12 +16964,10 @@ CLIENT Globals
 
 	MARVIN_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``HOVERDRONE_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19944,12 +16976,10 @@ CLIENT Globals
 
 	HOVERDRONE_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``TURRET_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19958,12 +16988,10 @@ CLIENT Globals
 
 	TURRET_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``HARVESTER_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19972,12 +17000,10 @@ CLIENT Globals
 
 	HARVESTER_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 450
+* value: 450
 
-CLIENT Globals
-=====
 
 ``AMMO_REVEAL_RADIUS``
 ^^^^^^^^^^
@@ -19986,12 +17012,10 @@ CLIENT Globals
 
 	AMMO_REVEAL_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 650
+* value: 650
 
-CLIENT Globals
-=====
 
 ``NUMBER_OPERATOR_ABILITIES``
 ^^^^^^^^^^
@@ -20000,12 +17024,10 @@ CLIENT Globals
 
 	NUMBER_OPERATOR_ABILITIES is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``GLOBAL_COOLDOWN_TIME``
 ^^^^^^^^^^
@@ -20014,12 +17036,10 @@ CLIENT Globals
 
 	GLOBAL_COOLDOWN_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``HARVEST_COOLDOWN``
 ^^^^^^^^^^
@@ -20028,12 +17048,10 @@ CLIENT Globals
 
 	HARVEST_COOLDOWN is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``MARVINS_COOLDOWN``
 ^^^^^^^^^^
@@ -20042,12 +17060,10 @@ CLIENT Globals
 
 	MARVINS_COOLDOWN is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``HEALTHSTATION_COOLDOWN``
 ^^^^^^^^^^
@@ -20056,12 +17072,10 @@ CLIENT Globals
 
 	HEALTHSTATION_COOLDOWN is constant
 
-	* type: int
+* type: int
 
-	* value: 15
+* value: 15
 
-CLIENT Globals
-=====
 
 ``AMMOSTATION_COOLDOWN``
 ^^^^^^^^^^
@@ -20070,12 +17084,10 @@ CLIENT Globals
 
 	AMMOSTATION_COOLDOWN is constant
 
-	* type: int
+* type: int
 
-	* value: 15
+* value: 15
 
-CLIENT Globals
-=====
 
 ``TURRET_COOLDOWN``
 ^^^^^^^^^^
@@ -20084,12 +17096,10 @@ CLIENT Globals
 
 	TURRET_COOLDOWN is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``HOVERDRONE_COOLDOWN``
 ^^^^^^^^^^
@@ -20098,12 +17108,10 @@ CLIENT Globals
 
 	HOVERDRONE_COOLDOWN is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``STRIKE_COOLDOWN``
 ^^^^^^^^^^
@@ -20112,12 +17120,10 @@ CLIENT Globals
 
 	STRIKE_COOLDOWN is constant
 
-	* type: int
+* type: int
 
-	* value: 60
+* value: 60
 
-CLIENT Globals
-=====
 
 ``OPERATOR_STARTING_POINTS``
 ^^^^^^^^^^
@@ -20126,12 +17132,10 @@ CLIENT Globals
 
 	OPERATOR_STARTING_POINTS is constant
 
-	* type: int
+* type: int
 
-	* value: 250
+* value: 250
 
-CLIENT Globals
-=====
 
 ``HARVEST_COST``
 ^^^^^^^^^^
@@ -20140,12 +17144,10 @@ CLIENT Globals
 
 	HARVEST_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``HARVEST_COST_LEVEL2``
 ^^^^^^^^^^
@@ -20154,12 +17156,10 @@ CLIENT Globals
 
 	HARVEST_COST_LEVEL2 is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``HARVEST_COST_LEVEL3``
 ^^^^^^^^^^
@@ -20168,12 +17168,10 @@ CLIENT Globals
 
 	HARVEST_COST_LEVEL3 is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``MARVINS_COST``
 ^^^^^^^^^^
@@ -20182,12 +17180,10 @@ CLIENT Globals
 
 	MARVINS_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``MARVINS_REPAIR_COST``
 ^^^^^^^^^^
@@ -20196,12 +17192,10 @@ CLIENT Globals
 
 	MARVINS_REPAIR_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``MARVINS_BUFF_COST``
 ^^^^^^^^^^
@@ -20210,12 +17204,10 @@ CLIENT Globals
 
 	MARVINS_BUFF_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``HEALTHSTATION_COST``
 ^^^^^^^^^^
@@ -20224,12 +17216,10 @@ CLIENT Globals
 
 	HEALTHSTATION_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``AMMOSTATION_COST``
 ^^^^^^^^^^
@@ -20238,12 +17228,10 @@ CLIENT Globals
 
 	AMMOSTATION_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``TURRET_COST``
 ^^^^^^^^^^
@@ -20252,12 +17240,10 @@ CLIENT Globals
 
 	TURRET_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 75
+* value: 75
 
-CLIENT Globals
-=====
 
 ``STRIKE_COST``
 ^^^^^^^^^^
@@ -20266,12 +17252,10 @@ CLIENT Globals
 
 	STRIKE_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``HOVERDRONE_COST``
 ^^^^^^^^^^
@@ -20280,12 +17264,10 @@ CLIENT Globals
 
 	HOVERDRONE_COST is constant
 
-	* type: int
+* type: int
 
-	* value: 125
+* value: 125
 
-CLIENT Globals
-=====
 
 ``OPERATOR_COST_HEAL_FIRETEAM``
 ^^^^^^^^^^
@@ -20294,12 +17276,10 @@ CLIENT Globals
 
 	OPERATOR_COST_HEAL_FIRETEAM is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OPERATOR_COST_CLOAK_FIRETEAM``
 ^^^^^^^^^^
@@ -20308,12 +17288,10 @@ CLIENT Globals
 
 	OPERATOR_COST_CLOAK_FIRETEAM is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OPERATOR_COST_HEAL_WALLRUNNER``
 ^^^^^^^^^^
@@ -20322,12 +17300,10 @@ CLIENT Globals
 
 	OPERATOR_COST_HEAL_WALLRUNNER is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OPERATOR_COST_CLOAK_WALLRUNNER``
 ^^^^^^^^^^
@@ -20336,12 +17312,10 @@ CLIENT Globals
 
 	OPERATOR_COST_CLOAK_WALLRUNNER is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OPERATOR_COST_HEAL_TITAN``
 ^^^^^^^^^^
@@ -20350,12 +17324,10 @@ CLIENT Globals
 
 	OPERATOR_COST_HEAL_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OPERATOR_COST_CLOAK_TITAN``
 ^^^^^^^^^^
@@ -20364,12 +17336,10 @@ CLIENT Globals
 
 	OPERATOR_COST_CLOAK_TITAN is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OPERATOR_SELECTION_ENABLED``
 ^^^^^^^^^^
@@ -20378,12 +17348,10 @@ CLIENT Globals
 
 	OPERATOR_SELECTION_ENABLED is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``ABILITY_COOLDOWN_LAG_ADJUST_MAX_MS``
 ^^^^^^^^^^
@@ -20392,12 +17360,10 @@ CLIENT Globals
 
 	ABILITY_COOLDOWN_LAG_ADJUST_MAX_MS is constant
 
-	* type: float
+* type: float
 
-	* value: 300.0
+* value: 300.0
 
-CLIENT Globals
-=====
 
 ``OPERATOR_FREE_POINTS_AMOUNT``
 ^^^^^^^^^^
@@ -20406,12 +17372,10 @@ CLIENT Globals
 
 	OPERATOR_FREE_POINTS_AMOUNT is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``OPERATOR_FREE_POINTS_INTERVAL``
 ^^^^^^^^^^
@@ -20420,12 +17384,10 @@ CLIENT Globals
 
 	OPERATOR_FREE_POINTS_INTERVAL is constant
 
-	* type: float
+* type: float
 
-	* value: 15.0
+* value: 15.0
 
-CLIENT Globals
-=====
 
 ``AMMOSTATION_DISPLAYNAME``
 ^^^^^^^^^^
@@ -20434,12 +17396,10 @@ CLIENT Globals
 
 	AMMOSTATION_DISPLAYNAME is constant
 
-	* type: string
+* type: string
 
-	* value: "AMMO
+* value: "AMMO
 
-CLIENT Globals
-=====
 
 ``AMMOSTATION_DURATION``
 ^^^^^^^^^^
@@ -20448,12 +17408,10 @@ CLIENT Globals
 
 	AMMOSTATION_DURATION is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``AMMOSTATION_ZONERADIUS``
 ^^^^^^^^^^
@@ -20462,12 +17420,10 @@ CLIENT Globals
 
 	AMMOSTATION_ZONERADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``AMMOSTATION_INTERVAL``
 ^^^^^^^^^^
@@ -20476,12 +17432,10 @@ CLIENT Globals
 
 	AMMOSTATION_INTERVAL is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``HARVEST_DISPLAYNAME``
 ^^^^^^^^^^
@@ -20490,12 +17444,10 @@ CLIENT Globals
 
 	HARVEST_DISPLAYNAME is constant
 
-	* type: string
+* type: string
 
-	* value: "HARVESTER"
+* value: "HARVESTER"
 
-CLIENT Globals
-=====
 
 ``HARVEST_DURATION``
 ^^^^^^^^^^
@@ -20504,12 +17456,10 @@ CLIENT Globals
 
 	HARVEST_DURATION is constant
 
-	* type: int
+* type: int
 
-	* value: 1600
+* value: 1600
 
-CLIENT Globals
-=====
 
 ``HARVEST_INTERVAL``
 ^^^^^^^^^^
@@ -20518,12 +17468,10 @@ CLIENT Globals
 
 	HARVEST_INTERVAL is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``HARVEST_INTERVAL_LEVEL2``
 ^^^^^^^^^^
@@ -20532,12 +17480,10 @@ CLIENT Globals
 
 	HARVEST_INTERVAL_LEVEL2 is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``HARVEST_INTERVAL_LEVEL3``
 ^^^^^^^^^^
@@ -20546,12 +17492,10 @@ CLIENT Globals
 
 	HARVEST_INTERVAL_LEVEL3 is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``HARVEST_HEALTH``
 ^^^^^^^^^^
@@ -20560,12 +17504,10 @@ CLIENT Globals
 
 	HARVEST_HEALTH is constant
 
-	* type: int
+* type: int
 
-	* value: 1000
+* value: 1000
 
-CLIENT Globals
-=====
 
 ``HEALTHSTATION_DISPLAYNAME``
 ^^^^^^^^^^
@@ -20574,12 +17516,10 @@ CLIENT Globals
 
 	HEALTHSTATION_DISPLAYNAME is constant
 
-	* type: string
+* type: string
 
-	* value: "MED
+* value: "MED
 
-CLIENT Globals
-=====
 
 ``HEALTHSTATION_DURATION``
 ^^^^^^^^^^
@@ -20588,12 +17528,10 @@ CLIENT Globals
 
 	HEALTHSTATION_DURATION is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``HEALTHSTATION_ZONERADIUS``
 ^^^^^^^^^^
@@ -20602,12 +17540,10 @@ CLIENT Globals
 
 	HEALTHSTATION_ZONERADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``HEALTHSTATION_HEAL_FRAC``
 ^^^^^^^^^^
@@ -20616,12 +17552,10 @@ CLIENT Globals
 
 	HEALTHSTATION_HEAL_FRAC is constant
 
-	* type: float
+* type: float
 
-	* value: 0.01
+* value: 0.01
 
-CLIENT Globals
-=====
 
 ``HEALTHSTATION_INTERVAL``
 ^^^^^^^^^^
@@ -20630,12 +17564,10 @@ CLIENT Globals
 
 	HEALTHSTATION_INTERVAL is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``MARVINS_DISPLAYNAME``
 ^^^^^^^^^^
@@ -20644,12 +17576,10 @@ CLIENT Globals
 
 	MARVINS_DISPLAYNAME is constant
 
-	* type: string
+* type: string
 
-	* value: "TROOPS"
+* value: "TROOPS"
 
-CLIENT Globals
-=====
 
 ``MARVINS_BUFF_MULTIPLIER``
 ^^^^^^^^^^
@@ -20658,12 +17588,10 @@ CLIENT Globals
 
 	MARVINS_BUFF_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 2.5
+* value: 2.5
 
-CLIENT Globals
-=====
 
 ``TURRET_DISPLAYNAME``
 ^^^^^^^^^^
@@ -20672,12 +17600,10 @@ CLIENT Globals
 
 	TURRET_DISPLAYNAME is constant
 
-	* type: string
+* type: string
 
-	* value: "TURRET"
+* value: "TURRET"
 
-CLIENT Globals
-=====
 
 ``TURRET_ATTACK_RANGE``
 ^^^^^^^^^^
@@ -20686,12 +17612,10 @@ CLIENT Globals
 
 	TURRET_ATTACK_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 1500
+* value: 1500
 
-CLIENT Globals
-=====
 
 ``TURRET_ACCURACY_MULTIPLIER``
 ^^^^^^^^^^
@@ -20700,12 +17624,10 @@ CLIENT Globals
 
 	TURRET_ACCURACY_MULTIPLIER is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``STRIKE_DISPLAYNAME``
 ^^^^^^^^^^
@@ -20714,12 +17636,10 @@ CLIENT Globals
 
 	STRIKE_DISPLAYNAME is constant
 
-	* type: string
+* type: string
 
-	* value: "SATELLITE
+* value: "SATELLITE
 
-CLIENT Globals
-=====
 
 ``OBITUARY_ENABLED_PLAYERS``
 ^^^^^^^^^^
@@ -20728,12 +17648,10 @@ CLIENT Globals
 
 	OBITUARY_ENABLED_PLAYERS is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``OBITUARY_ENABLED_NPC``
 ^^^^^^^^^^
@@ -20742,12 +17660,10 @@ CLIENT Globals
 
 	OBITUARY_ENABLED_NPC is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``OBITUARY_ENABLED_NPC_TITANS``
 ^^^^^^^^^^
@@ -20756,12 +17672,10 @@ CLIENT Globals
 
 	OBITUARY_ENABLED_NPC_TITANS is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``OBITUARY_DURATION``
 ^^^^^^^^^^
@@ -20770,12 +17684,10 @@ CLIENT Globals
 
 	OBITUARY_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``OBITUARY_COLOR_DEFAULT``
 ^^^^^^^^^^
@@ -20784,12 +17696,10 @@ CLIENT Globals
 
 	OBITUARY_COLOR_DEFAULT is constant
 
-	* type: vector
+* type: vector
 
-	* value: <255,255,255>
+* value: <255,255,255>
 
-CLIENT Globals
-=====
 
 ``OBITUARY_COLOR_FRIENDLY``
 ^^^^^^^^^^
@@ -20798,12 +17708,10 @@ CLIENT Globals
 
 	OBITUARY_COLOR_FRIENDLY is constant
 
-	* type: vector
+* type: vector
 
-	* value: <FRIENDLY_R,FRIENDLY_G,FRIENDLY_B>
+* value: <FRIENDLY_R,FRIENDLY_G,FRIENDLY_B>
 
-CLIENT Globals
-=====
 
 ``OBITUARY_COLOR_PARTY``
 ^^^^^^^^^^
@@ -20812,12 +17720,10 @@ CLIENT Globals
 
 	OBITUARY_COLOR_PARTY is constant
 
-	* type: vector
+* type: vector
 
-	* value: <179,255,204>
+* value: <179,255,204>
 
-CLIENT Globals
-=====
 
 ``OBITUARY_COLOR_WEAPON``
 ^^^^^^^^^^
@@ -20826,12 +17732,10 @@ CLIENT Globals
 
 	OBITUARY_COLOR_WEAPON is constant
 
-	* type: vector
+* type: vector
 
-	* value: <255,255,255>
+* value: <255,255,255>
 
-CLIENT Globals
-=====
 
 ``OBITUARY_COLOR_ENEMY``
 ^^^^^^^^^^
@@ -20840,12 +17744,10 @@ CLIENT Globals
 
 	OBITUARY_COLOR_ENEMY is constant
 
-	* type: vector
+* type: vector
 
-	* value: <ENEMY_R,ENEMY_G,ENEMY_B>
+* value: <ENEMY_R,ENEMY_G,ENEMY_B>
 
-CLIENT Globals
-=====
 
 ``OBITUARY_COLOR_LOCALPLAYER``
 ^^^^^^^^^^
@@ -20854,12 +17756,10 @@ CLIENT Globals
 
 	OBITUARY_COLOR_LOCALPLAYER is constant
 
-	* type: vector
+* type: vector
 
-	* value: <LOCAL_R,LOCAL_G,LOCAL_B>
+* value: <LOCAL_R,LOCAL_G,LOCAL_B>
 
-CLIENT Globals
-=====
 
 ``SPLASH_X``
 ^^^^^^^^^^
@@ -20868,12 +17768,10 @@ CLIENT Globals
 
 	SPLASH_X is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``SPLASH_X_GAP``
 ^^^^^^^^^^
@@ -20882,12 +17780,10 @@ CLIENT Globals
 
 	SPLASH_X_GAP is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``SPLASH_Y``
 ^^^^^^^^^^
@@ -20896,12 +17792,10 @@ CLIENT Globals
 
 	SPLASH_Y is constant
 
-	* type: int
+* type: int
 
-	* value: 120
+* value: 120
 
-CLIENT Globals
-=====
 
 ``SPLASH_DURATION``
 ^^^^^^^^^^
@@ -20910,12 +17804,10 @@ CLIENT Globals
 
 	SPLASH_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``SPLASH_FADE_OUT_DURATION``
 ^^^^^^^^^^
@@ -20924,12 +17816,10 @@ CLIENT Globals
 
 	SPLASH_FADE_OUT_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``SPLASH_SPACING``
 ^^^^^^^^^^
@@ -20938,12 +17828,10 @@ CLIENT Globals
 
 	SPLASH_SPACING is constant
 
-	* type: int
+* type: int
 
-	* value: 12
+* value: 12
 
-CLIENT Globals
-=====
 
 ``SPLASH_SCROLL_TIME``
 ^^^^^^^^^^
@@ -20952,12 +17840,10 @@ CLIENT Globals
 
 	SPLASH_SCROLL_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``SPLASH_TYPEWRITER_TIME``
 ^^^^^^^^^^
@@ -20966,12 +17852,10 @@ CLIENT Globals
 
 	SPLASH_TYPEWRITER_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``SPLASH_SHOW_MULTI_SCORE_TOTAL``
 ^^^^^^^^^^
@@ -20980,12 +17864,10 @@ CLIENT Globals
 
 	SPLASH_SHOW_MULTI_SCORE_TOTAL is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``SPLASH_MULTI_SCORE_REQUIREMENT``
 ^^^^^^^^^^
@@ -20994,12 +17876,10 @@ CLIENT Globals
 
 	SPLASH_MULTI_SCORE_REQUIREMENT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``SPLASH_TOTAL_POS_X``
 ^^^^^^^^^^
@@ -21008,12 +17888,10 @@ CLIENT Globals
 
 	SPLASH_TOTAL_POS_X is constant
 
-	* type: int
+* type: int
 
-	* value: 50
+* value: 50
 
-CLIENT Globals
-=====
 
 ``SPLASH_TOTAL_POS_Y``
 ^^^^^^^^^^
@@ -21022,12 +17900,10 @@ CLIENT Globals
 
 	SPLASH_TOTAL_POS_Y is constant
 
-	* type: int
+* type: int
 
-	* value: -30
+* value: -30
 
-CLIENT Globals
-=====
 
 ``SPLASH_TEXT_COLOR``
 ^^^^^^^^^^
@@ -21036,12 +17912,10 @@ CLIENT Globals
 
 	SPLASH_TEXT_COLOR is constant
 
-	* type: string
+* type: string
 
-	* value: "173
+* value: "173
 
-CLIENT Globals
-=====
 
 ``SPLASH_VALUE_OFFSET_X``
 ^^^^^^^^^^
@@ -21050,12 +17924,10 @@ CLIENT Globals
 
 	SPLASH_VALUE_OFFSET_X is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``SPLASH_VALUE_OFFSET_Y``
 ^^^^^^^^^^
@@ -21064,12 +17936,10 @@ CLIENT Globals
 
 	SPLASH_VALUE_OFFSET_Y is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``TEAM_OWNED_SCORE_FREQ``
 ^^^^^^^^^^
@@ -21078,12 +17948,10 @@ CLIENT Globals
 
 	TEAM_OWNED_SCORE_FREQ is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``PLAYER_HELD_SCORE_FREQ``
 ^^^^^^^^^^
@@ -21092,12 +17960,10 @@ CLIENT Globals
 
 	PLAYER_HELD_SCORE_FREQ is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``CAPTURE_DURATION_CAPTURE``
 ^^^^^^^^^^
@@ -21106,12 +17972,10 @@ CLIENT Globals
 
 	CAPTURE_DURATION_CAPTURE is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``CAPTURE_DURATION_NEUTRALIZE``
 ^^^^^^^^^^
@@ -21120,12 +17984,10 @@ CLIENT Globals
 
 	CAPTURE_DURATION_NEUTRALIZE is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_COLOR_FRIENDLY``
 ^^^^^^^^^^
@@ -21134,12 +17996,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_COLOR_FRIENDLY is constant
 
-	* type: string
+* type: string
 
-	* value: "77
+* value: "77
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_COLOR_ENEMY``
 ^^^^^^^^^^
@@ -21148,12 +18008,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_COLOR_ENEMY is constant
 
-	* type: string
+* type: string
 
-	* value: "192
+* value: "192
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_COLOR_NEUTRAL``
 ^^^^^^^^^^
@@ -21162,12 +18020,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_COLOR_NEUTRAL is constant
 
-	* type: string
+* type: string
 
-	* value: "190
+* value: "190
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_COLOR_FRIENDLY_CAP``
 ^^^^^^^^^^
@@ -21176,12 +18032,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_COLOR_FRIENDLY_CAP is constant
 
-	* type: string
+* type: string
 
-	* value: "77
+* value: "77
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_COLOR_ENEMY_CAP``
 ^^^^^^^^^^
@@ -21190,12 +18044,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_COLOR_ENEMY_CAP is constant
 
-	* type: string
+* type: string
 
-	* value: "192
+* value: "192
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_ALPHA_MIN_VALUE``
 ^^^^^^^^^^
@@ -21204,12 +18056,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_ALPHA_MIN_VALUE is constant
 
-	* type: int
+* type: int
 
-	* value: 120
+* value: 120
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_ALPHA_MIN_DISTANCE``
 ^^^^^^^^^^
@@ -21218,12 +18068,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_ALPHA_MIN_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 2000
+* value: 2000
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_ALPHA_MAX_VALUE``
 ^^^^^^^^^^
@@ -21232,12 +18080,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_ALPHA_MAX_VALUE is constant
 
-	* type: int
+* type: int
 
-	* value: 255
+* value: 255
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_ALPHA_MAX_DISTANCE``
 ^^^^^^^^^^
@@ -21246,12 +18092,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_ALPHA_MAX_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_CROSSHAIR_DIST_MAX``
 ^^^^^^^^^^
@@ -21260,12 +18104,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_CROSSHAIR_DIST_MAX is constant
 
-	* type: int
+* type: int
 
-	* value: 40000
+* value: 40000
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_CROSSHAIR_DIST_MIN``
 ^^^^^^^^^^
@@ -21274,12 +18116,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_CROSSHAIR_DIST_MIN is constant
 
-	* type: int
+* type: int
 
-	* value: 2500
+* value: 2500
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_CROSSHAIR_ALPHA_MOD``
 ^^^^^^^^^^
@@ -21288,12 +18128,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_CROSSHAIR_ALPHA_MOD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_SLIDE_IN_TIME``
 ^^^^^^^^^^
@@ -21302,12 +18140,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_SLIDE_IN_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.15
+* value: 0.15
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_SLIDE_OUT_TIME``
 ^^^^^^^^^^
@@ -21316,12 +18152,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_SLIDE_OUT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_MINIMAP_ICON_SCALE``
 ^^^^^^^^^^
@@ -21330,12 +18164,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_MINIMAP_ICON_SCALE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.15
+* value: 0.15
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_TITANS_BREAK_CONTEST``
 ^^^^^^^^^^
@@ -21344,12 +18176,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_TITANS_BREAK_CONTEST is constant
 
-	* type: bool
+* type: bool
 
-	* value: true
+* value: true
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_AI_CAP_POWER``
 ^^^^^^^^^^
@@ -21358,12 +18188,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_AI_CAP_POWER is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_MAX_PULSE_SPEED``
 ^^^^^^^^^^
@@ -21372,12 +18200,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_MAX_PULSE_SPEED is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_STATE_UNASSIGNED``
 ^^^^^^^^^^
@@ -21386,12 +18212,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_STATE_UNASSIGNED is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_STATE_HALTED``
 ^^^^^^^^^^
@@ -21400,12 +18224,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_STATE_HALTED is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_STATE_CAPPING``
 ^^^^^^^^^^
@@ -21414,12 +18236,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_STATE_CAPPING is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_STATE_SELF_UNAMPING``
 ^^^^^^^^^^
@@ -21428,12 +18248,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_STATE_SELF_UNAMPING is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_STATE_CAPTURED``
 ^^^^^^^^^^
@@ -21442,12 +18260,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_STATE_CAPTURED is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_STATE_AMPING``
 ^^^^^^^^^^
@@ -21456,12 +18272,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_STATE_AMPING is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_STATE_AMPED``
 ^^^^^^^^^^
@@ -21470,12 +18284,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_STATE_AMPED is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_STATE_CONTESTED``
 ^^^^^^^^^^
@@ -21484,12 +18296,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_STATE_CONTESTED is constant
 
-	* type: int
+* type: int
 
-	* value: 7
+* value: 7
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_FLAGS_CONTESTED``
 ^^^^^^^^^^
@@ -21498,12 +18308,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_FLAGS_CONTESTED is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: (1
+* value: (1
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_FLAGS_AMPED``
 ^^^^^^^^^^
@@ -21512,12 +18320,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_FLAGS_AMPED is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: (1
+* value: (1
 
-CLIENT Globals
-=====
 
 ``HARDPOINT_AMPED_DELAY``
 ^^^^^^^^^^
@@ -21526,12 +18332,10 @@ CLIENT Globals
 
 	HARDPOINT_AMPED_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 30.0
+* value: 30.0
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_ENEMY``
 ^^^^^^^^^^
@@ -21540,12 +18344,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_ENEMY is constant
 
-	* type: string
+* type: string
 
-	* value: "Contested:
+* value: "Contested:
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_ENEMIES``
 ^^^^^^^^^^
@@ -21554,12 +18356,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_ENEMIES is constant
 
-	* type: string
+* type: string
 
-	* value: "Contested:
+* value: "Contested:
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_EMPTY``
 ^^^^^^^^^^
@@ -21568,12 +18368,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_EMPTY is constant
 
-	* type: string
+* type: string
 
-	* value: ""
+* value: ""
 
-CLIENT Globals
-=====
 
 ``CAPTURE_POINT_SECURE``
 ^^^^^^^^^^
@@ -21582,12 +18380,10 @@ CLIENT Globals
 
 	CAPTURE_POINT_SECURE is constant
 
-	* type: string
+* type: string
 
-	* value: "Secured"
+* value: "Secured"
 
-CLIENT Globals
-=====
 
 ``CAPTURE_DURATION_PILOT_CAPTURE``
 ^^^^^^^^^^
@@ -21596,12 +18392,10 @@ CLIENT Globals
 
 	CAPTURE_DURATION_PILOT_CAPTURE is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``CAPTURE_DURATION_TITAN_CAPTURE``
 ^^^^^^^^^^
@@ -21610,12 +18404,10 @@ CLIENT Globals
 
 	CAPTURE_DURATION_TITAN_CAPTURE is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT``
 ^^^^^^^^^^
@@ -21624,12 +18416,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT is constant
 
-	* type: float
+* type: float
 
-	* value: 3.5
+* value: 3.5
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY``
 ^^^^^^^^^^
@@ -21638,12 +18428,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY is constant
 
-	* type: float
+* type: float
 
-	* value: 7.5
+* value: 7.5
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_SCREEN_FADE_TIME``
 ^^^^^^^^^^
@@ -21652,12 +18440,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_SCREEN_FADE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 4.0
+* value: 4.0
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_POST_DEATH_TIME``
 ^^^^^^^^^^
@@ -21666,12 +18452,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_POST_DEATH_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 3.5
+* value: 3.5
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION``
 ^^^^^^^^^^
@@ -21680,12 +18464,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY
+* value: ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_CROSSHAIR_FADEOUT_TIME``
 ^^^^^^^^^^
@@ -21694,12 +18476,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_CROSSHAIR_FADEOUT_TIME is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION
+* value: ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_DELAY_BETWEEN_ANNOUNCEMENTS``
 ^^^^^^^^^^
@@ -21708,12 +18488,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_DELAY_BETWEEN_ANNOUNCEMENTS is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_ROUND_SCORE_ANNOUNCEMENT_DURATION``
 ^^^^^^^^^^
@@ -21722,12 +18500,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_ROUND_SCORE_ANNOUNCEMENT_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 4.0
+* value: 4.0
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_FINAL_SCORE_ANNOUNCEMENT_DURATION``
 ^^^^^^^^^^
@@ -21736,12 +18512,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_FINAL_SCORE_ANNOUNCEMENT_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH``
 ^^^^^^^^^^
@@ -21750,12 +18524,10 @@ CLIENT Globals
 
 	ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT
+* value: ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT
 
-CLIENT Globals
-=====
 
 ``GAME_POSTMATCH_LENGTH``
 ^^^^^^^^^^
@@ -21764,12 +18536,10 @@ CLIENT Globals
 
 	GAME_POSTMATCH_LENGTH is constant
 
-	* type: float
+* type: float
 
-	* value: 7.0
+* value: 7.0
 
-CLIENT Globals
-=====
 
 ``GAME_WINNER_DETERMINED_ROUND_WAIT``
 ^^^^^^^^^^
@@ -21778,12 +18548,10 @@ CLIENT Globals
 
 	GAME_WINNER_DETERMINED_ROUND_WAIT is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``GAME_WINNER_DETERMINED_FINAL_ROUND_WAIT``
 ^^^^^^^^^^
@@ -21792,12 +18560,10 @@ CLIENT Globals
 
 	GAME_WINNER_DETERMINED_FINAL_ROUND_WAIT is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``GAME_WINNER_DETERMINED_FINAL_ROUND_WITH_ROUND_WINNING_KILL_REPLAY_WAIT``
 ^^^^^^^^^^
@@ -21806,12 +18572,10 @@ CLIENT Globals
 
 	GAME_WINNER_DETERMINED_FINAL_ROUND_WITH_ROUND_WINNING_KILL_REPLAY_WAIT is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH
+* value: ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH
 
-CLIENT Globals
-=====
 
 ``GAME_WINNER_DETERMINED_ROUND_WAIT_WITH_ROUND_WINNING_KILL_REPLAY_WAIT``
 ^^^^^^^^^^
@@ -21820,12 +18584,10 @@ CLIENT Globals
 
 	GAME_WINNER_DETERMINED_ROUND_WAIT_WITH_ROUND_WINNING_KILL_REPLAY_WAIT is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH
+* value: ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH
 
-CLIENT Globals
-=====
 
 ``SWITCHING_SIDES_DELAY``
 ^^^^^^^^^^
@@ -21834,12 +18596,10 @@ CLIENT Globals
 
 	SWITCHING_SIDES_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 8.0
+* value: 8.0
 
-CLIENT Globals
-=====
 
 ``SWITCHING_SIDES_DELAY_REPLAY``
 ^^^^^^^^^^
@@ -21848,12 +18608,10 @@ CLIENT Globals
 
 	SWITCHING_SIDES_DELAY_REPLAY is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``GAME_WINNER_DETERMINED_WAIT``
 ^^^^^^^^^^
@@ -21862,12 +18620,10 @@ CLIENT Globals
 
 	GAME_WINNER_DETERMINED_WAIT is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``GAME_EPILOGUE_PLAYER_RESPAWN_LEEWAY``
 ^^^^^^^^^^
@@ -21876,12 +18632,10 @@ CLIENT Globals
 
 	GAME_EPILOGUE_PLAYER_RESPAWN_LEEWAY is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``GAME_EPILOGUE_ENDING_LEADUP``
 ^^^^^^^^^^
@@ -21890,12 +18644,10 @@ CLIENT Globals
 
 	GAME_EPILOGUE_ENDING_LEADUP is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``GAME_POSTROUND_CLEANUP_WAIT``
 ^^^^^^^^^^
@@ -21904,12 +18656,10 @@ CLIENT Globals
 
 	GAME_POSTROUND_CLEANUP_WAIT is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``PREMATCH_COUNTDOWN_SOUND``
 ^^^^^^^^^^
@@ -21918,12 +18668,10 @@ CLIENT Globals
 
 	PREMATCH_COUNTDOWN_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "Menu_Timer_LobbyCountdown_Tick"
+* value: "Menu_Timer_LobbyCountdown_Tick"
 
-CLIENT Globals
-=====
 
 ``WAITING_FOR_PLAYERS_COUNTDOWN_SOUND``
 ^^^^^^^^^^
@@ -21932,20 +18680,16 @@ CLIENT Globals
 
 	WAITING_FOR_PLAYERS_COUNTDOWN_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "Menu_Timer_Tick"
+* value: "Menu_Timer_Tick"
 
-CLIENT Globals
-=====
 
 ``eGameState``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``FIRETEAM_DROPPOD_FORCE_EXIT``
 ^^^^^^^^^^
@@ -21954,12 +18698,10 @@ CLIENT Globals
 
 	FIRETEAM_DROPPOD_FORCE_EXIT is constant
 
-	* type: int
+* type: int
 
-	* value: 15
+* value: 15
 
-CLIENT Globals
-=====
 
 ``SILENT_WEAPON_AI_SOUND_RADIUS_MP``
 ^^^^^^^^^^
@@ -21968,12 +18710,10 @@ CLIENT Globals
 
 	SILENT_WEAPON_AI_SOUND_RADIUS_MP is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``LOUD_WEAPON_AI_SOUND_RADIUS``
 ^^^^^^^^^^
@@ -21982,12 +18722,10 @@ CLIENT Globals
 
 	LOUD_WEAPON_AI_SOUND_RADIUS is constant
 
-	* type: float
+* type: float
 
-	* value: 4000.0
+* value: 4000.0
 
-CLIENT Globals
-=====
 
 ``LOUD_WEAPON_AI_SOUND_RADIUS_MP``
 ^^^^^^^^^^
@@ -21996,12 +18734,10 @@ CLIENT Globals
 
 	LOUD_WEAPON_AI_SOUND_RADIUS_MP is constant
 
-	* type: float
+* type: float
 
-	* value: 5000.0
+* value: 5000.0
 
-CLIENT Globals
-=====
 
 ``WEAPON_FLYOUT_DEBOUNCE_TIME``
 ^^^^^^^^^^
@@ -22010,12 +18746,10 @@ CLIENT Globals
 
 	WEAPON_FLYOUT_DEBOUNCE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``WEAPON_FLYOUTS_ENABLED``
 ^^^^^^^^^^
@@ -22024,12 +18758,10 @@ CLIENT Globals
 
 	WEAPON_FLYOUTS_ENABLED is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``FLYOUT_TITLE_TYPE_TIME``
 ^^^^^^^^^^
@@ -22038,12 +18770,10 @@ CLIENT Globals
 
 	FLYOUT_TITLE_TYPE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.2
+* value: 0.2
 
-CLIENT Globals
-=====
 
 ``FLYOUT_POINT_LINE_TIME``
 ^^^^^^^^^^
@@ -22052,12 +18782,10 @@ CLIENT Globals
 
 	FLYOUT_POINT_LINE_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.2
+* value: 0.2
 
-CLIENT Globals
-=====
 
 ``FLYOUT_SHOW_DURATION``
 ^^^^^^^^^^
@@ -22066,12 +18794,10 @@ CLIENT Globals
 
 	FLYOUT_SHOW_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``FLYOUT_SHOW_CHALLENGE_DURATION``
 ^^^^^^^^^^
@@ -22080,12 +18806,10 @@ CLIENT Globals
 
 	FLYOUT_SHOW_CHALLENGE_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``FLYOUT_FADE_OUT_TIME``
 ^^^^^^^^^^
@@ -22094,12 +18818,10 @@ CLIENT Globals
 
 	FLYOUT_FADE_OUT_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``FLYOUT_CONNECTING_LINE_ALPHA``
 ^^^^^^^^^^
@@ -22108,12 +18830,10 @@ CLIENT Globals
 
 	FLYOUT_CONNECTING_LINE_ALPHA is constant
 
-	* type: int
+* type: int
 
-	* value: 100
+* value: 100
 
-CLIENT Globals
-=====
 
 ``SATCHEL_CLACKER_SOUND``
 ^^^^^^^^^^
@@ -22122,12 +18842,10 @@ CLIENT Globals
 
 	SATCHEL_CLACKER_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "Weapon_R1_Clacker.TriggerPull"
+* value: "Weapon_R1_Clacker.TriggerPull"
 
-CLIENT Globals
-=====
 
 ``LASER_TRIP_MINE_SOUND``
 ^^^^^^^^^^
@@ -22136,12 +18854,10 @@ CLIENT Globals
 
 	LASER_TRIP_MINE_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "PlayerUI.LoadoutSelect"
+* value: "PlayerUI.LoadoutSelect"
 
-CLIENT Globals
-=====
 
 ``OBJECTIVE_SCREEN_MAX_LOCATIONS``
 ^^^^^^^^^^
@@ -22150,12 +18866,10 @@ CLIENT Globals
 
 	OBJECTIVE_SCREEN_MAX_LOCATIONS is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``START_SPAWN_GRACE_PERIOD``
 ^^^^^^^^^^
@@ -22164,12 +18878,10 @@ CLIENT Globals
 
 	START_SPAWN_GRACE_PERIOD is constant
 
-	* type: float
+* type: float
 
-	* value: 20.0
+* value: 20.0
 
-CLIENT Globals
-=====
 
 ``CLASS_CHANGE_GRACE_PERIOD``
 ^^^^^^^^^^
@@ -22178,12 +18890,10 @@ CLIENT Globals
 
 	CLASS_CHANGE_GRACE_PERIOD is constant
 
-	* type: float
+* type: float
 
-	* value: 20.0
+* value: 20.0
 
-CLIENT Globals
-=====
 
 ``WAVE_SPAWN_GRACE_PERIOD``
 ^^^^^^^^^^
@@ -22192,12 +18902,10 @@ CLIENT Globals
 
 	WAVE_SPAWN_GRACE_PERIOD is constant
 
-	* type: float
+* type: float
 
-	* value: 3.0
+* value: 3.0
 
-CLIENT Globals
-=====
 
 ``ELIM_FIRST_SPAWN_GRACE_PERIOD``
 ^^^^^^^^^^
@@ -22206,12 +18914,10 @@ CLIENT Globals
 
 	ELIM_FIRST_SPAWN_GRACE_PERIOD is constant
 
-	* type: float
+* type: float
 
-	* value: 20.0
+* value: 20.0
 
-CLIENT Globals
-=====
 
 ``ELIM_TITAN_SPAWN_GRACE_PERIOD``
 ^^^^^^^^^^
@@ -22220,12 +18926,10 @@ CLIENT Globals
 
 	ELIM_TITAN_SPAWN_GRACE_PERIOD is constant
 
-	* type: float
+* type: float
 
-	* value: 30.0
+* value: 30.0
 
-CLIENT Globals
-=====
 
 ``HEALTH_BARS_ENABLED_SP``
 ^^^^^^^^^^
@@ -22234,12 +18938,10 @@ CLIENT Globals
 
 	HEALTH_BARS_ENABLED_SP is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``HEALTH_BARS_ENABLED_MP``
 ^^^^^^^^^^
@@ -22248,12 +18950,10 @@ CLIENT Globals
 
 	HEALTH_BARS_ENABLED_MP is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``HEALTH_BAR_MAX_DISTANCE``
 ^^^^^^^^^^
@@ -22262,12 +18962,10 @@ CLIENT Globals
 
 	HEALTH_BAR_MAX_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 5000
+* value: 5000
 
-CLIENT Globals
-=====
 
 ``HEALTH_BAR_HEAD_OFFSET``
 ^^^^^^^^^^
@@ -22276,12 +18974,10 @@ CLIENT Globals
 
 	HEALTH_BAR_HEAD_OFFSET is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``FIRETEAM_AVENGED_DEBOUNCE``
 ^^^^^^^^^^
@@ -22290,12 +18986,10 @@ CLIENT Globals
 
 	FIRETEAM_AVENGED_DEBOUNCE is constant
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``OVERDRIVE_FIRE_SOUND``
 ^^^^^^^^^^
@@ -22304,12 +18998,10 @@ CLIENT Globals
 
 	OVERDRIVE_FIRE_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "Player.FireOverdrive"
+* value: "Player.FireOverdrive"
 
-CLIENT Globals
-=====
 
 ``DROPSHIP_TIME_LEVEL1``
 ^^^^^^^^^^
@@ -22318,12 +19010,10 @@ CLIENT Globals
 
 	DROPSHIP_TIME_LEVEL1 is constant
 
-	* type: float
+* type: float
 
-	* value: 2.0
+* value: 2.0
 
-CLIENT Globals
-=====
 
 ``OVERDRIVE_TIME_LEVEL1``
 ^^^^^^^^^^
@@ -22332,12 +19022,10 @@ CLIENT Globals
 
 	OVERDRIVE_TIME_LEVEL1 is constant
 
-	* type: float
+* type: float
 
-	* value: 20.0
+* value: 20.0
 
-CLIENT Globals
-=====
 
 ``OVERDRIVE_DAMAGE_LEVEL1``
 ^^^^^^^^^^
@@ -22346,12 +19034,10 @@ CLIENT Globals
 
 	OVERDRIVE_DAMAGE_LEVEL1 is constant
 
-	* type: float
+* type: float
 
-	* value: 1.3
+* value: 1.3
 
-CLIENT Globals
-=====
 
 ``OVERDRIVE_TIME_LEVEL2``
 ^^^^^^^^^^
@@ -22360,12 +19046,10 @@ CLIENT Globals
 
 	OVERDRIVE_TIME_LEVEL2 is constant
 
-	* type: float
+* type: float
 
-	* value: 20.0
+* value: 20.0
 
-CLIENT Globals
-=====
 
 ``OVERDRIVE_DAMAGE_LEVEL2``
 ^^^^^^^^^^
@@ -22374,12 +19058,10 @@ CLIENT Globals
 
 	OVERDRIVE_DAMAGE_LEVEL2 is constant
 
-	* type: float
+* type: float
 
-	* value: 1.4
+* value: 1.4
 
-CLIENT Globals
-=====
 
 ``OVERDRIVE_ARMOR_LEVEL2``
 ^^^^^^^^^^
@@ -22388,12 +19070,10 @@ CLIENT Globals
 
 	OVERDRIVE_ARMOR_LEVEL2 is constant
 
-	* type: float
+* type: float
 
-	* value: 0.65
+* value: 0.65
 
-CLIENT Globals
-=====
 
 ``OVERDRIVE_TIME_LEVEL3``
 ^^^^^^^^^^
@@ -22402,12 +19082,10 @@ CLIENT Globals
 
 	OVERDRIVE_TIME_LEVEL3 is constant
 
-	* type: float
+* type: float
 
-	* value: 15.0
+* value: 15.0
 
-CLIENT Globals
-=====
 
 ``OVERDRIVE_DAMAGE_LEVEL3``
 ^^^^^^^^^^
@@ -22416,12 +19094,10 @@ CLIENT Globals
 
 	OVERDRIVE_DAMAGE_LEVEL3 is constant
 
-	* type: float
+* type: float
 
-	* value: 1.1
+* value: 1.1
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_BURST_NUM``
 ^^^^^^^^^^
@@ -22430,12 +19106,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_BURST_NUM is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_BURST_DELAY``
 ^^^^^^^^^^
@@ -22444,12 +19118,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_BURST_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_BURST_PAUSE``
 ^^^^^^^^^^
@@ -22458,12 +19130,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_BURST_PAUSE is constant
 
-	* type: float
+* type: float
 
-	* value: 0.3
+* value: 0.3
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_ZAP_LIFETIME``
 ^^^^^^^^^^
@@ -22472,12 +19142,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_ZAP_LIFETIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.3
+* value: 0.3
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_ZAP_FX``
 ^^^^^^^^^^
@@ -22486,12 +19154,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_ZAP_FX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_wpn_arcball_beam"
+* value: $"P_wpn_arcball_beam"
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_FX_TABLE``
 ^^^^^^^^^^
@@ -22500,12 +19166,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_FX_TABLE is constant
 
-	* type: string
+* type: string
 
-	* value: ""
+* value: ""
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_ZAP_RADIUS``
 ^^^^^^^^^^
@@ -22514,12 +19178,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_ZAP_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_ZAP_HUMANSIZE_RADIUS``
 ^^^^^^^^^^
@@ -22528,12 +19190,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_ZAP_HUMANSIZE_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_ZAP_HEIGHT``
 ^^^^^^^^^^
@@ -22542,12 +19202,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_ZAP_HEIGHT is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_ZAP_SOUND``
 ^^^^^^^^^^
@@ -22556,12 +19214,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_ZAP_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "weapon_arc_ball_tendril"
+* value: "weapon_arc_ball_tendril"
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_DAMAGE``
 ^^^^^^^^^^
@@ -22570,12 +19226,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 120
+* value: 120
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_CHARGED_ZAP_LIFETIME``
 ^^^^^^^^^^
@@ -22584,12 +19238,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_CHARGED_ZAP_LIFETIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.4
+* value: 0.4
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_CHARGED_ZAP_RADIUS``
 ^^^^^^^^^^
@@ -22598,12 +19250,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_CHARGED_ZAP_RADIUS is constant
 
-	* type: int
+* type: int
 
-	* value: 600
+* value: 600
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_CHARGED_ZAP_HEIGHT``
 ^^^^^^^^^^
@@ -22612,12 +19262,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_CHARGED_ZAP_HEIGHT is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``BALL_LIGHTNING_CHARGED_DAMAGE``
 ^^^^^^^^^^
@@ -22626,12 +19274,10 @@ CLIENT Globals
 
 	BALL_LIGHTNING_CHARGED_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 60
+* value: 60
 
-CLIENT Globals
-=====
 
 ``SFX_SMOKE_DEPLOY_1P``
 ^^^^^^^^^^
@@ -22640,12 +19286,10 @@ CLIENT Globals
 
 	SFX_SMOKE_DEPLOY_1P is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_offhand_electricsmoke_deploy_1P"
+* value: "titan_offhand_electricsmoke_deploy_1P"
 
-CLIENT Globals
-=====
 
 ``SFX_SMOKE_DEPLOY_3P``
 ^^^^^^^^^^
@@ -22654,12 +19298,10 @@ CLIENT Globals
 
 	SFX_SMOKE_DEPLOY_3P is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_offhand_electricsmoke_deploy_3P"
+* value: "titan_offhand_electricsmoke_deploy_3P"
 
-CLIENT Globals
-=====
 
 ``SFX_SMOKE_DEPLOY_BURN_1P``
 ^^^^^^^^^^
@@ -22668,12 +19310,10 @@ CLIENT Globals
 
 	SFX_SMOKE_DEPLOY_BURN_1P is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_offhand_electricsmoke_deploy_amped_1P"
+* value: "titan_offhand_electricsmoke_deploy_amped_1P"
 
-CLIENT Globals
-=====
 
 ``SFX_SMOKE_DEPLOY_BURN_3P``
 ^^^^^^^^^^
@@ -22682,12 +19322,10 @@ CLIENT Globals
 
 	SFX_SMOKE_DEPLOY_BURN_3P is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_offhand_electricsmoke_deploy_amped_3P"
+* value: "titan_offhand_electricsmoke_deploy_amped_3P"
 
-CLIENT Globals
-=====
 
 ``SFX_SMOKE_GRENADE_DEPLOY``
 ^^^^^^^^^^
@@ -22696,12 +19334,10 @@ CLIENT Globals
 
 	SFX_SMOKE_GRENADE_DEPLOY is constant
 
-	* type: string
+* type: string
 
-	* value: "Weapon_SmokeGrenade_Temp"
+* value: "Weapon_SmokeGrenade_Temp"
 
-CLIENT Globals
-=====
 
 ``SFX_SMOKE_DAMAGE``
 ^^^^^^^^^^
@@ -22710,12 +19346,10 @@ CLIENT Globals
 
 	SFX_SMOKE_DAMAGE is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Damage"
+* value: "Titan_Offhand_ElectricSmoke_Damage"
 
-CLIENT Globals
-=====
 
 ``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_1P``
 ^^^^^^^^^^
@@ -22724,12 +19358,10 @@ CLIENT Globals
 
 	ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_1P is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Human_Damage_1P"
+* value: "Titan_Offhand_ElectricSmoke_Human_Damage_1P"
 
-CLIENT Globals
-=====
 
 ``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_3P``
 ^^^^^^^^^^
@@ -22738,12 +19370,10 @@ CLIENT Globals
 
 	ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_3P is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Human_Damage_3P"
+* value: "Titan_Offhand_ElectricSmoke_Human_Damage_3P"
 
-CLIENT Globals
-=====
 
 ``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_1P``
 ^^^^^^^^^^
@@ -22752,12 +19382,10 @@ CLIENT Globals
 
 	ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_1P is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_1P"
+* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_1P"
 
-CLIENT Globals
-=====
 
 ``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_3P``
 ^^^^^^^^^^
@@ -22766,12 +19394,10 @@ CLIENT Globals
 
 	ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_3P is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_3P"
+* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_3P"
 
-CLIENT Globals
-=====
 
 ``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_1P``
 ^^^^^^^^^^
@@ -22780,12 +19406,10 @@ CLIENT Globals
 
 	ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_1P is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Human_Damage_1P"
+* value: "Titan_Offhand_ElectricSmoke_Human_Damage_1P"
 
-CLIENT Globals
-=====
 
 ``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_3P``
 ^^^^^^^^^^
@@ -22794,12 +19418,10 @@ CLIENT Globals
 
 	ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_3P is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Human_Damage_3P"
+* value: "Titan_Offhand_ElectricSmoke_Human_Damage_3P"
 
-CLIENT Globals
-=====
 
 ``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_1P``
 ^^^^^^^^^^
@@ -22808,12 +19430,10 @@ CLIENT Globals
 
 	ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_1P is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_1P"
+* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_1P"
 
-CLIENT Globals
-=====
 
 ``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_3P``
 ^^^^^^^^^^
@@ -22822,12 +19442,10 @@ CLIENT Globals
 
 	ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_3P is constant
 
-	* type: string
+* type: string
 
-	* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_3P"
+* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_3P"
 
-CLIENT Globals
-=====
 
 ``SMOKESCREEN_SFX_POPCORN_EXPLOSION``
 ^^^^^^^^^^
@@ -22836,12 +19454,10 @@ CLIENT Globals
 
 	SMOKESCREEN_SFX_POPCORN_EXPLOSION is constant
 
-	* type: string
+* type: string
 
-	* value: "Weapon_ElectricSmokescreen.Explosion"
+* value: "Weapon_ElectricSmokescreen.Explosion"
 
-CLIENT Globals
-=====
 
 ``FX_ELECTRIC_SMOKESCREEN``
 ^^^^^^^^^^
@@ -22850,12 +19466,10 @@ CLIENT Globals
 
 	FX_ELECTRIC_SMOKESCREEN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_wpn_smk_electric"
+* value: $"P_wpn_smk_electric"
 
-CLIENT Globals
-=====
 
 ``FX_ELECTRIC_SMOKESCREEN_BURN``
 ^^^^^^^^^^
@@ -22864,12 +19478,10 @@ CLIENT Globals
 
 	FX_ELECTRIC_SMOKESCREEN_BURN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_wpn_smk_electric_burn_mod"
+* value: $"P_wpn_smk_electric_burn_mod"
 
-CLIENT Globals
-=====
 
 ``FX_GRENADE_SMOKESCREEN``
 ^^^^^^^^^^
@@ -22878,12 +19490,10 @@ CLIENT Globals
 
 	FX_GRENADE_SMOKESCREEN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_smkscreen_test"
+* value: $"P_smkscreen_test"
 
-CLIENT Globals
-=====
 
 ``HEALTH_REGEN_TICK_TIME``
 ^^^^^^^^^^
@@ -22892,12 +19502,10 @@ CLIENT Globals
 
 	HEALTH_REGEN_TICK_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.1
+* value: 0.1
 
-CLIENT Globals
-=====
 
 ``TITAN_HEALTH_REGEN_DELAY``
 ^^^^^^^^^^
@@ -22906,12 +19514,10 @@ CLIENT Globals
 
 	TITAN_HEALTH_REGEN_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 7.0
+* value: 7.0
 
-CLIENT Globals
-=====
 
 ``TITAN_HEALTH_REGEN_TIME``
 ^^^^^^^^^^
@@ -22920,12 +19526,10 @@ CLIENT Globals
 
 	TITAN_HEALTH_REGEN_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 14.0
+* value: 14.0
 
-CLIENT Globals
-=====
 
 ``TITAN_DEFAULT_PERMANANT_DAMAGE_FRAC``
 ^^^^^^^^^^
@@ -22934,12 +19538,10 @@ CLIENT Globals
 
 	TITAN_DEFAULT_PERMANANT_DAMAGE_FRAC is constant
 
-	* type: float
+* type: float
 
-	* value: 0.8
+* value: 0.8
 
-CLIENT Globals
-=====
 
 ``TITAN_GARAGE_TICK_TIME``
 ^^^^^^^^^^
@@ -22948,12 +19550,10 @@ CLIENT Globals
 
 	TITAN_GARAGE_TICK_TIME is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_GARAGE_HEALTH_REGEN``
 ^^^^^^^^^^
@@ -22962,12 +19562,10 @@ CLIENT Globals
 
 	TITAN_GARAGE_HEALTH_REGEN is constant
 
-	* type: int
+* type: int
 
-	* value: 150
+* value: 150
 
-CLIENT Globals
-=====
 
 ``TITAN_GARAGE_MAX_HEALTH_REGEN``
 ^^^^^^^^^^
@@ -22976,12 +19574,10 @@ CLIENT Globals
 
 	TITAN_GARAGE_MAX_HEALTH_REGEN is constant
 
-	* type: int
+* type: int
 
-	* value: 300
+* value: 300
 
-CLIENT Globals
-=====
 
 ``DEFAULT_BOT_TITAN``
 ^^^^^^^^^^
@@ -22990,12 +19586,10 @@ CLIENT Globals
 
 	DEFAULT_BOT_TITAN is constant
 
-	* type: string
+* type: string
 
-	* value: "titan_atlas"
+* value: "titan_atlas"
 
-CLIENT Globals
-=====
 
 ``MAX_DAMAGE_HISTORY_TIME``
 ^^^^^^^^^^
@@ -23004,12 +19598,10 @@ CLIENT Globals
 
 	MAX_DAMAGE_HISTORY_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 12.0
+* value: 12.0
 
-CLIENT Globals
-=====
 
 ``MAX_NPC_KILL_STEAL_PREVENTION_TIME``
 ^^^^^^^^^^
@@ -23018,12 +19610,10 @@ CLIENT Globals
 
 	MAX_NPC_KILL_STEAL_PREVENTION_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``TITAN_DOOMED_EJECT_PROTECTION_TIME``
 ^^^^^^^^^^
@@ -23032,12 +19622,10 @@ CLIENT Globals
 
 	TITAN_DOOMED_EJECT_PROTECTION_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 1.5
+* value: 1.5
 
-CLIENT Globals
-=====
 
 ``TITAN_DOOMED_INVUL_TIME``
 ^^^^^^^^^^
@@ -23046,12 +19634,10 @@ CLIENT Globals
 
 	TITAN_DOOMED_INVUL_TIME is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``TITAN_EJECT_MAX_PRESS_DELAY``
 ^^^^^^^^^^
@@ -23060,12 +19646,10 @@ CLIENT Globals
 
 	TITAN_EJECT_MAX_PRESS_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``TITAN_DOOMED_MAX_DURATION``
 ^^^^^^^^^^
@@ -23074,12 +19658,10 @@ CLIENT Globals
 
 	TITAN_DOOMED_MAX_DURATION is constant
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``TITAN_DOOMED_MAX_INITIAL_LOSS_FRAC``
 ^^^^^^^^^^
@@ -23088,12 +19670,10 @@ CLIENT Globals
 
 	TITAN_DOOMED_MAX_INITIAL_LOSS_FRAC is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``HIT_GROUP_HEADSHOT``
 ^^^^^^^^^^
@@ -23102,12 +19682,10 @@ CLIENT Globals
 
 	HIT_GROUP_HEADSHOT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``COCKPIT_HEALTHBARS``
 ^^^^^^^^^^
@@ -23116,12 +19694,10 @@ CLIENT Globals
 
 	COCKPIT_HEALTHBARS is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``CORE_BUILD_PERCENT_FROM_TITAN_DAMAGE_RECEIVED``
 ^^^^^^^^^^
@@ -23130,12 +19706,10 @@ CLIENT Globals
 
 	CORE_BUILD_PERCENT_FROM_TITAN_DAMAGE_RECEIVED is constant
 
-	* type: float
+* type: float
 
-	* value: 0.002
+* value: 0.002
 
-CLIENT Globals
-=====
 
 ``CORE_BUILD_PERCENT_FROM_DOOM_INFLICTED``
 ^^^^^^^^^^
@@ -23144,12 +19718,10 @@ CLIENT Globals
 
 	CORE_BUILD_PERCENT_FROM_DOOM_INFLICTED is constant
 
-	* type: float
+* type: float
 
-	* value: 10.0
+* value: 10.0
 
-CLIENT Globals
-=====
 
 ``CORE_BUILD_PERCENT_FROM_DOOM_ENTERED``
 ^^^^^^^^^^
@@ -23158,12 +19730,10 @@ CLIENT Globals
 
 	CORE_BUILD_PERCENT_FROM_DOOM_ENTERED is constant
 
-	* type: float
+* type: float
 
-	* value: 0.0
+* value: 0.0
 
-CLIENT Globals
-=====
 
 ``PILOT_SYNCED_MELEE_CONETRACE_RANGE``
 ^^^^^^^^^^
@@ -23172,12 +19742,10 @@ CLIENT Globals
 
 	PILOT_SYNCED_MELEE_CONETRACE_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``HUMAN_EXECUTION_RANGE``
 ^^^^^^^^^^
@@ -23186,12 +19754,10 @@ CLIENT Globals
 
 	HUMAN_EXECUTION_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 115
+* value: 115
 
-CLIENT Globals
-=====
 
 ``HUMAN_EXECUTION_ANGLE``
 ^^^^^^^^^^
@@ -23200,12 +19766,10 @@ CLIENT Globals
 
 	HUMAN_EXECUTION_ANGLE is constant
 
-	* type: int
+* type: int
 
-	* value: 40
+* value: 40
 
-CLIENT Globals
-=====
 
 ``PILOT_ELITE_MELEE_COUNTER_RANGE``
 ^^^^^^^^^^
@@ -23214,12 +19778,10 @@ CLIENT Globals
 
 	PILOT_ELITE_MELEE_COUNTER_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``PILOT_ELITE_MELEE_COUNTER_DAMAGE``
 ^^^^^^^^^^
@@ -23228,12 +19790,10 @@ CLIENT Globals
 
 	PILOT_ELITE_MELEE_COUNTER_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``PROWLER_EXECUTION_RANGE``
 ^^^^^^^^^^
@@ -23242,12 +19802,10 @@ CLIENT Globals
 
 	PROWLER_EXECUTION_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``PROWLER_EXECUTION_ANGLE``
 ^^^^^^^^^^
@@ -23256,12 +19814,10 @@ CLIENT Globals
 
 	PROWLER_EXECUTION_ANGLE is constant
 
-	* type: int
+* type: int
 
-	* value: 40
+* value: 40
 
-CLIENT Globals
-=====
 
 ``HUMAN_MELEE_KICK_ATTACK_DAMAGE``
 ^^^^^^^^^^
@@ -23270,12 +19826,10 @@ CLIENT Globals
 
 	HUMAN_MELEE_KICK_ATTACK_DAMAGE is constant
 
-	* type: int
+* type: int
 
-	* value: 120
+* value: 120
 
-CLIENT Globals
-=====
 
 ``HUMAN_MELEE_KICK_ATTACK_PUSHBACK_MULTIPLIER``
 ^^^^^^^^^^
@@ -23284,12 +19838,10 @@ CLIENT Globals
 
 	HUMAN_MELEE_KICK_ATTACK_PUSHBACK_MULTIPLIER is constant
 
-	* type: int
+* type: int
 
-	* value: 600
+* value: 600
 
-CLIENT Globals
-=====
 
 ``TITAN_ATTACK_RANGE``
 ^^^^^^^^^^
@@ -23298,12 +19850,10 @@ CLIENT Globals
 
 	TITAN_ATTACK_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``TITAN_EXECUTION_RANGE``
 ^^^^^^^^^^
@@ -23312,12 +19862,10 @@ CLIENT Globals
 
 	TITAN_EXECUTION_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 350
+* value: 350
 
-CLIENT Globals
-=====
 
 ``TITAN_EXECUTION_ANGLE``
 ^^^^^^^^^^
@@ -23326,12 +19874,10 @@ CLIENT Globals
 
 	TITAN_EXECUTION_ANGLE is constant
 
-	* type: int
+* type: int
 
-	* value: 45
+* value: 45
 
-CLIENT Globals
-=====
 
 ``TITAN_AIMASSIST_MELEE_ATTACK_RANGE``
 ^^^^^^^^^^
@@ -23340,12 +19886,10 @@ CLIENT Globals
 
 	TITAN_AIMASSIST_MELEE_ATTACK_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``TITAN_AIMASSIST_MELEE_ATTACK_ANGLE``
 ^^^^^^^^^^
@@ -23354,12 +19898,10 @@ CLIENT Globals
 
 	TITAN_AIMASSIST_MELEE_ATTACK_ANGLE is constant
 
-	* type: int
+* type: int
 
-	* value: 25
+* value: 25
 
-CLIENT Globals
-=====
 
 ``TITAN_AIMASSIST_DASH_ATTACK_RANGE``
 ^^^^^^^^^^
@@ -23368,12 +19910,10 @@ CLIENT Globals
 
 	TITAN_AIMASSIST_DASH_ATTACK_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 400
+* value: 400
 
-CLIENT Globals
-=====
 
 ``TITAN_AIMASSIST_DASH_ATTACK_ANGLE``
 ^^^^^^^^^^
@@ -23382,12 +19922,10 @@ CLIENT Globals
 
 	TITAN_AIMASSIST_DASH_ATTACK_ANGLE is constant
 
-	* type: int
+* type: int
 
-	* value: 35
+* value: 35
 
-CLIENT Globals
-=====
 
 ``TITAN_MELEE_MAX_VERTICAL_PUSHBACK``
 ^^^^^^^^^^
@@ -23396,12 +19934,10 @@ CLIENT Globals
 
 	TITAN_MELEE_MAX_VERTICAL_PUSHBACK is constant
 
-	* type: float
+* type: float
 
-	* value: 550.0
+* value: 550.0
 
-CLIENT Globals
-=====
 
 ``RODEO_DAMAGE_STATE_0_THRESHOLD``
 ^^^^^^^^^^
@@ -23410,12 +19946,10 @@ CLIENT Globals
 
 	RODEO_DAMAGE_STATE_0_THRESHOLD is constant
 
-	* type: float
+* type: float
 
-	* value: 1.0
+* value: 1.0
 
-CLIENT Globals
-=====
 
 ``RODEO_DAMAGE_STATE_1_THRESHOLD``
 ^^^^^^^^^^
@@ -23424,12 +19958,10 @@ CLIENT Globals
 
 	RODEO_DAMAGE_STATE_1_THRESHOLD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.85
+* value: 0.85
 
-CLIENT Globals
-=====
 
 ``RODEO_DAMAGE_STATE_2_THRESHOLD``
 ^^^^^^^^^^
@@ -23438,12 +19970,10 @@ CLIENT Globals
 
 	RODEO_DAMAGE_STATE_2_THRESHOLD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.65
+* value: 0.65
 
-CLIENT Globals
-=====
 
 ``RODEO_DAMAGE_STATE_3_THRESHOLD``
 ^^^^^^^^^^
@@ -23452,12 +19982,10 @@ CLIENT Globals
 
 	RODEO_DAMAGE_STATE_3_THRESHOLD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.40
+* value: 0.40
 
-CLIENT Globals
-=====
 
 ``RODEO_DAMAGE_STATE_4_THRESHOLD``
 ^^^^^^^^^^
@@ -23466,12 +19994,10 @@ CLIENT Globals
 
 	RODEO_DAMAGE_STATE_4_THRESHOLD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.15
+* value: 0.15
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_STORY``
 ^^^^^^^^^^
@@ -23480,12 +20006,10 @@ CLIENT Globals
 
 	VO_PRIORITY_STORY is constant
 
-	* type: int
+* type: int
 
-	* value: 3000
+* value: 3000
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_GAMESTATE``
 ^^^^^^^^^^
@@ -23494,12 +20018,10 @@ CLIENT Globals
 
 	VO_PRIORITY_GAMESTATE is constant
 
-	* type: int
+* type: int
 
-	* value: 1500
+* value: 1500
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_ELIMINATION_STATUS``
 ^^^^^^^^^^
@@ -23508,12 +20030,10 @@ CLIENT Globals
 
 	VO_PRIORITY_ELIMINATION_STATUS is constant
 
-	* type: int
+* type: int
 
-	* value: 1250
+* value: 1250
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_GAMEMODE``
 ^^^^^^^^^^
@@ -23522,12 +20042,10 @@ CLIENT Globals
 
 	VO_PRIORITY_GAMEMODE is constant
 
-	* type: int
+* type: int
 
-	* value: 800
+* value: 800
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_PLAYERSTATE``
 ^^^^^^^^^^
@@ -23536,12 +20054,10 @@ CLIENT Globals
 
 	VO_PRIORITY_PLAYERSTATE is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``EVENT_PRIORITY_CALLOUTMAJOR3``
 ^^^^^^^^^^
@@ -23550,12 +20066,10 @@ CLIENT Globals
 
 	EVENT_PRIORITY_CALLOUTMAJOR3 is constant
 
-	* type: int
+* type: int
 
-	* value: 6
+* value: 6
 
-CLIENT Globals
-=====
 
 ``EVENT_PRIORITY_CALLOUTMAJOR2``
 ^^^^^^^^^^
@@ -23564,12 +20078,10 @@ CLIENT Globals
 
 	EVENT_PRIORITY_CALLOUTMAJOR2 is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``EVENT_PRIORITY_CALLOUTMAJOR``
 ^^^^^^^^^^
@@ -23578,12 +20090,10 @@ CLIENT Globals
 
 	EVENT_PRIORITY_CALLOUTMAJOR is constant
 
-	* type: int
+* type: int
 
-	* value: 4
+* value: 4
 
-CLIENT Globals
-=====
 
 ``EVENT_PRIORITY_CALLOUT``
 ^^^^^^^^^^
@@ -23592,12 +20102,10 @@ CLIENT Globals
 
 	EVENT_PRIORITY_CALLOUT is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``EVENT_PRIORITY_CALLOUTMINOR2``
 ^^^^^^^^^^
@@ -23606,12 +20114,10 @@ CLIENT Globals
 
 	EVENT_PRIORITY_CALLOUTMINOR2 is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``EVENT_PRIORITY_CALLOUTMINOR``
 ^^^^^^^^^^
@@ -23620,12 +20126,10 @@ CLIENT Globals
 
 	EVENT_PRIORITY_CALLOUTMINOR is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_AI_CHATTER_HIGH``
 ^^^^^^^^^^
@@ -23634,12 +20138,10 @@ CLIENT Globals
 
 	VO_PRIORITY_AI_CHATTER_HIGH is constant
 
-	* type: int
+* type: int
 
-	* value: 30
+* value: 30
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_AI_CHATTER``
 ^^^^^^^^^^
@@ -23648,12 +20150,10 @@ CLIENT Globals
 
 	VO_PRIORITY_AI_CHATTER is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_AI_CHATTER_LOW``
 ^^^^^^^^^^
@@ -23662,12 +20162,10 @@ CLIENT Globals
 
 	VO_PRIORITY_AI_CHATTER_LOW is constant
 
-	* type: int
+* type: int
 
-	* value: 10
+* value: 10
 
-CLIENT Globals
-=====
 
 ``VO_PRIORITY_AI_CHATTER_LOWEST``
 ^^^^^^^^^^
@@ -23676,52 +20174,42 @@ CLIENT Globals
 
 	VO_PRIORITY_AI_CHATTER_LOWEST is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``VO_DEBOUNCE_TIME_AI_CHATTER_HIGH``
 ^^^^^^^^^^
 
-	* type: float
+* type: float
 
-	* value: 4.0
+* value: 4.0
 
-CLIENT Globals
-=====
 
 ``VO_DEBOUNCE_TIME_AI_CHATTER``
 ^^^^^^^^^^
 
-	* type: float
+* type: float
 
-	* value: 5.0
+* value: 5.0
 
-CLIENT Globals
-=====
 
 ``VO_DEBOUNCE_TIME_AI_CHATTER_LOW``
 ^^^^^^^^^^
 
-	* type: float
+* type: float
 
-	* value: 6.0
+* value: 6.0
 
-CLIENT Globals
-=====
 
 ``VO_DEBOUNCE_TIME_AI_CHATTER_LOWEST``
 ^^^^^^^^^^
 
-	* type: float
+* type: float
 
-	* value: 7.0
+* value: 7.0
 
-CLIENT Globals
-=====
 
 ``VO_HARDPOINT_HELP_REQUEST_MINWAIT``
 ^^^^^^^^^^
@@ -23730,12 +20218,10 @@ CLIENT Globals
 
 	VO_HARDPOINT_HELP_REQUEST_MINWAIT is constant
 
-	* type: int
+* type: int
 
-	* value: 20
+* value: 20
 
-CLIENT Globals
-=====
 
 ``VO_HARDPOINT_HELP_REQUEST_TIMEOUT``
 ^^^^^^^^^^
@@ -23744,12 +20230,10 @@ CLIENT Globals
 
 	VO_HARDPOINT_HELP_REQUEST_TIMEOUT is constant
 
-	* type: int
+* type: int
 
-	* value: 40
+* value: 40
 
-CLIENT Globals
-=====
 
 ``VO_HARDPOINT_PLAYER_THANKS_MINWAIT``
 ^^^^^^^^^^
@@ -23758,12 +20242,10 @@ CLIENT Globals
 
 	VO_HARDPOINT_PLAYER_THANKS_MINWAIT is constant
 
-	* type: int
+* type: int
 
-	* value: 15
+* value: 15
 
-CLIENT Globals
-=====
 
 ``VO_AI_CHATTER_TO_PLAYER_MINWAIT``
 ^^^^^^^^^^
@@ -23772,12 +20254,10 @@ CLIENT Globals
 
 	VO_AI_CHATTER_TO_PLAYER_MINWAIT is constant
 
-	* type: int
+* type: int
 
-	* value: 60
+* value: 60
 
-CLIENT Globals
-=====
 
 ``VO_AI_CHATTER_PLAYER_CALLOUT_MAXDIST``
 ^^^^^^^^^^
@@ -23786,20 +20266,16 @@ CLIENT Globals
 
 	VO_AI_CHATTER_PLAYER_CALLOUT_MAXDIST is constant
 
-	* type: int
+* type: int
 
-	* value: 3500
+* value: 3500
 
-CLIENT Globals
-=====
 
 ``instamissionTypes``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``TITAN_KNEEL_DISTANCE``
 ^^^^^^^^^^
@@ -23808,12 +20284,10 @@ CLIENT Globals
 
 	TITAN_KNEEL_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 720
+* value: 720
 
-CLIENT Globals
-=====
 
 ``TITAN_FORCE_KNEEL_DISTANCE``
 ^^^^^^^^^^
@@ -23822,12 +20296,10 @@ CLIENT Globals
 
 	TITAN_FORCE_KNEEL_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 220
+* value: 220
 
-CLIENT Globals
-=====
 
 ``TITAN_STAND_DISTANCE``
 ^^^^^^^^^^
@@ -23836,12 +20308,10 @@ CLIENT Globals
 
 	TITAN_STAND_DISTANCE is constant
 
-	* type: int
+* type: int
 
-	* value: 850
+* value: 850
 
-CLIENT Globals
-=====
 
 ``TITAN_COCKPIT_DAMAGE_STATIC``
 ^^^^^^^^^^
@@ -23850,12 +20320,10 @@ CLIENT Globals
 
 	TITAN_COCKPIT_DAMAGE_STATIC is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``STANCE_KNEEL``
 ^^^^^^^^^^
@@ -23864,12 +20332,10 @@ CLIENT Globals
 
 	STANCE_KNEEL is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``STANCE_KNEELING``
 ^^^^^^^^^^
@@ -23878,12 +20344,10 @@ CLIENT Globals
 
 	STANCE_KNEELING is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``STANCE_STANDING``
 ^^^^^^^^^^
@@ -23892,12 +20356,10 @@ CLIENT Globals
 
 	STANCE_STANDING is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``STANCE_STAND``
 ^^^^^^^^^^
@@ -23906,12 +20368,10 @@ CLIENT Globals
 
 	STANCE_STAND is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``TITAN_DAMAGE_STATE_ARMOR_HEALTH``
 ^^^^^^^^^^
@@ -23920,12 +20380,10 @@ CLIENT Globals
 
 	TITAN_DAMAGE_STATE_ARMOR_HEALTH is constant
 
-	* type: float
+* type: float
 
-	* value: 0.25
+* value: 0.25
 
-CLIENT Globals
-=====
 
 ``TITAN_ADDITIVE_FLINCH_DAMAGE_THRESHOLD``
 ^^^^^^^^^^
@@ -23934,12 +20392,10 @@ CLIENT Globals
 
 	TITAN_ADDITIVE_FLINCH_DAMAGE_THRESHOLD is constant
 
-	* type: int
+* type: int
 
-	* value: 500
+* value: 500
 
-CLIENT Globals
-=====
 
 ``COCKPIT_SPARK_FX_DAMAGE_LIMIT``
 ^^^^^^^^^^
@@ -23948,12 +20404,10 @@ CLIENT Globals
 
 	COCKPIT_SPARK_FX_DAMAGE_LIMIT is constant
 
-	* type: int
+* type: int
 
-	* value: 200
+* value: 200
 
-CLIENT Globals
-=====
 
 ``PILOT_HIT_INDICATOR_DAMAGE_LIMIT``
 ^^^^^^^^^^
@@ -23962,12 +20416,10 @@ CLIENT Globals
 
 	PILOT_HIT_INDICATOR_DAMAGE_LIMIT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE``
 ^^^^^^^^^^
@@ -23976,12 +20428,10 @@ CLIENT Globals
 
 	TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE is constant
 
-	* type: int
+* type: int
 
-	* value: 240
+* value: 240
 
-CLIENT Globals
-=====
 
 ``TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE_SQUARED``
 ^^^^^^^^^^
@@ -23990,12 +20440,10 @@ CLIENT Globals
 
 	TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE_SQUARED is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE
+* value: TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE
 
-CLIENT Globals
-=====
 
 ``TITAN_BUBBLE_SHIELD_CYLINDER_TRIGGER_HEIGHT``
 ^^^^^^^^^^
@@ -24004,12 +20452,10 @@ CLIENT Globals
 
 	TITAN_BUBBLE_SHIELD_CYLINDER_TRIGGER_HEIGHT is constant
 
-	* type: unknown
+* type: unknown
 
-	* value: TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE
+* value: TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE
 
-CLIENT Globals
-=====
 
 ``FIRST_PERSON_SPECTATOR_DELAY``
 ^^^^^^^^^^
@@ -24018,12 +20464,10 @@ CLIENT Globals
 
 	FIRST_PERSON_SPECTATOR_DELAY is constant
 
-	* type: float
+* type: float
 
-	* value: 0.5
+* value: 0.5
 
-CLIENT Globals
-=====
 
 ``BATTERY_PICKUP_KIT_EFFECTIVENESS``
 ^^^^^^^^^^
@@ -24032,12 +20476,10 @@ CLIENT Globals
 
 	BATTERY_PICKUP_KIT_EFFECTIVENESS is constant
 
-	* type: float
+* type: float
 
-	* value: 0.75
+* value: 0.75
 
-CLIENT Globals
-=====
 
 ``DEG_TO_RAD``
 ^^^^^^^^^^
@@ -24046,12 +20488,10 @@ CLIENT Globals
 
 	DEG_TO_RAD is constant
 
-	* type: float
+* type: float
 
-	* value: 0.01745329251994
+* value: 0.01745329251994
 
-CLIENT Globals
-=====
 
 ``RAD_TO_DEG``
 ^^^^^^^^^^
@@ -24060,154 +20500,122 @@ CLIENT Globals
 
 	RAD_TO_DEG is constant
 
-	* type: float
+* type: float
 
-	* value: 57.29577951308232
+* value: 57.29577951308232
 
-CLIENT Globals
-=====
 
 ``LEGAL_PLAYER_TITAN_SETTINGS``
 ^^^^^^^^^^
 
-	* type: array<string>
+* type: array<string>
 
-CLIENT Globals
-=====
 
 ``AllModesAndMapsCompleteData``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``_RegisteringFunctions``
 ^^^^^^^^^^
 
-	* type: bool
+* type: bool
 
-CLIENT Globals
-=====
 
 ``_serverVars``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``_serverEntityVars``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``_serverVarHandles``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``_nextServerVarIndex``
 ^^^^^^^^^^
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``_entityClassVars``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``_entityClassVarsIsEnts``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``_entityClassVarsSyncToAllClients``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``_entityClassVarHandles``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``_entityClassVarChangeCallbacks``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``_nextEntVarIndex``
 ^^^^^^^^^^
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``_entityVarsByEHandle``
 ^^^^^^^^^^
 
-	* type: table
+* type: table
 
-	* value: {}
+* value: {}
 
-CLIENT Globals
-=====
 
 ``ePassives``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``_PassiveFromEnum``
 ^^^^^^^^^^
@@ -24216,124 +20624,94 @@ CLIENT Globals
 
 	_PassiveFromEnum is constant
 
-	* type: table
+* type: table
 
-	* value: {
+* value: {
 
-CLIENT Globals
-=====
 
 ``RodeoPackageStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``AnimEventData``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``TitanBindings``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``SegmentedHealthBar``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``BurnMeterHudStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ClientEntityStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``TitanCockpitRUI``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ClientPlayerStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ClientAIStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ClientWeaponStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ClientProjectileStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ClientTitanSoulStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ClientPlayerDecoyStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``ClientFirstPersonProxyStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``AUTO_TITAN_GUARD_MODE_DIAG_SUFFIX``
 ^^^^^^^^^^
@@ -24342,12 +20720,10 @@ CLIENT Globals
 
 	AUTO_TITAN_GUARD_MODE_DIAG_SUFFIX is constant
 
-	* type: string
+* type: string
 
-	* value: "guard"
+* value: "guard"
 
-CLIENT Globals
-=====
 
 ``AUTO_TITAN_GUARD_MODE_SOUND``
 ^^^^^^^^^^
@@ -24356,12 +20732,10 @@ CLIENT Globals
 
 	AUTO_TITAN_GUARD_MODE_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "Menu_TitanAIMode_Guard"
+* value: "Menu_TitanAIMode_Guard"
 
-CLIENT Globals
-=====
 
 ``AUTO_TITAN_FOLLOW_MODE_DIAG_SUFFIX``
 ^^^^^^^^^^
@@ -24370,12 +20744,10 @@ CLIENT Globals
 
 	AUTO_TITAN_FOLLOW_MODE_DIAG_SUFFIX is constant
 
-	* type: string
+* type: string
 
-	* value: "follow"
+* value: "follow"
 
-CLIENT Globals
-=====
 
 ``AUTO_TITAN_FOLLOW_MODE_SOUND``
 ^^^^^^^^^^
@@ -24384,12 +20756,10 @@ CLIENT Globals
 
 	AUTO_TITAN_FOLLOW_MODE_SOUND is constant
 
-	* type: string
+* type: string
 
-	* value: "Menu_TitanAIMode_Follow"
+* value: "Menu_TitanAIMode_Follow"
 
-CLIENT Globals
-=====
 
 ``SCREENFX_WARPJUMP``
 ^^^^^^^^^^
@@ -24398,12 +20768,10 @@ CLIENT Globals
 
 	SCREENFX_WARPJUMP is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_warpjump_FP"
+* value: $"P_warpjump_FP"
 
-CLIENT Globals
-=====
 
 ``SCREENFX_WARPJUMPDLIGHT``
 ^^^^^^^^^^
@@ -24412,12 +20780,10 @@ CLIENT Globals
 
 	SCREENFX_WARPJUMPDLIGHT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"warpjump_CH_dlight"
+* value: $"warpjump_CH_dlight"
 
-CLIENT Globals
-=====
 
 ``FX_KILLSHOT_BLOODSPRAY``
 ^^^^^^^^^^
@@ -24426,12 +20792,10 @@ CLIENT Globals
 
 	FX_KILLSHOT_BLOODSPRAY is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_deathfx_human"
+* value: $"P_deathfx_human"
 
-CLIENT Globals
-=====
 
 ``FX_BLOODSPRAY_DECAL_SML``
 ^^^^^^^^^^
@@ -24440,12 +20804,10 @@ CLIENT Globals
 
 	FX_BLOODSPRAY_DECAL_SML is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_deathfx_human_decal_SML"
+* value: $"P_deathfx_human_decal_SML"
 
-CLIENT Globals
-=====
 
 ``FX_BLOODSPRAY_DECAL_MED``
 ^^^^^^^^^^
@@ -24454,12 +20816,10 @@ CLIENT Globals
 
 	FX_BLOODSPRAY_DECAL_MED is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_deathfx_human_decal_MED"
+* value: $"P_deathfx_human_decal_MED"
 
-CLIENT Globals
-=====
 
 ``FX_BLOODSPRAY_DECAL_LRG``
 ^^^^^^^^^^
@@ -24468,12 +20828,10 @@ CLIENT Globals
 
 	FX_BLOODSPRAY_DECAL_LRG is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_deathfx_human_decal_LRG"
+* value: $"P_deathfx_human_decal_LRG"
 
-CLIENT Globals
-=====
 
 ``SHIELD_BODY_FX``
 ^^^^^^^^^^
@@ -24482,12 +20840,10 @@ CLIENT Globals
 
 	SHIELD_BODY_FX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_armor_body_CP"
+* value: $"P_xo_armor_body_CP"
 
-CLIENT Globals
-=====
 
 ``SHIELD_BREAK_FX``
 ^^^^^^^^^^
@@ -24496,20 +20852,16 @@ CLIENT Globals
 
 	SHIELD_BREAK_FX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"P_xo_armor_break_CP"
+* value: $"P_xo_armor_break_CP"
 
-CLIENT Globals
-=====
 
 ``AttackerDisplayNameStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``RUMBLE_FLAGS_NONE``
 ^^^^^^^^^^
@@ -24518,12 +20870,10 @@ CLIENT Globals
 
 	RUMBLE_FLAGS_NONE is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0000
+* value: 0x0000
 
-CLIENT Globals
-=====
 
 ``RUMBLE_FLAG_STOP``
 ^^^^^^^^^^
@@ -24532,12 +20882,10 @@ CLIENT Globals
 
 	RUMBLE_FLAG_STOP is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0001
+* value: 0x0001
 
-CLIENT Globals
-=====
 
 ``RUMBLE_FLAG_LOOP``
 ^^^^^^^^^^
@@ -24546,12 +20894,10 @@ CLIENT Globals
 
 	RUMBLE_FLAG_LOOP is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0002
+* value: 0x0002
 
-CLIENT Globals
-=====
 
 ``RUMBLE_FLAG_RESTART``
 ^^^^^^^^^^
@@ -24560,12 +20906,10 @@ CLIENT Globals
 
 	RUMBLE_FLAG_RESTART is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0004
+* value: 0x0004
 
-CLIENT Globals
-=====
 
 ``RUMBLE_FLAG_UPDATE_SCALE``
 ^^^^^^^^^^
@@ -24574,12 +20918,10 @@ CLIENT Globals
 
 	RUMBLE_FLAG_UPDATE_SCALE is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0008
+* value: 0x0008
 
-CLIENT Globals
-=====
 
 ``RUMBLE_FLAG_ONLYONE``
 ^^^^^^^^^^
@@ -24588,12 +20930,10 @@ CLIENT Globals
 
 	RUMBLE_FLAG_ONLYONE is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0010
+* value: 0x0010
 
-CLIENT Globals
-=====
 
 ``RUMBLE_FLAG_RANDOM_AMPLITUDE``
 ^^^^^^^^^^
@@ -24602,12 +20942,10 @@ CLIENT Globals
 
 	RUMBLE_FLAG_RANDOM_AMPLITUDE is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0020
+* value: 0x0020
 
-CLIENT Globals
-=====
 
 ``RUMBLE_FLAG_INITIAL_SCALE``
 ^^^^^^^^^^
@@ -24616,36 +20954,28 @@ CLIENT Globals
 
 	RUMBLE_FLAG_INITIAL_SCALE is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0040
+* value: 0x0040
 
-CLIENT Globals
-=====
 
 ``PILOT_THROWN_TICK_WARNING_FX``
 ^^^^^^^^^^
 
-	* type: int
+* type: int
 
-CLIENT Globals
-=====
 
 ``AI_GENERATED_TICK_WARNING_FX``
 ^^^^^^^^^^
 
-	* type: int
+* type: int
 
-CLIENT Globals
-=====
 
 ``AI_GENERATED_TICK_WARNING_BEAMS_FX``
 ^^^^^^^^^^
 
-	* type: int
+* type: int
 
-CLIENT Globals
-=====
 
 ``MAX_ACTIVE_TRAPS_DISPLAYED``
 ^^^^^^^^^^
@@ -24654,12 +20984,10 @@ CLIENT Globals
 
 	MAX_ACTIVE_TRAPS_DISPLAYED is constant
 
-	* type: int
+* type: int
 
-	* value: 5
+* value: 5
 
-CLIENT Globals
-=====
 
 ``VGUI_CLOSED``
 ^^^^^^^^^^
@@ -24668,12 +20996,10 @@ CLIENT Globals
 
 	VGUI_CLOSED is constant
 
-	* type: int
+* type: int
 
-	* value: 0
+* value: 0
 
-CLIENT Globals
-=====
 
 ``VGUI_CLOSING``
 ^^^^^^^^^^
@@ -24682,12 +21008,10 @@ CLIENT Globals
 
 	VGUI_CLOSING is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``VGUI_OPEN``
 ^^^^^^^^^^
@@ -24696,12 +21020,10 @@ CLIENT Globals
 
 	VGUI_OPEN is constant
 
-	* type: int
+* type: int
 
-	* value: 2
+* value: 2
 
-CLIENT Globals
-=====
 
 ``VGUI_OPENING``
 ^^^^^^^^^^
@@ -24710,12 +21032,10 @@ CLIENT Globals
 
 	VGUI_OPENING is constant
 
-	* type: int
+* type: int
 
-	* value: 3
+* value: 3
 
-CLIENT Globals
-=====
 
 ``USE_AUTO_TEXT``
 ^^^^^^^^^^
@@ -24724,12 +21044,10 @@ CLIENT Globals
 
 	USE_AUTO_TEXT is constant
 
-	* type: int
+* type: int
 
-	* value: 1
+* value: 1
 
-CLIENT Globals
-=====
 
 ``SHIELD_R``
 ^^^^^^^^^^
@@ -24738,12 +21056,10 @@ CLIENT Globals
 
 	SHIELD_R is constant
 
-	* type: int
+* type: int
 
-	* value: 176
+* value: 176
 
-CLIENT Globals
-=====
 
 ``SHIELD_G``
 ^^^^^^^^^^
@@ -24752,12 +21068,10 @@ CLIENT Globals
 
 	SHIELD_G is constant
 
-	* type: int
+* type: int
 
-	* value: 227
+* value: 227
 
-CLIENT Globals
-=====
 
 ``SHIELD_B``
 ^^^^^^^^^^
@@ -24766,12 +21080,10 @@ CLIENT Globals
 
 	SHIELD_B is constant
 
-	* type: int
+* type: int
 
-	* value: 227
+* value: 227
 
-CLIENT Globals
-=====
 
 ``TEAM_ICON_IMC``
 ^^^^^^^^^^
@@ -24780,12 +21092,10 @@ CLIENT Globals
 
 	TEAM_ICON_IMC is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/scoreboard_imc_logo"
+* value: $"ui/scoreboard_imc_logo"
 
-CLIENT Globals
-=====
 
 ``TEAM_ICON_MILITIA``
 ^^^^^^^^^^
@@ -24794,50 +21104,40 @@ CLIENT Globals
 
 	TEAM_ICON_MILITIA is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/scoreboard_mcorp_logo"
+* value: $"ui/scoreboard_mcorp_logo"
 
-CLIENT Globals
-=====
 
 ``HudElementGroup``
 ^^^^^^^^^^
 
-	* type: var
+* type: var
 
-	* value: null
+* value: null
 
-CLIENT Globals
-=====
 
 ``CNotAVGUI``
 ^^^^^^^^^^
 
-	* type: var
+* type: var
 
-	* value: null
+* value: null
 
-CLIENT Globals
-=====
 
 ``VisGroup``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``HUDSplashLine``
 ^^^^^^^^^^
 
-	* type: unknown
+* type: unknown
 
-	* value: null
+* value: null
 
-CLIENT Globals
-=====
 
 ``CONVFLAG_STARTPOINT``
 ^^^^^^^^^^
@@ -24846,12 +21146,10 @@ CLIENT Globals
 
 	CONVFLAG_STARTPOINT is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0001
+* value: 0x0001
 
-CLIENT Globals
-=====
 
 ``CONVFLAG_UNORDERED``
 ^^^^^^^^^^
@@ -24860,12 +21158,10 @@ CLIENT Globals
 
 	CONVFLAG_UNORDERED is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0002
+* value: 0x0002
 
-CLIENT Globals
-=====
 
 ``CONVFLAG_ENDPOINT``
 ^^^^^^^^^^
@@ -24874,12 +21170,10 @@ CLIENT Globals
 
 	CONVFLAG_ENDPOINT is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0004
+* value: 0x0004
 
-CLIENT Globals
-=====
 
 ``CONVFLAG_GROUP``
 ^^^^^^^^^^
@@ -24888,36 +21182,28 @@ CLIENT Globals
 
 	CONVFLAG_GROUP is constant
 
-	* type: int
+* type: int
 
-	* value: 0x0008
+* value: 0x0008
 
-CLIENT Globals
-=====
 
 ``eJumpJetType``
 ^^^^^^^^^^
 
-	* type: enum
+* type: enum
 
-CLIENT Globals
-=====
 
 ``JumpJetFXNamesStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``JumpJetDataStruct``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``MAX_SCORE_COLUMNS``
 ^^^^^^^^^^
@@ -24926,12 +21212,10 @@ CLIENT Globals
 
 	MAX_SCORE_COLUMNS is constant
 
-	* type: int
+* type: int
 
-	* value: 8
+* value: 8
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN1``
 ^^^^^^^^^^
@@ -24940,12 +21224,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN1 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_0"
+* value: $"ui/menu/generation_icons/generation_0"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN2``
 ^^^^^^^^^^
@@ -24954,12 +21236,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN2 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_1"
+* value: $"ui/menu/generation_icons/generation_1"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN3``
 ^^^^^^^^^^
@@ -24968,12 +21248,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN3 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_2"
+* value: $"ui/menu/generation_icons/generation_2"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN4``
 ^^^^^^^^^^
@@ -24982,12 +21260,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN4 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_3"
+* value: $"ui/menu/generation_icons/generation_3"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN5``
 ^^^^^^^^^^
@@ -24996,12 +21272,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN5 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_4"
+* value: $"ui/menu/generation_icons/generation_4"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN6``
 ^^^^^^^^^^
@@ -25010,12 +21284,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN6 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_5"
+* value: $"ui/menu/generation_icons/generation_5"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN7``
 ^^^^^^^^^^
@@ -25024,12 +21296,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN7 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_6"
+* value: $"ui/menu/generation_icons/generation_6"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN8``
 ^^^^^^^^^^
@@ -25038,12 +21308,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN8 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_7"
+* value: $"ui/menu/generation_icons/generation_7"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN9``
 ^^^^^^^^^^
@@ -25052,12 +21320,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN9 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_8"
+* value: $"ui/menu/generation_icons/generation_8"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_GEN10``
 ^^^^^^^^^^
@@ -25066,12 +21332,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_GEN10 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/generation_icons/generation_9"
+* value: $"ui/menu/generation_icons/generation_9"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_BACKGROUND``
 ^^^^^^^^^^
@@ -25080,28 +21344,22 @@ CLIENT Globals
 
 	SCOREBOARD_BACKGROUND is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/scoreboard"
+* value: $"ui/menu/scoreboard/scoreboard"
 
-CLIENT Globals
-=====
 
 ``ClGlobals``
 ^^^^^^^^^^
 
-	* type: struct
+* type: struct
 
-CLIENT Globals
-=====
 
 ``clGlobal``
 ^^^^^^^^^^
 
-	* type: ClGlobals
+* type: ClGlobals
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_FRIENDLY_PLAYER_EVEN``
 ^^^^^^^^^^
@@ -25110,12 +21368,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_FRIENDLY_PLAYER_EVEN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/friendly_player"
+* value: $"ui/menu/scoreboard/friendly_player"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_FRIENDLY_PLAYER_ODD``
 ^^^^^^^^^^
@@ -25124,12 +21380,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_FRIENDLY_PLAYER_ODD is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/friendly_player_dots"
+* value: $"ui/menu/scoreboard/friendly_player_dots"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_FRIENDLY_SLOT``
 ^^^^^^^^^^
@@ -25138,12 +21392,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_FRIENDLY_SLOT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/friendly_slot"
+* value: $"ui/menu/scoreboard/friendly_slot"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_ENEMY_PLAYER_EVEN``
 ^^^^^^^^^^
@@ -25152,12 +21404,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_ENEMY_PLAYER_EVEN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/enemy_player"
+* value: $"ui/menu/scoreboard/enemy_player"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_ENEMY_PLAYER_ODD``
 ^^^^^^^^^^
@@ -25166,12 +21416,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_ENEMY_PLAYER_ODD is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/enemy_player_dots"
+* value: $"ui/menu/scoreboard/enemy_player_dots"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_ENEMY_SLOT``
 ^^^^^^^^^^
@@ -25180,12 +21428,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_ENEMY_SLOT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/enemy_slot"
+* value: $"ui/menu/scoreboard/enemy_slot"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_MIC_INACTIVE``
 ^^^^^^^^^^
@@ -25194,12 +21440,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_MIC_INACTIVE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_voip_default"
+* value: $"ui/menu/scoreboard/sb_icon_voip_default"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_MIC_ACTIVE``
 ^^^^^^^^^^
@@ -25208,12 +21452,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_MIC_ACTIVE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_voip_talk"
+* value: $"ui/menu/scoreboard/sb_icon_voip_talk"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_MIC_MUTED``
 ^^^^^^^^^^
@@ -25222,12 +21464,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_MIC_MUTED is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_voip_mute"
+* value: $"ui/menu/scoreboard/sb_icon_voip_mute"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_MIC_PARTYCHAT``
 ^^^^^^^^^^
@@ -25236,12 +21476,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_MIC_PARTYCHAT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_voip_party_talk"
+* value: $"ui/menu/scoreboard/sb_icon_voip_party_talk"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_DEAD``
 ^^^^^^^^^^
@@ -25250,12 +21488,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_DEAD is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_dead"
+* value: $"ui/icon_status_dead"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_TITAN``
 ^^^^^^^^^^
@@ -25264,12 +21500,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_TITAN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_titan"
+* value: $"ui/icon_status_titan"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_PILOT``
 ^^^^^^^^^^
@@ -25278,12 +21512,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_PILOT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_pilot"
+* value: $"ui/icon_status_pilot"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET``
 ^^^^^^^^^^
@@ -25292,12 +21524,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_alive_with_titan"
+* value: $"ui/icon_status_alive_with_titan"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET``
 ^^^^^^^^^^
@@ -25306,12 +21536,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_dead_with_titan"
+* value: $"ui/icon_status_dead_with_titan"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_EVAC``
 ^^^^^^^^^^
@@ -25320,12 +21548,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_EVAC is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_evac"
+* value: $"ui/icon_status_evac"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_TITAN_BURN``
 ^^^^^^^^^^
@@ -25334,12 +21560,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_TITAN_BURN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_titan_burn"
+* value: $"ui/icon_status_titan_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_TITAN_BURN_ENEMY``
 ^^^^^^^^^^
@@ -25348,12 +21572,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_TITAN_BURN_ENEMY is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_titan_burn"
+* value: $"ui/icon_status_titan_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_PILOT_BURN``
 ^^^^^^^^^^
@@ -25362,12 +21584,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_PILOT_BURN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_pilot_burn"
+* value: $"ui/icon_status_pilot_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_PILOT_BURN_ENEMY``
 ^^^^^^^^^^
@@ -25376,12 +21596,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_PILOT_BURN_ENEMY is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_pilot_burn"
+* value: $"ui/icon_status_pilot_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_PILOT_BURN``
 ^^^^^^^^^^
@@ -25390,12 +21608,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_PILOT_BURN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_alive_with_titan_pilot_burn"
+* value: $"ui/icon_status_alive_with_titan_pilot_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_PILOT_BURN_ENEMY``
 ^^^^^^^^^^
@@ -25404,12 +21620,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_PILOT_BURN_ENEMY is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_alive_with_titan_pilot_burn"
+* value: $"ui/icon_status_alive_with_titan_pilot_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_TITAN_BURN``
 ^^^^^^^^^^
@@ -25418,12 +21632,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_TITAN_BURN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_alive_with_titan_titan_burn"
+* value: $"ui/icon_status_alive_with_titan_titan_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_TITAN_BURN_ENEMY``
 ^^^^^^^^^^
@@ -25432,12 +21644,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_TITAN_BURN_ENEMY is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_alive_with_titan_titan_burn"
+* value: $"ui/icon_status_alive_with_titan_titan_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET_BURN``
 ^^^^^^^^^^
@@ -25446,12 +21656,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET_BURN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_dead_with_titan_burn"
+* value: $"ui/icon_status_dead_with_titan_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET_BURN_ENEMY``
 ^^^^^^^^^^
@@ -25460,12 +21668,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET_BURN_ENEMY is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/icon_status_dead_with_titan_burn"
+* value: $"ui/icon_status_dead_with_titan_burn"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_1``
 ^^^^^^^^^^
@@ -25474,12 +21680,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_1 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/connection_quality_1"
+* value: $"ui/menu/scoreboard/connection_quality_1"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_2``
 ^^^^^^^^^^
@@ -25488,12 +21692,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_2 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/connection_quality_2"
+* value: $"ui/menu/scoreboard/connection_quality_2"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_3``
 ^^^^^^^^^^
@@ -25502,12 +21704,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_3 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/connection_quality_3"
+* value: $"ui/menu/scoreboard/connection_quality_3"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_4``
 ^^^^^^^^^^
@@ -25516,12 +21716,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_4 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/connection_quality_4"
+* value: $"ui/menu/scoreboard/connection_quality_4"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_5``
 ^^^^^^^^^^
@@ -25530,12 +21728,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_5 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/connection_quality_5"
+* value: $"ui/menu/scoreboard/connection_quality_5"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_PILOT_KILLS``
 ^^^^^^^^^^
@@ -25544,12 +21740,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_PILOT_KILLS is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_pilot_kills"
+* value: $"ui/menu/scoreboard/sb_icon_pilot_kills"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_TITAN_KILLS``
 ^^^^^^^^^^
@@ -25558,12 +21752,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_TITAN_KILLS is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_titan_kills"
+* value: $"ui/menu/scoreboard/sb_icon_titan_kills"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_NPC_KILLS``
 ^^^^^^^^^^
@@ -25572,12 +21764,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_NPC_KILLS is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_npc_kills"
+* value: $"ui/menu/scoreboard/sb_icon_npc_kills"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_ASSISTS``
 ^^^^^^^^^^
@@ -25586,12 +21776,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_ASSISTS is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_assists"
+* value: $"ui/menu/scoreboard/sb_icon_assists"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_DEATHS``
 ^^^^^^^^^^
@@ -25600,12 +21788,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_DEATHS is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_deaths"
+* value: $"ui/menu/scoreboard/sb_icon_deaths"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_SCORE``
 ^^^^^^^^^^
@@ -25614,12 +21800,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_SCORE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_score"
+* value: $"ui/menu/scoreboard/sb_icon_score"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_HARDPOINT``
 ^^^^^^^^^^
@@ -25628,12 +21812,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_HARDPOINT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_hardpoint"
+* value: $"ui/menu/scoreboard/sb_icon_hardpoint"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_ASSAULT``
 ^^^^^^^^^^
@@ -25642,12 +21824,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_ASSAULT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_assault"
+* value: $"ui/menu/scoreboard/sb_icon_assault"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_DEFENSE``
 ^^^^^^^^^^
@@ -25656,12 +21836,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_DEFENSE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_defense"
+* value: $"ui/menu/scoreboard/sb_icon_defense"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_FLAG_RETURN``
 ^^^^^^^^^^
@@ -25670,12 +21848,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_FLAG_RETURN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_flag_return"
+* value: $"ui/menu/scoreboard/sb_icon_flag_return"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_FLAG_CAPTURE``
 ^^^^^^^^^^
@@ -25684,12 +21860,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_FLAG_CAPTURE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_flag_capture"
+* value: $"ui/menu/scoreboard/sb_icon_flag_capture"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_MARKED_FOR_DEATH_TARGET_KILLS``
 ^^^^^^^^^^
@@ -25698,12 +21872,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_MARKED_FOR_DEATH_TARGET_KILLS is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_marked_for_death"
+* value: $"ui/menu/scoreboard/sb_icon_marked_for_death"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_VICTORY_CONTRIBUTION``
 ^^^^^^^^^^
@@ -25712,12 +21884,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_VICTORY_CONTRIBUTION is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/scoreboard/sb_icon_victory_contribution"
+* value: $"ui/menu/scoreboard/sb_icon_victory_contribution"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_PROMO``
 ^^^^^^^^^^
@@ -25726,12 +21896,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_PROMO is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/rank_icons/promo"
+* value: $"ui/menu/rank_icons/promo"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_TITAN``
 ^^^^^^^^^^
@@ -25740,12 +21908,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_TITAN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/coop/coop_titan"
+* value: $"vgui/HUD/coop/coop_titan"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_EMP_TITAN``
 ^^^^^^^^^^
@@ -25754,12 +21920,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_EMP_TITAN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/coop/coop_emp_titan_square"
+* value: $"vgui/HUD/coop/coop_emp_titan_square"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_MORTAR_TITAN``
 ^^^^^^^^^^
@@ -25768,12 +21932,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_MORTAR_TITAN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/coop/coop_mortar_titan_square"
+* value: $"vgui/HUD/coop/coop_mortar_titan_square"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_NUKE_TITAN``
 ^^^^^^^^^^
@@ -25782,12 +21944,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_NUKE_TITAN is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/coop/coop_nuke_titan_square"
+* value: $"vgui/HUD/coop/coop_nuke_titan_square"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_CLOAK_DRONE``
 ^^^^^^^^^^
@@ -25796,12 +21956,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_CLOAK_DRONE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/td_wave_icon_cloaked_drone"
+* value: $"ui/td_wave_icon_cloaked_drone"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_SUICIDE_SPECTRE``
 ^^^^^^^^^^
@@ -25810,12 +21968,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_SUICIDE_SPECTRE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/coop/wave_icon_suicide"
+* value: $"vgui/HUD/coop/wave_icon_suicide"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_SNIPER_SPECTRE``
 ^^^^^^^^^^
@@ -25824,12 +21980,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_SNIPER_SPECTRE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/coop/wave_icon_sniper"
+* value: $"vgui/HUD/coop/wave_icon_sniper"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_SPECTRE``
 ^^^^^^^^^^
@@ -25838,12 +21992,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_SPECTRE is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/coop/wave_icon_spectre"
+* value: $"vgui/HUD/coop/wave_icon_spectre"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_GRUNT``
 ^^^^^^^^^^
@@ -25852,12 +22004,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_GRUNT is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/HUD/coop/wave_icon_grunt"
+* value: $"vgui/HUD/coop/wave_icon_grunt"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_BACKGROUND``
 ^^^^^^^^^^
@@ -25866,12 +22016,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_BACKGROUND is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/coop_menu_assets/coop_scoreboard_back"
+* value: $"ui/menu/coop_menu_assets/coop_scoreboard_back"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_INFO_BOX``
 ^^^^^^^^^^
@@ -25880,12 +22028,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_INFO_BOX is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/coop_menu_assets/coop_scoreboard_info_box"
+* value: $"ui/menu/coop_menu_assets/coop_scoreboard_info_box"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_STARS``
 ^^^^^^^^^^
@@ -25894,12 +22040,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_STARS is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/lobby/map_star_small"
+* value: $"ui/menu/lobby/map_star_small"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_STARS_EMPTY``
 ^^^^^^^^^^
@@ -25908,12 +22052,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_STARS_EMPTY is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"ui/menu/lobby/map_star_empty_small"
+* value: $"ui/menu/lobby/map_star_empty_small"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_1``
 ^^^^^^^^^^
@@ -25922,12 +22064,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_1 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/hud/coop/scoreboard_coop_p1"
+* value: $"vgui/hud/coop/scoreboard_coop_p1"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_2``
 ^^^^^^^^^^
@@ -25936,12 +22076,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_2 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/hud/coop/scoreboard_coop_p2"
+* value: $"vgui/hud/coop/scoreboard_coop_p2"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_3``
 ^^^^^^^^^^
@@ -25950,12 +22088,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_3 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/hud/coop/scoreboard_coop_p3"
+* value: $"vgui/hud/coop/scoreboard_coop_p3"
 
-CLIENT Globals
-=====
 
 ``SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_4``
 ^^^^^^^^^^
@@ -25964,12 +22100,10 @@ CLIENT Globals
 
 	SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_4 is constant
 
-	* type: asset
+* type: asset
 
-	* value: $"vgui/hud/coop/scoreboard_coop_p4"
+* value: $"vgui/hud/coop/scoreboard_coop_p4"
 
-CLIENT Globals
-=====
 
 ``CUSTOM_BIND_ALIASES_PILOT``
 ^^^^^^^^^^
@@ -25978,10 +22112,8 @@ CLIENT Globals
 
 	CUSTOM_BIND_ALIASES_PILOT is constant
 
-	* type: array<string>
+* type: array<string>
 
-CLIENT Globals
-=====
 
 ``CUSTOM_BIND_ALIASES_TITAN``
 ^^^^^^^^^^
@@ -25990,5 +22122,5 @@ CLIENT Globals
 
 	CUSTOM_BIND_ALIASES_TITAN is constant
 
-	* type: array<string>
+* type: array<string>
 
