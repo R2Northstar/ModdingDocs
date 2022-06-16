@@ -1,983 +1,4578 @@
-UI Globals
+SERVER Globals
 =====
 
-``DETENT_FORCE_ENABLE``
+``AttackerDamage``
+^^^^^^^^^^
+
+* type: struct
+
+
+``DamageHistoryStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``AssistingPlayerStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``CHARGE_TOOL``
 ^^^^^^^^^^
 
 .. note::
 
-	DETENT_FORCE_ENABLE is constant
-
-* type: int
-
-* value: 1
-
-
-``DETENT_FROM_STARTPOINT``
-^^^^^^^^^^
-
-.. note::
-
-	DETENT_FROM_STARTPOINT is constant
-
-* type: int
-
-* value: 0
-
-
-``DETENT_FORCE_DISABLE``
-^^^^^^^^^^
-
-.. note::
-
-	DETENT_FORCE_DISABLE is constant
-
-* type: int
-
-* value: -1
-
-
-``COOPERS_LOG_FROM_STARTPOINT``
-^^^^^^^^^^
-
-.. note::
-
-	COOPERS_LOG_FROM_STARTPOINT is constant
-
-* type: bool
-
-* value: true
-
-
-``COOPERS_LOG_FORCE_DISABLED``
-^^^^^^^^^^
-
-.. note::
-
-	COOPERS_LOG_FORCE_DISABLED is constant
-
-* type: bool
-
-* value: false
-
-
-``STARTPOINT_DEV_STRING``
-^^^^^^^^^^
-
-.. note::
-
-	STARTPOINT_DEV_STRING is constant
+	``CHARGE_TOOL`` is constant
 
 * type: string
 
-* value: "-startpoint"
+* value: ``"sp_weapon_arc_tool"``
 
 
-``StartPointCSV``
-^^^^^^^^^^
-
-* type: struct
-
-
-``TabDef``
-^^^^^^^^^^
-
-* type: struct
-
-
-``InputDef``
-^^^^^^^^^^
-
-* type: struct
-
-
-``DialogButtonData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``DialogFooterData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``DialogMessageRuiData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``DialogData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``MenuDef``
-^^^^^^^^^^
-
-* type: struct
-
-
-``PanelDef``
-^^^^^^^^^^
-
-* type: struct
-
-
-``PieChartEntry``
-^^^^^^^^^^
-
-* type: struct
-
-
-``PieChartData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``UIGlobals``
-^^^^^^^^^^
-
-* type: struct
-
-
-``uiGlobal``
-^^^^^^^^^^
-
-* type: UIGlobals
-
-
-``MAINMENU_MUSIC_DELAY``
+``TRIG_FLAG_NONE``
 ^^^^^^^^^^
 
 .. note::
 
-	MAINMENU_MUSIC_DELAY is constant
+	``TRIG_FLAG_NONE`` is constant
+
+* type: int
+
+* value: ``0``
+
+
+``TRIG_FLAG_PLAYERONLY``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIG_FLAG_PLAYERONLY`` is constant
+
+* type: int
+
+* value: ``0x0001``
+
+
+``TRIG_FLAG_NPCONLY``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIG_FLAG_NPCONLY`` is constant
+
+* type: int
+
+* value: ``0x0002``
+
+
+``TRIG_FLAG_NOCONTEXTBUSY``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIG_FLAG_NOCONTEXTBUSY`` is constant
+
+* type: int
+
+* value: ``0x0004``
+
+
+``TRIG_FLAG_ONCE``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIG_FLAG_ONCE`` is constant
+
+* type: int
+
+* value: ``0x0008``
+
+
+``TRIG_FLAG_EXCLUSIVE``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIG_FLAG_EXCLUSIVE`` is constant
+
+* type: int
+
+* value: ``0x0010``
+
+
+``TRIG_FLAG_DEVDRAW``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIG_FLAG_DEVDRAW`` is constant
+
+* type: int
+
+* value: ``0x0020``
+
+
+``TRIG_FLAG_START_DISABLED``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIG_FLAG_START_DISABLED`` is constant
+
+* type: int
+
+* value: ``0x0040``
+
+
+``TRIG_FLAG_NO_PHASE_SHIFT``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIG_FLAG_NO_PHASE_SHIFT`` is constant
+
+* type: int
+
+* value: ``0x0080``
+
+
+``MAP_EXTENTS``
+^^^^^^^^^^
+
+.. note::
+
+	``MAP_EXTENTS`` is constant
 
 * type: float
 
-* value: 4.0
+* value: ``128*128``
 
 
-``NUM_EOG_CHALLENGE_BOXES``
+``TRIGGER_INTERNAL_SIGNAL``
 ^^^^^^^^^^
 
 .. note::
 
-	NUM_EOG_CHALLENGE_BOXES is constant
-
-* type: int
-
-* value: 6
-
-
-``WEBBROWSER_FLAG_NONE``
-^^^^^^^^^^
-
-.. note::
-
-	WEBBROWSER_FLAG_NONE is constant
-
-* type: int
-
-* value: 0
-
-
-``WEBBROWSER_FLAG_MUTEGAME``
-^^^^^^^^^^
-
-.. note::
-
-	WEBBROWSER_FLAG_MUTEGAME is constant
-
-* type: int
-
-* value: 0x0001
-
-
-``MAX_COMBO_BUTTON_ROWS``
-^^^^^^^^^^
-
-.. note::
-
-	MAX_COMBO_BUTTON_ROWS is constant
-
-* type: int
-
-* value: 10
-
-
-``MAX_COMBO_BUTTON_COLS``
-^^^^^^^^^^
-
-.. note::
-
-	MAX_COMBO_BUTTON_COLS is constant
-
-* type: int
-
-* value: 4
-
-
-``ComboButtonData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ComboStruct``
-^^^^^^^^^^
-
-* type: struct
-
-
-``eGridPageFillDirection``
-^^^^^^^^^^
-
-* type: enum
-
-
-``eGridPageType``
-^^^^^^^^^^
-
-* type: enum
-
-
-``eGridPageStyle``
-^^^^^^^^^^
-
-* type: enum
-
-
-``GridMenuData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``EDIT_LOADOUT_SELECTS``
-^^^^^^^^^^
-
-.. note::
-
-	EDIT_LOADOUT_SELECTS is constant
-
-* type: bool
-
-* value: true
-
-
-``PURCHASE_SUCCESS_SOUND``
-^^^^^^^^^^
-
-.. note::
-
-	PURCHASE_SUCCESS_SOUND is constant
+	``TRIGGER_INTERNAL_SIGNAL`` is constant
 
 * type: string
 
-* value: "UI_Menu_Store_Purchase_Success"
+* value: ``"OnTrigger"``
 
 
-``LOBBY_MATERIAL_OWNER``
+``CALCULATE_SEQUENCE_BLEND_TIME``
 ^^^^^^^^^^
 
 .. note::
 
-	LOBBY_MATERIAL_OWNER is constant
+	``CALCULATE_SEQUENCE_BLEND_TIME`` is constant
 
-* type: asset
+* type: float
 
-* value: $"rui/menu/common/lobby_icon_owner"
-
-
-``LOBBY_MATERIAL_ADMIN``
-^^^^^^^^^^
-
-.. note::
-
-	LOBBY_MATERIAL_ADMIN is constant
-
-* type: asset
-
-* value: $"rui/menu/common/lobby_icon_admin"
+* value: ``-1.0``
 
 
-``UserInfoPanel``
+``ArrayDistanceEntry``
 ^^^^^^^^^^
 
 * type: struct
 
 
-``KNB_SUBJECT_COUNT``
+``GravityLandData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``FirstPersonSequenceStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``FrontRightDotProductsStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``RaySphereIntersectStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``eDamageSourceId``
+^^^^^^^^^^
+
+* type: enum
+
+
+``eModSourceId``
+^^^^^^^^^^
+
+* type: enum
+
+
+``modNameStrings``
 ^^^^^^^^^^
 
 .. note::
 
-	KNB_SUBJECT_COUNT is constant
-
-* type: int
-
-* value: 11
-
-
-``KNB_PATCHNOTES_INDEX``
-^^^^^^^^^^
-
-.. note::
-
-	KNB_PATCHNOTES_INDEX is constant
-
-* type: int
-
-* value: 0
-
-
-``KNB_COMMUNITY_INDEX``
-^^^^^^^^^^
-
-* type: int
-
-* value: -1
-
-
-``NS_NOT_DECIDED_TO_SEND_TOKEN``
-^^^^^^^^^^
-
-.. note::
-
-	NS_NOT_DECIDED_TO_SEND_TOKEN is constant
-
-* type: int
-
-* value: 0
-
-
-``NS_AGREED_TO_SEND_TOKEN``
-^^^^^^^^^^
-
-.. note::
-
-	NS_AGREED_TO_SEND_TOKEN is constant
-
-* type: int
-
-* value: 1
-
-
-``NS_DISAGREED_TO_SEND_TOKEN``
-^^^^^^^^^^
-
-.. note::
-
-	NS_DISAGREED_TO_SEND_TOKEN is constant
-
-* type: int
-
-* value: 2
-
-
-``isOnMainMenu``
-^^^^^^^^^^
-
-* type: bool
-
-* value: false
-
-
-``WEBBROWSER_FLAG_FORCEEXTERNAL``
-^^^^^^^^^^
-
-.. note::
-
-	WEBBROWSER_FLAG_FORCEEXTERNAL is constant
-
-* type: int
-
-* value: 1
-
-
-``MatchSettings_PlaylistVarLabels``
-^^^^^^^^^^
-
-.. note::
-
-	MatchSettings_PlaylistVarLabels is constant
+	``modNameStrings`` is constant
 
 * type: table
 
-* value: {
-
-
-``MAX_STORE_PRIME_TITANS``
-^^^^^^^^^^
-
-.. note::
-
-	MAX_STORE_PRIME_TITANS is constant
-
-* type: int
-
-* value: 6
-
-
-``TITAN_PRIMARY_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PRIMARY_NAME is constant
-
-* type: string
-
-* value: "TitanPrimaryName"
-
-
-``TITAN_CORE_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_CORE_NAME is constant
-
-* type: string
-
-* value: "TitanCoreName"
-
-
-``TITAN_SPECIAL_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_SPECIAL_NAME is constant
-
-* type: string
-
-* value: "TitanSpecialName"
-
-
-``TITAN_ORDNANCE_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_ORDNANCE_NAME is constant
-
-* type: string
-
-* value: "TitanOrdnanceName"
-
-
-``TITAN_ANTIRODEO_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_ANTIRODEO_NAME is constant
-
-* type: string
-
-* value: "TitanAntirodeoName"
-
-
-``TITAN_PRIMARY_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PRIMARY_DESC is constant
-
-* type: string
-
-* value: "TitanPrimaryDesc"
-
-
-``TITAN_CORE_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_CORE_DESC is constant
-
-* type: string
-
-* value: "TitanCoreDesc"
-
-
-``TITAN_SPECIAL_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_SPECIAL_DESC is constant
-
-* type: string
-
-* value: "TitanSpecialDesc"
-
-
-``TITAN_ORDNANCE_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_ORDNANCE_DESC is constant
-
-* type: string
-
-* value: "TitanOrdnanceDesc"
-
-
-``TITAN_ANTIRODEO_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_ANTIRODEO_DESC is constant
-
-* type: string
-
-* value: "TitanAntirodeoDesc"
-
-
-``TITAN_PRIMARY_LONG_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PRIMARY_LONG_DESC is constant
-
-* type: string
-
-* value: "TitanPrimaryLongDesc"
-
-
-``TITAN_CORE_LONG_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_CORE_LONG_DESC is constant
-
-* type: string
-
-* value: "TitanCoreLongDesc"
-
-
-``TITAN_SPECIAL_LONG_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_SPECIAL_LONG_DESC is constant
-
-* type: string
-
-* value: "TitanSpecialLongDesc"
-
-
-``TITAN_ORDNANCE_LONG_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_ORDNANCE_LONG_DESC is constant
-
-* type: string
-
-* value: "TitanOrdnanceLongDesc"
-
-
-``TITAN_ANTIRODEO_LONG_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_ANTIRODEO_LONG_DESC is constant
-
-* type: string
-
-* value: "TitanAntirodeoLongDesc"
-
-
-``TITAN_PASSIVE1_TYPE``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE1_TYPE is constant
-
-* type: string
-
-* value: "Passive1Type"
-
-
-``TITAN_PASSIVE1_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE1_NAME is constant
-
-* type: string
-
-* value: "Passive1Name"
-
-
-``TITAN_PASSIVE1_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE1_DESC is constant
-
-* type: string
-
-* value: "Passive1Desc"
-
-
-``TITAN_PASSIVE2_TYPE``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE2_TYPE is constant
-
-* type: string
-
-* value: "Passive2Type"
-
-
-``TITAN_PASSIVE2_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE2_NAME is constant
-
-* type: string
-
-* value: "Passive2Name"
-
-
-``TITAN_PASSIVE2_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE2_DESC is constant
-
-* type: string
-
-* value: "Passive2Desc"
-
-
-``TITAN_PASSIVE3_TYPE``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE3_TYPE is constant
-
-* type: string
-
-* value: "Passive3Type"
-
-
-``TITAN_PASSIVE3_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE3_NAME is constant
-
-* type: string
-
-* value: "Passive3Name"
-
-
-``TITAN_PASSIVE3_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE3_DESC is constant
-
-* type: string
-
-* value: "Passive3Desc"
-
-
-``TITAN_PASSIVE4_TYPE``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE4_TYPE is constant
-
-* type: string
-
-* value: "Passive4Type"
-
-
-``TITAN_PASSIVE4_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE4_NAME is constant
-
-* type: string
-
-* value: "Passive4Name"
-
-
-``TITAN_PASSIVE4_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE4_DESC is constant
-
-* type: string
-
-* value: "Passive4Desc"
-
-
-``TITAN_PASSIVE5_TYPE``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE5_TYPE is constant
-
-* type: string
-
-* value: "Passive5Type"
-
-
-``TITAN_PASSIVE5_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE5_NAME is constant
-
-* type: string
-
-* value: "Passive5Name"
-
-
-``TITAN_PASSIVE5_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE5_DESC is constant
-
-* type: string
-
-* value: "Passive5Desc"
-
-
-``TITAN_PASSIVE6_TYPE``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE6_TYPE is constant
-
-* type: string
-
-* value: "Passive6Type"
-
-
-``TITAN_PASSIVE6_NAME``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE6_NAME is constant
-
-* type: string
-
-* value: "Passive6Name"
-
-
-``TITAN_PASSIVE6_DESC``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_PASSIVE6_DESC is constant
-
-* type: string
-
-* value: "Passive6Desc"
-
-
-``TITAN_CORE_HINT``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_CORE_HINT is constant
-
-* type: string
-
-* value: "CoreHint"
-
-
-``TITAN_SPECIAL_HINT``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_SPECIAL_HINT is constant
-
-* type: string
-
-* value: "SpecialHint"
-
-
-``TITAN_ORDNANCE_HINT``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_ORDNANCE_HINT is constant
-
-* type: string
-
-* value: "OrdnanceHint"
-
-
-``TITAN_ANTIRODEO_HINT``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_ANTIRODEO_HINT is constant
-
-* type: string
-
-* value: "AntirodeoHint"
-
-
-``FDDifficultyInfo``
+* value:
+
+.. code-block:: javascript
+
+	{
+		[ eModSourceId.accelerator ]						= "#MOD_ACCELERATOR_NAME",
+		[ eModSourceId.afterburners ]						= "#MOD_AFTERBURNERS_NAME",
+		[ eModSourceId.arc_triple_threat ] 					= "#MOD_ARC_TRIPLE_THREAT_NAME",
+		[ eModSourceId.burn_mod_autopistol ] 				= "#BC_AUTOPISTOL_M2",
+		[ eModSourceId.burn_mod_car ] 						= "#BC_CAR_M2",
+		[ eModSourceId.burn_mod_defender ] 					= "#BC_DEFENDER_M2",
+		[ eModSourceId.burn_mod_dmr ] 						= "#BC_DMR_M2",
+		[ eModSourceId.burn_mod_emp_grenade ] 				= "#BC_EMP_GRENADE_M2",
+		[ eModSourceId.burn_mod_frag_grenade ] 				= "#BC_FRAG_GRENADE_M2",
+		[ eModSourceId.burn_mod_grenade_electric_smoke ] 	= "#BC_GRENADE_ELECTRIC_SMOKE_M2",
+		[ eModSourceId.burn_mod_grenade_gravity ] 			= "#BC_GRENADE_ELECTRIC_SMOKE_M2",
+		[ eModSourceId.burn_mod_thermite_grenade ] 			= "#BC_GRENADE_ELECTRIC_SMOKE_M2",
+		[ eModSourceId.burn_mod_g2 ] 						= "#BC_G2_M2",
+		[ eModSourceId.burn_mod_hemlok ] 					= "#BC_HEMLOK_M2",
+		[ eModSourceId.burn_mod_lmg ] 						= "#BC_LMG_M2",
+		[ eModSourceId.burn_mod_mgl ] 						= "#BC_MGL_M2",
+		[ eModSourceId.burn_mod_r97 ] 						= "#BC_R97_M2",
+		[ eModSourceId.burn_mod_rspn101 ] 					= "#BC_RSPN101_M2",
+		[ eModSourceId.burn_mod_satchel ] 					= "#BC_SATCHEL_M2",
+		[ eModSourceId.burn_mod_semipistol ] 				= "#BC_SEMIPISTOL_M2",
+		[ eModSourceId.burn_mod_smr ] 						= "#BC_SMR_M2",
+		[ eModSourceId.burn_mod_smart_pistol ] 				= "#BC_SMART_PISTOL_M2",
+		[ eModSourceId.burn_mod_sniper ] 					= "#BC_SNIPER_M2",
+		[ eModSourceId.burn_mod_rocket_launcher ] 			= "#BC_ROCKET_LAUNCHER_M2",
+		[ eModSourceId.burn_mod_titan_40mm ] 				= "#BC_TITAN_40MM_M2",
+		[ eModSourceId.burn_mod_titan_arc_cannon ] 			= "#BC_TITAN_ARC_CANNON_M2",
+		[ eModSourceId.burn_mod_titan_rocket_launcher ] 	= "#BC_TITAN_ROCKET_LAUNCHER_M2",
+		[ eModSourceId.burn_mod_titan_sniper ] 				= "#BC_TITAN_SNIPER_M2",
+		[ eModSourceId.burn_mod_titan_triple_threat ] 		= "#BC_TITAN_TRIPLE_THREAT_M2",
+		[ eModSourceId.burn_mod_titan_xo16 ]			 	= "#BC_TITAN_XO16_M2",
+		[ eModSourceId.burn_mod_titan_dumbfire_rockets ] 	= "#BC_TITAN_DUMBFIRE_MISSILE_M2",
+		[ eModSourceId.burn_mod_titan_homing_rockets ] 		= "#BC_TITAN_HOMING_ROCKETS_M2",
+		[ eModSourceId.burn_mod_titan_salvo_rockets ] 		= "#BC_TITAN_SALVO_ROCKETS_M2",
+		[ eModSourceId.burn_mod_titan_shoulder_rockets ] 	= "#BC_TITAN_SHOULDER_ROCKETS_M2",
+		[ eModSourceId.burn_mod_titan_vortex_shield ] 		= "#BC_TITAN_VORTEX_SHIELD_M2",
+		[ eModSourceId.burn_mod_titan_smoke ] 				= "#BC_TITAN_ELECTRIC_SMOKE_M2",
+		[ eModSourceId.burn_mod_titan_particle_wall ] 		= "#BC_TITAN_SHIELD_WALL_M2",
+		[ eModSourceId.burst ] 								= "#MOD_BURST_NAME",
+		[ eModSourceId.capacitor ] 							= "#MOD_CAPACITOR_NAME",
+		[ eModSourceId.enhanced_targeting ] 				= "#MOD_ENHANCED_TARGETING_NAME",
+		[ eModSourceId.extended_ammo ] 						= "#MOD_EXTENDED_MAG_NAME",
+		[ eModSourceId.fast_reload ] 						= "#MOD_FAST_RELOAD_NAME",
+		[ eModSourceId.instant_shot ]						= "#MOD_INSTANT_SHOT_NAME",
+		[ eModSourceId.overcharge ] 						= "#MOD_OVERCHARGE_NAME",
+		[ eModSourceId.quick_shot ]							= "#MOD_QUICK_SHOT_NAME",
+		[ eModSourceId.rapid_fire_missiles ] 				= "#MOD_RAPID_FIRE_MISSILES_NAME",
+		[ eModSourceId.burn_mod_shotgun ] 					= "#BC_SHOTGUN_M2",
+		[ eModSourceId.silencer ] 							= "#MOD_SILENCER_NAME",
+		[ eModSourceId.slammer ] 							= "#MOD_SLAMMER_NAME",
+		[ eModSourceId.spread_increase_ttt ]				= "#MOD_SPREAD_INCREASE_TTT_NAME",
+		[ eModSourceId.stabilizer ]							= "#MOD_STABILIZER_NAME",
+		[ eModSourceId.titanhammer ] 						= "#MOD_TITANHAMMER_NAME",
+		[ eModSourceId.burn_mod_wingman ]					= "#BC_WINGMAN_M2",
+		[ eModSourceId.burn_mod_lstar ]						= "#BC_LSTAR_M2",
+		[ eModSourceId.burn_mod_mastiff ]					= "#BC_MASTIFF_M2",
+		[ eModSourceId.burn_mod_vinson ]					= "#BC_VINSON_M2",
+		[ eModSourceId.ricochet ]							= "Ricochet",
+		[ eModSourceId.ar_trajectory ]						= "AR Trajectory",
+		[ eModSourceId.smart_lock ]							= "Smart Lock",
+		[ eModSourceId.pro_screen ]							= "Pro Screen",
+		[ eModSourceId.rocket_arena ]						= "Rocket Arena",
+	}
+
+
+``Frontline``
 ^^^^^^^^^^
 
 * type: struct
 
 
-``BURN_METER_SMALL_POINT_VALUE``
+``SyncedMelee``
+^^^^^^^^^^
+
+* type: struct
+
+
+``SyncedMeleeChooser``
+^^^^^^^^^^
+
+* type: struct
+
+
+``KNIFE_MODEL``
 ^^^^^^^^^^
 
 .. note::
 
-	BURN_METER_SMALL_POINT_VALUE is constant
+	``KNIFE_MODEL`` is constant
 
-* type: int
+* type: asset
 
-* value: 1
+* value: ``$"models/weapons/combat_knife/w_combat_knife.mdl"``
 
 
-``BURN_METER_MID_POINT_VALUE``
+``PULSE_BLADE_MODEL``
 ^^^^^^^^^^
 
 .. note::
 
-	BURN_METER_MID_POINT_VALUE is constant
+	``PULSE_BLADE_MODEL`` is constant
 
-* type: int
+* type: asset
 
-* value: 2
+* value: ``$"models/weapons/kunai/w_kunai.mdl"``
 
 
-``BURN_METER_LARGE_POINT_VALUE``
+``WINGMAN_MODEL``
 ^^^^^^^^^^
 
 .. note::
 
-	BURN_METER_LARGE_POINT_VALUE is constant
+	``WINGMAN_MODEL`` is constant
 
-* type: int
+* type: asset
 
-* value: 5
+* value: ``$"models/weapons/b3wing/w_b3wing.mdl"``
 
 
-``BURN_METER_EXTRA_LARGE_POINT_VALUE``
+``AWALL_MODEL``
 ^^^^^^^^^^
 
 .. note::
 
-	BURN_METER_EXTRA_LARGE_POINT_VALUE is constant
+	``AWALL_MODEL`` is constant
 
-* type: int
+* type: asset
 
-* value: 10
+* value: ``$"models/weapons/sentry_shield/sentry_shield_proj.mdl"``
 
 
-``BURN_METER_RADAR_JAMMER_PULSE_DURATION``
+``REVIVE_ENABLED``
 ^^^^^^^^^^
 
 .. note::
 
-	BURN_METER_RADAR_JAMMER_PULSE_DURATION is constant
+	``REVIVE_ENABLED`` is constant
 
-* type: float
+* type: bool
 
-* value: 6.0
+* value: ``false``
 
 
-``BURN_METER_RADAR_JAMMER_EASE_OFF_TIME``
+``PILOT_GHOST_MODEL``
 ^^^^^^^^^^
 
 .. note::
 
-	BURN_METER_RADAR_JAMMER_EASE_OFF_TIME is constant
+	``PILOT_GHOST_MODEL`` is constant
 
-* type: float
+* type: asset
 
-* value: 1.0
+* value: ``$"models/humans/heroes/mlt_hero_jack.mdl"``
 
 
-``eBurnMeterRewardAvailableFor``
+``PILOT_GHOST_WEAPON_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``PILOT_GHOST_WEAPON_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/weapons/rspn101/w_rspn101.mdl"``
+
+
+``GHOST_FLASH_EFFECT``
+^^^^^^^^^^
+
+.. note::
+
+	``GHOST_FLASH_EFFECT`` is constant
+
+* type: asset
+
+* value: ``$"P_ar_holopilot_flash"``
+
+
+``GHOST_TRAIL_EFFECT``
+^^^^^^^^^^
+
+.. note::
+
+	``GHOST_TRAIL_EFFECT`` is constant
+
+* type: asset
+
+* value: ``$"P_ar_holopilot_trail"``
+
+
+``LeechActionInfo``
+^^^^^^^^^^
+
+* type: struct
+
+
+``LeechData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``eRodeoDirection``
 ^^^^^^^^^^
 
 * type: enum
 
 
-``BurnReward``
+``RODEO_DRAIN_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``RODEO_DRAIN_TIME`` is constant
+
+* type: float
+
+* value: ``10.0``
+
+
+``OFFER_RODEO_BATTERY_COOLDOWN``
+^^^^^^^^^^
+
+.. note::
+
+	``OFFER_RODEO_BATTERY_COOLDOWN`` is constant
+
+* type: float
+
+* value: ``5.0``
+
+
+``REQUEST_RODEO_BATTERY_COOLDOWN``
+^^^^^^^^^^
+
+.. note::
+
+	``REQUEST_RODEO_BATTERY_COOLDOWN`` is constant
+
+* type: float
+
+* value: ``10.0``
+
+
+``REQUEST_RODEO_BATTERY_HINT_COOLDOWN``
+^^^^^^^^^^
+
+.. note::
+
+	``REQUEST_RODEO_BATTERY_HINT_COOLDOWN`` is constant
+
+* type: float
+
+* value: ``30.0``
+
+
+``REQUEST_RODEO_BATTERY_SHOW_ICON_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``REQUEST_RODEO_BATTERY_SHOW_ICON_TIME`` is constant
+
+* type: float
+
+* value: ``30.0``
+
+
+``REQUEST_RODEO_BATTERY_HEALTH_PERCENTAGE_THRESHOLD``
+^^^^^^^^^^
+
+.. note::
+
+	``REQUEST_RODEO_BATTERY_HEALTH_PERCENTAGE_THRESHOLD`` is constant
+
+* type: float
+
+* value: ``0.8``
+
+
+``eRodeoPositions``
+^^^^^^^^^^
+
+* type: enum
+
+
+``eRodeoClamberDirection``
+^^^^^^^^^^
+
+* type: enum
+
+
+``RODEO_BATTERY_THIEF_ICON_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``RODEO_BATTERY_THIEF_ICON_DURATION`` is constant
+
+* type: float
+
+* value: ``10.0``
+
+
+``SENTRY_TURRET_PLACEMENT_RANGE``
+^^^^^^^^^^
+
+.. note::
+
+	``SENTRY_TURRET_PLACEMENT_RANGE`` is constant
+
+* type: int
+
+* value: ``75``
+
+
+``SentryTurretPlacementInfo``
 ^^^^^^^^^^
 
 * type: struct
 
 
-``BurnStruct``
+``GRENADE_INDICATOR_ARROW_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``GRENADE_INDICATOR_ARROW_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/hud/grenade_indicator/grenade_indicator_arrow.mdl"``
+
+
+``GRENADE_INDICATOR_FRAG_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``GRENADE_INDICATOR_FRAG_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/hud/grenade_indicator/grenade_indicator_frag.mdl"``
+
+
+``GRENADE_INDICATOR_SONAR_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``GRENADE_INDICATOR_SONAR_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/hud/grenade_indicator/grenade_indicator_sonar.mdl"``
+
+
+``GRENADE_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``GRENADE_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/weapons/grenades/m20_f_grenade.mdl"``
+
+
+``DAMAGEARROW_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``DAMAGEARROW_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/weapons/bullets/damage_arrow.mdl"``
+
+
+``damageTypes``
+^^^^^^^^^^
+
+* type: enum
+
+
+``GENERIC_PILOT``
+^^^^^^^^^^
+
+.. note::
+
+	``GENERIC_PILOT`` is constant
+
+* type: int
+
+* value: ``0``
+
+
+``BLISK_ID``
+^^^^^^^^^^
+
+.. note::
+
+	``BLISK_ID`` is constant
+
+* type: int
+
+* value: ``1``
+
+
+``SPYGLASS_ID``
+^^^^^^^^^^
+
+.. note::
+
+	``SPYGLASS_ID`` is constant
+
+* type: int
+
+* value: ``2``
+
+
+``GRAVES_ID``
+^^^^^^^^^^
+
+.. note::
+
+	``GRAVES_ID`` is constant
+
+* type: int
+
+* value: ``3``
+
+
+``ConversationStruct``
 ^^^^^^^^^^
 
 * type: struct
 
 
-``burn``
+``CLASSIC_MP_SKYSHOW_DOGFIGHTS_DELAY``
 ^^^^^^^^^^
 
-* type: BurnStruct
+.. note::
+
+	``CLASSIC_MP_SKYSHOW_DOGFIGHTS_DELAY`` is constant
+
+* type: float
+
+* value: ``75.0``
 
 
-``burnMeterCanUseFuncTable``
+``DROP_MIN_X``
 ^^^^^^^^^^
 
-* type: table<string,boolfunctionref(entity)>
+.. note::
+
+	``DROP_MIN_X`` is constant
+
+* type: float
+
+* value: ``0.0``
 
 
-``CustomMatchSettingContainer``
+``ANALYSIS_STEPS``
+^^^^^^^^^^
+
+.. note::
+
+	``ANALYSIS_STEPS`` is constant
+
+* type: int
+
+* value: ``8``
+
+
+``ANALYSIS_YAW_STEP``
+^^^^^^^^^^
+
+.. note::
+
+	``ANALYSIS_YAW_STEP`` is constant
+
+* type: unknown
+
+* value: ``360.0 / ANALYSIS_STEPS``
+
+
+``FIRST_ONLY``
+^^^^^^^^^^
+
+.. note::
+
+	``FIRST_ONLY`` is constant
+
+* type: bool
+
+* value: ``false``
+
+
+``SPAWNPOINT_USE_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``SPAWNPOINT_USE_TIME`` is constant
+
+* type: float
+
+* value: ``10.0``
+
+
+``MAX_ANALYSIS_COUNT``
+^^^^^^^^^^
+
+.. note::
+
+	``MAX_ANALYSIS_COUNT`` is constant
+
+* type: int
+
+* value: ``64``
+
+
+``DESCRIPTION_MULTIPLIER``
+^^^^^^^^^^
+
+.. note::
+
+	``DESCRIPTION_MULTIPLIER`` is constant
+
+* type: float
+
+* value: ``0.0006``
+
+
+``DROPSHIP_VERTICAL``
+^^^^^^^^^^
+
+.. note::
+
+	``DROPSHIP_VERTICAL`` is constant
+
+* type: string
+
+* value: ``"dropship_flyer_attack_vertical_successful"``
+
+
+``DROPSHIP_STRAFE``
+^^^^^^^^^^
+
+.. note::
+
+	``DROPSHIP_STRAFE`` is constant
+
+* type: string
+
+* value: ``"gd_goblin_zipline_strafe"``
+
+
+``DROPSHIP_FLYER_ATTACK_ANIM``
+^^^^^^^^^^
+
+.. note::
+
+	``DROPSHIP_FLYER_ATTACK_ANIM`` is constant
+
+* type: string
+
+* value: ``"dropship_flyer_attack"``
+
+
+``DROPSHIP_FLYER_ATTACK_ANIM_VERTICAL``
+^^^^^^^^^^
+
+.. note::
+
+	``DROPSHIP_FLYER_ATTACK_ANIM_VERTICAL`` is constant
+
+* type: string
+
+* value: ``"dropship_flyer_attack_vertical"``
+
+
+``DROPSHIP_DROP_ANIM``
+^^^^^^^^^^
+
+.. note::
+
+	``DROPSHIP_DROP_ANIM`` is constant
+
+* type: string
+
+* value: ``"gd_goblin_zipline_strafe"``
+
+
+``DROPSHIP_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``DROPSHIP_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/vehicle/goblin_dropship/goblin_dropship.mdl"``
+
+
+``STRATON_FLIGHT_ANIM``
+^^^^^^^^^^
+
+.. note::
+
+	``STRATON_FLIGHT_ANIM`` is constant
+
+* type: string
+
+* value: ``"st_gunship_dogfight_C"``
+
+
+``STRATON_DOGFIGHT_ANIM1``
+^^^^^^^^^^
+
+.. note::
+
+	``STRATON_DOGFIGHT_ANIM1`` is constant
+
+* type: string
+
+* value: ``"st_Dogfight_Target_1"``
+
+
+``STRATON_DOGFIGHT_ANIM2``
+^^^^^^^^^^
+
+.. note::
+
+	``STRATON_DOGFIGHT_ANIM2`` is constant
+
+* type: string
+
+* value: ``"st_Dogfight_Target_2"``
+
+
+``STRATON_DOGFIGHT_ANIM3``
+^^^^^^^^^^
+
+.. note::
+
+	``STRATON_DOGFIGHT_ANIM3`` is constant
+
+* type: string
+
+* value: ``"st_Dogfight_Target_3"``
+
+
+``STRATON_DOGFIGHT_ANIM1_PERSUER``
+^^^^^^^^^^
+
+.. note::
+
+	``STRATON_DOGFIGHT_ANIM1_PERSUER`` is constant
+
+* type: string
+
+* value: ``"st_Dogfight_Persuer_1"``
+
+
+``STRATON_DOGFIGHT_ANIM2_PERSUER``
+^^^^^^^^^^
+
+.. note::
+
+	``STRATON_DOGFIGHT_ANIM2_PERSUER`` is constant
+
+* type: string
+
+* value: ``"st_Dogfight_Persuer_2"``
+
+
+``STRATON_DOGFIGHT_ANIM3_PERSUER``
+^^^^^^^^^^
+
+.. note::
+
+	``STRATON_DOGFIGHT_ANIM3_PERSUER`` is constant
+
+* type: string
+
+* value: ``"st_Dogfight_Persuer_3"``
+
+
+``STRATON_ATTACK_FULL``
+^^^^^^^^^^
+
+.. note::
+
+	``STRATON_ATTACK_FULL`` is constant
+
+* type: string
+
+* value: ``"st_AngelCity_IMC_Win_Full"``
+
+
+``FX_HORNET_DEATH``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_HORNET_DEATH`` is constant
+
+* type: asset
+
+* value: ``$"P_veh_exp_hornet_HS"``
+
+
+``HOTDROP_TURBO_ANIM``
+^^^^^^^^^^
+
+.. note::
+
+	``HOTDROP_TURBO_ANIM`` is constant
+
+* type: string
+
+* value: ``"at_hotdrop_drop_2knee_turbo"``
+
+
+``TURBO_WARP_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``TURBO_WARP_FX`` is constant
+
+* type: asset
+
+* value: ``$"P_warp_in_atlas"``
+
+
+``TURBO_WARP_COMPANY``
+^^^^^^^^^^
+
+.. note::
+
+	``TURBO_WARP_COMPANY`` is constant
+
+* type: asset
+
+* value: ``$"hotdrop_hld_warp"``
+
+
+``FX_GUNSHIP_CRASH_EXPLOSION``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_GUNSHIP_CRASH_EXPLOSION`` is constant
+
+* type: asset
+
+* value: ``$"droppod_impact_black"``
+
+
+``FX_GUNSHIP_CRASH_EXPLOSION_ENTRANCE``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_GUNSHIP_CRASH_EXPLOSION_ENTRANCE`` is constant
+
+* type: asset
+
+* value: ``$"veh_gunship_warp_FULL"``
+
+
+``FX_GUNSHIP_CRASH_EXPLOSION_EXIT``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_GUNSHIP_CRASH_EXPLOSION_EXIT`` is constant
+
+* type: asset
+
+* value: ``$"veh_gunship_warp_OUT_FULL"``
+
+
+``NodeFP``
+^^^^^^^^^^
+
+* type: struct
+
+
+``DropTable``
+^^^^^^^^^^
+
+* type: struct
+
+
+``CallinData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``SpawnPointFP``
+^^^^^^^^^^
+
+* type: struct
+
+
+``AttachPoint``
+^^^^^^^^^^
+
+* type: struct
+
+
+``NullNodeFP``
+^^^^^^^^^^
+
+* type: NodeFP
+
+
+``nodeFPOrNull``
+^^^^^^^^^^
+
+* type: typedef
+
+
+``FlightPath``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ANALYSIS_PREVIEW_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``ANALYSIS_PREVIEW_TIME`` is constant
+
+* type: float
+
+* value: ``5.0``
+
+
+``FLYER_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``FLYER_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/Creatures/flyer/r2_flyer.mdl"``
+
+
+``FlyerAnim``
+^^^^^^^^^^
+
+* type: struct
+
+
+``HIGHLIGHT_COLOR_NEUTRAL``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_COLOR_NEUTRAL`` is constant
+
+* type: vector
+
+* value: ``<1.0,1.0,1.0>``
+
+
+``HIGHLIGHT_COLOR_FRIENDLY``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_COLOR_FRIENDLY`` is constant
+
+* type: vector
+
+* value: ``<0.34,0.59,0.86>``
+
+
+``HIGHLIGHT_COLOR_ENEMY``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_COLOR_ENEMY`` is constant
+
+* type: vector
+
+* value: ``<1.0,0.36,0.12>``
+
+
+``HIGHLIGHT_COLOR_INTERACT``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_COLOR_INTERACT`` is constant
+
+* type: vector
+
+* value: ``<0.63,0.80,1.0>``
+
+
+``HIGHLIGHT_COLOR_OBJECTIVE``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_COLOR_OBJECTIVE`` is constant
+
+* type: vector
+
+* value: ``<0.90,0.63,0.09>``
+
+
+``HIGHLIGHT_OUTLINE_WEAPON_PICKUP``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_OUTLINE_WEAPON_PICKUP`` is constant
+
+* type: int
+
+* value: ``104``
+
+
+``HIGHLIGHT_OUTLINE_INTERACT_BUTTON``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_OUTLINE_INTERACT_BUTTON`` is constant
+
+* type: int
+
+* value: ``105``
+
+
+``HIGHLIGHT_OUTLINE_BOSS_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_OUTLINE_BOSS_TITAN`` is constant
+
+* type: int
+
+* value: ``108``
+
+
+``HIGHLIGHT_OUTLINE_OBJECTIVE``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_OUTLINE_OBJECTIVE`` is constant
+
+* type: int
+
+* value: ``125``
+
+
+``HIGHLIGHT_FILL_OBJECTIVE``
+^^^^^^^^^^
+
+.. note::
+
+	``HIGHLIGHT_FILL_OBJECTIVE`` is constant
+
+* type: int
+
+* value: ``126``
+
+
+``MAP_SCAN_FADE_DISTANCE``
+^^^^^^^^^^
+
+.. note::
+
+	``MAP_SCAN_FADE_DISTANCE`` is constant
+
+* type: int
+
+* value: ``16000``
+
+
+``MFD_MINIMAP_FRIENDLY_MATERIAL``
+^^^^^^^^^^
+
+.. note::
+
+	``MFD_MINIMAP_FRIENDLY_MATERIAL`` is constant
+
+* type: asset
+
+* value: ``$"vgui/HUD/minimap_mfd_friendly"``
+
+
+``MFD_MINIMAP_PENDING_MARK_FRIENDLY_MATERIAL``
+^^^^^^^^^^
+
+.. note::
+
+	``MFD_MINIMAP_PENDING_MARK_FRIENDLY_MATERIAL`` is constant
+
+* type: asset
+
+* value: ``$"vgui/HUD/minimap_mfd_pre_friendly"``
+
+
+``MFD_MINIMAP_ENEMY_MATERIAL``
+^^^^^^^^^^
+
+.. note::
+
+	``MFD_MINIMAP_ENEMY_MATERIAL`` is constant
+
+* type: asset
+
+* value: ``$"vgui/HUD/minimap_mfd_enemy"``
+
+
+``eMinimapObject_info_hardpoint``
+^^^^^^^^^^
+
+* type: enum
+
+
+``eMinimapObject_prop_script``
+^^^^^^^^^^
+
+* type: enum
+
+
+``eMinimapObject_npc``
+^^^^^^^^^^
+
+* type: enum
+
+
+``eMinimapObject_npc_titan``
+^^^^^^^^^^
+
+* type: enum
+
+
+``MARKER_TOWERDEFENSEGENERATOR``
+^^^^^^^^^^
+
+.. note::
+
+	``MARKER_TOWERDEFENSEGENERATOR`` is constant
+
+* type: string
+
+* value: ``"TowerDefenseGeneratorEnt"``
+
+
+``MARKER_ENT_CLASSNAME``
+^^^^^^^^^^
+
+.. note::
+
+	``MARKER_ENT_CLASSNAME`` is constant
+
+* type: string
+
+* value: ``"script_ref"``
+
+
+``MARKET_ENT_MARKED_NAME``
+^^^^^^^^^^
+
+.. note::
+
+	``MARKET_ENT_MARKED_NAME`` is constant
+
+* type: string
+
+* value: ``"mfd_marked"``
+
+
+``MARKET_ENT_PENDING_MARKED_NAME``
+^^^^^^^^^^
+
+.. note::
+
+	``MARKET_ENT_PENDING_MARKED_NAME`` is constant
+
+* type: string
+
+* value: ``"mfd_pending_marked"``
+
+
+``EARN_REF_COLUMN_NAME``
+^^^^^^^^^^
+
+.. note::
+
+	``EARN_REF_COLUMN_NAME`` is constant
+
+* type: string
+
+* value: ``"itemRef"``
+
+
+``EARN_TYPE_COLUMN_NAME``
+^^^^^^^^^^
+
+.. note::
+
+	``EARN_TYPE_COLUMN_NAME`` is constant
+
+* type: string
+
+* value: ``"earnType"``
+
+
+``EARN_BUILDING_IMAGE_COLUMN_NAME``
+^^^^^^^^^^
+
+.. note::
+
+	``EARN_BUILDING_IMAGE_COLUMN_NAME`` is constant
+
+* type: string
+
+* value: ``"buildingImage"``
+
+
+``EARN_READY_IMAGE_COLUMN_NAME``
+^^^^^^^^^^
+
+.. note::
+
+	``EARN_READY_IMAGE_COLUMN_NAME`` is constant
+
+* type: string
+
+* value: ``"readyImage"``
+
+
+``EARN_NAME_COLUMN_NAME``
+^^^^^^^^^^
+
+.. note::
+
+	``EARN_NAME_COLUMN_NAME`` is constant
+
+* type: string
+
+* value: ``"nameText"``
+
+
+``EARNMETER_HOLDTIME``
+^^^^^^^^^^
+
+.. note::
+
+	``EARNMETER_HOLDTIME`` is constant
+
+* type: float
+
+* value: ``10.0``
+
+
+``CORE_SMOKE_FRAC``
+^^^^^^^^^^
+
+.. note::
+
+	``CORE_SMOKE_FRAC`` is constant
+
+* type: float
+
+* value: ``0.20``
+
+
+``CORE_SMOKE_WEAPON``
+^^^^^^^^^^
+
+.. note::
+
+	``CORE_SMOKE_WEAPON`` is constant
+
+* type: string
+
+* value: ``"mp_titanability_electric_smoke"``
+
+
+``eEarnMeterMode``
+^^^^^^^^^^
+
+* type: enum
+
+
+``eRewardState``
+^^^^^^^^^^
+
+* type: enum
+
+
+``EarnObject``
+^^^^^^^^^^
+
+* type: struct
+
+
+``EarnStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``earn``
+^^^^^^^^^^
+
+* type: EarnStruct
+
+
+``TITAN_EJECT_SCREECH``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_EJECT_SCREECH`` is constant
+
+* type: string
+
+* value: ``"titan_eject_screech"``
+
+
+``TITAN_DECAY_LIMIT``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_DECAY_LIMIT`` is constant
+
+* type: float
+
+* value: ``0.35``
+
+
+``TITAN_NUCLEAR_CORE_FX_3P``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_NUCLEAR_CORE_FX_3P`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_exp_nuke_3P_alt"``
+
+
+``TITAN_NUCLEAR_CORE_FX_1P``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_NUCLEAR_CORE_FX_1P`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_exp_nuke_1P_alt"``
+
+
+``TITAN_NUCLEAR_CORE_NUKE_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_NUCLEAR_CORE_NUKE_FX`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_nuke_warn_flare"``
+
+
+``eCockpitState``
+^^^^^^^^^^
+
+* type: enum
+
+
+``ION_ENERGY_REGEN_INTERVAL``
+^^^^^^^^^^
+
+.. note::
+
+	``ION_ENERGY_REGEN_INTERVAL`` is constant
+
+* type: float
+
+* value: ``0.1``
+
+
+``ION_ENERGY_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``ION_ENERGY_MAX`` is constant
+
+* type: int
+
+* value: ``1000``
+
+
+``DEFAULT_ARC_CANNON_FOVDOT``
+^^^^^^^^^^
+
+.. note::
+
+	``DEFAULT_ARC_CANNON_FOVDOT`` is constant
+
+* type: float
+
+* value: ``0.98``
+
+
+``DEFAULT_ARC_CANNON_FOVDOT_MISSILE``
+^^^^^^^^^^
+
+.. note::
+
+	``DEFAULT_ARC_CANNON_FOVDOT_MISSILE`` is constant
+
+* type: float
+
+* value: ``0.95``
+
+
+``ARC_CANNON_RANGE_CHAIN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_RANGE_CHAIN`` is constant
+
+* type: int
+
+* value: ``400``
+
+
+``ARC_CANNON_TITAN_RANGE_CHAIN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_TITAN_RANGE_CHAIN`` is constant
+
+* type: int
+
+* value: ``900``
+
+
+``ARC_CANNON_CHAIN_COUNT_MIN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_CHAIN_COUNT_MIN`` is constant
+
+* type: int
+
+* value: ``5``
+
+
+``ARC_CANNON_CHAIN_COUNT_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_CHAIN_COUNT_MAX`` is constant
+
+* type: int
+
+* value: ``5``
+
+
+``ARC_CANNON_CHAIN_COUNT_NPC``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_CHAIN_COUNT_NPC`` is constant
+
+* type: int
+
+* value: ``2``
+
+
+``ARC_CANNON_FORK_COUNT_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_FORK_COUNT_MAX`` is constant
+
+* type: int
+
+* value: ``1``
+
+
+``ARC_CANNON_FORK_DELAY``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_FORK_DELAY`` is constant
+
+* type: float
+
+* value: ``0.1``
+
+
+``ARC_CANNON_RANGE_CHAIN_BURN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_RANGE_CHAIN_BURN`` is constant
+
+* type: int
+
+* value: ``400``
+
+
+``ARC_CANNON_TITAN_RANGE_CHAIN_BURN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_TITAN_RANGE_CHAIN_BURN`` is constant
+
+* type: int
+
+* value: ``900``
+
+
+``ARC_CANNON_CHAIN_COUNT_MIN_BURN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_CHAIN_COUNT_MIN_BURN`` is constant
+
+* type: int
+
+* value: ``100``
+
+
+``ARC_CANNON_CHAIN_COUNT_MAX_BURN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_CHAIN_COUNT_MAX_BURN`` is constant
+
+* type: int
+
+* value: ``100``
+
+
+``ARC_CANNON_CHAIN_COUNT_NPC_BURN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_CHAIN_COUNT_NPC_BURN`` is constant
+
+* type: int
+
+* value: ``10``
+
+
+``ARC_CANNON_FORK_COUNT_MAX_BURN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_FORK_COUNT_MAX_BURN`` is constant
+
+* type: int
+
+* value: ``10``
+
+
+``ARC_CANNON_BEAM_LIFETIME_BURN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BEAM_LIFETIME_BURN`` is constant
+
+* type: int
+
+* value: ``1``
+
+
+``ARC_CANNON_BOLT_RADIUS_MIN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BOLT_RADIUS_MIN`` is constant
+
+* type: int
+
+* value: ``32``
+
+
+``ARC_CANNON_BOLT_RADIUS_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BOLT_RADIUS_MAX`` is constant
+
+* type: int
+
+* value: ``640``
+
+
+``ARC_CANNON_BOLT_WIDTH_MIN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BOLT_WIDTH_MIN`` is constant
+
+* type: int
+
+* value: ``1``
+
+
+``ARC_CANNON_BOLT_WIDTH_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BOLT_WIDTH_MAX`` is constant
+
+* type: int
+
+* value: ``26``
+
+
+``ARC_CANNON_BOLT_WIDTH_NPC``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BOLT_WIDTH_NPC`` is constant
+
+* type: int
+
+* value: ``8``
+
+
+``ARC_CANNON_BEAM_COLOR``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BEAM_COLOR`` is constant
+
+* type: string
+
+* value: ``"150 190 255"``
+
+
+``ARC_CANNON_BEAM_LIFETIME``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BEAM_LIFETIME`` is constant
+
+* type: float
+
+* value: ``0.75``
+
+
+``ARC_CANNON_TITAN_SCREEN_SFX``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_TITAN_SCREEN_SFX`` is constant
+
+* type: string
+
+* value: ``"Null_Remove_SoundHook"``
+
+
+``ARC_CANNON_PILOT_SCREEN_SFX``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_PILOT_SCREEN_SFX`` is constant
+
+* type: string
+
+* value: ``"Null_Remove_SoundHook"``
+
+
+``ARC_CANNON_EMP_DURATION_MIN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_EMP_DURATION_MIN`` is constant
+
+* type: float
+
+* value: ``0.1``
+
+
+``ARC_CANNON_EMP_DURATION_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_EMP_DURATION_MAX`` is constant
+
+* type: float
+
+* value: ``1.8``
+
+
+``ARC_CANNON_EMP_FADEOUT_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_EMP_FADEOUT_DURATION`` is constant
+
+* type: float
+
+* value: ``0.4``
+
+
+``ARC_CANNON_SCREEN_EFFECTS_MIN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_SCREEN_EFFECTS_MIN`` is constant
+
+* type: float
+
+* value: ``0.01``
+
+
+``ARC_CANNON_SCREEN_EFFECTS_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_SCREEN_EFFECTS_MAX`` is constant
+
+* type: float
+
+* value: ``0.02``
+
+
+``ARC_CANNON_SCREEN_THRESHOLD``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_SCREEN_THRESHOLD`` is constant
+
+* type: float
+
+* value: ``0.3385``
+
+
+``ARC_CANNON_3RD_PERSON_EFFECT_MIN_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_3RD_PERSON_EFFECT_MIN_DURATION`` is constant
+
+* type: float
+
+* value: ``0.2``
+
+
+``ARC_CANNON_DAMAGE_FALLOFF_SCALER``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_DAMAGE_FALLOFF_SCALER`` is constant
+
+* type: float
+
+* value: ``0.75``
+
+
+``ARC_CANNON_DAMAGE_CHARGE_RATIO``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_DAMAGE_CHARGE_RATIO`` is constant
+
+* type: float
+
+* value: ``0.85``
+
+
+``ARC_CANNON_DAMAGE_CHARGE_RATIO_BURN``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_DAMAGE_CHARGE_RATIO_BURN`` is constant
+
+* type: float
+
+* value: ``0.676``
+
+
+``ARC_CANNON_CAPACITOR_CHARGE_RATIO``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_CAPACITOR_CHARGE_RATIO`` is constant
+
+* type: float
+
+* value: ``1.0``
+
+
+``ARC_CANNON_TARGETS_MISSILES``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_TARGETS_MISSILES`` is constant
+
+* type: int
+
+* value: ``1``
+
+
+``OVERCHARGE_MAX_SHIELD_DECAY``
+^^^^^^^^^^
+
+.. note::
+
+	``OVERCHARGE_MAX_SHIELD_DECAY`` is constant
+
+* type: float
+
+* value: ``0.2``
+
+
+``OVERCHARGE_SHIELD_DECAY_MULTIPLIER``
+^^^^^^^^^^
+
+.. note::
+
+	``OVERCHARGE_SHIELD_DECAY_MULTIPLIER`` is constant
+
+* type: float
+
+* value: ``0.04``
+
+
+``OVERCHARGE_BONUS_CHARGE_FRACTION``
+^^^^^^^^^^
+
+.. note::
+
+	``OVERCHARGE_BONUS_CHARGE_FRACTION`` is constant
+
+* type: float
+
+* value: ``0.05``
+
+
+``SPLITTER_DAMAGE_FALLOFF_SCALER``
+^^^^^^^^^^
+
+.. note::
+
+	``SPLITTER_DAMAGE_FALLOFF_SCALER`` is constant
+
+* type: float
+
+* value: ``0.6``
+
+
+``SPLITTER_FORK_COUNT_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``SPLITTER_FORK_COUNT_MAX`` is constant
+
+* type: int
+
+* value: ``10``
+
+
+``ARC_CANNON_SIGNAL_DEACTIVATED``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_SIGNAL_DEACTIVATED`` is constant
+
+* type: string
+
+* value: ``"ArcCannonDeactivated"``
+
+
+``ARC_CANNON_SIGNAL_CHARGEEND``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_SIGNAL_CHARGEEND`` is constant
+
+* type: string
+
+* value: ``"ArcCannonChargeEnd"``
+
+
+``ARC_CANNON_BEAM_EFFECT``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BEAM_EFFECT`` is constant
+
+* type: asset
+
+* value: ``$"wpn_arc_cannon_beam"``
+
+
+``ARC_CANNON_BEAM_EFFECT_MOD``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_BEAM_EFFECT_MOD`` is constant
+
+* type: asset
+
+* value: ``$"wpn_arc_cannon_beam_mod"``
+
+
+``ARC_CANNON_FX_TABLE``
+^^^^^^^^^^
+
+.. note::
+
+	``ARC_CANNON_FX_TABLE`` is constant
+
+* type: string
+
+* value: ``"exp_arc_cannon"``
+
+
+``ArcCannonTargetClassnames``
+^^^^^^^^^^
+
+.. note::
+
+	``ArcCannonTargetClassnames`` is constant
+
+* type: table
+
+* value:
+
+.. code-block:: javascript
+
+	{
+		[ "npc_drone" ] 			= true,
+		[ "npc_dropship" ] 			= true,
+		[ "npc_marvin" ] 			= true,
+		[ "npc_prowler" ]			= true,
+		[ "npc_soldier" ] 			= true,
+		[ "npc_soldier_heavy" ] 	= true,
+		[ "npc_soldier_shield" ]	= true,
+		[ "npc_spectre" ] 			= true,
+		[ "npc_stalker" ] 			= true,
+		[ "npc_super_spectre" ]		= true,
+		[ "npc_titan" ] 			= true,
+		[ "npc_turret_floor" ] 		= true,
+		[ "npc_turret_mega" ]		= true,
+		[ "npc_turret_sentry" ] 	= true,
+		[ "npc_frag_drone" ] 		= true,
+		[ "player" ] 				= true,
+		[ "prop_dynamic" ] 			= true,
+		[ "prop_script" ] 			= true,
+		[ "grenade_frag" ] 			= true,
+		[ "rpg_missile" ] 			= true,
+		[ "script_mover" ] 			= true,
+		[ "turret" ] 				= true,
+	}
+
+
+``DEFAULT_MAX_COOK_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``DEFAULT_MAX_COOK_TIME`` is constant
+
+* type: float
+
+* value: ``99999.9``
+
+
+``PROXIMITY_MINE_EXPLOSION_DELAY``
+^^^^^^^^^^
+
+.. note::
+
+	``PROXIMITY_MINE_EXPLOSION_DELAY`` is constant
+
+* type: float
+
+* value: ``1.2``
+
+
+``PROXIMITY_MINE_ARMING_DELAY``
+^^^^^^^^^^
+
+.. note::
+
+	``PROXIMITY_MINE_ARMING_DELAY`` is constant
+
+* type: float
+
+* value: ``1.0``
+
+
+``THERMITE_GRENADE_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``THERMITE_GRENADE_FX`` is constant
+
+* type: asset
+
+* value: ``$"P_grenade_thermite"``
+
+
+``CLUSTER_BASE_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``CLUSTER_BASE_FX`` is constant
+
+* type: asset
+
+* value: ``$"P_wpn_meteor_exp"``
+
+
+``ProximityTargetClassnames``
+^^^^^^^^^^
+
+.. note::
+
+	``ProximityTargetClassnames`` is constant
+
+* type: table
+
+* value:
+
+.. code-block:: javascript
+
+	{
+		[ "npc_soldier_shield" ]	= true,
+		[ "npc_soldier_heavy" ] 	= true,
+		[ "npc_soldier" ] 			= true,
+		[ "npc_spectre" ] 			= true,
+		[ "npc_drone" ] 			= true,
+		[ "npc_titan" ] 			= true,
+		[ "npc_marvin" ] 			= true,
+		[ "player" ] 				= true,
+		[ "npc_turret_mega" ]		= true,
+		[ "npc_turret_sentry" ]		= true,
+		[ "npc_dropship" ]			= true,
+	}
+
+
+``PROTO_AMPED_WALL``
+^^^^^^^^^^
+
+.. note::
+
+	``PROTO_AMPED_WALL`` is constant
+
+* type: string
+
+* value: ``"proto_amped_wall"``
+
+
+``GUN_SHIELD_WALL``
+^^^^^^^^^^
+
+.. note::
+
+	``GUN_SHIELD_WALL`` is constant
+
+* type: string
+
+* value: ``"gun_shield_wall"``
+
+
+``VORTEX_REFIRE_NONE``
+^^^^^^^^^^
+
+.. note::
+
+	``VORTEX_REFIRE_NONE`` is constant
+
+* type: string
+
+* value: ``""``
+
+
+``VORTEX_REFIRE_ABSORB``
+^^^^^^^^^^
+
+.. note::
+
+	``VORTEX_REFIRE_ABSORB`` is constant
+
+* type: string
+
+* value: ``"absorb"``
+
+
+``VORTEX_REFIRE_BULLET``
+^^^^^^^^^^
+
+.. note::
+
+	``VORTEX_REFIRE_BULLET`` is constant
+
+* type: string
+
+* value: ``"bullet"``
+
+
+``VORTEX_REFIRE_EXPLOSIVE_ROUND``
+^^^^^^^^^^
+
+.. note::
+
+	``VORTEX_REFIRE_EXPLOSIVE_ROUND`` is constant
+
+* type: string
+
+* value: ``"explosive_round"``
+
+
+``VORTEX_REFIRE_ROCKET``
+^^^^^^^^^^
+
+.. note::
+
+	``VORTEX_REFIRE_ROCKET`` is constant
+
+* type: string
+
+* value: ``"rocket"``
+
+
+``VORTEX_REFIRE_GRENADE``
+^^^^^^^^^^
+
+.. note::
+
+	``VORTEX_REFIRE_GRENADE`` is constant
+
+* type: string
+
+* value: ``"grenade"``
+
+
+``VORTEX_REFIRE_GRENADE_LONG_FUSE``
+^^^^^^^^^^
+
+.. note::
+
+	``VORTEX_REFIRE_GRENADE_LONG_FUSE`` is constant
+
+* type: string
+
+* value: ``"grenade_long_fuse"``
+
+
+``PROJECTILE_PREDICTED``
+^^^^^^^^^^
+
+.. note::
+
+	``PROJECTILE_PREDICTED`` is constant
+
+* type: bool
+
+* value: ``true``
+
+
+``PROJECTILE_NOT_PREDICTED``
+^^^^^^^^^^
+
+.. note::
+
+	``PROJECTILE_NOT_PREDICTED`` is constant
+
+* type: bool
+
+* value: ``false``
+
+
+``PROJECTILE_LAG_COMPENSATED``
+^^^^^^^^^^
+
+.. note::
+
+	``PROJECTILE_LAG_COMPENSATED`` is constant
+
+* type: bool
+
+* value: ``true``
+
+
+``PROJECTILE_NOT_LAG_COMPENSATED``
+^^^^^^^^^^
+
+.. note::
+
+	``PROJECTILE_NOT_LAG_COMPENSATED`` is constant
+
+* type: bool
+
+* value: ``false``
+
+
+``RadiusDamageData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``PopcornInfo``
+^^^^^^^^^^
+
+* type: struct
+
+
+``HOLO_PILOT_TRAIL_FX``
+^^^^^^^^^^
+
+* type: int
+
+
+``HoverSounds``
+^^^^^^^^^^
+
+* type: struct
+
+
+``DECOY_FADE_DISTANCE``
+^^^^^^^^^^
+
+.. note::
+
+	``DECOY_FADE_DISTANCE`` is constant
+
+* type: int
+
+* value: ``16000``
+
+
+``DECOY_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``DECOY_DURATION`` is constant
+
+* type: float
+
+* value: ``10.0``
+
+
+``HOLOPILOT_ANGLE_SEGMENT``
+^^^^^^^^^^
+
+.. note::
+
+	``HOLOPILOT_ANGLE_SEGMENT`` is constant
+
+* type: vector
+
+* value: ``<0,25,0>``
+
+
+``SP_PARTICLE_WALL_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``SP_PARTICLE_WALL_DURATION`` is constant
+
+* type: float
+
+* value: ``8.0``
+
+
+``MP_PARTICLE_WALL_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``MP_PARTICLE_WALL_DURATION`` is constant
+
+* type: float
+
+* value: ``6.0``
+
+
+``TITAN_GUN_SHIELD_RADIUS``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_GUN_SHIELD_RADIUS`` is constant
+
+* type: int
+
+* value: ``105``
+
+
+``TITAN_GUN_SHIELD_HEALTH``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_GUN_SHIELD_HEALTH`` is constant
+
+* type: int
+
+* value: ``2500``
+
+
+``PAS_LEGION_SHEILD_HEALTH``
+^^^^^^^^^^
+
+.. note::
+
+	``PAS_LEGION_SHEILD_HEALTH`` is constant
+
+* type: int
+
+* value: ``5000``
+
+
+``FLIGHT_CORE_IMPACT_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``FLIGHT_CORE_IMPACT_FX`` is constant
+
+* type: asset
+
+* value: ``$"droppod_impact"``
+
+
+``PROJECTILE_SPEED_40MM``
+^^^^^^^^^^
+
+.. note::
+
+	``PROJECTILE_SPEED_40MM`` is constant
+
+* type: float
+
+* value: ``8000.0``
+
+
+``TITAN_40MM_SHELL_EJECT``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_40MM_SHELL_EJECT`` is constant
+
+* type: asset
+
+* value: ``$"models/Weapons/shellejects/shelleject_40mm.mdl"``
+
+
+``TANK_BUSTER_40MM_SFX_LOOP``
+^^^^^^^^^^
+
+.. note::
+
+	``TANK_BUSTER_40MM_SFX_LOOP`` is constant
+
+* type: string
+
+* value: ``"Weapon_Vortex_Gun.ExplosiveWarningBeep"``
+
+
+``TITAN_40MM_EXPLOSION_SOUND``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_40MM_EXPLOSION_SOUND`` is constant
+
+* type: string
+
+* value: ``"Weapon.Explosion_Med"``
+
+
+``MORTAR_SHOT_SFX_LOOP``
+^^^^^^^^^^
+
+.. note::
+
+	``MORTAR_SHOT_SFX_LOOP`` is constant
+
+* type: string
+
+* value: ``"Weapon_Sidwinder_Projectile"``
+
+
+``FLAME_WALL_THERMITE_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``FLAME_WALL_THERMITE_DURATION`` is constant
+
+* type: float
+
+* value: ``5.2``
+
+
+``PAS_SCORCH_FIREWALL_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``PAS_SCORCH_FIREWALL_DURATION`` is constant
+
+* type: float
+
+* value: ``5.2``
+
+
+``SP_FLAME_WALL_DURATION_SCALE``
+^^^^^^^^^^
+
+.. note::
+
+	``SP_FLAME_WALL_DURATION_SCALE`` is constant
+
+* type: float
+
+* value: ``1.75``
+
+
+``PLAYER_METEOR_DAMAGE_TICK``
+^^^^^^^^^^
+
+.. note::
+
+	``PLAYER_METEOR_DAMAGE_TICK`` is constant
+
+* type: float
+
+* value: ``100.0``
+
+
+``PLAYER_METEOR_DAMAGE_TICK_PILOT``
+^^^^^^^^^^
+
+.. note::
+
+	``PLAYER_METEOR_DAMAGE_TICK_PILOT`` is constant
+
+* type: float
+
+* value: ``20.0``
+
+
+``NPC_METEOR_DAMAGE_TICK``
+^^^^^^^^^^
+
+.. note::
+
+	``NPC_METEOR_DAMAGE_TICK`` is constant
+
+* type: float
+
+* value: ``100.0``
+
+
+``NPC_METEOR_DAMAGE_TICK_PILOT``
+^^^^^^^^^^
+
+.. note::
+
+	``NPC_METEOR_DAMAGE_TICK_PILOT`` is constant
+
+* type: float
+
+* value: ``20.0``
+
+
+``MeteorRadiusDamage``
+^^^^^^^^^^
+
+* type: struct
+
+
+``SP_THERMITE_DURATION_SCALE``
+^^^^^^^^^^
+
+.. note::
+
+	``SP_THERMITE_DURATION_SCALE`` is constant
+
+* type: float
+
+* value: ``1.25``
+
+
+``METEOR_FX_TRAIL``
+^^^^^^^^^^
+
+.. note::
+
+	``METEOR_FX_TRAIL`` is constant
+
+* type: asset
+
+* value: ``$"P_wpn_meteor_exp_trail"``
+
+
+``METEOR_FX_BASE``
+^^^^^^^^^^
+
+.. note::
+
+	``METEOR_FX_BASE`` is constant
+
+* type: asset
+
+* value: ``$"P_wpn_meteor_exp"``
+
+
+``METEOR_THERMITE_DAMAGE_RADIUS_DEF``
+^^^^^^^^^^
+
+.. note::
+
+	``METEOR_THERMITE_DAMAGE_RADIUS_DEF`` is constant
+
+* type: int
+
+* value: ``45``
+
+
+``SWORD_GLOW_FP``
+^^^^^^^^^^
+
+.. note::
+
+	``SWORD_GLOW_FP`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_sword_core_hld_FP"``
+
+
+``SWORD_GLOW``
+^^^^^^^^^^
+
+.. note::
+
+	``SWORD_GLOW`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_sword_core_hld"``
+
+
+``SWORD_GLOW_PRIME_FP``
+^^^^^^^^^^
+
+.. note::
+
+	``SWORD_GLOW_PRIME_FP`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_sword_core_PRM_FP"``
+
+
+``SWORD_GLOW_PRIME``
+^^^^^^^^^^
+
+.. note::
+
+	``SWORD_GLOW_PRIME`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_sword_core_PRM"``
+
+
+``PROJECTILE_SPEED_FLAK``
+^^^^^^^^^^
+
+.. note::
+
+	``PROJECTILE_SPEED_FLAK`` is constant
+
+* type: float
+
+* value: ``7500.0``
+
+
+``FX_ELECTRIC_SMOKESCREEN_PILOT``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_ELECTRIC_SMOKESCREEN_PILOT`` is constant
+
+* type: asset
+
+* value: ``$"P_wpn_smk_electric_pilot"``
+
+
+``FX_ELECTRIC_SMOKESCREEN_PILOT_AIR``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_ELECTRIC_SMOKESCREEN_PILOT_AIR`` is constant
+
+* type: asset
+
+* value: ``$"P_wpn_smk_electric_pilot_air"``
+
+
+``GUNSHIPMINE_LAUNCH_VELOCITY``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIPMINE_LAUNCH_VELOCITY`` is constant
+
+* type: float
+
+* value: ``3000.0``
+
+
+``GUNSHIPMINE_MIN_MINE_FUSE_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIPMINE_MIN_MINE_FUSE_TIME`` is constant
+
+* type: float
+
+* value: ``6.0``
+
+
+``GUNSHIPMINE_MAX_MINE_FUSE_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIPMINE_MAX_MINE_FUSE_TIME`` is constant
+
+* type: float
+
+* value: ``6.0``
+
+
+``GUNSHIPMINE_MINE_FIELD_ACTIVATION_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIPMINE_MINE_FIELD_ACTIVATION_TIME`` is constant
+
+* type: float
+
+* value: ``1.15``
+
+
+``GUNSHIPMINE_MINE_FIELD_EXPLODE_TELL_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIPMINE_MINE_FIELD_EXPLODE_TELL_TIME`` is constant
+
+* type: float
+
+* value: ``3.00``
+
+
+``GUNSHIPMINE_MINE_FIELD_TITAN_ONLY``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIPMINE_MINE_FIELD_TITAN_ONLY`` is constant
+
+* type: bool
+
+* value: ``false``
+
+
+``GUNSHIPMINE_NUM_SHOTS``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIPMINE_NUM_SHOTS`` is constant
+
+* type: int
+
+* value: ``4``
+
+
+``GUNSHIP_PROX_MINE_RANGE``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIP_PROX_MINE_RANGE`` is constant
+
+* type: int
+
+* value: ``35``
+
+
+``GUNSHIP_PROX_MINE_HEALTH``
+^^^^^^^^^^
+
+.. note::
+
+	``GUNSHIP_PROX_MINE_HEALTH`` is constant
+
+* type: int
+
+* value: ``1``
+
+
+``THERMITE_GRENADE_BURN_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``THERMITE_GRENADE_BURN_TIME`` is constant
+
+* type: float
+
+* value: ``6.0``
+
+
+``DEPLOYABLE_THROW_POWER``
+^^^^^^^^^^
+
+.. note::
+
+	``DEPLOYABLE_THROW_POWER`` is constant
+
+* type: float
+
+* value: ``500.0``
+
+
+``SHIFTER_START_SOUND_1P``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIFTER_START_SOUND_1P`` is constant
+
+* type: string
+
+* value: ``"Pilot_PhaseShift_Activate_1P"``
+
+
+``SHIFTER_START_SOUND_3P``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIFTER_START_SOUND_3P`` is constant
+
+* type: string
+
+* value: ``"Pilot_PhaseShift_Activate_3P"``
+
+
+``SHIFTER_END_SOUND_1P``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIFTER_END_SOUND_1P`` is constant
+
+* type: string
+
+* value: ``"Pilot_PhaseShift_End_1P"``
+
+
+``SHIFTER_END_SOUND_3P``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIFTER_END_SOUND_3P`` is constant
+
+* type: string
+
+* value: ``"Pilot_PhaseShift_End_3P"``
+
+
+``SHIFTER_START_SOUND_1P_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIFTER_START_SOUND_1P_TITAN`` is constant
+
+* type: string
+
+* value: ``"titan_phasedash_activate_1p"``
+
+
+``SHIFTER_START_SOUND_3P_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIFTER_START_SOUND_3P_TITAN`` is constant
+
+* type: string
+
+* value: ``"titan_phasedash_activate_3p"``
+
+
+``SHIFTER_END_SOUND_1P_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIFTER_END_SOUND_1P_TITAN`` is constant
+
+* type: string
+
+* value: ``"titan_phasedash_end_1p"``
+
+
+``SHIFTER_END_SOUND_3P_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIFTER_END_SOUND_3P_TITAN`` is constant
+
+* type: string
+
+* value: ``"titan_phasedash_end_3p"``
+
+
+``COCKPIT_STIM_FX``
+^^^^^^^^^^
+
+* type: int
+
+
+``PILOT_STIM_HLD_FX``
+^^^^^^^^^^
+
+* type: int
+
+
+``STIM_EFFECT_SEVERITY``
+^^^^^^^^^^
+
+.. note::
+
+	``STIM_EFFECT_SEVERITY`` is constant
+
+* type: float
+
+* value: ``0.4``
+
+
+``TRIPLETHREAT_LAUNCH_VELOCITY``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIPLETHREAT_LAUNCH_VELOCITY`` is constant
+
+* type: float
+
+* value: ``1100.0``
+
+
+``TRIPLETHREAT_MIN_MINE_FUSE_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIPLETHREAT_MIN_MINE_FUSE_TIME`` is constant
+
+* type: float
+
+* value: ``8.2``
+
+
+``TRIPLETHREAT_MAX_MINE_FUSE_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIPLETHREAT_MAX_MINE_FUSE_TIME`` is constant
+
+* type: float
+
+* value: ``8.8``
+
+
+``TRIPLETHREAT_MINE_FIELD_ACTIVATION_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIPLETHREAT_MINE_FIELD_ACTIVATION_TIME`` is constant
+
+* type: float
+
+* value: ``1.15``
+
+
+``TRIPLETHREAT_MINE_FIELD_TITAN_ONLY``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIPLETHREAT_MINE_FIELD_TITAN_ONLY`` is constant
+
+* type: bool
+
+* value: ``false``
+
+
+``TRIPLETHREAT_MINE_FIELD_MAX_MINES``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIPLETHREAT_MINE_FIELD_MAX_MINES`` is constant
+
+* type: int
+
+* value: ``9``
+
+
+``TRIPLETHREAT_MINE_FIELD_LAUNCH_VELOCITY``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIPLETHREAT_MINE_FIELD_LAUNCH_VELOCITY`` is constant
+
+* type: int
+
+* value: ``1100``
+
+
+``TRIPLETHREAT_NUM_SHOTS``
+^^^^^^^^^^
+
+.. note::
+
+	``TRIPLETHREAT_NUM_SHOTS`` is constant
+
+* type: int
+
+* value: ``3``
+
+
+``PROX_MINE_RANGE``
+^^^^^^^^^^
+
+.. note::
+
+	``PROX_MINE_RANGE`` is constant
+
+* type: int
+
+* value: ``200``
+
+
+``NPC_TITAN_PILOT_PROTOTYPE``
+^^^^^^^^^^
+
+.. note::
+
+	``NPC_TITAN_PILOT_PROTOTYPE`` is constant
+
+* type: int
+
+* value: ``0``
+
+
+``NPCPilotStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``_ClientCommandCallbacks``
+^^^^^^^^^^
+
+* type: table
+
+* value: ``{}``
+
+
+``_cc``
+^^^^^^^^^^
+
+* type: entity
+
+* value: ``null``
+
+
+``_sc``
+^^^^^^^^^^
+
+* type: entity
+
+* value: ``null``
+
+
+``spawnCallbackFuncArray``
+^^^^^^^^^^
+
+* type: struct
+
+
+``spawnCallbackFuncArray_scriptNoteworthy``
+^^^^^^^^^^
+
+* type: struct
+
+
+``spawnCallbackEditorClassFuncArray``
+^^^^^^^^^^
+
+* type: struct
+
+
+``pilotEliminationDialogueCallbackType``
+^^^^^^^^^^
+
+* type: typedef
+
+
+``SvGlobals``
+^^^^^^^^^^
+
+* type: struct
+
+
+``svGlobal``
+^^^^^^^^^^
+
+* type: SvGlobals
+
+
+``PlayerSlowDownEffect``
+^^^^^^^^^^
+
+* type: struct
+
+
+``AnimEventData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``BeamEffect``
+^^^^^^^^^^
+
+* type: struct
+
+
+``SpawnPointData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``BallLightningData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``PhaseRewindData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``PlayerInputEventCallbackStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``PlayerHeldButtonEventCallbackStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``PlayerInputAxisEventCallbackStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``eStatUpdateTime``
+^^^^^^^^^^
+
+* type: enum
+
+
+``eStoredWeaponType``
+^^^^^^^^^^
+
+* type: enum
+
+
+``TitanDamage``
+^^^^^^^^^^
+
+* type: struct
+
+
+``RecentUnlock``
+^^^^^^^^^^
+
+* type: struct
+
+
+``StoredWeapon``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ScriptTriggerData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``BurnCardPhaseRewindStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerEntityStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``MeritData``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerPlayerStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``TitanSettings``
+^^^^^^^^^^
+
+* type: struct
+
+
+``NPCDefaultWeapon``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerAIStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerWeaponStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``RemoteTurretSettings``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerRemoteTurretStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerProjectileStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerTitanSoulStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerPlayerDecoyStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerSpawnpointStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ServerFirstPersonProxyStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``C_PLAYFX_SINGLE``
+^^^^^^^^^^
+
+.. note::
+
+	``C_PLAYFX_SINGLE`` is constant
+
+* type: int
+
+* value: ``0``
+
+
+``C_PLAYFX_MULTIPLE``
+^^^^^^^^^^
+
+.. note::
+
+	``C_PLAYFX_MULTIPLE`` is constant
+
+* type: int
+
+* value: ``1``
+
+
+``C_PLAYFX_LOOP``
+^^^^^^^^^^
+
+.. note::
+
+	``C_PLAYFX_LOOP`` is constant
+
+* type: int
+
+* value: ``2``
+
+
+``MUTEALLFADEIN``
+^^^^^^^^^^
+
+.. note::
+
+	``MUTEALLFADEIN`` is constant
+
+* type: int
+
+* value: ``2``
+
+
+``ZipLine``
+^^^^^^^^^^
+
+* type: struct
+
+
+``HUMAN_RAGDOLL_IMPACT_TABLE_IDX``
+^^^^^^^^^^
+
+* type: int
+
+* value: ``-1``
+
+
+``ArrayDotResultStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ShieldDamageModifier``
+^^^^^^^^^^
+
+* type: struct
+
+
+``eStationaryAIPositionTypes``
+^^^^^^^^^^
+
+* type: enum
+
+
+``StationaryAIPosition``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ArrayDistanceEntryForStationaryAIPosition``
+^^^^^^^^^^
+
+* type: struct
+
+
+``DRONE_SHIELD_COOLDOWN``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_SHIELD_COOLDOWN`` is constant
+
+* type: int
+
+* value: ``8``
+
+
+``DRONE_SHIELD_WALL_HEALTH``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_SHIELD_WALL_HEALTH`` is constant
+
+* type: int
+
+* value: ``200``
+
+
+``DRONE_SHIELD_WALL_RADIUS_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_SHIELD_WALL_RADIUS_TITAN`` is constant
+
+* type: int
+
+* value: ``200``
+
+
+``DRONE_SHIELD_WALL_RADIUS_HUMAN``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_SHIELD_WALL_RADIUS_HUMAN`` is constant
+
+* type: int
+
+* value: ``90``
+
+
+``DRONE_SHIELD_WALL_HEIGHT_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_SHIELD_WALL_HEIGHT_TITAN`` is constant
+
+* type: int
+
+* value: ``450``
+
+
+``DRONE_SHIELD_WALL_HEIGHT_HUMAN``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_SHIELD_WALL_HEIGHT_HUMAN`` is constant
+
+* type: int
+
+* value: ``190``
+
+
+``DRONE_SHIELD_WALL_FOV_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_SHIELD_WALL_FOV_TITAN`` is constant
+
+* type: int
+
+* value: ``115``
+
+
+``DRONE_SHIELD_WALL_FOV_HUMAN``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_SHIELD_WALL_FOV_HUMAN`` is constant
+
+* type: int
+
+* value: ``105``
+
+
+``DRONE_MINIMUM_DEPLOY_CLEARANCE_FROM_GROUND``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_MINIMUM_DEPLOY_CLEARANCE_FROM_GROUND`` is constant
+
+* type: int
+
+* value: ``120``
+
+
+``MIN_DRONE_SHIELD_FROM_OWNER_DIST``
+^^^^^^^^^^
+
+.. note::
+
+	``MIN_DRONE_SHIELD_FROM_OWNER_DIST`` is constant
+
+* type: int
+
+* value: ``256``
+
+
+``MIN_DRONE_SHIELD_FROM_OWNER_DIST_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``MIN_DRONE_SHIELD_FROM_OWNER_DIST_TITAN`` is constant
+
+* type: int
+
+* value: ``400``
+
+
+``DRONE_LEASH_DISTANCE_SQR``
+^^^^^^^^^^
+
+.. note::
+
+	``DRONE_LEASH_DISTANCE_SQR`` is constant
+
+* type: int
+
+* value: ``589824``
+
+
+``SOUND_DRONE_EXPLODE_DEFAULT``
+^^^^^^^^^^
+
+.. note::
+
+	``SOUND_DRONE_EXPLODE_DEFAULT`` is constant
+
+* type: string
+
+* value: ``"Drone_DeathExplo"``
+
+
+``SOUND_DRONE_EXPLODE_CLOAK``
+^^^^^^^^^^
+
+.. note::
+
+	``SOUND_DRONE_EXPLODE_CLOAK`` is constant
+
+* type: string
+
+* value: ``"Drone_DeathExplo"``
+
+
+``FX_DRONE_SHIELD_WALL_TITAN``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_DRONE_SHIELD_WALL_TITAN`` is constant
+
+* type: asset
+
+* value: ``$"P_drone_shield_wall_XO"``
+
+
+``FX_DRONE_EXPLOSION``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_DRONE_EXPLOSION`` is constant
+
+* type: asset
+
+* value: ``$"P_drone_exp_md"``
+
+
+``FX_DRONE_R_EXPLOSION``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_DRONE_R_EXPLOSION`` is constant
+
+* type: asset
+
+* value: ``$"P_drone_exp_rocket"``
+
+
+``FX_DRONE_P_EXPLOSION``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_DRONE_P_EXPLOSION`` is constant
+
+* type: asset
+
+* value: ``$"P_drone_exp_plasma"``
+
+
+``FX_DRONE_W_EXPLOSION``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_DRONE_W_EXPLOSION`` is constant
+
+* type: asset
+
+* value: ``$"P_drone_exp_worker"``
+
+
+``FX_DRONE_SHIELD_ROPE_GLOW``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_DRONE_SHIELD_ROPE_GLOW`` is constant
+
+* type: asset
+
+* value: ``$"acl_light_white"``
+
+
+``AI_PERSONAL_SHIELD_PAIN_SHIELD_STYLE``
+^^^^^^^^^^
+
+.. note::
+
+	``AI_PERSONAL_SHIELD_PAIN_SHIELD_STYLE`` is constant
+
+* type: bool
+
+* value: ``true``
+
+
+``SOUND_GUNSHIP_HOVER``
+^^^^^^^^^^
+
+.. note::
+
+	``SOUND_GUNSHIP_HOVER`` is constant
+
+* type: string
+
+* value: ``"Gunship_Hover"``
+
+
+``SOUND_GUNSHIP_EXPLODE_DEFAULT``
+^^^^^^^^^^
+
+.. note::
+
+	``SOUND_GUNSHIP_EXPLODE_DEFAULT`` is constant
+
+* type: string
+
+* value: ``"Gunship_Explode"``
+
+
+``FX_GUNSHIP_EXPLOSION``
+^^^^^^^^^^
+
+.. note::
+
+	``FX_GUNSHIP_EXPLOSION`` is constant
+
+* type: asset
+
+* value: ``$"P_veh_exp_crow"``
+
+
+``eAILethality``
+^^^^^^^^^^
+
+* type: enum
+
+
+``RPG_USE_ALWAYS``
+^^^^^^^^^^
+
+.. note::
+
+	``RPG_USE_ALWAYS`` is constant
+
+* type: int
+
+* value: ``2``
+
+
+``STANDARDGOALRADIUS``
+^^^^^^^^^^
+
+.. note::
+
+	``STANDARDGOALRADIUS`` is constant
+
+* type: int
+
+* value: ``100``
+
+
+``HACK_CAP_BACK1``
+^^^^^^^^^^
+
+.. note::
+
+	``HACK_CAP_BACK1`` is constant
+
+* type: asset
+
+* value: ``$"models/sandtrap/sandtrap_wall_bracket.mdl"``
+
+
+``HACK_CAP_BACK2``
+^^^^^^^^^^
+
+.. note::
+
+	``HACK_CAP_BACK2`` is constant
+
+* type: asset
+
+* value: ``$"models/pipes/pipe_modular_grey_bracket_cap.mdl"``
+
+
+``HACK_CAP_BACK3``
+^^^^^^^^^^
+
+.. note::
+
+	``HACK_CAP_BACK3`` is constant
+
+* type: asset
+
+* value: ``$"models/lamps/office_lights_hanging_wire.mdl"``
+
+
+``HACK_DRONE_BACK1``
+^^^^^^^^^^
+
+.. note::
+
+	``HACK_DRONE_BACK1`` is constant
+
+* type: asset
+
+* value: ``$"models/Weapons/ammoboxes/backpack_single.mdl"``
+
+
+``HACK_DRONE_BACK2``
+^^^^^^^^^^
+
+.. note::
+
+	``HACK_DRONE_BACK2`` is constant
+
+* type: asset
+
+* value: ``$"models/barriers/fence_wire_holder_double.mdl"``
+
+
+``DEFAULT_TETHER_RADIUS``
+^^^^^^^^^^
+
+.. note::
+
+	``DEFAULT_TETHER_RADIUS`` is constant
+
+* type: int
+
+* value: ``1500``
+
+
+``DEFAULT_COVER_BEHAVIOR_CYLINDER_HEIGHT``
+^^^^^^^^^^
+
+.. note::
+
+	``DEFAULT_COVER_BEHAVIOR_CYLINDER_HEIGHT`` is constant
+
+* type: int
+
+* value: ``512``
+
+
+``PROTOTYPE_DEFAULT_TITAN_RODEO_SLOTS``
+^^^^^^^^^^
+
+.. note::
+
+	``PROTOTYPE_DEFAULT_TITAN_RODEO_SLOTS`` is constant
+
+* type: int
+
+* value: ``3``
+
+
+``eDropPodFlag``
+^^^^^^^^^^
+
+* type: enum
+
+
+``OutOfBoundsDataStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``PREMATCH_TIMER_INTRO_DEFAULT``
+^^^^^^^^^^
+
+.. note::
+
+	``PREMATCH_TIMER_INTRO_DEFAULT`` is constant
+
+* type: int
+
+* value: ``46``
+
+
+``PREMATCH_TIMER_NO_INTRO``
+^^^^^^^^^^
+
+.. note::
+
+	``PREMATCH_TIMER_NO_INTRO`` is constant
+
+* type: int
+
+* value: ``7``
+
+
+``CLEAR_PLAYERS_BUFFER``
+^^^^^^^^^^
+
+.. note::
+
+	``CLEAR_PLAYERS_BUFFER`` is constant
+
+* type: float
+
+* value: ``2.0``
+
+
+``ENDROUND_FREEZE``
+^^^^^^^^^^
+
+.. note::
+
+	``ENDROUND_FREEZE`` is constant
+
+* type: int
+
+* value: ``0``
+
+
+``ENDROUND_MOVEONLY``
+^^^^^^^^^^
+
+.. note::
+
+	``ENDROUND_MOVEONLY`` is constant
+
+* type: int
+
+* value: ``1``
+
+
+``ENDROUND_FREE``
+^^^^^^^^^^
+
+.. note::
+
+	``ENDROUND_FREE`` is constant
+
+* type: int
+
+* value: ``3``
+
+
+``NO_DETERMINED_WINNING_TEAM_YET``
+^^^^^^^^^^
+
+.. note::
+
+	``NO_DETERMINED_WINNING_TEAM_YET`` is constant
+
+* type: int
+
+* value: ``-1``
+
+
+``eWinReason``
+^^^^^^^^^^
+
+* type: enum
+
+
+``FLIGHT_PATH_DEBUG``
+^^^^^^^^^^
+
+.. note::
+
+	``FLIGHT_PATH_DEBUG`` is constant
+
+* type: bool
+
+* value: ``false``
+
+
+``PickupGlow``
+^^^^^^^^^^
+
+* type: struct
+
+
+``REVIVE_DEATH_TIME``
+^^^^^^^^^^
+
+.. note::
+
+	``REVIVE_DEATH_TIME`` is constant
+
+* type: float
+
+* value: ``2.0``
+
+
+``SpectreRackSpectre``
+^^^^^^^^^^
+
+* type: struct
+
+
+``SpectreRack``
+^^^^^^^^^^
+
+* type: struct
+
+
+``CLOAK_FADE_IN``
+^^^^^^^^^^
+
+.. note::
+
+	``CLOAK_FADE_IN`` is constant
+
+* type: float
+
+* value: ``1.0``
+
+
+``CLOAK_FADE_OUT``
+^^^^^^^^^^
+
+.. note::
+
+	``CLOAK_FADE_OUT`` is constant
+
+* type: float
+
+* value: ``1.0``
+
+
+``MARVIN_EMOTE_SOUND_HAPPY``
+^^^^^^^^^^
+
+.. note::
+
+	``MARVIN_EMOTE_SOUND_HAPPY`` is constant
+
+* type: string
+
+* value: ``"diag_spectre_gs_LeechEnd_01_1"``
+
+
+``MARVIN_EMOTE_SOUND_SAD``
+^^^^^^^^^^
+
+.. note::
+
+	``MARVIN_EMOTE_SOUND_SAD`` is constant
+
+* type: string
+
+* value: ``"diag_spectre_gs_LeechAborted_01_1"``
+
+
+``MARVIN_EMOTE_SOUND_PAIN``
+^^^^^^^^^^
+
+.. note::
+
+	``MARVIN_EMOTE_SOUND_PAIN`` is constant
+
+* type: string
+
+* value: ``"diag_spectre_gs_LeechStart_01_1"``
+
+
+``RODEO_BATTERY_MODEL_FOR_RODEO_ANIMS``
+^^^^^^^^^^
+
+.. note::
+
+	``RODEO_BATTERY_MODEL_FOR_RODEO_ANIMS`` is constant
+
+* type: asset
+
+* value: ``$"models/props/titan_battery_static/titan_battery_static.mdl"``
+
+
+``BATTERY_FX_FRIENDLY``
+^^^^^^^^^^
+
+.. note::
+
+	``BATTERY_FX_FRIENDLY`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_battery"``
+
+
+``BATTERY_FX_AMPED``
+^^^^^^^^^^
+
+.. note::
+
+	``BATTERY_FX_AMPED`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_battery_amped"``
+
+
+``RODEO_BATTERY_EXPLOSION_EFFECT``
+^^^^^^^^^^
+
+* type: int
+
+
+``ANTI_RODEO_DEFAULT_START_DELAY``
+^^^^^^^^^^
+
+* type: float
+
+* value: ``0.5``
+
+
+``ANTI_RODEO_DEFAULT_DRAIN_DURATION``
+^^^^^^^^^^
+
+* type: float
+
+* value: ``1.25``
+
+
+``ANTI_RODEO_DEFAULT_WINDOW_DURATION``
+^^^^^^^^^^
+
+* type: float
+
+* value: ``0.1``
+
+
+``ANTI_RODEO_DEFAULT_WINDOW_START``
+^^^^^^^^^^
+
+* type: float
+
+* value: ``0.55``
+
+
+``SmokescreenStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``WARPFALL_SOUND_DELAY``
+^^^^^^^^^^
+
+.. note::
+
+	``WARPFALL_SOUND_DELAY`` is constant
+
+* type: float
+
+* value: ``1.1``
+
+
+``WARPFALL_FX_DELAY``
+^^^^^^^^^^
+
+.. note::
+
+	``WARPFALL_FX_DELAY`` is constant
+
+* type: float
+
+* value: ``0.9``
+
+
+``TITANDROP_LOS_DIST``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_LOS_DIST`` is constant
+
+* type: int
+
+* value: ``2000``
+
+
+``TITANDROP_MIN_FOV``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_MIN_FOV`` is constant
+
+* type: int
+
+* value: ``10``
+
+
+``TITANDROP_MAX_FOV``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_MAX_FOV`` is constant
+
+* type: int
+
+* value: ``80``
+
+
+``TITANDROP_FOV_PENALTY``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_FOV_PENALTY`` is constant
+
+* type: int
+
+* value: ``8``
+
+
+``TITANDROP_PATHNODESEARCH_EXACTDIST``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_PATHNODESEARCH_EXACTDIST`` is constant
+
+* type: int
+
+* value: ``500``
+
+
+``TITANDROP_PATHNODESEARCH_DISTFRAC``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_PATHNODESEARCH_DISTFRAC`` is constant
+
+* type: float
+
+* value: ``0.8``
+
+
+``TITANDROP_GROUNDSEARCH_ZDIR``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_GROUNDSEARCH_ZDIR`` is constant
+
+* type: float
+
+* value: ``-1.0``
+
+
+``TITANDROP_GROUNDSEARCH_FORWARDDIST``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_GROUNDSEARCH_FORWARDDIST`` is constant
+
+* type: int
+
+* value: ``350``
+
+
+``TITANDROP_GROUNDSEARCH_DIST``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_GROUNDSEARCH_DIST`` is constant
+
+* type: int
+
+* value: ``1000``
+
+
+``TITANDROP_FALLBACK_DIST``
+^^^^^^^^^^
+
+.. note::
+
+	``TITANDROP_FALLBACK_DIST`` is constant
+
+* type: int
+
+* value: ``150``
+
+
+``SIGNAL_TITAN_HEALTH_REGEN``
+^^^^^^^^^^
+
+.. note::
+
+	``SIGNAL_TITAN_HEALTH_REGEN`` is constant
+
+* type: string
+
+* value: ``"BeginTitanHealthRegen"``
+
+
+``SIGNAL_TITAN_SHIELD_REGEN``
+^^^^^^^^^^
+
+.. note::
+
+	``SIGNAL_TITAN_SHIELD_REGEN`` is constant
+
+* type: string
+
+* value: ``"BeginTitanShieldRegen"``
+
+
+``TITAN_HEALTH_REGEN_DELAY_MAX``
+^^^^^^^^^^
+
+.. note::
+
+	``TITAN_HEALTH_REGEN_DELAY_MAX`` is constant
+
+* type: float
+
+* value: ``0.7``
+
+
+``HOTDROP_FP_WARP``
+^^^^^^^^^^
+
+.. note::
+
+	``HOTDROP_FP_WARP`` is constant
+
+* type: asset
+
+* value: ``$"P_warpjump_FP"``
+
+
+``HOTDROP_TRAIL_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``HOTDROP_TRAIL_FX`` is constant
+
+* type: asset
+
+* value: ``$"hotdrop_hld_warp"``
+
+
+``BUBBLE_SHIELD_FX_PARTICLE_SYSTEM_INDEX``
+^^^^^^^^^^
+
+* type: int
+
+
+``SHIELD_WALL_COL_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIELD_WALL_COL_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/fx/xo_shield_wall.mdl"``
+
+
+``SHIELD_WALL_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIELD_WALL_FX`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_shield_wall"``
+
+
+``TURRET_SHIELD_WALL_COL_MODEL``
+^^^^^^^^^^
+
+.. note::
+
+	``TURRET_SHIELD_WALL_COL_MODEL`` is constant
+
+* type: asset
+
+* value: ``$"models/fx/turret_shield_wall.mdl"``
+
+
+``TURRET_SHIELD_WALL_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``TURRET_SHIELD_WALL_FX`` is constant
+
+* type: asset
+
+* value: ``$"P_turret_shield_wall"``
+
+
+``AMPED_WALL_FX``
+^^^^^^^^^^
+
+.. note::
+
+	``AMPED_WALL_FX`` is constant
+
+* type: asset
+
+* value: ``$"P_xo_amped_wall"``
+
+
+``PAS_TONE_WALL_HEALTH``
+^^^^^^^^^^
+
+.. note::
+
+	``PAS_TONE_WALL_HEALTH`` is constant
+
+* type: int
+
+* value: ``3000``
+
+
+``PAS_TONE_WALL_DURATION_MULTIPLIER``
+^^^^^^^^^^
+
+.. note::
+
+	``PAS_TONE_WALL_DURATION_MULTIPLIER`` is constant
+
+* type: float
+
+* value: ``1.5``
+
+
+``SHIELD_WALL_DURATION``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIELD_WALL_DURATION`` is constant
+
+* type: float
+
+* value: ``8.0``
+
+
+``SHIELD_WALL_RADIUS``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIELD_WALL_RADIUS`` is constant
+
+* type: int
+
+* value: ``180``
+
+
+``SHIELD_WALL_FOV``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIELD_WALL_FOV`` is constant
+
+* type: int
+
+* value: ``120``
+
+
+``SHIELD_WALL_WIDTH``
+^^^^^^^^^^
+
+.. note::
+
+	``SHIELD_WALL_WIDTH`` is constant
+
+* type: float
+
+* value: ``156.0``
+
+
+``EarnMeterThresholdEarnedStruct``
+^^^^^^^^^^
+
+* type: struct
+
+
+``ClServer_MessageStruct``
 ^^^^^^^^^^
 
 * type: struct
@@ -994,11 +4589,11 @@ UI Globals
 
 .. note::
 
-	DEVSCRIPTS is constant
+	``DEVSCRIPTS`` is constant
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``NETWORK_INVITE``
@@ -1006,11 +4601,11 @@ UI Globals
 
 .. note::
 
-	NETWORK_INVITE is constant
+	``NETWORK_INVITE`` is constant
 
 * type: bool
 
-* value: true
+* value: ``true``
 
 
 ``PRE_RELEASE_DEMO``
@@ -1018,11 +4613,11 @@ UI Globals
 
 .. note::
 
-	PRE_RELEASE_DEMO is constant
+	``PRE_RELEASE_DEMO`` is constant
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``DIFFICULTY_EASY``
@@ -1030,11 +4625,11 @@ UI Globals
 
 .. note::
 
-	DIFFICULTY_EASY is constant
+	``DIFFICULTY_EASY`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``DIFFICULTY_NORMAL``
@@ -1042,11 +4637,11 @@ UI Globals
 
 .. note::
 
-	DIFFICULTY_NORMAL is constant
+	``DIFFICULTY_NORMAL`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``DIFFICULTY_HARD``
@@ -1054,11 +4649,11 @@ UI Globals
 
 .. note::
 
-	DIFFICULTY_HARD is constant
+	``DIFFICULTY_HARD`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``DIFFICULTY_MASTER``
@@ -1066,11 +4661,11 @@ UI Globals
 
 .. note::
 
-	DIFFICULTY_MASTER is constant
+	``DIFFICULTY_MASTER`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``Point``
@@ -1084,11 +4679,11 @@ UI Globals
 
 .. note::
 
-	T_DAY is constant
+	``T_DAY`` is constant
 
 * type: string
 
-* value: "tday"
+* value: ``"tday"``
 
 
 ``TEAM_DEATHMATCH``
@@ -1096,11 +4691,11 @@ UI Globals
 
 .. note::
 
-	TEAM_DEATHMATCH is constant
+	``TEAM_DEATHMATCH`` is constant
 
 * type: string
 
-* value: "tdm"
+* value: ``"tdm"``
 
 
 ``PILOT_SKIRMISH``
@@ -1108,11 +4703,11 @@ UI Globals
 
 .. note::
 
-	PILOT_SKIRMISH is constant
+	``PILOT_SKIRMISH`` is constant
 
 * type: string
 
-* value: "ps"
+* value: ``"ps"``
 
 
 ``CAPTURE_POINT``
@@ -1120,11 +4715,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT is constant
+	``CAPTURE_POINT`` is constant
 
 * type: string
 
-* value: "cp"
+* value: ``"cp"``
 
 
 ``ATTRITION``
@@ -1132,11 +4727,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION is constant
+	``ATTRITION`` is constant
 
 * type: string
 
-* value: "at"
+* value: ``"at"``
 
 
 ``CAPTURE_THE_FLAG``
@@ -1144,11 +4739,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_THE_FLAG is constant
+	``CAPTURE_THE_FLAG`` is constant
 
 * type: string
 
-* value: "ctf"
+* value: ``"ctf"``
 
 
 ``MARKED_FOR_DEATH``
@@ -1156,11 +4751,11 @@ UI Globals
 
 .. note::
 
-	MARKED_FOR_DEATH is constant
+	``MARKED_FOR_DEATH`` is constant
 
 * type: string
 
-* value: "mfd"
+* value: ``"mfd"``
 
 
 ``MARKED_FOR_DEATH_PRO``
@@ -1168,11 +4763,11 @@ UI Globals
 
 .. note::
 
-	MARKED_FOR_DEATH_PRO is constant
+	``MARKED_FOR_DEATH_PRO`` is constant
 
 * type: string
 
-* value: "mfdp"
+* value: ``"mfdp"``
 
 
 ``LAST_TITAN_STANDING``
@@ -1180,11 +4775,11 @@ UI Globals
 
 .. note::
 
-	LAST_TITAN_STANDING is constant
+	``LAST_TITAN_STANDING`` is constant
 
 * type: string
 
-* value: "lts"
+* value: ``"lts"``
 
 
 ``WINGMAN_LAST_TITAN_STANDING``
@@ -1192,11 +4787,11 @@ UI Globals
 
 .. note::
 
-	WINGMAN_LAST_TITAN_STANDING is constant
+	``WINGMAN_LAST_TITAN_STANDING`` is constant
 
 * type: string
 
-* value: "wlts"
+* value: ``"wlts"``
 
 
 ``LTS_BOMB``
@@ -1204,11 +4799,11 @@ UI Globals
 
 .. note::
 
-	LTS_BOMB is constant
+	``LTS_BOMB`` is constant
 
 * type: string
 
-* value: "ltsbomb"
+* value: ``"ltsbomb"``
 
 
 ``AI_TDM``
@@ -1216,11 +4811,11 @@ UI Globals
 
 .. note::
 
-	AI_TDM is constant
+	``AI_TDM`` is constant
 
 * type: string
 
-* value: "aitdm"
+* value: ``"aitdm"``
 
 
 ``BOMB``
@@ -1228,11 +4823,11 @@ UI Globals
 
 .. note::
 
-	BOMB is constant
+	``BOMB`` is constant
 
 * type: string
 
-* value: "bomb"
+* value: ``"bomb"``
 
 
 ``FFA``
@@ -1240,11 +4835,11 @@ UI Globals
 
 .. note::
 
-	FFA is constant
+	``FFA`` is constant
 
 * type: string
 
-* value: "ffa"
+* value: ``"ffa"``
 
 
 ``SST``
@@ -1252,11 +4847,11 @@ UI Globals
 
 .. note::
 
-	SST is constant
+	``SST`` is constant
 
 * type: string
 
-* value: "sst"
+* value: ``"sst"``
 
 
 ``COLISEUM``
@@ -1264,11 +4859,11 @@ UI Globals
 
 .. note::
 
-	COLISEUM is constant
+	``COLISEUM`` is constant
 
 * type: string
 
-* value: "coliseum"
+* value: ``"coliseum"``
 
 
 ``WINGMAN_PILOT_SKIRMISH``
@@ -1276,11 +4871,11 @@ UI Globals
 
 .. note::
 
-	WINGMAN_PILOT_SKIRMISH is constant
+	``WINGMAN_PILOT_SKIRMISH`` is constant
 
 * type: string
 
-* value: "wps"
+* value: ``"wps"``
 
 
 ``HARDCORE_TDM``
@@ -1288,11 +4883,11 @@ UI Globals
 
 .. note::
 
-	HARDCORE_TDM is constant
+	``HARDCORE_TDM`` is constant
 
 * type: string
 
-* value: "htdm"
+* value: ``"htdm"``
 
 
 ``FREE_AGENCY``
@@ -1300,11 +4895,11 @@ UI Globals
 
 .. note::
 
-	FREE_AGENCY is constant
+	``FREE_AGENCY`` is constant
 
 * type: string
 
-* value: "fra"
+* value: ``"fra"``
 
 
 ``FORT_WAR``
@@ -1312,11 +4907,11 @@ UI Globals
 
 .. note::
 
-	FORT_WAR is constant
+	``FORT_WAR`` is constant
 
 * type: string
 
-* value: "fw"
+* value: ``"fw"``
 
 
 ``HUNTED``
@@ -1324,11 +4919,11 @@ UI Globals
 
 .. note::
 
-	HUNTED is constant
+	``HUNTED`` is constant
 
 * type: string
 
-* value: "hunted"
+* value: ``"hunted"``
 
 
 ``DON``
@@ -1336,11 +4931,11 @@ UI Globals
 
 .. note::
 
-	DON is constant
+	``DON`` is constant
 
 * type: string
 
-* value: "don"
+* value: ``"don"``
 
 
 ``SPEEDBALL``
@@ -1348,11 +4943,11 @@ UI Globals
 
 .. note::
 
-	SPEEDBALL is constant
+	``SPEEDBALL`` is constant
 
 * type: string
 
-* value: "speedball"
+* value: ``"speedball"``
 
 
 ``RAID``
@@ -1360,11 +4955,11 @@ UI Globals
 
 .. note::
 
-	RAID is constant
+	``RAID`` is constant
 
 * type: string
 
-* value: "raid"
+* value: ``"raid"``
 
 
 ``ATCOOP``
@@ -1372,11 +4967,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP is constant
+	``ATCOOP`` is constant
 
 * type: string
 
-* value: "atcoop"
+* value: ``"atcoop"``
 
 
 ``CONQUEST``
@@ -1384,11 +4979,11 @@ UI Globals
 
 .. note::
 
-	CONQUEST is constant
+	``CONQUEST`` is constant
 
 * type: string
 
-* value: "cq"
+* value: ``"cq"``
 
 
 ``FD``
@@ -1396,11 +4991,11 @@ UI Globals
 
 .. note::
 
-	FD is constant
+	``FD`` is constant
 
 * type: string
 
-* value: "fd"
+* value: ``"fd"``
 
 
 ``FD_EASY``
@@ -1408,11 +5003,11 @@ UI Globals
 
 .. note::
 
-	FD_EASY is constant
+	``FD_EASY`` is constant
 
 * type: string
 
-* value: "fd_easy"
+* value: ``"fd_easy"``
 
 
 ``FD_NORMAL``
@@ -1420,11 +5015,11 @@ UI Globals
 
 .. note::
 
-	FD_NORMAL is constant
+	``FD_NORMAL`` is constant
 
 * type: string
 
-* value: "fd_normal"
+* value: ``"fd_normal"``
 
 
 ``FD_HARD``
@@ -1432,11 +5027,11 @@ UI Globals
 
 .. note::
 
-	FD_HARD is constant
+	``FD_HARD`` is constant
 
 * type: string
 
-* value: "fd_hard"
+* value: ``"fd_hard"``
 
 
 ``FD_MASTER``
@@ -1444,11 +5039,11 @@ UI Globals
 
 .. note::
 
-	FD_MASTER is constant
+	``FD_MASTER`` is constant
 
 * type: string
 
-* value: "fd_master"
+* value: ``"fd_master"``
 
 
 ``FD_INSANE``
@@ -1456,11 +5051,11 @@ UI Globals
 
 .. note::
 
-	FD_INSANE is constant
+	``FD_INSANE`` is constant
 
 * type: string
 
-* value: "fd_insane"
+* value: ``"fd_insane"``
 
 
 ``PVE_SANDBOX``
@@ -1468,11 +5063,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX is constant
+	``PVE_SANDBOX`` is constant
 
 * type: string
 
-* value: "pve_sandbox"
+* value: ``"pve_sandbox"``
 
 
 ``TITAN_BRAWL``
@@ -1480,11 +5075,11 @@ UI Globals
 
 .. note::
 
-	TITAN_BRAWL is constant
+	``TITAN_BRAWL`` is constant
 
 * type: string
 
-* value: "ttdm"
+* value: ``"ttdm"``
 
 
 ``VERBOSE_DAMAGE_PRINTOUTS``
@@ -1492,11 +5087,11 @@ UI Globals
 
 .. note::
 
-	VERBOSE_DAMAGE_PRINTOUTS is constant
+	``VERBOSE_DAMAGE_PRINTOUTS`` is constant
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``SAVEGAME_VERSION``
@@ -1504,11 +5099,11 @@ UI Globals
 
 .. note::
 
-	SAVEGAME_VERSION is constant
+	``SAVEGAME_VERSION`` is constant
 
 * type: int
 
-* value: 18
+* value: ``18``
 
 
 ``PERSISTENCE_INIT_VERSION``
@@ -1516,11 +5111,11 @@ UI Globals
 
 .. note::
 
-	PERSISTENCE_INIT_VERSION is constant
+	``PERSISTENCE_INIT_VERSION`` is constant
 
 * type: int
 
-* value: 231
+* value: ``231``
 
 
 ``TEMP_NETWORTH_VAR``
@@ -1528,11 +5123,11 @@ UI Globals
 
 .. note::
 
-	TEMP_NETWORTH_VAR is constant
+	``TEMP_NETWORTH_VAR`` is constant
 
 * type: string
 
-* value: "activeBCID"
+* value: ``"activeBCID"``
 
 
 ``NETWORTH_VAR``
@@ -1540,11 +5135,11 @@ UI Globals
 
 .. note::
 
-	NETWORTH_VAR is constant
+	``NETWORTH_VAR`` is constant
 
 * type: string
 
-* value: "netWorth"
+* value: ``"netWorth"``
 
 
 ``TESTCONST``
@@ -1552,11 +5147,11 @@ UI Globals
 
 .. note::
 
-	TESTCONST is constant
+	``TESTCONST`` is constant
 
 * type: int
 
-* value: 99
+* value: ``99``
 
 
 ``TEAM_BOTH``
@@ -1564,11 +5159,11 @@ UI Globals
 
 .. note::
 
-	TEAM_BOTH is constant
+	``TEAM_BOTH`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``TEAM_COUNT``
@@ -1576,11 +5171,11 @@ UI Globals
 
 .. note::
 
-	TEAM_COUNT is constant
+	``TEAM_COUNT`` is constant
 
 * type: int
 
-* value: 31
+* value: ``31``
 
 
 ``MAX_GAME_HISTORY``
@@ -1588,11 +5183,11 @@ UI Globals
 
 .. note::
 
-	MAX_GAME_HISTORY is constant
+	``MAX_GAME_HISTORY`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``NON_RARES_PER_RARE``
@@ -1600,11 +5195,11 @@ UI Globals
 
 .. note::
 
-	NON_RARES_PER_RARE is constant
+	``NON_RARES_PER_RARE`` is constant
 
 * type: int
 
-* value: 12
+* value: ``12``
 
 
 ``MAX_RANK``
@@ -1612,11 +5207,11 @@ UI Globals
 
 .. note::
 
-	MAX_RANK is constant
+	``MAX_RANK`` is constant
 
 * type: int
 
-* value: 24
+* value: ``24``
 
 
 ``MAX_GEN``
@@ -1624,11 +5219,11 @@ UI Globals
 
 .. note::
 
-	MAX_GEN is constant
+	``MAX_GEN`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``CPU_LEVEL_MINSPEC``
@@ -1636,11 +5231,11 @@ UI Globals
 
 .. note::
 
-	CPU_LEVEL_MINSPEC is constant
+	``CPU_LEVEL_MINSPEC`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``CPU_LEVEL_DURANGO``
@@ -1648,11 +5243,11 @@ UI Globals
 
 .. note::
 
-	CPU_LEVEL_DURANGO is constant
+	``CPU_LEVEL_DURANGO`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``CPU_LEVEL_HIGHEND``
@@ -1660,11 +5255,11 @@ UI Globals
 
 .. note::
 
-	CPU_LEVEL_HIGHEND is constant
+	``CPU_LEVEL_HIGHEND`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``MAX_WORLD_COORD``
@@ -1672,11 +5267,11 @@ UI Globals
 
 .. note::
 
-	MAX_WORLD_COORD is constant
+	``MAX_WORLD_COORD`` is constant
 
-* type: float
+* type: int
 
-* value: (
+* value: ``( 1 << 16 ) - 1``
 
 
 ``COORD_RANGE``
@@ -1684,11 +5279,11 @@ UI Globals
 
 .. note::
 
-	COORD_RANGE is constant
+	``COORD_RANGE`` is constant
 
 * type: float
 
-* value: MAX_WORLD_COORD
+* value: ``MAX_WORLD_COORD + MAX_WORLD_COORD + 1``
 
 
 ``MAX_WORLD_RANGE``
@@ -1696,11 +5291,11 @@ UI Globals
 
 .. note::
 
-	MAX_WORLD_RANGE is constant
+	``MAX_WORLD_RANGE`` is constant
 
 * type: float
 
-* value: sqrt(
+* value: ``sqrt( COORD_RANGE * COORD_RANGE + COORD_RANGE * COORD_RANGE + COORD_RANGE * COORD_RANGE )``
 
 
 ``INVERT_CONVAR_GAMEPAD``
@@ -1708,11 +5303,11 @@ UI Globals
 
 .. note::
 
-	INVERT_CONVAR_GAMEPAD is constant
+	``INVERT_CONVAR_GAMEPAD`` is constant
 
 * type: string
 
-* value: "joy_inverty"
+* value: ``"joy_inverty"``
 
 
 ``INVERT_CONVAR_MOUSE``
@@ -1720,11 +5315,11 @@ UI Globals
 
 .. note::
 
-	INVERT_CONVAR_MOUSE is constant
+	``INVERT_CONVAR_MOUSE`` is constant
 
 * type: string
 
-* value: "m_invert_pitch"
+* value: ``"m_invert_pitch"``
 
 
 ``AUTOSPRINT_CONVAR_NAME``
@@ -1732,11 +5327,11 @@ UI Globals
 
 .. note::
 
-	AUTOSPRINT_CONVAR_NAME is constant
+	``AUTOSPRINT_CONVAR_NAME`` is constant
 
 * type: string
 
-* value: "autosprint_type"
+* value: ``"autosprint_type"``
 
 
 ``AI_HARD_LIMIT``
@@ -1744,11 +5339,11 @@ UI Globals
 
 .. note::
 
-	AI_HARD_LIMIT is constant
+	``AI_HARD_LIMIT`` is constant
 
 * type: int
 
-* value: 36
+* value: ``36``
 
 
 ``MID_SPEC_PLAYER_CUTOFF``
@@ -1756,11 +5351,11 @@ UI Globals
 
 .. note::
 
-	MID_SPEC_PLAYER_CUTOFF is constant
+	``MID_SPEC_PLAYER_CUTOFF`` is constant
 
 * type: int
 
-* value: 8
+* value: ``8``
 
 
 ``MID_SPEC_MAX_AI_COUNT``
@@ -1768,11 +5363,11 @@ UI Globals
 
 .. note::
 
-	MID_SPEC_MAX_AI_COUNT is constant
+	``MID_SPEC_MAX_AI_COUNT`` is constant
 
 * type: int
 
-* value: 9
+* value: ``9``
 
 
 ``ZERO_VECTOR``
@@ -1780,11 +5375,11 @@ UI Globals
 
 .. note::
 
-	ZERO_VECTOR is constant
+	``ZERO_VECTOR`` is constant
 
 * type: vector
 
-* value: <0,0,0>
+* value: ``<0,0,0>``
 
 
 ``PilotLoadoutDef``
@@ -1810,11 +5405,11 @@ UI Globals
 
 .. note::
 
-	GRUNT_EXECUTE_MIN_DIST_FROM_PLAYER is constant
+	``GRUNT_EXECUTE_MIN_DIST_FROM_PLAYER`` is constant
 
 * type: int
 
-* value: 768
+* value: ``768``
 
 
 ``GRUNT_EXECUTE_COOLDOWN_MIN``
@@ -1822,11 +5417,11 @@ UI Globals
 
 .. note::
 
-	GRUNT_EXECUTE_COOLDOWN_MIN is constant
+	``GRUNT_EXECUTE_COOLDOWN_MIN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``GRUNT_EXECUTE_COOLDOWN_MAX``
@@ -1834,11 +5429,11 @@ UI Globals
 
 .. note::
 
-	GRUNT_EXECUTE_COOLDOWN_MAX is constant
+	``GRUNT_EXECUTE_COOLDOWN_MAX`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``MAX_GRUNTS_TO_EXECUTE_AT_ONCE``
@@ -1846,11 +5441,11 @@ UI Globals
 
 .. note::
 
-	MAX_GRUNTS_TO_EXECUTE_AT_ONCE is constant
+	``MAX_GRUNTS_TO_EXECUTE_AT_ONCE`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``GRUNT_EXECUTE_GROUP_COOLDOWN_MIN``
@@ -1858,11 +5453,11 @@ UI Globals
 
 .. note::
 
-	GRUNT_EXECUTE_GROUP_COOLDOWN_MIN is constant
+	``GRUNT_EXECUTE_GROUP_COOLDOWN_MIN`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``GRUNT_EXECUTE_GROUP_COOLDOWN_MAX``
@@ -1870,11 +5465,11 @@ UI Globals
 
 .. note::
 
-	GRUNT_EXECUTE_GROUP_COOLDOWN_MAX is constant
+	``GRUNT_EXECUTE_GROUP_COOLDOWN_MAX`` is constant
 
 * type: int
 
-* value: 31
+* value: ``31``
 
 
 ``CONNECT_TIME_DEFAULT``
@@ -1882,11 +5477,11 @@ UI Globals
 
 .. note::
 
-	CONNECT_TIME_DEFAULT is constant
+	``CONNECT_TIME_DEFAULT`` is constant
 
 * type: int
 
-* value: 23
+* value: ``23``
 
 
 ``OUT_OF_BOUNDS_TIME_LIMIT``
@@ -1894,11 +5489,11 @@ UI Globals
 
 .. note::
 
-	OUT_OF_BOUNDS_TIME_LIMIT is constant
+	``OUT_OF_BOUNDS_TIME_LIMIT`` is constant
 
 * type: float
 
-* value: 8.0
+* value: ``8.0``
 
 
 ``OUT_OF_BOUNDS_DECAY_TIME``
@@ -1906,11 +5501,11 @@ UI Globals
 
 .. note::
 
-	OUT_OF_BOUNDS_DECAY_TIME is constant
+	``OUT_OF_BOUNDS_DECAY_TIME`` is constant
 
 * type: float
 
-* value: 15.0
+* value: ``15.0``
 
 
 ``OUT_OF_BOUNDS_DECAY_DELAY``
@@ -1918,11 +5513,11 @@ UI Globals
 
 .. note::
 
-	OUT_OF_BOUNDS_DECAY_DELAY is constant
+	``OUT_OF_BOUNDS_DECAY_DELAY`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``MAX_TRACKED_CHALLENGES``
@@ -1930,11 +5525,11 @@ UI Globals
 
 .. note::
 
-	MAX_TRACKED_CHALLENGES is constant
+	``MAX_TRACKED_CHALLENGES`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``FRIENDLY_R``
@@ -1942,11 +5537,11 @@ UI Globals
 
 .. note::
 
-	FRIENDLY_R is constant
+	``FRIENDLY_R`` is constant
 
 * type: int
 
-* value: 87
+* value: ``87``
 
 
 ``FRIENDLY_G``
@@ -1954,11 +5549,11 @@ UI Globals
 
 .. note::
 
-	FRIENDLY_G is constant
+	``FRIENDLY_G`` is constant
 
 * type: int
 
-* value: 151
+* value: ``151``
 
 
 ``FRIENDLY_B``
@@ -1966,11 +5561,11 @@ UI Globals
 
 .. note::
 
-	FRIENDLY_B is constant
+	``FRIENDLY_B`` is constant
 
 * type: int
 
-* value: 219
+* value: ``219``
 
 
 ``ENEMY_R``
@@ -1978,11 +5573,11 @@ UI Globals
 
 .. note::
 
-	ENEMY_R is constant
+	``ENEMY_R`` is constant
 
 * type: int
 
-* value: 255
+* value: ``255``
 
 
 ``ENEMY_G``
@@ -1990,11 +5585,11 @@ UI Globals
 
 .. note::
 
-	ENEMY_G is constant
+	``ENEMY_G`` is constant
 
 * type: int
 
-* value: 120
+* value: ``120``
 
 
 ``ENEMY_B``
@@ -2002,11 +5597,11 @@ UI Globals
 
 .. note::
 
-	ENEMY_B is constant
+	``ENEMY_B`` is constant
 
 * type: int
 
-* value: 32
+* value: ``32``
 
 
 ``LOCAL_R``
@@ -2014,11 +5609,11 @@ UI Globals
 
 .. note::
 
-	LOCAL_R is constant
+	``LOCAL_R`` is constant
 
 * type: int
 
-* value: 254
+* value: ``254``
 
 
 ``LOCAL_G``
@@ -2026,11 +5621,11 @@ UI Globals
 
 .. note::
 
-	LOCAL_G is constant
+	``LOCAL_G`` is constant
 
 * type: int
 
-* value: 184
+* value: ``184``
 
 
 ``LOCAL_B``
@@ -2038,11 +5633,11 @@ UI Globals
 
 .. note::
 
-	LOCAL_B is constant
+	``LOCAL_B`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``PARTY_R``
@@ -2050,11 +5645,11 @@ UI Globals
 
 .. note::
 
-	PARTY_R is constant
+	``PARTY_R`` is constant
 
 * type: int
 
-* value: 91
+* value: ``91``
 
 
 ``PARTY_G``
@@ -2062,11 +5657,11 @@ UI Globals
 
 .. note::
 
-	PARTY_G is constant
+	``PARTY_G`` is constant
 
 * type: int
 
-* value: 255
+* value: ``255``
 
 
 ``PARTY_B``
@@ -2074,11 +5669,11 @@ UI Globals
 
 .. note::
 
-	PARTY_B is constant
+	``PARTY_B`` is constant
 
 * type: int
 
-* value: 31
+* value: ``31``
 
 
 ``BURN_R``
@@ -2086,11 +5681,11 @@ UI Globals
 
 .. note::
 
-	BURN_R is constant
+	``BURN_R`` is constant
 
 * type: int
 
-* value: 246
+* value: ``246``
 
 
 ``BURN_G``
@@ -2098,11 +5693,11 @@ UI Globals
 
 .. note::
 
-	BURN_G is constant
+	``BURN_G`` is constant
 
 * type: int
 
-* value: 134
+* value: ``134``
 
 
 ``BURN_B``
@@ -2110,11 +5705,11 @@ UI Globals
 
 .. note::
 
-	BURN_B is constant
+	``BURN_B`` is constant
 
 * type: int
 
-* value: 40
+* value: ``40``
 
 
 ``TEAM_COLOR_ENEMY``
@@ -2122,11 +5717,11 @@ UI Globals
 
 .. note::
 
-	TEAM_COLOR_ENEMY is constant
+	``TEAM_COLOR_ENEMY`` is constant
 
 * type: vector
 
-* value: <ENEMY_R,ENEMY_G,ENEMY_B>
+* value: ``<ENEMY_R,ENEMY_G,ENEMY_B>``
 
 
 ``TEAM_COLOR_FRIENDLY``
@@ -2134,11 +5729,11 @@ UI Globals
 
 .. note::
 
-	TEAM_COLOR_FRIENDLY is constant
+	``TEAM_COLOR_FRIENDLY`` is constant
 
 * type: vector
 
-* value: <FRIENDLY_R,FRIENDLY_G,FRIENDLY_B>
+* value: ``<FRIENDLY_R,FRIENDLY_G,FRIENDLY_B>``
 
 
 ``TEAM_COLOR_PARTY``
@@ -2146,11 +5741,11 @@ UI Globals
 
 .. note::
 
-	TEAM_COLOR_PARTY is constant
+	``TEAM_COLOR_PARTY`` is constant
 
 * type: vector
 
-* value: <PARTY_R,PARTY_G,PARTY_B>
+* value: ``<PARTY_R,PARTY_G,PARTY_B>``
 
 
 ``TEAM_COLOR_YOU``
@@ -2158,11 +5753,11 @@ UI Globals
 
 .. note::
 
-	TEAM_COLOR_YOU is constant
+	``TEAM_COLOR_YOU`` is constant
 
 * type: vector
 
-* value: <LOCAL_R,LOCAL_G,LOCAL_B>
+* value: ``<LOCAL_R,LOCAL_G,LOCAL_B>``
 
 
 ``BURN_COLOR``
@@ -2170,11 +5765,11 @@ UI Globals
 
 .. note::
 
-	BURN_COLOR is constant
+	``BURN_COLOR`` is constant
 
 * type: vector
 
-* value: <BURN_R,BURN_G,BURN_B>
+* value: ``<BURN_R,BURN_G,BURN_B>``
 
 
 ``TIME_ZOFFSET``
@@ -2182,11 +5777,11 @@ UI Globals
 
 .. note::
 
-	TIME_ZOFFSET is constant
+	``TIME_ZOFFSET`` is constant
 
 * type: int
 
-* value: 11520
+* value: ``11520``
 
 
 ``LOCALPLAYER_NAME_COLOR``
@@ -2194,11 +5789,11 @@ UI Globals
 
 .. note::
 
-	LOCALPLAYER_NAME_COLOR is constant
+	``LOCALPLAYER_NAME_COLOR`` is constant
 
 * type: array
 
-* value: [
+* value: ``[ LOCAL_R, LOCAL_G, LOCAL_B ]``
 
 
 ``FRIENDLY_COLOR``
@@ -2206,11 +5801,11 @@ UI Globals
 
 .. note::
 
-	FRIENDLY_COLOR is constant
+	``FRIENDLY_COLOR`` is constant
 
 * type: unknown
 
-* value: TEAM_COLOR_FRIENDLY
+* value: ``TEAM_COLOR_FRIENDLY``
 
 
 ``ENEMY_COLOR``
@@ -2218,11 +5813,11 @@ UI Globals
 
 .. note::
 
-	ENEMY_COLOR is constant
+	``ENEMY_COLOR`` is constant
 
 * type: unknown
 
-* value: TEAM_COLOR_ENEMY
+* value: ``TEAM_COLOR_ENEMY``
 
 
 ``FRIENDLY_COLOR_FX``
@@ -2230,11 +5825,11 @@ UI Globals
 
 .. note::
 
-	FRIENDLY_COLOR_FX is constant
+	``FRIENDLY_COLOR_FX`` is constant
 
 * type: unknown
 
-* value: TEAM_COLOR_FRIENDLY
+* value: ``TEAM_COLOR_FRIENDLY``
 
 
 ``ENEMY_COLOR_FX``
@@ -2242,11 +5837,11 @@ UI Globals
 
 .. note::
 
-	ENEMY_COLOR_FX is constant
+	``ENEMY_COLOR_FX`` is constant
 
 * type: unknown
 
-* value: TEAM_COLOR_ENEMY
+* value: ``TEAM_COLOR_ENEMY``
 
 
 ``NEUTRAL_COLOR_FX``
@@ -2254,11 +5849,11 @@ UI Globals
 
 .. note::
 
-	NEUTRAL_COLOR_FX is constant
+	``NEUTRAL_COLOR_FX`` is constant
 
 * type: vector
 
-* value: <220,220,220>
+* value: ``<220,220,220>``
 
 
 ``FRIENDLY_CROSSHAIR_COLOR``
@@ -2266,11 +5861,11 @@ UI Globals
 
 .. note::
 
-	FRIENDLY_CROSSHAIR_COLOR is constant
+	``FRIENDLY_CROSSHAIR_COLOR`` is constant
 
 * type: array
 
-* value: [FRIENDLY_R,
+* value: ``[FRIENDLY_R, FRIENDLY_G, FRIENDLY_B, 255]``
 
 
 ``ENEMY_CROSSHAIR_COLOR``
@@ -2278,11 +5873,11 @@ UI Globals
 
 .. note::
 
-	ENEMY_CROSSHAIR_COLOR is constant
+	``ENEMY_CROSSHAIR_COLOR`` is constant
 
 * type: array
 
-* value: [ENEMY_R,
+* value: ``[ENEMY_R, ENEMY_G, ENEMY_B, 180]``
 
 
 ``OBITUARY_COLOR_BURN_WEAPON``
@@ -2290,11 +5885,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_COLOR_BURN_WEAPON is constant
+	``OBITUARY_COLOR_BURN_WEAPON`` is constant
 
 * type: vector
 
-* value: <246,134,40>
+* value: ``<246,134,40>``
 
 
 ``BURN_CARD_WEAPON_HUD_COLOR``
@@ -2302,11 +5897,11 @@ UI Globals
 
 .. note::
 
-	BURN_CARD_WEAPON_HUD_COLOR is constant
+	``BURN_CARD_WEAPON_HUD_COLOR`` is constant
 
 * type: array
 
-* value: [
+* value: ``[ 246, 134, 40, 255 ]``
 
 
 ``BURN_CARD_WEAPON_HUD_COLOR_VECTOR``
@@ -2314,11 +5909,11 @@ UI Globals
 
 .. note::
 
-	BURN_CARD_WEAPON_HUD_COLOR_VECTOR is constant
+	``BURN_CARD_WEAPON_HUD_COLOR_VECTOR`` is constant
 
 * type: vector
 
-* value: <0.965,0.525,0.157>
+* value: ``<0.965,0.525,0.157>``
 
 
 ``SQUAD_SIZE``
@@ -2326,11 +5921,11 @@ UI Globals
 
 .. note::
 
-	SQUAD_SIZE is constant
+	``SQUAD_SIZE`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``eWeaponProficiency``
@@ -2356,11 +5951,11 @@ UI Globals
 
 .. note::
 
-	CURRENT_TARGET_FORGET_TIME is constant
+	``CURRENT_TARGET_FORGET_TIME`` is constant
 
 * type: float
 
-* value: 8.0
+* value: ``8.0``
 
 
 ``scoreEventPointType``
@@ -2374,11 +5969,11 @@ UI Globals
 
 .. note::
 
-	BLINKING_BLUE_LIGHT_PARTICLE is constant
+	``BLINKING_BLUE_LIGHT_PARTICLE`` is constant
 
 * type: string
 
-* value: "blue_light_large_blink"
+* value: ``"blue_light_large_blink"``
 
 
 ``eNPCTitanMode``
@@ -2398,11 +5993,11 @@ UI Globals
 
 .. note::
 
-	MAX_BULLET_PER_SHOT is constant
+	``MAX_BULLET_PER_SHOT`` is constant
 
 * type: int
 
-* value: 35
+* value: ``35``
 
 
 ``ELIMINATION_FUSE_TIME``
@@ -2410,11 +6005,11 @@ UI Globals
 
 .. note::
 
-	ELIMINATION_FUSE_TIME is constant
+	``ELIMINATION_FUSE_TIME`` is constant
 
 * type: int
 
-* value: 45
+* value: ``45``
 
 
 ``ePanelState``
@@ -2440,11 +6035,11 @@ UI Globals
 
 .. note::
 
-	USE_TIME_INFINITE is constant
+	``USE_TIME_INFINITE`` is constant
 
 * type: int
 
-* value: -1
+* value: ``-1``
 
 
 ``CL_HIGHLIGHT_ARROW_X``
@@ -2452,11 +6047,11 @@ UI Globals
 
 .. note::
 
-	CL_HIGHLIGHT_ARROW_X is constant
+	``CL_HIGHLIGHT_ARROW_X`` is constant
 
 * type: float
 
-* value: 0.85
+* value: ``0.85``
 
 
 ``CL_HIGHLIGHT_ARROW_Y``
@@ -2464,11 +6059,11 @@ UI Globals
 
 .. note::
 
-	CL_HIGHLIGHT_ARROW_Y is constant
+	``CL_HIGHLIGHT_ARROW_Y`` is constant
 
 * type: float
 
-* value: 0.80
+* value: ``0.80``
 
 
 ``CL_HIGHLIGHT_ICON_X``
@@ -2476,11 +6071,11 @@ UI Globals
 
 .. note::
 
-	CL_HIGHLIGHT_ICON_X is constant
+	``CL_HIGHLIGHT_ICON_X`` is constant
 
 * type: float
 
-* value: 0.80
+* value: ``0.80``
 
 
 ``CL_HIGHLIGHT_ICON_Y``
@@ -2488,11 +6083,11 @@ UI Globals
 
 .. note::
 
-	CL_HIGHLIGHT_ICON_Y is constant
+	``CL_HIGHLIGHT_ICON_Y`` is constant
 
 * type: float
 
-* value: 0.75
+* value: ``0.75``
 
 
 ``CL_HIGHLIGHT_LABEL_X``
@@ -2500,11 +6095,11 @@ UI Globals
 
 .. note::
 
-	CL_HIGHLIGHT_LABEL_X is constant
+	``CL_HIGHLIGHT_LABEL_X`` is constant
 
 * type: float
 
-* value: 0.80
+* value: ``0.80``
 
 
 ``CL_HIGHLIGHT_LABEL_Y``
@@ -2512,11 +6107,11 @@ UI Globals
 
 .. note::
 
-	CL_HIGHLIGHT_LABEL_Y is constant
+	``CL_HIGHLIGHT_LABEL_Y`` is constant
 
 * type: float
 
-* value: 0.75
+* value: ``0.75``
 
 
 ``MFD_COUNTDOWN_TIME``
@@ -2524,11 +6119,11 @@ UI Globals
 
 .. note::
 
-	MFD_COUNTDOWN_TIME is constant
+	``MFD_COUNTDOWN_TIME`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``MFDP_COUNTDOWN_TIME``
@@ -2536,11 +6131,11 @@ UI Globals
 
 .. note::
 
-	MFDP_COUNTDOWN_TIME is constant
+	``MFDP_COUNTDOWN_TIME`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``MFD_BETWEEN_MARKS_TIME``
@@ -2548,11 +6143,11 @@ UI Globals
 
 .. note::
 
-	MFD_BETWEEN_MARKS_TIME is constant
+	``MFD_BETWEEN_MARKS_TIME`` is constant
 
 * type: int
 
-* value: 7
+* value: ``7``
 
 
 ``MFD_ESCORT_RADIUS``
@@ -2560,11 +6155,11 @@ UI Globals
 
 .. note::
 
-	MFD_ESCORT_RADIUS is constant
+	``MFD_ESCORT_RADIUS`` is constant
 
 * type: int
 
-* value: 700
+* value: ``700``
 
 
 ``MFD_ROUNDS_SKIPPED_AFTER_BEING_MARKED``
@@ -2572,11 +6167,11 @@ UI Globals
 
 .. note::
 
-	MFD_ROUNDS_SKIPPED_AFTER_BEING_MARKED is constant
+	``MFD_ROUNDS_SKIPPED_AFTER_BEING_MARKED`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``MFD_PRO_KILL_ANNOUNCEMENT_WAIT``
@@ -2584,11 +6179,11 @@ UI Globals
 
 .. note::
 
-	MFD_PRO_KILL_ANNOUNCEMENT_WAIT is constant
+	``MFD_PRO_KILL_ANNOUNCEMENT_WAIT`` is constant
 
 * type: float
 
-* value: 0.12
+* value: ``0.12``
 
 
 ``MAX_STAR_COUNT``
@@ -2596,11 +6191,11 @@ UI Globals
 
 .. note::
 
-	MAX_STAR_COUNT is constant
+	``MAX_STAR_COUNT`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``SHIELD_WALL_CHARGE_TIME``
@@ -2608,11 +6203,11 @@ UI Globals
 
 .. note::
 
-	SHIELD_WALL_CHARGE_TIME is constant
+	``SHIELD_WALL_CHARGE_TIME`` is constant
 
 * type: float
 
-* value: 15.0
+* value: ``15.0``
 
 
 ``SHIELD_WALL_MAX_CHARGES``
@@ -2620,11 +6215,11 @@ UI Globals
 
 .. note::
 
-	SHIELD_WALL_MAX_CHARGES is constant
+	``SHIELD_WALL_MAX_CHARGES`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TANK_MISSILE_DELAY``
@@ -2632,11 +6227,11 @@ UI Globals
 
 .. note::
 
-	TANK_MISSILE_DELAY is constant
+	``TANK_MISSILE_DELAY`` is constant
 
 * type: float
 
-* value: 1.5
+* value: ``1.5``
 
 
 ``TANK_MISSILE_VELOCITY``
@@ -2644,11 +6239,11 @@ UI Globals
 
 .. note::
 
-	TANK_MISSILE_VELOCITY is constant
+	``TANK_MISSILE_VELOCITY`` is constant
 
 * type: int
 
-* value: 1800
+* value: ``1800``
 
 
 ``DEFAULT_WARNING_SFX``
@@ -2656,11 +6251,11 @@ UI Globals
 
 .. note::
 
-	DEFAULT_WARNING_SFX is constant
+	``DEFAULT_WARNING_SFX`` is constant
 
 * type: string
 
-* value: "Weapon_R1_Satchel.ArmedBeep"
+* value: ``"Weapon_R1_Satchel.ArmedBeep"``
 
 
 ``FORCE_SONAR_DEACTIVATE``
@@ -2668,11 +6263,11 @@ UI Globals
 
 .. note::
 
-	FORCE_SONAR_DEACTIVATE is constant
+	``FORCE_SONAR_DEACTIVATE`` is constant
 
 * type: string
 
-* value: "SonarDeactivate"
+* value: ``"SonarDeactivate"``
 
 
 ``BURN_CARD_SATCHEL_BURST_COUNT``
@@ -2680,11 +6275,11 @@ UI Globals
 
 .. note::
 
-	BURN_CARD_SATCHEL_BURST_COUNT is constant
+	``BURN_CARD_SATCHEL_BURST_COUNT`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``BURN_CARD_SATCHEL_BURST_RANGE``
@@ -2692,11 +6287,11 @@ UI Globals
 
 .. note::
 
-	BURN_CARD_SATCHEL_BURST_RANGE is constant
+	``BURN_CARD_SATCHEL_BURST_RANGE`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``NOT_IN_TITAN_QUEUE``
@@ -2704,11 +6299,11 @@ UI Globals
 
 .. note::
 
-	NOT_IN_TITAN_QUEUE is constant
+	``NOT_IN_TITAN_QUEUE`` is constant
 
 * type: int
 
-* value: -1
+* value: ``-1``
 
 
 ``TITAN_REQUEST_WAITING_FOR_WAVE``
@@ -2716,11 +6311,11 @@ UI Globals
 
 .. note::
 
-	TITAN_REQUEST_WAITING_FOR_WAVE is constant
+	``TITAN_REQUEST_WAITING_FOR_WAVE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_REQUEST_WAVE_INCOMING``
@@ -2728,11 +6323,11 @@ UI Globals
 
 .. note::
 
-	TITAN_REQUEST_WAVE_INCOMING is constant
+	``TITAN_REQUEST_WAVE_INCOMING`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_REQUEST_WAVE_RESULTS``
@@ -2740,11 +6335,11 @@ UI Globals
 
 .. note::
 
-	TITAN_REQUEST_WAVE_RESULTS is constant
+	``TITAN_REQUEST_WAVE_RESULTS`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_REQUEST_WAVE_RESULTS_TIME``
@@ -2752,11 +6347,11 @@ UI Globals
 
 .. note::
 
-	TITAN_REQUEST_WAVE_RESULTS_TIME is constant
+	``TITAN_REQUEST_WAVE_RESULTS_TIME`` is constant
 
 * type: float
 
-* value: 3.5
+* value: ``3.5``
 
 
 ``MGL_MAGNETIC_FORCE``
@@ -2764,11 +6359,11 @@ UI Globals
 
 .. note::
 
-	MGL_MAGNETIC_FORCE is constant
+	``MGL_MAGNETIC_FORCE`` is constant
 
 * type: int
 
-* value: 1600
+* value: ``1600``
 
 
 ``TT_MAGNETIC_FORCE``
@@ -2776,11 +6371,11 @@ UI Globals
 
 .. note::
 
-	TT_MAGNETIC_FORCE is constant
+	``TT_MAGNETIC_FORCE`` is constant
 
 * type: float
 
-* value: 1600.0
+* value: ``1600.0``
 
 
 ``PROX_MINE_MARKER_TIME``
@@ -2788,11 +6383,11 @@ UI Globals
 
 .. note::
 
-	PROX_MINE_MARKER_TIME is constant
+	``PROX_MINE_MARKER_TIME`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``VANGUARD_SHOULDER_MISSILE_SPEED``
@@ -2800,11 +6395,11 @@ UI Globals
 
 .. note::
 
-	VANGUARD_SHOULDER_MISSILE_SPEED is constant
+	``VANGUARD_SHOULDER_MISSILE_SPEED`` is constant
 
 * type: int
 
-* value: 2200
+* value: ``2200``
 
 
 ``VANGUARD_CORE8_HEALTH_AMOUNT``
@@ -2812,11 +6407,11 @@ UI Globals
 
 .. note::
 
-	VANGUARD_CORE8_HEALTH_AMOUNT is constant
+	``VANGUARD_CORE8_HEALTH_AMOUNT`` is constant
 
 * type: int
 
-* value: 5000
+* value: ``5000``
 
 
 ``MEGA_TURRET_REPAIR_TIME``
@@ -2824,11 +6419,11 @@ UI Globals
 
 .. note::
 
-	MEGA_TURRET_REPAIR_TIME is constant
+	``MEGA_TURRET_REPAIR_TIME`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``LIGHT_TURRET_REPAIR_TIME``
@@ -2836,11 +6431,11 @@ UI Globals
 
 .. note::
 
-	LIGHT_TURRET_REPAIR_TIME is constant
+	``LIGHT_TURRET_REPAIR_TIME`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``EMBARKABLE_NEVER``
@@ -2848,11 +6443,11 @@ UI Globals
 
 .. note::
 
-	EMBARKABLE_NEVER is constant
+	``EMBARKABLE_NEVER`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``EMBARKABLE_INFRONT``
@@ -2860,11 +6455,11 @@ UI Globals
 
 .. note::
 
-	EMBARKABLE_INFRONT is constant
+	``EMBARKABLE_INFRONT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``EMBARKABLE_ANY``
@@ -2872,11 +6467,11 @@ UI Globals
 
 .. note::
 
-	EMBARKABLE_ANY is constant
+	``EMBARKABLE_ANY`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``EMBARKABLE_ANY_PLAYER``
@@ -2884,11 +6479,11 @@ UI Globals
 
 .. note::
 
-	EMBARKABLE_ANY_PLAYER is constant
+	``EMBARKABLE_ANY_PLAYER`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``CLUSTER_ROCKET_BURST_COUNT``
@@ -2896,11 +6491,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_BURST_COUNT is constant
+	``CLUSTER_ROCKET_BURST_COUNT`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``CLUSTER_ROCKET_BURST_COUNT_BURN``
@@ -2908,11 +6503,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_BURST_COUNT_BURN is constant
+	``CLUSTER_ROCKET_BURST_COUNT_BURN`` is constant
 
 * type: int
 
-* value: 32
+* value: ``32``
 
 
 ``CLUSTER_ROCKET_BURST_COUNT_MOD``
@@ -2920,11 +6515,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_BURST_COUNT_MOD is constant
+	``CLUSTER_ROCKET_BURST_COUNT_MOD`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``CLUSTER_ROCKET_BURST_DELAY``
@@ -2932,11 +6527,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_BURST_DELAY is constant
+	``CLUSTER_ROCKET_BURST_DELAY`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``CLUSTER_ROCKET_BURST_OFFSET``
@@ -2944,11 +6539,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_BURST_OFFSET is constant
+	``CLUSTER_ROCKET_BURST_OFFSET`` is constant
 
 * type: float
 
-* value: 0.3
+* value: ``0.3``
 
 
 ``CLUSTER_ROCKET_BURST_RANGE``
@@ -2956,11 +6551,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_BURST_RANGE is constant
+	``CLUSTER_ROCKET_BURST_RANGE`` is constant
 
 * type: float
 
-* value: 250.0
+* value: ``250.0``
 
 
 ``CLUSTER_ROCKET_BURST_GROUP_SIZE``
@@ -2968,11 +6563,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_BURST_GROUP_SIZE is constant
+	``CLUSTER_ROCKET_BURST_GROUP_SIZE`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``CLUSTER_ROCKET_BASE_FIRERATE``
@@ -2980,11 +6575,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_BASE_FIRERATE is constant
+	``CLUSTER_ROCKET_BASE_FIRERATE`` is constant
 
 * type: float
 
-* value: 0.1
+* value: ``0.1``
 
 
 ``CLUSTER_ROCKET_DURATION``
@@ -2992,11 +6587,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_DURATION is constant
+	``CLUSTER_ROCKET_DURATION`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``PAS_NORTHSTAR_CLUSTER_ROCKET_DURATION``
@@ -3004,11 +6599,11 @@ UI Globals
 
 .. note::
 
-	PAS_NORTHSTAR_CLUSTER_ROCKET_DURATION is constant
+	``PAS_NORTHSTAR_CLUSTER_ROCKET_DURATION`` is constant
 
 * type: float
 
-* value: 8.0
+* value: ``8.0``
 
 
 ``CLUSTER_ROCKET_FX_TABLE``
@@ -3016,11 +6611,11 @@ UI Globals
 
 .. note::
 
-	CLUSTER_ROCKET_FX_TABLE is constant
+	``CLUSTER_ROCKET_FX_TABLE`` is constant
 
 * type: string
 
-* value: "exp_rocket_cluster_secondary"
+* value: ``"exp_rocket_cluster_secondary"``
 
 
 ``DAMAGE_BREAK_MELEE_ASSIST``
@@ -3028,11 +6623,11 @@ UI Globals
 
 .. note::
 
-	DAMAGE_BREAK_MELEE_ASSIST is constant
+	``DAMAGE_BREAK_MELEE_ASSIST`` is constant
 
 * type: int
 
-* value: 1400
+* value: ``1400``
 
 
 ``TITAN_FOOTSTEP_DAMAGE``
@@ -3040,11 +6635,11 @@ UI Globals
 
 .. note::
 
-	TITAN_FOOTSTEP_DAMAGE is constant
+	``TITAN_FOOTSTEP_DAMAGE`` is constant
 
 * type: int
 
-* value: 350
+* value: ``350``
 
 
 ``TITAN_FOOTSTEP_DAMAGE_WAIT``
@@ -3052,11 +6647,11 @@ UI Globals
 
 .. note::
 
-	TITAN_FOOTSTEP_DAMAGE_WAIT is constant
+	``TITAN_FOOTSTEP_DAMAGE_WAIT`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``REVIVE_TIME_TO_REVIVE``
@@ -3064,11 +6659,11 @@ UI Globals
 
 .. note::
 
-	REVIVE_TIME_TO_REVIVE is constant
+	``REVIVE_TIME_TO_REVIVE`` is constant
 
 * type: float
 
-* value: 4.0
+* value: ``4.0``
 
 
 ``eRankEnabledModes``
@@ -3094,11 +6689,11 @@ UI Globals
 
 .. note::
 
-	O2_EPILOGUE_DURATION is constant
+	``O2_EPILOGUE_DURATION`` is constant
 
 * type: float
 
-* value: 51.5
+* value: ``51.5``
 
 
 ``eEvents``
@@ -3118,11 +6713,11 @@ UI Globals
 
 .. note::
 
-	BLISK is constant
+	``BLISK`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``GRAVES``
@@ -3130,11 +6725,11 @@ UI Globals
 
 .. note::
 
-	GRAVES is constant
+	``GRAVES`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``BISH``
@@ -3142,11 +6737,11 @@ UI Globals
 
 .. note::
 
-	BISH is constant
+	``BISH`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``BARKER``
@@ -3154,11 +6749,11 @@ UI Globals
 
 .. note::
 
-	BARKER is constant
+	``BARKER`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``CRASHTIME``
@@ -3166,11 +6761,11 @@ UI Globals
 
 .. note::
 
-	CRASHTIME is constant
+	``CRASHTIME`` is constant
 
 * type: float
 
-* value: 16.05
+* value: ``16.05``
 
 
 ``WAKEUPTIME``
@@ -3178,11 +6773,11 @@ UI Globals
 
 .. note::
 
-	WAKEUPTIME is constant
+	``WAKEUPTIME`` is constant
 
 * type: float
 
-* value: 1.5
+* value: ``1.5``
 
 
 ``GATEVDUTIME``
@@ -3190,11 +6785,11 @@ UI Globals
 
 .. note::
 
-	GATEVDUTIME is constant
+	``GATEVDUTIME`` is constant
 
 * type: float
 
-* value: 9.2
+* value: ``9.2``
 
 
 ``LEVEL_UNLOCKS_COUNT``
@@ -3202,11 +6797,11 @@ UI Globals
 
 .. note::
 
-	LEVEL_UNLOCKS_COUNT is constant
+	``LEVEL_UNLOCKS_COUNT`` is constant
 
 * type: array
 
-* value: [
+* value: ``[{ level = "sp_training", count = 1 }, { level = "sp_crashsite", count = 2 }, { level = "sp_sewers1", count = 6 }, { level = "sp_boomtown_start", count = 4 }, { level = "sp_boomtown", count = 3 }, { level = "sp_boomtown_end", count = 2 }, { level = "sp_hub_timeshift", count = 2 }, { level = "sp_timeshift_spoke02", count = 6 }, { level = "sp_beacon", count = 9 }, { level = "sp_beacon_spoke0", count = 2 }, { level = "sp_tday", count = 3 }, { level = "sp_s2s", count = 3 }, { level = "sp_skyway_v1", count = 3 }, { level = "sp_chadbox", count = 6 }]``
 
 
 ``OFFHAND_HUD_COLOR_FULL``
@@ -3214,11 +6809,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_HUD_COLOR_FULL is constant
+	``OFFHAND_HUD_COLOR_FULL`` is constant
 
 * type: string
 
-* value: "180
+* value: ``"180 246 85"``
 
 
 ``OFFHAND_HUD_COLOR_EMPTY``
@@ -3226,11 +6821,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_HUD_COLOR_EMPTY is constant
+	``OFFHAND_HUD_COLOR_EMPTY`` is constant
 
 * type: string
 
-* value: "200
+* value: ``"200 80 80"``
 
 
 ``EJECT_FADE_TIME``
@@ -3238,11 +6833,11 @@ UI Globals
 
 .. note::
 
-	EJECT_FADE_TIME is constant
+	``EJECT_FADE_TIME`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``PROGRESS_BAR_FULL``
@@ -3250,11 +6845,11 @@ UI Globals
 
 .. note::
 
-	PROGRESS_BAR_FULL is constant
+	``PROGRESS_BAR_FULL`` is constant
 
 * type: string
 
-* value: "49
+* value: ``"49 188 204 255"``
 
 
 ``PROGRESS_BAR_EMPTY``
@@ -3262,11 +6857,11 @@ UI Globals
 
 .. note::
 
-	PROGRESS_BAR_EMPTY is constant
+	``PROGRESS_BAR_EMPTY`` is constant
 
 * type: string
 
-* value: "229
+* value: ``"229 86 23 255"``
 
 
 ``eDevStats``
@@ -3280,11 +6875,11 @@ UI Globals
 
 .. note::
 
-	DEVSTATS_VERSION is constant
+	``DEVSTATS_VERSION`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``DEVSTATS_V2_VERSION``
@@ -3292,11 +6887,11 @@ UI Globals
 
 .. note::
 
-	DEVSTATS_V2_VERSION is constant
+	``DEVSTATS_V2_VERSION`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``DEVSTATS_SEPARATOR``
@@ -3304,11 +6899,11 @@ UI Globals
 
 .. note::
 
-	DEVSTATS_SEPARATOR is constant
+	``DEVSTATS_SEPARATOR`` is constant
 
 * type: string
 
-* value: ";"
+* value: ``";"``
 
 
 ``DEV_STAT``
@@ -3316,11 +6911,11 @@ UI Globals
 
 .. note::
 
-	DEV_STAT is constant
+	``DEV_STAT`` is constant
 
 * type: string
 
-* value: "DEV_STAT"
+* value: ``"DEV_STAT"``
 
 
 ``NUM_GAMES_TRACK_KDRATIO``
@@ -3328,11 +6923,11 @@ UI Globals
 
 .. note::
 
-	NUM_GAMES_TRACK_KDRATIO is constant
+	``NUM_GAMES_TRACK_KDRATIO`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``NUM_GAMES_TRACK_WINLOSS_HISTORY``
@@ -3340,11 +6935,11 @@ UI Globals
 
 .. note::
 
-	NUM_GAMES_TRACK_WINLOSS_HISTORY is constant
+	``NUM_GAMES_TRACK_WINLOSS_HISTORY`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``CONSTFLYERHEALTH``
@@ -3352,11 +6947,11 @@ UI Globals
 
 .. note::
 
-	CONSTFLYERHEALTH is constant
+	``CONSTFLYERHEALTH`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``CONSTFLYERHEALTHZERO``
@@ -3364,11 +6959,11 @@ UI Globals
 
 .. note::
 
-	CONSTFLYERHEALTHZERO is constant
+	``CONSTFLYERHEALTHZERO`` is constant
 
 * type: int
 
-* value: 100000
+* value: ``100000``
 
 
 ``eFlyerType``
@@ -3412,11 +7007,11 @@ UI Globals
 
 .. note::
 
-	DEATHCAM_TIME is constant
+	``DEATHCAM_TIME`` is constant
 
 * type: float
 
-* value: 3.5
+* value: ``3.5``
 
 
 ``KILL_REPLAY_BEFORE_KILL_TIME_PILOT``
@@ -3424,11 +7019,11 @@ UI Globals
 
 .. note::
 
-	KILL_REPLAY_BEFORE_KILL_TIME_PILOT is constant
+	``KILL_REPLAY_BEFORE_KILL_TIME_PILOT`` is constant
 
 * type: float
 
-* value: 3.5
+* value: ``3.5``
 
 
 ``KILL_REPLAY_BEFORE_KILL_TIME_TITAN``
@@ -3436,11 +7031,11 @@ UI Globals
 
 .. note::
 
-	KILL_REPLAY_BEFORE_KILL_TIME_TITAN is constant
+	``KILL_REPLAY_BEFORE_KILL_TIME_TITAN`` is constant
 
 * type: float
 
-* value: 6.8
+* value: ``6.8``
 
 
 ``KILL_REPLAY_BEFORE_KILL_TIME_DROPPOD``
@@ -3448,11 +7043,11 @@ UI Globals
 
 .. note::
 
-	KILL_REPLAY_BEFORE_KILL_TIME_DROPPOD is constant
+	``KILL_REPLAY_BEFORE_KILL_TIME_DROPPOD`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``KILL_REPLAY_AFTER_KILL_TIME``
@@ -3460,11 +7055,11 @@ UI Globals
 
 .. note::
 
-	KILL_REPLAY_AFTER_KILL_TIME is constant
+	``KILL_REPLAY_AFTER_KILL_TIME`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``DEATHCAM_TIME_SHORT``
@@ -3472,11 +7067,11 @@ UI Globals
 
 .. note::
 
-	DEATHCAM_TIME_SHORT is constant
+	``DEATHCAM_TIME_SHORT`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``KILL_REPLAY_BEFORE_KILL_TIME_SHORT``
@@ -3484,11 +7079,11 @@ UI Globals
 
 .. note::
 
-	KILL_REPLAY_BEFORE_KILL_TIME_SHORT is constant
+	``KILL_REPLAY_BEFORE_KILL_TIME_SHORT`` is constant
 
 * type: float
 
-* value: 3.5
+* value: ``3.5``
 
 
 ``KILL_REPLAY_AFTER_KILL_TIME_SHORT``
@@ -3496,11 +7091,11 @@ UI Globals
 
 .. note::
 
-	KILL_REPLAY_AFTER_KILL_TIME_SHORT is constant
+	``KILL_REPLAY_AFTER_KILL_TIME_SHORT`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``RESPAWN_BUTTON_BUFFER``
@@ -3508,11 +7103,11 @@ UI Globals
 
 .. note::
 
-	RESPAWN_BUTTON_BUFFER is constant
+	``RESPAWN_BUTTON_BUFFER`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``DEFAULT_SCRIPTED_ANIMATION_BLEND_TIME``
@@ -3520,11 +7115,11 @@ UI Globals
 
 .. note::
 
-	DEFAULT_SCRIPTED_ANIMATION_BLEND_TIME is constant
+	``DEFAULT_SCRIPTED_ANIMATION_BLEND_TIME`` is constant
 
 * type: float
 
-* value: 0.2
+* value: ``0.2``
 
 
 ``DEFAULT_SCRIPTED_ARRIVAL_DISTANCE``
@@ -3532,11 +7127,11 @@ UI Globals
 
 .. note::
 
-	DEFAULT_SCRIPTED_ARRIVAL_DISTANCE is constant
+	``DEFAULT_SCRIPTED_ARRIVAL_DISTANCE`` is constant
 
 * type: int
 
-* value: 16
+* value: ``16``
 
 
 ``RODEO_APPROACH_FALLING_FROM_ABOVE``
@@ -3544,11 +7139,11 @@ UI Globals
 
 .. note::
 
-	RODEO_APPROACH_FALLING_FROM_ABOVE is constant
+	``RODEO_APPROACH_FALLING_FROM_ABOVE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``RODEO_APPROACH_JUMP_ON``
@@ -3556,11 +7151,11 @@ UI Globals
 
 .. note::
 
-	RODEO_APPROACH_JUMP_ON is constant
+	``RODEO_APPROACH_JUMP_ON`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``SAFE_TITANFALL_DISTANCE``
@@ -3568,11 +7163,11 @@ UI Globals
 
 .. note::
 
-	SAFE_TITANFALL_DISTANCE is constant
+	``SAFE_TITANFALL_DISTANCE`` is constant
 
 * type: int
 
-* value: 125
+* value: ``125``
 
 
 ``SAFE_TITANFALL_DISTANCE_CTF``
@@ -3580,11 +7175,11 @@ UI Globals
 
 .. note::
 
-	SAFE_TITANFALL_DISTANCE_CTF is constant
+	``SAFE_TITANFALL_DISTANCE_CTF`` is constant
 
 * type: int
 
-* value: 270
+* value: ``270``
 
 
 ``NUM_PERSISTENT_PILOT_LOADOUTS``
@@ -3592,11 +7187,11 @@ UI Globals
 
 .. note::
 
-	NUM_PERSISTENT_PILOT_LOADOUTS is constant
+	``NUM_PERSISTENT_PILOT_LOADOUTS`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``NUM_PERSISTENT_TITAN_LOADOUTS``
@@ -3604,11 +7199,11 @@ UI Globals
 
 .. note::
 
-	NUM_PERSISTENT_TITAN_LOADOUTS is constant
+	``NUM_PERSISTENT_TITAN_LOADOUTS`` is constant
 
 * type: int
 
-* value: 7
+* value: ``7``
 
 
 ``EMBARK_TIMEOUT``
@@ -3616,11 +7211,11 @@ UI Globals
 
 .. note::
 
-	EMBARK_TIMEOUT is constant
+	``EMBARK_TIMEOUT`` is constant
 
 * type: float
 
-* value: 13.0
+* value: ``13.0``
 
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MIN``
@@ -3628,11 +7223,11 @@ UI Globals
 
 .. note::
 
-	EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MIN is constant
+	``EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MIN`` is constant
 
 * type: float
 
-* value: 1.5
+* value: ``1.5``
 
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MAX``
@@ -3640,11 +7235,11 @@ UI Globals
 
 .. note::
 
-	EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MAX is constant
+	``EMP_GRENADE_PILOT_SCREEN_EFFECTS_DURATION_MAX`` is constant
 
 * type: float
 
-* value: 2.5
+* value: ``2.5``
 
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_FADE``
@@ -3652,11 +7247,11 @@ UI Globals
 
 .. note::
 
-	EMP_GRENADE_PILOT_SCREEN_EFFECTS_FADE is constant
+	``EMP_GRENADE_PILOT_SCREEN_EFFECTS_FADE`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_MIN``
@@ -3664,11 +7259,11 @@ UI Globals
 
 .. note::
 
-	EMP_GRENADE_PILOT_SCREEN_EFFECTS_MIN is constant
+	``EMP_GRENADE_PILOT_SCREEN_EFFECTS_MIN`` is constant
 
 * type: float
 
-* value: 0.15
+* value: ``0.15``
 
 
 ``EMP_GRENADE_PILOT_SCREEN_EFFECTS_MAX``
@@ -3676,11 +7271,11 @@ UI Globals
 
 .. note::
 
-	EMP_GRENADE_PILOT_SCREEN_EFFECTS_MAX is constant
+	``EMP_GRENADE_PILOT_SCREEN_EFFECTS_MAX`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``EMP_IMPARED_SOUND``
@@ -3688,11 +7283,11 @@ UI Globals
 
 .. note::
 
-	EMP_IMPARED_SOUND is constant
+	``EMP_IMPARED_SOUND`` is constant
 
 * type: string
 
-* value: "EMP_VisualImpair"
+* value: ``"EMP_VisualImpair"``
 
 
 ``AIN_REV``
@@ -3700,11 +7295,11 @@ UI Globals
 
 .. note::
 
-	AIN_REV is constant
+	``AIN_REV`` is constant
 
 * type: int
 
-* value: 21
+* value: ``21``
 
 
 ``VOICE_COUNT``
@@ -3712,11 +7307,11 @@ UI Globals
 
 .. note::
 
-	VOICE_COUNT is constant
+	``VOICE_COUNT`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``TEST_ALL_ALIASES``
@@ -3724,11 +7319,11 @@ UI Globals
 
 .. note::
 
-	TEST_ALL_ALIASES is constant
+	``TEST_ALL_ALIASES`` is constant
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``ARMOR_TYPE_HEAVY``
@@ -3736,11 +7331,11 @@ UI Globals
 
 .. note::
 
-	ARMOR_TYPE_HEAVY is constant
+	``ARMOR_TYPE_HEAVY`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``ARMOR_TYPE_NORMAL``
@@ -3748,11 +7343,11 @@ UI Globals
 
 .. note::
 
-	ARMOR_TYPE_NORMAL is constant
+	``ARMOR_TYPE_NORMAL`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``SKYBOXLEVEL``
@@ -3760,11 +7355,11 @@ UI Globals
 
 .. note::
 
-	SKYBOXLEVEL is constant
+	``SKYBOXLEVEL`` is constant
 
 * type: string
 
-* value: "skybox_cam_level"
+* value: ``"skybox_cam_level"``
 
 
 ``SKYBOXSPACE``
@@ -3772,11 +7367,11 @@ UI Globals
 
 .. note::
 
-	SKYBOXSPACE is constant
+	``SKYBOXSPACE`` is constant
 
 * type: string
 
-* value: "skybox_cam_intro"
+* value: ``"skybox_cam_intro"``
 
 
 ``WARPINFXTIME``
@@ -3784,11 +7379,11 @@ UI Globals
 
 .. note::
 
-	WARPINFXTIME is constant
+	``WARPINFXTIME`` is constant
 
 * type: float
 
-* value: 2.7
+* value: ``2.7``
 
 
 ``MATCH_PROGRESS_RED_EYE_AND_ARMADA``
@@ -3796,11 +7391,11 @@ UI Globals
 
 .. note::
 
-	MATCH_PROGRESS_RED_EYE_AND_ARMADA is constant
+	``MATCH_PROGRESS_RED_EYE_AND_ARMADA`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``MATCH_PROGRESS_AIR_ZINGERS``
@@ -3808,11 +7403,11 @@ UI Globals
 
 .. note::
 
-	MATCH_PROGRESS_AIR_ZINGERS is constant
+	``MATCH_PROGRESS_AIR_ZINGERS`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``MATCH_PROGRESS_REFUEL_GOBLINS``
@@ -3820,11 +7415,11 @@ UI Globals
 
 .. note::
 
-	MATCH_PROGRESS_REFUEL_GOBLINS is constant
+	``MATCH_PROGRESS_REFUEL_GOBLINS`` is constant
 
 * type: int
 
-* value: 8
+* value: ``8``
 
 
 ``SKYSCALE_SPACE``
@@ -3832,11 +7427,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_SPACE is constant
+	``SKYSCALE_SPACE`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``SKYSCALE_DEFAULT``
@@ -3844,11 +7439,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_DEFAULT is constant
+	``SKYSCALE_DEFAULT`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``SKYSCALE_FRACTURE_WARP``
@@ -3856,11 +7451,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_FRACTURE_WARP is constant
+	``SKYSCALE_FRACTURE_WARP`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``SKYSCALE_FRACTURE_DOOROPEN_ACTOR``
@@ -3868,11 +7463,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_FRACTURE_DOOROPEN_ACTOR is constant
+	``SKYSCALE_FRACTURE_DOOROPEN_ACTOR`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_FRACTURE_DOOROPEN_PLAYER``
@@ -3880,11 +7475,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_FRACTURE_DOOROPEN_PLAYER is constant
+	``SKYSCALE_FRACTURE_DOOROPEN_PLAYER`` is constant
 
 * type: float
 
-* value: 0.33
+* value: ``0.33``
 
 
 ``SKYSCALE_FRACTURE_IMC_ACTOR``
@@ -3892,11 +7487,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_FRACTURE_IMC_ACTOR is constant
+	``SKYSCALE_FRACTURE_IMC_ACTOR`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_FRACTURE_IMC_SHIP``
@@ -3904,11 +7499,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_FRACTURE_IMC_SHIP is constant
+	``SKYSCALE_FRACTURE_IMC_SHIP`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_FRACTURE_IMC_PLAYER``
@@ -3916,11 +7511,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_FRACTURE_IMC_PLAYER is constant
+	``SKYSCALE_FRACTURE_IMC_PLAYER`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_COLONY_IMC_ACTOR``
@@ -3928,11 +7523,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_COLONY_IMC_ACTOR is constant
+	``SKYSCALE_COLONY_IMC_ACTOR`` is constant
 
 * type: float
 
-* value: 0.85
+* value: ``0.85``
 
 
 ``SKYSCALE_COLONY_IMC_SHIP``
@@ -3940,11 +7535,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_COLONY_IMC_SHIP is constant
+	``SKYSCALE_COLONY_IMC_SHIP`` is constant
 
 * type: float
 
-* value: 0.7
+* value: ``0.7``
 
 
 ``SKYSCALE_COLONY_IMC_PLAYER``
@@ -3952,11 +7547,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_COLONY_IMC_PLAYER is constant
+	``SKYSCALE_COLONY_IMC_PLAYER`` is constant
 
 * type: float
 
-* value: 0.7
+* value: ``0.7``
 
 
 ``SKYSCALE_COLONY_MCOR_ACTOR``
@@ -3964,11 +7559,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_COLONY_MCOR_ACTOR is constant
+	``SKYSCALE_COLONY_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 0.65
+* value: ``0.65``
 
 
 ``SKYSCALE_COLONY_MCOR_SHIP``
@@ -3976,11 +7571,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_COLONY_MCOR_SHIP is constant
+	``SKYSCALE_COLONY_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 0.65
+* value: ``0.65``
 
 
 ``SKYSCALE_COLONY_MCOR_PLAYER``
@@ -3988,11 +7583,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_COLONY_MCOR_PLAYER is constant
+	``SKYSCALE_COLONY_MCOR_PLAYER`` is constant
 
 * type: float
 
-* value: 0.65
+* value: ``0.65``
 
 
 ``SKYSCALE_RELIC_IMC_ACTOR``
@@ -4000,11 +7595,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_RELIC_IMC_ACTOR is constant
+	``SKYSCALE_RELIC_IMC_ACTOR`` is constant
 
 * type: float
 
-* value: 0.9
+* value: ``0.9``
 
 
 ``SKYSCALE_RELIC_IMC_SHIP``
@@ -4012,11 +7607,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_RELIC_IMC_SHIP is constant
+	``SKYSCALE_RELIC_IMC_SHIP`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_RELIC_IMC_PLAYER``
@@ -4024,11 +7619,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_RELIC_IMC_PLAYER is constant
+	``SKYSCALE_RELIC_IMC_PLAYER`` is constant
 
 * type: float
 
-* value: 0.85
+* value: ``0.85``
 
 
 ``SKYSCALE_RELIC_MCOR_ACTOR``
@@ -4036,11 +7631,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_RELIC_MCOR_ACTOR is constant
+	``SKYSCALE_RELIC_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_RELIC_MCOR_SHIP``
@@ -4048,11 +7643,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_RELIC_MCOR_SHIP is constant
+	``SKYSCALE_RELIC_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_RELIC_MCOR_PLAYER``
@@ -4060,11 +7655,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_RELIC_MCOR_PLAYER is constant
+	``SKYSCALE_RELIC_MCOR_PLAYER`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_OUTPOST_IMC_ACTOR``
@@ -4072,11 +7667,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_IMC_ACTOR is constant
+	``SKYSCALE_OUTPOST_IMC_ACTOR`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``SKYSCALE_OUTPOST_IMC_SHIP``
@@ -4084,11 +7679,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_IMC_SHIP is constant
+	``SKYSCALE_OUTPOST_IMC_SHIP`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``SKYSCALE_OUTPOST_IMC_PLAYER``
@@ -4096,11 +7691,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_IMC_PLAYER is constant
+	``SKYSCALE_OUTPOST_IMC_PLAYER`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``SKYSCALE_OUTPOST_DOOROPEN_IMC_ACTOR``
@@ -4108,11 +7703,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_DOOROPEN_IMC_ACTOR is constant
+	``SKYSCALE_OUTPOST_DOOROPEN_IMC_ACTOR`` is constant
 
 * type: float
 
-* value: 0.9
+* value: ``0.9``
 
 
 ``SKYSCALE_OUTPOST_DOOROPEN_IMC_SHIP``
@@ -4120,11 +7715,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_DOOROPEN_IMC_SHIP is constant
+	``SKYSCALE_OUTPOST_DOOROPEN_IMC_SHIP`` is constant
 
 * type: float
 
-* value: 0.8
+* value: ``0.8``
 
 
 ``SKYSCALE_OUTPOST_DOOROPEN_IMC_PLAYER``
@@ -4132,11 +7727,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_DOOROPEN_IMC_PLAYER is constant
+	``SKYSCALE_OUTPOST_DOOROPEN_IMC_PLAYER`` is constant
 
 * type: float
 
-* value: 0.9
+* value: ``0.9``
 
 
 ``SKYSCALE_OUTPOST_MCOR_ACTOR``
@@ -4144,11 +7739,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_MCOR_ACTOR is constant
+	``SKYSCALE_OUTPOST_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_OUTPOST_MCOR_SHIP``
@@ -4156,11 +7751,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_MCOR_SHIP is constant
+	``SKYSCALE_OUTPOST_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``SKYSCALE_OUTPOST_MCOR_PLAYER``
@@ -4168,11 +7763,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_MCOR_PLAYER is constant
+	``SKYSCALE_OUTPOST_MCOR_PLAYER`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``SKYSCALE_OUTPOST_DOOROPEN_MCOR_ACTOR``
@@ -4180,11 +7775,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_DOOROPEN_MCOR_ACTOR is constant
+	``SKYSCALE_OUTPOST_DOOROPEN_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``SKYSCALE_OUTPOST_DOOROPEN_MCOR_SHIP``
@@ -4192,11 +7787,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_DOOROPEN_MCOR_SHIP is constant
+	``SKYSCALE_OUTPOST_DOOROPEN_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 0.8
+* value: ``0.8``
 
 
 ``SKYSCALE_OUTPOST_DOOROPEN_MCOR_PLAYER``
@@ -4204,11 +7799,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_OUTPOST_DOOROPEN_MCOR_PLAYER is constant
+	``SKYSCALE_OUTPOST_DOOROPEN_MCOR_PLAYER`` is constant
 
 * type: float
 
-* value: 0.6
+* value: ``0.6``
 
 
 ``SKYSCALE_BONEYARD_MCOR_ACTOR``
@@ -4216,11 +7811,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_MCOR_ACTOR is constant
+	``SKYSCALE_BONEYARD_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_BONEYARD_MCOR_SHIP``
@@ -4228,11 +7823,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_MCOR_SHIP is constant
+	``SKYSCALE_BONEYARD_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 0.6
+* value: ``0.6``
 
 
 ``SKYSCALE_BONEYARD_MCOR_PLAYER``
@@ -4240,11 +7835,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_MCOR_PLAYER is constant
+	``SKYSCALE_BONEYARD_MCOR_PLAYER`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_BONEYARD_DOOROPEN_MCOR_ACTOR``
@@ -4252,11 +7847,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_DOOROPEN_MCOR_ACTOR is constant
+	``SKYSCALE_BONEYARD_DOOROPEN_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 0.85
+* value: ``0.85``
 
 
 ``SKYSCALE_BONEYARD_DOOROPEN_MCOR_SHIP``
@@ -4264,11 +7859,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_DOOROPEN_MCOR_SHIP is constant
+	``SKYSCALE_BONEYARD_DOOROPEN_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``0.8``
@@ -4276,7 +7871,7 @@ UI Globals
 
 .. note::
 
-	0.8 is constant
+	``0.8`` is constant
 
 * type: SKYSCALE_BONEYARD_DOOROPEN_MCOR_PLAYER=
 
@@ -4286,11 +7881,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_IMC_ACTOR is constant
+	``SKYSCALE_BONEYARD_IMC_ACTOR`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_BONEYARD_IMC_SHIP``
@@ -4298,11 +7893,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_IMC_SHIP is constant
+	``SKYSCALE_BONEYARD_IMC_SHIP`` is constant
 
 * type: float
 
-* value: 0.35
+* value: ``0.35``
 
 
 ``SKYSCALE_BONEYARD_IMC_PLAYER``
@@ -4310,11 +7905,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_IMC_PLAYER is constant
+	``SKYSCALE_BONEYARD_IMC_PLAYER`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SKYSCALE_BONEYARD_DOOROPEN_IMC_ACTOR``
@@ -4322,11 +7917,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_DOOROPEN_IMC_ACTOR is constant
+	``SKYSCALE_BONEYARD_DOOROPEN_IMC_ACTOR`` is constant
 
 * type: float
 
-* value: 0.8
+* value: ``0.8``
 
 
 ``SKYSCALE_BONEYARD_DOOROPEN_IMC_SHIP``
@@ -4334,11 +7929,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_DOOROPEN_IMC_SHIP is constant
+	``SKYSCALE_BONEYARD_DOOROPEN_IMC_SHIP`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``SKYSCALE_BONEYARD_DOOROPEN_IMC_PLAYER``
@@ -4346,11 +7941,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_BONEYARD_DOOROPEN_IMC_PLAYER is constant
+	``SKYSCALE_BONEYARD_DOOROPEN_IMC_PLAYER`` is constant
 
 * type: float
 
-* value: 0.8
+* value: ``0.8``
 
 
 ``SKYSCALE_AIRBASE_MCOR_ACTOR``
@@ -4358,11 +7953,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_AIRBASE_MCOR_ACTOR is constant
+	``SKYSCALE_AIRBASE_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 0.95
+* value: ``0.95``
 
 
 ``SKYSCALE_AIRBASE_MCOR_SHIP``
@@ -4370,11 +7965,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_AIRBASE_MCOR_SHIP is constant
+	``SKYSCALE_AIRBASE_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 0.95
+* value: ``0.95``
 
 
 ``SKYSCALE_AIRBASE_MCOR_PLAYER``
@@ -4382,11 +7977,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_AIRBASE_MCOR_PLAYER is constant
+	``SKYSCALE_AIRBASE_MCOR_PLAYER`` is constant
 
 * type: float
 
-* value: 0.95
+* value: ``0.95``
 
 
 ``SKYSCALE_O2_MCOR_ACTOR``
@@ -4394,11 +7989,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_O2_MCOR_ACTOR is constant
+	``SKYSCALE_O2_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``SKYSCALE_O2_MCOR_SHIP``
@@ -4406,11 +8001,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_O2_MCOR_SHIP is constant
+	``SKYSCALE_O2_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``SKYSCALE_O2_MCOR_PLAYER``
@@ -4418,11 +8013,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_O2_MCOR_PLAYER is constant
+	``SKYSCALE_O2_MCOR_PLAYER`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``SKYSCALE_O2_DOOROPEN_MCOR_ACTOR``
@@ -4430,11 +8025,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_O2_DOOROPEN_MCOR_ACTOR is constant
+	``SKYSCALE_O2_DOOROPEN_MCOR_ACTOR`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``SKYSCALE_O2_DOOROPEN_MCOR_SHIP``
@@ -4442,11 +8037,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_O2_DOOROPEN_MCOR_SHIP is constant
+	``SKYSCALE_O2_DOOROPEN_MCOR_SHIP`` is constant
 
 * type: float
 
-* value: 1.1
+* value: ``1.1``
 
 
 ``SKYSCALE_O2_DOOROPEN_MCOR_PLAYER``
@@ -4454,11 +8049,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_O2_DOOROPEN_MCOR_PLAYER is constant
+	``SKYSCALE_O2_DOOROPEN_MCOR_PLAYER`` is constant
 
 * type: float
 
-* value: 0.9
+* value: ``0.9``
 
 
 ``IMC_TRANSITION_TIME``
@@ -4466,11 +8061,11 @@ UI Globals
 
 .. note::
 
-	IMC_TRANSITION_TIME is constant
+	``IMC_TRANSITION_TIME`` is constant
 
 * type: float
 
-* value: 18.0
+* value: ``18.0``
 
 
 ``IMC_ENTER_ATMOS_FX_TIME``
@@ -4478,11 +8073,11 @@ UI Globals
 
 .. note::
 
-	IMC_ENTER_ATMOS_FX_TIME is constant
+	``IMC_ENTER_ATMOS_FX_TIME`` is constant
 
 * type: float
 
-* value: 4.0
+* value: ``4.0``
 
 
 ``SKYSCALE_O2_FIRE_BUILDUP_TIME``
@@ -4490,11 +8085,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_O2_FIRE_BUILDUP_TIME is constant
+	``SKYSCALE_O2_FIRE_BUILDUP_TIME`` is constant
 
 * type: int
 
-* value: 14
+* value: ``14``
 
 
 ``SKYSCALE_EJECT_TIME``
@@ -4502,11 +8097,11 @@ UI Globals
 
 .. note::
 
-	SKYSCALE_EJECT_TIME is constant
+	``SKYSCALE_EJECT_TIME`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``PICK_LOADOUT_SOUND_TIME``
@@ -4514,11 +8109,11 @@ UI Globals
 
 .. note::
 
-	PICK_LOADOUT_SOUND_TIME is constant
+	``PICK_LOADOUT_SOUND_TIME`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``PerfIndexClient``
@@ -4538,11 +8133,11 @@ UI Globals
 
 .. note::
 
-	PROMO_SCORE_ADVANCE_REQ is constant
+	``PROMO_SCORE_ADVANCE_REQ`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``RANKED_GEM_PROGRESSION_ENABLED``
@@ -4550,11 +8145,11 @@ UI Globals
 
 .. note::
 
-	RANKED_GEM_PROGRESSION_ENABLED is constant
+	``RANKED_GEM_PROGRESSION_ENABLED`` is constant
 
 * type: bool
 
-* value: true
+* value: ``true``
 
 
 ``RANKED_RECALC_TIMESLICE``
@@ -4562,11 +8157,11 @@ UI Globals
 
 .. note::
 
-	RANKED_RECALC_TIMESLICE is constant
+	``RANKED_RECALC_TIMESLICE`` is constant
 
 * type: float
 
-* value: 1.8
+* value: ``1.8``
 
 
 ``RANKED_PLAY``
@@ -4574,11 +8169,11 @@ UI Globals
 
 .. note::
 
-	RANKED_PLAY is constant
+	``RANKED_PLAY`` is constant
 
 * type: string
 
-* value: "ranked"
+* value: ``"ranked"``
 
 
 ``eRankedContributionType``
@@ -4592,11 +8187,11 @@ UI Globals
 
 .. note::
 
-	RANKED_TIER_COUNT is constant
+	``RANKED_TIER_COUNT`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``RANKED_DIVISION_COUNT``
@@ -4604,11 +8199,11 @@ UI Globals
 
 .. note::
 
-	RANKED_DIVISION_COUNT is constant
+	``RANKED_DIVISION_COUNT`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``RANKED_DECAY_GEMS_LOST_PER_DAY``
@@ -4616,11 +8211,11 @@ UI Globals
 
 .. note::
 
-	RANKED_DECAY_GEMS_LOST_PER_DAY is constant
+	``RANKED_DECAY_GEMS_LOST_PER_DAY`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``RANKED_INVALID_SEASON``
@@ -4628,11 +8223,11 @@ UI Globals
 
 .. note::
 
-	RANKED_INVALID_SEASON is constant
+	``RANKED_INVALID_SEASON`` is constant
 
 * type: int
 
-* value: -12345
+* value: ``-12345``
 
 
 ``RANKED_SEASON_OFFSET``
@@ -4640,11 +8235,11 @@ UI Globals
 
 .. note::
 
-	RANKED_SEASON_OFFSET is constant
+	``RANKED_SEASON_OFFSET`` is constant
 
 * type: int
 
-* value: 539
+* value: ``539``
 
 
 ``RANKED_SEASONS_PER_MONTH``
@@ -4652,11 +8247,11 @@ UI Globals
 
 .. note::
 
-	RANKED_SEASONS_PER_MONTH is constant
+	``RANKED_SEASONS_PER_MONTH`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``RANKED_SPLASH_COLORS_MAIN``
@@ -4664,11 +8259,11 @@ UI Globals
 
 .. note::
 
-	RANKED_SPLASH_COLORS_MAIN is constant
+	``RANKED_SPLASH_COLORS_MAIN`` is constant
 
 * type: array
 
-* value: [
+* value: ``[ 139, 195, 98 ]``
 
 
 ``RANKED_SPLASH_COLORS_GLOW``
@@ -4676,11 +8271,11 @@ UI Globals
 
 .. note::
 
-	RANKED_SPLASH_COLORS_GLOW is constant
+	``RANKED_SPLASH_COLORS_GLOW`` is constant
 
 * type: array
 
-* value: [
+* value: ``[ 34, 90, 65, 255 ]``
 
 
 ``RANKED_SPLASH_COLORS_MAIN_STRING``
@@ -4688,11 +8283,11 @@ UI Globals
 
 .. note::
 
-	RANKED_SPLASH_COLORS_MAIN_STRING is constant
+	``RANKED_SPLASH_COLORS_MAIN_STRING`` is constant
 
 * type: string
 
-* value: "164
+* value: ``"164 229 117 255"``
 
 
 ``RANKED_SPLASH_COLORS_GLOW_STRING``
@@ -4700,11 +8295,11 @@ UI Globals
 
 .. note::
 
-	RANKED_SPLASH_COLORS_GLOW_STRING is constant
+	``RANKED_SPLASH_COLORS_GLOW_STRING`` is constant
 
 * type: string
 
-* value: "34
+* value: ``"34 90 65 255"``
 
 
 ``SharedPerfIndexStart``
@@ -4712,11 +8307,11 @@ UI Globals
 
 .. note::
 
-	SharedPerfIndexStart is constant
+	``SharedPerfIndexStart`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``PerfIndexShared``
@@ -4730,11 +8325,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CORE_ACTIVE_TIME is constant
+	``TITAN_CORE_ACTIVE_TIME`` is constant
 
 * type: float
 
-* value: 12.6
+* value: ``12.6``
 
 
 ``TITAN_CORE_MARATHON_CORE_MULTIPLIER``
@@ -4742,11 +8337,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CORE_MARATHON_CORE_MULTIPLIER is constant
+	``TITAN_CORE_MARATHON_CORE_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 1.42
+* value: ``1.42``
 
 
 ``TITAN_CORE_FIRST_BUILD_TIME``
@@ -4754,11 +8349,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CORE_FIRST_BUILD_TIME is constant
+	``TITAN_CORE_FIRST_BUILD_TIME`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``TITAN_CORE_BUILD_TIME``
@@ -4766,11 +8361,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CORE_BUILD_TIME is constant
+	``TITAN_CORE_BUILD_TIME`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``TITAN_CORE_CHARGE_TIME``
@@ -4778,11 +8373,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CORE_CHARGE_TIME is constant
+	``TITAN_CORE_CHARGE_TIME`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``TITAN_CORE_TIC_RATE``
@@ -4790,11 +8385,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CORE_TIC_RATE is constant
+	``TITAN_CORE_TIC_RATE`` is constant
 
 * type: float
 
-* value: 3.8
+* value: ``3.8``
 
 
 ``SHIELD_BOOST_R``
@@ -4802,11 +8397,11 @@ UI Globals
 
 .. note::
 
-	SHIELD_BOOST_R is constant
+	``SHIELD_BOOST_R`` is constant
 
 * type: int
 
-* value: 255
+* value: ``255``
 
 
 ``SHIELD_BOOST_G``
@@ -4814,11 +8409,11 @@ UI Globals
 
 .. note::
 
-	SHIELD_BOOST_G is constant
+	``SHIELD_BOOST_G`` is constant
 
 * type: int
 
-* value: 225
+* value: ``225``
 
 
 ``SHIELD_BOOST_B``
@@ -4826,11 +8421,11 @@ UI Globals
 
 .. note::
 
-	SHIELD_BOOST_B is constant
+	``SHIELD_BOOST_B`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``SHIELD_BEACON_REGEN_RATE``
@@ -4838,11 +8433,11 @@ UI Globals
 
 .. note::
 
-	SHIELD_BEACON_REGEN_RATE is constant
+	``SHIELD_BEACON_REGEN_RATE`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``EVAC_SHIP_DAMAGE_MULTIPLIER_AGAINST_NUCLEAR_CORE``
@@ -4850,11 +8445,11 @@ UI Globals
 
 .. note::
 
-	EVAC_SHIP_DAMAGE_MULTIPLIER_AGAINST_NUCLEAR_CORE is constant
+	``EVAC_SHIP_DAMAGE_MULTIPLIER_AGAINST_NUCLEAR_CORE`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``EVAC_SHIP_SHIELD_REGEN_TIME``
@@ -4862,11 +8457,11 @@ UI Globals
 
 .. note::
 
-	EVAC_SHIP_SHIELD_REGEN_TIME is constant
+	``EVAC_SHIP_SHIELD_REGEN_TIME`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``EVAC_SHIP_SHIELD_REGEN_DELAY``
@@ -4874,11 +8469,11 @@ UI Globals
 
 .. note::
 
-	EVAC_SHIP_SHIELD_REGEN_DELAY is constant
+	``EVAC_SHIP_SHIELD_REGEN_DELAY`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``EVAL_PASSENGER_INVULNERABILITY``
@@ -4886,11 +8481,11 @@ UI Globals
 
 .. note::
 
-	EVAL_PASSENGER_INVULNERABILITY is constant
+	``EVAL_PASSENGER_INVULNERABILITY`` is constant
 
 * type: bool
 
-* value: true
+* value: ``true``
 
 
 ``ProgressSource``
@@ -4904,11 +8499,11 @@ UI Globals
 
 .. note::
 
-	HOTDROP_IMPACT_FX_TABLE is constant
+	``HOTDROP_IMPACT_FX_TABLE`` is constant
 
 * type: string
 
-* value: "droppod_impact"
+* value: ``"droppod_impact"``
 
 
 ``HUMAN_RAGDOLL_IMPACT_TABLE``
@@ -4916,11 +8511,11 @@ UI Globals
 
 .. note::
 
-	HUMAN_RAGDOLL_IMPACT_TABLE is constant
+	``HUMAN_RAGDOLL_IMPACT_TABLE`` is constant
 
 * type: string
 
-* value: "ragdoll_human"
+* value: ``"ragdoll_human"``
 
 
 ``CE_FLAG_INTRO``
@@ -4928,11 +8523,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_INTRO is constant
+	``CE_FLAG_INTRO`` is constant
 
 * type: int
 
-* value: 0x0002
+* value: ``0x0002``
 
 
 ``CE_FLAG_EXECUTION``
@@ -4940,11 +8535,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_EXECUTION is constant
+	``CE_FLAG_EXECUTION`` is constant
 
 * type: int
 
-* value: 0x0004
+* value: ``0x0004``
 
 
 ``CE_FLAG_EMBARK``
@@ -4952,11 +8547,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_EMBARK is constant
+	``CE_FLAG_EMBARK`` is constant
 
 * type: int
 
-* value: 0x0008
+* value: ``0x0008``
 
 
 ``CE_FLAG_DISEMBARK``
@@ -4964,11 +8559,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_DISEMBARK is constant
+	``CE_FLAG_DISEMBARK`` is constant
 
 * type: int
 
-* value: 0x0010
+* value: ``0x0010``
 
 
 ``CE_FLAG_TITAN_HOT_DROP``
@@ -4976,11 +8571,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_TITAN_HOT_DROP is constant
+	``CE_FLAG_TITAN_HOT_DROP`` is constant
 
 * type: int
 
-* value: 0x0020
+* value: ``0x0020``
 
 
 ``CE_FLAG_CLASSIC_MP_SPAWNING``
@@ -4988,11 +8583,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_CLASSIC_MP_SPAWNING is constant
+	``CE_FLAG_CLASSIC_MP_SPAWNING`` is constant
 
 * type: int
 
-* value: 0x0040
+* value: ``0x0040``
 
 
 ``CE_FLAG_HIDE_MAIN_HUD``
@@ -5000,11 +8595,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_HIDE_MAIN_HUD is constant
+	``CE_FLAG_HIDE_MAIN_HUD`` is constant
 
 * type: int
 
-* value: 0x0080
+* value: ``0x0080``
 
 
 ``CE_FLAG_TITAN_3P_CAM``
@@ -5012,11 +8607,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_TITAN_3P_CAM is constant
+	``CE_FLAG_TITAN_3P_CAM`` is constant
 
 * type: int
 
-* value: 0x0100
+* value: ``0x0100``
 
 
 ``CE_FLAG_WAVE_SPAWNING``
@@ -5024,11 +8619,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_WAVE_SPAWNING is constant
+	``CE_FLAG_WAVE_SPAWNING`` is constant
 
 * type: int
 
-* value: 0x0200
+* value: ``0x0200``
 
 
 ``CE_FLAG_EOG_STAT_DISPLAY``
@@ -5036,11 +8631,11 @@ UI Globals
 
 .. note::
 
-	CE_FLAG_EOG_STAT_DISPLAY is constant
+	``CE_FLAG_EOG_STAT_DISPLAY`` is constant
 
 * type: int
 
-* value: 0x0400
+* value: ``0x0400``
 
 
 ``TITAN_DAMAGE_STAGE_FULL``
@@ -5048,11 +8643,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DAMAGE_STAGE_FULL is constant
+	``TITAN_DAMAGE_STAGE_FULL`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``TITAN_DAMAGE_STAGE_1``
@@ -5060,11 +8655,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DAMAGE_STAGE_1 is constant
+	``TITAN_DAMAGE_STAGE_1`` is constant
 
 * type: float
 
-* value: 0.75
+* value: ``0.75``
 
 
 ``TITAN_DAMAGE_STAGE_2``
@@ -5072,11 +8667,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DAMAGE_STAGE_2 is constant
+	``TITAN_DAMAGE_STAGE_2`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``TITAN_DAMAGE_STAGE_3``
@@ -5084,11 +8679,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DAMAGE_STAGE_3 is constant
+	``TITAN_DAMAGE_STAGE_3`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``TITAN_DAMAGE_STAGE_DOOMED``
@@ -5096,11 +8691,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DAMAGE_STAGE_DOOMED is constant
+	``TITAN_DAMAGE_STAGE_DOOMED`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``DOOMED_MIN_HEALTH``
@@ -5108,11 +8703,11 @@ UI Globals
 
 .. note::
 
-	DOOMED_MIN_HEALTH is constant
+	``DOOMED_MIN_HEALTH`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``ABILITY_STIM_SPEED_MOD``
@@ -5120,11 +8715,11 @@ UI Globals
 
 .. note::
 
-	ABILITY_STIM_SPEED_MOD is constant
+	``ABILITY_STIM_SPEED_MOD`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``ABILITY_STIM_REGEN_DELAY``
@@ -5132,11 +8727,11 @@ UI Globals
 
 .. note::
 
-	ABILITY_STIM_REGEN_DELAY is constant
+	``ABILITY_STIM_REGEN_DELAY`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``ABILITY_STIM_REGEN_MOD``
@@ -5144,11 +8739,11 @@ UI Globals
 
 .. note::
 
-	ABILITY_STIM_REGEN_MOD is constant
+	``ABILITY_STIM_REGEN_MOD`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``BERSERKER_INCOMING_DAMAGE_DAMPEN``
@@ -5156,11 +8751,11 @@ UI Globals
 
 .. note::
 
-	BERSERKER_INCOMING_DAMAGE_DAMPEN is constant
+	``BERSERKER_INCOMING_DAMAGE_DAMPEN`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``BERSERKER_DASH_VELOCITY``
@@ -5168,11 +8763,11 @@ UI Globals
 
 .. note::
 
-	BERSERKER_DASH_VELOCITY is constant
+	``BERSERKER_DASH_VELOCITY`` is constant
 
 * type: int
 
-* value: 1200
+* value: ``1200``
 
 
 ``BERSERKER_AOE_RADIUS``
@@ -5180,11 +8775,11 @@ UI Globals
 
 .. note::
 
-	BERSERKER_AOE_RADIUS is constant
+	``BERSERKER_AOE_RADIUS`` is constant
 
 * type: int
 
-* value: 120
+* value: ``120``
 
 
 ``BERSERKER_AOE_DAMAGE``
@@ -5192,11 +8787,11 @@ UI Globals
 
 .. note::
 
-	BERSERKER_AOE_DAMAGE is constant
+	``BERSERKER_AOE_DAMAGE`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``BERSERKER_PRE_DASH_TIME``
@@ -5204,11 +8799,11 @@ UI Globals
 
 .. note::
 
-	BERSERKER_PRE_DASH_TIME is constant
+	``BERSERKER_PRE_DASH_TIME`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``BERSERKER_DASH_TIME``
@@ -5216,11 +8811,11 @@ UI Globals
 
 .. note::
 
-	BERSERKER_DASH_TIME is constant
+	``BERSERKER_DASH_TIME`` is constant
 
 * type: float
 
-* value: 0.6
+* value: ``0.6``
 
 
 ``SONAR_GRENADE_RADIUS``
@@ -5228,11 +8823,11 @@ UI Globals
 
 .. note::
 
-	SONAR_GRENADE_RADIUS is constant
+	``SONAR_GRENADE_RADIUS`` is constant
 
 * type: float
 
-* value: 1250.0
+* value: ``1250.0``
 
 
 ``SONAR_GRENADE_PULSE_DURATION``
@@ -5240,11 +8835,11 @@ UI Globals
 
 .. note::
 
-	SONAR_GRENADE_PULSE_DURATION is constant
+	``SONAR_GRENADE_PULSE_DURATION`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``SONAR_PULSE_SPACE``
@@ -5252,11 +8847,11 @@ UI Globals
 
 .. note::
 
-	SONAR_PULSE_SPACE is constant
+	``SONAR_PULSE_SPACE`` is constant
 
 * type: float
 
-* value: 400.0
+* value: ``400.0``
 
 
 ``SONAR_PULSE_SPEED``
@@ -5264,11 +8859,11 @@ UI Globals
 
 .. note::
 
-	SONAR_PULSE_SPEED is constant
+	``SONAR_PULSE_SPEED`` is constant
 
 * type: float
 
-* value: 300.0
+* value: ``300.0``
 
 
 ``DASH_MELEE_SPEED``
@@ -5276,11 +8871,11 @@ UI Globals
 
 .. note::
 
-	DASH_MELEE_SPEED is constant
+	``DASH_MELEE_SPEED`` is constant
 
 * type: float
 
-* value: 1.35
+* value: ``1.35``
 
 
 ``WALLRUN_CLOAK_DURATION``
@@ -5288,11 +8883,11 @@ UI Globals
 
 .. note::
 
-	WALLRUN_CLOAK_DURATION is constant
+	``WALLRUN_CLOAK_DURATION`` is constant
 
 * type: float
 
-* value: 15.0
+* value: ``15.0``
 
 
 ``WALLRUN_CLOAK_TRANSITION_TIME``
@@ -5300,11 +8895,11 @@ UI Globals
 
 .. note::
 
-	WALLRUN_CLOAK_TRANSITION_TIME is constant
+	``WALLRUN_CLOAK_TRANSITION_TIME`` is constant
 
 * type: float
 
-* value: 0.2
+* value: ``0.2``
 
 
 ``WALLHANG_CLOAK_DURATION``
@@ -5312,11 +8907,11 @@ UI Globals
 
 .. note::
 
-	WALLHANG_CLOAK_DURATION is constant
+	``WALLHANG_CLOAK_DURATION`` is constant
 
 * type: float
 
-* value: 15.0
+* value: ``15.0``
 
 
 ``WALLHANG_CLOAK_TRANSITION_TIME``
@@ -5324,11 +8919,11 @@ UI Globals
 
 .. note::
 
-	WALLHANG_CLOAK_TRANSITION_TIME is constant
+	``WALLHANG_CLOAK_TRANSITION_TIME`` is constant
 
 * type: float
 
-* value: 0.2
+* value: ``0.2``
 
 
 ``TITAN_HEALTHDROP_REGENFRAC``
@@ -5336,11 +8931,11 @@ UI Globals
 
 .. note::
 
-	TITAN_HEALTHDROP_REGENFRAC is constant
+	``TITAN_HEALTHDROP_REGENFRAC`` is constant
 
 * type: float
 
-* value: 0.3
+* value: ``0.3``
 
 
 ``TITAN_HEALTHDROP_REGENTIME``
@@ -5348,11 +8943,11 @@ UI Globals
 
 .. note::
 
-	TITAN_HEALTHDROP_REGENTIME is constant
+	``TITAN_HEALTHDROP_REGENTIME`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``TITAN_HEALTHDROP_TIMEOUT``
@@ -5360,11 +8955,11 @@ UI Globals
 
 .. note::
 
-	TITAN_HEALTHDROP_TIMEOUT is constant
+	``TITAN_HEALTHDROP_TIMEOUT`` is constant
 
 * type: float
 
-* value: 30.0
+* value: ``30.0``
 
 
 ``SOLDIER_SHIELD_REGEN_THREAD``
@@ -5372,11 +8967,11 @@ UI Globals
 
 .. note::
 
-	SOLDIER_SHIELD_REGEN_THREAD is constant
+	``SOLDIER_SHIELD_REGEN_THREAD`` is constant
 
 * type: string
 
-* value: "SoldierShieldRegenThink"
+* value: ``"SoldierShieldRegenThink"``
 
 
 ``SOLDIER_SHIELD_ZEROED``
@@ -5384,11 +8979,11 @@ UI Globals
 
 .. note::
 
-	SOLDIER_SHIELD_ZEROED is constant
+	``SOLDIER_SHIELD_ZEROED`` is constant
 
 * type: string
 
-* value: "SoldierShieldZeroed"
+* value: ``"SoldierShieldZeroed"``
 
 
 ``SOLDIER_SHIELD_RESTART``
@@ -5396,11 +8991,11 @@ UI Globals
 
 .. note::
 
-	SOLDIER_SHIELD_RESTART is constant
+	``SOLDIER_SHIELD_RESTART`` is constant
 
 * type: string
 
-* value: "SoldierShieldRestart"
+* value: ``"SoldierShieldRestart"``
 
 
 ``MAX_WEAPON_FIRE_ID``
@@ -5408,11 +9003,11 @@ UI Globals
 
 .. note::
 
-	MAX_WEAPON_FIRE_ID is constant
+	``MAX_WEAPON_FIRE_ID`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``OFFHAND_RIGHT``
@@ -5420,11 +9015,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_RIGHT is constant
+	``OFFHAND_RIGHT`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OFFHAND_LEFT``
@@ -5432,11 +9027,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_LEFT is constant
+	``OFFHAND_LEFT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``OFFHAND_ANTIRODEO``
@@ -5444,11 +9039,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_ANTIRODEO is constant
+	``OFFHAND_ANTIRODEO`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``OFFHAND_EQUIPMENT``
@@ -5456,11 +9051,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_EQUIPMENT is constant
+	``OFFHAND_EQUIPMENT`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``OFFHAND_INVENTORY``
@@ -5468,11 +9063,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_INVENTORY is constant
+	``OFFHAND_INVENTORY`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``OFFHAND_MELEE``
@@ -5480,11 +9075,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_MELEE is constant
+	``OFFHAND_MELEE`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``OFFHAND_TITAN_CENTER``
@@ -5492,11 +9087,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_TITAN_CENTER is constant
+	``OFFHAND_TITAN_CENTER`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITANMENU_NO_CUSTOMIZATION``
@@ -5504,11 +9099,11 @@ UI Globals
 
 .. note::
 
-	TITANMENU_NO_CUSTOMIZATION is constant
+	``TITANMENU_NO_CUSTOMIZATION`` is constant
 
 * type: int
 
-* value: 0x00001
+* value: ``0x00001``
 
 
 ``TITANMENU_FORCE_NON_PRIME``
@@ -5516,11 +9111,11 @@ UI Globals
 
 .. note::
 
-	TITANMENU_FORCE_NON_PRIME is constant
+	``TITANMENU_FORCE_NON_PRIME`` is constant
 
 * type: int
 
-* value: 0x00002
+* value: ``0x00002``
 
 
 ``TITANMENU_FORCE_PRIME``
@@ -5528,11 +9123,11 @@ UI Globals
 
 .. note::
 
-	TITANMENU_FORCE_PRIME is constant
+	``TITANMENU_FORCE_PRIME`` is constant
 
 * type: int
 
-* value: 0x00004
+* value: ``0x00004``
 
 
 ``OFFHAND_COUNT``
@@ -5540,11 +9135,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_COUNT is constant
+	``OFFHAND_COUNT`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``OFFHAND_ORDNANCE``
@@ -5552,11 +9147,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_ORDNANCE is constant
+	``OFFHAND_ORDNANCE`` is constant
 
 * type: unknown
 
-* value: OFFHAND_RIGHT
+* value: ``OFFHAND_RIGHT``
 
 
 ``OFFHAND_SPECIAL``
@@ -5564,11 +9159,11 @@ UI Globals
 
 .. note::
 
-	OFFHAND_SPECIAL is constant
+	``OFFHAND_SPECIAL`` is constant
 
 * type: unknown
 
-* value: OFFHAND_LEFT
+* value: ``OFFHAND_LEFT``
 
 
 ``SHIELD_REGEN_TICK_TIME``
@@ -5576,11 +9171,11 @@ UI Globals
 
 .. note::
 
-	SHIELD_REGEN_TICK_TIME is constant
+	``SHIELD_REGEN_TICK_TIME`` is constant
 
 * type: float
 
-* value: 0.1
+* value: ``0.1``
 
 
 ``HARVESTER_BEAM_TICK_TIME``
@@ -5588,11 +9183,11 @@ UI Globals
 
 .. note::
 
-	HARVESTER_BEAM_TICK_TIME is constant
+	``HARVESTER_BEAM_TICK_TIME`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``TITAN_DOOMED_REGEN_DELAY``
@@ -5600,11 +9195,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DOOMED_REGEN_DELAY is constant
+	``TITAN_DOOMED_REGEN_DELAY`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``TITAN_DOOMED_REGEN_AMOUNT``
@@ -5612,11 +9207,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DOOMED_REGEN_AMOUNT is constant
+	``TITAN_DOOMED_REGEN_AMOUNT`` is constant
 
 * type: float
 
-* value: 0.0025
+* value: ``0.0025``
 
 
 ``TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC``
@@ -5624,11 +9219,11 @@ UI Globals
 
 .. note::
 
-	TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC is constant
+	``TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC_PILOT``
@@ -5636,11 +9231,11 @@ UI Globals
 
 .. note::
 
-	TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC_PILOT is constant
+	``TITAN_SHIELD_PERMAMENT_DAMAGE_FRAC_PILOT`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``STATIC_RANDOM``
@@ -5648,11 +9243,11 @@ UI Globals
 
 .. note::
 
-	STATIC_RANDOM is constant
+	``STATIC_RANDOM`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``STATIC_HEAVY``
@@ -5660,11 +9255,11 @@ UI Globals
 
 .. note::
 
-	STATIC_HEAVY is constant
+	``STATIC_HEAVY`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``STATIC_LIGHT``
@@ -5672,11 +9267,11 @@ UI Globals
 
 .. note::
 
-	STATIC_LIGHT is constant
+	``STATIC_LIGHT`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``STATIC_VERY_HEAVY``
@@ -5684,11 +9279,11 @@ UI Globals
 
 .. note::
 
-	STATIC_VERY_HEAVY is constant
+	``STATIC_VERY_HEAVY`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``SATCHEL_DETONATE_DELAY``
@@ -5696,11 +9291,11 @@ UI Globals
 
 .. note::
 
-	SATCHEL_DETONATE_DELAY is constant
+	``SATCHEL_DETONATE_DELAY`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``MATCH_PROGRESS_EARLY``
@@ -5708,11 +9303,11 @@ UI Globals
 
 .. note::
 
-	MATCH_PROGRESS_EARLY is constant
+	``MATCH_PROGRESS_EARLY`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``MATCH_PROGRESS_MID``
@@ -5720,11 +9315,11 @@ UI Globals
 
 .. note::
 
-	MATCH_PROGRESS_MID is constant
+	``MATCH_PROGRESS_MID`` is constant
 
 * type: int
 
-* value: 60
+* value: ``60``
 
 
 ``MATCH_PROGRESS_LATE``
@@ -5732,11 +9327,11 @@ UI Globals
 
 .. note::
 
-	MATCH_PROGRESS_LATE is constant
+	``MATCH_PROGRESS_LATE`` is constant
 
 * type: int
 
-* value: 90
+* value: ``90``
 
 
 ``MATCH_PROGRESS_OVER_NO_ANNOUNCEMENT``
@@ -5744,11 +9339,11 @@ UI Globals
 
 .. note::
 
-	MATCH_PROGRESS_OVER_NO_ANNOUNCEMENT is constant
+	``MATCH_PROGRESS_OVER_NO_ANNOUNCEMENT`` is constant
 
 * type: int
 
-* value: 120
+* value: ``120``
 
 
 ``MATCH_PROGRESS_THRESHOLDS``
@@ -5756,11 +9351,11 @@ UI Globals
 
 .. note::
 
-	MATCH_PROGRESS_THRESHOLDS is constant
+	``MATCH_PROGRESS_THRESHOLDS`` is constant
 
 * type: array
 
-* value: [
+* value: ``[ MATCH_PROGRESS_EARLY, MATCH_PROGRESS_MID, MATCH_PROGRESS_LATE, MATCH_PROGRESS_OVER_NO_ANNOUNCEMENT ]``
 
 
 ``eItemTypes``
@@ -5774,11 +9369,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_DOUBLE_XP is constant
+	``SFLAG_DOUBLE_XP`` is constant
 
 * type: int
 
-* value: 0x00001
+* value: ``0x00001``
 
 
 ``SFLAG_FAST_BUILD1``
@@ -5786,11 +9381,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_FAST_BUILD1 is constant
+	``SFLAG_FAST_BUILD1`` is constant
 
 * type: int
 
-* value: 0x00002
+* value: ``0x00002``
 
 
 ``SFLAG_HUNTER_GRUNT``
@@ -5798,11 +9393,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_HUNTER_GRUNT is constant
+	``SFLAG_HUNTER_GRUNT`` is constant
 
 * type: int
 
-* value: 0x00004
+* value: ``0x00004``
 
 
 ``SFLAG_HUNTER_SPECTRE``
@@ -5810,11 +9405,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_HUNTER_SPECTRE is constant
+	``SFLAG_HUNTER_SPECTRE`` is constant
 
 * type: int
 
-* value: 0x00008
+* value: ``0x00008``
 
 
 ``SFLAG_HUNTER_PILOT``
@@ -5822,11 +9417,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_HUNTER_PILOT is constant
+	``SFLAG_HUNTER_PILOT`` is constant
 
 * type: int
 
-* value: 0x00010
+* value: ``0x00010``
 
 
 ``SFLAG_HUNTER_TITAN``
@@ -5834,11 +9429,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_HUNTER_TITAN is constant
+	``SFLAG_HUNTER_TITAN`` is constant
 
 * type: int
 
-* value: 0x00020
+* value: ``0x00020``
 
 
 ``SFLAG_FAST_BUILD2``
@@ -5846,11 +9441,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_FAST_BUILD2 is constant
+	``SFLAG_FAST_BUILD2`` is constant
 
 * type: int
 
-* value: 0x00040
+* value: ``0x00040``
 
 
 ``SFLAG_SPECTRE_VIRUS``
@@ -5858,11 +9453,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_SPECTRE_VIRUS is constant
+	``SFLAG_SPECTRE_VIRUS`` is constant
 
 * type: int
 
-* value: 0x00200
+* value: ``0x00200``
 
 
 ``SFLAG_INSTANT_HACK``
@@ -5870,11 +9465,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_INSTANT_HACK is constant
+	``SFLAG_INSTANT_HACK`` is constant
 
 * type: int
 
-* value: 0x00400
+* value: ``0x00400``
 
 
 ``SFLAG_BC_DASH_CAPACITY``
@@ -5882,11 +9477,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_BC_DASH_CAPACITY is constant
+	``SFLAG_BC_DASH_CAPACITY`` is constant
 
 * type: int
 
-* value: 0x01000
+* value: ``0x01000``
 
 
 ``SFLAG_COOP_ORDNANCE_CAPACITY_1``
@@ -5894,11 +9489,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_COOP_ORDNANCE_CAPACITY_1 is constant
+	``SFLAG_COOP_ORDNANCE_CAPACITY_1`` is constant
 
 * type: int
 
-* value: 0x02000
+* value: ``0x02000``
 
 
 ``SFLAG_TITAN_SMASH``
@@ -5906,11 +9501,11 @@ UI Globals
 
 .. note::
 
-	SFLAG_TITAN_SMASH is constant
+	``SFLAG_TITAN_SMASH`` is constant
 
 * type: int
 
-* value: 0x10000
+* value: ``0x10000``
 
 
 ``RACE_HUMAN_FEMALE``
@@ -5918,11 +9513,11 @@ UI Globals
 
 .. note::
 
-	RACE_HUMAN_FEMALE is constant
+	``RACE_HUMAN_FEMALE`` is constant
 
 * type: string
 
-* value: "race_human_female"
+* value: ``"race_human_female"``
 
 
 ``BURN_CARD_MAP_LOOT_DROP``
@@ -5930,11 +9525,11 @@ UI Globals
 
 .. note::
 
-	BURN_CARD_MAP_LOOT_DROP is constant
+	``BURN_CARD_MAP_LOOT_DROP`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``BURNCARD_WARNING_COUNT``
@@ -5942,11 +9537,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_WARNING_COUNT is constant
+	``BURNCARD_WARNING_COUNT`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``MAX_BURN_CARD_PACKS_EVER``
@@ -5954,11 +9549,11 @@ UI Globals
 
 .. note::
 
-	MAX_BURN_CARD_PACKS_EVER is constant
+	``MAX_BURN_CARD_PACKS_EVER`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``BURNCARD_INDEX_EMPTY``
@@ -5966,11 +9561,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_INDEX_EMPTY is constant
+	``BURNCARD_INDEX_EMPTY`` is constant
 
 * type: int
 
-* value: -1
+* value: ``-1``
 
 
 ``BCGROUP_SPEED``
@@ -5978,11 +9573,11 @@ UI Globals
 
 .. note::
 
-	BCGROUP_SPEED is constant
+	``BCGROUP_SPEED`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``BCGROUP_STEALTH``
@@ -5990,11 +9585,11 @@ UI Globals
 
 .. note::
 
-	BCGROUP_STEALTH is constant
+	``BCGROUP_STEALTH`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``BCGROUP_INTEL``
@@ -6002,11 +9597,11 @@ UI Globals
 
 .. note::
 
-	BCGROUP_INTEL is constant
+	``BCGROUP_INTEL`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``BCGROUP_BONUS``
@@ -6014,11 +9609,11 @@ UI Globals
 
 .. note::
 
-	BCGROUP_BONUS is constant
+	``BCGROUP_BONUS`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``BCGROUP_NPC``
@@ -6026,11 +9621,11 @@ UI Globals
 
 .. note::
 
-	BCGROUP_NPC is constant
+	``BCGROUP_NPC`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``BCGROUP_WEAPON``
@@ -6038,11 +9633,11 @@ UI Globals
 
 .. note::
 
-	BCGROUP_WEAPON is constant
+	``BCGROUP_WEAPON`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``BCGROUP_MISC``
@@ -6050,11 +9645,11 @@ UI Globals
 
 .. note::
 
-	BCGROUP_MISC is constant
+	``BCGROUP_MISC`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``BCGROUP_DICE``
@@ -6062,11 +9657,11 @@ UI Globals
 
 .. note::
 
-	BCGROUP_DICE is constant
+	``BCGROUP_DICE`` is constant
 
 * type: int
 
-* value: 7
+* value: ``7``
 
 
 ``BC_GROUPINGS``
@@ -6074,11 +9669,11 @@ UI Globals
 
 .. note::
 
-	BC_GROUPINGS is constant
+	``BC_GROUPINGS`` is constant
 
 * type: int
 
-* value: 8
+* value: ``8``
 
 
 ``BURNCARDS_PER_PACK``
@@ -6086,11 +9681,11 @@ UI Globals
 
 .. note::
 
-	BURNCARDS_PER_PACK is constant
+	``BURNCARDS_PER_PACK`` is constant
 
 * type: int
 
-* value: 7
+* value: ``7``
 
 
 ``DECK_STYLE_BURNCARDS``
@@ -6098,11 +9693,11 @@ UI Globals
 
 .. note::
 
-	DECK_STYLE_BURNCARDS is constant
+	``DECK_STYLE_BURNCARDS`` is constant
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``BURN_CARD_NEVER_COLLECTED``
@@ -6110,11 +9705,11 @@ UI Globals
 
 .. note::
 
-	BURN_CARD_NEVER_COLLECTED is constant
+	``BURN_CARD_NEVER_COLLECTED`` is constant
 
 * type: int
 
-* value: -1
+* value: ``-1``
 
 
 ``BURNCARD_PACK_PER_XP``
@@ -6122,11 +9717,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_PACK_PER_XP is constant
+	``BURNCARD_PACK_PER_XP`` is constant
 
 * type: float
 
-* value: 8000.0
+* value: ``8000.0``
 
 
 ``BURNCARD_COMMON``
@@ -6134,11 +9729,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_COMMON is constant
+	``BURNCARD_COMMON`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``BURNCARD_RARE``
@@ -6146,11 +9741,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_RARE is constant
+	``BURNCARD_RARE`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``CARDS_PER_PAGE``
@@ -6158,11 +9753,11 @@ UI Globals
 
 .. note::
 
-	CARDS_PER_PAGE is constant
+	``CARDS_PER_PAGE`` is constant
 
 * type: float
 
-* value: 12.0
+* value: ``12.0``
 
 
 ``CARDS_PER_ROW``
@@ -6170,11 +9765,11 @@ UI Globals
 
 .. note::
 
-	CARDS_PER_ROW is constant
+	``CARDS_PER_ROW`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``BURN_CARD_WARMUP_TIME``
@@ -6182,11 +9777,11 @@ UI Globals
 
 .. note::
 
-	BURN_CARD_WARMUP_TIME is constant
+	``BURN_CARD_WARMUP_TIME`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``INGAME_BURN_CARDS``
@@ -6194,11 +9789,11 @@ UI Globals
 
 .. note::
 
-	INGAME_BURN_CARDS is constant
+	``INGAME_BURN_CARDS`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``MAX_BURN_CARDS``
@@ -6206,11 +9801,11 @@ UI Globals
 
 .. note::
 
-	MAX_BURN_CARDS is constant
+	``MAX_BURN_CARDS`` is constant
 
 * type: int
 
-* value: 72
+* value: ``72``
 
 
 ``MAX_UNOPENED_BURNCARDS``
@@ -6218,11 +9813,11 @@ UI Globals
 
 .. note::
 
-	MAX_UNOPENED_BURNCARDS is constant
+	``MAX_UNOPENED_BURNCARDS`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``MAX_UNOPENED_EXCHANGED_BURNCARDS``
@@ -6230,11 +9825,11 @@ UI Globals
 
 .. note::
 
-	MAX_UNOPENED_EXCHANGED_BURNCARDS is constant
+	``MAX_UNOPENED_EXCHANGED_BURNCARDS`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``MAX_MAILED_CARDS``
@@ -6242,11 +9837,11 @@ UI Globals
 
 .. note::
 
-	MAX_MAILED_CARDS is constant
+	``MAX_MAILED_CARDS`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``MAX_UNOPENED_PACKS``
@@ -6254,11 +9849,11 @@ UI Globals
 
 .. note::
 
-	MAX_UNOPENED_PACKS is constant
+	``MAX_UNOPENED_PACKS`` is constant
 
 * type: int
 
-* value: 99
+* value: ``99``
 
 
 ``PILE_DECK``
@@ -6266,11 +9861,11 @@ UI Globals
 
 .. note::
 
-	PILE_DECK is constant
+	``PILE_DECK`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``PILE_ACTIVE``
@@ -6278,11 +9873,11 @@ UI Globals
 
 .. note::
 
-	PILE_ACTIVE is constant
+	``PILE_ACTIVE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``PILE_COLLECTION``
@@ -6290,11 +9885,11 @@ UI Globals
 
 .. note::
 
-	PILE_COLLECTION is constant
+	``PILE_COLLECTION`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``READING_NONE``
@@ -6302,11 +9897,11 @@ UI Globals
 
 .. note::
 
-	READING_NONE is constant
+	``READING_NONE`` is constant
 
 * type: int
 
-* value: -1
+* value: ``-1``
 
 
 ``READING_IN_PROGRESS``
@@ -6314,11 +9909,11 @@ UI Globals
 
 .. note::
 
-	READING_IN_PROGRESS is constant
+	``READING_IN_PROGRESS`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``READING_WAITING_TO_CONTINUE``
@@ -6326,11 +9921,11 @@ UI Globals
 
 .. note::
 
-	READING_WAITING_TO_CONTINUE is constant
+	``READING_WAITING_TO_CONTINUE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``READING_DONE``
@@ -6338,11 +9933,11 @@ UI Globals
 
 .. note::
 
-	READING_DONE is constant
+	``READING_DONE`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``BURNCARD_REWARD_VAL_1``
@@ -6350,11 +9945,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_REWARD_VAL_1 is constant
+	``BURNCARD_REWARD_VAL_1`` is constant
 
 * type: int
 
-* value: 80
+* value: ``80``
 
 
 ``BURNCARD_REWARD_VAL_2``
@@ -6362,11 +9957,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_REWARD_VAL_2 is constant
+	``BURNCARD_REWARD_VAL_2`` is constant
 
 * type: int
 
-* value: 140
+* value: ``140``
 
 
 ``BURNCARD_REWARD_VAL_3``
@@ -6374,11 +9969,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_REWARD_VAL_3 is constant
+	``BURNCARD_REWARD_VAL_3`` is constant
 
 * type: int
 
-* value: 260
+* value: ``260``
 
 
 ``BURNCARD_STORY_PROGRESS_NONE``
@@ -6386,11 +9981,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_STORY_PROGRESS_NONE is constant
+	``BURNCARD_STORY_PROGRESS_NONE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``BURNCARD_STORY_PROGRESS_INTRO``
@@ -6398,11 +9993,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_STORY_PROGRESS_INTRO is constant
+	``BURNCARD_STORY_PROGRESS_INTRO`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``BURNCARD_STORY_PROGRESS_COMPLETE``
@@ -6410,11 +10005,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_STORY_PROGRESS_COMPLETE is constant
+	``BURNCARD_STORY_PROGRESS_COMPLETE`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``BURNCARD_AUTO_SONAR_INTERVAL``
@@ -6422,11 +10017,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_AUTO_SONAR_INTERVAL is constant
+	``BURNCARD_AUTO_SONAR_INTERVAL`` is constant
 
 * type: float
 
-* value: 6.5
+* value: ``6.5``
 
 
 ``BURNCARD_AUTO_SONAR_IMAGE_DURATION``
@@ -6434,11 +10029,11 @@ UI Globals
 
 .. note::
 
-	BURNCARD_AUTO_SONAR_IMAGE_DURATION is constant
+	``BURNCARD_AUTO_SONAR_IMAGE_DURATION`` is constant
 
 * type: float
 
-* value: 1.5
+* value: ``1.5``
 
 
 ``eTitanAvailability``
@@ -6500,11 +10095,11 @@ UI Globals
 
 .. note::
 
-	DROPSHIP_TITAN_PICKUP_RADIUS is constant
+	``DROPSHIP_TITAN_PICKUP_RADIUS`` is constant
 
 * type: int
 
-* value: 256
+* value: ``256``
 
 
 ``eObjective``
@@ -6560,11 +10155,11 @@ UI Globals
 
 .. note::
 
-	COUNT_ENABLED is constant
+	``COUNT_ENABLED`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``BURN_CARD_COUNT_MAX``
@@ -6572,11 +10167,11 @@ UI Globals
 
 .. note::
 
-	BURN_CARD_COUNT_MAX is constant
+	``BURN_CARD_COUNT_MAX`` is constant
 
 * type: int
 
-* value: 99
+* value: ``99``
 
 
 ``CLOAK_INCLUDE_FADE_IN_TIME``
@@ -6584,11 +10179,11 @@ UI Globals
 
 .. note::
 
-	CLOAK_INCLUDE_FADE_IN_TIME is constant
+	``CLOAK_INCLUDE_FADE_IN_TIME`` is constant
 
 * type: bool
 
-* value: true
+* value: ``true``
 
 
 ``CLOAK_EXCLUDE_FADE_IN_TIME``
@@ -6596,11 +10191,11 @@ UI Globals
 
 .. note::
 
-	CLOAK_EXCLUDE_FADE_IN_TIME is constant
+	``CLOAK_EXCLUDE_FADE_IN_TIME`` is constant
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``MARVIN_TYPE_SHOOTER``
@@ -6608,11 +10203,11 @@ UI Globals
 
 .. note::
 
-	MARVIN_TYPE_SHOOTER is constant
+	``MARVIN_TYPE_SHOOTER`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``MARVIN_TYPE_WORKER``
@@ -6620,11 +10215,11 @@ UI Globals
 
 .. note::
 
-	MARVIN_TYPE_WORKER is constant
+	``MARVIN_TYPE_WORKER`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``MARVIN_TYPE_MARVINONE``
@@ -6632,11 +10227,11 @@ UI Globals
 
 .. note::
 
-	MARVIN_TYPE_MARVINONE is constant
+	``MARVIN_TYPE_MARVINONE`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``MARVIN_TYPE_FIREFIGHTER``
@@ -6644,11 +10239,11 @@ UI Globals
 
 .. note::
 
-	MARVIN_TYPE_FIREFIGHTER is constant
+	``MARVIN_TYPE_FIREFIGHTER`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``eLobbyType``
@@ -6692,11 +10287,11 @@ UI Globals
 
 .. note::
 
-	TITANFALL_INNER_RADIUS is constant
+	``TITANFALL_INNER_RADIUS`` is constant
 
 * type: float
 
-* value: 90.0
+* value: ``90.0``
 
 
 ``TITANFALL_OUTER_RADIUS``
@@ -6704,11 +10299,11 @@ UI Globals
 
 .. note::
 
-	TITANFALL_OUTER_RADIUS is constant
+	``TITANFALL_OUTER_RADIUS`` is constant
 
 * type: float
 
-* value: 120.0
+* value: ``120.0``
 
 
 ``TITANHOTDROP_DISABLE_ENEMY_TITANFALL_RADIUS``
@@ -6716,11 +10311,11 @@ UI Globals
 
 .. note::
 
-	TITANHOTDROP_DISABLE_ENEMY_TITANFALL_RADIUS is constant
+	``TITANHOTDROP_DISABLE_ENEMY_TITANFALL_RADIUS`` is constant
 
 * type: int
 
-* value: 450
+* value: ``450``
 
 
 ``FIRST_WARNING_PROGRESS``
@@ -6728,11 +10323,11 @@ UI Globals
 
 .. note::
 
-	FIRST_WARNING_PROGRESS is constant
+	``FIRST_WARNING_PROGRESS`` is constant
 
 * type: int
 
-* value: 27
+* value: ``27``
 
 
 ``SECOND_WARNING_PROGRESS``
@@ -6740,11 +10335,11 @@ UI Globals
 
 .. note::
 
-	SECOND_WARNING_PROGRESS is constant
+	``SECOND_WARNING_PROGRESS`` is constant
 
 * type: int
 
-* value: 54
+* value: ``54``
 
 
 ``THIRD_WARNING_PROGRESS``
@@ -6752,11 +10347,11 @@ UI Globals
 
 .. note::
 
-	THIRD_WARNING_PROGRESS is constant
+	``THIRD_WARNING_PROGRESS`` is constant
 
 * type: int
 
-* value: 76
+* value: ``76``
 
 
 ``O2_DEV_DISABLE_SKYSHOW``
@@ -6764,11 +10359,11 @@ UI Globals
 
 .. note::
 
-	O2_DEV_DISABLE_SKYSHOW is constant
+	``O2_DEV_DISABLE_SKYSHOW`` is constant
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``RESPAWN_DEBOUNCE_TIME``
@@ -6776,11 +10371,11 @@ UI Globals
 
 .. note::
 
-	RESPAWN_DEBOUNCE_TIME is constant
+	``RESPAWN_DEBOUNCE_TIME`` is constant
 
 * type: float
 
-* value: 0.75
+* value: ``0.75``
 
 
 ``eMissionType``
@@ -6794,11 +10389,11 @@ UI Globals
 
 .. note::
 
-	WAVESPAWN_PROTECTION_TIME is constant
+	``WAVESPAWN_PROTECTION_TIME`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``COOP_MAX_ACTIVE_TITANS``
@@ -6806,11 +10401,11 @@ UI Globals
 
 .. note::
 
-	COOP_MAX_ACTIVE_TITANS is constant
+	``COOP_MAX_ACTIVE_TITANS`` is constant
 
 * type: int
 
-* value: 8
+* value: ``8``
 
 
 ``COOP_MAX_ACTIVE_CLOAKED_DRONES``
@@ -6818,11 +10413,11 @@ UI Globals
 
 .. note::
 
-	COOP_MAX_ACTIVE_CLOAKED_DRONES is constant
+	``COOP_MAX_ACTIVE_CLOAKED_DRONES`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``COOP_SENTRY_TURRET_MAX_COUNT_PET``
@@ -6830,11 +10425,11 @@ UI Globals
 
 .. note::
 
-	COOP_SENTRY_TURRET_MAX_COUNT_PET is constant
+	``COOP_SENTRY_TURRET_MAX_COUNT_PET`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``COOP_SENTRY_TURRET_MAX_COUNT_INV``
@@ -6842,11 +10437,11 @@ UI Globals
 
 .. note::
 
-	COOP_SENTRY_TURRET_MAX_COUNT_INV is constant
+	``COOP_SENTRY_TURRET_MAX_COUNT_INV`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``FD_VICTORY_ANNOUNCEMENT_LENGTH``
@@ -6854,11 +10449,11 @@ UI Globals
 
 .. note::
 
-	FD_VICTORY_ANNOUNCEMENT_LENGTH is constant
+	``FD_VICTORY_ANNOUNCEMENT_LENGTH`` is constant
 
 * type: float
 
-* value: 13.0
+* value: ``13.0``
 
 
 ``FD_DEFEAT_ANNOUNCEMENT_LENGTH``
@@ -6866,11 +10461,11 @@ UI Globals
 
 .. note::
 
-	FD_DEFEAT_ANNOUNCEMENT_LENGTH is constant
+	``FD_DEFEAT_ANNOUNCEMENT_LENGTH`` is constant
 
 * type: float
 
-* value: 13.0
+* value: ``13.0``
 
 
 ``FD_EOG_TIME_BETWEEN_ANNOUNCEMENT_AND_STARS``
@@ -6878,11 +10473,11 @@ UI Globals
 
 .. note::
 
-	FD_EOG_TIME_BETWEEN_ANNOUNCEMENT_AND_STARS is constant
+	``FD_EOG_TIME_BETWEEN_ANNOUNCEMENT_AND_STARS`` is constant
 
 * type: float
 
-* value: 8.0
+* value: ``8.0``
 
 
 ``FD_EOG_STAR_DISPLAY_TIME``
@@ -6890,11 +10485,11 @@ UI Globals
 
 .. note::
 
-	FD_EOG_STAR_DISPLAY_TIME is constant
+	``FD_EOG_STAR_DISPLAY_TIME`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``FD_STAR_DISPLAY_INTERVAL``
@@ -6902,11 +10497,11 @@ UI Globals
 
 .. note::
 
-	FD_STAR_DISPLAY_INTERVAL is constant
+	``FD_STAR_DISPLAY_INTERVAL`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``GENERATOR_SHIELD_REGEN_DELAY``
@@ -6914,11 +10509,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_SHIELD_REGEN_DELAY is constant
+	``GENERATOR_SHIELD_REGEN_DELAY`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``GENERATOR_SHIELD_REGEN_TIME``
@@ -6926,11 +10521,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_SHIELD_REGEN_TIME is constant
+	``GENERATOR_SHIELD_REGEN_TIME`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``GENERATOR_DAMAGE_STREAK_TIMEOUT``
@@ -6938,11 +10533,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_DAMAGE_STREAK_TIMEOUT is constant
+	``GENERATOR_DAMAGE_STREAK_TIMEOUT`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``GENERATOR_THREAT_WARN_STREAKDMG_GLOBAL``
@@ -6950,11 +10545,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_THREAT_WARN_STREAKDMG_GLOBAL is constant
+	``GENERATOR_THREAT_WARN_STREAKDMG_GLOBAL`` is constant
 
 * type: int
 
-* value: 10000
+* value: ``10000``
 
 
 ``GENERATOR_THREAT_WARN_DIST_TITAN``
@@ -6962,11 +10557,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_THREAT_WARN_DIST_TITAN is constant
+	``GENERATOR_THREAT_WARN_DIST_TITAN`` is constant
 
 * type: int
 
-* value: 2500
+* value: ``2500``
 
 
 ``GENERATOR_THREAT_WARN_STREAKDMG_MORTAR_TITANS``
@@ -6974,11 +10569,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_THREAT_WARN_STREAKDMG_MORTAR_TITANS is constant
+	``GENERATOR_THREAT_WARN_STREAKDMG_MORTAR_TITANS`` is constant
 
 * type: int
 
-* value: 4000
+* value: ``4000``
 
 
 ``GENERATOR_THREAT_WARN_STREAKDMG_SUICIDE_SPECTRES``
@@ -6986,11 +10581,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_THREAT_WARN_STREAKDMG_SUICIDE_SPECTRES is constant
+	``GENERATOR_THREAT_WARN_STREAKDMG_SUICIDE_SPECTRES`` is constant
 
 * type: int
 
-* value: 1500
+* value: ``1500``
 
 
 ``GENERATOR_THREAT_WARN_DIST_INFANTRY``
@@ -6998,11 +10593,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_THREAT_WARN_DIST_INFANTRY is constant
+	``GENERATOR_THREAT_WARN_DIST_INFANTRY`` is constant
 
 * type: int
 
-* value: 1500
+* value: ``1500``
 
 
 ``GENERATOR_THREAT_WARN_NUM_REQ_INFANTRY``
@@ -7010,11 +10605,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_THREAT_WARN_NUM_REQ_INFANTRY is constant
+	``GENERATOR_THREAT_WARN_NUM_REQ_INFANTRY`` is constant
 
 * type: int
 
-* value: 16
+* value: ``16``
 
 
 ``DEPLOYABLE_TURRET_ACCURACY_MULTIPLIER``
@@ -7022,11 +10617,11 @@ UI Globals
 
 .. note::
 
-	DEPLOYABLE_TURRET_ACCURACY_MULTIPLIER is constant
+	``DEPLOYABLE_TURRET_ACCURACY_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``DEPLOYABLE_TURRET_HEALTH``
@@ -7034,11 +10629,11 @@ UI Globals
 
 .. note::
 
-	DEPLOYABLE_TURRET_HEALTH is constant
+	``DEPLOYABLE_TURRET_HEALTH`` is constant
 
 * type: int
 
-* value: 600
+* value: ``600``
 
 
 ``TIME_BETWEEN_OBJ``
@@ -7046,11 +10641,11 @@ UI Globals
 
 .. note::
 
-	TIME_BETWEEN_OBJ is constant
+	``TIME_BETWEEN_OBJ`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``TIME_BEFORE_CHECKPOINT_RESTART``
@@ -7058,11 +10653,11 @@ UI Globals
 
 .. note::
 
-	TIME_BEFORE_CHECKPOINT_RESTART is constant
+	``TIME_BEFORE_CHECKPOINT_RESTART`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TIME_BEFORE_OBJECTIVE_RESTART``
@@ -7070,11 +10665,11 @@ UI Globals
 
 .. note::
 
-	TIME_BEFORE_OBJECTIVE_RESTART is constant
+	``TIME_BEFORE_OBJECTIVE_RESTART`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``MINION_BUBBLE_SHIELD_RADIUS``
@@ -7082,11 +10677,11 @@ UI Globals
 
 .. note::
 
-	MINION_BUBBLE_SHIELD_RADIUS is constant
+	``MINION_BUBBLE_SHIELD_RADIUS`` is constant
 
 * type: int
 
-* value: 230
+* value: ``230``
 
 
 ``MINION_BUBBLE_SHIELD_RADIUS_SQR``
@@ -7094,11 +10689,11 @@ UI Globals
 
 .. note::
 
-	MINION_BUBBLE_SHIELD_RADIUS_SQR is constant
+	``MINION_BUBBLE_SHIELD_RADIUS_SQR`` is constant
 
 * type: int
 
-* value: 51984
+* value: ``51984``
 
 
 ``MAX_LOADOUT_CRATE_COUNT``
@@ -7106,11 +10701,11 @@ UI Globals
 
 .. note::
 
-	MAX_LOADOUT_CRATE_COUNT is constant
+	``MAX_LOADOUT_CRATE_COUNT`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``MINIMAP_LOADOUT_CRATE_SCALE``
@@ -7118,11 +10713,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_LOADOUT_CRATE_SCALE is constant
+	``MINIMAP_LOADOUT_CRATE_SCALE`` is constant
 
 * type: float
 
-* value: 0.075
+* value: ``0.075``
 
 
 ``RADAR_JAM_TIME``
@@ -7130,11 +10725,11 @@ UI Globals
 
 .. note::
 
-	RADAR_JAM_TIME is constant
+	``RADAR_JAM_TIME`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``GENERATOR_DAMAGE_NUKE_CORE_MULTIPLIER``
@@ -7142,11 +10737,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_DAMAGE_NUKE_CORE_MULTIPLIER is constant
+	``GENERATOR_DAMAGE_NUKE_CORE_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``GENERATOR_DAMAGE_MORTAR_ROCKET_MULTIPLIER``
@@ -7154,11 +10749,11 @@ UI Globals
 
 .. note::
 
-	GENERATOR_DAMAGE_MORTAR_ROCKET_MULTIPLIER is constant
+	``GENERATOR_DAMAGE_MORTAR_ROCKET_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 0.8
+* value: ``0.8``
 
 
 ``eTAC_ABILITY``
@@ -7172,11 +10767,11 @@ UI Globals
 
 .. note::
 
-	HARVESTER_GRAPH_DATA_POINTS is constant
+	``HARVESTER_GRAPH_DATA_POINTS`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``SPECTRE_MAX_SIGHT_DIST``
@@ -7184,11 +10779,11 @@ UI Globals
 
 .. note::
 
-	SPECTRE_MAX_SIGHT_DIST is constant
+	``SPECTRE_MAX_SIGHT_DIST`` is constant
 
 * type: int
 
-* value: 3000
+* value: ``3000``
 
 
 ``ARC_TITAN_EMP_FIELD_RADIUS``
@@ -7196,11 +10791,11 @@ UI Globals
 
 .. note::
 
-	ARC_TITAN_EMP_FIELD_RADIUS is constant
+	``ARC_TITAN_EMP_FIELD_RADIUS`` is constant
 
 * type: int
 
-* value: 330
+* value: ``330``
 
 
 ``ARC_TITAN_EMP_FIELD_RADIUS_SQR``
@@ -7208,11 +10803,11 @@ UI Globals
 
 .. note::
 
-	ARC_TITAN_EMP_FIELD_RADIUS_SQR is constant
+	``ARC_TITAN_EMP_FIELD_RADIUS_SQR`` is constant
 
 * type: int
 
-* value: 108900
+* value: ``108900``
 
 
 ``ARC_TITAN_EMP_FIELD_INNER_RADIUS``
@@ -7220,11 +10815,11 @@ UI Globals
 
 .. note::
 
-	ARC_TITAN_EMP_FIELD_INNER_RADIUS is constant
+	``ARC_TITAN_EMP_FIELD_INNER_RADIUS`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``ARC_TITAN_EMP_FIELD_INNER_RADIUS_SQR``
@@ -7232,11 +10827,11 @@ UI Globals
 
 .. note::
 
-	ARC_TITAN_EMP_FIELD_INNER_RADIUS_SQR is constant
+	``ARC_TITAN_EMP_FIELD_INNER_RADIUS_SQR`` is constant
 
 * type: int
 
-* value: 22500
+* value: ``22500``
 
 
 ``TITAN_GRAPPLE_DAMAGE``
@@ -7244,11 +10839,11 @@ UI Globals
 
 .. note::
 
-	TITAN_GRAPPLE_DAMAGE is constant
+	``TITAN_GRAPPLE_DAMAGE`` is constant
 
 * type: int
 
-* value: 600
+* value: ``600``
 
 
 ``TITAN_GRAPPLE_DEBOUNCE_TIME``
@@ -7256,11 +10851,11 @@ UI Globals
 
 .. note::
 
-	TITAN_GRAPPLE_DEBOUNCE_TIME is constant
+	``TITAN_GRAPPLE_DEBOUNCE_TIME`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``CLOAKED_DRONE_SPEED``
@@ -7268,11 +10863,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_SPEED is constant
+	``CLOAKED_DRONE_SPEED`` is constant
 
 * type: int
 
-* value: 1800
+* value: ``1800``
 
 
 ``CLOAKED_DRONE_ACC``
@@ -7280,11 +10875,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_ACC is constant
+	``CLOAKED_DRONE_ACC`` is constant
 
 * type: float
 
-* value: 1.75
+* value: ``1.75``
 
 
 ``CLOAKED_DRONE_YAWRATE``
@@ -7292,11 +10887,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_YAWRATE is constant
+	``CLOAKED_DRONE_YAWRATE`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``CLOAKED_DRONE_LOOPING_SFX``
@@ -7304,11 +10899,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_LOOPING_SFX is constant
+	``CLOAKED_DRONE_LOOPING_SFX`` is constant
 
 * type: string
 
-* value: "Coop_CloakDrone_Beam"
+* value: ``"Coop_CloakDrone_Beam"``
 
 
 ``CLOAKED_DRONE_WARP_IN_SFX``
@@ -7316,11 +10911,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_WARP_IN_SFX is constant
+	``CLOAKED_DRONE_WARP_IN_SFX`` is constant
 
 * type: string
 
-* value: "Coop_DroneTeleport_In"
+* value: ``"Coop_DroneTeleport_In"``
 
 
 ``CLOAKED_DRONE_WARP_OUT_SFX``
@@ -7328,11 +10923,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_WARP_OUT_SFX is constant
+	``CLOAKED_DRONE_WARP_OUT_SFX`` is constant
 
 * type: string
 
-* value: "Coop_DroneTeleport_Out"
+* value: ``"Coop_DroneTeleport_Out"``
 
 
 ``CLOAKED_DRONE_CLOAK_START_SFX``
@@ -7340,11 +10935,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_CLOAK_START_SFX is constant
+	``CLOAKED_DRONE_CLOAK_START_SFX`` is constant
 
 * type: string
 
-* value: "CloakDrone_Cloak_On"
+* value: ``"CloakDrone_Cloak_On"``
 
 
 ``CLOAKED_DRONE_CLOAK_LOOP_SFX``
@@ -7352,11 +10947,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_CLOAK_LOOP_SFX is constant
+	``CLOAKED_DRONE_CLOAK_LOOP_SFX`` is constant
 
 * type: string
 
-* value: "CloakDrone_Cloak_Sustain_Loop"
+* value: ``"CloakDrone_Cloak_Sustain_Loop"``
 
 
 ``CLOAKED_DRONE_HOVER_LOOP_SFX``
@@ -7364,11 +10959,11 @@ UI Globals
 
 .. note::
 
-	CLOAKED_DRONE_HOVER_LOOP_SFX is constant
+	``CLOAKED_DRONE_HOVER_LOOP_SFX`` is constant
 
 * type: string
 
-* value: "AngelCity_Scr_DroneSearchHover"
+* value: ``"AngelCity_Scr_DroneSearchHover"``
 
 
 ``MINIMAP_CLOAKED_DRONE_SCALE``
@@ -7376,11 +10971,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_CLOAKED_DRONE_SCALE is constant
+	``MINIMAP_CLOAKED_DRONE_SCALE`` is constant
 
 * type: float
 
-* value: 0.070
+* value: ``0.070``
 
 
 ``FD_FIRE_DAMAGE_SCALE``
@@ -7388,11 +10983,11 @@ UI Globals
 
 .. note::
 
-	FD_FIRE_DAMAGE_SCALE is constant
+	``FD_FIRE_DAMAGE_SCALE`` is constant
 
 * type: float
 
-* value: 1.2
+* value: ``1.2``
 
 
 ``FD_HOT_STREAK_MULTIPLIER``
@@ -7400,11 +10995,11 @@ UI Globals
 
 .. note::
 
-	FD_HOT_STREAK_MULTIPLIER is constant
+	``FD_HOT_STREAK_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 1.5
+* value: ``1.5``
 
 
 ``CURRENCY_COIN_WALLET_MIN``
@@ -7412,11 +11007,11 @@ UI Globals
 
 .. note::
 
-	CURRENCY_COIN_WALLET_MIN is constant
+	``CURRENCY_COIN_WALLET_MIN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``CURRENCY_COIN_WALLET_MAX``
@@ -7424,11 +11019,11 @@ UI Globals
 
 .. note::
 
-	CURRENCY_COIN_WALLET_MAX is constant
+	``CURRENCY_COIN_WALLET_MAX`` is constant
 
 * type: int
 
-* value: 999999
+* value: ``999999``
 
 
 ``CURRENCY_COIN_WALLET_START_AMOUNT``
@@ -7436,11 +11031,11 @@ UI Globals
 
 .. note::
 
-	CURRENCY_COIN_WALLET_START_AMOUNT is constant
+	``CURRENCY_COIN_WALLET_START_AMOUNT`` is constant
 
 * type: int
 
-* value: 10000
+* value: ``10000``
 
 
 ``MAX_XP_TO_COINS_AMOUNT``
@@ -7448,11 +11043,11 @@ UI Globals
 
 .. note::
 
-	MAX_XP_TO_COINS_AMOUNT is constant
+	``MAX_XP_TO_COINS_AMOUNT`` is constant
 
 * type: int
 
-* value: 5000
+* value: ``5000``
 
 
 ``COIN_REWARD_SELL_COMMON``
@@ -7460,11 +11055,11 @@ UI Globals
 
 .. note::
 
-	COIN_REWARD_SELL_COMMON is constant
+	``COIN_REWARD_SELL_COMMON`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``COIN_REWARD_SELL_RARE``
@@ -7472,11 +11067,11 @@ UI Globals
 
 .. note::
 
-	COIN_REWARD_SELL_RARE is constant
+	``COIN_REWARD_SELL_RARE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``COIN_REWARD_MATCH_COMPLETION``
@@ -7484,11 +11079,11 @@ UI Globals
 
 .. note::
 
-	COIN_REWARD_MATCH_COMPLETION is constant
+	``COIN_REWARD_MATCH_COMPLETION`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``COIN_REWARD_MATCH_VICTORY``
@@ -7496,11 +11091,11 @@ UI Globals
 
 .. note::
 
-	COIN_REWARD_MATCH_VICTORY is constant
+	``COIN_REWARD_MATCH_VICTORY`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``COIN_REWARD_FIRST_WIN_OF_DAY``
@@ -7508,11 +11103,11 @@ UI Globals
 
 .. note::
 
-	COIN_REWARD_FIRST_WIN_OF_DAY is constant
+	``COIN_REWARD_FIRST_WIN_OF_DAY`` is constant
 
 * type: int
 
-* value: 1000
+* value: ``1000``
 
 
 ``COIN_REWARD_DAILY_CHALLENGE``
@@ -7520,11 +11115,11 @@ UI Globals
 
 .. note::
 
-	COIN_REWARD_DAILY_CHALLENGE is constant
+	``COIN_REWARD_DAILY_CHALLENGE`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``COST_BC_MATCHLONG_UPGRADE``
@@ -7532,11 +11127,11 @@ UI Globals
 
 .. note::
 
-	COST_BC_MATCHLONG_UPGRADE is constant
+	``COST_BC_MATCHLONG_UPGRADE`` is constant
 
 * type: int
 
-* value: 3000
+* value: ``3000``
 
 
 ``eShopResponseType``
@@ -7574,11 +11169,11 @@ UI Globals
 
 .. note::
 
-	SECONDS_PER_WEEK is constant
+	``SECONDS_PER_WEEK`` is constant
 
 * type: int
 
-* value: 604800
+* value: ``604800``
 
 
 ``SECONDS_PER_DAY``
@@ -7586,11 +11181,11 @@ UI Globals
 
 .. note::
 
-	SECONDS_PER_DAY is constant
+	``SECONDS_PER_DAY`` is constant
 
 * type: int
 
-* value: 86400
+* value: ``86400``
 
 
 ``SECONDS_PER_HOUR``
@@ -7598,11 +11193,11 @@ UI Globals
 
 .. note::
 
-	SECONDS_PER_HOUR is constant
+	``SECONDS_PER_HOUR`` is constant
 
 * type: int
 
-* value: 3600
+* value: ``3600``
 
 
 ``SECONDS_PER_MINUTE``
@@ -7610,11 +11205,11 @@ UI Globals
 
 .. note::
 
-	SECONDS_PER_MINUTE is constant
+	``SECONDS_PER_MINUTE`` is constant
 
 * type: int
 
-* value: 60
+* value: ``60``
 
 
 ``FNF_SCHEDULE_RESET_SECONDS``
@@ -7622,11 +11217,11 @@ UI Globals
 
 .. note::
 
-	FNF_SCHEDULE_RESET_SECONDS is constant
+	``FNF_SCHEDULE_RESET_SECONDS`` is constant
 
 * type: int
 
-* value: 27000
+* value: ``27000``
 
 
 ``PST_TIME_ZONE_OFFSET``
@@ -7634,11 +11229,11 @@ UI Globals
 
 .. note::
 
-	PST_TIME_ZONE_OFFSET is constant
+	``PST_TIME_ZONE_OFFSET`` is constant
 
 * type: int
 
-* value: -7
+* value: ``-7``
 
 
 ``DAILY_RESET_TIME_ZONE_OFFSET``
@@ -7646,11 +11241,11 @@ UI Globals
 
 .. note::
 
-	DAILY_RESET_TIME_ZONE_OFFSET is constant
+	``DAILY_RESET_TIME_ZONE_OFFSET`` is constant
 
 * type: int
 
-* value: -10
+* value: ``-10``
 
 
 ``TITAN_OS_VOICE_PACK``
@@ -7658,11 +11253,11 @@ UI Globals
 
 .. note::
 
-	TITAN_OS_VOICE_PACK is constant
+	``TITAN_OS_VOICE_PACK`` is constant
 
 * type: array
 
-* value: [
+* value: ``["Bt","Legion","Scorch","Ronin","Northstar","ion","Tone","Vanguard"]``
 
 
 ``eMusicPieceID``
@@ -7682,11 +11277,11 @@ UI Globals
 
 .. note::
 
-	PILOT_HARD_LANDING_SCALE is constant
+	``PILOT_HARD_LANDING_SCALE`` is constant
 
 * type: float
 
-* value: 1.1
+* value: ``1.1``
 
 
 ``NWRP_HARD_LANDING_SCALE``
@@ -7694,11 +11289,11 @@ UI Globals
 
 .. note::
 
-	NWRP_HARD_LANDING_SCALE is constant
+	``NWRP_HARD_LANDING_SCALE`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``TDAY_SCORE_PILOT``
@@ -7706,11 +11301,11 @@ UI Globals
 
 .. note::
 
-	TDAY_SCORE_PILOT is constant
+	``TDAY_SCORE_PILOT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TDAY_SCORE_TITAN``
@@ -7718,11 +11313,11 @@ UI Globals
 
 .. note::
 
-	TDAY_SCORE_TITAN is constant
+	``TDAY_SCORE_TITAN`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``TDAY_SCORE_POD``
@@ -7730,11 +11325,11 @@ UI Globals
 
 .. note::
 
-	TDAY_SCORE_POD is constant
+	``TDAY_SCORE_POD`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``400``
@@ -7742,7 +11337,7 @@ UI Globals
 
 .. note::
 
-	400 is constant
+	``400`` is constant
 
 * type: ATTRITION_SCORE_BOUNTY_SURVIVAL=
 
@@ -7752,11 +11347,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_BOSS is constant
+	``ATTRITION_SCORE_BOSS`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``ATTRITION_SCORE_BOSS_DAMAGE``
@@ -7764,11 +11359,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_BOSS_DAMAGE is constant
+	``ATTRITION_SCORE_BOSS_DAMAGE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``ATTRITION_SCORE_TITAN``
@@ -7776,11 +11371,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_TITAN is constant
+	``ATTRITION_SCORE_TITAN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``ATTRITION_SCORE_SUPER_SPECTRE``
@@ -7788,11 +11383,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_SUPER_SPECTRE is constant
+	``ATTRITION_SCORE_SUPER_SPECTRE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``ATTRITION_SCORE_MEGATURRET``
@@ -7800,11 +11395,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_MEGATURRET is constant
+	``ATTRITION_SCORE_MEGATURRET`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``ATTRITION_SCORE_SENTRYTURRET``
@@ -7812,11 +11407,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_SENTRYTURRET is constant
+	``ATTRITION_SCORE_SENTRYTURRET`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``ATTRITION_SCORE_PILOT``
@@ -7824,11 +11419,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_PILOT is constant
+	``ATTRITION_SCORE_PILOT`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``ATTRITION_SCORE_AIR_DRONE``
@@ -7836,11 +11431,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_AIR_DRONE is constant
+	``ATTRITION_SCORE_AIR_DRONE`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``ATTRITION_SCORE_PROWLER``
@@ -7848,11 +11443,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_PROWLER is constant
+	``ATTRITION_SCORE_PROWLER`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``ATTRITION_SCORE_GRUNT``
@@ -7860,11 +11455,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_GRUNT is constant
+	``ATTRITION_SCORE_GRUNT`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``ATTRITION_SCORE_SPECTRE``
@@ -7872,11 +11467,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_SPECTRE is constant
+	``ATTRITION_SCORE_SPECTRE`` is constant
 
 * type: int
 
-* value: 15
+* value: ``15``
 
 
 ``ATTRITION_SCORE_STALKER``
@@ -7884,11 +11479,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_STALKER is constant
+	``ATTRITION_SCORE_STALKER`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``ATTRITION_SCORE_MARVIN``
@@ -7896,11 +11491,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_MARVIN is constant
+	``ATTRITION_SCORE_MARVIN`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``ATTRITION_SCORE_BONUS``
@@ -7908,11 +11503,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_BONUS is constant
+	``ATTRITION_SCORE_BONUS`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``ATTRITION_SCORE_BONUS_STOLEN``
@@ -7920,11 +11515,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_BONUS_STOLEN is constant
+	``ATTRITION_SCORE_BONUS_STOLEN`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``ATTRITION_SCORE_PILOT_MIN``
@@ -7932,11 +11527,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_PILOT_MIN is constant
+	``ATTRITION_SCORE_PILOT_MIN`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``ATTRITION_SCORE_TITAN_MIN``
@@ -7944,11 +11539,11 @@ UI Globals
 
 .. note::
 
-	ATTRITION_SCORE_TITAN_MIN is constant
+	``ATTRITION_SCORE_TITAN_MIN`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``ATCOOP_SCORE_BOUNTY_SURVIVAL``
@@ -7956,11 +11551,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_BOUNTY_SURVIVAL is constant
+	``ATCOOP_SCORE_BOUNTY_SURVIVAL`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``ATCOOP_SCORE_BOSS``
@@ -7968,11 +11563,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_BOSS is constant
+	``ATCOOP_SCORE_BOSS`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``ATCOOP_SCORE_BOSS_DAMAGE``
@@ -7980,11 +11575,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_BOSS_DAMAGE is constant
+	``ATCOOP_SCORE_BOSS_DAMAGE`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``ATCOOP_SCORE_TITAN``
@@ -7992,11 +11587,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_TITAN is constant
+	``ATCOOP_SCORE_TITAN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``ATCOOP_SCORE_SUPER_SPECTRE``
@@ -8004,11 +11599,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_SUPER_SPECTRE is constant
+	``ATCOOP_SCORE_SUPER_SPECTRE`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``ATCOOP_SCORE_MEGATURRET``
@@ -8016,11 +11611,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_MEGATURRET is constant
+	``ATCOOP_SCORE_MEGATURRET`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``ATCOOP_SCORE_SENTRYTURRET``
@@ -8028,11 +11623,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_SENTRYTURRET is constant
+	``ATCOOP_SCORE_SENTRYTURRET`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``ATCOOP_SCORE_PILOT``
@@ -8040,11 +11635,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_PILOT is constant
+	``ATCOOP_SCORE_PILOT`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``ATCOOP_SCORE_AIR_DRONE``
@@ -8052,11 +11647,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_AIR_DRONE is constant
+	``ATCOOP_SCORE_AIR_DRONE`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``ATCOOP_SCORE_PROWLER``
@@ -8064,11 +11659,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_PROWLER is constant
+	``ATCOOP_SCORE_PROWLER`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``ATCOOP_SCORE_GRUNT``
@@ -8076,11 +11671,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_GRUNT is constant
+	``ATCOOP_SCORE_GRUNT`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``ATCOOP_SCORE_SPECTRE``
@@ -8088,11 +11683,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_SPECTRE is constant
+	``ATCOOP_SCORE_SPECTRE`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``ATCOOP_SCORE_STALKER``
@@ -8100,11 +11695,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_STALKER is constant
+	``ATCOOP_SCORE_STALKER`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``ATCOOP_SCORE_MARVIN``
@@ -8112,11 +11707,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_MARVIN is constant
+	``ATCOOP_SCORE_MARVIN`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``ATCOOP_SCORE_BONUS``
@@ -8124,11 +11719,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_BONUS is constant
+	``ATCOOP_SCORE_BONUS`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``ATCOOP_SCORE_BONUS_STOLEN``
@@ -8136,11 +11731,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_BONUS_STOLEN is constant
+	``ATCOOP_SCORE_BONUS_STOLEN`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``ATCOOP_SCORE_PILOT_MIN``
@@ -8148,11 +11743,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_PILOT_MIN is constant
+	``ATCOOP_SCORE_PILOT_MIN`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``ATCOOP_SCORE_TITAN_MIN``
@@ -8160,11 +11755,11 @@ UI Globals
 
 .. note::
 
-	ATCOOP_SCORE_TITAN_MIN is constant
+	``ATCOOP_SCORE_TITAN_MIN`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``PVE_SANDBOX_SCORE_BOUNTY_SURVIVAL``
@@ -8172,11 +11767,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_BOUNTY_SURVIVAL is constant
+	``PVE_SANDBOX_SCORE_BOUNTY_SURVIVAL`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``PVE_SANDBOX_SCORE_BOSS``
@@ -8184,11 +11779,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_BOSS is constant
+	``PVE_SANDBOX_SCORE_BOSS`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``PVE_SANDBOX_SCORE_BOSS_DAMAGE``
@@ -8196,11 +11791,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_BOSS_DAMAGE is constant
+	``PVE_SANDBOX_SCORE_BOSS_DAMAGE`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``PVE_SANDBOX_SCORE_TITAN``
@@ -8208,11 +11803,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_TITAN is constant
+	``PVE_SANDBOX_SCORE_TITAN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``PVE_SANDBOX_SCORE_SUPER_SPECTRE``
@@ -8220,11 +11815,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_SUPER_SPECTRE is constant
+	``PVE_SANDBOX_SCORE_SUPER_SPECTRE`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``PVE_SANDBOX_SCORE_MEGATURRET``
@@ -8232,11 +11827,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_MEGATURRET is constant
+	``PVE_SANDBOX_SCORE_MEGATURRET`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``PVE_SANDBOX_SCORE_SENTRYTURRET``
@@ -8244,11 +11839,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_SENTRYTURRET is constant
+	``PVE_SANDBOX_SCORE_SENTRYTURRET`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``PVE_SANDBOX_SCORE_PILOT``
@@ -8256,11 +11851,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_PILOT is constant
+	``PVE_SANDBOX_SCORE_PILOT`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``PVE_SANDBOX_SCORE_AIR_DRONE``
@@ -8268,11 +11863,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_AIR_DRONE is constant
+	``PVE_SANDBOX_SCORE_AIR_DRONE`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``PVE_SANDBOX_SCORE_PROWLER``
@@ -8280,11 +11875,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_PROWLER is constant
+	``PVE_SANDBOX_SCORE_PROWLER`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``PVE_SANDBOX_SCORE_GRUNT``
@@ -8292,11 +11887,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_GRUNT is constant
+	``PVE_SANDBOX_SCORE_GRUNT`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``PVE_SANDBOX_SCORE_SPECTRE``
@@ -8304,11 +11899,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_SPECTRE is constant
+	``PVE_SANDBOX_SCORE_SPECTRE`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``PVE_SANDBOX_SCORE_STALKER``
@@ -8316,11 +11911,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_STALKER is constant
+	``PVE_SANDBOX_SCORE_STALKER`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``PVE_SANDBOX_SCORE_MARVIN``
@@ -8328,11 +11923,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_MARVIN is constant
+	``PVE_SANDBOX_SCORE_MARVIN`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``PVE_SANDBOX_SCORE_BONUS``
@@ -8340,11 +11935,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_BONUS is constant
+	``PVE_SANDBOX_SCORE_BONUS`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``PVE_SANDBOX_SCORE_BONUS_STOLEN``
@@ -8352,11 +11947,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_BONUS_STOLEN is constant
+	``PVE_SANDBOX_SCORE_BONUS_STOLEN`` is constant
 
 * type: int
 
-* value: 00
+* value: ``00``
 
 
 ``PVE_SANDBOX_SCORE_PILOT_MIN``
@@ -8364,11 +11959,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_PILOT_MIN is constant
+	``PVE_SANDBOX_SCORE_PILOT_MIN`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``PVE_SANDBOX_SCORE_TITAN_MIN``
@@ -8376,11 +11971,11 @@ UI Globals
 
 .. note::
 
-	PVE_SANDBOX_SCORE_TITAN_MIN is constant
+	``PVE_SANDBOX_SCORE_TITAN_MIN`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``FD_SCORE_TITAN``
@@ -8388,11 +11983,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_TITAN is constant
+	``FD_SCORE_TITAN`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``FD_SCORE_SUPER_SPECTRE``
@@ -8400,11 +11995,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_SUPER_SPECTRE is constant
+	``FD_SCORE_SUPER_SPECTRE`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``FD_SCORE_MEGATURRET``
@@ -8412,11 +12007,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_MEGATURRET is constant
+	``FD_SCORE_MEGATURRET`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_SENTRYTURRET``
@@ -8424,11 +12019,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_SENTRYTURRET is constant
+	``FD_SCORE_SENTRYTURRET`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_PILOT``
@@ -8436,11 +12031,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_PILOT is constant
+	``FD_SCORE_PILOT`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_AIR_DRONE``
@@ -8448,11 +12043,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_AIR_DRONE is constant
+	``FD_SCORE_AIR_DRONE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_SCORE_PROWLER``
@@ -8460,11 +12055,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_PROWLER is constant
+	``FD_SCORE_PROWLER`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_SCORE_GRUNT``
@@ -8472,11 +12067,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_GRUNT is constant
+	``FD_SCORE_GRUNT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_SCORE_SPECTRE``
@@ -8484,11 +12079,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_SPECTRE is constant
+	``FD_SCORE_SPECTRE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_SCORE_STALKER``
@@ -8496,11 +12091,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_STALKER is constant
+	``FD_SCORE_STALKER`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``FD_SCORE_MARVIN``
@@ -8508,11 +12103,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_MARVIN is constant
+	``FD_SCORE_MARVIN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_ENEMIES``
@@ -8520,11 +12115,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_ENEMIES is constant
+	``FD_SCORE_ENEMIES`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_MVP``
@@ -8532,11 +12127,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_MVP is constant
+	``FD_SCORE_MVP`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``FD_SCORE_TEAM_FINAL_WAVE``
@@ -8544,11 +12139,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_TEAM_FINAL_WAVE is constant
+	``FD_SCORE_TEAM_FINAL_WAVE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_TEAM_WAVE``
@@ -8556,11 +12151,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_TEAM_WAVE is constant
+	``FD_SCORE_TEAM_WAVE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_TEAM_FLAWLESS_WAVE``
@@ -8568,11 +12163,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_TEAM_FLAWLESS_WAVE is constant
+	``FD_SCORE_TEAM_FLAWLESS_WAVE`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``FD_SCORE_REPAIR_TURRET``
@@ -8580,11 +12175,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_REPAIR_TURRET is constant
+	``FD_SCORE_REPAIR_TURRET`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``FD_SCORE_DIDNT_DIE``
@@ -8592,11 +12187,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_DIDNT_DIE is constant
+	``FD_SCORE_DIDNT_DIE`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``FD_SCORE_SHIELD_HARVESTER``
@@ -8604,11 +12199,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_SHIELD_HARVESTER is constant
+	``FD_SCORE_SHIELD_HARVESTER`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``FD_SCORE_SONAR_PULSE``
@@ -8616,11 +12211,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_SONAR_PULSE is constant
+	``FD_SCORE_SONAR_PULSE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_ARC_TRAP_TRIGGERED``
@@ -8628,11 +12223,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_ARC_TRAP_TRIGGERED is constant
+	``FD_SCORE_ARC_TRAP_TRIGGERED`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_TETHER_TRAP_TRIGGERED``
@@ -8640,11 +12235,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_TETHER_TRAP_TRIGGERED is constant
+	``FD_SCORE_TETHER_TRAP_TRIGGERED`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_ARC_WAVE``
@@ -8652,11 +12247,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_ARC_WAVE is constant
+	``FD_SCORE_ARC_WAVE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_TEAM_HEAL``
@@ -8664,11 +12259,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_TEAM_HEAL is constant
+	``FD_SCORE_TEAM_HEAL`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_DAMAGE_BONUS``
@@ -8676,11 +12271,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_DAMAGE_BONUS is constant
+	``FD_SCORE_DAMAGE_BONUS`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_HEALING_BONUS``
@@ -8688,11 +12283,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_HEALING_BONUS is constant
+	``FD_SCORE_HEALING_BONUS`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_SCORE_SUPPORT_BONUS``
@@ -8700,11 +12295,11 @@ UI Globals
 
 .. note::
 
-	FD_SCORE_SUPPORT_BONUS is constant
+	``FD_SCORE_SUPPORT_BONUS`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``ZIPLINE_IDLE_ANIM``
@@ -8712,11 +12307,11 @@ UI Globals
 
 .. note::
 
-	ZIPLINE_IDLE_ANIM is constant
+	``ZIPLINE_IDLE_ANIM`` is constant
 
 * type: string
 
-* value: "pt_zipline_slide_idle"
+* value: ``"pt_zipline_slide_idle"``
 
 
 ``DEFAULT_CONVERSATION_DEBOUNCE_TIME``
@@ -8724,11 +12319,11 @@ UI Globals
 
 .. note::
 
-	DEFAULT_CONVERSATION_DEBOUNCE_TIME is constant
+	``DEFAULT_CONVERSATION_DEBOUNCE_TIME`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``AI_CONVERSATION_RANGE_SQR``
@@ -8736,11 +12331,11 @@ UI Globals
 
 .. note::
 
-	AI_CONVERSATION_RANGE_SQR is constant
+	``AI_CONVERSATION_RANGE_SQR`` is constant
 
 * type: int
 
-* value: 20250000
+* value: ``20250000``
 
 
 ``AI_CONVERSATION_RANGE``
@@ -8748,11 +12343,11 @@ UI Globals
 
 .. note::
 
-	AI_CONVERSATION_RANGE is constant
+	``AI_CONVERSATION_RANGE`` is constant
 
 * type: int
 
-* value: 4500
+* value: ``4500``
 
 
 ``MAX_VOICE_DIST_SQRD``
@@ -8760,11 +12355,11 @@ UI Globals
 
 .. note::
 
-	MAX_VOICE_DIST_SQRD is constant
+	``MAX_VOICE_DIST_SQRD`` is constant
 
 * type: int
 
-* value: 9000000
+* value: ``9000000``
 
 
 ``AI_FRIENDLY_CHATTER_RANGE_SQR``
@@ -8772,11 +12367,11 @@ UI Globals
 
 .. note::
 
-	AI_FRIENDLY_CHATTER_RANGE_SQR is constant
+	``AI_FRIENDLY_CHATTER_RANGE_SQR`` is constant
 
 * type: int
 
-* value: 4410000
+* value: ``4410000``
 
 
 ``AI_FRIENDLY_CHATTER_RANGE``
@@ -8784,11 +12379,11 @@ UI Globals
 
 .. note::
 
-	AI_FRIENDLY_CHATTER_RANGE is constant
+	``AI_FRIENDLY_CHATTER_RANGE`` is constant
 
 * type: int
 
-* value: 2100
+* value: ``2100``
 
 
 ``PLAYER_SHIELD_WALL_RADIUS``
@@ -8796,11 +12391,11 @@ UI Globals
 
 .. note::
 
-	PLAYER_SHIELD_WALL_RADIUS is constant
+	``PLAYER_SHIELD_WALL_RADIUS`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``PLAYER_SHIELD_WALL_FOV``
@@ -8808,11 +12403,11 @@ UI Globals
 
 .. note::
 
-	PLAYER_SHIELD_WALL_FOV is constant
+	``PLAYER_SHIELD_WALL_FOV`` is constant
 
 * type: int
 
-* value: 120
+* value: ``120``
 
 
 ``PLAYER_SHIELD_WALL_HEALTH``
@@ -8820,11 +12415,11 @@ UI Globals
 
 .. note::
 
-	PLAYER_SHIELD_WALL_HEALTH is constant
+	``PLAYER_SHIELD_WALL_HEALTH`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``PLAYER_SHIELD_WALL_REGEN_WAIT_TIME``
@@ -8832,11 +12427,11 @@ UI Globals
 
 .. note::
 
-	PLAYER_SHIELD_WALL_REGEN_WAIT_TIME is constant
+	``PLAYER_SHIELD_WALL_REGEN_WAIT_TIME`` is constant
 
 * type: int
 
-* value: 8
+* value: ``8``
 
 
 ``PLAYER_SHIELD_WALL_REGEN_INCREMENT``
@@ -8844,11 +12439,11 @@ UI Globals
 
 .. note::
 
-	PLAYER_SHIELD_WALL_REGEN_INCREMENT is constant
+	``PLAYER_SHIELD_WALL_REGEN_INCREMENT`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``AIRVEHICLE_FLAG_AWAIT_INPUT``
@@ -8856,11 +12451,11 @@ UI Globals
 
 .. note::
 
-	AIRVEHICLE_FLAG_AWAIT_INPUT is constant
+	``AIRVEHICLE_FLAG_AWAIT_INPUT`` is constant
 
 * type: int
 
-* value: 0x040
+* value: ``0x040``
 
 
 ``HIGHLIGHT_FAR_MAX``
@@ -8868,11 +12463,11 @@ UI Globals
 
 .. note::
 
-	HIGHLIGHT_FAR_MAX is constant
+	``HIGHLIGHT_FAR_MAX`` is constant
 
 * type: float
 
-* value: 999999999999999.0
+* value: ``999999999999999.0``
 
 
 ``REQUIRES_ANY``
@@ -8880,11 +12475,11 @@ UI Globals
 
 .. note::
 
-	REQUIRES_ANY is constant
+	``REQUIRES_ANY`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``REQUIRES_PILOT``
@@ -8892,11 +12487,11 @@ UI Globals
 
 .. note::
 
-	REQUIRES_PILOT is constant
+	``REQUIRES_PILOT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``REQUIRES_TITAN``
@@ -8904,11 +12499,11 @@ UI Globals
 
 .. note::
 
-	REQUIRES_TITAN is constant
+	``REQUIRES_TITAN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``HighlightContext``
@@ -8928,11 +12523,11 @@ UI Globals
 
 .. note::
 
-	GAMEMODE_SP is constant
+	``GAMEMODE_SP`` is constant
 
 * type: string
 
-* value: "solo"
+* value: ``"solo"``
 
 
 ``shGlobal``
@@ -8946,11 +12541,11 @@ UI Globals
 
 .. note::
 
-	NEW_LOADOUTS is constant
+	``NEW_LOADOUTS`` is constant
 
 * type: bool
 
-* value: true
+* value: ``true``
 
 
 ``HIGHLIGHT_FILL_DEFAULT``
@@ -8958,11 +12553,11 @@ UI Globals
 
 .. note::
 
-	HIGHLIGHT_FILL_DEFAULT is constant
+	``HIGHLIGHT_FILL_DEFAULT`` is constant
 
 * type: int
 
-* value: 110
+* value: ``110``
 
 
 ``HIGHLIGHT_OUTLINE_GENERIC``
@@ -8970,11 +12565,11 @@ UI Globals
 
 .. note::
 
-	HIGHLIGHT_OUTLINE_GENERIC is constant
+	``HIGHLIGHT_OUTLINE_GENERIC`` is constant
 
 * type: int
 
-* value: 110
+* value: ``110``
 
 
 ``ePresentationType``
@@ -9030,11 +12625,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_COMMON_COLUMN is constant
+	``PILOT_WEAPON_MOD_COMMON_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``PILOT_WEAPON_MOD_COMMON_TYPE_COLUMN``
@@ -9042,11 +12637,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_COMMON_TYPE_COLUMN is constant
+	``PILOT_WEAPON_MOD_COMMON_TYPE_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``PILOT_WEAPON_MOD_COMMON_NAME_COLUMN``
@@ -9054,11 +12649,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_COMMON_NAME_COLUMN is constant
+	``PILOT_WEAPON_MOD_COMMON_NAME_COLUMN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``PILOT_WEAPON_MOD_COMMON_DESCRIPTION_COLUMN``
@@ -9066,11 +12661,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_COMMON_DESCRIPTION_COLUMN is constant
+	``PILOT_WEAPON_MOD_COMMON_DESCRIPTION_COLUMN`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``PILOT_WEAPON_MOD_COMMON_IMAGE_COLUMN``
@@ -9078,11 +12673,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_COMMON_IMAGE_COLUMN is constant
+	``PILOT_WEAPON_MOD_COMMON_IMAGE_COLUMN`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``PILOT_WEAPON_MOD_COLUMN``
@@ -9090,11 +12685,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_COLUMN is constant
+	``PILOT_WEAPON_MOD_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``PILOT_WEAPON_MOD_WEAPON_COLUMN``
@@ -9102,11 +12697,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_WEAPON_COLUMN is constant
+	``PILOT_WEAPON_MOD_WEAPON_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``PILOT_WEAPON_MOD_DAMAGEDISPLAY_COLUMN``
@@ -9114,11 +12709,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_DAMAGEDISPLAY_COLUMN is constant
+	``PILOT_WEAPON_MOD_DAMAGEDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``PILOT_WEAPON_MOD_ACCURACYDISPLAY_COLUMN``
@@ -9126,11 +12721,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_ACCURACYDISPLAY_COLUMN is constant
+	``PILOT_WEAPON_MOD_ACCURACYDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``PILOT_WEAPON_MOD_RANGEDISPLAY_COLUMN``
@@ -9138,11 +12733,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_RANGEDISPLAY_COLUMN is constant
+	``PILOT_WEAPON_MOD_RANGEDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``PILOT_WEAPON_MOD_FIRERATEDISPLAY_COLUMN``
@@ -9150,11 +12745,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_FIRERATEDISPLAY_COLUMN is constant
+	``PILOT_WEAPON_MOD_FIRERATEDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``PILOT_WEAPON_MOD_CLIPSIZEDISPLAY_COLUMN``
@@ -9162,11 +12757,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_CLIPSIZEDISPLAY_COLUMN is constant
+	``PILOT_WEAPON_MOD_CLIPSIZEDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``PILOT_WEAPON_MOD_HIDDEN_COLUMN``
@@ -9174,11 +12769,11 @@ UI Globals
 
 .. note::
 
-	PILOT_WEAPON_MOD_HIDDEN_COLUMN is constant
+	``PILOT_WEAPON_MOD_HIDDEN_COLUMN`` is constant
 
 * type: int
 
-* value: 7
+* value: ``7``
 
 
 ``TITAN_PRIMARY_COLUMN``
@@ -9186,11 +12781,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_COLUMN is constant
+	``TITAN_PRIMARY_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_PRIMARY_HIDDEN_COLUMN``
@@ -9198,11 +12793,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_HIDDEN_COLUMN is constant
+	``TITAN_PRIMARY_HIDDEN_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_PRIMARY_MOD_COMMON_COLUMN``
@@ -9210,11 +12805,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_COMMON_COLUMN is constant
+	``TITAN_PRIMARY_MOD_COMMON_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_PRIMARY_MOD_COMMON_NAME_COLUMN``
@@ -9222,11 +12817,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_COMMON_NAME_COLUMN is constant
+	``TITAN_PRIMARY_MOD_COMMON_NAME_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_PRIMARY_MOD_COMMON_DESCRIPTION_COLUMN``
@@ -9234,11 +12829,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_COMMON_DESCRIPTION_COLUMN is constant
+	``TITAN_PRIMARY_MOD_COMMON_DESCRIPTION_COLUMN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_PRIMARY_MOD_COMMON_IMAGE_COLUMN``
@@ -9246,11 +12841,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_COMMON_IMAGE_COLUMN is constant
+	``TITAN_PRIMARY_MOD_COMMON_IMAGE_COLUMN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``TITAN_PRIMARY_MOD_COLUMN``
@@ -9258,11 +12853,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_COLUMN is constant
+	``TITAN_PRIMARY_MOD_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_PRIMARY_MOD_WEAPON_COLUMN``
@@ -9270,11 +12865,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_WEAPON_COLUMN is constant
+	``TITAN_PRIMARY_MOD_WEAPON_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_PRIMARY_MOD_DAMAGEDISPLAY_COLUMN``
@@ -9282,11 +12877,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_DAMAGEDISPLAY_COLUMN is constant
+	``TITAN_PRIMARY_MOD_DAMAGEDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_PRIMARY_MOD_ACCURACYDISPLAY_COLUMN``
@@ -9294,11 +12889,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_ACCURACYDISPLAY_COLUMN is constant
+	``TITAN_PRIMARY_MOD_ACCURACYDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``TITAN_PRIMARY_MOD_RANGEDISPLAY_COLUMN``
@@ -9306,11 +12901,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_RANGEDISPLAY_COLUMN is constant
+	``TITAN_PRIMARY_MOD_RANGEDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``TITAN_PRIMARY_MOD_FIRERATEDISPLAY_COLUMN``
@@ -9318,11 +12913,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_FIRERATEDISPLAY_COLUMN is constant
+	``TITAN_PRIMARY_MOD_FIRERATEDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``TITAN_PRIMARY_MOD_CLIPSIZEDISPLAY_COLUMN``
@@ -9330,11 +12925,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_CLIPSIZEDISPLAY_COLUMN is constant
+	``TITAN_PRIMARY_MOD_CLIPSIZEDISPLAY_COLUMN`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``TITAN_PRIMARY_MOD_HIDDEN_COLUMN``
@@ -9342,11 +12937,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PRIMARY_MOD_HIDDEN_COLUMN is constant
+	``TITAN_PRIMARY_MOD_HIDDEN_COLUMN`` is constant
 
 * type: int
 
-* value: 7
+* value: ``7``
 
 
 ``TITAN_ABILITY_COLUMN``
@@ -9354,11 +12949,11 @@ UI Globals
 
 .. note::
 
-	TITAN_ABILITY_COLUMN is constant
+	``TITAN_ABILITY_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_ABILITY_TYPE_COLUMN``
@@ -9366,11 +12961,11 @@ UI Globals
 
 .. note::
 
-	TITAN_ABILITY_TYPE_COLUMN is constant
+	``TITAN_ABILITY_TYPE_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_ABILITY_DAMAGESOURCE_COLUMN``
@@ -9378,11 +12973,11 @@ UI Globals
 
 .. note::
 
-	TITAN_ABILITY_DAMAGESOURCE_COLUMN is constant
+	``TITAN_ABILITY_DAMAGESOURCE_COLUMN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_ABILITY_HIDDEN_COLUMN``
@@ -9390,11 +12985,11 @@ UI Globals
 
 .. note::
 
-	TITAN_ABILITY_HIDDEN_COLUMN is constant
+	``TITAN_ABILITY_HIDDEN_COLUMN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``TITAN_PASSIVE_COLUMN``
@@ -9402,11 +12997,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PASSIVE_COLUMN is constant
+	``TITAN_PASSIVE_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_PASSIVE_TYPE_COLUMN``
@@ -9414,11 +13009,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PASSIVE_TYPE_COLUMN is constant
+	``TITAN_PASSIVE_TYPE_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_PASSIVE_NAME_COLUMN``
@@ -9426,11 +13021,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PASSIVE_NAME_COLUMN is constant
+	``TITAN_PASSIVE_NAME_COLUMN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_PASSIVE_DESCRIPTION_COLUMN``
@@ -9438,11 +13033,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PASSIVE_DESCRIPTION_COLUMN is constant
+	``TITAN_PASSIVE_DESCRIPTION_COLUMN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``TITAN_PASSIVE_LONGDESCRIPTION_COLUMN``
@@ -9450,11 +13045,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PASSIVE_LONGDESCRIPTION_COLUMN is constant
+	``TITAN_PASSIVE_LONGDESCRIPTION_COLUMN`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``TITAN_PASSIVE_IMAGE_COLUMN``
@@ -9462,11 +13057,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PASSIVE_IMAGE_COLUMN is constant
+	``TITAN_PASSIVE_IMAGE_COLUMN`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``TITAN_PASSIVE_HIDDEN_COLUMN``
@@ -9474,11 +13069,11 @@ UI Globals
 
 .. note::
 
-	TITAN_PASSIVE_HIDDEN_COLUMN is constant
+	``TITAN_PASSIVE_HIDDEN_COLUMN`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``TITAN_VOICE_COLUMN``
@@ -9486,11 +13081,11 @@ UI Globals
 
 .. note::
 
-	TITAN_VOICE_COLUMN is constant
+	``TITAN_VOICE_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_VOICE_NAME_COLUMN``
@@ -9498,11 +13093,11 @@ UI Globals
 
 .. note::
 
-	TITAN_VOICE_NAME_COLUMN is constant
+	``TITAN_VOICE_NAME_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_VOICE_DESCRIPTION_COLUMN``
@@ -9510,11 +13105,11 @@ UI Globals
 
 .. note::
 
-	TITAN_VOICE_DESCRIPTION_COLUMN is constant
+	``TITAN_VOICE_DESCRIPTION_COLUMN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_VOICE_IMAGE_COLUMN``
@@ -9522,11 +13117,11 @@ UI Globals
 
 .. note::
 
-	TITAN_VOICE_IMAGE_COLUMN is constant
+	``TITAN_VOICE_IMAGE_COLUMN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``TITAN_VOICE_HIDDEN_COLUMN``
@@ -9534,11 +13129,11 @@ UI Globals
 
 .. note::
 
-	TITAN_VOICE_HIDDEN_COLUMN is constant
+	``TITAN_VOICE_HIDDEN_COLUMN`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``BURN_REF_COLUMN_NAME``
@@ -9546,11 +13141,11 @@ UI Globals
 
 .. note::
 
-	BURN_REF_COLUMN_NAME is constant
+	``BURN_REF_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "itemRef"
+* value: ``"itemRef"``
 
 
 ``BURN_NAME_COLUMN_NAME``
@@ -9558,11 +13153,11 @@ UI Globals
 
 .. note::
 
-	BURN_NAME_COLUMN_NAME is constant
+	``BURN_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "name"
+* value: ``"name"``
 
 
 ``BURN_DESCRIPTION_COLUMN_NAME``
@@ -9570,11 +13165,11 @@ UI Globals
 
 .. note::
 
-	BURN_DESCRIPTION_COLUMN_NAME is constant
+	``BURN_DESCRIPTION_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "description"
+* value: ``"description"``
 
 
 ``BURN_IMAGE_COLUMN_NAME``
@@ -9582,11 +13177,11 @@ UI Globals
 
 .. note::
 
-	BURN_IMAGE_COLUMN_NAME is constant
+	``BURN_IMAGE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "image"
+* value: ``"image"``
 
 
 ``BURN_COST_COLUMN_NAME``
@@ -9594,11 +13189,11 @@ UI Globals
 
 .. note::
 
-	BURN_COST_COLUMN_NAME is constant
+	``BURN_COST_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "activationCost"
+* value: ``"activationCost"``
 
 
 ``BURN_TIER_COLUMN_NAME``
@@ -9606,11 +13201,11 @@ UI Globals
 
 .. note::
 
-	BURN_TIER_COLUMN_NAME is constant
+	``BURN_TIER_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "tier"
+* value: ``"tier"``
 
 
 ``BURN_AVAILABLE_COLUMN_NAME``
@@ -9618,11 +13213,11 @@ UI Globals
 
 .. note::
 
-	BURN_AVAILABLE_COLUMN_NAME is constant
+	``BURN_AVAILABLE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "rewardAvailableFor"
+* value: ``"rewardAvailableFor"``
 
 
 ``BURN_WEAPON_COLUMN_NAME``
@@ -9630,11 +13225,11 @@ UI Globals
 
 .. note::
 
-	BURN_WEAPON_COLUMN_NAME is constant
+	``BURN_WEAPON_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "weaponName"
+* value: ``"weaponName"``
 
 
 ``BURN_EXTRA_WEAPON_MOD_NAME``
@@ -9642,11 +13237,11 @@ UI Globals
 
 .. note::
 
-	BURN_EXTRA_WEAPON_MOD_NAME is constant
+	``BURN_EXTRA_WEAPON_MOD_NAME`` is constant
 
 * type: string
 
-* value: "extraWeaponMod"
+* value: ``"extraWeaponMod"``
 
 
 ``BATTLE_CHATTER_CONVERSATION_NAME_COLUMN_NAME``
@@ -9654,11 +13249,11 @@ UI Globals
 
 .. note::
 
-	BATTLE_CHATTER_CONVERSATION_NAME_COLUMN_NAME is constant
+	``BATTLE_CHATTER_CONVERSATION_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "conversationname"
+* value: ``"conversationname"``
 
 
 ``BATTLE_CHATTER_PRIORITY_COLUMN_NAME``
@@ -9666,11 +13261,11 @@ UI Globals
 
 .. note::
 
-	BATTLE_CHATTER_PRIORITY_COLUMN_NAME is constant
+	``BATTLE_CHATTER_PRIORITY_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "priority"
+* value: ``"priority"``
 
 
 ``BATTLE_CHATTER_DEBOUNCE_COLUMN_NAME``
@@ -9678,11 +13273,11 @@ UI Globals
 
 .. note::
 
-	BATTLE_CHATTER_DEBOUNCE_COLUMN_NAME is constant
+	``BATTLE_CHATTER_DEBOUNCE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "debounce"
+* value: ``"debounce"``
 
 
 ``FACTION_DIALOGUE_CONVERSATION_NAME_COLUMN_NAME``
@@ -9690,11 +13285,11 @@ UI Globals
 
 .. note::
 
-	FACTION_DIALOGUE_CONVERSATION_NAME_COLUMN_NAME is constant
+	``FACTION_DIALOGUE_CONVERSATION_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "conversationname"
+* value: ``"conversationname"``
 
 
 ``FACTION_DIALOGUE_PRIORITY_COLUMN_NAME``
@@ -9702,11 +13297,11 @@ UI Globals
 
 .. note::
 
-	FACTION_DIALOGUE_PRIORITY_COLUMN_NAME is constant
+	``FACTION_DIALOGUE_PRIORITY_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "priority"
+* value: ``"priority"``
 
 
 ``FACTION_DIALOGUE_DEBOUNCE_COLUMN_NAME``
@@ -9714,11 +13309,11 @@ UI Globals
 
 .. note::
 
-	FACTION_DIALOGUE_DEBOUNCE_COLUMN_NAME is constant
+	``FACTION_DIALOGUE_DEBOUNCE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "debounce"
+* value: ``"debounce"``
 
 
 ``FACTION_DIALOGUE_DISABLED_LIST_NAME``
@@ -9726,11 +13321,11 @@ UI Globals
 
 .. note::
 
-	FACTION_DIALOGUE_DISABLED_LIST_NAME is constant
+	``FACTION_DIALOGUE_DISABLED_LIST_NAME`` is constant
 
 * type: string
 
-* value: "disabledForFaction"
+* value: ``"disabledForFaction"``
 
 
 ``FACTION_LEADERS_PERSISTENCE_REF_COLUMN_NAME``
@@ -9738,11 +13333,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_PERSISTENCE_REF_COLUMN_NAME is constant
+	``FACTION_LEADERS_PERSISTENCE_REF_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "persistenceRef"
+* value: ``"persistenceRef"``
 
 
 ``FACTION_LEADERS_FACTION_DIALOGUE_PREFIX_COLUMN_NAME``
@@ -9750,11 +13345,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_FACTION_DIALOGUE_PREFIX_COLUMN_NAME is constant
+	``FACTION_LEADERS_FACTION_DIALOGUE_PREFIX_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "factionDialoguePrefix"
+* value: ``"factionDialoguePrefix"``
 
 
 ``FACTION_LEADERS_IMAGE_COLUMN_NAME``
@@ -9762,11 +13357,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_IMAGE_COLUMN_NAME is constant
+	``FACTION_LEADERS_IMAGE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "image"
+* value: ``"image"``
 
 
 ``FACTION_LEADERS_NAME_COLUMN_NAME``
@@ -9774,11 +13369,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_NAME_COLUMN_NAME is constant
+	``FACTION_LEADERS_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "name"
+* value: ``"name"``
 
 
 ``FACTION_LEADERS_WAVEFORM_COLUMN_NAME``
@@ -9786,11 +13381,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_WAVEFORM_COLUMN_NAME is constant
+	``FACTION_LEADERS_WAVEFORM_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "usesWaveform"
+* value: ``"usesWaveform"``
 
 
 ``FACTION_LEADERS_DESCRIPTION_COLUMN_NAME``
@@ -9798,11 +13393,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_DESCRIPTION_COLUMN_NAME is constant
+	``FACTION_LEADERS_DESCRIPTION_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "description"
+* value: ``"description"``
 
 
 ``FACTION_LEADERS_MODEL_NAME_COLUMN_NAME``
@@ -9810,11 +13405,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_MODEL_NAME_COLUMN_NAME is constant
+	``FACTION_LEADERS_MODEL_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "modelName"
+* value: ``"modelName"``
 
 
 ``FACTION_LEADERS_DROPSHIP_ANIM_NAME_COLUMN_NAME``
@@ -9822,11 +13417,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_DROPSHIP_ANIM_NAME_COLUMN_NAME is constant
+	``FACTION_LEADERS_DROPSHIP_ANIM_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "dropshipAnimName"
+* value: ``"dropshipAnimName"``
 
 
 ``FACTION_LEADERS_DROPSHIP_ANIM_EASTEREGG``
@@ -9834,11 +13429,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_DROPSHIP_ANIM_EASTEREGG is constant
+	``FACTION_LEADERS_DROPSHIP_ANIM_EASTEREGG`` is constant
 
 * type: string
 
-* value: "isEasterEgg"
+* value: ``"isEasterEgg"``
 
 
 ``FACTION_LEADERS_PROP_MODEL_NAME_COLUMN_NAME``
@@ -9846,11 +13441,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_PROP_MODEL_NAME_COLUMN_NAME is constant
+	``FACTION_LEADERS_PROP_MODEL_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "propModelName"
+* value: ``"propModelName"``
 
 
 ``FACTION_LEADERS_PROP_ATTACHMENT_COLUMN_NAME``
@@ -9858,11 +13453,11 @@ UI Globals
 
 .. note::
 
-	FACTION_LEADERS_PROP_ATTACHMENT_COLUMN_NAME is constant
+	``FACTION_LEADERS_PROP_ATTACHMENT_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "propAttachment"
+* value: ``"propAttachment"``
 
 
 ``NON_LOADOUT_WEAPON_COLUMN``
@@ -9870,11 +13465,11 @@ UI Globals
 
 .. note::
 
-	NON_LOADOUT_WEAPON_COLUMN is constant
+	``NON_LOADOUT_WEAPON_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``NON_LOADOUT_MOD_COLUMN``
@@ -9882,11 +13477,11 @@ UI Globals
 
 .. note::
 
-	NON_LOADOUT_MOD_COLUMN is constant
+	``NON_LOADOUT_MOD_COLUMN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``NON_LOADOUT_MOD_PARENT_COLUMN``
@@ -9894,11 +13489,11 @@ UI Globals
 
 .. note::
 
-	NON_LOADOUT_MOD_PARENT_COLUMN is constant
+	``NON_LOADOUT_MOD_PARENT_COLUMN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``NON_LOADOUT_MOD_NAME_COLUMN``
@@ -9906,11 +13501,11 @@ UI Globals
 
 .. note::
 
-	NON_LOADOUT_MOD_NAME_COLUMN is constant
+	``NON_LOADOUT_MOD_NAME_COLUMN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``NON_LOADOUT_MOD_DESCRIPTION_COLUMN``
@@ -9918,11 +13513,11 @@ UI Globals
 
 .. note::
 
-	NON_LOADOUT_MOD_DESCRIPTION_COLUMN is constant
+	``NON_LOADOUT_MOD_DESCRIPTION_COLUMN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``NON_LOADOUT_MOD_IMAGE_COLUMN``
@@ -9930,11 +13525,11 @@ UI Globals
 
 .. note::
 
-	NON_LOADOUT_MOD_IMAGE_COLUMN is constant
+	``NON_LOADOUT_MOD_IMAGE_COLUMN`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``PHYS_EXPLOSION_SMALL``
@@ -9942,11 +13537,11 @@ UI Globals
 
 .. note::
 
-	PHYS_EXPLOSION_SMALL is constant
+	``PHYS_EXPLOSION_SMALL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``PHYS_EXPLOSION_MEDIUM``
@@ -9954,11 +13549,11 @@ UI Globals
 
 .. note::
 
-	PHYS_EXPLOSION_MEDIUM is constant
+	``PHYS_EXPLOSION_MEDIUM`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``PHYS_EXPLOSION_LARGE``
@@ -9966,11 +13561,11 @@ UI Globals
 
 .. note::
 
-	PHYS_EXPLOSION_LARGE is constant
+	``PHYS_EXPLOSION_LARGE`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``PHYS_EXPLOSION_HUGE``
@@ -9978,11 +13573,11 @@ UI Globals
 
 .. note::
 
-	PHYS_EXPLOSION_HUGE is constant
+	``PHYS_EXPLOSION_HUGE`` is constant
 
 * type: int
 
-* value: 10000
+* value: ``10000``
 
 
 ``ePowerUps``
@@ -9996,11 +13591,11 @@ UI Globals
 
 .. note::
 
-	COLLECTIBLE_PICKUP_EFFECT is constant
+	``COLLECTIBLE_PICKUP_EFFECT`` is constant
 
 * type: asset
 
-* value: $"ar_item_pickup_CP"
+* value: ``$"ar_item_pickup_CP"``
 
 
 ``MODEL_HARVESTER_TOWER``
@@ -10008,11 +13603,11 @@ UI Globals
 
 .. note::
 
-	MODEL_HARVESTER_TOWER is constant
+	``MODEL_HARVESTER_TOWER`` is constant
 
 * type: asset
 
-* value: $"models/props/generator_coop/generator_coop.mdl"
+* value: ``$"models/props/generator_coop/generator_coop.mdl"``
 
 
 ``FX_HARVESTER_BEAM``
@@ -10020,11 +13615,11 @@ UI Globals
 
 .. note::
 
-	FX_HARVESTER_BEAM is constant
+	``FX_HARVESTER_BEAM`` is constant
 
 * type: asset
 
-* value: $"P_tw_harvester_beam_endcap"
+* value: ``$"P_tw_harvester_beam_endcap"``
 
 
 ``FX_HARVESTER_HEALTH_LOW``
@@ -10032,11 +13627,11 @@ UI Globals
 
 .. note::
 
-	FX_HARVESTER_HEALTH_LOW is constant
+	``FX_HARVESTER_HEALTH_LOW`` is constant
 
 * type: asset
 
-* value: $"P_tw_harvester_damaged"
+* value: ``$"P_tw_harvester_damaged"``
 
 
 ``FX_HARVESTER_OVERSHIELD``
@@ -10044,11 +13639,11 @@ UI Globals
 
 .. note::
 
-	FX_HARVESTER_OVERSHIELD is constant
+	``FX_HARVESTER_OVERSHIELD`` is constant
 
 * type: asset
 
-* value: $"P_harvestor_shield_wall"
+* value: ``$"P_harvestor_shield_wall"``
 
 
 ``FX_HARVESTER_SHIELD``
@@ -10056,11 +13651,11 @@ UI Globals
 
 .. note::
 
-	FX_HARVESTER_SHIELD is constant
+	``FX_HARVESTER_SHIELD`` is constant
 
 * type: asset
 
-* value: $"P_coop_harvester_CP"
+* value: ``$"P_coop_harvester_CP"``
 
 
 ``FX_HARVESTER_SHIELD_BREAK``
@@ -10068,11 +13663,11 @@ UI Globals
 
 .. note::
 
-	FX_HARVESTER_SHIELD_BREAK is constant
+	``FX_HARVESTER_SHIELD_BREAK`` is constant
 
 * type: asset
 
-* value: $"P_coop_harvester_break_CP"
+* value: ``$"P_coop_harvester_break_CP"``
 
 
 ``FX_GEN_HARVESTER_BEAM``
@@ -10080,11 +13675,11 @@ UI Globals
 
 .. note::
 
-	FX_GEN_HARVESTER_BEAM is constant
+	``FX_GEN_HARVESTER_BEAM`` is constant
 
 * type: asset
 
-* value: $"P_tw_harvester_beam_endcap"
+* value: ``$"P_tw_harvester_beam_endcap"``
 
 
 ``$"models/props/generator_coop/generator_coop_blackbox.mdl"``
@@ -10092,7 +13687,7 @@ UI Globals
 
 .. note::
 
-	$"models/props/generator_coop/generator_coop_blackbox.mdl" is constant
+	``$"models/props/generator_coop/generator_coop_blackbox.mdl"`` is constant
 
 * type: MODEL_HARVESTER_TOWER_COLLISION=
 
@@ -10102,11 +13697,11 @@ UI Globals
 
 .. note::
 
-	MODEL_HARVESTER_TOWER_RINGS is constant
+	``MODEL_HARVESTER_TOWER_RINGS`` is constant
 
 * type: asset
 
-* value: $"models/props/generator_coop/generator_coop_rings_animated.mdl"
+* value: ``$"models/props/generator_coop/generator_coop_rings_animated.mdl"``
 
 
 ``LTS_TEAM_SELECTION_LENGTH``
@@ -10114,11 +13709,11 @@ UI Globals
 
 .. note::
 
-	LTS_TEAM_SELECTION_LENGTH is constant
+	``LTS_TEAM_SELECTION_LENGTH`` is constant
 
 * type: float
 
-* value: 15.0
+* value: ``15.0``
 
 
 ``GAMEMODE_BOMB_SCORE_PLANT``
@@ -10126,11 +13721,11 @@ UI Globals
 
 .. note::
 
-	GAMEMODE_BOMB_SCORE_PLANT is constant
+	``GAMEMODE_BOMB_SCORE_PLANT`` is constant
 
 * type: int
 
-* value: 1000
+* value: ``1000``
 
 
 ``GAMEMODE_BOMB_SCORE_DEFUSE``
@@ -10138,11 +13733,11 @@ UI Globals
 
 .. note::
 
-	GAMEMODE_BOMB_SCORE_DEFUSE is constant
+	``GAMEMODE_BOMB_SCORE_DEFUSE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``GAMEMODE_BOMB_SCORE_EXPLODE``
@@ -10150,11 +13745,11 @@ UI Globals
 
 .. note::
 
-	GAMEMODE_BOMB_SCORE_EXPLODE is constant
+	``GAMEMODE_BOMB_SCORE_EXPLODE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``GAMEMODE_BOMB_SCORE_CARRY``
@@ -10162,11 +13757,11 @@ UI Globals
 
 .. note::
 
-	GAMEMODE_BOMB_SCORE_CARRY is constant
+	``GAMEMODE_BOMB_SCORE_CARRY`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``GAMEMODE_BOMB_SCORE_KILL_TITAN``
@@ -10174,11 +13769,11 @@ UI Globals
 
 .. note::
 
-	GAMEMODE_BOMB_SCORE_KILL_TITAN is constant
+	``GAMEMODE_BOMB_SCORE_KILL_TITAN`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``GAMEMODE_BOMB_SCORE_KILL_PILOT``
@@ -10186,11 +13781,11 @@ UI Globals
 
 .. note::
 
-	GAMEMODE_BOMB_SCORE_KILL_PILOT is constant
+	``GAMEMODE_BOMB_SCORE_KILL_PILOT`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``GAMEMODE_RAID_SCORE_PLANT``
@@ -10198,11 +13793,11 @@ UI Globals
 
 .. note::
 
-	GAMEMODE_RAID_SCORE_PLANT is constant
+	``GAMEMODE_RAID_SCORE_PLANT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_WEAK``
@@ -10210,11 +13805,11 @@ UI Globals
 
 .. note::
 
-	TITAN_WEAK is constant
+	``TITAN_WEAK`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_HENCH``
@@ -10222,11 +13817,11 @@ UI Globals
 
 .. note::
 
-	TITAN_HENCH is constant
+	``TITAN_HENCH`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_MERC``
@@ -10234,11 +13829,11 @@ UI Globals
 
 .. note::
 
-	TITAN_MERC is constant
+	``TITAN_MERC`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_AUTO``
@@ -10246,11 +13841,11 @@ UI Globals
 
 .. note::
 
-	TITAN_AUTO is constant
+	``TITAN_AUTO`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``TITAN_BOSS``
@@ -10258,11 +13853,11 @@ UI Globals
 
 .. note::
 
-	TITAN_BOSS is constant
+	``TITAN_BOSS`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``COMBO_METER_MAX``
@@ -10270,11 +13865,11 @@ UI Globals
 
 .. note::
 
-	COMBO_METER_MAX is constant
+	``COMBO_METER_MAX`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``DREW_MODE``
@@ -10282,11 +13877,11 @@ UI Globals
 
 .. note::
 
-	DREW_MODE is constant
+	``DREW_MODE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``GREEN_SCREEN_MODEL``
@@ -10294,11 +13889,11 @@ UI Globals
 
 .. note::
 
-	GREEN_SCREEN_MODEL is constant
+	``GREEN_SCREEN_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/test/green_screen.mdl"
+* value: ``$"models/test/green_screen.mdl"``
 
 
 ``DEFAULT_MENU_ENVIRONMENT_MODEL``
@@ -10306,11 +13901,11 @@ UI Globals
 
 .. note::
 
-	DEFAULT_MENU_ENVIRONMENT_MODEL is constant
+	``DEFAULT_MENU_ENVIRONMENT_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/menu/default_environment.mdl"
+* value: ``$"models/menu/default_environment.mdl"``
 
 
 ``COCKPIT_UI_XOFFSET``
@@ -10318,11 +13913,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_UI_XOFFSET is constant
+	``COCKPIT_UI_XOFFSET`` is constant
 
 * type: int
 
-* value: 22
+* value: ``22``
 
 
 ``COCKPIT_UI_WIDTH``
@@ -10330,11 +13925,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_UI_WIDTH is constant
+	``COCKPIT_UI_WIDTH`` is constant
 
 * type: float
 
-* value: 41.4
+* value: ``41.4``
 
 
 ``COCKPIT_UI_HEIGHT``
@@ -10342,11 +13937,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_UI_HEIGHT is constant
+	``COCKPIT_UI_HEIGHT`` is constant
 
 * type: float
 
-* value: COCKPIT_UI_WIDTH
+* value: ``COCKPIT_UI_WIDTH / 1.7665``
 
 
 ``COCKPIT_RUI_WIDTH``
@@ -10354,11 +13949,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_RUI_WIDTH is constant
+	``COCKPIT_RUI_WIDTH`` is constant
 
 * type: int
 
-* value: 34
+* value: ``34``
 
 
 ``COCKPIT_RUI_HEIGHT``
@@ -10366,11 +13961,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_RUI_HEIGHT is constant
+	``COCKPIT_RUI_HEIGHT`` is constant
 
 * type: float
 
-* value: COCKPIT_RUI_WIDTH
+* value: ``COCKPIT_RUI_WIDTH / 1.7665``
 
 
 ``COCKPIT_RUI_RADIUS``
@@ -10378,11 +13973,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_RUI_RADIUS is constant
+	``COCKPIT_RUI_RADIUS`` is constant
 
 * type: int
 
-* value: 350
+* value: ``350``
 
 
 ``COCKPIT_RUI_OFFSET``
@@ -10390,11 +13985,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_RUI_OFFSET is constant
+	``COCKPIT_RUI_OFFSET`` is constant
 
 * type: vector
 
-* value: <-218,0,0>
+* value: ``<-218,0,0>``
 
 
 ``COCKPIT_RUI_OFFSET_1610_TEMP``
@@ -10402,11 +13997,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_RUI_OFFSET_1610_TEMP is constant
+	``COCKPIT_RUI_OFFSET_1610_TEMP`` is constant
 
 * type: vector
 
-* value: <-216,0,0>
+* value: ``<-216,0,0>``
 
 
 ``COCKPIT_RUI_SUBDIV``
@@ -10414,11 +14009,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_RUI_SUBDIV is constant
+	``COCKPIT_RUI_SUBDIV`` is constant
 
 * type: float
 
-* value: 3.5
+* value: ``3.5``
 
 
 ``TITAN_COCKPIT_RUI_SCREEN_WIDTH``
@@ -10426,11 +14021,11 @@ UI Globals
 
 .. note::
 
-	TITAN_COCKPIT_RUI_SCREEN_WIDTH is constant
+	``TITAN_COCKPIT_RUI_SCREEN_WIDTH`` is constant
 
 * type: float
 
-* value: 21.0
+* value: ``21.0``
 
 
 ``TITAN_COCKPIT_TOPO_RADIUS``
@@ -10438,11 +14033,11 @@ UI Globals
 
 .. note::
 
-	TITAN_COCKPIT_TOPO_RADIUS is constant
+	``TITAN_COCKPIT_TOPO_RADIUS`` is constant
 
 * type: float
 
-* value: 150.0
+* value: ``150.0``
 
 
 ``TITAN_COCKPIT_ROTATION_ANGLE``
@@ -10450,11 +14045,11 @@ UI Globals
 
 .. note::
 
-	TITAN_COCKPIT_ROTATION_ANGLE is constant
+	``TITAN_COCKPIT_ROTATION_ANGLE`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``TITAN_COCKPIT_LOWER_RUI_SCREEN_SQUARE_SIZE``
@@ -10462,11 +14057,11 @@ UI Globals
 
 .. note::
 
-	TITAN_COCKPIT_LOWER_RUI_SCREEN_SQUARE_SIZE is constant
+	``TITAN_COCKPIT_LOWER_RUI_SCREEN_SQUARE_SIZE`` is constant
 
 * type: float
 
-* value: 24.0
+* value: ``24.0``
 
 
 ``TITAN_COCKPIT_LOWER_RUI_SCREEN_HEIGHT_SCALE``
@@ -10474,11 +14069,11 @@ UI Globals
 
 .. note::
 
-	TITAN_COCKPIT_LOWER_RUI_SCREEN_HEIGHT_SCALE is constant
+	``TITAN_COCKPIT_LOWER_RUI_SCREEN_HEIGHT_SCALE`` is constant
 
 * type: float
 
-* value: 1.3125
+* value: ``1.3125``
 
 
 ``TITAN_COCKPIT_INSTRUMENT1_RUI_SCREEN_SQUARE_SIZE``
@@ -10486,11 +14081,11 @@ UI Globals
 
 .. note::
 
-	TITAN_COCKPIT_INSTRUMENT1_RUI_SCREEN_SQUARE_SIZE is constant
+	``TITAN_COCKPIT_INSTRUMENT1_RUI_SCREEN_SQUARE_SIZE`` is constant
 
 * type: float
 
-* value: 4.5
+* value: ``4.5``
 
 
 ``SPOT_ASSIST_TIME``
@@ -10498,11 +14093,11 @@ UI Globals
 
 .. note::
 
-	SPOT_ASSIST_TIME is constant
+	``SPOT_ASSIST_TIME`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``NUM_SPOTS_AVAILABLE``
@@ -10510,11 +14105,11 @@ UI Globals
 
 .. note::
 
-	NUM_SPOTS_AVAILABLE is constant
+	``NUM_SPOTS_AVAILABLE`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``SPOT_CONE_HEIGHT``
@@ -10522,11 +14117,11 @@ UI Globals
 
 .. note::
 
-	SPOT_CONE_HEIGHT is constant
+	``SPOT_CONE_HEIGHT`` is constant
 
 * type: float
 
-* value: 8000.0
+* value: ``8000.0``
 
 
 ``SPOT_CONE_ANGLE_TO_AXIS``
@@ -10534,11 +14129,11 @@ UI Globals
 
 .. note::
 
-	SPOT_CONE_ANGLE_TO_AXIS is constant
+	``SPOT_CONE_ANGLE_TO_AXIS`` is constant
 
 * type: float
 
-* value: 4.5
+* value: ``4.5``
 
 
 ``SPOT_TRACE_DISTANCE``
@@ -10546,11 +14141,11 @@ UI Globals
 
 .. note::
 
-	SPOT_TRACE_DISTANCE is constant
+	``SPOT_TRACE_DISTANCE`` is constant
 
 * type: float
 
-* value: MAX_WORLD_RANGE
+* value: ``MAX_WORLD_RANGE``
 
 
 ``SPOT_HIGHLIGHT_TIME``
@@ -10558,11 +14153,11 @@ UI Globals
 
 .. note::
 
-	SPOT_HIGHLIGHT_TIME is constant
+	``SPOT_HIGHLIGHT_TIME`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``SPOT_HIGHLIGHT_FADE_IN_TIME``
@@ -10570,11 +14165,11 @@ UI Globals
 
 .. note::
 
-	SPOT_HIGHLIGHT_FADE_IN_TIME is constant
+	``SPOT_HIGHLIGHT_FADE_IN_TIME`` is constant
 
 * type: float
 
-* value: 0.15
+* value: ``0.15``
 
 
 ``SPOT_HIGHLIGHT_FADE_OUT_TIME``
@@ -10582,11 +14177,11 @@ UI Globals
 
 .. note::
 
-	SPOT_HIGHLIGHT_FADE_OUT_TIME is constant
+	``SPOT_HIGHLIGHT_FADE_OUT_TIME`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``SPOT_MODEL_SNAPSHOT_TIME``
@@ -10594,11 +14189,11 @@ UI Globals
 
 .. note::
 
-	SPOT_MODEL_SNAPSHOT_TIME is constant
+	``SPOT_MODEL_SNAPSHOT_TIME`` is constant
 
 * type: float
 
-* value: 8.0
+* value: ``8.0``
 
 
 ``GROUND_SPOT_VISIBLE_TIME``
@@ -10606,11 +14201,11 @@ UI Globals
 
 .. note::
 
-	GROUND_SPOT_VISIBLE_TIME is constant
+	``GROUND_SPOT_VISIBLE_TIME`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``SPOT_GLOBAL_VO_COOLDOWN``
@@ -10618,11 +14213,11 @@ UI Globals
 
 .. note::
 
-	SPOT_GLOBAL_VO_COOLDOWN is constant
+	``SPOT_GLOBAL_VO_COOLDOWN`` is constant
 
 * type: float
 
-* value: 4.0
+* value: ``4.0``
 
 
 ``eWeaponStatType``
@@ -10642,11 +14237,11 @@ UI Globals
 
 .. note::
 
-	EARNMETER_MODE is constant
+	``EARNMETER_MODE`` is constant
 
 * type: string
 
-* value: "earnMeterMode"
+* value: ``"earnMeterMode"``
 
 
 ``EARNMETER_OWNEDFRAC``
@@ -10654,11 +14249,11 @@ UI Globals
 
 .. note::
 
-	EARNMETER_OWNEDFRAC is constant
+	``EARNMETER_OWNEDFRAC`` is constant
 
 * type: string
 
-* value: "earnMeterOwnedFrac"
+* value: ``"earnMeterOwnedFrac"``
 
 
 ``EARNMETER_EARNEDFRAC``
@@ -10666,11 +14261,11 @@ UI Globals
 
 .. note::
 
-	EARNMETER_EARNEDFRAC is constant
+	``EARNMETER_EARNEDFRAC`` is constant
 
 * type: string
 
-* value: "earnMeterFrac"
+* value: ``"earnMeterFrac"``
 
 
 ``EARNMETER_REWARDFRAC``
@@ -10678,11 +14273,11 @@ UI Globals
 
 .. note::
 
-	EARNMETER_REWARDFRAC is constant
+	``EARNMETER_REWARDFRAC`` is constant
 
 * type: string
 
-* value: "earnMeterRewardFrac"
+* value: ``"earnMeterRewardFrac"``
 
 
 ``EARNMETER_REWARDID``
@@ -10690,11 +14285,11 @@ UI Globals
 
 .. note::
 
-	EARNMETER_REWARDID is constant
+	``EARNMETER_REWARDID`` is constant
 
 * type: string
 
-* value: "earnMeterRewardId"
+* value: ``"earnMeterRewardId"``
 
 
 ``EARNMETER_GOALID``
@@ -10702,11 +14297,11 @@ UI Globals
 
 .. note::
 
-	EARNMETER_GOALID is constant
+	``EARNMETER_GOALID`` is constant
 
 * type: string
 
-* value: "earnMeterGoalId"
+* value: ``"earnMeterGoalId"``
 
 
 ``TOP_INVENTORY_ITEM_BURN_CARD_ID``
@@ -10714,11 +14309,11 @@ UI Globals
 
 .. note::
 
-	TOP_INVENTORY_ITEM_BURN_CARD_ID is constant
+	``TOP_INVENTORY_ITEM_BURN_CARD_ID`` is constant
 
 * type: string
 
-* value: "topInventoryItemBurnCardID"
+* value: ``"topInventoryItemBurnCardID"``
 
 
 ``ANTI_RODEO_RESULT_DURATION``
@@ -10726,11 +14321,11 @@ UI Globals
 
 .. note::
 
-	ANTI_RODEO_RESULT_DURATION is constant
+	``ANTI_RODEO_RESULT_DURATION`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``RUI_SORT_SCREENFADE``
@@ -10738,11 +14333,11 @@ UI Globals
 
 .. note::
 
-	RUI_SORT_SCREENFADE is constant
+	``RUI_SORT_SCREENFADE`` is constant
 
 * type: int
 
-* value: 1000
+* value: ``1000``
 
 
 ``R1_VGUI_MINIMAP``
@@ -10750,11 +14345,11 @@ UI Globals
 
 .. note::
 
-	R1_VGUI_MINIMAP is constant
+	``R1_VGUI_MINIMAP`` is constant
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``TITAN_HINT_DASH``
@@ -10762,11 +14357,11 @@ UI Globals
 
 .. note::
 
-	TITAN_HINT_DASH is constant
+	``TITAN_HINT_DASH`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``CALLING_CARD_REF_COLUMN_NAME``
@@ -10774,11 +14369,11 @@ UI Globals
 
 .. note::
 
-	CALLING_CARD_REF_COLUMN_NAME is constant
+	``CALLING_CARD_REF_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "itemRef"
+* value: ``"itemRef"``
 
 
 ``CALLING_CARD_NAME_COLUMN_NAME``
@@ -10786,11 +14381,11 @@ UI Globals
 
 .. note::
 
-	CALLING_CARD_NAME_COLUMN_NAME is constant
+	``CALLING_CARD_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "name"
+* value: ``"name"``
 
 
 ``CALLING_CARD_LAYOUT_COLUMN_NAME``
@@ -10798,11 +14393,11 @@ UI Globals
 
 .. note::
 
-	CALLING_CARD_LAYOUT_COLUMN_NAME is constant
+	``CALLING_CARD_LAYOUT_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "layoutType"
+* value: ``"layoutType"``
 
 
 ``CALLING_CARD_IMAGE_COLUMN_NAME``
@@ -10810,11 +14405,11 @@ UI Globals
 
 .. note::
 
-	CALLING_CARD_IMAGE_COLUMN_NAME is constant
+	``CALLING_CARD_IMAGE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "image"
+* value: ``"image"``
 
 
 ``CALLSIGN_ICON_REF_COLUMN_NAME``
@@ -10822,11 +14417,11 @@ UI Globals
 
 .. note::
 
-	CALLSIGN_ICON_REF_COLUMN_NAME is constant
+	``CALLSIGN_ICON_REF_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "itemRef"
+* value: ``"itemRef"``
 
 
 ``CALLSIGN_ICON_NAME_COLUMN_NAME``
@@ -10834,11 +14429,11 @@ UI Globals
 
 .. note::
 
-	CALLSIGN_ICON_NAME_COLUMN_NAME is constant
+	``CALLSIGN_ICON_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "name"
+* value: ``"name"``
 
 
 ``CALLSIGN_ICON_IMAGE_COLUMN_NAME``
@@ -10846,11 +14441,11 @@ UI Globals
 
 .. note::
 
-	CALLSIGN_ICON_IMAGE_COLUMN_NAME is constant
+	``CALLSIGN_ICON_IMAGE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "image"
+* value: ``"image"``
 
 
 ``CALLSIGN_ICON_SMALL_IMAGE_COLUMN_NAME``
@@ -10858,11 +14453,11 @@ UI Globals
 
 .. note::
 
-	CALLSIGN_ICON_SMALL_IMAGE_COLUMN_NAME is constant
+	``CALLSIGN_ICON_SMALL_IMAGE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "smallImage"
+* value: ``"smallImage"``
 
 
 ``CAMO_REF_COLUMN_NAME``
@@ -10870,11 +14465,11 @@ UI Globals
 
 .. note::
 
-	CAMO_REF_COLUMN_NAME is constant
+	``CAMO_REF_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "itemRef"
+* value: ``"itemRef"``
 
 
 ``CAMO_PILOT_REF_COLUMN_NAME``
@@ -10882,11 +14477,11 @@ UI Globals
 
 .. note::
 
-	CAMO_PILOT_REF_COLUMN_NAME is constant
+	``CAMO_PILOT_REF_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "pilotRef"
+* value: ``"pilotRef"``
 
 
 ``CAMO_TITAN_REF_COLUMN_NAME``
@@ -10894,11 +14489,11 @@ UI Globals
 
 .. note::
 
-	CAMO_TITAN_REF_COLUMN_NAME is constant
+	``CAMO_TITAN_REF_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "titanRef"
+* value: ``"titanRef"``
 
 
 ``CAMO_IMAGE_COLUMN_NAME``
@@ -10906,11 +14501,11 @@ UI Globals
 
 .. note::
 
-	CAMO_IMAGE_COLUMN_NAME is constant
+	``CAMO_IMAGE_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "image"
+* value: ``"image"``
 
 
 ``CAMO_NAME_COLUMN_NAME``
@@ -10918,11 +14513,11 @@ UI Globals
 
 .. note::
 
-	CAMO_NAME_COLUMN_NAME is constant
+	``CAMO_NAME_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "name"
+* value: ``"name"``
 
 
 ``CAMO_DESCRIPTION_COLUMN_NAME``
@@ -10930,11 +14525,11 @@ UI Globals
 
 .. note::
 
-	CAMO_DESCRIPTION_COLUMN_NAME is constant
+	``CAMO_DESCRIPTION_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "description"
+* value: ``"description"``
 
 
 ``CAMO_PILOT_COST_COLUMN_NAME``
@@ -10942,11 +14537,11 @@ UI Globals
 
 .. note::
 
-	CAMO_PILOT_COST_COLUMN_NAME is constant
+	``CAMO_PILOT_COST_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "pilotCost"
+* value: ``"pilotCost"``
 
 
 ``CAMO_TITAN_COST_COLUMN_NAME``
@@ -10954,11 +14549,11 @@ UI Globals
 
 .. note::
 
-	CAMO_TITAN_COST_COLUMN_NAME is constant
+	``CAMO_TITAN_COST_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "titanCost"
+* value: ``"titanCost"``
 
 
 ``CAMO_PILOT_WEAPON_COST_COLUMN_NAME``
@@ -10966,11 +14561,11 @@ UI Globals
 
 .. note::
 
-	CAMO_PILOT_WEAPON_COST_COLUMN_NAME is constant
+	``CAMO_PILOT_WEAPON_COST_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "pilotWeaponCost"
+* value: ``"pilotWeaponCost"``
 
 
 ``CAMO_TITAN_WEAPON_COST_COLUMN_NAME``
@@ -10978,11 +14573,11 @@ UI Globals
 
 .. note::
 
-	CAMO_TITAN_WEAPON_COST_COLUMN_NAME is constant
+	``CAMO_TITAN_WEAPON_COST_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "titanWeaponCost"
+* value: ``"titanWeaponCost"``
 
 
 ``CAMO_CATEGORY_COLUMN_NAME``
@@ -10990,11 +14585,11 @@ UI Globals
 
 .. note::
 
-	CAMO_CATEGORY_COLUMN_NAME is constant
+	``CAMO_CATEGORY_COLUMN_NAME`` is constant
 
 * type: string
 
-* value: "category"
+* value: ``"category"``
 
 
 ``CAMO_INDEX_BASE``
@@ -11002,11 +14597,11 @@ UI Globals
 
 .. note::
 
-	CAMO_INDEX_BASE is constant
+	``CAMO_INDEX_BASE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``SKIN_INDEX_BASE``
@@ -11014,11 +14609,11 @@ UI Globals
 
 .. note::
 
-	SKIN_INDEX_BASE is constant
+	``SKIN_INDEX_BASE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``PILOT_SKIN_INDEX_CAMO``
@@ -11026,11 +14621,11 @@ UI Globals
 
 .. note::
 
-	PILOT_SKIN_INDEX_CAMO is constant
+	``PILOT_SKIN_INDEX_CAMO`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``PILOT_SKIN_INDEX_GHOST``
@@ -11038,11 +14633,11 @@ UI Globals
 
 .. note::
 
-	PILOT_SKIN_INDEX_GHOST is constant
+	``PILOT_SKIN_INDEX_GHOST`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_SKIN_INDEX_CAMO``
@@ -11050,11 +14645,11 @@ UI Globals
 
 .. note::
 
-	TITAN_SKIN_INDEX_CAMO is constant
+	``TITAN_SKIN_INDEX_CAMO`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_WARPAINT_CAMO_INDEX``
@@ -11062,11 +14657,11 @@ UI Globals
 
 .. note::
 
-	TITAN_WARPAINT_CAMO_INDEX is constant
+	``TITAN_WARPAINT_CAMO_INDEX`` is constant
 
 * type: int
 
-* value: -1
+* value: ``-1``
 
 
 ``WEAPON_SKIN_INDEX_DEFAULT``
@@ -11074,11 +14669,11 @@ UI Globals
 
 .. note::
 
-	WEAPON_SKIN_INDEX_DEFAULT is constant
+	``WEAPON_SKIN_INDEX_DEFAULT`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``WEAPON_SKIN_INDEX_CAMO``
@@ -11086,11 +14681,11 @@ UI Globals
 
 .. note::
 
-	WEAPON_SKIN_INDEX_CAMO is constant
+	``WEAPON_SKIN_INDEX_CAMO`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``WEAPON_SKIN_INDEX_GHOST``
@@ -11098,11 +14693,11 @@ UI Globals
 
 .. note::
 
-	WEAPON_SKIN_INDEX_GHOST is constant
+	``WEAPON_SKIN_INDEX_GHOST`` is constant
 
 * type: int
 
-* value: 11
+* value: ``11``
 
 
 ``FWTS_HIDDEN``
@@ -11110,11 +14705,11 @@ UI Globals
 
 .. note::
 
-	FWTS_HIDDEN is constant
+	``FWTS_HIDDEN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1 << 0``
 
 
 ``FWTS_IMC``
@@ -11122,11 +14717,11 @@ UI Globals
 
 .. note::
 
-	FWTS_IMC is constant
+	``FWTS_IMC`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1 << 1``
 
 
 ``FWTS_MILITIA``
@@ -11134,11 +14729,11 @@ UI Globals
 
 .. note::
 
-	FWTS_MILITIA is constant
+	``FWTS_MILITIA`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1 << 2``
 
 
 ``FWTS_SHIELDED``
@@ -11146,11 +14741,11 @@ UI Globals
 
 .. note::
 
-	FWTS_SHIELDED is constant
+	``FWTS_SHIELDED`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1 << 3``
 
 
 ``FWTS_THREAT``
@@ -11158,11 +14753,11 @@ UI Globals
 
 .. note::
 
-	FWTS_THREAT is constant
+	``FWTS_THREAT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1 << 4``
 
 
 ``MINIMAP_Z_BASE``
@@ -11170,11 +14765,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_Z_BASE is constant
+	``MINIMAP_Z_BASE`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``MINIMAP_Z_LAYER``
@@ -11182,11 +14777,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_Z_LAYER is constant
+	``MINIMAP_Z_LAYER`` is constant
 
 * type: int
 
-* value: MINIMAP_Z_BASE
+* value: ``MINIMAP_Z_BASE + 1``
 
 
 ``MINIMAP_Z_THREAT_WEDGES``
@@ -11194,11 +14789,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_Z_THREAT_WEDGES is constant
+	``MINIMAP_Z_THREAT_WEDGES`` is constant
 
 * type: int
 
-* value: MINIMAP_Z_BASE
+* value: ``MINIMAP_Z_BASE + 2``
 
 
 ``MINIMAP_Z_YOU``
@@ -11206,11 +14801,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_Z_YOU is constant
+	``MINIMAP_Z_YOU`` is constant
 
 * type: int
 
-* value: MINIMAP_Z_BASE
+* value: ``MINIMAP_Z_BASE + 200``
 
 
 ``MINIMAP_Z_OBJECT``
@@ -11218,11 +14813,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_Z_OBJECT is constant
+	``MINIMAP_Z_OBJECT`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``MINIMAP_Z_OBJECTIVE``
@@ -11230,11 +14825,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_Z_OBJECTIVE is constant
+	``MINIMAP_Z_OBJECTIVE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``MINIMAP_Z_NPC``
@@ -11242,11 +14837,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_Z_NPC is constant
+	``MINIMAP_Z_NPC`` is constant
 
 * type: int
 
-* value: 75
+* value: ``75``
 
 
 ``MINIMAP_Z_PLAYER``
@@ -11254,11 +14849,11 @@ UI Globals
 
 .. note::
 
-	MINIMAP_Z_PLAYER is constant
+	``MINIMAP_Z_PLAYER`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``SP_STARTING_TITAN_LOADOUT_KIT``
@@ -11266,11 +14861,11 @@ UI Globals
 
 .. note::
 
-	SP_STARTING_TITAN_LOADOUT_KIT is constant
+	``SP_STARTING_TITAN_LOADOUT_KIT`` is constant
 
 * type: string
 
-* value: "mp_titanweapon_xo16_shorty"
+* value: ``"mp_titanweapon_xo16_shorty"``
 
 
 ``SP_FIRST_TITAN_LOADOUT_KIT``
@@ -11278,11 +14873,11 @@ UI Globals
 
 .. note::
 
-	SP_FIRST_TITAN_LOADOUT_KIT is constant
+	``SP_FIRST_TITAN_LOADOUT_KIT`` is constant
 
 * type: string
 
-* value: "mp_titanweapon_sticky_40mm"
+* value: ``"mp_titanweapon_sticky_40mm"``
 
 
 ``HAS_WORLD_CALLSIGN``
@@ -11290,11 +14885,11 @@ UI Globals
 
 .. note::
 
-	HAS_WORLD_CALLSIGN is constant
+	``HAS_WORLD_CALLSIGN`` is constant
 
 * type: bool
 
-* value: true
+* value: ``true``
 
 
 ``IMAGE_ATLAS_MENU``
@@ -11302,11 +14897,11 @@ UI Globals
 
 .. note::
 
-	IMAGE_ATLAS_MENU is constant
+	``IMAGE_ATLAS_MENU`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``IMAGE_ATLAS_HUD``
@@ -11314,11 +14909,11 @@ UI Globals
 
 .. note::
 
-	IMAGE_ATLAS_HUD is constant
+	``IMAGE_ATLAS_HUD`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``IMAGE_ATLAS_CALLINGCARD``
@@ -11326,11 +14921,11 @@ UI Globals
 
 .. note::
 
-	IMAGE_ATLAS_CALLINGCARD is constant
+	``IMAGE_ATLAS_CALLINGCARD`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``IMAGE_ATLAS_FACTION_LOGO``
@@ -11338,11 +14933,11 @@ UI Globals
 
 .. note::
 
-	IMAGE_ATLAS_FACTION_LOGO is constant
+	``IMAGE_ATLAS_FACTION_LOGO`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``IMAGE_ATLAS_CAMO``
@@ -11350,11 +14945,11 @@ UI Globals
 
 .. note::
 
-	IMAGE_ATLAS_CAMO is constant
+	``IMAGE_ATLAS_CAMO`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``IMAGE_ATLAS_COMMS``
@@ -11362,11 +14957,11 @@ UI Globals
 
 .. note::
 
-	IMAGE_ATLAS_COMMS is constant
+	``IMAGE_ATLAS_COMMS`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``EARN_METER_CORE_MULTIPLIER``
@@ -11374,11 +14969,11 @@ UI Globals
 
 .. note::
 
-	EARN_METER_CORE_MULTIPLIER is constant
+	``EARN_METER_CORE_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 1.25
+* value: ``1.25``
 
 
 ``COCKPIT_COLOR_BLUE``
@@ -11386,11 +14981,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_COLOR_BLUE is constant
+	``COCKPIT_COLOR_BLUE`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``COCKPIT_COLOR_YELLOW``
@@ -11398,11 +14993,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_COLOR_YELLOW is constant
+	``COCKPIT_COLOR_YELLOW`` is constant
 
 * type: float
 
-* value: 0.05
+* value: ``0.05``
 
 
 ``COCKPIT_COLOR_RED``
@@ -11410,11 +15005,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_COLOR_RED is constant
+	``COCKPIT_COLOR_RED`` is constant
 
 * type: float
 
-* value: 0.15
+* value: ``0.15``
 
 
 ``COCKPIT_COLOR_SIEGE``
@@ -11422,11 +15017,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_COLOR_SIEGE is constant
+	``COCKPIT_COLOR_SIEGE`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``COCKPIT_COLOR_THREAT``
@@ -11434,11 +15029,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_COLOR_THREAT is constant
+	``COCKPIT_COLOR_THREAT`` is constant
 
 * type: float
 
-* value: 0.35
+* value: ``0.35``
 
 
 ``COCKPIT_COLOR_HIDDEN``
@@ -11446,11 +15041,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_COLOR_HIDDEN is constant
+	``COCKPIT_COLOR_HIDDEN`` is constant
 
 * type: float
 
-* value: 0.45
+* value: ``0.45``
 
 
 ``COCKPIT_COLOR_VANGUARD``
@@ -11458,11 +15053,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_COLOR_VANGUARD is constant
+	``COCKPIT_COLOR_VANGUARD`` is constant
 
 * type: float
 
-* value: 0.55
+* value: ``0.55``
 
 
 ``SP_RODEO_BOOST``
@@ -11470,11 +15065,11 @@ UI Globals
 
 .. note::
 
-	SP_RODEO_BOOST is constant
+	``SP_RODEO_BOOST`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``PRO_SCREEN_INT_LIFETIME_KILLS``
@@ -11482,11 +15077,11 @@ UI Globals
 
 .. note::
 
-	PRO_SCREEN_INT_LIFETIME_KILLS is constant
+	``PRO_SCREEN_INT_LIFETIME_KILLS`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``PRO_SCREEN_INT_MATCH_KILLS``
@@ -11494,11 +15089,11 @@ UI Globals
 
 .. note::
 
-	PRO_SCREEN_INT_MATCH_KILLS is constant
+	``PRO_SCREEN_INT_MATCH_KILLS`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``achievements``
@@ -11512,11 +15107,11 @@ UI Globals
 
 .. note::
 
-	ACHIEVEMENT_COLLECTIBLES_1_COUNT is constant
+	``ACHIEVEMENT_COLLECTIBLES_1_COUNT`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``ACHIEVEMENT_COLLECTIBLES_2_COUNT``
@@ -11524,11 +15119,11 @@ UI Globals
 
 .. note::
 
-	ACHIEVEMENT_COLLECTIBLES_2_COUNT is constant
+	``ACHIEVEMENT_COLLECTIBLES_2_COUNT`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``MERIT_STATE_AVAILABLE``
@@ -11536,11 +15131,11 @@ UI Globals
 
 .. note::
 
-	MERIT_STATE_AVAILABLE is constant
+	``MERIT_STATE_AVAILABLE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``MERIT_STATE_SUCCESS``
@@ -11548,11 +15143,11 @@ UI Globals
 
 .. note::
 
-	MERIT_STATE_SUCCESS is constant
+	``MERIT_STATE_SUCCESS`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``MERIT_STATE_FAILURE``
@@ -11560,11 +15155,11 @@ UI Globals
 
 .. note::
 
-	MERIT_STATE_FAILURE is constant
+	``MERIT_STATE_FAILURE`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``MERIT_STATE_DISABLED``
@@ -11572,11 +15167,11 @@ UI Globals
 
 .. note::
 
-	MERIT_STATE_DISABLED is constant
+	``MERIT_STATE_DISABLED`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``MERIT_STATE_HIDDEN``
@@ -11584,11 +15179,11 @@ UI Globals
 
 .. note::
 
-	MERIT_STATE_HIDDEN is constant
+	``MERIT_STATE_HIDDEN`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``MAX_MAIL_COUNT``
@@ -11596,11 +15191,11 @@ UI Globals
 
 .. note::
 
-	MAX_MAIL_COUNT is constant
+	``MAX_MAIL_COUNT`` is constant
 
 * type: int
 
-* value: 9
+* value: ``9``
 
 
 ``TITAN_CLASS_LOCK_STATE_AVAILABLE``
@@ -11608,11 +15203,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CLASS_LOCK_STATE_AVAILABLE is constant
+	``TITAN_CLASS_LOCK_STATE_AVAILABLE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TITAN_CLASS_LOCK_STATE_LEVELRECOMMENDED``
@@ -11620,11 +15215,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CLASS_LOCK_STATE_LEVELRECOMMENDED is constant
+	``TITAN_CLASS_LOCK_STATE_LEVELRECOMMENDED`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_CLASS_LOCK_STATE_LOCKED``
@@ -11632,11 +15227,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CLASS_LOCK_STATE_LOCKED is constant
+	``TITAN_CLASS_LOCK_STATE_LOCKED`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TITAN_CLASS_LOCK_STATE_LEVELREQUIRED``
@@ -11644,11 +15239,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CLASS_LOCK_STATE_LEVELREQUIRED is constant
+	``TITAN_CLASS_LOCK_STATE_LEVELREQUIRED`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``TITAN_CLASS_LOCK_STATE_INUSE``
@@ -11656,11 +15251,11 @@ UI Globals
 
 .. note::
 
-	TITAN_CLASS_LOCK_STATE_INUSE is constant
+	``TITAN_CLASS_LOCK_STATE_INUSE`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``FD_XP_EASY_BONUS_SCALE``
@@ -11668,11 +15263,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_EASY_BONUS_SCALE is constant
+	``FD_XP_EASY_BONUS_SCALE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_NORMAL_BONUS_SCALE``
@@ -11680,11 +15275,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_NORMAL_BONUS_SCALE is constant
+	``FD_XP_NORMAL_BONUS_SCALE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_HARD_BONUS_SCALE``
@@ -11692,11 +15287,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_HARD_BONUS_SCALE is constant
+	``FD_XP_HARD_BONUS_SCALE`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``FD_XP_MASTER_BONUS_SCALE``
@@ -11704,11 +15299,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_MASTER_BONUS_SCALE is constant
+	``FD_XP_MASTER_BONUS_SCALE`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``FD_XP_INSANE_BONUS_SCALE``
@@ -11716,11 +15311,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_INSANE_BONUS_SCALE is constant
+	``FD_XP_INSANE_BONUS_SCALE`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``FD_XP_VICTORY``
@@ -11728,11 +15323,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_VICTORY is constant
+	``FD_XP_VICTORY`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_VICTORY_HARD_BONUS``
@@ -11740,11 +15335,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_VICTORY_HARD_BONUS is constant
+	``FD_XP_VICTORY_HARD_BONUS`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_VICTORY_MASTER_BONUS``
@@ -11752,11 +15347,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_VICTORY_MASTER_BONUS is constant
+	``FD_XP_VICTORY_MASTER_BONUS`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``FD_XP_VICTORY_INSANE_BONUS``
@@ -11764,11 +15359,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_VICTORY_INSANE_BONUS is constant
+	``FD_XP_VICTORY_INSANE_BONUS`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``FD_XP_EASY_WIN``
@@ -11776,11 +15371,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_EASY_WIN is constant
+	``FD_XP_EASY_WIN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_NORMAL_WIN``
@@ -11788,11 +15383,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_NORMAL_WIN is constant
+	``FD_XP_NORMAL_WIN`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_HARD_WIN``
@@ -11800,11 +15395,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_HARD_WIN is constant
+	``FD_XP_HARD_WIN`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``FD_XP_MASTER_WIN``
@@ -11812,11 +15407,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_MASTER_WIN is constant
+	``FD_XP_MASTER_WIN`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``FD_XP_INSANE_WIN``
@@ -11824,11 +15419,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_INSANE_WIN is constant
+	``FD_XP_INSANE_WIN`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``FD_XP_WAVE``
@@ -11836,11 +15431,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_WAVE is constant
+	``FD_XP_WAVE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_EASY_WAVE_BONUS``
@@ -11848,11 +15443,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_EASY_WAVE_BONUS is constant
+	``FD_XP_EASY_WAVE_BONUS`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_XP_NORMAL_WAVE_BONUS``
@@ -11860,11 +15455,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_NORMAL_WAVE_BONUS is constant
+	``FD_XP_NORMAL_WAVE_BONUS`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_XP_HARD_WAVE_BONUS``
@@ -11872,11 +15467,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_HARD_WAVE_BONUS is constant
+	``FD_XP_HARD_WAVE_BONUS`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_MASTER_WAVE_BONUS``
@@ -11884,11 +15479,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_MASTER_WAVE_BONUS is constant
+	``FD_XP_MASTER_WAVE_BONUS`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``FD_XP_INSANE_WAVE_BONUS``
@@ -11896,11 +15491,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_INSANE_WAVE_BONUS is constant
+	``FD_XP_INSANE_WAVE_BONUS`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``FD_XP_EASY_MILESTONE``
@@ -11908,11 +15503,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_EASY_MILESTONE is constant
+	``FD_XP_EASY_MILESTONE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``FD_XP_NORMAL_MILESTONE``
@@ -11920,11 +15515,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_NORMAL_MILESTONE is constant
+	``FD_XP_NORMAL_MILESTONE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_HARD_MILESTONE``
@@ -11932,11 +15527,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_HARD_MILESTONE is constant
+	``FD_XP_HARD_MILESTONE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_MASTER_MILESTONE``
@@ -11944,11 +15539,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_MASTER_MILESTONE is constant
+	``FD_XP_MASTER_MILESTONE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FD_XP_INSANE_MILESTONE``
@@ -11956,11 +15551,11 @@ UI Globals
 
 .. note::
 
-	FD_XP_INSANE_MILESTONE is constant
+	``FD_XP_INSANE_MILESTONE`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``eFDDifficultyLevel``
@@ -12011,40 +15606,16 @@ UI Globals
 * type: struct
 
 
-``MENU_NAV_FORWARD``
-^^^^^^^^^^
-
-.. note::
-
-	MENU_NAV_FORWARD is constant
-
-* type: bool
-
-* value: true
-
-
-``MENU_NAV_BACK``
-^^^^^^^^^^
-
-.. note::
-
-	MENU_NAV_BACK is constant
-
-* type: bool
-
-* value: false
-
-
 ``WEAPONFLAG_AMPED``
 ^^^^^^^^^^
 
 .. note::
 
-	WEAPONFLAG_AMPED is constant
+	``WEAPONFLAG_AMPED`` is constant
 
 * type: int
 
-* value: (1<<0)
+* value: ``(1<<0)``
 
 
 ``PROP_IS_VALID_FOR_TURRET_PLACEMENT``
@@ -12052,11 +15623,11 @@ UI Globals
 
 .. note::
 
-	PROP_IS_VALID_FOR_TURRET_PLACEMENT is constant
+	``PROP_IS_VALID_FOR_TURRET_PLACEMENT`` is constant
 
 * type: int
 
-* value: SPF_CUSTOM_SCRIPT_3
+* value: ``SPF_CUSTOM_SCRIPT_3``
 
 
 ``TITAN_ARM_BADGE_ATTACHMENT``
@@ -12064,11 +15635,11 @@ UI Globals
 
 .. note::
 
-	TITAN_ARM_BADGE_ATTACHMENT is constant
+	``TITAN_ARM_BADGE_ATTACHMENT`` is constant
 
 * type: string
 
-* value: "exp_L_shoulder"
+* value: ``"exp_L_shoulder"``
 
 
 ``PERSISTENCE_LEAVECOUNT_VAR``
@@ -12076,11 +15647,11 @@ UI Globals
 
 .. note::
 
-	PERSISTENCE_LEAVECOUNT_VAR is constant
+	``PERSISTENCE_LEAVECOUNT_VAR`` is constant
 
 * type: string
 
-* value: "abandonCountForMode"
+* value: ``"abandonCountForMode"``
 
 
 ``PERSISTENCE_LAST_LEAVE_TIME``
@@ -12088,11 +15659,11 @@ UI Globals
 
 .. note::
 
-	PERSISTENCE_LAST_LEAVE_TIME is constant
+	``PERSISTENCE_LAST_LEAVE_TIME`` is constant
 
 * type: string
 
-* value: "lastAbandonTime"
+* value: ``"lastAbandonTime"``
 
 
 ``PERSISTENCE_LEAVEMODE_VAR``
@@ -12100,11 +15671,11 @@ UI Globals
 
 .. note::
 
-	PERSISTENCE_LEAVEMODE_VAR is constant
+	``PERSISTENCE_LEAVEMODE_VAR`` is constant
 
 * type: string
 
-* value: "lastAbandonedMode"
+* value: ``"lastAbandonedMode"``
 
 
 ``TEAM_IMC_GRUNT_MODEL``
@@ -12112,11 +15683,11 @@ UI Globals
 
 .. note::
 
-	TEAM_IMC_GRUNT_MODEL is constant
+	``TEAM_IMC_GRUNT_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/humans/grunts/imc_grunt_rifle.mdl"
+* value: ``$"models/humans/grunts/imc_grunt_rifle.mdl"``
 
 
 ``TEAM_IMC_GRUNT_MODEL_LMG``
@@ -12124,11 +15695,11 @@ UI Globals
 
 .. note::
 
-	TEAM_IMC_GRUNT_MODEL_LMG is constant
+	``TEAM_IMC_GRUNT_MODEL_LMG`` is constant
 
 * type: asset
 
-* value: $"models/humans/grunts/imc_grunt_lmg.mdl"
+* value: ``$"models/humans/grunts/imc_grunt_lmg.mdl"``
 
 
 ``TEAM_IMC_GRUNT_MODEL_RIFLE``
@@ -12136,11 +15707,11 @@ UI Globals
 
 .. note::
 
-	TEAM_IMC_GRUNT_MODEL_RIFLE is constant
+	``TEAM_IMC_GRUNT_MODEL_RIFLE`` is constant
 
 * type: asset
 
-* value: $"models/humans/grunts/imc_grunt_rifle.mdl"
+* value: ``$"models/humans/grunts/imc_grunt_rifle.mdl"``
 
 
 ``TEAM_IMC_GRUNT_MODEL_ROCKET``
@@ -12148,11 +15719,11 @@ UI Globals
 
 .. note::
 
-	TEAM_IMC_GRUNT_MODEL_ROCKET is constant
+	``TEAM_IMC_GRUNT_MODEL_ROCKET`` is constant
 
 * type: asset
 
-* value: $"models/humans/grunts/imc_grunt_shotgun.mdl"
+* value: ``$"models/humans/grunts/imc_grunt_shotgun.mdl"``
 
 
 ``TEAM_IMC_GRUNT_MODEL_SHOTGUN``
@@ -12160,11 +15731,11 @@ UI Globals
 
 .. note::
 
-	TEAM_IMC_GRUNT_MODEL_SHOTGUN is constant
+	``TEAM_IMC_GRUNT_MODEL_SHOTGUN`` is constant
 
 * type: asset
 
-* value: $"models/humans/grunts/imc_grunt_shotgun.mdl"
+* value: ``$"models/humans/grunts/imc_grunt_shotgun.mdl"``
 
 
 ``TEAM_IMC_GRUNT_MODEL_SMG``
@@ -12172,11 +15743,11 @@ UI Globals
 
 .. note::
 
-	TEAM_IMC_GRUNT_MODEL_SMG is constant
+	``TEAM_IMC_GRUNT_MODEL_SMG`` is constant
 
 * type: asset
 
-* value: $"models/humans/grunts/imc_grunt_smg.mdl"
+* value: ``$"models/humans/grunts/imc_grunt_smg.mdl"``
 
 
 ``DATA_KNIFE_MODEL``
@@ -12184,11 +15755,11 @@ UI Globals
 
 .. note::
 
-	DATA_KNIFE_MODEL is constant
+	``DATA_KNIFE_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/weapons/data_knife/v_data_knife.mdl"
+* value: ``$"models/weapons/data_knife/v_data_knife.mdl"``
 
 
 ``STEAL_PISTOL_MODEL``
@@ -12196,11 +15767,11 @@ UI Globals
 
 .. note::
 
-	STEAL_PISTOL_MODEL is constant
+	``STEAL_PISTOL_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/weapons/p2011/w_p2011.mdl"
+* value: ``$"models/weapons/p2011/w_p2011.mdl"``
 
 
 ``SENTRY_TURRET_MODEL``
@@ -12208,11 +15779,11 @@ UI Globals
 
 .. note::
 
-	SENTRY_TURRET_MODEL is constant
+	``SENTRY_TURRET_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/Robots/turret_plasma/turret_plasma.mdl"
+* value: ``$"models/Robots/turret_plasma/turret_plasma.mdl"``
 
 
 ``ROCKET_TURRET_MODEL``
@@ -12220,11 +15791,11 @@ UI Globals
 
 .. note::
 
-	ROCKET_TURRET_MODEL is constant
+	``ROCKET_TURRET_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/Robots/turret_rocket/turret_rocket.mdl"
+* value: ``$"models/Robots/turret_rocket/turret_rocket.mdl"``
 
 
 ``PLASMA_TURRET_MODEL``
@@ -12232,11 +15803,11 @@ UI Globals
 
 .. note::
 
-	PLASMA_TURRET_MODEL is constant
+	``PLASMA_TURRET_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/Robots/turret_plasma/turret_plasma.mdl"
+* value: ``$"models/Robots/turret_plasma/turret_plasma.mdl"``
 
 
 ``HITSCAN_TURRET_MODEL``
@@ -12244,11 +15815,11 @@ UI Globals
 
 .. note::
 
-	HITSCAN_TURRET_MODEL is constant
+	``HITSCAN_TURRET_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/Robots/turret_hitscan/turret_hitscan.mdl"
+* value: ``$"models/Robots/turret_hitscan/turret_hitscan.mdl"``
 
 
 ``CONTROL_PANEL_MODEL``
@@ -12256,11 +15827,11 @@ UI Globals
 
 .. note::
 
-	CONTROL_PANEL_MODEL is constant
+	``CONTROL_PANEL_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/communication/terminal_usable_imc_01.mdl"
+* value: ``$"models/communication/terminal_usable_imc_01.mdl"``
 
 
 ``RODEO_BATTERY_MODEL``
@@ -12268,11 +15839,11 @@ UI Globals
 
 .. note::
 
-	RODEO_BATTERY_MODEL is constant
+	``RODEO_BATTERY_MODEL`` is constant
 
 * type: asset
 
-* value: $"models/titans/medium/titan_medium_battery_static.mdl"
+* value: ``$"models/titans/medium/titan_medium_battery_static.mdl"``
 
 
 ``MODEL_GENERATOR``
@@ -12280,11 +15851,11 @@ UI Globals
 
 .. note::
 
-	MODEL_GENERATOR is constant
+	``MODEL_GENERATOR`` is constant
 
 * type: asset
 
-* value: $"models/beacon/charge_generator_01_glass.mdl"
+* value: ``$"models/beacon/charge_generator_01_glass.mdl"``
 
 
 ``level``
@@ -12298,7 +15869,7 @@ UI Globals
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``reloadedScripts``
@@ -12306,7 +15877,7 @@ UI Globals
 
 * type: bool
 
-* value: false
+* value: ``false``
 
 
 ``GAMETYPE_TEXT``
@@ -12314,7 +15885,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``GAMETYPE_DESC``
@@ -12322,7 +15893,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``GAMETYPE_ICON``
@@ -12330,15 +15901,15 @@ UI Globals
 
 * type: table
 
-* value: {
+* value: ``{[ RANKED_PLAY ] = $"ui/scoreboard_secret_logo"}``
 
 
-``>``
+``GAMETYPE_COLOR``
 ^^^^^^^^^^
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``GAMETYPE``
@@ -12364,11 +15935,42 @@ UI Globals
 
 .. note::
 
-	> is constant
+	``>`` is constant
 
 * type: table
 
-* value: {
+* value:
+
+.. code-block:: javascript
+
+	{
+		//SCORES DETERMINED BY RUNNING script Coop_GetTeamScore() while the level is playing.
+		[ "mp_airbase" ]					= [ 620, 1245, 1870 ],
+		[ "mp_angel_city" ]					= [ 650, 1305, 1955 ],
+		[ "mp_backwater" ]					= [ 615, 1235, 1855 ],
+		[ "mp_boneyard" ]					= [ 595, 1190, 1790 ],
+		[ "mp_colony" ]						= [ 620, 1245, 1870 ],
+		[ "mp_corporate" ]					= [ 570, 1145, 1715 ],
+		[ "mp_fracture" ]					= [ 675, 1355, 2030 ],
+		[ "mp_harmony_mines" ]				= [ 615, 1230, 1845 ],
+		[ "mp_haven" ]						= [ 620, 1245, 1870 ],
+		[ "mp_lagoon" ]						= [ 700, 1405, 2110 ],
+		[ "mp_nexus" ]						= [ 620, 1240, 1865 ],
+		[ "mp_o2" ]							= [ 620, 1245, 1870 ],
+		[ "mp_outpost_207" ]				= [ 550, 1100, 1650 ],
+		[ "mp_overlook" ]					= [ 630, 1260, 1890 ],
+		[ "mp_relic" ]						= [ 550, 1100, 1650 ],
+		[ "mp_rise" ]						= [ 350, 700, 1055 ],
+		[ "mp_runoff" ]						= [ 550, 1100, 1650 ],
+		[ "mp_sandtrap" ]					= [ 675, 1355, 2030 ],
+		[ "mp_smugglers_cove" ]				= [ 595, 1190, 1785 ],
+		[ "mp_switchback" ]					= [ 570, 1145, 1715 ],
+		[ "mp_training_ground" ]			= [ 720, 1445, 2170 ],
+		[ "mp_zone_18" ]					= [ 615, 1235, 1855 ],
+		[ "mp_wargames" ]					= [ 570, 1145, 1715 ],
+		[ "mp_swampland" ]					= [ 655, 1310, 1970 ],
+		[ "default" ]						= [ 10000, 10000, 10000 ]
+	}
 
 
 ``COOP_CUSTOMMATCH_UNLOCK_PLAYS``
@@ -12376,11 +15978,11 @@ UI Globals
 
 .. note::
 
-	COOP_CUSTOMMATCH_UNLOCK_PLAYS is constant
+	``COOP_CUSTOMMATCH_UNLOCK_PLAYS`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``USE_NEW_LOADOUT_MENU``
@@ -12388,11 +15990,11 @@ UI Globals
 
 .. note::
 
-	USE_NEW_LOADOUT_MENU is constant
+	``USE_NEW_LOADOUT_MENU`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``POINTVALUE_MATCH_VICTORY``
@@ -12400,11 +16002,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MATCH_VICTORY is constant
+	``POINTVALUE_MATCH_VICTORY`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``POINTVALUE_MATCH_COMPLETION``
@@ -12412,11 +16014,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MATCH_COMPLETION is constant
+	``POINTVALUE_MATCH_COMPLETION`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_ROUND_WIN``
@@ -12424,11 +16026,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ROUND_WIN is constant
+	``POINTVALUE_ROUND_WIN`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``POINTVALUE_ROUND_COMPLETION``
@@ -12436,11 +16038,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ROUND_COMPLETION is constant
+	``POINTVALUE_ROUND_COMPLETION`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``POINTVALUE_KILL``
@@ -12448,11 +16050,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL is constant
+	``POINTVALUE_KILL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_ASSIST``
@@ -12460,11 +16062,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ASSIST is constant
+	``POINTVALUE_ASSIST`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_KILL_FIRETEAM_AI``
@@ -12472,11 +16074,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_FIRETEAM_AI is constant
+	``POINTVALUE_KILL_FIRETEAM_AI`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``POINTVALUE_KILL_SPECTRE``
@@ -12484,11 +16086,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_SPECTRE is constant
+	``POINTVALUE_KILL_SPECTRE`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``POINTVALUE_KILL_STALKER``
@@ -12496,11 +16098,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_STALKER is constant
+	``POINTVALUE_KILL_STALKER`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``POINTVALUE_KILL_SUPER_SPECTRE``
@@ -12508,11 +16110,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_SUPER_SPECTRE is constant
+	``POINTVALUE_KILL_SUPER_SPECTRE`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_KILL_TITAN``
@@ -12520,11 +16122,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_TITAN is constant
+	``POINTVALUE_KILL_TITAN`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_ASSIST_TITAN``
@@ -12532,11 +16134,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ASSIST_TITAN is constant
+	``POINTVALUE_ASSIST_TITAN`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_KILL_AUTOTITAN``
@@ -12544,11 +16146,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_AUTOTITAN is constant
+	``POINTVALUE_KILL_AUTOTITAN`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_ELECTROCUTE_TITAN``
@@ -12556,11 +16158,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ELECTROCUTE_TITAN is constant
+	``POINTVALUE_ELECTROCUTE_TITAN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_ELECTROCUTE_AUTOTITAN``
@@ -12568,11 +16170,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ELECTROCUTE_AUTOTITAN is constant
+	``POINTVALUE_ELECTROCUTE_AUTOTITAN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_KILL_PILOT``
@@ -12580,11 +16182,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_PILOT is constant
+	``POINTVALUE_KILL_PILOT`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_EXECUTE_PILOT``
@@ -12592,11 +16194,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_EXECUTE_PILOT is constant
+	``POINTVALUE_EXECUTE_PILOT`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``POINTVALUE_KILL_MARVIN``
@@ -12604,11 +16206,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_MARVIN is constant
+	``POINTVALUE_KILL_MARVIN`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``POINTVALUE_KILL_TURRET``
@@ -12616,11 +16218,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_TURRET is constant
+	``POINTVALUE_KILL_TURRET`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_KILL_HEAVY_TURRET``
@@ -12628,11 +16230,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_HEAVY_TURRET is constant
+	``POINTVALUE_KILL_HEAVY_TURRET`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_KILL_LIGHT_TURRET``
@@ -12640,11 +16242,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_LIGHT_TURRET is constant
+	``POINTVALUE_KILL_LIGHT_TURRET`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_KILL_DRONE``
@@ -12652,11 +16254,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_DRONE is constant
+	``POINTVALUE_KILL_DRONE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_KILL_PROWLER``
@@ -12664,11 +16266,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_PROWLER is constant
+	``POINTVALUE_KILL_PROWLER`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_COOP_KILL_SUICIDE_SPECTRE``
@@ -12676,11 +16278,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_SUICIDE_SPECTRE is constant
+	``POINTVALUE_COOP_KILL_SUICIDE_SPECTRE`` is constant
 
 * type: int
 
-* value: 15
+* value: ``15``
 
 
 ``POINTVALUE_COOP_KILL_SNIPER_SPECTRE``
@@ -12688,11 +16290,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_SNIPER_SPECTRE is constant
+	``POINTVALUE_COOP_KILL_SNIPER_SPECTRE`` is constant
 
 * type: int
 
-* value: 40
+* value: ``40``
 
 
 ``POINTVALUE_COOP_KILL_TITAN``
@@ -12700,11 +16302,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_TITAN is constant
+	``POINTVALUE_COOP_KILL_TITAN`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_COOP_ASSIST_TITAN``
@@ -12712,11 +16314,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_ASSIST_TITAN is constant
+	``POINTVALUE_COOP_ASSIST_TITAN`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_COOP_KILL_NUKE_TITAN``
@@ -12724,11 +16326,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_NUKE_TITAN is constant
+	``POINTVALUE_COOP_KILL_NUKE_TITAN`` is constant
 
 * type: int
 
-* value: 125
+* value: ``125``
 
 
 ``POINTVALUE_COOP_KILL_MORTAR_TITAN``
@@ -12736,11 +16338,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_MORTAR_TITAN is constant
+	``POINTVALUE_COOP_KILL_MORTAR_TITAN`` is constant
 
 * type: int
 
-* value: 125
+* value: ``125``
 
 
 ``POINTVALUE_COOP_KILL_EMP_TITAN``
@@ -12748,11 +16350,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_EMP_TITAN is constant
+	``POINTVALUE_COOP_KILL_EMP_TITAN`` is constant
 
 * type: int
 
-* value: 125
+* value: ``125``
 
 
 ``POINTVALUE_COOP_KILL_CLOAKING_DRONE``
@@ -12760,11 +16362,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_CLOAKING_DRONE is constant
+	``POINTVALUE_COOP_KILL_CLOAKING_DRONE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_COOP_KILL_BUBBLE_SHIELD_GRUNT``
@@ -12772,11 +16374,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_BUBBLE_SHIELD_GRUNT is constant
+	``POINTVALUE_COOP_KILL_BUBBLE_SHIELD_GRUNT`` is constant
 
 * type: int
 
-* value: 75
+* value: ``75``
 
 
 ``POINTVALUE_COOP_KILL_BUBBLE_SHIELD_SPECTRE``
@@ -12784,11 +16386,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_KILL_BUBBLE_SHIELD_SPECTRE is constant
+	``POINTVALUE_COOP_KILL_BUBBLE_SHIELD_SPECTRE`` is constant
 
 * type: int
 
-* value: 75
+* value: ``75``
 
 
 ``POINTVALUE_AUTOTITAN_MULTIPLIER``
@@ -12796,11 +16398,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_AUTOTITAN_MULTIPLIER is constant
+	``POINTVALUE_AUTOTITAN_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 1.00
+* value: ``1.00``
 
 
 ``POINTVALUE_DROPPOD_KILL``
@@ -12808,11 +16410,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_DROPPOD_KILL is constant
+	``POINTVALUE_DROPPOD_KILL`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_OPERATOR_KILL``
@@ -12820,11 +16422,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_OPERATOR_KILL is constant
+	``POINTVALUE_OPERATOR_KILL`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_SPOTTING_ASSIST``
@@ -12832,11 +16434,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_SPOTTING_ASSIST is constant
+	``POINTVALUE_SPOTTING_ASSIST`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_HEADSHOT``
@@ -12844,11 +16446,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HEADSHOT is constant
+	``POINTVALUE_HEADSHOT`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_NPC_HEADSHOT``
@@ -12856,11 +16458,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_NPC_HEADSHOT is constant
+	``POINTVALUE_NPC_HEADSHOT`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_FIRST_STRIKE``
@@ -12868,11 +16470,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FIRST_STRIKE is constant
+	``POINTVALUE_FIRST_STRIKE`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_DOUBLEKILL``
@@ -12880,11 +16482,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_DOUBLEKILL is constant
+	``POINTVALUE_DOUBLEKILL`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_TRIPLEKILL``
@@ -12892,11 +16494,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TRIPLEKILL is constant
+	``POINTVALUE_TRIPLEKILL`` is constant
 
 * type: int
 
-* value: 75
+* value: ``75``
 
 
 ``POINTVALUE_MEGAKILL``
@@ -12904,11 +16506,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MEGAKILL is constant
+	``POINTVALUE_MEGAKILL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_MAYHEM``
@@ -12916,11 +16518,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MAYHEM is constant
+	``POINTVALUE_MAYHEM`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_ONSLAUGHT``
@@ -12928,11 +16530,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ONSLAUGHT is constant
+	``POINTVALUE_ONSLAUGHT`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``POINTVALUE_KILLINGSPREE``
@@ -12940,11 +16542,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILLINGSPREE is constant
+	``POINTVALUE_KILLINGSPREE`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_RAMPAGE``
@@ -12952,11 +16554,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_RAMPAGE is constant
+	``POINTVALUE_RAMPAGE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_SHOWSTOPPER``
@@ -12964,11 +16566,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_SHOWSTOPPER is constant
+	``POINTVALUE_SHOWSTOPPER`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_REVENGE``
@@ -12976,11 +16578,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_REVENGE is constant
+	``POINTVALUE_REVENGE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_PILOTEJECTKILL``
@@ -12988,11 +16590,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_PILOTEJECTKILL is constant
+	``POINTVALUE_PILOTEJECTKILL`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_REVENGE_QUICK``
@@ -13000,11 +16602,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_REVENGE_QUICK is constant
+	``POINTVALUE_REVENGE_QUICK`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_NEMESIS``
@@ -13012,11 +16614,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_NEMESIS is constant
+	``POINTVALUE_NEMESIS`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_DOMINATING``
@@ -13024,11 +16626,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_DOMINATING is constant
+	``POINTVALUE_DOMINATING`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_COMEBACK``
@@ -13036,11 +16638,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COMEBACK is constant
+	``POINTVALUE_COMEBACK`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_TITANPERMADAMAGE``
@@ -13048,11 +16650,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITANPERMADAMAGE is constant
+	``POINTVALUE_TITANPERMADAMAGE`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_TITAN_STEPCRUSH``
@@ -13060,11 +16662,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITAN_STEPCRUSH is constant
+	``POINTVALUE_TITAN_STEPCRUSH`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_TITAN_STEPCRUSH_PILOT``
@@ -13072,11 +16674,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITAN_STEPCRUSH_PILOT is constant
+	``POINTVALUE_TITAN_STEPCRUSH_PILOT`` is constant
 
-* type: int
+* type: unknown
 
-* value: 100
+* value: ``100 + POINTVALUE_KILL_PILOT``
 
 
 ``POINTVALUE_TITAN_STEPCRUSH_SPECTRE``
@@ -13084,11 +16686,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITAN_STEPCRUSH_SPECTRE is constant
+	``POINTVALUE_TITAN_STEPCRUSH_SPECTRE`` is constant
 
 * type: unknown
 
-* value: POINTVALUE_TITAN_STEPCRUSH
+* value: ``POINTVALUE_TITAN_STEPCRUSH + POINTVALUE_KILL_SPECTRE``
 
 
 ``POINTVALUE_TITAN_STEPCRUSH_FIRETEAM_AI``
@@ -13096,11 +16698,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITAN_STEPCRUSH_FIRETEAM_AI is constant
+	``POINTVALUE_TITAN_STEPCRUSH_FIRETEAM_AI`` is constant
 
 * type: unknown
 
-* value: POINTVALUE_TITAN_STEPCRUSH
+* value: ``POINTVALUE_TITAN_STEPCRUSH + POINTVALUE_KILL_FIRETEAM_AI``
 
 
 ``POINTVALUE_TITAN_MELEE_EXECUTION``
@@ -13108,11 +16710,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITAN_MELEE_EXECUTION is constant
+	``POINTVALUE_TITAN_MELEE_EXECUTION`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_TITAN_MELEE_VS_PILOT``
@@ -13120,11 +16722,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITAN_MELEE_VS_PILOT is constant
+	``POINTVALUE_TITAN_MELEE_VS_PILOT`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_TITAN_MELEE_VS_HUMANSIZE_NPC``
@@ -13132,11 +16734,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITAN_MELEE_VS_HUMANSIZE_NPC is constant
+	``POINTVALUE_TITAN_MELEE_VS_HUMANSIZE_NPC`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_TITAN_MELEE_VS_TITAN``
@@ -13144,11 +16746,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TITAN_MELEE_VS_TITAN is constant
+	``POINTVALUE_TITAN_MELEE_VS_TITAN`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_KILLED_RODEO_PILOT``
@@ -13156,11 +16758,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILLED_RODEO_PILOT is constant
+	``POINTVALUE_KILLED_RODEO_PILOT`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_RODEO_PILOT_BEATDOWN``
@@ -13168,11 +16770,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_RODEO_PILOT_BEATDOWN is constant
+	``POINTVALUE_RODEO_PILOT_BEATDOWN`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_SUPER_USED_SMOKESCREEN``
@@ -13180,11 +16782,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_SUPER_USED_SMOKESCREEN is constant
+	``POINTVALUE_SUPER_USED_SMOKESCREEN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_SUPER_USED_ELECTRIC_SMOKESCREEN``
@@ -13192,11 +16794,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_SUPER_USED_ELECTRIC_SMOKESCREEN is constant
+	``POINTVALUE_SUPER_USED_ELECTRIC_SMOKESCREEN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_SUPER_USED_EE_SMOKESCREEN``
@@ -13204,11 +16806,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_SUPER_USED_EE_SMOKESCREEN is constant
+	``POINTVALUE_SUPER_USED_EE_SMOKESCREEN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_GUIDED_ORBITAL_LASER``
@@ -13216,11 +16818,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_GUIDED_ORBITAL_LASER is constant
+	``POINTVALUE_GUIDED_ORBITAL_LASER`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_LEECH_SPECTRE``
@@ -13228,11 +16830,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_LEECH_SPECTRE is constant
+	``POINTVALUE_LEECH_SPECTRE`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_LEECH_SUPER_SPECTRE``
@@ -13240,11 +16842,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_LEECH_SUPER_SPECTRE is constant
+	``POINTVALUE_LEECH_SUPER_SPECTRE`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_LEECH_DRONE``
@@ -13252,11 +16854,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_LEECH_DRONE is constant
+	``POINTVALUE_LEECH_DRONE`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_LEECH_GUNSHIP``
@@ -13264,11 +16866,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_LEECH_GUNSHIP is constant
+	``POINTVALUE_LEECH_GUNSHIP`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_DESTROYED_SATCHEL``
@@ -13276,11 +16878,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_DESTROYED_SATCHEL is constant
+	``POINTVALUE_DESTROYED_SATCHEL`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_DESTROYED_PROXIMITY_MINE``
@@ -13288,11 +16890,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_DESTROYED_PROXIMITY_MINE is constant
+	``POINTVALUE_DESTROYED_PROXIMITY_MINE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_DESTROYED_LASER_MINE``
@@ -13300,11 +16902,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_DESTROYED_LASER_MINE is constant
+	``POINTVALUE_DESTROYED_LASER_MINE`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_VICTORYKILL``
@@ -13312,11 +16914,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_VICTORYKILL is constant
+	``POINTVALUE_VICTORYKILL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_KILLED_MVP``
@@ -13324,11 +16926,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILLED_MVP is constant
+	``POINTVALUE_KILLED_MVP`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_STOPPED_COMMON_BURN_CARD``
@@ -13336,11 +16938,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_STOPPED_COMMON_BURN_CARD is constant
+	``POINTVALUE_STOPPED_COMMON_BURN_CARD`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_STOPPED_UNCOMMON_BURN_CARD``
@@ -13348,11 +16950,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_STOPPED_UNCOMMON_BURN_CARD is constant
+	``POINTVALUE_STOPPED_UNCOMMON_BURN_CARD`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_STOPPED_RARE_BURN_CARD``
@@ -13360,11 +16962,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_STOPPED_RARE_BURN_CARD is constant
+	``POINTVALUE_STOPPED_RARE_BURN_CARD`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_EARNED_COMMON_BURN_CARD``
@@ -13372,11 +16974,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_EARNED_COMMON_BURN_CARD is constant
+	``POINTVALUE_EARNED_COMMON_BURN_CARD`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_EARNED_RARE_BURN_CARD``
@@ -13384,11 +16986,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_EARNED_RARE_BURN_CARD is constant
+	``POINTVALUE_EARNED_RARE_BURN_CARD`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_USED_BURNCARD_COMMON``
@@ -13396,11 +16998,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_USED_BURNCARD_COMMON is constant
+	``POINTVALUE_USED_BURNCARD_COMMON`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_USED_BURNCARD_RARE``
@@ -13408,11 +17010,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_USED_BURNCARD_RARE is constant
+	``POINTVALUE_USED_BURNCARD_RARE`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_BURNCARD_EXTRA_CREDIT``
@@ -13420,11 +17022,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_BURNCARD_EXTRA_CREDIT is constant
+	``POINTVALUE_BURNCARD_EXTRA_CREDIT`` is constant
 
 * type: int
 
-* value: 1000
+* value: ``1000``
 
 
 ``POINTVALUE_HARDPOINT_CAPTURE``
@@ -13432,11 +17034,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_CAPTURE is constant
+	``POINTVALUE_HARDPOINT_CAPTURE`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``POINTVALUE_HARDPOINT_CAPTURE_ASSIST``
@@ -13444,11 +17046,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_CAPTURE_ASSIST is constant
+	``POINTVALUE_HARDPOINT_CAPTURE_ASSIST`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_HARDPOINT_NEUTRALIZE``
@@ -13456,11 +17058,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_NEUTRALIZE is constant
+	``POINTVALUE_HARDPOINT_NEUTRALIZE`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``POINTVALUE_HARDPOINT_NEUTRALIZE_ASSIST``
@@ -13468,11 +17070,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_NEUTRALIZE_ASSIST is constant
+	``POINTVALUE_HARDPOINT_NEUTRALIZE_ASSIST`` is constant
 
 * type: int
 
-* value: 75
+* value: ``75``
 
 
 ``POINTVALUE_HARDPOINT_SIEGE``
@@ -13480,11 +17082,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_SIEGE is constant
+	``POINTVALUE_HARDPOINT_SIEGE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HARDPOINT_SNIPE``
@@ -13492,11 +17094,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_SNIPE is constant
+	``POINTVALUE_HARDPOINT_SNIPE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HARDPOINT_ASSAULT``
@@ -13504,11 +17106,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_ASSAULT is constant
+	``POINTVALUE_HARDPOINT_ASSAULT`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HARDPOINT_SIEGE_NPC``
@@ -13516,11 +17118,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_SIEGE_NPC is constant
+	``POINTVALUE_HARDPOINT_SIEGE_NPC`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_HARDPOINT_SNIPE_NPC``
@@ -13528,11 +17130,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_SNIPE_NPC is constant
+	``POINTVALUE_HARDPOINT_SNIPE_NPC`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_HARDPOINT_ASSAULT_NPC``
@@ -13540,11 +17142,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_ASSAULT_NPC is constant
+	``POINTVALUE_HARDPOINT_ASSAULT_NPC`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_HARDPOINT_PERIMETER_DEFENSE``
@@ -13552,11 +17154,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_PERIMETER_DEFENSE is constant
+	``POINTVALUE_HARDPOINT_PERIMETER_DEFENSE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HARDPOINT_DEFENSE``
@@ -13564,11 +17166,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_DEFENSE is constant
+	``POINTVALUE_HARDPOINT_DEFENSE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HARDPOINT_PERIMETER_DEFENSE_NPC``
@@ -13576,11 +17178,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_PERIMETER_DEFENSE_NPC is constant
+	``POINTVALUE_HARDPOINT_PERIMETER_DEFENSE_NPC`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_HARDPOINT_DEFENSE_NPC``
@@ -13588,11 +17190,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_DEFENSE_NPC is constant
+	``POINTVALUE_HARDPOINT_DEFENSE_NPC`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_HARDPOINT_HOLD``
@@ -13600,11 +17202,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_HOLD is constant
+	``POINTVALUE_HARDPOINT_HOLD`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_HARDPOINT_AMPED``
@@ -13612,11 +17214,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_AMPED is constant
+	``POINTVALUE_HARDPOINT_AMPED`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``POINTVALUE_HARDPOINT_AMPED_HOLD``
@@ -13624,11 +17226,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARDPOINT_AMPED_HOLD is constant
+	``POINTVALUE_HARDPOINT_AMPED_HOLD`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``TEAMPOINTVALUE_HARDPOINT_CAPTURE``
@@ -13636,11 +17238,11 @@ UI Globals
 
 .. note::
 
-	TEAMPOINTVALUE_HARDPOINT_CAPTURE is constant
+	``TEAMPOINTVALUE_HARDPOINT_CAPTURE`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``TEAMPOINTVALUE_HARDPOINT_OWNED``
@@ -13648,11 +17250,11 @@ UI Globals
 
 .. note::
 
-	TEAMPOINTVALUE_HARDPOINT_OWNED is constant
+	``TEAMPOINTVALUE_HARDPOINT_OWNED`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TEAMPOINTVALUE_AMPED_HARDPOINT_OWNED``
@@ -13660,11 +17262,11 @@ UI Globals
 
 .. note::
 
-	TEAMPOINTVALUE_AMPED_HARDPOINT_OWNED is constant
+	``TEAMPOINTVALUE_AMPED_HARDPOINT_OWNED`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TEAMPOINTVALUE_HARDPOINT_AMPED``
@@ -13672,11 +17274,11 @@ UI Globals
 
 .. note::
 
-	TEAMPOINTVALUE_HARDPOINT_AMPED is constant
+	``TEAMPOINTVALUE_HARDPOINT_AMPED`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FINAL_HARDPOINT_CAPTURE``
@@ -13684,11 +17286,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FINAL_HARDPOINT_CAPTURE is constant
+	``POINTVALUE_FINAL_HARDPOINT_CAPTURE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``POINTVALUE_FINAL_HARDPOINT_CAPTURE_ASSIST``
@@ -13696,11 +17298,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FINAL_HARDPOINT_CAPTURE_ASSIST is constant
+	``POINTVALUE_FINAL_HARDPOINT_CAPTURE_ASSIST`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_ELIMINATE_TITAN``
@@ -13708,11 +17310,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ELIMINATE_TITAN is constant
+	``POINTVALUE_ELIMINATE_TITAN`` is constant
 
 * type: int
 
-* value: 450
+* value: ``450``
 
 
 ``POINTVALUE_ELIMINATE_PILOT``
@@ -13720,11 +17322,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ELIMINATE_PILOT is constant
+	``POINTVALUE_ELIMINATE_PILOT`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``POINTVALUE_WLTS_ELIMINATE_TITAN``
@@ -13732,11 +17334,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_WLTS_ELIMINATE_TITAN is constant
+	``POINTVALUE_WLTS_ELIMINATE_TITAN`` is constant
 
 * type: int
 
-* value: 375
+* value: ``375``
 
 
 ``POINTVALUE_WLTS_ELIMINATE_PILOT``
@@ -13744,11 +17346,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_WLTS_ELIMINATE_PILOT is constant
+	``POINTVALUE_WLTS_ELIMINATE_PILOT`` is constant
 
 * type: int
 
-* value: 225
+* value: ``225``
 
 
 ``POINTVALUE_WLTS_KILL_TITAN``
@@ -13756,11 +17358,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_WLTS_KILL_TITAN is constant
+	``POINTVALUE_WLTS_KILL_TITAN`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``POINTVALUE_WLTS_ASSIST_TITAN``
@@ -13768,11 +17370,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_WLTS_ASSIST_TITAN is constant
+	``POINTVALUE_WLTS_ASSIST_TITAN`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``POINTVALUE_WLTS_KILL_AUTOTITAN``
@@ -13780,11 +17382,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_WLTS_KILL_AUTOTITAN is constant
+	``POINTVALUE_WLTS_KILL_AUTOTITAN`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``POINTVALUE_WLTS_KILL_PILOT``
@@ -13792,11 +17394,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_WLTS_KILL_PILOT is constant
+	``POINTVALUE_WLTS_KILL_PILOT`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``POINTVALUE_WLTS_ASSIST``
@@ -13804,11 +17406,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_WLTS_ASSIST is constant
+	``POINTVALUE_WLTS_ASSIST`` is constant
 
 * type: int
 
-* value: 75
+* value: ``75``
 
 
 ``POINTVALUE_FLAG_CAPTURE``
@@ -13816,11 +17418,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FLAG_CAPTURE is constant
+	``POINTVALUE_FLAG_CAPTURE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``POINTVALUE_FLAG_TAKEN``
@@ -13828,11 +17430,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FLAG_TAKEN is constant
+	``POINTVALUE_FLAG_TAKEN`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FLAG_CAPTURE_ASSIST``
@@ -13840,11 +17442,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FLAG_CAPTURE_ASSIST is constant
+	``POINTVALUE_FLAG_CAPTURE_ASSIST`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FLAG_RETURN``
@@ -13852,11 +17454,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FLAG_RETURN is constant
+	``POINTVALUE_FLAG_RETURN`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FLAG_CARRIER_KILL``
@@ -13864,11 +17466,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FLAG_CARRIER_KILL is constant
+	``POINTVALUE_FLAG_CARRIER_KILL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``HARDPOINT_RANGED_ASSAULT_DIST``
@@ -13876,11 +17478,11 @@ UI Globals
 
 .. note::
 
-	HARDPOINT_RANGED_ASSAULT_DIST is constant
+	``HARDPOINT_RANGED_ASSAULT_DIST`` is constant
 
 * type: int
 
-* value: 2500
+* value: ``2500``
 
 
 ``HARDPOINT_PERIMETER_DEFENSE_RANGE``
@@ -13888,11 +17490,11 @@ UI Globals
 
 .. note::
 
-	HARDPOINT_PERIMETER_DEFENSE_RANGE is constant
+	``HARDPOINT_PERIMETER_DEFENSE_RANGE`` is constant
 
 * type: int
 
-* value: 2500
+* value: ``2500``
 
 
 ``POINTVALUE_ORE_PICKUP``
@@ -13900,11 +17502,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ORE_PICKUP is constant
+	``POINTVALUE_ORE_PICKUP`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``POINTVALUE_MEGA_ORE_PICKUP``
@@ -13912,11 +17514,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MEGA_ORE_PICKUP is constant
+	``POINTVALUE_MEGA_ORE_PICKUP`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``POINTVALUE_ORE_DEPOSIT``
@@ -13924,11 +17526,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ORE_DEPOSIT is constant
+	``POINTVALUE_ORE_DEPOSIT`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_ORE_FROM_PLAYER_PICKUP``
@@ -13936,11 +17538,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_ORE_FROM_PLAYER_PICKUP is constant
+	``POINTVALUE_ORE_FROM_PLAYER_PICKUP`` is constant
 
 * type: int
 
-* value: 15
+* value: ``15``
 
 
 ``MAX_ORE_PLAYER_CAN_CARRY``
@@ -13948,11 +17550,11 @@ UI Globals
 
 .. note::
 
-	MAX_ORE_PLAYER_CAN_CARRY is constant
+	``MAX_ORE_PLAYER_CAN_CARRY`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_MARKED_KILLED_MARKED``
@@ -13960,11 +17562,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MARKED_KILLED_MARKED is constant
+	``POINTVALUE_MARKED_KILLED_MARKED`` is constant
 
 * type: int
 
-* value: 350
+* value: ``350``
 
 
 ``POINTVALUE_MARKED_TARGET_KILLED``
@@ -13972,11 +17574,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MARKED_TARGET_KILLED is constant
+	``POINTVALUE_MARKED_TARGET_KILLED`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_MARKED_ESCORT``
@@ -13984,11 +17586,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MARKED_ESCORT is constant
+	``POINTVALUE_MARKED_ESCORT`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_MARKED_SURVIVAL``
@@ -13996,11 +17598,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MARKED_SURVIVAL is constant
+	``POINTVALUE_MARKED_SURVIVAL`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_MARKED_OUTLASTED_ENEMY_MARKED``
@@ -14008,11 +17610,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MARKED_OUTLASTED_ENEMY_MARKED is constant
+	``POINTVALUE_MARKED_OUTLASTED_ENEMY_MARKED`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_MARKED_TARGET``
@@ -14020,11 +17622,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MARKED_TARGET is constant
+	``POINTVALUE_MARKED_TARGET`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_COOP_WAVE_MVP``
@@ -14032,11 +17634,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_WAVE_MVP is constant
+	``POINTVALUE_COOP_WAVE_MVP`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_COOP_TURRET_KILL_STREAK``
@@ -14044,11 +17646,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_TURRET_KILL_STREAK is constant
+	``POINTVALUE_COOP_TURRET_KILL_STREAK`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``COOP_TURRET_KILL_STREAK_REQUIREMENT``
@@ -14056,11 +17658,11 @@ UI Globals
 
 .. note::
 
-	COOP_TURRET_KILL_STREAK_REQUIREMENT is constant
+	``COOP_TURRET_KILL_STREAK_REQUIREMENT`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``POINTVALUE_COOP_IMMORTAL``
@@ -14068,11 +17670,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_IMMORTAL is constant
+	``POINTVALUE_COOP_IMMORTAL`` is constant
 
 * type: int
 
-* value: 350
+* value: ``350``
 
 
 ``POINTVALUE_COOP_SURVIVOR``
@@ -14080,11 +17682,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_COOP_SURVIVOR is constant
+	``POINTVALUE_COOP_SURVIVOR`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FW_ASSAULT``
@@ -14092,11 +17694,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_ASSAULT is constant
+	``POINTVALUE_FW_ASSAULT`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FW_DEFENSE``
@@ -14104,11 +17706,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_DEFENSE is constant
+	``POINTVALUE_FW_DEFENSE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FW_PERIMETER_DEFENSE``
@@ -14116,11 +17718,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_PERIMETER_DEFENSE is constant
+	``POINTVALUE_FW_PERIMETER_DEFENSE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FW_SIEGE``
@@ -14128,11 +17730,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_SIEGE is constant
+	``POINTVALUE_FW_SIEGE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FW_SNIPE``
@@ -14140,11 +17742,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_SNIPE is constant
+	``POINTVALUE_FW_SNIPE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FW_BASE_CONSTRUCTION``
@@ -14152,11 +17754,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_BASE_CONSTRUCTION is constant
+	``POINTVALUE_FW_BASE_CONSTRUCTION`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FW_FORWARD_CONSTRUCTION``
@@ -14164,11 +17766,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_FORWARD_CONSTRUCTION is constant
+	``POINTVALUE_FW_FORWARD_CONSTRUCTION`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FW_INVASIVE_CONSTRUCTION``
@@ -14176,11 +17778,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_INVASIVE_CONSTRUCTION is constant
+	``POINTVALUE_FW_INVASIVE_CONSTRUCTION`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FW_SHIELD_CONSTRUCTION``
@@ -14188,11 +17790,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_SHIELD_CONSTRUCTION is constant
+	``POINTVALUE_FW_SHIELD_CONSTRUCTION`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FW_RESOURCE_DENIAL``
@@ -14200,11 +17802,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_RESOURCE_DENIAL is constant
+	``POINTVALUE_FW_RESOURCE_DENIAL`` is constant
 
 * type: int
 
-* value: 75
+* value: ``75``
 
 
 ``POINTVALUE_FW_TOWER_DAMAGE``
@@ -14212,11 +17814,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_TOWER_DAMAGE is constant
+	``POINTVALUE_FW_TOWER_DAMAGE`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``POINTVALUE_FW_TOWER_DEFENSE``
@@ -14224,11 +17826,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_TOWER_DEFENSE is constant
+	``POINTVALUE_FW_TOWER_DEFENSE`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_FW_TEAM_TURRET_CONTROL``
@@ -14236,11 +17838,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_TEAM_TURRET_CONTROL is constant
+	``POINTVALUE_FW_TEAM_TURRET_CONTROL`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_FW_SECURING_RESOURCES``
@@ -14248,11 +17850,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_SECURING_RESOURCES is constant
+	``POINTVALUE_FW_SECURING_RESOURCES`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``POINTVALUE_FW_DESTROY_TURRET_SHIELD``
@@ -14260,11 +17862,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FW_DESTROY_TURRET_SHIELD is constant
+	``POINTVALUE_FW_DESTROY_TURRET_SHIELD`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HUNTED_ELIMINATE_HUNTER``
@@ -14272,11 +17874,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HUNTED_ELIMINATE_HUNTER is constant
+	``POINTVALUE_HUNTED_ELIMINATE_HUNTER`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``POINTVALUE_HUNTED_ELIMINATE_GRUNT``
@@ -14284,11 +17886,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HUNTED_ELIMINATE_GRUNT is constant
+	``POINTVALUE_HUNTED_ELIMINATE_GRUNT`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HUNTED_ELIMINATE_SQUAD``
@@ -14296,11 +17898,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HUNTED_ELIMINATE_SQUAD is constant
+	``POINTVALUE_HUNTED_ELIMINATE_SQUAD`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``POINTVALUE_HUNTED_AQUIRE_ASSET``
@@ -14308,11 +17910,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HUNTED_AQUIRE_ASSET is constant
+	``POINTVALUE_HUNTED_AQUIRE_ASSET`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_HUNTED_SECURE_ASSET``
@@ -14320,11 +17922,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HUNTED_SECURE_ASSET is constant
+	``POINTVALUE_HUNTED_SECURE_ASSET`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HUNTED_EXTRACT_ASSET``
@@ -14332,11 +17934,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HUNTED_EXTRACT_ASSET is constant
+	``POINTVALUE_HUNTED_EXTRACT_ASSET`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``POINTVALUE_HUNTED_OBJECTIVE_SURVIVAL``
@@ -14344,11 +17946,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HUNTED_OBJECTIVE_SURVIVAL is constant
+	``POINTVALUE_HUNTED_OBJECTIVE_SURVIVAL`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_HUNTED_MISSION_SURVIVAL``
@@ -14356,11 +17958,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HUNTED_MISSION_SURVIVAL is constant
+	``POINTVALUE_HUNTED_MISSION_SURVIVAL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_CONTROL_PANEL_ACTIVATE``
@@ -14368,11 +17970,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_CONTROL_PANEL_ACTIVATE is constant
+	``POINTVALUE_CONTROL_PANEL_ACTIVATE`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_CONTROL_PANEL_ACTIVATE_LIGHT``
@@ -14380,11 +17982,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_CONTROL_PANEL_ACTIVATE_LIGHT is constant
+	``POINTVALUE_CONTROL_PANEL_ACTIVATE_LIGHT`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FIRST_TITANFALL``
@@ -14392,11 +17994,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FIRST_TITANFALL is constant
+	``POINTVALUE_FIRST_TITANFALL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_CALLED_IN_TITAN``
@@ -14404,11 +18006,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_CALLED_IN_TITAN is constant
+	``POINTVALUE_CALLED_IN_TITAN`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_RODEOD``
@@ -14416,11 +18018,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_RODEOD is constant
+	``POINTVALUE_RODEOD`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_RODEOD_FRIEND``
@@ -14428,11 +18030,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_RODEOD_FRIEND is constant
+	``POINTVALUE_RODEOD_FRIEND`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``POINTVALUE_FRIEND_RIDE``
@@ -14440,11 +18042,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FRIEND_RIDE is constant
+	``POINTVALUE_FRIEND_RIDE`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``POINTVALUE_GET_TO_CHOPPER``
@@ -14452,11 +18054,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_GET_TO_CHOPPER is constant
+	``POINTVALUE_GET_TO_CHOPPER`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_HOTZONE_EXTRACT``
@@ -14464,11 +18066,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HOTZONE_EXTRACT is constant
+	``POINTVALUE_HOTZONE_EXTRACT`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_SOLE_SURVIVOR``
@@ -14476,11 +18078,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_SOLE_SURVIVOR is constant
+	``POINTVALUE_SOLE_SURVIVOR`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FULL_TEAM_EVAC``
@@ -14488,11 +18090,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FULL_TEAM_EVAC is constant
+	``POINTVALUE_FULL_TEAM_EVAC`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_EVAC_DENIED``
@@ -14500,11 +18102,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_EVAC_DENIED is constant
+	``POINTVALUE_EVAC_DENIED`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_KILLED_ESCAPEE``
@@ -14512,11 +18114,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILLED_ESCAPEE is constant
+	``POINTVALUE_KILLED_ESCAPEE`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_FULL_TEAM_KILL``
@@ -14524,11 +18126,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FULL_TEAM_KILL is constant
+	``POINTVALUE_FULL_TEAM_KILL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_FULL_TEAM_KILL_SOLO``
@@ -14536,11 +18138,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FULL_TEAM_KILL_SOLO is constant
+	``POINTVALUE_FULL_TEAM_KILL_SOLO`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_FISHINBARREL``
@@ -14548,11 +18150,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_FISHINBARREL is constant
+	``POINTVALUE_FISHINBARREL`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_KILLED_RANKED_PILOT``
@@ -14560,11 +18162,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILLED_RANKED_PILOT is constant
+	``POINTVALUE_KILLED_RANKED_PILOT`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_KILLED_TOP_RANKED_PILOT``
@@ -14572,11 +18174,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILLED_TOP_RANKED_PILOT is constant
+	``POINTVALUE_KILLED_TOP_RANKED_PILOT`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_KILLED_TOP_PERF_PILOT``
@@ -14584,11 +18186,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILLED_TOP_PERF_PILOT is constant
+	``POINTVALUE_KILLED_TOP_PERF_PILOT`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``POINTVALUE_KILLED_DOGFIGHTER``
@@ -14596,11 +18198,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILLED_DOGFIGHTER is constant
+	``POINTVALUE_KILLED_DOGFIGHTER`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_KILL_ANGELCITY_SEARCHDRONE``
@@ -14608,11 +18210,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_ANGELCITY_SEARCHDRONE is constant
+	``POINTVALUE_KILL_ANGELCITY_SEARCHDRONE`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``POINTVALUE_KILL_FLYER``
@@ -14620,11 +18222,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_KILL_FLYER is constant
+	``POINTVALUE_KILL_FLYER`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``POINTVALUE_HEALTH_PICKUP``
@@ -14632,11 +18234,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HEALTH_PICKUP is constant
+	``POINTVALUE_HEALTH_PICKUP`` is constant
 
 * type: int
 
-* value: 1000
+* value: ``1000``
 
 
 ``POINTVALUE_HARVEST``
@@ -14644,11 +18246,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HARVEST is constant
+	``POINTVALUE_HARVEST`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_RESUPPLY``
@@ -14656,11 +18258,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_RESUPPLY is constant
+	``POINTVALUE_RESUPPLY`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``POINTVALUE_HEAL``
@@ -14668,11 +18270,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_HEAL is constant
+	``POINTVALUE_HEAL`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_DRONE_GETS_KILL``
@@ -14680,11 +18282,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_DRONE_GETS_KILL is constant
+	``POINTVALUE_DRONE_GETS_KILL`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``POINTVALUE_MARVIN_GETS_KILL``
@@ -14692,11 +18294,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_MARVIN_GETS_KILL is constant
+	``POINTVALUE_MARVIN_GETS_KILL`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``POINTVALUE_TURRET_GETS_KILL``
@@ -14704,11 +18306,11 @@ UI Globals
 
 .. note::
 
-	POINTVALUE_TURRET_GETS_KILL is constant
+	``POINTVALUE_TURRET_GETS_KILL`` is constant
 
 * type: int
 
-* value: 40
+* value: ``40``
 
 
 ``DOUBLEKILL_REQUIREMENT_KILLS``
@@ -14716,11 +18318,11 @@ UI Globals
 
 .. note::
 
-	DOUBLEKILL_REQUIREMENT_KILLS is constant
+	``DOUBLEKILL_REQUIREMENT_KILLS`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``TRIPLEKILL_REQUIREMENT_KILLS``
@@ -14728,11 +18330,11 @@ UI Globals
 
 .. note::
 
-	TRIPLEKILL_REQUIREMENT_KILLS is constant
+	``TRIPLEKILL_REQUIREMENT_KILLS`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``MEGAKILL_REQUIREMENT_KILLS``
@@ -14740,11 +18342,11 @@ UI Globals
 
 .. note::
 
-	MEGAKILL_REQUIREMENT_KILLS is constant
+	``MEGAKILL_REQUIREMENT_KILLS`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``CASCADINGKILL_REQUIREMENT_TIME``
@@ -14752,11 +18354,11 @@ UI Globals
 
 .. note::
 
-	CASCADINGKILL_REQUIREMENT_TIME is constant
+	``CASCADINGKILL_REQUIREMENT_TIME`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``ONSLAUGHT_REQUIREMENT_KILLS``
@@ -14764,11 +18366,11 @@ UI Globals
 
 .. note::
 
-	ONSLAUGHT_REQUIREMENT_KILLS is constant
+	``ONSLAUGHT_REQUIREMENT_KILLS`` is constant
 
 * type: int
 
-* value: 8
+* value: ``8``
 
 
 ``ONSLAUGHT_REQUIREMENT_TIME``
@@ -14776,11 +18378,11 @@ UI Globals
 
 .. note::
 
-	ONSLAUGHT_REQUIREMENT_TIME is constant
+	``ONSLAUGHT_REQUIREMENT_TIME`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``MAYHEM_REQUIREMENT_KILLS``
@@ -14788,11 +18390,11 @@ UI Globals
 
 .. note::
 
-	MAYHEM_REQUIREMENT_KILLS is constant
+	``MAYHEM_REQUIREMENT_KILLS`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``MAYHEM_REQUIREMENT_TIME``
@@ -14800,11 +18402,11 @@ UI Globals
 
 .. note::
 
-	MAYHEM_REQUIREMENT_TIME is constant
+	``MAYHEM_REQUIREMENT_TIME`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``QUICK_REVENGE_TIME_LIMIT``
@@ -14812,11 +18414,11 @@ UI Globals
 
 .. note::
 
-	QUICK_REVENGE_TIME_LIMIT is constant
+	``QUICK_REVENGE_TIME_LIMIT`` is constant
 
 * type: float
 
-* value: 20.0
+* value: ``20.0``
 
 
 ``NEMESIS_KILL_REQUIREMENT``
@@ -14824,11 +18426,11 @@ UI Globals
 
 .. note::
 
-	NEMESIS_KILL_REQUIREMENT is constant
+	``NEMESIS_KILL_REQUIREMENT`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``DOMINATING_KILL_REQUIREMENT``
@@ -14836,11 +18438,11 @@ UI Globals
 
 .. note::
 
-	DOMINATING_KILL_REQUIREMENT is constant
+	``DOMINATING_KILL_REQUIREMENT`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``RAMPAGE_KILL_REQUIREMENT``
@@ -14848,11 +18450,11 @@ UI Globals
 
 .. note::
 
-	RAMPAGE_KILL_REQUIREMENT is constant
+	``RAMPAGE_KILL_REQUIREMENT`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``KILLINGSPREE_KILL_REQUIREMENT``
@@ -14860,11 +18462,11 @@ UI Globals
 
 .. note::
 
-	KILLINGSPREE_KILL_REQUIREMENT is constant
+	``KILLINGSPREE_KILL_REQUIREMENT`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``COMEBACK_DEATHS_REQUIREMENT``
@@ -14872,11 +18474,11 @@ UI Globals
 
 .. note::
 
-	COMEBACK_DEATHS_REQUIREMENT is constant
+	``COMEBACK_DEATHS_REQUIREMENT`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``WORTHIT_REQUIREMENT_TIME``
@@ -14884,11 +18486,11 @@ UI Globals
 
 .. note::
 
-	WORTHIT_REQUIREMENT_TIME is constant
+	``WORTHIT_REQUIREMENT_TIME`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``DROPPOD_SPEED``
@@ -14896,11 +18498,11 @@ UI Globals
 
 .. note::
 
-	DROPPOD_SPEED is constant
+	``DROPPOD_SPEED`` is constant
 
 * type: int
 
-* value: 2500
+* value: ``2500``
 
 
 ``DROPPOD_SPEED_BOOST``
@@ -14908,11 +18510,11 @@ UI Globals
 
 .. note::
 
-	DROPPOD_SPEED_BOOST is constant
+	``DROPPOD_SPEED_BOOST`` is constant
 
 * type: int
 
-* value: 15000
+* value: ``15000``
 
 
 ``OPERATOR_POD_SPEED``
@@ -14920,11 +18522,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_POD_SPEED is constant
+	``OPERATOR_POD_SPEED`` is constant
 
 * type: int
 
-* value: 2500
+* value: ``2500``
 
 
 ``OPERATOR_POD_SPEED_BOOST``
@@ -14932,11 +18534,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_POD_SPEED_BOOST is constant
+	``OPERATOR_POD_SPEED_BOOST`` is constant
 
 * type: int
 
-* value: 15000
+* value: ``15000``
 
 
 ``OPERATOR_DROP_POD_DROP_OFFSET``
@@ -14944,11 +18546,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_DROP_POD_DROP_OFFSET is constant
+	``OPERATOR_DROP_POD_DROP_OFFSET`` is constant
 
 * type: int
 
-* value: 2048
+* value: ``2048``
 
 
 ``DEFAULT_PLAYER_DROPPOD_REVEAL_RADIUS``
@@ -14956,11 +18558,11 @@ UI Globals
 
 .. note::
 
-	DEFAULT_PLAYER_DROPPOD_REVEAL_RADIUS is constant
+	``DEFAULT_PLAYER_DROPPOD_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``DEFAULT_OPERATOR_POD_REVEAL_RADIUS``
@@ -14968,11 +18570,11 @@ UI Globals
 
 .. note::
 
-	DEFAULT_OPERATOR_POD_REVEAL_RADIUS is constant
+	``DEFAULT_OPERATOR_POD_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OPERATOR_TARGET_REVEAL_RADIUS``
@@ -14980,11 +18582,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_TARGET_REVEAL_RADIUS is constant
+	``OPERATOR_TARGET_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 220
+* value: ``220``
 
 
 ``FIREATEAM_REVEAL_RADIUS``
@@ -14992,11 +18594,11 @@ UI Globals
 
 .. note::
 
-	FIREATEAM_REVEAL_RADIUS is constant
+	``FIREATEAM_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``TITAN_REVEAL_RADIUS``
@@ -15004,11 +18606,11 @@ UI Globals
 
 .. note::
 
-	TITAN_REVEAL_RADIUS is constant
+	``TITAN_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``WALLRUN_REVEAL_RADIUS``
@@ -15016,11 +18618,11 @@ UI Globals
 
 .. note::
 
-	WALLRUN_REVEAL_RADIUS is constant
+	``WALLRUN_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``MARVIN_REVEAL_RADIUS``
@@ -15028,11 +18630,11 @@ UI Globals
 
 .. note::
 
-	MARVIN_REVEAL_RADIUS is constant
+	``MARVIN_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``HOVERDRONE_REVEAL_RADIUS``
@@ -15040,11 +18642,11 @@ UI Globals
 
 .. note::
 
-	HOVERDRONE_REVEAL_RADIUS is constant
+	``HOVERDRONE_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``TURRET_REVEAL_RADIUS``
@@ -15052,11 +18654,11 @@ UI Globals
 
 .. note::
 
-	TURRET_REVEAL_RADIUS is constant
+	``TURRET_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``HARVESTER_REVEAL_RADIUS``
@@ -15064,11 +18666,11 @@ UI Globals
 
 .. note::
 
-	HARVESTER_REVEAL_RADIUS is constant
+	``HARVESTER_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 450
+* value: ``450``
 
 
 ``AMMO_REVEAL_RADIUS``
@@ -15076,11 +18678,11 @@ UI Globals
 
 .. note::
 
-	AMMO_REVEAL_RADIUS is constant
+	``AMMO_REVEAL_RADIUS`` is constant
 
 * type: int
 
-* value: 650
+* value: ``650``
 
 
 ``NUMBER_OPERATOR_ABILITIES``
@@ -15088,11 +18690,11 @@ UI Globals
 
 .. note::
 
-	NUMBER_OPERATOR_ABILITIES is constant
+	``NUMBER_OPERATOR_ABILITIES`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``GLOBAL_COOLDOWN_TIME``
@@ -15100,11 +18702,11 @@ UI Globals
 
 .. note::
 
-	GLOBAL_COOLDOWN_TIME is constant
+	``GLOBAL_COOLDOWN_TIME`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``HARVEST_COOLDOWN``
@@ -15112,11 +18714,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_COOLDOWN is constant
+	``HARVEST_COOLDOWN`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``MARVINS_COOLDOWN``
@@ -15124,11 +18726,11 @@ UI Globals
 
 .. note::
 
-	MARVINS_COOLDOWN is constant
+	``MARVINS_COOLDOWN`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``HEALTHSTATION_COOLDOWN``
@@ -15136,11 +18738,11 @@ UI Globals
 
 .. note::
 
-	HEALTHSTATION_COOLDOWN is constant
+	``HEALTHSTATION_COOLDOWN`` is constant
 
 * type: int
 
-* value: 15
+* value: ``15``
 
 
 ``AMMOSTATION_COOLDOWN``
@@ -15148,11 +18750,11 @@ UI Globals
 
 .. note::
 
-	AMMOSTATION_COOLDOWN is constant
+	``AMMOSTATION_COOLDOWN`` is constant
 
 * type: int
 
-* value: 15
+* value: ``15``
 
 
 ``TURRET_COOLDOWN``
@@ -15160,11 +18762,11 @@ UI Globals
 
 .. note::
 
-	TURRET_COOLDOWN is constant
+	``TURRET_COOLDOWN`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``HOVERDRONE_COOLDOWN``
@@ -15172,11 +18774,11 @@ UI Globals
 
 .. note::
 
-	HOVERDRONE_COOLDOWN is constant
+	``HOVERDRONE_COOLDOWN`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``STRIKE_COOLDOWN``
@@ -15184,11 +18786,11 @@ UI Globals
 
 .. note::
 
-	STRIKE_COOLDOWN is constant
+	``STRIKE_COOLDOWN`` is constant
 
 * type: int
 
-* value: 60
+* value: ``60``
 
 
 ``OPERATOR_STARTING_POINTS``
@@ -15196,11 +18798,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_STARTING_POINTS is constant
+	``OPERATOR_STARTING_POINTS`` is constant
 
 * type: int
 
-* value: 250
+* value: ``250``
 
 
 ``HARVEST_COST``
@@ -15208,11 +18810,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_COST is constant
+	``HARVEST_COST`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``HARVEST_COST_LEVEL2``
@@ -15220,11 +18822,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_COST_LEVEL2 is constant
+	``HARVEST_COST_LEVEL2`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``HARVEST_COST_LEVEL3``
@@ -15232,11 +18834,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_COST_LEVEL3 is constant
+	``HARVEST_COST_LEVEL3`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``MARVINS_COST``
@@ -15244,11 +18846,11 @@ UI Globals
 
 .. note::
 
-	MARVINS_COST is constant
+	``MARVINS_COST`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``MARVINS_REPAIR_COST``
@@ -15256,11 +18858,11 @@ UI Globals
 
 .. note::
 
-	MARVINS_REPAIR_COST is constant
+	``MARVINS_REPAIR_COST`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``MARVINS_BUFF_COST``
@@ -15268,11 +18870,11 @@ UI Globals
 
 .. note::
 
-	MARVINS_BUFF_COST is constant
+	``MARVINS_BUFF_COST`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``HEALTHSTATION_COST``
@@ -15280,11 +18882,11 @@ UI Globals
 
 .. note::
 
-	HEALTHSTATION_COST is constant
+	``HEALTHSTATION_COST`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``AMMOSTATION_COST``
@@ -15292,11 +18894,11 @@ UI Globals
 
 .. note::
 
-	AMMOSTATION_COST is constant
+	``AMMOSTATION_COST`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``TURRET_COST``
@@ -15304,11 +18906,11 @@ UI Globals
 
 .. note::
 
-	TURRET_COST is constant
+	``TURRET_COST`` is constant
 
 * type: int
 
-* value: 75
+* value: ``75``
 
 
 ``STRIKE_COST``
@@ -15316,11 +18918,11 @@ UI Globals
 
 .. note::
 
-	STRIKE_COST is constant
+	``STRIKE_COST`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``HOVERDRONE_COST``
@@ -15328,11 +18930,11 @@ UI Globals
 
 .. note::
 
-	HOVERDRONE_COST is constant
+	``HOVERDRONE_COST`` is constant
 
 * type: int
 
-* value: 125
+* value: ``125``
 
 
 ``OPERATOR_COST_HEAL_FIRETEAM``
@@ -15340,11 +18942,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_COST_HEAL_FIRETEAM is constant
+	``OPERATOR_COST_HEAL_FIRETEAM`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OPERATOR_COST_CLOAK_FIRETEAM``
@@ -15352,11 +18954,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_COST_CLOAK_FIRETEAM is constant
+	``OPERATOR_COST_CLOAK_FIRETEAM`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OPERATOR_COST_HEAL_WALLRUNNER``
@@ -15364,11 +18966,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_COST_HEAL_WALLRUNNER is constant
+	``OPERATOR_COST_HEAL_WALLRUNNER`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OPERATOR_COST_CLOAK_WALLRUNNER``
@@ -15376,11 +18978,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_COST_CLOAK_WALLRUNNER is constant
+	``OPERATOR_COST_CLOAK_WALLRUNNER`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OPERATOR_COST_HEAL_TITAN``
@@ -15388,11 +18990,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_COST_HEAL_TITAN is constant
+	``OPERATOR_COST_HEAL_TITAN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OPERATOR_COST_CLOAK_TITAN``
@@ -15400,11 +19002,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_COST_CLOAK_TITAN is constant
+	``OPERATOR_COST_CLOAK_TITAN`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OPERATOR_SELECTION_ENABLED``
@@ -15412,11 +19014,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_SELECTION_ENABLED is constant
+	``OPERATOR_SELECTION_ENABLED`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``ABILITY_COOLDOWN_LAG_ADJUST_MAX_MS``
@@ -15424,11 +19026,11 @@ UI Globals
 
 .. note::
 
-	ABILITY_COOLDOWN_LAG_ADJUST_MAX_MS is constant
+	``ABILITY_COOLDOWN_LAG_ADJUST_MAX_MS`` is constant
 
 * type: float
 
-* value: 300.0
+* value: ``300.0``
 
 
 ``OPERATOR_FREE_POINTS_AMOUNT``
@@ -15436,11 +19038,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_FREE_POINTS_AMOUNT is constant
+	``OPERATOR_FREE_POINTS_AMOUNT`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``OPERATOR_FREE_POINTS_INTERVAL``
@@ -15448,11 +19050,11 @@ UI Globals
 
 .. note::
 
-	OPERATOR_FREE_POINTS_INTERVAL is constant
+	``OPERATOR_FREE_POINTS_INTERVAL`` is constant
 
 * type: float
 
-* value: 15.0
+* value: ``15.0``
 
 
 ``AMMOSTATION_DISPLAYNAME``
@@ -15460,11 +19062,11 @@ UI Globals
 
 .. note::
 
-	AMMOSTATION_DISPLAYNAME is constant
+	``AMMOSTATION_DISPLAYNAME`` is constant
 
 * type: string
 
-* value: "AMMO
+* value: ``"AMMO BAY"``
 
 
 ``AMMOSTATION_DURATION``
@@ -15472,11 +19074,11 @@ UI Globals
 
 .. note::
 
-	AMMOSTATION_DURATION is constant
+	``AMMOSTATION_DURATION`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``AMMOSTATION_ZONERADIUS``
@@ -15484,11 +19086,11 @@ UI Globals
 
 .. note::
 
-	AMMOSTATION_ZONERADIUS is constant
+	``AMMOSTATION_ZONERADIUS`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``AMMOSTATION_INTERVAL``
@@ -15496,11 +19098,11 @@ UI Globals
 
 .. note::
 
-	AMMOSTATION_INTERVAL is constant
+	``AMMOSTATION_INTERVAL`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``HARVEST_DISPLAYNAME``
@@ -15508,11 +19110,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_DISPLAYNAME is constant
+	``HARVEST_DISPLAYNAME`` is constant
 
 * type: string
 
-* value: "HARVESTER"
+* value: ``"HARVESTER"``
 
 
 ``HARVEST_DURATION``
@@ -15520,11 +19122,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_DURATION is constant
+	``HARVEST_DURATION`` is constant
 
 * type: int
 
-* value: 1600
+* value: ``1600``
 
 
 ``HARVEST_INTERVAL``
@@ -15532,11 +19134,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_INTERVAL is constant
+	``HARVEST_INTERVAL`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``HARVEST_INTERVAL_LEVEL2``
@@ -15544,11 +19146,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_INTERVAL_LEVEL2 is constant
+	``HARVEST_INTERVAL_LEVEL2`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``HARVEST_INTERVAL_LEVEL3``
@@ -15556,11 +19158,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_INTERVAL_LEVEL3 is constant
+	``HARVEST_INTERVAL_LEVEL3`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``HARVEST_HEALTH``
@@ -15568,11 +19170,11 @@ UI Globals
 
 .. note::
 
-	HARVEST_HEALTH is constant
+	``HARVEST_HEALTH`` is constant
 
 * type: int
 
-* value: 1000
+* value: ``1000``
 
 
 ``HEALTHSTATION_DISPLAYNAME``
@@ -15580,11 +19182,11 @@ UI Globals
 
 .. note::
 
-	HEALTHSTATION_DISPLAYNAME is constant
+	``HEALTHSTATION_DISPLAYNAME`` is constant
 
 * type: string
 
-* value: "MED
+* value: ``"MED BAY"``
 
 
 ``HEALTHSTATION_DURATION``
@@ -15592,11 +19194,11 @@ UI Globals
 
 .. note::
 
-	HEALTHSTATION_DURATION is constant
+	``HEALTHSTATION_DURATION`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``HEALTHSTATION_ZONERADIUS``
@@ -15604,11 +19206,11 @@ UI Globals
 
 .. note::
 
-	HEALTHSTATION_ZONERADIUS is constant
+	``HEALTHSTATION_ZONERADIUS`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``HEALTHSTATION_HEAL_FRAC``
@@ -15616,11 +19218,11 @@ UI Globals
 
 .. note::
 
-	HEALTHSTATION_HEAL_FRAC is constant
+	``HEALTHSTATION_HEAL_FRAC`` is constant
 
 * type: float
 
-* value: 0.01
+* value: ``0.01``
 
 
 ``HEALTHSTATION_INTERVAL``
@@ -15628,11 +19230,11 @@ UI Globals
 
 .. note::
 
-	HEALTHSTATION_INTERVAL is constant
+	``HEALTHSTATION_INTERVAL`` is constant
 
 * type: float
 
-* value: 0.1
+* value: ``0.1``
 
 
 ``MARVINS_DISPLAYNAME``
@@ -15640,11 +19242,11 @@ UI Globals
 
 .. note::
 
-	MARVINS_DISPLAYNAME is constant
+	``MARVINS_DISPLAYNAME`` is constant
 
 * type: string
 
-* value: "TROOPS"
+* value: ``"TROOPS"``
 
 
 ``MARVINS_BUFF_MULTIPLIER``
@@ -15652,11 +19254,11 @@ UI Globals
 
 .. note::
 
-	MARVINS_BUFF_MULTIPLIER is constant
+	``MARVINS_BUFF_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 2.5
+* value: ``2.5``
 
 
 ``TURRET_DISPLAYNAME``
@@ -15664,11 +19266,11 @@ UI Globals
 
 .. note::
 
-	TURRET_DISPLAYNAME is constant
+	``TURRET_DISPLAYNAME`` is constant
 
 * type: string
 
-* value: "TURRET"
+* value: ``"TURRET"``
 
 
 ``TURRET_ATTACK_RANGE``
@@ -15676,11 +19278,11 @@ UI Globals
 
 .. note::
 
-	TURRET_ATTACK_RANGE is constant
+	``TURRET_ATTACK_RANGE`` is constant
 
 * type: int
 
-* value: 1500
+* value: ``1500``
 
 
 ``TURRET_ACCURACY_MULTIPLIER``
@@ -15688,11 +19290,11 @@ UI Globals
 
 .. note::
 
-	TURRET_ACCURACY_MULTIPLIER is constant
+	``TURRET_ACCURACY_MULTIPLIER`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``STRIKE_DISPLAYNAME``
@@ -15700,11 +19302,11 @@ UI Globals
 
 .. note::
 
-	STRIKE_DISPLAYNAME is constant
+	``STRIKE_DISPLAYNAME`` is constant
 
 * type: string
 
-* value: "SATELLITE
+* value: ``"SATELLITE STRIKE"``
 
 
 ``OBITUARY_ENABLED_PLAYERS``
@@ -15712,11 +19314,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_ENABLED_PLAYERS is constant
+	``OBITUARY_ENABLED_PLAYERS`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``OBITUARY_ENABLED_NPC``
@@ -15724,11 +19326,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_ENABLED_NPC is constant
+	``OBITUARY_ENABLED_NPC`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``OBITUARY_ENABLED_NPC_TITANS``
@@ -15736,11 +19338,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_ENABLED_NPC_TITANS is constant
+	``OBITUARY_ENABLED_NPC_TITANS`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``OBITUARY_DURATION``
@@ -15748,11 +19350,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_DURATION is constant
+	``OBITUARY_DURATION`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``OBITUARY_COLOR_DEFAULT``
@@ -15760,11 +19362,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_COLOR_DEFAULT is constant
+	``OBITUARY_COLOR_DEFAULT`` is constant
 
 * type: vector
 
-* value: <255,255,255>
+* value: ``<255,255,255>``
 
 
 ``OBITUARY_COLOR_FRIENDLY``
@@ -15772,11 +19374,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_COLOR_FRIENDLY is constant
+	``OBITUARY_COLOR_FRIENDLY`` is constant
 
 * type: vector
 
-* value: <FRIENDLY_R,FRIENDLY_G,FRIENDLY_B>
+* value: ``<FRIENDLY_R,FRIENDLY_G,FRIENDLY_B>``
 
 
 ``OBITUARY_COLOR_PARTY``
@@ -15784,11 +19386,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_COLOR_PARTY is constant
+	``OBITUARY_COLOR_PARTY`` is constant
 
 * type: vector
 
-* value: <179,255,204>
+* value: ``<179,255,204>``
 
 
 ``OBITUARY_COLOR_WEAPON``
@@ -15796,11 +19398,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_COLOR_WEAPON is constant
+	``OBITUARY_COLOR_WEAPON`` is constant
 
 * type: vector
 
-* value: <255,255,255>
+* value: ``<255,255,255>``
 
 
 ``OBITUARY_COLOR_ENEMY``
@@ -15808,11 +19410,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_COLOR_ENEMY is constant
+	``OBITUARY_COLOR_ENEMY`` is constant
 
 * type: vector
 
-* value: <ENEMY_R,ENEMY_G,ENEMY_B>
+* value: ``<ENEMY_R,ENEMY_G,ENEMY_B>``
 
 
 ``OBITUARY_COLOR_LOCALPLAYER``
@@ -15820,11 +19422,11 @@ UI Globals
 
 .. note::
 
-	OBITUARY_COLOR_LOCALPLAYER is constant
+	``OBITUARY_COLOR_LOCALPLAYER`` is constant
 
 * type: vector
 
-* value: <LOCAL_R,LOCAL_G,LOCAL_B>
+* value: ``<LOCAL_R,LOCAL_G,LOCAL_B>``
 
 
 ``SPLASH_X``
@@ -15832,11 +19434,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_X is constant
+	``SPLASH_X`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``SPLASH_X_GAP``
@@ -15844,11 +19446,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_X_GAP is constant
+	``SPLASH_X_GAP`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``SPLASH_Y``
@@ -15856,11 +19458,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_Y is constant
+	``SPLASH_Y`` is constant
 
 * type: int
 
-* value: 120
+* value: ``120``
 
 
 ``SPLASH_DURATION``
@@ -15868,11 +19470,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_DURATION is constant
+	``SPLASH_DURATION`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``SPLASH_FADE_OUT_DURATION``
@@ -15880,11 +19482,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_FADE_OUT_DURATION is constant
+	``SPLASH_FADE_OUT_DURATION`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``SPLASH_SPACING``
@@ -15892,11 +19494,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_SPACING is constant
+	``SPLASH_SPACING`` is constant
 
 * type: int
 
-* value: 12
+* value: ``12``
 
 
 ``SPLASH_SCROLL_TIME``
@@ -15904,11 +19506,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_SCROLL_TIME is constant
+	``SPLASH_SCROLL_TIME`` is constant
 
 * type: float
 
-* value: 0.1
+* value: ``0.1``
 
 
 ``SPLASH_TYPEWRITER_TIME``
@@ -15916,11 +19518,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_TYPEWRITER_TIME is constant
+	``SPLASH_TYPEWRITER_TIME`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``SPLASH_SHOW_MULTI_SCORE_TOTAL``
@@ -15928,11 +19530,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_SHOW_MULTI_SCORE_TOTAL is constant
+	``SPLASH_SHOW_MULTI_SCORE_TOTAL`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``SPLASH_MULTI_SCORE_REQUIREMENT``
@@ -15940,11 +19542,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_MULTI_SCORE_REQUIREMENT is constant
+	``SPLASH_MULTI_SCORE_REQUIREMENT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``SPLASH_TOTAL_POS_X``
@@ -15952,11 +19554,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_TOTAL_POS_X is constant
+	``SPLASH_TOTAL_POS_X`` is constant
 
 * type: int
 
-* value: 50
+* value: ``50``
 
 
 ``SPLASH_TOTAL_POS_Y``
@@ -15964,11 +19566,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_TOTAL_POS_Y is constant
+	``SPLASH_TOTAL_POS_Y`` is constant
 
 * type: int
 
-* value: -30
+* value: ``-30``
 
 
 ``SPLASH_TEXT_COLOR``
@@ -15976,11 +19578,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_TEXT_COLOR is constant
+	``SPLASH_TEXT_COLOR`` is constant
 
 * type: string
 
-* value: "173
+* value: ``"173 226 255 180"``
 
 
 ``SPLASH_VALUE_OFFSET_X``
@@ -15988,11 +19590,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_VALUE_OFFSET_X is constant
+	``SPLASH_VALUE_OFFSET_X`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``SPLASH_VALUE_OFFSET_Y``
@@ -16000,11 +19602,11 @@ UI Globals
 
 .. note::
 
-	SPLASH_VALUE_OFFSET_Y is constant
+	``SPLASH_VALUE_OFFSET_Y`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``TEAM_OWNED_SCORE_FREQ``
@@ -16012,11 +19614,11 @@ UI Globals
 
 .. note::
 
-	TEAM_OWNED_SCORE_FREQ is constant
+	``TEAM_OWNED_SCORE_FREQ`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``PLAYER_HELD_SCORE_FREQ``
@@ -16024,11 +19626,11 @@ UI Globals
 
 .. note::
 
-	PLAYER_HELD_SCORE_FREQ is constant
+	``PLAYER_HELD_SCORE_FREQ`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``CAPTURE_DURATION_CAPTURE``
@@ -16036,11 +19638,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_DURATION_CAPTURE is constant
+	``CAPTURE_DURATION_CAPTURE`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``CAPTURE_DURATION_NEUTRALIZE``
@@ -16048,11 +19650,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_DURATION_NEUTRALIZE is constant
+	``CAPTURE_DURATION_NEUTRALIZE`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``CAPTURE_POINT_COLOR_FRIENDLY``
@@ -16060,11 +19662,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_COLOR_FRIENDLY is constant
+	``CAPTURE_POINT_COLOR_FRIENDLY`` is constant
 
 * type: string
 
-* value: "77
+* value: ``"77 142 197 255"``
 
 
 ``CAPTURE_POINT_COLOR_ENEMY``
@@ -16072,11 +19674,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_COLOR_ENEMY is constant
+	``CAPTURE_POINT_COLOR_ENEMY`` is constant
 
 * type: string
 
-* value: "192
+* value: ``"192 120 77 255"``
 
 
 ``CAPTURE_POINT_COLOR_NEUTRAL``
@@ -16084,11 +19686,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_COLOR_NEUTRAL is constant
+	``CAPTURE_POINT_COLOR_NEUTRAL`` is constant
 
 * type: string
 
-* value: "190
+* value: ``"190 190 190 255"``
 
 
 ``CAPTURE_POINT_COLOR_FRIENDLY_CAP``
@@ -16096,11 +19698,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_COLOR_FRIENDLY_CAP is constant
+	``CAPTURE_POINT_COLOR_FRIENDLY_CAP`` is constant
 
 * type: string
 
-* value: "77
+* value: ``"77 142 197 255"``
 
 
 ``CAPTURE_POINT_COLOR_ENEMY_CAP``
@@ -16108,11 +19710,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_COLOR_ENEMY_CAP is constant
+	``CAPTURE_POINT_COLOR_ENEMY_CAP`` is constant
 
 * type: string
 
-* value: "192
+* value: ``"192 120 77 255"``
 
 
 ``CAPTURE_POINT_ALPHA_MIN_VALUE``
@@ -16120,11 +19722,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_ALPHA_MIN_VALUE is constant
+	``CAPTURE_POINT_ALPHA_MIN_VALUE`` is constant
 
 * type: int
 
-* value: 120
+* value: ``120``
 
 
 ``CAPTURE_POINT_ALPHA_MIN_DISTANCE``
@@ -16132,11 +19734,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_ALPHA_MIN_DISTANCE is constant
+	``CAPTURE_POINT_ALPHA_MIN_DISTANCE`` is constant
 
 * type: int
 
-* value: 2000
+* value: ``2000``
 
 
 ``CAPTURE_POINT_ALPHA_MAX_VALUE``
@@ -16144,11 +19746,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_ALPHA_MAX_VALUE is constant
+	``CAPTURE_POINT_ALPHA_MAX_VALUE`` is constant
 
 * type: int
 
-* value: 255
+* value: ``255``
 
 
 ``CAPTURE_POINT_ALPHA_MAX_DISTANCE``
@@ -16156,11 +19758,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_ALPHA_MAX_DISTANCE is constant
+	``CAPTURE_POINT_ALPHA_MAX_DISTANCE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``CAPTURE_POINT_CROSSHAIR_DIST_MAX``
@@ -16168,11 +19770,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_CROSSHAIR_DIST_MAX is constant
+	``CAPTURE_POINT_CROSSHAIR_DIST_MAX`` is constant
 
 * type: int
 
-* value: 40000
+* value: ``40000``
 
 
 ``CAPTURE_POINT_CROSSHAIR_DIST_MIN``
@@ -16180,11 +19782,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_CROSSHAIR_DIST_MIN is constant
+	``CAPTURE_POINT_CROSSHAIR_DIST_MIN`` is constant
 
 * type: int
 
-* value: 2500
+* value: ``2500``
 
 
 ``CAPTURE_POINT_CROSSHAIR_ALPHA_MOD``
@@ -16192,11 +19794,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_CROSSHAIR_ALPHA_MOD is constant
+	``CAPTURE_POINT_CROSSHAIR_ALPHA_MOD`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``CAPTURE_POINT_SLIDE_IN_TIME``
@@ -16204,11 +19806,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_SLIDE_IN_TIME is constant
+	``CAPTURE_POINT_SLIDE_IN_TIME`` is constant
 
 * type: float
 
-* value: 0.15
+* value: ``0.15``
 
 
 ``CAPTURE_POINT_SLIDE_OUT_TIME``
@@ -16216,11 +19818,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_SLIDE_OUT_TIME is constant
+	``CAPTURE_POINT_SLIDE_OUT_TIME`` is constant
 
 * type: float
 
-* value: 0.1
+* value: ``0.1``
 
 
 ``CAPTURE_POINT_MINIMAP_ICON_SCALE``
@@ -16228,11 +19830,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_MINIMAP_ICON_SCALE is constant
+	``CAPTURE_POINT_MINIMAP_ICON_SCALE`` is constant
 
 * type: float
 
-* value: 0.15
+* value: ``0.15``
 
 
 ``CAPTURE_POINT_TITANS_BREAK_CONTEST``
@@ -16240,11 +19842,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_TITANS_BREAK_CONTEST is constant
+	``CAPTURE_POINT_TITANS_BREAK_CONTEST`` is constant
 
 * type: bool
 
-* value: true
+* value: ``true``
 
 
 ``CAPTURE_POINT_AI_CAP_POWER``
@@ -16252,11 +19854,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_AI_CAP_POWER is constant
+	``CAPTURE_POINT_AI_CAP_POWER`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``CAPTURE_POINT_MAX_PULSE_SPEED``
@@ -16264,11 +19866,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_MAX_PULSE_SPEED is constant
+	``CAPTURE_POINT_MAX_PULSE_SPEED`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``CAPTURE_POINT_STATE_UNASSIGNED``
@@ -16276,11 +19878,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_STATE_UNASSIGNED is constant
+	``CAPTURE_POINT_STATE_UNASSIGNED`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``CAPTURE_POINT_STATE_HALTED``
@@ -16288,11 +19890,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_STATE_HALTED is constant
+	``CAPTURE_POINT_STATE_HALTED`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``CAPTURE_POINT_STATE_CAPPING``
@@ -16300,11 +19902,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_STATE_CAPPING is constant
+	``CAPTURE_POINT_STATE_CAPPING`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``CAPTURE_POINT_STATE_SELF_UNAMPING``
@@ -16312,11 +19914,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_STATE_SELF_UNAMPING is constant
+	``CAPTURE_POINT_STATE_SELF_UNAMPING`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``CAPTURE_POINT_STATE_CAPTURED``
@@ -16324,11 +19926,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_STATE_CAPTURED is constant
+	``CAPTURE_POINT_STATE_CAPTURED`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``CAPTURE_POINT_STATE_AMPING``
@@ -16336,11 +19938,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_STATE_AMPING is constant
+	``CAPTURE_POINT_STATE_AMPING`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``CAPTURE_POINT_STATE_AMPED``
@@ -16348,11 +19950,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_STATE_AMPED is constant
+	``CAPTURE_POINT_STATE_AMPED`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``CAPTURE_POINT_STATE_CONTESTED``
@@ -16360,11 +19962,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_STATE_CONTESTED is constant
+	``CAPTURE_POINT_STATE_CONTESTED`` is constant
 
 * type: int
 
-* value: 7
+* value: ``7``
 
 
 ``CAPTURE_POINT_FLAGS_CONTESTED``
@@ -16372,11 +19974,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_FLAGS_CONTESTED is constant
+	``CAPTURE_POINT_FLAGS_CONTESTED`` is constant
 
-* type: unknown
+* type: int
 
-* value: (1
+* value: ``(1 << 0)``
 
 
 ``CAPTURE_POINT_FLAGS_AMPED``
@@ -16384,11 +19986,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_FLAGS_AMPED is constant
+	``CAPTURE_POINT_FLAGS_AMPED`` is constant
 
-* type: unknown
+* type: int
 
-* value: (1
+* value: ``(1 << 1)``
 
 
 ``HARDPOINT_AMPED_DELAY``
@@ -16396,11 +19998,11 @@ UI Globals
 
 .. note::
 
-	HARDPOINT_AMPED_DELAY is constant
+	``HARDPOINT_AMPED_DELAY`` is constant
 
 * type: float
 
-* value: 30.0
+* value: ``30.0``
 
 
 ``CAPTURE_POINT_ENEMY``
@@ -16408,11 +20010,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_ENEMY is constant
+	``CAPTURE_POINT_ENEMY`` is constant
 
 * type: string
 
-* value: "Contested:
+* value: ``"Contested: %d/%d"``
 
 
 ``CAPTURE_POINT_ENEMIES``
@@ -16420,11 +20022,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_ENEMIES is constant
+	``CAPTURE_POINT_ENEMIES`` is constant
 
 * type: string
 
-* value: "Contested:
+* value: ``"Contested: %d/%d"``
 
 
 ``CAPTURE_POINT_EMPTY``
@@ -16432,11 +20034,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_EMPTY is constant
+	``CAPTURE_POINT_EMPTY`` is constant
 
 * type: string
 
-* value: ""
+* value: ``""``
 
 
 ``CAPTURE_POINT_SECURE``
@@ -16444,11 +20046,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_POINT_SECURE is constant
+	``CAPTURE_POINT_SECURE`` is constant
 
 * type: string
 
-* value: "Secured"
+* value: ``"Secured"``
 
 
 ``CAPTURE_DURATION_PILOT_CAPTURE``
@@ -16456,11 +20058,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_DURATION_PILOT_CAPTURE is constant
+	``CAPTURE_DURATION_PILOT_CAPTURE`` is constant
 
 * type: int
 
-* value: 8
+* value: ``8``
 
 
 ``CAPTURE_DURATION_TITAN_CAPTURE``
@@ -16468,11 +20070,11 @@ UI Globals
 
 .. note::
 
-	CAPTURE_DURATION_TITAN_CAPTURE is constant
+	``CAPTURE_DURATION_TITAN_CAPTURE`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT``
@@ -16480,11 +20082,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT is constant
+	``ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT`` is constant
 
 * type: float
 
-* value: 3.5
+* value: ``3.5``
 
 
 ``ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY``
@@ -16492,11 +20094,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY is constant
+	``ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY`` is constant
 
 * type: float
 
-* value: 7.5
+* value: ``7.5``
 
 
 ``ROUND_WINNING_KILL_REPLAY_SCREEN_FADE_TIME``
@@ -16504,11 +20106,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_SCREEN_FADE_TIME is constant
+	``ROUND_WINNING_KILL_REPLAY_SCREEN_FADE_TIME`` is constant
 
 * type: float
 
-* value: 4.0
+* value: ``4.0``
 
 
 ``ROUND_WINNING_KILL_REPLAY_POST_DEATH_TIME``
@@ -16516,11 +20118,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_POST_DEATH_TIME is constant
+	``ROUND_WINNING_KILL_REPLAY_POST_DEATH_TIME`` is constant
 
 * type: float
 
-* value: 3.5
+* value: ``3.5``
 
 
 ``ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION``
@@ -16528,11 +20130,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION is constant
+	``ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION`` is constant
 
 * type: unknown
 
-* value: ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY
+* value: ``ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY - ROUND_WINNING_KILL_REPLAY_POST_DEATH_TIME``
 
 
 ``ROUND_WINNING_KILL_REPLAY_CROSSHAIR_FADEOUT_TIME``
@@ -16540,11 +20142,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_CROSSHAIR_FADEOUT_TIME is constant
+	``ROUND_WINNING_KILL_REPLAY_CROSSHAIR_FADEOUT_TIME`` is constant
 
 * type: unknown
 
-* value: ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION
+* value: ``ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION - 0.5``
 
 
 ``ROUND_WINNING_KILL_REPLAY_DELAY_BETWEEN_ANNOUNCEMENTS``
@@ -16552,11 +20154,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_DELAY_BETWEEN_ANNOUNCEMENTS is constant
+	``ROUND_WINNING_KILL_REPLAY_DELAY_BETWEEN_ANNOUNCEMENTS`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``ROUND_WINNING_KILL_REPLAY_ROUND_SCORE_ANNOUNCEMENT_DURATION``
@@ -16564,11 +20166,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_ROUND_SCORE_ANNOUNCEMENT_DURATION is constant
+	``ROUND_WINNING_KILL_REPLAY_ROUND_SCORE_ANNOUNCEMENT_DURATION`` is constant
 
 * type: float
 
-* value: 4.0
+* value: ``4.0``
 
 
 ``ROUND_WINNING_KILL_REPLAY_FINAL_SCORE_ANNOUNCEMENT_DURATION``
@@ -16576,11 +20178,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_FINAL_SCORE_ANNOUNCEMENT_DURATION is constant
+	``ROUND_WINNING_KILL_REPLAY_FINAL_SCORE_ANNOUNCEMENT_DURATION`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH``
@@ -16588,11 +20190,11 @@ UI Globals
 
 .. note::
 
-	ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH is constant
+	``ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH`` is constant
 
 * type: unknown
 
-* value: ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT
+* value: ``ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT + ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY``
 
 
 ``GAME_POSTMATCH_LENGTH``
@@ -16600,11 +20202,11 @@ UI Globals
 
 .. note::
 
-	GAME_POSTMATCH_LENGTH is constant
+	``GAME_POSTMATCH_LENGTH`` is constant
 
 * type: float
 
-* value: 7.0
+* value: ``7.0``
 
 
 ``GAME_WINNER_DETERMINED_ROUND_WAIT``
@@ -16612,11 +20214,11 @@ UI Globals
 
 .. note::
 
-	GAME_WINNER_DETERMINED_ROUND_WAIT is constant
+	``GAME_WINNER_DETERMINED_ROUND_WAIT`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``GAME_WINNER_DETERMINED_FINAL_ROUND_WAIT``
@@ -16624,11 +20226,11 @@ UI Globals
 
 .. note::
 
-	GAME_WINNER_DETERMINED_FINAL_ROUND_WAIT is constant
+	``GAME_WINNER_DETERMINED_FINAL_ROUND_WAIT`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``GAME_WINNER_DETERMINED_FINAL_ROUND_WITH_ROUND_WINNING_KILL_REPLAY_WAIT``
@@ -16636,11 +20238,11 @@ UI Globals
 
 .. note::
 
-	GAME_WINNER_DETERMINED_FINAL_ROUND_WITH_ROUND_WINNING_KILL_REPLAY_WAIT is constant
+	``GAME_WINNER_DETERMINED_FINAL_ROUND_WITH_ROUND_WINNING_KILL_REPLAY_WAIT`` is constant
 
 * type: unknown
 
-* value: ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH
+* value: ``ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH + 2.0``
 
 
 ``GAME_WINNER_DETERMINED_ROUND_WAIT_WITH_ROUND_WINNING_KILL_REPLAY_WAIT``
@@ -16648,11 +20250,11 @@ UI Globals
 
 .. note::
 
-	GAME_WINNER_DETERMINED_ROUND_WAIT_WITH_ROUND_WINNING_KILL_REPLAY_WAIT is constant
+	``GAME_WINNER_DETERMINED_ROUND_WAIT_WITH_ROUND_WINNING_KILL_REPLAY_WAIT`` is constant
 
 * type: unknown
 
-* value: ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH
+* value: ``ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH + 3.0``
 
 
 ``SWITCHING_SIDES_DELAY``
@@ -16660,11 +20262,11 @@ UI Globals
 
 .. note::
 
-	SWITCHING_SIDES_DELAY is constant
+	``SWITCHING_SIDES_DELAY`` is constant
 
 * type: float
 
-* value: 8.0
+* value: ``8.0``
 
 
 ``SWITCHING_SIDES_DELAY_REPLAY``
@@ -16672,11 +20274,11 @@ UI Globals
 
 .. note::
 
-	SWITCHING_SIDES_DELAY_REPLAY is constant
+	``SWITCHING_SIDES_DELAY_REPLAY`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``GAME_WINNER_DETERMINED_WAIT``
@@ -16684,11 +20286,11 @@ UI Globals
 
 .. note::
 
-	GAME_WINNER_DETERMINED_WAIT is constant
+	``GAME_WINNER_DETERMINED_WAIT`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``GAME_EPILOGUE_PLAYER_RESPAWN_LEEWAY``
@@ -16696,11 +20298,11 @@ UI Globals
 
 .. note::
 
-	GAME_EPILOGUE_PLAYER_RESPAWN_LEEWAY is constant
+	``GAME_EPILOGUE_PLAYER_RESPAWN_LEEWAY`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``GAME_EPILOGUE_ENDING_LEADUP``
@@ -16708,11 +20310,11 @@ UI Globals
 
 .. note::
 
-	GAME_EPILOGUE_ENDING_LEADUP is constant
+	``GAME_EPILOGUE_ENDING_LEADUP`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``GAME_POSTROUND_CLEANUP_WAIT``
@@ -16720,11 +20322,11 @@ UI Globals
 
 .. note::
 
-	GAME_POSTROUND_CLEANUP_WAIT is constant
+	``GAME_POSTROUND_CLEANUP_WAIT`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``PREMATCH_COUNTDOWN_SOUND``
@@ -16732,11 +20334,11 @@ UI Globals
 
 .. note::
 
-	PREMATCH_COUNTDOWN_SOUND is constant
+	``PREMATCH_COUNTDOWN_SOUND`` is constant
 
 * type: string
 
-* value: "Menu_Timer_LobbyCountdown_Tick"
+* value: ``"Menu_Timer_LobbyCountdown_Tick"``
 
 
 ``WAITING_FOR_PLAYERS_COUNTDOWN_SOUND``
@@ -16744,11 +20346,11 @@ UI Globals
 
 .. note::
 
-	WAITING_FOR_PLAYERS_COUNTDOWN_SOUND is constant
+	``WAITING_FOR_PLAYERS_COUNTDOWN_SOUND`` is constant
 
 * type: string
 
-* value: "Menu_Timer_Tick"
+* value: ``"Menu_Timer_Tick"``
 
 
 ``eGameState``
@@ -16762,11 +20364,11 @@ UI Globals
 
 .. note::
 
-	FIRETEAM_DROPPOD_FORCE_EXIT is constant
+	``FIRETEAM_DROPPOD_FORCE_EXIT`` is constant
 
 * type: int
 
-* value: 15
+* value: ``15``
 
 
 ``SILENT_WEAPON_AI_SOUND_RADIUS_MP``
@@ -16774,11 +20376,11 @@ UI Globals
 
 .. note::
 
-	SILENT_WEAPON_AI_SOUND_RADIUS_MP is constant
+	``SILENT_WEAPON_AI_SOUND_RADIUS_MP`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``LOUD_WEAPON_AI_SOUND_RADIUS``
@@ -16786,11 +20388,11 @@ UI Globals
 
 .. note::
 
-	LOUD_WEAPON_AI_SOUND_RADIUS is constant
+	``LOUD_WEAPON_AI_SOUND_RADIUS`` is constant
 
 * type: float
 
-* value: 4000.0
+* value: ``4000.0``
 
 
 ``LOUD_WEAPON_AI_SOUND_RADIUS_MP``
@@ -16798,11 +20400,11 @@ UI Globals
 
 .. note::
 
-	LOUD_WEAPON_AI_SOUND_RADIUS_MP is constant
+	``LOUD_WEAPON_AI_SOUND_RADIUS_MP`` is constant
 
 * type: float
 
-* value: 5000.0
+* value: ``5000.0``
 
 
 ``WEAPON_FLYOUT_DEBOUNCE_TIME``
@@ -16810,11 +20412,11 @@ UI Globals
 
 .. note::
 
-	WEAPON_FLYOUT_DEBOUNCE_TIME is constant
+	``WEAPON_FLYOUT_DEBOUNCE_TIME`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``WEAPON_FLYOUTS_ENABLED``
@@ -16822,11 +20424,11 @@ UI Globals
 
 .. note::
 
-	WEAPON_FLYOUTS_ENABLED is constant
+	``WEAPON_FLYOUTS_ENABLED`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``FLYOUT_TITLE_TYPE_TIME``
@@ -16834,11 +20436,11 @@ UI Globals
 
 .. note::
 
-	FLYOUT_TITLE_TYPE_TIME is constant
+	``FLYOUT_TITLE_TYPE_TIME`` is constant
 
 * type: float
 
-* value: 0.2
+* value: ``0.2``
 
 
 ``FLYOUT_POINT_LINE_TIME``
@@ -16846,11 +20448,11 @@ UI Globals
 
 .. note::
 
-	FLYOUT_POINT_LINE_TIME is constant
+	``FLYOUT_POINT_LINE_TIME`` is constant
 
 * type: float
 
-* value: 0.2
+* value: ``0.2``
 
 
 ``FLYOUT_SHOW_DURATION``
@@ -16858,11 +20460,11 @@ UI Globals
 
 .. note::
 
-	FLYOUT_SHOW_DURATION is constant
+	``FLYOUT_SHOW_DURATION`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``FLYOUT_SHOW_CHALLENGE_DURATION``
@@ -16870,11 +20472,11 @@ UI Globals
 
 .. note::
 
-	FLYOUT_SHOW_CHALLENGE_DURATION is constant
+	``FLYOUT_SHOW_CHALLENGE_DURATION`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``FLYOUT_FADE_OUT_TIME``
@@ -16882,11 +20484,11 @@ UI Globals
 
 .. note::
 
-	FLYOUT_FADE_OUT_TIME is constant
+	``FLYOUT_FADE_OUT_TIME`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``FLYOUT_CONNECTING_LINE_ALPHA``
@@ -16894,11 +20496,11 @@ UI Globals
 
 .. note::
 
-	FLYOUT_CONNECTING_LINE_ALPHA is constant
+	``FLYOUT_CONNECTING_LINE_ALPHA`` is constant
 
 * type: int
 
-* value: 100
+* value: ``100``
 
 
 ``SATCHEL_CLACKER_SOUND``
@@ -16906,11 +20508,11 @@ UI Globals
 
 .. note::
 
-	SATCHEL_CLACKER_SOUND is constant
+	``SATCHEL_CLACKER_SOUND`` is constant
 
 * type: string
 
-* value: "Weapon_R1_Clacker.TriggerPull"
+* value: ``"Weapon_R1_Clacker.TriggerPull"``
 
 
 ``LASER_TRIP_MINE_SOUND``
@@ -16918,11 +20520,11 @@ UI Globals
 
 .. note::
 
-	LASER_TRIP_MINE_SOUND is constant
+	``LASER_TRIP_MINE_SOUND`` is constant
 
 * type: string
 
-* value: "PlayerUI.LoadoutSelect"
+* value: ``"PlayerUI.LoadoutSelect"``
 
 
 ``OBJECTIVE_SCREEN_MAX_LOCATIONS``
@@ -16930,11 +20532,11 @@ UI Globals
 
 .. note::
 
-	OBJECTIVE_SCREEN_MAX_LOCATIONS is constant
+	``OBJECTIVE_SCREEN_MAX_LOCATIONS`` is constant
 
 * type: int
 
-* value: 8
+* value: ``8``
 
 
 ``START_SPAWN_GRACE_PERIOD``
@@ -16942,11 +20544,11 @@ UI Globals
 
 .. note::
 
-	START_SPAWN_GRACE_PERIOD is constant
+	``START_SPAWN_GRACE_PERIOD`` is constant
 
 * type: float
 
-* value: 20.0
+* value: ``20.0``
 
 
 ``CLASS_CHANGE_GRACE_PERIOD``
@@ -16954,11 +20556,11 @@ UI Globals
 
 .. note::
 
-	CLASS_CHANGE_GRACE_PERIOD is constant
+	``CLASS_CHANGE_GRACE_PERIOD`` is constant
 
 * type: float
 
-* value: 20.0
+* value: ``20.0``
 
 
 ``WAVE_SPAWN_GRACE_PERIOD``
@@ -16966,11 +20568,11 @@ UI Globals
 
 .. note::
 
-	WAVE_SPAWN_GRACE_PERIOD is constant
+	``WAVE_SPAWN_GRACE_PERIOD`` is constant
 
 * type: float
 
-* value: 3.0
+* value: ``3.0``
 
 
 ``ELIM_FIRST_SPAWN_GRACE_PERIOD``
@@ -16978,11 +20580,11 @@ UI Globals
 
 .. note::
 
-	ELIM_FIRST_SPAWN_GRACE_PERIOD is constant
+	``ELIM_FIRST_SPAWN_GRACE_PERIOD`` is constant
 
 * type: float
 
-* value: 20.0
+* value: ``20.0``
 
 
 ``ELIM_TITAN_SPAWN_GRACE_PERIOD``
@@ -16990,11 +20592,11 @@ UI Globals
 
 .. note::
 
-	ELIM_TITAN_SPAWN_GRACE_PERIOD is constant
+	``ELIM_TITAN_SPAWN_GRACE_PERIOD`` is constant
 
 * type: float
 
-* value: 30.0
+* value: ``30.0``
 
 
 ``HEALTH_BARS_ENABLED_SP``
@@ -17002,11 +20604,11 @@ UI Globals
 
 .. note::
 
-	HEALTH_BARS_ENABLED_SP is constant
+	``HEALTH_BARS_ENABLED_SP`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``HEALTH_BARS_ENABLED_MP``
@@ -17014,11 +20616,11 @@ UI Globals
 
 .. note::
 
-	HEALTH_BARS_ENABLED_MP is constant
+	``HEALTH_BARS_ENABLED_MP`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``HEALTH_BAR_MAX_DISTANCE``
@@ -17026,11 +20628,11 @@ UI Globals
 
 .. note::
 
-	HEALTH_BAR_MAX_DISTANCE is constant
+	``HEALTH_BAR_MAX_DISTANCE`` is constant
 
 * type: int
 
-* value: 5000
+* value: ``5000``
 
 
 ``HEALTH_BAR_HEAD_OFFSET``
@@ -17038,11 +20640,11 @@ UI Globals
 
 .. note::
 
-	HEALTH_BAR_HEAD_OFFSET is constant
+	``HEALTH_BAR_HEAD_OFFSET`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``FIRETEAM_AVENGED_DEBOUNCE``
@@ -17050,11 +20652,11 @@ UI Globals
 
 .. note::
 
-	FIRETEAM_AVENGED_DEBOUNCE is constant
+	``FIRETEAM_AVENGED_DEBOUNCE`` is constant
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``OVERDRIVE_FIRE_SOUND``
@@ -17062,11 +20664,11 @@ UI Globals
 
 .. note::
 
-	OVERDRIVE_FIRE_SOUND is constant
+	``OVERDRIVE_FIRE_SOUND`` is constant
 
 * type: string
 
-* value: "Player.FireOverdrive"
+* value: ``"Player.FireOverdrive"``
 
 
 ``DROPSHIP_TIME_LEVEL1``
@@ -17074,11 +20676,11 @@ UI Globals
 
 .. note::
 
-	DROPSHIP_TIME_LEVEL1 is constant
+	``DROPSHIP_TIME_LEVEL1`` is constant
 
 * type: float
 
-* value: 2.0
+* value: ``2.0``
 
 
 ``OVERDRIVE_TIME_LEVEL1``
@@ -17086,11 +20688,11 @@ UI Globals
 
 .. note::
 
-	OVERDRIVE_TIME_LEVEL1 is constant
+	``OVERDRIVE_TIME_LEVEL1`` is constant
 
 * type: float
 
-* value: 20.0
+* value: ``20.0``
 
 
 ``OVERDRIVE_DAMAGE_LEVEL1``
@@ -17098,11 +20700,11 @@ UI Globals
 
 .. note::
 
-	OVERDRIVE_DAMAGE_LEVEL1 is constant
+	``OVERDRIVE_DAMAGE_LEVEL1`` is constant
 
 * type: float
 
-* value: 1.3
+* value: ``1.3``
 
 
 ``OVERDRIVE_TIME_LEVEL2``
@@ -17110,11 +20712,11 @@ UI Globals
 
 .. note::
 
-	OVERDRIVE_TIME_LEVEL2 is constant
+	``OVERDRIVE_TIME_LEVEL2`` is constant
 
 * type: float
 
-* value: 20.0
+* value: ``20.0``
 
 
 ``OVERDRIVE_DAMAGE_LEVEL2``
@@ -17122,11 +20724,11 @@ UI Globals
 
 .. note::
 
-	OVERDRIVE_DAMAGE_LEVEL2 is constant
+	``OVERDRIVE_DAMAGE_LEVEL2`` is constant
 
 * type: float
 
-* value: 1.4
+* value: ``1.4``
 
 
 ``OVERDRIVE_ARMOR_LEVEL2``
@@ -17134,11 +20736,11 @@ UI Globals
 
 .. note::
 
-	OVERDRIVE_ARMOR_LEVEL2 is constant
+	``OVERDRIVE_ARMOR_LEVEL2`` is constant
 
 * type: float
 
-* value: 0.65
+* value: ``0.65``
 
 
 ``OVERDRIVE_TIME_LEVEL3``
@@ -17146,11 +20748,11 @@ UI Globals
 
 .. note::
 
-	OVERDRIVE_TIME_LEVEL3 is constant
+	``OVERDRIVE_TIME_LEVEL3`` is constant
 
 * type: float
 
-* value: 15.0
+* value: ``15.0``
 
 
 ``OVERDRIVE_DAMAGE_LEVEL3``
@@ -17158,11 +20760,11 @@ UI Globals
 
 .. note::
 
-	OVERDRIVE_DAMAGE_LEVEL3 is constant
+	``OVERDRIVE_DAMAGE_LEVEL3`` is constant
 
 * type: float
 
-* value: 1.1
+* value: ``1.1``
 
 
 ``BALL_LIGHTNING_BURST_NUM``
@@ -17170,11 +20772,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_BURST_NUM is constant
+	``BALL_LIGHTNING_BURST_NUM`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``BALL_LIGHTNING_BURST_DELAY``
@@ -17182,11 +20784,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_BURST_DELAY is constant
+	``BALL_LIGHTNING_BURST_DELAY`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``BALL_LIGHTNING_BURST_PAUSE``
@@ -17194,11 +20796,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_BURST_PAUSE is constant
+	``BALL_LIGHTNING_BURST_PAUSE`` is constant
 
 * type: float
 
-* value: 0.3
+* value: ``0.3``
 
 
 ``BALL_LIGHTNING_ZAP_LIFETIME``
@@ -17206,11 +20808,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_ZAP_LIFETIME is constant
+	``BALL_LIGHTNING_ZAP_LIFETIME`` is constant
 
 * type: float
 
-* value: 0.3
+* value: ``0.3``
 
 
 ``BALL_LIGHTNING_ZAP_FX``
@@ -17218,11 +20820,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_ZAP_FX is constant
+	``BALL_LIGHTNING_ZAP_FX`` is constant
 
 * type: asset
 
-* value: $"P_wpn_arcball_beam"
+* value: ``$"P_wpn_arcball_beam"``
 
 
 ``BALL_LIGHTNING_FX_TABLE``
@@ -17230,11 +20832,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_FX_TABLE is constant
+	``BALL_LIGHTNING_FX_TABLE`` is constant
 
 * type: string
 
-* value: ""
+* value: ``""``
 
 
 ``BALL_LIGHTNING_ZAP_RADIUS``
@@ -17242,11 +20844,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_ZAP_RADIUS is constant
+	``BALL_LIGHTNING_ZAP_RADIUS`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``BALL_LIGHTNING_ZAP_HUMANSIZE_RADIUS``
@@ -17254,11 +20856,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_ZAP_HUMANSIZE_RADIUS is constant
+	``BALL_LIGHTNING_ZAP_HUMANSIZE_RADIUS`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``BALL_LIGHTNING_ZAP_HEIGHT``
@@ -17266,11 +20868,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_ZAP_HEIGHT is constant
+	``BALL_LIGHTNING_ZAP_HEIGHT`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``BALL_LIGHTNING_ZAP_SOUND``
@@ -17278,11 +20880,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_ZAP_SOUND is constant
+	``BALL_LIGHTNING_ZAP_SOUND`` is constant
 
 * type: string
 
-* value: "weapon_arc_ball_tendril"
+* value: ``"weapon_arc_ball_tendril"``
 
 
 ``BALL_LIGHTNING_DAMAGE``
@@ -17290,11 +20892,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_DAMAGE is constant
+	``BALL_LIGHTNING_DAMAGE`` is constant
 
 * type: int
 
-* value: 120
+* value: ``120``
 
 
 ``BALL_LIGHTNING_CHARGED_ZAP_LIFETIME``
@@ -17302,11 +20904,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_CHARGED_ZAP_LIFETIME is constant
+	``BALL_LIGHTNING_CHARGED_ZAP_LIFETIME`` is constant
 
 * type: float
 
-* value: 0.4
+* value: ``0.4``
 
 
 ``BALL_LIGHTNING_CHARGED_ZAP_RADIUS``
@@ -17314,11 +20916,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_CHARGED_ZAP_RADIUS is constant
+	``BALL_LIGHTNING_CHARGED_ZAP_RADIUS`` is constant
 
 * type: int
 
-* value: 600
+* value: ``600``
 
 
 ``BALL_LIGHTNING_CHARGED_ZAP_HEIGHT``
@@ -17326,11 +20928,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_CHARGED_ZAP_HEIGHT is constant
+	``BALL_LIGHTNING_CHARGED_ZAP_HEIGHT`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``BALL_LIGHTNING_CHARGED_DAMAGE``
@@ -17338,11 +20940,11 @@ UI Globals
 
 .. note::
 
-	BALL_LIGHTNING_CHARGED_DAMAGE is constant
+	``BALL_LIGHTNING_CHARGED_DAMAGE`` is constant
 
 * type: int
 
-* value: 60
+* value: ``60``
 
 
 ``SFX_SMOKE_DEPLOY_1P``
@@ -17350,11 +20952,11 @@ UI Globals
 
 .. note::
 
-	SFX_SMOKE_DEPLOY_1P is constant
+	``SFX_SMOKE_DEPLOY_1P`` is constant
 
 * type: string
 
-* value: "titan_offhand_electricsmoke_deploy_1P"
+* value: ``"titan_offhand_electricsmoke_deploy_1P"``
 
 
 ``SFX_SMOKE_DEPLOY_3P``
@@ -17362,11 +20964,11 @@ UI Globals
 
 .. note::
 
-	SFX_SMOKE_DEPLOY_3P is constant
+	``SFX_SMOKE_DEPLOY_3P`` is constant
 
 * type: string
 
-* value: "titan_offhand_electricsmoke_deploy_3P"
+* value: ``"titan_offhand_electricsmoke_deploy_3P"``
 
 
 ``SFX_SMOKE_DEPLOY_BURN_1P``
@@ -17374,11 +20976,11 @@ UI Globals
 
 .. note::
 
-	SFX_SMOKE_DEPLOY_BURN_1P is constant
+	``SFX_SMOKE_DEPLOY_BURN_1P`` is constant
 
 * type: string
 
-* value: "titan_offhand_electricsmoke_deploy_amped_1P"
+* value: ``"titan_offhand_electricsmoke_deploy_amped_1P"``
 
 
 ``SFX_SMOKE_DEPLOY_BURN_3P``
@@ -17386,11 +20988,11 @@ UI Globals
 
 .. note::
 
-	SFX_SMOKE_DEPLOY_BURN_3P is constant
+	``SFX_SMOKE_DEPLOY_BURN_3P`` is constant
 
 * type: string
 
-* value: "titan_offhand_electricsmoke_deploy_amped_3P"
+* value: ``"titan_offhand_electricsmoke_deploy_amped_3P"``
 
 
 ``SFX_SMOKE_GRENADE_DEPLOY``
@@ -17398,11 +21000,11 @@ UI Globals
 
 .. note::
 
-	SFX_SMOKE_GRENADE_DEPLOY is constant
+	``SFX_SMOKE_GRENADE_DEPLOY`` is constant
 
 * type: string
 
-* value: "Weapon_SmokeGrenade_Temp"
+* value: ``"Weapon_SmokeGrenade_Temp"``
 
 
 ``SFX_SMOKE_DAMAGE``
@@ -17410,11 +21012,11 @@ UI Globals
 
 .. note::
 
-	SFX_SMOKE_DAMAGE is constant
+	``SFX_SMOKE_DAMAGE`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Damage"
+* value: ``"Titan_Offhand_ElectricSmoke_Damage"``
 
 
 ``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_1P``
@@ -17422,11 +21024,11 @@ UI Globals
 
 .. note::
 
-	ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_1P is constant
+	``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_1P`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Human_Damage_1P"
+* value: ``"Titan_Offhand_ElectricSmoke_Human_Damage_1P"``
 
 
 ``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_3P``
@@ -17434,11 +21036,11 @@ UI Globals
 
 .. note::
 
-	ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_3P is constant
+	``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_PILOT_3P`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Human_Damage_3P"
+* value: ``"Titan_Offhand_ElectricSmoke_Human_Damage_3P"``
 
 
 ``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_1P``
@@ -17446,11 +21048,11 @@ UI Globals
 
 .. note::
 
-	ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_1P is constant
+	``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_1P`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_1P"
+* value: ``"Titan_Offhand_ElectricSmoke_Titan_Damage_1P"``
 
 
 ``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_3P``
@@ -17458,11 +21060,11 @@ UI Globals
 
 .. note::
 
-	ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_3P is constant
+	``ELECTRIC_SMOKESCREEN_SFX_DAMAGE_TITAN_3P`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_3P"
+* value: ``"Titan_Offhand_ElectricSmoke_Titan_Damage_3P"``
 
 
 ``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_1P``
@@ -17470,11 +21072,11 @@ UI Globals
 
 .. note::
 
-	ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_1P is constant
+	``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_1P`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Human_Damage_1P"
+* value: ``"Titan_Offhand_ElectricSmoke_Human_Damage_1P"``
 
 
 ``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_3P``
@@ -17482,11 +21084,11 @@ UI Globals
 
 .. note::
 
-	ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_3P is constant
+	``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_PILOT_3P`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Human_Damage_3P"
+* value: ``"Titan_Offhand_ElectricSmoke_Human_Damage_3P"``
 
 
 ``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_1P``
@@ -17494,11 +21096,11 @@ UI Globals
 
 .. note::
 
-	ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_1P is constant
+	``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_1P`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_1P"
+* value: ``"Titan_Offhand_ElectricSmoke_Titan_Damage_1P"``
 
 
 ``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_3P``
@@ -17506,11 +21108,11 @@ UI Globals
 
 .. note::
 
-	ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_3P is constant
+	``ELECTRIC_SMOKE_GRENADE_SFX_DAMAGE_TITAN_3P`` is constant
 
 * type: string
 
-* value: "Titan_Offhand_ElectricSmoke_Titan_Damage_3P"
+* value: ``"Titan_Offhand_ElectricSmoke_Titan_Damage_3P"``
 
 
 ``SMOKESCREEN_SFX_POPCORN_EXPLOSION``
@@ -17518,11 +21120,11 @@ UI Globals
 
 .. note::
 
-	SMOKESCREEN_SFX_POPCORN_EXPLOSION is constant
+	``SMOKESCREEN_SFX_POPCORN_EXPLOSION`` is constant
 
 * type: string
 
-* value: "Weapon_ElectricSmokescreen.Explosion"
+* value: ``"Weapon_ElectricSmokescreen.Explosion"``
 
 
 ``FX_ELECTRIC_SMOKESCREEN``
@@ -17530,11 +21132,11 @@ UI Globals
 
 .. note::
 
-	FX_ELECTRIC_SMOKESCREEN is constant
+	``FX_ELECTRIC_SMOKESCREEN`` is constant
 
 * type: asset
 
-* value: $"P_wpn_smk_electric"
+* value: ``$"P_wpn_smk_electric"``
 
 
 ``FX_ELECTRIC_SMOKESCREEN_BURN``
@@ -17542,11 +21144,11 @@ UI Globals
 
 .. note::
 
-	FX_ELECTRIC_SMOKESCREEN_BURN is constant
+	``FX_ELECTRIC_SMOKESCREEN_BURN`` is constant
 
 * type: asset
 
-* value: $"P_wpn_smk_electric_burn_mod"
+* value: ``$"P_wpn_smk_electric_burn_mod"``
 
 
 ``FX_GRENADE_SMOKESCREEN``
@@ -17554,11 +21156,11 @@ UI Globals
 
 .. note::
 
-	FX_GRENADE_SMOKESCREEN is constant
+	``FX_GRENADE_SMOKESCREEN`` is constant
 
 * type: asset
 
-* value: $"P_smkscreen_test"
+* value: ``$"P_smkscreen_test"``
 
 
 ``HEALTH_REGEN_TICK_TIME``
@@ -17566,11 +21168,11 @@ UI Globals
 
 .. note::
 
-	HEALTH_REGEN_TICK_TIME is constant
+	``HEALTH_REGEN_TICK_TIME`` is constant
 
 * type: float
 
-* value: 0.1
+* value: ``0.1``
 
 
 ``TITAN_HEALTH_REGEN_DELAY``
@@ -17578,11 +21180,11 @@ UI Globals
 
 .. note::
 
-	TITAN_HEALTH_REGEN_DELAY is constant
+	``TITAN_HEALTH_REGEN_DELAY`` is constant
 
 * type: float
 
-* value: 7.0
+* value: ``7.0``
 
 
 ``TITAN_HEALTH_REGEN_TIME``
@@ -17590,11 +21192,11 @@ UI Globals
 
 .. note::
 
-	TITAN_HEALTH_REGEN_TIME is constant
+	``TITAN_HEALTH_REGEN_TIME`` is constant
 
 * type: float
 
-* value: 14.0
+* value: ``14.0``
 
 
 ``TITAN_DEFAULT_PERMANANT_DAMAGE_FRAC``
@@ -17602,11 +21204,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DEFAULT_PERMANANT_DAMAGE_FRAC is constant
+	``TITAN_DEFAULT_PERMANANT_DAMAGE_FRAC`` is constant
 
 * type: float
 
-* value: 0.8
+* value: ``0.8``
 
 
 ``TITAN_GARAGE_TICK_TIME``
@@ -17614,11 +21216,11 @@ UI Globals
 
 .. note::
 
-	TITAN_GARAGE_TICK_TIME is constant
+	``TITAN_GARAGE_TICK_TIME`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_GARAGE_HEALTH_REGEN``
@@ -17626,11 +21228,11 @@ UI Globals
 
 .. note::
 
-	TITAN_GARAGE_HEALTH_REGEN is constant
+	``TITAN_GARAGE_HEALTH_REGEN`` is constant
 
 * type: int
 
-* value: 150
+* value: ``150``
 
 
 ``TITAN_GARAGE_MAX_HEALTH_REGEN``
@@ -17638,11 +21240,11 @@ UI Globals
 
 .. note::
 
-	TITAN_GARAGE_MAX_HEALTH_REGEN is constant
+	``TITAN_GARAGE_MAX_HEALTH_REGEN`` is constant
 
 * type: int
 
-* value: 300
+* value: ``300``
 
 
 ``DEFAULT_BOT_TITAN``
@@ -17650,11 +21252,11 @@ UI Globals
 
 .. note::
 
-	DEFAULT_BOT_TITAN is constant
+	``DEFAULT_BOT_TITAN`` is constant
 
 * type: string
 
-* value: "titan_atlas"
+* value: ``"titan_atlas"``
 
 
 ``MAX_DAMAGE_HISTORY_TIME``
@@ -17662,11 +21264,11 @@ UI Globals
 
 .. note::
 
-	MAX_DAMAGE_HISTORY_TIME is constant
+	``MAX_DAMAGE_HISTORY_TIME`` is constant
 
 * type: float
 
-* value: 12.0
+* value: ``12.0``
 
 
 ``MAX_NPC_KILL_STEAL_PREVENTION_TIME``
@@ -17674,11 +21276,11 @@ UI Globals
 
 .. note::
 
-	MAX_NPC_KILL_STEAL_PREVENTION_TIME is constant
+	``MAX_NPC_KILL_STEAL_PREVENTION_TIME`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``TITAN_DOOMED_EJECT_PROTECTION_TIME``
@@ -17686,11 +21288,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DOOMED_EJECT_PROTECTION_TIME is constant
+	``TITAN_DOOMED_EJECT_PROTECTION_TIME`` is constant
 
 * type: float
 
-* value: 1.5
+* value: ``1.5``
 
 
 ``TITAN_DOOMED_INVUL_TIME``
@@ -17698,11 +21300,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DOOMED_INVUL_TIME is constant
+	``TITAN_DOOMED_INVUL_TIME`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``TITAN_EJECT_MAX_PRESS_DELAY``
@@ -17710,11 +21312,11 @@ UI Globals
 
 .. note::
 
-	TITAN_EJECT_MAX_PRESS_DELAY is constant
+	``TITAN_EJECT_MAX_PRESS_DELAY`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``TITAN_DOOMED_MAX_DURATION``
@@ -17722,11 +21324,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DOOMED_MAX_DURATION is constant
+	``TITAN_DOOMED_MAX_DURATION`` is constant
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``TITAN_DOOMED_MAX_INITIAL_LOSS_FRAC``
@@ -17734,11 +21336,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DOOMED_MAX_INITIAL_LOSS_FRAC is constant
+	``TITAN_DOOMED_MAX_INITIAL_LOSS_FRAC`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``HIT_GROUP_HEADSHOT``
@@ -17746,11 +21348,11 @@ UI Globals
 
 .. note::
 
-	HIT_GROUP_HEADSHOT is constant
+	``HIT_GROUP_HEADSHOT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``COCKPIT_HEALTHBARS``
@@ -17758,11 +21360,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_HEALTHBARS is constant
+	``COCKPIT_HEALTHBARS`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``CORE_BUILD_PERCENT_FROM_TITAN_DAMAGE_RECEIVED``
@@ -17770,11 +21372,11 @@ UI Globals
 
 .. note::
 
-	CORE_BUILD_PERCENT_FROM_TITAN_DAMAGE_RECEIVED is constant
+	``CORE_BUILD_PERCENT_FROM_TITAN_DAMAGE_RECEIVED`` is constant
 
 * type: float
 
-* value: 0.002
+* value: ``0.002``
 
 
 ``CORE_BUILD_PERCENT_FROM_DOOM_INFLICTED``
@@ -17782,11 +21384,11 @@ UI Globals
 
 .. note::
 
-	CORE_BUILD_PERCENT_FROM_DOOM_INFLICTED is constant
+	``CORE_BUILD_PERCENT_FROM_DOOM_INFLICTED`` is constant
 
 * type: float
 
-* value: 10.0
+* value: ``10.0``
 
 
 ``CORE_BUILD_PERCENT_FROM_DOOM_ENTERED``
@@ -17794,11 +21396,11 @@ UI Globals
 
 .. note::
 
-	CORE_BUILD_PERCENT_FROM_DOOM_ENTERED is constant
+	``CORE_BUILD_PERCENT_FROM_DOOM_ENTERED`` is constant
 
 * type: float
 
-* value: 0.0
+* value: ``0.0``
 
 
 ``PILOT_SYNCED_MELEE_CONETRACE_RANGE``
@@ -17806,11 +21408,11 @@ UI Globals
 
 .. note::
 
-	PILOT_SYNCED_MELEE_CONETRACE_RANGE is constant
+	``PILOT_SYNCED_MELEE_CONETRACE_RANGE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``HUMAN_EXECUTION_RANGE``
@@ -17818,11 +21420,11 @@ UI Globals
 
 .. note::
 
-	HUMAN_EXECUTION_RANGE is constant
+	``HUMAN_EXECUTION_RANGE`` is constant
 
 * type: int
 
-* value: 115
+* value: ``115``
 
 
 ``HUMAN_EXECUTION_ANGLE``
@@ -17830,11 +21432,11 @@ UI Globals
 
 .. note::
 
-	HUMAN_EXECUTION_ANGLE is constant
+	``HUMAN_EXECUTION_ANGLE`` is constant
 
 * type: int
 
-* value: 40
+* value: ``40``
 
 
 ``PILOT_ELITE_MELEE_COUNTER_RANGE``
@@ -17842,11 +21444,11 @@ UI Globals
 
 .. note::
 
-	PILOT_ELITE_MELEE_COUNTER_RANGE is constant
+	``PILOT_ELITE_MELEE_COUNTER_RANGE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``PILOT_ELITE_MELEE_COUNTER_DAMAGE``
@@ -17854,11 +21456,11 @@ UI Globals
 
 .. note::
 
-	PILOT_ELITE_MELEE_COUNTER_DAMAGE is constant
+	``PILOT_ELITE_MELEE_COUNTER_DAMAGE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``PROWLER_EXECUTION_RANGE``
@@ -17866,11 +21468,11 @@ UI Globals
 
 .. note::
 
-	PROWLER_EXECUTION_RANGE is constant
+	``PROWLER_EXECUTION_RANGE`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``PROWLER_EXECUTION_ANGLE``
@@ -17878,11 +21480,11 @@ UI Globals
 
 .. note::
 
-	PROWLER_EXECUTION_ANGLE is constant
+	``PROWLER_EXECUTION_ANGLE`` is constant
 
 * type: int
 
-* value: 40
+* value: ``40``
 
 
 ``HUMAN_MELEE_KICK_ATTACK_DAMAGE``
@@ -17890,11 +21492,11 @@ UI Globals
 
 .. note::
 
-	HUMAN_MELEE_KICK_ATTACK_DAMAGE is constant
+	``HUMAN_MELEE_KICK_ATTACK_DAMAGE`` is constant
 
 * type: int
 
-* value: 120
+* value: ``120``
 
 
 ``HUMAN_MELEE_KICK_ATTACK_PUSHBACK_MULTIPLIER``
@@ -17902,11 +21504,11 @@ UI Globals
 
 .. note::
 
-	HUMAN_MELEE_KICK_ATTACK_PUSHBACK_MULTIPLIER is constant
+	``HUMAN_MELEE_KICK_ATTACK_PUSHBACK_MULTIPLIER`` is constant
 
 * type: int
 
-* value: 600
+* value: ``600``
 
 
 ``TITAN_ATTACK_RANGE``
@@ -17914,11 +21516,11 @@ UI Globals
 
 .. note::
 
-	TITAN_ATTACK_RANGE is constant
+	``TITAN_ATTACK_RANGE`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``TITAN_EXECUTION_RANGE``
@@ -17926,11 +21528,11 @@ UI Globals
 
 .. note::
 
-	TITAN_EXECUTION_RANGE is constant
+	``TITAN_EXECUTION_RANGE`` is constant
 
 * type: int
 
-* value: 350
+* value: ``350``
 
 
 ``TITAN_EXECUTION_ANGLE``
@@ -17938,11 +21540,11 @@ UI Globals
 
 .. note::
 
-	TITAN_EXECUTION_ANGLE is constant
+	``TITAN_EXECUTION_ANGLE`` is constant
 
 * type: int
 
-* value: 45
+* value: ``45``
 
 
 ``TITAN_AIMASSIST_MELEE_ATTACK_RANGE``
@@ -17950,11 +21552,11 @@ UI Globals
 
 .. note::
 
-	TITAN_AIMASSIST_MELEE_ATTACK_RANGE is constant
+	``TITAN_AIMASSIST_MELEE_ATTACK_RANGE`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``TITAN_AIMASSIST_MELEE_ATTACK_ANGLE``
@@ -17962,11 +21564,11 @@ UI Globals
 
 .. note::
 
-	TITAN_AIMASSIST_MELEE_ATTACK_ANGLE is constant
+	``TITAN_AIMASSIST_MELEE_ATTACK_ANGLE`` is constant
 
 * type: int
 
-* value: 25
+* value: ``25``
 
 
 ``TITAN_AIMASSIST_DASH_ATTACK_RANGE``
@@ -17974,11 +21576,11 @@ UI Globals
 
 .. note::
 
-	TITAN_AIMASSIST_DASH_ATTACK_RANGE is constant
+	``TITAN_AIMASSIST_DASH_ATTACK_RANGE`` is constant
 
 * type: int
 
-* value: 400
+* value: ``400``
 
 
 ``TITAN_AIMASSIST_DASH_ATTACK_ANGLE``
@@ -17986,11 +21588,11 @@ UI Globals
 
 .. note::
 
-	TITAN_AIMASSIST_DASH_ATTACK_ANGLE is constant
+	``TITAN_AIMASSIST_DASH_ATTACK_ANGLE`` is constant
 
 * type: int
 
-* value: 35
+* value: ``35``
 
 
 ``TITAN_MELEE_MAX_VERTICAL_PUSHBACK``
@@ -17998,11 +21600,11 @@ UI Globals
 
 .. note::
 
-	TITAN_MELEE_MAX_VERTICAL_PUSHBACK is constant
+	``TITAN_MELEE_MAX_VERTICAL_PUSHBACK`` is constant
 
 * type: float
 
-* value: 550.0
+* value: ``550.0``
 
 
 ``RODEO_DAMAGE_STATE_0_THRESHOLD``
@@ -18010,11 +21612,11 @@ UI Globals
 
 .. note::
 
-	RODEO_DAMAGE_STATE_0_THRESHOLD is constant
+	``RODEO_DAMAGE_STATE_0_THRESHOLD`` is constant
 
 * type: float
 
-* value: 1.0
+* value: ``1.0``
 
 
 ``RODEO_DAMAGE_STATE_1_THRESHOLD``
@@ -18022,11 +21624,11 @@ UI Globals
 
 .. note::
 
-	RODEO_DAMAGE_STATE_1_THRESHOLD is constant
+	``RODEO_DAMAGE_STATE_1_THRESHOLD`` is constant
 
 * type: float
 
-* value: 0.85
+* value: ``0.85``
 
 
 ``RODEO_DAMAGE_STATE_2_THRESHOLD``
@@ -18034,11 +21636,11 @@ UI Globals
 
 .. note::
 
-	RODEO_DAMAGE_STATE_2_THRESHOLD is constant
+	``RODEO_DAMAGE_STATE_2_THRESHOLD`` is constant
 
 * type: float
 
-* value: 0.65
+* value: ``0.65``
 
 
 ``RODEO_DAMAGE_STATE_3_THRESHOLD``
@@ -18046,11 +21648,11 @@ UI Globals
 
 .. note::
 
-	RODEO_DAMAGE_STATE_3_THRESHOLD is constant
+	``RODEO_DAMAGE_STATE_3_THRESHOLD`` is constant
 
 * type: float
 
-* value: 0.40
+* value: ``0.40``
 
 
 ``RODEO_DAMAGE_STATE_4_THRESHOLD``
@@ -18058,11 +21660,11 @@ UI Globals
 
 .. note::
 
-	RODEO_DAMAGE_STATE_4_THRESHOLD is constant
+	``RODEO_DAMAGE_STATE_4_THRESHOLD`` is constant
 
 * type: float
 
-* value: 0.15
+* value: ``0.15``
 
 
 ``VO_PRIORITY_STORY``
@@ -18070,11 +21672,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_STORY is constant
+	``VO_PRIORITY_STORY`` is constant
 
 * type: int
 
-* value: 3000
+* value: ``3000``
 
 
 ``VO_PRIORITY_GAMESTATE``
@@ -18082,11 +21684,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_GAMESTATE is constant
+	``VO_PRIORITY_GAMESTATE`` is constant
 
 * type: int
 
-* value: 1500
+* value: ``1500``
 
 
 ``VO_PRIORITY_ELIMINATION_STATUS``
@@ -18094,11 +21696,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_ELIMINATION_STATUS is constant
+	``VO_PRIORITY_ELIMINATION_STATUS`` is constant
 
 * type: int
 
-* value: 1250
+* value: ``1250``
 
 
 ``VO_PRIORITY_GAMEMODE``
@@ -18106,11 +21708,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_GAMEMODE is constant
+	``VO_PRIORITY_GAMEMODE`` is constant
 
 * type: int
 
-* value: 800
+* value: ``800``
 
 
 ``VO_PRIORITY_PLAYERSTATE``
@@ -18118,11 +21720,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_PLAYERSTATE is constant
+	``VO_PRIORITY_PLAYERSTATE`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``EVENT_PRIORITY_CALLOUTMAJOR3``
@@ -18130,11 +21732,11 @@ UI Globals
 
 .. note::
 
-	EVENT_PRIORITY_CALLOUTMAJOR3 is constant
+	``EVENT_PRIORITY_CALLOUTMAJOR3`` is constant
 
 * type: int
 
-* value: 6
+* value: ``6``
 
 
 ``EVENT_PRIORITY_CALLOUTMAJOR2``
@@ -18142,11 +21744,11 @@ UI Globals
 
 .. note::
 
-	EVENT_PRIORITY_CALLOUTMAJOR2 is constant
+	``EVENT_PRIORITY_CALLOUTMAJOR2`` is constant
 
 * type: int
 
-* value: 5
+* value: ``5``
 
 
 ``EVENT_PRIORITY_CALLOUTMAJOR``
@@ -18154,11 +21756,11 @@ UI Globals
 
 .. note::
 
-	EVENT_PRIORITY_CALLOUTMAJOR is constant
+	``EVENT_PRIORITY_CALLOUTMAJOR`` is constant
 
 * type: int
 
-* value: 4
+* value: ``4``
 
 
 ``EVENT_PRIORITY_CALLOUT``
@@ -18166,11 +21768,11 @@ UI Globals
 
 .. note::
 
-	EVENT_PRIORITY_CALLOUT is constant
+	``EVENT_PRIORITY_CALLOUT`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``EVENT_PRIORITY_CALLOUTMINOR2``
@@ -18178,11 +21780,11 @@ UI Globals
 
 .. note::
 
-	EVENT_PRIORITY_CALLOUTMINOR2 is constant
+	``EVENT_PRIORITY_CALLOUTMINOR2`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``EVENT_PRIORITY_CALLOUTMINOR``
@@ -18190,11 +21792,11 @@ UI Globals
 
 .. note::
 
-	EVENT_PRIORITY_CALLOUTMINOR is constant
+	``EVENT_PRIORITY_CALLOUTMINOR`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``VO_PRIORITY_AI_CHATTER_HIGH``
@@ -18202,11 +21804,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_AI_CHATTER_HIGH is constant
+	``VO_PRIORITY_AI_CHATTER_HIGH`` is constant
 
 * type: int
 
-* value: 30
+* value: ``30``
 
 
 ``VO_PRIORITY_AI_CHATTER``
@@ -18214,11 +21816,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_AI_CHATTER is constant
+	``VO_PRIORITY_AI_CHATTER`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``VO_PRIORITY_AI_CHATTER_LOW``
@@ -18226,11 +21828,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_AI_CHATTER_LOW is constant
+	``VO_PRIORITY_AI_CHATTER_LOW`` is constant
 
 * type: int
 
-* value: 10
+* value: ``10``
 
 
 ``VO_PRIORITY_AI_CHATTER_LOWEST``
@@ -18238,11 +21840,11 @@ UI Globals
 
 .. note::
 
-	VO_PRIORITY_AI_CHATTER_LOWEST is constant
+	``VO_PRIORITY_AI_CHATTER_LOWEST`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``VO_DEBOUNCE_TIME_AI_CHATTER_HIGH``
@@ -18250,7 +21852,7 @@ UI Globals
 
 * type: float
 
-* value: 4.0
+* value: ``4.0``
 
 
 ``VO_DEBOUNCE_TIME_AI_CHATTER``
@@ -18258,7 +21860,7 @@ UI Globals
 
 * type: float
 
-* value: 5.0
+* value: ``5.0``
 
 
 ``VO_DEBOUNCE_TIME_AI_CHATTER_LOW``
@@ -18266,7 +21868,7 @@ UI Globals
 
 * type: float
 
-* value: 6.0
+* value: ``6.0``
 
 
 ``VO_DEBOUNCE_TIME_AI_CHATTER_LOWEST``
@@ -18274,7 +21876,7 @@ UI Globals
 
 * type: float
 
-* value: 7.0
+* value: ``7.0``
 
 
 ``VO_HARDPOINT_HELP_REQUEST_MINWAIT``
@@ -18282,11 +21884,11 @@ UI Globals
 
 .. note::
 
-	VO_HARDPOINT_HELP_REQUEST_MINWAIT is constant
+	``VO_HARDPOINT_HELP_REQUEST_MINWAIT`` is constant
 
 * type: int
 
-* value: 20
+* value: ``20``
 
 
 ``VO_HARDPOINT_HELP_REQUEST_TIMEOUT``
@@ -18294,11 +21896,11 @@ UI Globals
 
 .. note::
 
-	VO_HARDPOINT_HELP_REQUEST_TIMEOUT is constant
+	``VO_HARDPOINT_HELP_REQUEST_TIMEOUT`` is constant
 
 * type: int
 
-* value: 40
+* value: ``40``
 
 
 ``VO_HARDPOINT_PLAYER_THANKS_MINWAIT``
@@ -18306,11 +21908,11 @@ UI Globals
 
 .. note::
 
-	VO_HARDPOINT_PLAYER_THANKS_MINWAIT is constant
+	``VO_HARDPOINT_PLAYER_THANKS_MINWAIT`` is constant
 
 * type: int
 
-* value: 15
+* value: ``15``
 
 
 ``VO_AI_CHATTER_TO_PLAYER_MINWAIT``
@@ -18318,11 +21920,11 @@ UI Globals
 
 .. note::
 
-	VO_AI_CHATTER_TO_PLAYER_MINWAIT is constant
+	``VO_AI_CHATTER_TO_PLAYER_MINWAIT`` is constant
 
 * type: int
 
-* value: 60
+* value: ``60``
 
 
 ``VO_AI_CHATTER_PLAYER_CALLOUT_MAXDIST``
@@ -18330,11 +21932,11 @@ UI Globals
 
 .. note::
 
-	VO_AI_CHATTER_PLAYER_CALLOUT_MAXDIST is constant
+	``VO_AI_CHATTER_PLAYER_CALLOUT_MAXDIST`` is constant
 
 * type: int
 
-* value: 3500
+* value: ``3500``
 
 
 ``instamissionTypes``
@@ -18348,11 +21950,11 @@ UI Globals
 
 .. note::
 
-	TITAN_KNEEL_DISTANCE is constant
+	``TITAN_KNEEL_DISTANCE`` is constant
 
 * type: int
 
-* value: 720
+* value: ``720``
 
 
 ``TITAN_FORCE_KNEEL_DISTANCE``
@@ -18360,11 +21962,11 @@ UI Globals
 
 .. note::
 
-	TITAN_FORCE_KNEEL_DISTANCE is constant
+	``TITAN_FORCE_KNEEL_DISTANCE`` is constant
 
 * type: int
 
-* value: 220
+* value: ``220``
 
 
 ``TITAN_STAND_DISTANCE``
@@ -18372,11 +21974,11 @@ UI Globals
 
 .. note::
 
-	TITAN_STAND_DISTANCE is constant
+	``TITAN_STAND_DISTANCE`` is constant
 
 * type: int
 
-* value: 850
+* value: ``850``
 
 
 ``TITAN_COCKPIT_DAMAGE_STATIC``
@@ -18384,11 +21986,11 @@ UI Globals
 
 .. note::
 
-	TITAN_COCKPIT_DAMAGE_STATIC is constant
+	``TITAN_COCKPIT_DAMAGE_STATIC`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``STANCE_KNEEL``
@@ -18396,11 +21998,11 @@ UI Globals
 
 .. note::
 
-	STANCE_KNEEL is constant
+	``STANCE_KNEEL`` is constant
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``STANCE_KNEELING``
@@ -18408,11 +22010,11 @@ UI Globals
 
 .. note::
 
-	STANCE_KNEELING is constant
+	``STANCE_KNEELING`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``STANCE_STANDING``
@@ -18420,11 +22022,11 @@ UI Globals
 
 .. note::
 
-	STANCE_STANDING is constant
+	``STANCE_STANDING`` is constant
 
 * type: int
 
-* value: 2
+* value: ``2``
 
 
 ``STANCE_STAND``
@@ -18432,11 +22034,11 @@ UI Globals
 
 .. note::
 
-	STANCE_STAND is constant
+	``STANCE_STAND`` is constant
 
 * type: int
 
-* value: 3
+* value: ``3``
 
 
 ``TITAN_DAMAGE_STATE_ARMOR_HEALTH``
@@ -18444,11 +22046,11 @@ UI Globals
 
 .. note::
 
-	TITAN_DAMAGE_STATE_ARMOR_HEALTH is constant
+	``TITAN_DAMAGE_STATE_ARMOR_HEALTH`` is constant
 
 * type: float
 
-* value: 0.25
+* value: ``0.25``
 
 
 ``TITAN_ADDITIVE_FLINCH_DAMAGE_THRESHOLD``
@@ -18456,11 +22058,11 @@ UI Globals
 
 .. note::
 
-	TITAN_ADDITIVE_FLINCH_DAMAGE_THRESHOLD is constant
+	``TITAN_ADDITIVE_FLINCH_DAMAGE_THRESHOLD`` is constant
 
 * type: int
 
-* value: 500
+* value: ``500``
 
 
 ``COCKPIT_SPARK_FX_DAMAGE_LIMIT``
@@ -18468,11 +22070,11 @@ UI Globals
 
 .. note::
 
-	COCKPIT_SPARK_FX_DAMAGE_LIMIT is constant
+	``COCKPIT_SPARK_FX_DAMAGE_LIMIT`` is constant
 
 * type: int
 
-* value: 200
+* value: ``200``
 
 
 ``PILOT_HIT_INDICATOR_DAMAGE_LIMIT``
@@ -18480,11 +22082,11 @@ UI Globals
 
 .. note::
 
-	PILOT_HIT_INDICATOR_DAMAGE_LIMIT is constant
+	``PILOT_HIT_INDICATOR_DAMAGE_LIMIT`` is constant
 
 * type: int
 
-* value: 1
+* value: ``1``
 
 
 ``TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE``
@@ -18492,11 +22094,11 @@ UI Globals
 
 .. note::
 
-	TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE is constant
+	``TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE`` is constant
 
 * type: int
 
-* value: 240
+* value: ``240``
 
 
 ``TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE_SQUARED``
@@ -18504,11 +22106,11 @@ UI Globals
 
 .. note::
 
-	TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE_SQUARED is constant
+	``TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE_SQUARED`` is constant
 
 * type: unknown
 
-* value: TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE
+* value: ``TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE * TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE``
 
 
 ``TITAN_BUBBLE_SHIELD_CYLINDER_TRIGGER_HEIGHT``
@@ -18516,11 +22118,11 @@ UI Globals
 
 .. note::
 
-	TITAN_BUBBLE_SHIELD_CYLINDER_TRIGGER_HEIGHT is constant
+	``TITAN_BUBBLE_SHIELD_CYLINDER_TRIGGER_HEIGHT`` is constant
 
 * type: unknown
 
-* value: TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE
+* value: ``TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE + 50``
 
 
 ``FIRST_PERSON_SPECTATOR_DELAY``
@@ -18528,11 +22130,11 @@ UI Globals
 
 .. note::
 
-	FIRST_PERSON_SPECTATOR_DELAY is constant
+	``FIRST_PERSON_SPECTATOR_DELAY`` is constant
 
 * type: float
 
-* value: 0.5
+* value: ``0.5``
 
 
 ``BATTERY_PICKUP_KIT_EFFECTIVENESS``
@@ -18540,11 +22142,11 @@ UI Globals
 
 .. note::
 
-	BATTERY_PICKUP_KIT_EFFECTIVENESS is constant
+	``BATTERY_PICKUP_KIT_EFFECTIVENESS`` is constant
 
 * type: float
 
-* value: 0.75
+* value: ``0.75``
 
 
 ``DEG_TO_RAD``
@@ -18552,11 +22154,11 @@ UI Globals
 
 .. note::
 
-	DEG_TO_RAD is constant
+	``DEG_TO_RAD`` is constant
 
 * type: float
 
-* value: 0.01745329251994
+* value: ``0.01745329251994``
 
 
 ``RAD_TO_DEG``
@@ -18564,11 +22166,11 @@ UI Globals
 
 .. note::
 
-	RAD_TO_DEG is constant
+	``RAD_TO_DEG`` is constant
 
 * type: float
 
-* value: 57.29577951308232
+* value: ``57.29577951308232``
 
 
 ``LEGAL_PLAYER_TITAN_SETTINGS``
@@ -18594,7 +22196,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``_serverEntityVars``
@@ -18602,7 +22204,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``_serverVarHandles``
@@ -18610,7 +22212,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``_nextServerVarIndex``
@@ -18618,7 +22220,7 @@ UI Globals
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``_entityClassVars``
@@ -18626,7 +22228,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``_entityClassVarsIsEnts``
@@ -18634,7 +22236,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``_entityClassVarsSyncToAllClients``
@@ -18642,7 +22244,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``_entityClassVarHandles``
@@ -18650,7 +22252,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``_entityClassVarChangeCallbacks``
@@ -18658,7 +22260,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``_nextEntVarIndex``
@@ -18666,7 +22268,7 @@ UI Globals
 
 * type: int
 
-* value: 0
+* value: ``0``
 
 
 ``_entityVarsByEHandle``
@@ -18674,7 +22276,7 @@ UI Globals
 
 * type: table
 
-* value: {}
+* value: ``{}``
 
 
 ``ePassives``
@@ -18688,11 +22290,118 @@ UI Globals
 
 .. note::
 
-	_PassiveFromEnum is constant
+	``_PassiveFromEnum`` is constant
 
 * type: table
 
-* value: {
+* value:
+
+.. code-block:: javascript
+
+	{
+		[ "pas_shield_regen" ]					= ePassives.PAS_SHIELD_REGEN,
+		[ "pas_wall_runner" ]					= ePassives.PAS_WALL_RUNNER,
+		[ "pas_minimap_all" ]					= ePassives.PAS_MINIMAP_ALL,
+		[ "pas_minimap_players" ]				= ePassives.PAS_MINIMAP_PLAYERS,
+		[ "pas_minimap_ai" ]					= ePassives.PAS_MINIMAP_AI,
+		[ "pas_enhanced_titan_ai" ]				= ePassives.PAS_ENHANCED_TITAN_AI,
+		[ "pas_longer_bubble" ]					= ePassives.PAS_LONGER_BUBBLE,
+		[ "pas_dash_recharge" ]					= ePassives.PAS_DASH_RECHARGE,
+		[ "pas_auto_eject" ]					= ePassives.PAS_AUTO_EJECT,
+		[ "pas_doomed_time" ]					= ePassives.PAS_DOOMED_TIME,
+		[ "pas_conscript" ]						= ePassives.PAS_CONSCRIPT,
+		[ "pas_detect_respawn" ]				= ePassives.PAS_DETECT_RESPAWN,
+		[ "pas_fusion_core" ]					= ePassives.PAS_FUSION_CORE,
+		[ "pas_stealth_movement" ]				= ePassives.PAS_STEALTH_MOVEMENT,
+		[ "pas_fast_hack" ]						= ePassives.PAS_FAST_HACK,
+		[ "pas_ordnance_pack" ]					= ePassives.PAS_ORDNANCE_PACK,
+		[ "pas_power_cell" ]					= ePassives.PAS_POWER_CELL,
+		[ "pas_wallhang" ]						= ePassives.PAS_WALLHANG,
+		[ "pas_fast_health_regen" ]				= ePassives.PAS_FAST_HEALTH_REGEN,
+		[ "pas_defensive_core" ]				= ePassives.PAS_DEFENSIVE_CORE,
+		[ "pas_run_and_gun" ]					= ePassives.PAS_RUN_AND_GUN,
+		[ "pas_dead_mans_trigger" ]				= ePassives.PAS_DEAD_MANS_TRIGGER,
+		[ "pas_fast_reload" ]					= ePassives.PAS_FAST_RELOAD,
+		[ "pas_auto_sonar" ]					= ePassives.PAS_AUTO_SONAR,
+		[ "pas_assault_reactor" ]				= ePassives.PAS_ASSAULT_REACTOR,
+		[ "pas_hyper_core" ]					= ePassives.PAS_HYPER_CORE,
+		[ "pas_marathon_core" ]					= ePassives.PAS_MARATHON_CORE,
+		[ "pas_build_up_nuclear_core" ]			= ePassives.PAS_BUILD_UP_NUCLEAR_CORE,
+		[ "pas_cloaked_wallrun" ]				= ePassives.PAS_CLOAKED_WALLRUN,
+		[ "pas_cloaked_wallhang" ]				= ePassives.PAS_CLOAKED_WALLHANG,
+		[ "pas_smoke_sight" ]					= ePassives.PAS_SMOKE_SIGHT,
+		[ "pas_fast_embark" ]					= ePassives.PAS_FAST_EMBARK,
+		[ "pas_enemy_death_icons" ]				= ePassives.PAS_ENEMY_DEATH_ICONS,
+		[ "pas_cdr_on_kill" ]					= ePassives.PAS_CDR_ON_KILL,
+		[ "pas_at_hunter" ]						= ePassives.PAS_AT_HUNTER,
+		[ "pas_phase_eject" ]					= ePassives.PAS_PHASE_EJECT,
+		[ "pas_ads_hover" ]						= ePassives.PAS_ADS_HOVER,
+		[ "pas_mobility_dash_capacity"]			= ePassives.PAS_MOBILITY_DASH_CAPACITY,
+		[ "pas_off_the_grid" ]					= ePassives.PAS_OFF_THE_GRID,
+		[ "pas_guardian_chip" ]					= ePassives.PAS_GUARDIAN_CHIP,
+		[ "pas_doomed_speed" ]					= ePassives.PAS_DOOMED_SPEED,
+		[ "pas_shielded_core" ]					= ePassives.PAS_SHIELDED_CORE,
+		[ "pas_fast_ads" ]						= ePassives.PAS_FAST_ADS,
+		[ "pas_fast_swap" ]						= ePassives.PAS_FAST_SWAP,
+		[ "pas_warpfall" ]						= ePassives.PAS_WARPFALL,
+		[ "pas_bubbleshield" ]					= ePassives.PAS_BUBBLESHIELD,
+
+		[ "pas_ronin_weapon" ]					= ePassives.PAS_RONIN_WEAPON,
+		[ "pas_northstar_weapon" ]				= ePassives.PAS_NORTHSTAR_WEAPON,
+		[ "pas_ion_weapon" ]					= ePassives.PAS_ION_WEAPON,
+		[ "pas_tone_weapon" ]					= ePassives.PAS_TONE_WEAPON,
+		[ "pas_scorch_weapon" ]					= ePassives.PAS_SCORCH_WEAPON,
+		[ "pas_legion_weapon" ]					= ePassives.PAS_LEGION_WEAPON,
+
+		[ "pas_ion_tripwire" ]					= ePassives.PAS_ION_TRIPWIRE,
+		[ "pas_ion_vortex" ]					= ePassives.PAS_ION_VORTEX,
+		[ "pas_ion_lasercannon" ]				= ePassives.PAS_ION_LASERCANNON,
+		[ "pas_ion_weapon_ads" ]				= ePassives.PAS_ION_WEAPON_ADS,
+
+		[ "pas_tone_rockets" ]					= ePassives.PAS_TONE_ROCKETS,
+		[ "pas_tone_sonar" ]					= ePassives.PAS_TONE_SONAR,
+		[ "pas_tone_wall" ]						= ePassives.PAS_TONE_WALL,
+		[ "pas_tone_burst" ]					= ePassives.PAS_TONE_BURST,
+
+		[ "pas_ronin_arcwave" ]					= ePassives.PAS_RONIN_ARCWAVE,
+		[ "pas_ronin_phase" ]					= ePassives.PAS_RONIN_PHASE,
+		[ "pas_ronin_swordcore" ]				= ePassives.PAS_RONIN_SWORDCORE,
+		[ "pas_ronin_autoshift" ]				= ePassives.PAS_RONIN_AUTOSHIFT,
+
+		[ "pas_northstar_cluster" ]				= ePassives.PAS_NORTHSTAR_CLUSTER,
+		[ "pas_northstar_trap" ]				= ePassives.PAS_NORTHSTAR_TRAP,
+		[ "pas_northstar_flightcore" ]			= ePassives.PAS_NORTHSTAR_FLIGHTCORE,
+		[ "pas_northstar_optics" ]				= ePassives.PAS_NORTHSTAR_OPTICS,
+
+		[ "pas_scorch_firewall" ]				= ePassives.PAS_SCORCH_FIREWALL,
+		[ "pas_scorch_shield" ]					= ePassives.PAS_SCORCH_SHIELD,
+		[ "pas_scorch_selfdmg" ]				= ePassives.PAS_SCORCH_SELFDMG,
+		[ "pas_scorch_flamecore" ]				= ePassives.PAS_SCORCH_FLAMECORE,
+
+		[ "pas_legion_spinup" ]					= ePassives.PAS_LEGION_SPINUP,
+		[ "pas_legion_gunshield" ]				= ePassives.PAS_LEGION_GUNSHIELD,
+		[ "pas_legion_smartcore" ]				= ePassives.PAS_LEGION_SMARTCORE,
+		[ "pas_legion_siege" ]					= ePassives.PAS_LEGION_SIEGE,
+		[ "pas_legion_chargeshot" ]				= ePassives.PAS_LEGION_CHARGESHOT,
+
+		[ "pas_vanguard_coremeter" ]			= ePassives.PAS_VANGUARD_COREMETER,
+		[ "pas_vanguard_shield" ]				= ePassives.PAS_VANGUARD_SHIELD,
+		[ "pas_vanguard_rearm" ]				= ePassives.PAS_VANGUARD_REARM,
+		[ "pas_vanguard_doom" ]					= ePassives.PAS_VANGUARD_DOOM,
+		[ "pas_vanguard_core1" ]				= ePassives.PAS_VANGUARD_CORE1,
+		[ "pas_vanguard_core2" ]				= ePassives.PAS_VANGUARD_CORE2,
+		[ "pas_vanguard_core3" ]				= ePassives.PAS_VANGUARD_CORE3,
+		[ "pas_vanguard_core4" ]				= ePassives.PAS_VANGUARD_CORE4,
+		[ "pas_vanguard_core5" ]				= ePassives.PAS_VANGUARD_CORE5,
+		[ "pas_vanguard_core6" ]				= ePassives.PAS_VANGUARD_CORE6,
+		[ "pas_vanguard_core7" ]				= ePassives.PAS_VANGUARD_CORE7,
+		[ "pas_vanguard_core8" ]				= ePassives.PAS_VANGUARD_CORE8,
+		[ "pas_vanguard_core9" ]				= ePassives.PAS_VANGUARD_CORE9,
+
+		[ "pas_pilot_hardcore_settings" ]		= ePassives.PAS_PILOT_HARDCORE_SETTINGS,
+		[ "pas_titan_hardcore_settings" ]		= ePassives.PAS_TITAN_HARDCORE_SETTINGS,
+		[ "pas_anti_rodeo" ]					= ePassives.PAS_ANTI_RODEO,
+	}
 
 
 ``RodeoPackageStruct``
@@ -18701,2142 +22410,50 @@ UI Globals
 * type: struct
 
 
-``CHALLENGES_ENABLED``
+``PLAYER_LEVELUP_FX``
 ^^^^^^^^^^
 
 .. note::
 
-	CHALLENGES_ENABLED is constant
+	``PLAYER_LEVELUP_FX`` is constant
 
-* type: bool
-
-* value: false
-
-
-``DEBUG_CHALLENGES``
-^^^^^^^^^^
-
-.. note::
-
-	DEBUG_CHALLENGES is constant
-
-* type: bool
-
-* value: false
-
-
-``DEBUG_DAILIES``
-^^^^^^^^^^
-
-.. note::
-
-	DEBUG_DAILIES is constant
-
-* type: bool
-
-* value: false
-
-
-``MAX_CHALLENGE_TIERS``
-^^^^^^^^^^
-
-.. note::
-
-	MAX_CHALLENGE_TIERS is constant
-
-* type: int
-
-* value: 10
-
-
-``CHALLENGES_RESET_AT_EACH_STAGE``
-^^^^^^^^^^
-
-.. note::
-
-	CHALLENGES_RESET_AT_EACH_STAGE is constant
-
-* type: bool
-
-* value: false
-
-
-``LinkedStat``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ChallengeData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ChallengeCategoryNames``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ChallengeProgressData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ChallengeItemReward``
-^^^^^^^^^^
-
-* type: struct
-
-
-``EARNMETER_ENABLED``
-^^^^^^^^^^
-
-.. note::
-
-	EARNMETER_ENABLED is constant
-
-* type: bool
-
-* value: true
-
-
-``GRUNTCHATTER_ENABLED``
-^^^^^^^^^^
-
-.. note::
-
-	GRUNTCHATTER_ENABLED is constant
-
-* type: bool
-
-* value: false
-
-
-``BATTLECHATTER_ENABLED``
-^^^^^^^^^^
-
-.. note::
-
-	BATTLECHATTER_ENABLED is constant
-
-* type: bool
-
-* value: true
-
-
-``FACTION_DIALOGUE_ENABLED``
-^^^^^^^^^^
-
-.. note::
-
-	FACTION_DIALOGUE_ENABLED is constant
-
-* type: bool
-
-* value: true
-
-
-``GRUNT_CHATTER_MP_ENABLED``
-^^^^^^^^^^
-
-.. note::
-
-	GRUNT_CHATTER_MP_ENABLED is constant
-
-* type: bool
-
-* value: true
-
-
-``SPECTRE_CHATTER_MP_ENABLED``
-^^^^^^^^^^
-
-.. note::
-
-	SPECTRE_CHATTER_MP_ENABLED is constant
-
-* type: bool
-
-* value: true
-
-
-``ANTI_RODEO_SMOKE_ENABLED``
-^^^^^^^^^^
-
-.. note::
-
-	ANTI_RODEO_SMOKE_ENABLED is constant
-
-* type: bool
-
-* value: true
-
-
-``HOLD_BUTTON_FOR_TITAN_EXECUTION``
-^^^^^^^^^^
-
-.. note::
-
-	HOLD_BUTTON_FOR_TITAN_EXECUTION is constant
-
-* type: bool
-
-* value: false
-
-
-``TITAN_EXECUTION_ATTACKER_IS_INVULNERABLE``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_EXECUTION_ATTACKER_IS_INVULNERABLE is constant
-
-* type: bool
-
-* value: true
-
-
-``TITAN_EXECUTION_GIVES_BATTERY``
-^^^^^^^^^^
-
-.. note::
-
-	TITAN_EXECUTION_GIVES_BATTERY is constant
-
-* type: bool
-
-* value: false
-
-
-``HAS_GAMEMODES``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_GAMEMODES is constant
-
-* type: bool
-
-* value: true
-
-
-``HAS_AI_SQUAD_LIMITS``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_AI_SQUAD_LIMITS is constant
-
-* type: bool
-
-* value: true
-
-
-``HAS_EVAC``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_EVAC is constant
-
-* type: bool
-
-* value: true
-
-
-``HAS_STATS``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_STATS is constant
-
-* type: bool
-
-* value: true
-
-
-``HAS_BOSS_AI``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_BOSS_AI is constant
-
-* type: bool
-
-* value: false
-
-
-``HAS_TITAN_EARNING``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_TITAN_EARNING is constant
-
-* type: bool
-
-* value: true
-
-
-``HAS_TITAN_WEAPON_SWAPPING``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_TITAN_WEAPON_SWAPPING is constant
-
-* type: bool
-
-* value: false
-
-
-``HAS_TITAN_TELEMETRY``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_TITAN_TELEMETRY is constant
-
-* type: bool
-
-* value: false
-
-
-``EARN_METER_DATATABLE``
-^^^^^^^^^^
-
-.. note::
-
-	EARN_METER_DATATABLE is constant
-
-* type: asset
-
-* value: $"datatable/earn_meter_mp.rpak"
-
-
-``ANTI_RODEO_MINIGAME_ENABLED``
-^^^^^^^^^^
-
-.. note::
-
-	ANTI_RODEO_MINIGAME_ENABLED is constant
-
-* type: bool
-
-* value: false
-
-
-``HAS_RODEO_HOLD_OPTION``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_RODEO_HOLD_OPTION is constant
-
-* type: bool
-
-* value: true
-
-
-``HAS_WEAPON_PICKUP_HIGHLIGHT``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_WEAPON_PICKUP_HIGHLIGHT is constant
-
-* type: bool
-
-* value: true
-
-
-``HAS_AMMO_FULL_FLYOUT``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_AMMO_FULL_FLYOUT is constant
-
-* type: bool
-
-* value: false
-
-
-``HAS_THREAT_SCOPE_SLOT_LOCK``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_THREAT_SCOPE_SLOT_LOCK is constant
-
-* type: bool
-
-* value: true
-
-
-``HAS_PANEL_HIGHLIGHT``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_PANEL_HIGHLIGHT is constant
-
-* type: bool
-
-* value: false
-
-
-``HAS_CAPITAL_SHIP_SKYSHOW``
-^^^^^^^^^^
-
-.. note::
-
-	HAS_CAPITAL_SHIP_SKYSHOW is constant
-
-* type: bool
-
-* value: false
-
-
-``ePlayerStatType``
-^^^^^^^^^^
-
-* type: enum
-
-
-``PlayerStatData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ShGlobalsMP``
-^^^^^^^^^^
-
-* type: struct
-
-
-``shGlobalMP``
-^^^^^^^^^^
-
-* type: ShGlobalsMP
-
-
-``THIRD_PERSON_KILL_REPLAY_ALWAYS``
-^^^^^^^^^^
-
-.. note::
-
-	THIRD_PERSON_KILL_REPLAY_ALWAYS is constant
-
-* type: bool
-
-* value: false
-
-
-``THIRD_PERSON_KILL_REPLAY_PROJECTILES``
-^^^^^^^^^^
-
-.. note::
-
-	THIRD_PERSON_KILL_REPLAY_PROJECTILES is constant
-
-* type: bool
-
-* value: true
-
-
-``THIRD_PERSON_KILL_REPLAY_PROJECTILES_MINTIME``
-^^^^^^^^^^
-
-.. note::
-
-	THIRD_PERSON_KILL_REPLAY_PROJECTILES_MINTIME is constant
-
-* type: float
-
-* value: 0.3
-
-
-``MODEL_ATTRITION_BANK``
-^^^^^^^^^^
-
-.. note::
-
-	MODEL_ATTRITION_BANK is constant
-
-* type: asset
-
-* value: $"models/Robots/mobile_hardpoint/mobile_hardpoint.mdl"
-
-
-``CTF_FLAG_MODEL``
-^^^^^^^^^^
-
-.. note::
-
-	CTF_FLAG_MODEL is constant
-
-* type: asset
-
-* value: $"models/signs/flag_base_pole_ctf.mdl"
-
-
-``CTF_FLAG_BASE_MODEL``
-^^^^^^^^^^
-
-.. note::
-
-	CTF_FLAG_BASE_MODEL is constant
-
-* type: asset
-
-* value: $"models/communication/flag_base.mdl"
-
-
-``SCAVENGE_BASE_MODEL``
-^^^^^^^^^^
-
-.. note::
-
-	SCAVENGE_BASE_MODEL is constant
-
-* type: asset
-
-* value: $"models/industrial/proto_sur_base.mdl"
-
-
-``ESCAPE_POD_MODEL``
-^^^^^^^^^^
-
-.. note::
-
-	ESCAPE_POD_MODEL is constant
-
-* type: asset
-
-* value: $"models/vehicle/escape_pod/escape_pod.mdl"
-
-
-``FFA_MODE_ICON``
-^^^^^^^^^^
-
-.. note::
-
-	FFA_MODE_ICON is constant
-
-* type: asset
-
-* value: $"vgui/burncards/burncard_group_icon_weapons"
-
-
-``SST_MODE_ICON``
-^^^^^^^^^^
-
-.. note::
-
-	SST_MODE_ICON is constant
-
-* type: asset
-
-* value: $"vgui/burncards/burncard_group_icon_titan"
-
-
-``BOMB_MODEL``
-^^^^^^^^^^
-
-.. note::
-
-	BOMB_MODEL is constant
-
-* type: asset
-
-* value: $"models/weapons/bullets/temp_triple_threat_projectile_large.mdl"
-
-
-``TEAM_MIL_GRUNT_MODEL``
-^^^^^^^^^^
-
-.. note::
-
-	TEAM_MIL_GRUNT_MODEL is constant
-
-* type: asset
-
-* value: $"models/humans/grunts/mlt_grunt_rifle.mdl"
-
-
-``TEAM_MIL_GRUNT_MODEL_LMG``
-^^^^^^^^^^
-
-.. note::
-
-	TEAM_MIL_GRUNT_MODEL_LMG is constant
-
-* type: asset
-
-* value: $"models/humans/grunts/mlt_grunt_lmg.mdl"
-
-
-``TEAM_MIL_GRUNT_MODEL_RIFLE``
-^^^^^^^^^^
-
-.. note::
-
-	TEAM_MIL_GRUNT_MODEL_RIFLE is constant
-
-* type: asset
-
-* value: $"models/humans/grunts/mlt_grunt_rifle.mdl"
-
-
-``TEAM_MIL_GRUNT_MODEL_ROCKET``
-^^^^^^^^^^
-
-.. note::
-
-	TEAM_MIL_GRUNT_MODEL_ROCKET is constant
-
-* type: asset
-
-* value: $"models/humans/grunts/mlt_grunt_rifle.mdl"
-
-
-``TEAM_MIL_GRUNT_MODEL_SHOTGUN``
-^^^^^^^^^^
-
-.. note::
-
-	TEAM_MIL_GRUNT_MODEL_SHOTGUN is constant
-
-* type: asset
-
-* value: $"models/humans/grunts/mlt_grunt_shotgun.mdl"
-
-
-``TEAM_MIL_GRUNT_MODEL_SMG``
-^^^^^^^^^^
-
-.. note::
-
-	TEAM_MIL_GRUNT_MODEL_SMG is constant
-
-* type: asset
-
-* value: $"models/humans/grunts/mlt_grunt_smg.mdl"
-
-
-``MODEL_IMC_SHIELD_CAPTAIN``
-^^^^^^^^^^
-
-.. note::
-
-	MODEL_IMC_SHIELD_CAPTAIN is constant
-
-* type: asset
-
-* value: $"models/humans/grunts/imc_grunt_shield_captain.mdl"
-
-
-``MODEL_FRONTIER_DEFENSE_TURRET_SITE``
-^^^^^^^^^^
-
-.. note::
-
-	MODEL_FRONTIER_DEFENSE_TURRET_SITE is constant
-
-* type: asset
-
-* value: $"models/props/turret_base/turret_base.mdl"
-
-
-``MODEL_FRONTIER_DEFENSE_PORT``
-^^^^^^^^^^
-
-.. note::
-
-	MODEL_FRONTIER_DEFENSE_PORT is constant
-
-* type: asset
-
-* value: $"models/props/battery_port/battery_port_animated.mdl"
-
-
-``MODEL_FRONTIER_DEFENSE_FOUNDATION_PLATE``
-^^^^^^^^^^
-
-.. note::
-
-	MODEL_FRONTIER_DEFENSE_FOUNDATION_PLATE is constant
-
-* type: asset
-
-* value: $"models/industrial/grate_mod.mdl"
-
-
-``ATCOOP_WEAPON_LOCKER``
-^^^^^^^^^^
-
-.. note::
-
-	ATCOOP_WEAPON_LOCKER is constant
-
-* type: asset
-
-* value: $"models/containers/pelican_case_large_IMC.mdl"
-
-
-``ATCOOP_WEAPON_LOCKER_OPEN``
-^^^^^^^^^^
-
-.. note::
-
-	ATCOOP_WEAPON_LOCKER_OPEN is constant
-
-* type: asset
-
-* value: $"models/containers/pelican_case_IMC_open.mdl"
-
-
-``ATCOOP_GRENADE_LOCKER``
-^^^^^^^^^^
-
-.. note::
-
-	ATCOOP_GRENADE_LOCKER is constant
-
-* type: asset
-
-* value: $"models/containers/pelican_case_large.mdl"
-
-
-``ATCOOP_GRENADE_LOCKER_OPEN``
-^^^^^^^^^^
-
-.. note::
-
-	ATCOOP_GRENADE_LOCKER_OPEN is constant
-
-* type: asset
-
-* value: $"models/containers/pelican_case_large_open.mdl"
-
-
-``MOD_ICON_NONE``
-^^^^^^^^^^
-
-.. note::
-
-	MOD_ICON_NONE is constant
-
-* type: asset
-
-* value: $"ui/menu/items/mod_icons/none"
-
-
-``eUnlockType``
-^^^^^^^^^^
-
-* type: enum
-
-
-``PurchaseData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ChildUnlock``
-^^^^^^^^^^
-
-* type: struct
-
-
-``Unlock``
-^^^^^^^^^^
-
-* type: struct
-
-
-``GlobalItemRef``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ItemDisplayData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``SubItemData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ItemData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``RandomUnlockCategory``
-^^^^^^^^^^
-
-* type: struct
-
-
-``RandomUnlockItem``
-^^^^^^^^^^
-
-* type: struct
-
-
-``RandomUnlock``
-^^^^^^^^^^
-
-* type: struct
-
-
-``CamoSkin``
-^^^^^^^^^^
-
-* type: struct
-
-
-``CallingCard``
-^^^^^^^^^^
-
-* type: struct
-
-
-``CallsignIcon``
-^^^^^^^^^^
-
-* type: struct
-
-
-``GamemodeSettings``
-^^^^^^^^^^
-
-* type: struct
-
-
-``eGameModes``
-^^^^^^^^^^
-
-* type: enum
-
-
-``CF_NOTIFY_STARTED``
-^^^^^^^^^^
-
-.. note::
-
-	CF_NOTIFY_STARTED is constant
-
-* type: int
-
-* value: 0x0001
-
-
-``CF_NOTIFY_PROGRESS``
-^^^^^^^^^^
-
-.. note::
-
-	CF_NOTIFY_PROGRESS is constant
-
-* type: int
-
-* value: 0x0002
-
-
-``CF_PRIORITY_LOW``
-^^^^^^^^^^
-
-.. note::
-
-	CF_PRIORITY_LOW is constant
-
-* type: int
-
-* value: 0x0004
-
-
-``CF_PRIORITY_NORMAL``
-^^^^^^^^^^
-
-.. note::
-
-	CF_PRIORITY_NORMAL is constant
-
-* type: int
-
-* value: 0x0004
-
-
-``CF_PRIORITY_HIGH``
-^^^^^^^^^^
-
-.. note::
-
-	CF_PRIORITY_HIGH is constant
-
-* type: int
-
-* value: 0x0008
-
-
-``ICON_GRUNT``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_GRUNT is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/grunt"
-
-
-``ICON_MARVIN``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_MARVIN is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/marvin"
-
-
-``ICON_PILOT``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_PILOT is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/pilot"
-
-
-``ICON_SPECTRE``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_SPECTRE is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/spectre"
-
-
-``ICON_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_TITAN is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/titan"
-
-
-``ICON_WALLRUN``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_WALLRUN is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/wallrun"
-
-
-``ICON_WALLHANG``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_WALLHANG is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/wallhang"
-
-
-``ICON_ZIPLINE``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_ZIPLINE is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/zipline"
-
-
-``ICON_CLOAKED_PILOT``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_CLOAKED_PILOT is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/cloaked_pilot"
-
-
-``ICON_DATA_KNIFE``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_DATA_KNIFE is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/data_knife"
-
-
-``ICON_EJECT``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_EJECT is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/eject"
-
-
-``ICON_HEADSHOT``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_HEADSHOT is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/headshot"
-
-
-``ICON_HITCH_RIDE``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_HITCH_RIDE is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/hitch_ride"
-
-
-``ICON_RODEO``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_RODEO is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/rodeo"
-
-
-``ICON_PET_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_PET_TITAN is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/pet_titan"
-
-
-``ICON_TIME_PLAYED``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_TIME_PLAYED is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/time_played"
-
-
-``ICON_TIME_PLAYED_PILOT``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_TIME_PLAYED_PILOT is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/time_played_pilot"
-
-
-``ICON_TIME_PLAYED_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_TIME_PLAYED_TITAN is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/time_played_titan"
-
-
-``ICON_TIME_WALLHANG``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_TIME_WALLHANG is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/time_wallhang"
-
-
-``ICON_TITAN_FALL``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_TITAN_FALL is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/titan_fall"
-
-
-``ICON_GAMES_PLAYED``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_GAMES_PLAYED is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/games_played"
-
-
-``ICON_GAMES_WON``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_GAMES_WON is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/games_won"
-
-
-``ICON_GAMES_MVP``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_GAMES_MVP is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/games_mvp"
-
-
-``ICON_DISTANCE``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_DISTANCE is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/distance"
-
-
-``ICON_DISTANCE_PILOT``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_DISTANCE_PILOT is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/distance_pilot"
-
-
-``ICON_DISTANCE_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_DISTANCE_TITAN is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/distance_titan"
-
-
-``ICON_STEP_CRUSH``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_STEP_CRUSH is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/step_crush"
-
-
-``ICON_WEAPON_KILLS``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_WEAPON_KILLS is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/weapon_kills"
-
-
-``ICON_PILOT_MELEE``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_PILOT_MELEE is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/pilot_melee"
-
-
-``ICON_PILOT_EXECUTION``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_PILOT_EXECUTION is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/pilot_execution"
-
-
-``ICON_TITAN_MELEE``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_TITAN_MELEE is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/titan_melee"
-
-
-``ICON_TITAN_EXECUTION``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_TITAN_EXECUTION is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/titan_execution"
-
-
-``ICON_CRITICAL_HIT``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_CRITICAL_HIT is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/critical_hit"
-
-
-``ICON_FIRST_STRIKE``
-^^^^^^^^^^
-
-.. note::
-
-	ICON_FIRST_STRIKE is constant
-
-* type: asset
-
-* value: $"ui/menu/challenge_icons/first_strike"
-
-
-``INVALID_REF``
-^^^^^^^^^^
-
-* type: string
-
-* value: "INVALID_REF"
-
-
-``DisplayTime``
-^^^^^^^^^^
-
-* type: struct
-
-
-``ShFactionXP``
-^^^^^^^^^^
-
-* type: struct
-
-
-``shFactionXP``
-^^^^^^^^^^
-
-* type: ShFactionXP
-
-
-``ShTitanXP``
-^^^^^^^^^^
-
-* type: struct
-
-
-``shTitanXP``
-^^^^^^^^^^
-
-* type: ShTitanXP
-
-
-``ShWeaponXP``
-^^^^^^^^^^
-
-* type: struct
-
-
-``shWeaponXP``
-^^^^^^^^^^
-
-* type: ShWeaponXP
-
-
-``XP_TYPE``
-^^^^^^^^^^
-
-* type: enum
-
-
-``eFDXPType``
-^^^^^^^^^^
-
-* type: enum
-
-
-``XP_TYPE_CATEGORY``
-^^^^^^^^^^
-
-* type: enum
-
-
-``BoostStoreData``
-^^^^^^^^^^
-
-* type: struct
-
-
-``SCOREBOARD_MATERIAL_FRIENDLY_PLAYER_EVEN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_FRIENDLY_PLAYER_EVEN is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/friendly_player"
-
-
-``SCOREBOARD_MATERIAL_FRIENDLY_PLAYER_ODD``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_FRIENDLY_PLAYER_ODD is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/friendly_player_dots"
-
-
-``SCOREBOARD_MATERIAL_FRIENDLY_SLOT``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_FRIENDLY_SLOT is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/friendly_slot"
-
-
-``SCOREBOARD_MATERIAL_ENEMY_PLAYER_EVEN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_ENEMY_PLAYER_EVEN is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/enemy_player"
-
-
-``SCOREBOARD_MATERIAL_ENEMY_PLAYER_ODD``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_ENEMY_PLAYER_ODD is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/enemy_player_dots"
-
-
-``SCOREBOARD_MATERIAL_ENEMY_SLOT``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_ENEMY_SLOT is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/enemy_slot"
-
-
-``SCOREBOARD_MATERIAL_MIC_INACTIVE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_MIC_INACTIVE is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_voip_default"
-
-
-``SCOREBOARD_MATERIAL_MIC_ACTIVE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_MIC_ACTIVE is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_voip_talk"
-
-
-``SCOREBOARD_MATERIAL_MIC_MUTED``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_MIC_MUTED is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_voip_mute"
-
-
-``SCOREBOARD_MATERIAL_MIC_PARTYCHAT``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_MIC_PARTYCHAT is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_voip_party_talk"
-
-
-``SCOREBOARD_MATERIAL_STATUS_DEAD``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_DEAD is constant
-
-* type: asset
-
-* value: $"ui/icon_status_dead"
-
-
-``SCOREBOARD_MATERIAL_STATUS_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_TITAN is constant
-
-* type: asset
-
-* value: $"ui/icon_status_titan"
-
-
-``SCOREBOARD_MATERIAL_STATUS_PILOT``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_PILOT is constant
-
-* type: asset
-
-* value: $"ui/icon_status_pilot"
-
-
-``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET is constant
-
-* type: asset
-
-* value: $"ui/icon_status_alive_with_titan"
-
-
-``SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET is constant
-
-* type: asset
-
-* value: $"ui/icon_status_dead_with_titan"
-
-
-``SCOREBOARD_MATERIAL_STATUS_EVAC``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_EVAC is constant
-
-* type: asset
-
-* value: $"ui/icon_status_evac"
-
-
-``SCOREBOARD_MATERIAL_STATUS_TITAN_BURN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_TITAN_BURN is constant
-
-* type: asset
-
-* value: $"ui/icon_status_titan_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_TITAN_BURN_ENEMY``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_TITAN_BURN_ENEMY is constant
-
-* type: asset
-
-* value: $"ui/icon_status_titan_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_PILOT_BURN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_PILOT_BURN is constant
-
-* type: asset
-
-* value: $"ui/icon_status_pilot_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_PILOT_BURN_ENEMY``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_PILOT_BURN_ENEMY is constant
-
-* type: asset
-
-* value: $"ui/icon_status_pilot_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_PILOT_BURN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_PILOT_BURN is constant
-
-* type: asset
-
-* value: $"ui/icon_status_alive_with_titan_pilot_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_PILOT_BURN_ENEMY``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_PILOT_BURN_ENEMY is constant
-
-* type: asset
-
-* value: $"ui/icon_status_alive_with_titan_pilot_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_TITAN_BURN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_TITAN_BURN is constant
-
-* type: asset
-
-* value: $"ui/icon_status_alive_with_titan_titan_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_TITAN_BURN_ENEMY``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_ALIVE_WITH_PET_TITAN_BURN_ENEMY is constant
-
-* type: asset
-
-* value: $"ui/icon_status_alive_with_titan_titan_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET_BURN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET_BURN is constant
-
-* type: asset
-
-* value: $"ui/icon_status_dead_with_titan_burn"
-
-
-``SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET_BURN_ENEMY``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_STATUS_DEAD_WITH_PET_BURN_ENEMY is constant
-
-* type: asset
-
-* value: $"ui/icon_status_dead_with_titan_burn"
-
-
-``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_1``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_1 is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/connection_quality_1"
-
-
-``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_2``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_2 is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/connection_quality_2"
-
-
-``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_3``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_3 is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/connection_quality_3"
-
-
-``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_4``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_4 is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/connection_quality_4"
-
-
-``SCOREBOARD_MATERIAL_CONNECTION_QUALITY_5``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_CONNECTION_QUALITY_5 is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/connection_quality_5"
-
-
-``SCOREBOARD_MATERIAL_PILOT_KILLS``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_PILOT_KILLS is constant
-
 * type: asset
 
-* value: $"ui/menu/scoreboard/sb_icon_pilot_kills"
+* value: ``$"P_levelup_screen"``
 
 
-``SCOREBOARD_MATERIAL_TITAN_KILLS``
+``WEAPON_LEVELUP_FX``
 ^^^^^^^^^^
 
 .. note::
 
-	SCOREBOARD_MATERIAL_TITAN_KILLS is constant
+	``WEAPON_LEVELUP_FX`` is constant
 
 * type: asset
 
-* value: $"ui/menu/scoreboard/sb_icon_titan_kills"
+* value: ``$"P_levelup_screen"``
 
 
-``SCOREBOARD_MATERIAL_NPC_KILLS``
+``TITAN_LEVELUP_FX``
 ^^^^^^^^^^
 
 .. note::
 
-	SCOREBOARD_MATERIAL_NPC_KILLS is constant
+	``TITAN_LEVELUP_FX`` is constant
 
 * type: asset
 
-* value: $"ui/menu/scoreboard/sb_icon_npc_kills"
+* value: ``$"P_levelup_screen"``
 
 
-``SCOREBOARD_MATERIAL_ASSISTS``
+``FACTION_LEVELUP_FX``
 ^^^^^^^^^^
 
 .. note::
 
-	SCOREBOARD_MATERIAL_ASSISTS is constant
+	``FACTION_LEVELUP_FX`` is constant
 
 * type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_assists"
-
-
-``SCOREBOARD_MATERIAL_DEATHS``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_DEATHS is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_deaths"
-
-
-``SCOREBOARD_MATERIAL_SCORE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_SCORE is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_score"
-
-
-``SCOREBOARD_MATERIAL_HARDPOINT``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_HARDPOINT is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_hardpoint"
-
-
-``SCOREBOARD_MATERIAL_ASSAULT``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_ASSAULT is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_assault"
-
-
-``SCOREBOARD_MATERIAL_DEFENSE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_DEFENSE is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_defense"
-
-
-``SCOREBOARD_MATERIAL_FLAG_RETURN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_FLAG_RETURN is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_flag_return"
-
-
-``SCOREBOARD_MATERIAL_FLAG_CAPTURE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_FLAG_CAPTURE is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_flag_capture"
-
-
-``SCOREBOARD_MATERIAL_MARKED_FOR_DEATH_TARGET_KILLS``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_MARKED_FOR_DEATH_TARGET_KILLS is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_marked_for_death"
-
-
-``SCOREBOARD_MATERIAL_VICTORY_CONTRIBUTION``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_VICTORY_CONTRIBUTION is constant
-
-* type: asset
-
-* value: $"ui/menu/scoreboard/sb_icon_victory_contribution"
-
-
-``SCOREBOARD_MATERIAL_PROMO``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_PROMO is constant
-
-* type: asset
-
-* value: $"ui/menu/rank_icons/promo"
-
-
-``SCOREBOARD_MATERIAL_COOP_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_TITAN is constant
-
-* type: asset
-
-* value: $"vgui/HUD/coop/coop_titan"
-
-
-``SCOREBOARD_MATERIAL_COOP_EMP_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_EMP_TITAN is constant
-
-* type: asset
-
-* value: $"vgui/HUD/coop/coop_emp_titan_square"
-
-
-``SCOREBOARD_MATERIAL_COOP_MORTAR_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_MORTAR_TITAN is constant
-
-* type: asset
-
-* value: $"vgui/HUD/coop/coop_mortar_titan_square"
-
-
-``SCOREBOARD_MATERIAL_COOP_NUKE_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_NUKE_TITAN is constant
-
-* type: asset
-
-* value: $"vgui/HUD/coop/coop_nuke_titan_square"
-
-
-``SCOREBOARD_MATERIAL_COOP_CLOAK_DRONE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_CLOAK_DRONE is constant
-
-* type: asset
-
-* value: $"ui/td_wave_icon_cloaked_drone"
-
-
-``SCOREBOARD_MATERIAL_COOP_SUICIDE_SPECTRE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_SUICIDE_SPECTRE is constant
-
-* type: asset
-
-* value: $"vgui/HUD/coop/wave_icon_suicide"
-
-
-``SCOREBOARD_MATERIAL_COOP_SNIPER_SPECTRE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_SNIPER_SPECTRE is constant
-
-* type: asset
-
-* value: $"vgui/HUD/coop/wave_icon_sniper"
-
-
-``SCOREBOARD_MATERIAL_COOP_SPECTRE``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_SPECTRE is constant
-
-* type: asset
-
-* value: $"vgui/HUD/coop/wave_icon_spectre"
-
-
-``SCOREBOARD_MATERIAL_COOP_GRUNT``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_GRUNT is constant
-
-* type: asset
-
-* value: $"vgui/HUD/coop/wave_icon_grunt"
-
-
-``SCOREBOARD_MATERIAL_COOP_BACKGROUND``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_BACKGROUND is constant
-
-* type: asset
-
-* value: $"ui/menu/coop_menu_assets/coop_scoreboard_back"
-
-
-``SCOREBOARD_MATERIAL_COOP_INFO_BOX``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_INFO_BOX is constant
-
-* type: asset
-
-* value: $"ui/menu/coop_menu_assets/coop_scoreboard_info_box"
-
-
-``SCOREBOARD_MATERIAL_COOP_STARS``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_STARS is constant
-
-* type: asset
-
-* value: $"ui/menu/lobby/map_star_small"
-
-
-``SCOREBOARD_MATERIAL_COOP_STARS_EMPTY``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_STARS_EMPTY is constant
-
-* type: asset
-
-* value: $"ui/menu/lobby/map_star_empty_small"
-
-
-``SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_1``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_1 is constant
-
-* type: asset
-
-* value: $"vgui/hud/coop/scoreboard_coop_p1"
-
-
-``SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_2``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_2 is constant
-
-* type: asset
-
-* value: $"vgui/hud/coop/scoreboard_coop_p2"
-
-
-``SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_3``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_3 is constant
-
-* type: asset
-
-* value: $"vgui/hud/coop/scoreboard_coop_p3"
-
-
-``SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_4``
-^^^^^^^^^^
-
-.. note::
-
-	SCOREBOARD_MATERIAL_COOP_PLAYER_NUMBER_4 is constant
-
-* type: asset
-
-* value: $"vgui/hud/coop/scoreboard_coop_p4"
-
-
-``CUSTOM_BIND_ALIASES_PILOT``
-^^^^^^^^^^
-
-.. note::
-
-	CUSTOM_BIND_ALIASES_PILOT is constant
-
-* type: array<string>
-
-
-``CUSTOM_BIND_ALIASES_TITAN``
-^^^^^^^^^^
-
-.. note::
-
-	CUSTOM_BIND_ALIASES_TITAN is constant
 
-* type: array<string>
+* value: ``$"P_levelup_screen"``
 

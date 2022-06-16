@@ -130,7 +130,11 @@ for runon, filelist in scripts.items():
                             name = type
                             type = "unknown"
                         if "=" in l and l[len(l)-1] != "=":
-                            value = l[l.index("=") + 1]
+                            for i in range(l.index("=") + 1, len(l)):
+                                value += l[i]
+                                if i < len(l) - 1:
+                                    value += " "
+                            # value = l[l.index("=") + 1]
                             if value.startswith("\""):
                                 type = "string"
                             if value.startswith("$"):
@@ -154,6 +158,11 @@ for runon, filelist in scripts.items():
                                 type = "int"
                             if "<<" in value or ">>" in value: # respawn bit shifting only for flags afaik
                                 type = "int"
+                            name = l[l.index("=") - 1]
+
+                        if name == ">":
+                            print(line)
+
                         local_params = {}
                         local_params["name"] = name
                         local_params["type"] = type

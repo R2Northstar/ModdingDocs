@@ -690,9 +690,9 @@
 		},
 		{
 			"name": "ANALYSIS_YAW_STEP",
-			"type": "float",
+			"type": "unknown",
 			"constant": true,
-			"value": "360.0",
+			"value": "360.0 / ANALYSIS_STEPS",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -1765,7 +1765,7 @@
 			"name": "ARC_CANNON_BEAM_COLOR",
 			"type": "string",
 			"constant": true,
-			"value": "\"150",
+			"value": "\"150 190 255\"",
 			"foundin": "Northstar.CustomServers",
 			"runon": [
 				"SERVER",
@@ -4948,7 +4948,7 @@
 			"name": "BATTLE_CHATTER_RANGE_SQUARED",
 			"type": "unknown",
 			"constant": true,
-			"value": "BATTLE_CHATTER_RANGE",
+			"value": "BATTLE_CHATTER_RANGE * BATTLE_CHATTER_RANGE",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER && MP",
@@ -5039,7 +5039,7 @@
 			"name": "GRUNT_CHATTER_MP_RANGE_SQUARED",
 			"type": "unknown",
 			"constant": true,
-			"value": "GRUNT_CHATTER_MP_RANGE",
+			"value": "GRUNT_CHATTER_MP_RANGE * GRUNT_CHATTER_MP_RANGE",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER && MP",
@@ -5061,7 +5061,7 @@
 			"name": "SPECTRE_CHATTER_MP_RANGE_SQUARED",
 			"type": "unknown",
 			"constant": true,
-			"value": "SPECTRE_CHATTER_MP_RANGE",
+			"value": "SPECTRE_CHATTER_MP_RANGE * SPECTRE_CHATTER_MP_RANGE",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER && MP",
@@ -5922,7 +5922,7 @@
 			"name": "WEBBROWSER_FLAG_FORCEEXTERNAL",
 			"type": "int",
 			"constant": true,
-			"value": "1",
+			"value": "1 << 1",
 			"foundin": "Northstar.Client",
 			"runon": [
 				"UI"
@@ -6467,10 +6467,10 @@
 			]
 		},
 		{
-			"name": "bool",
+			"name": "___teststruct",
 			"type": "table",
 			"constant": true,
-			"value": "{b",
+			"value": "{b = false,}",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"DEV"
@@ -7190,9 +7190,9 @@
 		},
 		{
 			"name": "MAX_WORLD_COORD",
-			"type": "float",
+			"type": "int",
 			"constant": true,
-			"value": "(",
+			"value": "( 1 << 16 ) - 1",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -7204,7 +7204,7 @@
 			"name": "COORD_RANGE",
 			"type": "float",
 			"constant": true,
-			"value": "MAX_WORLD_COORD",
+			"value": "MAX_WORLD_COORD + MAX_WORLD_COORD + 1",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -7216,7 +7216,7 @@
 			"name": "MAX_WORLD_RANGE",
 			"type": "float",
 			"constant": true,
-			"value": "sqrt(",
+			"value": "sqrt( COORD_RANGE * COORD_RANGE + COORD_RANGE * COORD_RANGE + COORD_RANGE * COORD_RANGE )",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -7726,7 +7726,7 @@
 			"name": "LOCALPLAYER_NAME_COLOR",
 			"type": "array",
 			"constant": true,
-			"value": "[",
+			"value": "[ LOCAL_R, LOCAL_G, LOCAL_B ]",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -7798,7 +7798,7 @@
 			"name": "FRIENDLY_CROSSHAIR_COLOR",
 			"type": "array",
 			"constant": true,
-			"value": "[FRIENDLY_R,",
+			"value": "[FRIENDLY_R, FRIENDLY_G, FRIENDLY_B, 255]",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -7810,7 +7810,7 @@
 			"name": "ENEMY_CROSSHAIR_COLOR",
 			"type": "array",
 			"constant": true,
-			"value": "[ENEMY_R,",
+			"value": "[ENEMY_R, ENEMY_G, ENEMY_B, 180]",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -7834,7 +7834,7 @@
 			"name": "BURN_CARD_WEAPON_HUD_COLOR",
 			"type": "array",
 			"constant": true,
-			"value": "[",
+			"value": "[ 246, 134, 40, 255 ]",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -8802,7 +8802,7 @@
 			"name": "OFFHAND_HUD_COLOR_FULL",
 			"type": "string",
 			"constant": true,
-			"value": "\"180",
+			"value": "\"180 246 85\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -8814,7 +8814,7 @@
 			"name": "OFFHAND_HUD_COLOR_EMPTY",
 			"type": "string",
 			"constant": true,
-			"value": "\"200",
+			"value": "\"200 80 80\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -8838,7 +8838,7 @@
 			"name": "PROGRESS_BAR_FULL",
 			"type": "string",
 			"constant": true,
-			"value": "\"49",
+			"value": "\"49 188 204 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -8850,7 +8850,7 @@
 			"name": "PROGRESS_BAR_EMPTY",
 			"type": "string",
 			"constant": true,
-			"value": "\"229",
+			"value": "\"229 86 23 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -10293,7 +10293,7 @@
 			"name": "RANKED_SPLASH_COLORS_MAIN",
 			"type": "array",
 			"constant": true,
-			"value": "[",
+			"value": "[ 139, 195, 98 ]",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -10305,7 +10305,7 @@
 			"name": "RANKED_SPLASH_COLORS_GLOW",
 			"type": "array",
 			"constant": true,
-			"value": "[",
+			"value": "[ 34, 90, 65, 255 ]",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -10317,7 +10317,7 @@
 			"name": "RANKED_SPLASH_COLORS_MAIN_STRING",
 			"type": "string",
 			"constant": true,
-			"value": "\"164",
+			"value": "\"164 229 117 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -10329,7 +10329,7 @@
 			"name": "RANKED_SPLASH_COLORS_GLOW_STRING",
 			"type": "string",
 			"constant": true,
-			"value": "\"34",
+			"value": "\"34 90 65 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -11433,7 +11433,7 @@
 			"name": "MATCH_PROGRESS_THRESHOLDS",
 			"type": "array",
 			"constant": true,
-			"value": "[",
+			"value": "[ MATCH_PROGRESS_EARLY, MATCH_PROGRESS_MID, MATCH_PROGRESS_LATE, MATCH_PROGRESS_OVER_NO_ANNOUNCEMENT ]",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -16221,7 +16221,7 @@
 			"name": "COCKPIT_UI_HEIGHT",
 			"type": "float",
 			"constant": true,
-			"value": "COCKPIT_UI_WIDTH",
+			"value": "COCKPIT_UI_WIDTH / 1.7665",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -16245,7 +16245,7 @@
 			"name": "COCKPIT_RUI_HEIGHT",
 			"type": "float",
 			"constant": true,
-			"value": "COCKPIT_RUI_WIDTH",
+			"value": "COCKPIT_RUI_WIDTH / 1.7665",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -16997,7 +16997,7 @@
 			"name": "FWTS_HIDDEN",
 			"type": "int",
 			"constant": true,
-			"value": "1",
+			"value": "1 << 0",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -17009,7 +17009,7 @@
 			"name": "FWTS_IMC",
 			"type": "int",
 			"constant": true,
-			"value": "1",
+			"value": "1 << 1",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -17021,7 +17021,7 @@
 			"name": "FWTS_MILITIA",
 			"type": "int",
 			"constant": true,
-			"value": "1",
+			"value": "1 << 2",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -17033,7 +17033,7 @@
 			"name": "FWTS_SHIELDED",
 			"type": "int",
 			"constant": true,
-			"value": "1",
+			"value": "1 << 3",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -17045,7 +17045,7 @@
 			"name": "FWTS_THREAT",
 			"type": "int",
 			"constant": true,
-			"value": "1",
+			"value": "1 << 4",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -17069,7 +17069,7 @@
 			"name": "MINIMAP_Z_LAYER",
 			"type": "int",
 			"constant": true,
-			"value": "MINIMAP_Z_BASE",
+			"value": "MINIMAP_Z_BASE + 1",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -17081,7 +17081,7 @@
 			"name": "MINIMAP_Z_THREAT_WEDGES",
 			"type": "int",
 			"constant": true,
-			"value": "MINIMAP_Z_BASE",
+			"value": "MINIMAP_Z_BASE + 2",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -17093,7 +17093,7 @@
 			"name": "MINIMAP_Z_YOU",
 			"type": "int",
 			"constant": true,
-			"value": "MINIMAP_Z_BASE",
+			"value": "MINIMAP_Z_BASE + 200",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -18303,7 +18303,7 @@
 			]
 		},
 		{
-			"name": ">",
+			"name": "GAMETYPE_COLOR",
 			"type": "table",
 			"value": "{}",
 			"foundin": "Titanfall 2",
@@ -18344,7 +18344,7 @@
 			]
 		},
 		{
-			"name": ">",
+			"name": "COOP_STAR_SCORE_REQUIREMENT",
 			"type": "table",
 			"constant": true,
 			"value": "{",
@@ -19053,9 +19053,9 @@
 		},
 		{
 			"name": "POINTVALUE_TITAN_STEPCRUSH_PILOT",
-			"type": "int",
+			"type": "unknown",
 			"constant": true,
-			"value": "100",
+			"value": "100 + POINTVALUE_KILL_PILOT",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -19067,7 +19067,7 @@
 			"name": "POINTVALUE_TITAN_STEPCRUSH_SPECTRE",
 			"type": "unknown",
 			"constant": true,
-			"value": "POINTVALUE_TITAN_STEPCRUSH",
+			"value": "POINTVALUE_TITAN_STEPCRUSH + POINTVALUE_KILL_SPECTRE",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -19079,7 +19079,7 @@
 			"name": "POINTVALUE_TITAN_STEPCRUSH_FIRETEAM_AI",
 			"type": "unknown",
 			"constant": true,
-			"value": "POINTVALUE_TITAN_STEPCRUSH",
+			"value": "POINTVALUE_TITAN_STEPCRUSH + POINTVALUE_KILL_FIRETEAM_AI",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -21443,7 +21443,7 @@
 			"name": "AMMOSTATION_DISPLAYNAME",
 			"type": "string",
 			"constant": true,
-			"value": "\"AMMO",
+			"value": "\"AMMO BAY\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -21563,7 +21563,7 @@
 			"name": "HEALTHSTATION_DISPLAYNAME",
 			"type": "string",
 			"constant": true,
-			"value": "\"MED",
+			"value": "\"MED BAY\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -21683,7 +21683,7 @@
 			"name": "STRIKE_DISPLAYNAME",
 			"type": "string",
 			"constant": true,
-			"value": "\"SATELLITE",
+			"value": "\"SATELLITE STRIKE\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -21959,7 +21959,7 @@
 			"name": "SPLASH_TEXT_COLOR",
 			"type": "string",
 			"constant": true,
-			"value": "\"173",
+			"value": "\"173 226 255 180\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22043,7 +22043,7 @@
 			"name": "CAPTURE_POINT_COLOR_FRIENDLY",
 			"type": "string",
 			"constant": true,
-			"value": "\"77",
+			"value": "\"77 142 197 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22055,7 +22055,7 @@
 			"name": "CAPTURE_POINT_COLOR_ENEMY",
 			"type": "string",
 			"constant": true,
-			"value": "\"192",
+			"value": "\"192 120 77 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22067,7 +22067,7 @@
 			"name": "CAPTURE_POINT_COLOR_NEUTRAL",
 			"type": "string",
 			"constant": true,
-			"value": "\"190",
+			"value": "\"190 190 190 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22079,7 +22079,7 @@
 			"name": "CAPTURE_POINT_COLOR_FRIENDLY_CAP",
 			"type": "string",
 			"constant": true,
-			"value": "\"77",
+			"value": "\"77 142 197 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22091,7 +22091,7 @@
 			"name": "CAPTURE_POINT_COLOR_ENEMY_CAP",
 			"type": "string",
 			"constant": true,
-			"value": "\"192",
+			"value": "\"192 120 77 255\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22353,9 +22353,9 @@
 		},
 		{
 			"name": "CAPTURE_POINT_FLAGS_CONTESTED",
-			"type": "unknown",
+			"type": "int",
 			"constant": true,
-			"value": "(1",
+			"value": "(1 << 0)",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22365,9 +22365,9 @@
 		},
 		{
 			"name": "CAPTURE_POINT_FLAGS_AMPED",
-			"type": "unknown",
+			"type": "int",
 			"constant": true,
-			"value": "(1",
+			"value": "(1 << 1)",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22391,7 +22391,7 @@
 			"name": "CAPTURE_POINT_ENEMY",
 			"type": "string",
 			"constant": true,
-			"value": "\"Contested:",
+			"value": "\"Contested: %d/%d\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22403,7 +22403,7 @@
 			"name": "CAPTURE_POINT_ENEMIES",
 			"type": "string",
 			"constant": true,
-			"value": "\"Contested:",
+			"value": "\"Contested: %d/%d\"",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22511,7 +22511,7 @@
 			"name": "ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION",
 			"type": "unknown",
 			"constant": true,
-			"value": "ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY",
+			"value": "ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY - ROUND_WINNING_KILL_REPLAY_POST_DEATH_TIME",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22523,7 +22523,7 @@
 			"name": "ROUND_WINNING_KILL_REPLAY_CROSSHAIR_FADEOUT_TIME",
 			"type": "unknown",
 			"constant": true,
-			"value": "ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION",
+			"value": "ROUND_WINNING_KILL_REPLAY_ANNOUNCEMENT_DURATION - 0.5",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22571,7 +22571,7 @@
 			"name": "ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH",
 			"type": "unknown",
 			"constant": true,
-			"value": "ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT",
+			"value": "ROUND_WINNING_KILL_REPLAY_STARTUP_WAIT + ROUND_WINNING_KILL_REPLAY_LENGTH_OF_REPLAY",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22619,7 +22619,7 @@
 			"name": "GAME_WINNER_DETERMINED_FINAL_ROUND_WITH_ROUND_WINNING_KILL_REPLAY_WAIT",
 			"type": "unknown",
 			"constant": true,
-			"value": "ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH",
+			"value": "ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH + 2.0",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -22631,7 +22631,7 @@
 			"name": "GAME_WINNER_DETERMINED_ROUND_WAIT_WITH_ROUND_WINNING_KILL_REPLAY_WAIT",
 			"type": "unknown",
 			"constant": true,
-			"value": "ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH",
+			"value": "ROUND_WINNING_KILL_REPLAY_TOTAL_LENGTH + 3.0",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -24547,7 +24547,7 @@
 			"name": "TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE_SQUARED",
 			"type": "unknown",
 			"constant": true,
-			"value": "TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE",
+			"value": "TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE * TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",
@@ -24559,7 +24559,7 @@
 			"name": "TITAN_BUBBLE_SHIELD_CYLINDER_TRIGGER_HEIGHT",
 			"type": "unknown",
 			"constant": true,
-			"value": "TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE",
+			"value": "TITAN_BUBBLE_SHIELD_INVULNERABILITY_RANGE + 50",
 			"foundin": "Titanfall 2",
 			"runon": [
 				"SERVER",

@@ -26,12 +26,12 @@ for gl in data["globals"]:
 
 def writeBulletPoints(f, gl):
     if "constant" in gl and gl["constant"] == True:
-        f.write(".. note::\n\n\t" + gl["name"] + " is constant\n\n")
+        f.write(".. note::\n\n\t``" + gl["name"] + "`` is constant\n\n")
 
     if "type" in gl:
         f.write(bulletPoint("type", gl["type"]))
     if "value" in gl:
-        f.write(bulletPoint("value", gl["value"]))
+        f.write(bulletPoint("value", "``" + gl["value"] + "``"))
     # if "constant" in gl:
     # 	f.write(bulletPoint("constant", gl["constant"]))
 
