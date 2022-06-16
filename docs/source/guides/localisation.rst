@@ -1,10 +1,30 @@
 Localisation
 ============
 
+
+Languages list
+--------------
+
+Create translation files
+------------------------
+
+* Create one file per supported language
+* ``UTF-16 LE`` format
+* Integrate them in your ``mod.json`` manifesto
+
+Use translations in your code
+-----------------------------
+
+* Use keys in menus
+* ``Localize``
+
+Northstar translations
+----------------------
+
 Northstar adds new strings to the game which can be localised to match the language you are using on your Titanfall 2 installation.
 
 Files to translate
-------------------
+^^^^^^^^^^^^^^^^^^
 
 There are the two files that need to be translated, use the English version as a base. After you finish make sure that the files are encoded in `UTF-16 LE` before opening a Pull Request.
 
