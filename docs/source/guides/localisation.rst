@@ -17,7 +17,7 @@ Languages natively supported by Titanfall2 are:
 * Portuguese
 * Russian
 * Spanish
-* Traditional Chinese
+* Traditional Chinese (``"tchinese"`` lang code)
 
 Create translation files
 ------------------------
@@ -97,5 +97,5 @@ They're all located in ``"Northstar.Client"`` mod: `Northstar localisation files
 
 .. note ::
     Don't hesitate to submit a PR if you notice a typo!
-    
+
     To test your modifications go to `Origin (My games library) -> Titanfall 2 (right click) -> Game Properties -> Advanced Launch Options` and select the language you modified from the dropdown.
