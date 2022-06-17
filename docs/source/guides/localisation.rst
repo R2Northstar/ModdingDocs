@@ -68,8 +68,25 @@ You can import them from your ``mod.json`` manifesto this way:
 Use translations in your code
 -----------------------------
 
-* Use keys in menus
-* ``Localize``
+To translate UI elements like menus, you have to insert strings containing your translation keys, preceded by a ``#``.
+
+For example, to translate the "Launch Northstar" button on main menu, instead of calling:
+
+.. code-block:: javascript
+
+    AddComboButton( comboStruct, headerIndex, buttonIndex++, "Launch Northstar" )
+
+We'll use:
+
+.. code-block:: javascript
+
+    AddComboButton( comboStruct, headerIndex, buttonIndex++, "#MENU_LAUNCH_NORTHSTAR" )
+
+You can also use the ``Localize`` method client-side:
+
+.. code-block:: javascript
+
+    Localize( "#MENU_LAUNCH_NORTHSTAR" )
 
 Northstar translations
 ----------------------
