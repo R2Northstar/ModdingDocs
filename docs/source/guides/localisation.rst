@@ -22,9 +22,48 @@ Languages natively supported by Titanfall2 are:
 Create translation files
 ------------------------
 
-* Create one file per supported language
-* ``UTF-16 LE`` format
-* Integrate them in your ``mod.json`` manifesto
+Here's what a translation file looks like:
+
+.. code-block:: json
+
+    "lang"
+    {
+	    "Language" "english"
+	    "Tokens"
+        {
+            "MENU_LAUNCH_NORTHSTAR" "Launch Northstar"
+            "MENU_TITLE_MODS" "Mods"
+            "RELOAD_MODS" "Reload Mods"
+            "WARNING" "Warning"
+            "CORE_MOD_DISABLE_WARNING"  "Disabling core mods can break your client!"
+            "DISABLE" "Disable"
+        }
+    }
+
+It begins with the ``"lang"`` instruction, contains a ``"Language"`` key indicating language of current file's translations, and 
+a ``"Token"`` key indexing all translations.
+
+.. warning ::
+    Translations files must use ``"UTF-16 LE"`` encoding.
+
+You'll have to create one file per supported language, and all your files must be named in a similar fashion.
+
+For example, Northstar translation files are named ``"northstar_client_localisation_english.txt"``, ``"northstar_client_localisation_french.txt"``, 
+``"northstar_client_localisation_german.txt"`` etc.
+
+You can import them from your ``mod.json`` manifesto this way:
+
+.. code-block:: json
+
+    {
+        "Localisation": [
+	        "resource/northstar_client_localisation_%language%.txt"
+	    ]
+    }
+
+.. note::
+    The ``"%language%"`` syntax allows VM to load up translations matching game language (e.g. an English client will automatically use 
+    ``"northstar_client_localisation_english.txt"`` file)
 
 Use translations in your code
 -----------------------------
