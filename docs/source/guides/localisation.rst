@@ -1,9 +1,23 @@
 Localisation
 ============
 
+For your content to reach as many people as possible, it is important to have it translated in users' natural language.
+This guide will help you do that!
 
 Languages list
 --------------
+
+Languages natively supported by Titanfall2 are:
+
+* English
+* French
+* German
+* Italian
+* Japanese
+* Portuguese
+* Russian
+* Spanish
+* Traditional Chinese
 
 Create translation files
 ------------------------
