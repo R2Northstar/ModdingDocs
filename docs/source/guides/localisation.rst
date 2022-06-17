@@ -28,14 +28,14 @@ Here's what a translation file looks like:
 
     "lang"
     {
-	    "Language" "english"
-	    "Tokens"
+        "Language" "english"
+        "Tokens"
         {
             "MENU_LAUNCH_NORTHSTAR" "Launch Northstar"
             "MENU_TITLE_MODS" "Mods"
             "RELOAD_MODS" "Reload Mods"
             "WARNING" "Warning"
-            "CORE_MOD_DISABLE_WARNING"  "Disabling core mods can break your client!"
+            "CORE_MOD_DISABLE_WARNING" "Disabling core mods can break your client!"
             "DISABLE" "Disable"
         }
     }
@@ -57,8 +57,8 @@ You can import them from your ``mod.json`` manifesto this way:
 
     {
         "Localisation": [
-	        "resource/northstar_client_localisation_%language%.txt"
-	    ]
+            "resource/northstar_client_localisation_%language%.txt"
+        ]
     }
 
 .. note::
