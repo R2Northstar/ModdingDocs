@@ -44,7 +44,7 @@ It begins with the ``"lang"`` instruction, contains a ``"Language"`` key indicat
 a ``"Token"`` key indexing all translations.
 
 .. warning ::
-    Translations files must use ``"UTF-16 LE"`` encoding.
+    If the translation file contains any non-ASCII character, it must use ``"UTF-16 LE"`` encoding.
 
 You'll have to create one file per supported language, and all your files must be named in a similar fashion.
 
