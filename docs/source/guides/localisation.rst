@@ -96,6 +96,5 @@ Northstar adds new strings to the game which can be localised to match the langu
 They're all located in ``"Northstar.Client"`` mod: `Northstar localisation files on GitHub <https://github.com/R2Northstar/NorthstarMods/blob/main/Northstar.Client/mod/resource>`_
 
 .. note ::
-    Don't hesitate to submit a PR if you notice a typo!
-
+    
     To test your modifications go to `Origin (My games library) -> Titanfall 2 (right click) -> Game Properties -> Advanced Launch Options` and select the language you modified from the dropdown.
