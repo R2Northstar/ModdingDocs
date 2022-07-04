@@ -97,4 +97,5 @@ They're all located in ``"Northstar.Client"`` mod: `Northstar localisation files
 
 .. note ::
     
-    To test your modifications go to `Origin (My games library) -> Titanfall 2 (right click) -> Game Properties -> Advanced Launch Options` and select the language you modified from the dropdown.
+    To test your modifications, change your game language: with Origin, go to `Origin (My games library) -> Titanfall 2 (right click) -> Game Properties -> Advanced Launch Options`;
+    with Steam, go to `Titanfall 2 page -> Manage (cog) -> Properties -> Language`.
