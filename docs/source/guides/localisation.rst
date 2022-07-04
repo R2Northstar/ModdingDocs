@@ -17,7 +17,7 @@ Languages natively supported by Titanfall2 are:
 * Portuguese
 * Russian
 * Spanish
-* Traditional Chinese (``"tchinese"`` lang code)
+* Traditional Chinese (``"tchinese"``)
 
 Create translation files
 ------------------------
