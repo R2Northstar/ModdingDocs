@@ -73,7 +73,7 @@ An example for this might be:
 
 
 Detailed ``mod.json`` architecture
-==================================
+----------------------------------
 
 Located at your mod's root folder, the ``mod.json`` file is the entrypoint of your mod; 
 it contains human-readable information about it, which scripts to load, and a bunch
@@ -121,7 +121,7 @@ This is what a well-formatted ``mod.json`` looks like:
     have been removed for the readability of the example.
 
 Name and description
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 Those ones are pretty self-explanatory. Both fields are used by Northstar itself 
 to display in-game information about your mod in the main screen ``Mods`` menu.
@@ -129,7 +129,7 @@ to display in-game information about your mod in the main screen ``Mods`` menu.
 Best pratice for your mod's name is to use the ``Author.ModName`` convention.
 
 Version
--------
+^^^^^^^
 
 This field specifies version of your mod using ``X.Y.Z`` scheme; this field must be
 updated each time you release a new version of your mod.
@@ -140,7 +140,7 @@ increase *Y* when you release new features (*e.g.* ``1.5.1`` to ``1.6.0``).
 Best practise is to follow semantic versioning (https://semver.org/).
 
 LoadPriority
-------------
+^^^^^^^^^^^^
 
 This field defines the order in which all mods will be loaded by Northstar. For example,
 a mod with ``"LoadPriority": 1`` will be loaded after a mod with ``"LoadPriority": 0``.
@@ -149,7 +149,7 @@ If your mod uses code from another mod, make sure to set a greater LoadPriority 
 mod you're using code from.
 
 ConVars
--------
+^^^^^^^
 
 This field lists configuration variables, that can be set by servers owners to modify 
 behaviour of your mod.
@@ -165,7 +165,7 @@ You can access configuration variables from squirrel code using ``GetConVarInt``
    No matter the type of your variables, they have to be JSON strings, otherwise game won't start!
 
 Example
-^^^^^^^^^^^^^^^^^^^^^^^^ 
+"""""""
 
 If I don't want to wait 15 seconds for matchs to start on my server, ``Northstar.CustomServers`` 
 mod exposes a ConVar named ``ns_private_match_countdown_length`` in its ``mod.json`` manifesto:
@@ -197,7 +197,7 @@ value, or its default value if it hasn't been specified in configuration file:
    All ``Northstar.CustomServers`` ConVars are listed here: https://r2northstar.gitbook.io/r2northstar-wiki/hosting-a-server-with-northstar/basic-listen-server
 
 Flags
-^^^^^
+"""""
 
 You can assign flags to configuration variables; to use several flags at once, just add their values.
 
@@ -301,7 +301,7 @@ You can assign flags to configuration variables; to use several flags at once, j
     Some flags have been skipped due to them being generally useless unless you have very specific requirements.
 
 Scripts
--------
+^^^^^^^
 
 The scripts field lets you declare an array of Squirrel files to import into your mod.
 
@@ -330,13 +330,13 @@ Each script entry must have a "Path" value and a "RunOn" value.
 		
 
 Path
-^^^^^^^^^^^^^^^^^^^^^^^^
+""""
 
 Path of the Squirrel file to import, without ``mod/scripts/vscripts`` prefix (that's 
 where your script files should go).
 
 RunOn
-^^^^^^^^^^^^^^^^^^^^^^^^
+"""""
 
 Squirrel VM context in which this script should be run.
 
@@ -347,13 +347,13 @@ Expression examples:
 * ``"( CLIENT || SERVER ) && MP"``
 
 ClientCallback / ServerCallback
-^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""""""""
 
 Specify methods that will be called before/after map spawn.
 
 
 Localisation
-------------
+^^^^^^^^^^^^
 
 This field is an array listing localisation files relative paths.
 
