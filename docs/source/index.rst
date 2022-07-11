@@ -29,7 +29,6 @@ If you know anything about any function, object or concept please dont hesitate 
    :hidden:
    :caption: Guides
 
-   /guides/contributing
    /guides/gettingstarted
    /guides/tools
    /guides/cheatsheet
@@ -42,6 +41,7 @@ If you know anything about any function, object or concept please dont hesitate 
    /guides/soundmodding
    /guides/VTFModding
    /guides/publishing
+   /guides/contributing
 
 .. toctree::
    :maxdepth: 3
