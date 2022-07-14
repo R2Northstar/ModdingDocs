@@ -46,7 +46,7 @@ When we use vtf textures, we can only use the albedo and normal `maps <https://t
 	│     └─ weapons_r2
 	│        └─ vtfkraber
 	│           └─ vtfkraber.vmt
-	├─ models
+	└─ models
 	   └─ weapons
 	      └─at_rifle (name of kraber)
 	        ├─ ptpov_at_rifle.mdl
