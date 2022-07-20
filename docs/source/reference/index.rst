@@ -23,3 +23,6 @@ Respawn API
     /reference/respawn/topology
     /reference/respawn/clientcommands
     /reference/respawn/movers
+	/reference/respawn/globals_server
+	/reference/respawn/globals_client
+	/reference/respawn/globals_ui
