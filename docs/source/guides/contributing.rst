@@ -11,7 +11,7 @@ Contributing without a local build
 ----------------------------------
 You don't necessarily need to set up a local build environment.
 
-To contribute without doing so, you cant just edit the files in an editor of your choice and create a github PR from them.
+To contribute without doing so, you can just edit the files in an editor of your choice and create a GitHub pull request from them.
 
 There will be a test-build done for each PR, which you can find on your PR as a "Check" by clicking ``show all checks`` and ``details``.
 
