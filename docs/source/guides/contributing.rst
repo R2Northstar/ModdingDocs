@@ -7,12 +7,22 @@ ModdingDocs uses `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredTe
 
 A cheatsheet for reStructuredText syntax can be found here: https://docs.generic-mapping-tools.org/6.2/rst-cheatsheet.html
 
+Contributing without a local build
+----------------------------------
+You don't necessarily need to set up a local build environment.
+
+To contribute without doing so, you cant just edit the files in an editor of your choice and create a github PR from them.
+
+There will be a test-build done for each PR, which you can find on your PR as a "Check" by clicking ``show all checks`` and ``details``.
+
+This should take you to a online version of the docs with your PRs changes. 
+
+
 Setting up the build environment for docs
 -----------------------------------------
 
-You don't necessarily need to do this. You could just edit the files in an editor of your choice and then push the changes, wait for a GitHub actions to create a build and then check it out online. However, building the documentation locally allows you to quickly see whether the changes you made were correct or if there were any issues.
 
-To set up a build locally, do the following:
+First, you need to have a relatively recent version of Python installed - 3.8 or higher. `Download here <https://www.python.org/downloads/>`_
 
 Clone the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_, e.g.
 
@@ -24,34 +34,22 @@ Clone the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_, e.g
 
 Opened the clone repo.
 
-Setup a `Python virtual environment <https://docs.python.org/3/tutorial/venv.html>`_
-(this is not strictly necessary but can help keep your Python install clean)
+(on Windows, replace `python3` with `py`)
+
 
 .. code:: bash
 
-    # Create virtual environment (the second `venv` is the name of the folder of the virtual environment)
-    python3 -m venv venv
+    # Install Poetry, the build tool used by ModdingDocs
+    python3 -m pip install poetry
 
-    # On Windows, activate with:
-    venv\Scripts\activate.bat
 
-    # On Linux, activate with:
-    source venv/bin/activate
+Then all you need to do is tell poetry to run the build script. This will run a local webserver and open the docs in your default browser.
 
-Install the Python packages necessary to build the docs
 
 .. code:: bash
 
-    pip install -r docs/requirements.txt
-
-Finally to actually build the docs, go to the ``docs/`` directory and ``sphinx-build -M html source build``, i.e.
-
-.. code:: bash
-
-    cd docs/
-    sphinx-build -M html source build
-
-This will create a new folder inside ``docs/`` called ``build/`` where under ``html/`` you can find the rendered HTML files where built based from the ``.rst`` files located in ``source``. You can open the files in a browser of your choice to see what the edited page will look like.
+    # let poetry take care of it!
+    poetry run build
 
 
 Tips and tricks
@@ -61,5 +59,4 @@ If you're using `Visual Studio Code <https://code.visualstudio.com/>`_, the foll
 
 
 - `snekvik.simple-rst <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_: for syntax highlighting
-- `lextudio.restructuredtext <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_: for previewing the rst files in VS Code
-- `ms-vscode.live-server <https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server>`_: for previewing HTML files in VS Code
+- `lextudio.restructuredtext <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_: for autocompletion and syntax checks.
