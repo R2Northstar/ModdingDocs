@@ -56,15 +56,6 @@ It should have created the build script, run it with:
 
     build
 
-
-Then all you need to do is tell poetry to run the build script. This will run a local webserver and open the docs in your default browser.
-
-
-.. code:: bash
-
-    # let poetry take care of it!
-    poetry run build
-
 This should rebuild the docs on changes and open them in your default browser.
 
 Tips and tricks
