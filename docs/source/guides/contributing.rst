@@ -7,13 +7,13 @@ ModdingDocs uses `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredTe
 
 A cheatsheet for reStructuredText syntax can be found here: https://docs.generic-mapping-tools.org/6.2/rst-cheatsheet.html
 
-The ``.rst`` files can be found in the ``docs/source`` directory. If you're adding a new file, make sure to link it in ``idnex.rst``
+The ``.rst`` files can be found in the ``docs/source`` directory. If you're adding a new file, make sure to link it in ``index.rst``
 
 Contributing without a local build
 ----------------------------------
 You don't necessarily need to set up a local build environment.
 
-To contribute without doing so, you cant just edit the files in an editor of your choice and create a github PR from them.
+To contribute without doing so, you can just edit the files in an editor of your choice and create a GitHub pull request from them.
 
 There will be a test-build done for each PR, which you can find on your PR as a "Check" by clicking ``show all checks`` and ``details``.
 
@@ -22,7 +22,6 @@ This should take you to a online version of the docs with your PRs changes.
 
 Setting up the build environment for docs
 -----------------------------------------
-
 
 First, you need to have a relatively recent version of Python installed - 3.8 or higher. `Download here <https://www.python.org/downloads/>`_
 
@@ -56,6 +55,15 @@ It should have created the build script, run it with:
 .. code:: bash
 
     build
+
+
+Then all you need to do is tell poetry to run the build script. This will run a local webserver and open the docs in your default browser.
+
+
+.. code:: bash
+
+    # let poetry take care of it!
+    poetry run build
 
 This should rebuild the docs on changes and open them in your default browser.
 
