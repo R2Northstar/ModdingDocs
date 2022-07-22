@@ -8,6 +8,7 @@ Northstar API
     /reference/northstar/callbacks
     /reference/northstar/chathooks
     /reference/northstar/clientcommandsnotifications
+    /reference/northstar/dependencyconstants.rst
 
 Respawn API
 -----------
@@ -17,8 +18,7 @@ Respawn API
 
     /reference/respawn/callbacks
     /reference/respawn/player
-    /reference/respawn/weapon
-    /reference/respawn/titan
+    /reference/respawn/entities
     /reference/respawn/rui
     /reference/respawn/topology
     /reference/respawn/clientcommands
