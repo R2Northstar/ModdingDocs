@@ -7,6 +7,8 @@ ModdingDocs uses `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredTe
 
 A cheatsheet for reStructuredText syntax can be found here: https://docs.generic-mapping-tools.org/6.2/rst-cheatsheet.html
 
+The ``.rst`` files can be found in the ``docs/source`` directory. If you're adding a new file, make sure to link it in ``idnex.rst``
+
 Contributing without a local build
 ----------------------------------
 You don't necessarily need to set up a local build environment.
@@ -24,33 +26,38 @@ Setting up the build environment for docs
 
 First, you need to have a relatively recent version of Python installed - 3.8 or higher. `Download here <https://www.python.org/downloads/>`_
 
-Clone the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_, e.g.
+Open a terminal wherever you want the files to end up and clone the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_, e.g.
 
 
 .. code:: bash
 
     git clone https://github.com/R2Northstar/ModdingDocs/
+    cd ModdingDocs
 
+Your terminal should now be open in the ModdingDocs folder.
 
-Opened the clone repo.
-
-(on Windows, replace `python3` with `py`)
-
+Next, on Windows do:
 
 .. code:: bash
 
     # Install Poetry, the build tool used by ModdingDocs
-    python3 -m pip install poetry
+    py -m pip install poetry
 
+For other OSs replace ``py`` with ``python3`` or whichever python executable you prefer.
 
-Then all you need to do is tell poetry to run the build script. This will run a local webserver and open the docs in your default browser.
-
+Now, tell poetry to install this project.
 
 .. code:: bash
 
-    # let poetry take care of it!
-    poetry run build
+    poetry install
 
+It should have created the build script, run it with:
+
+.. code:: bash
+
+    build
+
+This should rebuild the docs on changes and open them in your default browser.
 
 Tips and tricks
 ---------------
