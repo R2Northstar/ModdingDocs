@@ -34,6 +34,7 @@ If you know anything about any function, object or concept please dont hesitate 
    /guides/cheatsheet
    /guides/moddingtutorials
    /guides/weaponmodding
+   /guides/rpakmodding
    /guides/localisation
    /guides/crosshairmodding
    /guides/settingsmods
