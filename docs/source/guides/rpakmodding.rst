@@ -84,11 +84,9 @@ After you have made the desired changes to the image, export it as a .dds file w
 
 |ExportDDS|
 
-If you scale the image up or down, make sure you have scaled it by a multiple of 2 on both axis, 
-for example ``256x256 -> 512x512`` or ``256x256 -> 1024x1024`` is fine, but ``256x256 -> 350x350`` might cause issues.
-
-.. note::
-    If when you test the rpak the colour looks weird, use SRGB in the .dds compression, or use non-SRGB if you were already using SRGB
+.. warning:: 
+    Try to make your textures have dimensions that are powers of two, so that mipmaps can be used 
+    for example ``256x256`` ``512x512`` ``1024x512`` ``4096x1024`` are all fine, but ``350x700`` might cause issues.
 
 Place your newly created .dds file in the ``assets\texture`` folder, following the path in the Name you noted down above.
 In this example the .dds file would go in ``RePak\assets\texture\models\camo_skins``, with the path of the image being ``..\RePak\assets\texture\models\camo_skins\camo_skin04_col.dds``
@@ -193,6 +191,9 @@ The file structure of your ``paks`` folder should be similar to this:
 - ``rpak.json``: this controls how the game loads your RPak files
 
 **After ``rpak.json`` is set up correctly, your RPak mod should be complete and functional!**
+
+.. note::
+    If when you test the rpak the colour looks weird, use SRGB in the .dds compression, or use non-SRGB if you were already using SRGB
 
 .. |CamoRPak| image:: https://user-images.githubusercontent.com/66967891/181027612-e5f7af74-9e1a-496e-a2d7-783423f7b179.png
 .. |ExportDDS| image:: https://user-images.githubusercontent.com/66967891/181824740-c8a6d1d7-234f-405d-a348-1287aa9bb168.png
