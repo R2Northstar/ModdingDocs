@@ -1,5 +1,5 @@
-Creating RPak Mods using RePak
-==============================
+RPak Modding
+============
 
 RPak mods can be used for the following:
 
