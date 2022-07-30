@@ -1,3 +1,8 @@
 Datatables
 ^^^^^^^^^^
 
+Examples:
+=========
+
+Structure:
+==========
