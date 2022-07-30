@@ -64,3 +64,10 @@ If you know anything about any function, object or concept please dont hesitate 
    /native/class
    /native/useful
 
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: RePak Documentation
+
+   /repak/map
+   /repak/index
