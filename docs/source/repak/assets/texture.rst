@@ -6,16 +6,16 @@ They cannot be used directly by the game, but are instead referenced by other as
 
 The image used by a texture must be in the .dds format and must be in one of the following compression types:
 
-* BC1 SRGB
-* BC2 SRGB
-* BC3 SRGB
-* BC7
-* BC7 SRGB
-* DXT1
-* DXT3
-* DXT5
-* BC4U
-* BC5U UNORM
+- BC1 SRGB
+- BC2 SRGB
+- BC3 SRGB
+- BC7
+- BC7 SRGB
+- DXT1
+- DXT3
+- DXT5
+- BC4U
+- BC5U UNORM
 
 Example:
 =========
