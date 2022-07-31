@@ -27,16 +27,16 @@ Example:
         "path": "textures/models/humans/test_texture"
     }
 
-Structure:
-==========
+Asset Structure:
+================
 
-$type
------
+``$type``
+---------
 
 For an asset to be a texture asset, the ``$type`` field must be ``"txtr"``.
 
-path
-----
+``path``
+--------
 
 The ``path`` field of a texture asset is used to determine the location in the RPak's ``assetsDir`` that the image file is in.
 
@@ -50,10 +50,10 @@ The ``path`` field must start with ``textures/`` and must not end with a file ex
     ``Failed to find texture source file %s. Exiting...\n``
     where ``%s`` is the ``path`` of the asset.
 
-.. warning ::
-    If the file at the given ``path`` is not a .dds file, RePak will output the following warning to the console and skip the asset:
+.. error ::
+    If the file at the given ``path`` is not a .dds file, RePak will output the following error to the console:
 
-    ``Attempted to add txtr asset '%s' that was not a valid DDS file (invalid magic). Skipping asset...\n``
+    ``Attempted to add txtr asset '%s' that was not a valid DDS file (invalid magic).\n``
     where ``%s`` is the ``path`` of the asset.
 
 .. error ::
