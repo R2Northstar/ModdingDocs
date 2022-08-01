@@ -1,8 +1,8 @@
-Datatables
-^^^^^^^^^^
+Datatables - TODO
+^^^^^^^^^^^^^^^^^
 
 Examples:
 =========
 
-Structure:
-==========
+Asset Structure:
+================
