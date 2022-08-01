@@ -137,7 +137,7 @@ An entry in the ``textures`` array must have a ``path`` field, as the game must 
 ``width`` and ``height``
 ************************
 
-An entry in the ``textures`` array must have both a ``width`` and a ``height`` field, these values must both be integers.
+An entry in the ``textures`` array must have both a ``width`` and a ``height`` field, these values should both be integers.
 
 .. error::
     If the entry in the ``textures`` array doesn't contain a valid ``width`` and a valid ``height`` field, RePak will output the following error to the console:
@@ -147,7 +147,7 @@ An entry in the ``textures`` array must have both a ``width`` and a ``height`` f
 ``posX`` and ``posY``
 *********************
 
-An entry in the ``textures`` array must have both a ``posX`` and a ``posY`` field, these values must both be integers.
+An entry in the ``textures`` array must have both a ``posX`` and a ``posY`` field, these values should both be integers.
 These fields determine the location of the top-left pixel in the UI texture.
 
 .. error::
