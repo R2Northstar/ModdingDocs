@@ -31,10 +31,10 @@ The tool used to edit, view, and convert our .vtf's is `VTFEdit <https://nemstoo
 VPK Tool
 """"""""
 
-`VPK Tool <https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip>`
+VPK Tool
 ^^^^^^^^
 
-
+Once you have 
 
 To get started, extract the .mdl of what you want with the `Titanfall VPK Tool <https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip>`_. 
 
