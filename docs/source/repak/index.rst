@@ -3,7 +3,7 @@ Asset Types
 -----------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 4
 
     /repak/assets/texture
     /repak/assets/material
