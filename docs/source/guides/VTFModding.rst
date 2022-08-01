@@ -26,7 +26,7 @@ Since vtf modding was majorly for introducing custom weapon skins. Most of the d
 
 Most textures in the game use .dds. We can make them use .vtf. 
 
-The tool used to edit, view, and convert our .vtf's is `VTFEdit <https://nemstools.github.io/pages/VTFLib-Download.html>`__.
+What we'll be doing is extracting the model. Replacing the texture path in the mdl to lead to our texture. Then using our texture and allowing for extra properties.
 
 .. _VPK Tool: https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip
 
@@ -59,8 +59,8 @@ Now, before you edit, you have to realize hex editors are just built different (
 
 We'll change the path from ``.models\Weapons_r2\car101\car_smg`` to ``.models/weapons_r2/car101/car_ctm``.  Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
 
- VMT
-----
+ Creating VMT
+-------------
 
 In the same folder you extracted your mdl's. Make a ``materials`` folder next to the ``models`` folder. Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``.models/weapons_r2/car101``, our .vmt file would be named ``car_ctm.vmt``. 
 
@@ -82,7 +82,21 @@ Inside your .vmt paste:
 		"$nocull" "1"
 	}
 
-When we use vtf textures, we can only use the albedo and normal `maps <https://titanfall-skin-group.gitbook.io/titanfall-2-skin-creation/ms/genral-information/texture-maps>`__. Fire up `VTFEdit <https://nemstools.github.io/pages/VTFLib-Download.html>`__ and hit file, import, and grab your texture. then file, save as, and save it in the same folder as your .vmt. In your vmt, put the path to your texture in the parentheces after `"$basetexture"`, treating models as root. So i would put, `models\weapons_r2\vtfkraber\kraber_col`. Then do the same for your normal map, but when you import it, pick volume texture instead of animated texture. In `"$bumpmap"` put the path to your normal texture. Now create another vtf with literally any image. Put its path in `"$texture2"`. As far as i know, this is neccesary even though the texture isnt used. Your root folder should look somewhat like this::
+When we use vtf textures, we can only use the albedo and normal `maps <https://titanfall-skin-group.gitbook.io/titanfall-2-skin-creation/ms/genral-information/texture-maps>`_. 
+
+VTFEdit
+--------
+
+`VTFEdit`_ is a tool to edit, view, and create .vtf files.
+
+.. _VTFEdit: https://nemstools.github.io/pages/VTFLib-Download.html
+
+Launch `VTFEdit`_. Top left, click `File`, `Import`, find and Import your custom texture. After that, save your new .vtf into the same folder as your custom .vmt. 
+
+Configuring your .vmt
+---------------------
+
+In the ``"$basetexture"`` "area". So i would put, `models\weapons_r2\vtfkraber\kraber_col`. Then do the same for your normal map, but when you import it, pick volume texture instead of animated texture. In `"$bumpmap"` put the path to your normal texture. Now create another vtf with literally any image. Put its path in `"$texture2"`. As far as i know, this is neccesary even though the texture isnt used. Your root folder should look somewhat like this::
 
 	root
 	├─ materials
