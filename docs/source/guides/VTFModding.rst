@@ -4,13 +4,13 @@ VTF Modding
 VTF Overview
 ------------
 
-this vtf modding doc is a mess
-VTF, short for "Valve Texture Format", is a texture type used by valve in the source engine and is semi-used in titanfall. it is used for some fx and other textures. Most things use .dds, but we can change this. The tool used to edit vtfs is `VTFEdit <https://nemstools.github.io/pages/VTFLib-Download.html>`__.
+VTF, short for "Valve Texture Format", is a texture type used by Valve in the source engine and is occasionally in Titanfall. VTF's are used for fx, animation, and other textures. 
+
 
 VMT Overview
 ------------
 
-VMT, short for "Valve Material Type", is a text `material <https://developer.valvesoftware.com/wiki/Material>`__ system that dictates how the game percieves a vtf outside of how it looks. It uses `parameters <https://developer.valvesoftware.com/wiki/Category:List_of_Shader_Parameters>`__ and `proxies <https://developer.valvesoftware.com/wiki/Material_proxies>`__ to dictate how `shaders <https://developer.valvesoftware.com/wiki/Shader>`__ will show the game. We will go into greater detail later.
+VMT, short for "Valve Material Type", is a text `material <https://developer.valvesoftware.com/wiki/Material>`__ system that dictates how the game perceives a VTF outside of how it looks. It uses `parameters <https://developer.valvesoftware.com/wiki/Category:List_of_Shader_Parameters>`__ and `proxies <https://developer.valvesoftware.com/wiki/Material_proxies>`__ to dictate how `shaders <https://developer.valvesoftware.com/wiki/Shader>`__ will show the game. We will go into greater detail later.
 
 Editing FX that use VTFs
 ------------------------
@@ -22,7 +22,11 @@ Since the L-Star has a physical bullet that is counted as fx, we can edit how it
 VTF Skins
 ---------
 
-Though it is more a skins thing, making vtf skins is somewhat complicated, and to do any vtf editing you need to understand it. 
+Since VTF modding was majorly for introducing custom weapon skins. Most of the development on VTF modding was designed focused on custom weapon skins. Though understanding how custom VTF skins is specific, it is needed in order to VTF mod other textures. 
+
+Most textures in the game use .dds. We can make them use .vtf. 
+
+The tool used to edit, view, and convert our .vtf's is `VTFEdit <https://nemstools.github.io/pages/VTFLib-Download.html>`__.
 
 To get started, extract the .mdl of what you want with the `Titanfall VPK Tool <https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip>`_. 
 
@@ -30,7 +34,13 @@ Open `englishclient_mp_common.bsp.pak000_dir.vpk` in the vpk folder.
 
 Go to ``models\weapons`` and find the weapon you want. Not all guns are named the same in files as they are in game. Here is `list of weapon names <https://noskill.gitbook.io/titanfall2/documentation/file-location/weapon/weapon-model>`_ to help you out. 
 
-Once you've found your gun, extract both the ptpov and w versions. ptpov is the viewmodel and w is the normal model. then extract it anywhere. To change the path to the texture we will need a hex editor. I will use `HxD <https://mh-nexus.de/en/hxd/>`__, but you can also use `ida <https://hex-rays.com/ida-free/>`__ or anything else, its just personal preference. Once you've got that, open your .mdl with it and search (ctrl+f) for skin_31. If that dosent bring anything up, try skn_31 or skin31 or something like that until you find it. The string of text around it should look something like `.models\Weapons_R2\weaponname\weaponname_skin_31`. Near it, there should be the same text, but without the `_skin_31`. This is the path to the default textures. Now, before you edit, you have to realize hex editors are just built different (cant help it). You cant add or delete text with a hex editor, only replace. Go to the start of the path for the default textures, and change the path to anything else, as long as it starts with `.models\weapons_r2`. For this example i will make a kraber skin, so i will change my path to `.models\weapons_r2\vtfkraber\vtfkraber`.once youve done that, save and do the same thing on the ptpov_ or w_ model. now in the same folder you extracted your mdls too, make a `materials` folder. inside that create the path you hex edited, but the last part is a .vmt file not a folder. the path i would make would be `models\weapons_r2\vtfkraber\vtfkraber.vmt`. once you have made your .vmt, open it and paste this in::
+Once you've found your gun, extract both the ptpov and w versions. ptpov is the viewmodel and w is the normal model. then extract it anywhere. 
+
+To change the path to the texture we will need a hex editor. I will use `HxD <https://mh-nexus.de/en/hxd/>`__, but you can also use `ida <https://hex-rays.com/ida-free/>`__ or anything else, its just personal preference. 
+
+Once you've got that, open your .mdl with it and search (ctrl+f) for skin_31. If that dosent bring anything up, try skn_31 or skin31 or something like that until you find it. The string of text around it should look something like `.models\Weapons_R2\weaponname\weaponname_skin_31`. Near it, there should be the same text, but without the `_skin_31`. This is the path to the default textures. Now, before you edit, you have to realize hex editors are just built different (cant help it). You cant add or delete text with a hex editor, only replace. Go to the start of the path for the default textures, and change the path to anything else, as long as it starts with `.models\weapons_r2`. For this example i will make a kraber skin, so i will change my path to `.models\weapons_r2\vtfkraber\vtfkraber`.once youve done that, save and do the same thing on the ptpov_ or w_ model. now in the same folder you extracted your mdls too, make a `materials` folder. inside that create the path you hex edited, but the last part is a .vmt file not a folder. the path i would make would be `models\weapons_r2\vtfkraber\vtfkraber.vmt`. once you have made your .vmt, open it and paste this in
+
+::
 
 	"UnlitTwoTexture"
 	{
