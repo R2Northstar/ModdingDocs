@@ -49,7 +49,10 @@ Making RPaks
 ^^^^^^^^^^^^
 
 This section will walk you through the process of making an RPak that replaces a camo.
-For information on making other types of RPaks, check the RePak docs.
+For information on making other types of RPaks, check the RePak Docs:
+
+* :doc:`../repak/map`
+* :doc:`../repak/index`
 
 
 Finding the camo
@@ -172,6 +175,27 @@ This is fine for camo RPaks, but isn't suitable for more complex RPaks
 - ``Preload``: if set to ``true`` this makes RPaks get loaded as soon as possible.
 - ``Aliases``: this completely replaces the RPak with the specified RPak. In this example ``camo_skin04_col.rpak`` is replaced by ``example.rpak``.
 - ``Postload``: this makes RPaks get loaded directly after the specified RPak.
+
+Preload
+*******
+
+This field tells Northstar whether or not to load a specific RPak as soon as RPak loading starts.
+
+The field is a boolean. (``true`` or ``false``) and should be formatted like ``"<target_rpak>": true`` or ``"<target_rpak>": false``
+
+Aliases
+*******
+
+This field tells Northstar that a specific RPak should never be loaded, and a different RPak should be loaded instead.
+
+The field should be formatted like ``"<target_rpak>": "<replacement_rpak>"``
+
+Postload
+********
+
+This field tells Northstar that a specific RPak must be loaded directly after another specified RPak has finished loading.
+
+The field should be formatted like ``"<target_rpak>": "<rpak_to_load_after>"``
 
 .. warning:: 
     If an asset in your RPak references another asset, it must be loaded after the asset that it references, or the game will infinitely loop when launched.
