@@ -17,8 +17,11 @@ The image used by a texture must be in the .dds format and must be in one of the
 - BC4U
 - BC5U UNORM
 
-Example:
+Examples:
 =========
+
+1. Basic Texture Asset
+----------------------
 
 .. code-block:: json
 
@@ -26,6 +29,9 @@ Example:
         "$type": "txtr",
         "path": "textures/models/humans/test_texture"
     }
+
+.. note::
+    The image file in this texture asset will be called ``test_texture.dds`` and will be at ``<ASSETSDIR>/textures/models/humans/test_texture.dds``
 
 Asset Structure:
 ================
