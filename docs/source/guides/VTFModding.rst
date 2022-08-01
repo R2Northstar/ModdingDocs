@@ -28,20 +28,19 @@ Most textures in the game use .dds. We can make them use .vtf.
 
 The tool used to edit, view, and convert our .vtf's is `VTFEdit <https://nemstools.github.io/pages/VTFLib-Download.html>`__.
 
-`VPK Tool`_
-""""""""
-
 .. _VPK Tool: https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip
 
-Once you have downloaded 
+VPK Tool
+""""""""
+.. _cra0 VPKTool: https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip
 
-To get started, extract the .mdl of what you want with the `Titanfall VPK Tool <https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip>`_. 
+.. _Harmony VPKTool: https://github.com/harmonytf/HarmonyVPKTool
 
-Open `englishclient_mp_common.bsp.pak000_dir.vpk` in the vpk folder. 
+You have 2 options for a VPK tool. Pick either the older VPK tool: `cra0 VPKTool`_ or the Newer VPK tool: `Harmony VPKTool`_
 
-Go to ``models\weapons`` and find the weapon you want. Not all guns are named the same in files as they are in game. Here is `list of weapon names <https://noskill.gitbook.io/titanfall2/documentation/file-location/weapon/weapon-model>`_ to help you out. 
+With your VPK tool opened. 'Open' englishclient_mp_common.pak000_dir.vpk which is located in ``Titanfall2/vpk``. 
 
-Once you've found your gun, extract both the ptpov and w versions. ptpov is the viewmodel and w is the normal model. then extract it anywhere. 
+Inside of the VPK. Not all guns are named the same in files as they are in game. Here is `list of weapon names <https://noskill.gitbook.io/titanfall2/documentation/file-location/weapon/weapon-model>`_ to help you out. Navigate to ``models/weapons/car101``. Extract all the viewmodel version (ptpov) and normal model (w) mdl's.
 
 To change the path to the texture we will need a hex editor. I will use `HxD <https://mh-nexus.de/en/hxd/>`__, but you can also use `ida <https://hex-rays.com/ida-free/>`__ or anything else, its just personal preference. 
 
