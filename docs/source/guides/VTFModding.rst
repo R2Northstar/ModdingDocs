@@ -4,7 +4,7 @@ VTF Modding
 VTF Overview
 ------------
 
-woot woot
+woot woot woot
 VTF, short for "Valve Texture Format", is a texture type used by valve in the source engine and is semi-used in titanfall. it is used for some fx and other textures. Most things use .dds, but we can change this. The tool used to edit vtfs is `VTFEdit <https://nemstools.github.io/pages/VTFLib-Download.html>`__.
 
 VMT Overview
