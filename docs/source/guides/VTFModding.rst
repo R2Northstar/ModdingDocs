@@ -28,12 +28,12 @@ Most textures in the game use .dds. We can make them use .vtf.
 
 The tool used to edit, view, and convert our .vtf's is `VTFEdit <https://nemstools.github.io/pages/VTFLib-Download.html>`__.
 
-`VPK Tool`
+`VPK Tool`_
 """"""""
 
 .. _VPK Tool: https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip
 
-Once you have 
+Once you have downloaded 
 
 To get started, extract the .mdl of what you want with the `Titanfall VPK Tool <https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip>`_. 
 
