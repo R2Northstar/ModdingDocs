@@ -70,7 +70,7 @@ After this is done downloading and setting up all the dependencies, you can buil
 
     poetry run build
 
-This should rebuild the docs on changes and open them in your default browser woth live reloading.
+This should rebuild the docs on changes and open them in your default browser with live reloading.
 
 
 Tips and tricks
