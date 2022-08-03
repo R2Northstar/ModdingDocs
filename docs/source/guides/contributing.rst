@@ -20,10 +20,24 @@ There will be a test-build done for each PR, which you can find on your PR as a 
 This should take you to a online version of the docs with your PRs changes. 
 
 
-Setting up the build environment for docs
------------------------------------------
+Building locally
+----------------
 
 First, you need to have a relatively recent version of Python installed - 3.8 or higher. `Download here <https://www.python.org/downloads/>`_
+
+tl:dr;
+^^^^^^
+
+.. code:: bash
+
+    git clone https://github.com/R2Northstar/ModdingDocs/
+    cd ModdingDocs
+    py -m pip install poetry
+    poetry install
+    poetry run build
+
+Explanation
+^^^^^^^^^^^
 
 Open a terminal wherever you want the files to end up and clone the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_, e.g.
 
@@ -50,13 +64,14 @@ Now, tell poetry to install this project.
 
     poetry install
 
-It should have created the build script, run it with:
+After this is done downloading and setting up all the dependencies, you can build it with:
 
 .. code:: bash
 
-    build
+    poetry run build
 
-This should rebuild the docs on changes and open them in your default browser.
+This should rebuild the docs on changes and open them in your default browser woth live reloading.
+
 
 Tips and tricks
 ---------------
