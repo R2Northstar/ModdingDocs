@@ -38,6 +38,14 @@ File editors
 * `VSCodium <https://vscodium.com>`_
 * `Notepad++ <https://notepad-plus-plus.org/downloads/>`_
 
+Version control
+^^^^^^^^^^^^^^^
+
+* `git <https://git-scm.com/>`_
+
+  * `GitHub <https://github.com/>`_
+  * `GitLab <https://about.gitlab.com/>`_
+
 Graphics / animation / color editors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * `Paint.net <https://www.getpaint.net>`_
