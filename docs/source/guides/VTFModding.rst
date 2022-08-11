@@ -22,9 +22,9 @@ Since the L-Star has a physical bullet that is counted as fx, we can edit how it
 VTF Skins
 ---------
 
-Since vtf modding was majorly for introducing custom weapon skins. Most of the development on VTF modding was designed focused on custom weapon skins. Though understanding how custom VTF skins is specific, it is needed in order to VTF mod other textures. 
+Since vtf modding was majorly for introducing custom weapon skins. Most of the development on VTF modding was designed focused on custom weapon skins. Although understanding how custom weapon VTF skins is specific, it is needed in order to VTF mod other textures. 
 
-Most textures in the game use .dds. We can make them use .vtf. 
+Most textures in the game use .dds but we can make them use .vtf. 
 
 What we'll be doing is extracting the model. Replacing the texture path in the mdl to lead to our texture. Then using our texture and allowing for extra properties.
 
@@ -36,12 +36,13 @@ VPK Tool
 
 .. _Harmony VPKTool: https://github.com/harmonytf/HarmonyVPKTool
 
-<<<<<<< HEAD
 You have 2 options for a VPK tool. Pick either the older VPK tool: `cra0 VPKTool`_ or the Newer VPK tool: `Harmony VPKTool`_ (better).
 
 With your VPK tool opened. 'Open' ``englishclient_mp_common.pak000_dir.vpk`` which is located in ``Titanfall2/vpk``. 
 
-Inside of the VPK. Not all guns are named the same in files as they are in game. Here is `list of weapon names <https://noskill.gitbook.io/titanfall2/documentation/file-location/weapon/weapon-model>`_ to help you out. Navigate to ``models/weapons/car101``. Extract all the viewmodel versions (ptpov) and normal model (w) mdl's.
+Inside of the VPK. Not all guns are named the same in files as they are in game. Here is `list of weapon names <https://noskill.gitbook.io/titanfall2/documentation/file-location/weapon/weapon-model>`_ to help you out. 
+
+Navigate to ``models/weapons/car101``. Extract all the viewmodel versions (ptpov) and normal model (w) mdl's.
 
 Hex Editor
 ----------
@@ -52,13 +53,12 @@ To change the path in the .mdl to the custom .vtf texture. We need a hex editor.
 .. _ida: https://hex-rays.com/ida-free/
 
 
-In your hex editor. Open your .mdl. We need to get closer to the string we need or else you'll be scrolling and searching for hours. Search (ctrl+f) for skin_31. If you don't get any matches, try skn_31, skin31, elite, or prime. T 
+In your hex editor. Open your .mdl. We need to get closer to the string we need or else you'll be scrolling and searching for hours. Search (ctrl+f) for skin_31. If you don't get any matches, try skn_31, skin31, elite, or prime.
 
 The string of text we need should look something like ``models\Weapons_R2\weaponname\weaponname_skin_31``. Near it, there should be the same text, but without the ``_skin_31``. This is the path to the default textures. 
 
 Now, before you edit, you have to realize hex editors are just built different (cant help it). You cannot add or delete text with a hex editor, only replace. Go to the start of the path for the default textures, and change the path to anything else, as long as it starts with ``.models\weapons_r2``. 
 
-<<<<<<< HEAD
 We'll change the path from ``.models\Weapons_r2\car_smg\CAR_smg`` to ``.models\weapons_r2\car_ctm\car_ctm``.  Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
 
 Creating VMT
@@ -66,14 +66,7 @@ Creating VMT
 
 In the same folder you extracted your mdl's. Make a ``materials`` folder next to the ``models`` folder. 
 
-Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``\materials\weapons_r2\car_ctm\``, our .vmt file would be named ``car_ctm.vmt``. 
-=======
-We'll change the path from ``.models\Weapons_r2\car101\car_smg`` to ``.models/weapons_r2/car101/car_ctm``.  Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
-
- Creating VMT
--------------
-
-In the same folder you extracted your mdl's. Make a ``materials`` folder next to the ``models`` folder. Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``.models/weapons_r2/car101``, our .vmt file would be named ``car_ctm.vmt``. 
+Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``.models/weapons_r2/car_cmt``, our .vmt file would be named ``car_ctm.vmt``. 
 
 Inside your .vmt paste:
 ::
@@ -93,10 +86,8 @@ Inside your .vmt paste:
 		"$nocull" "1"
 	}
 
-<<<<<<< HEAD
+
 When we use vtf textures, we can only use the albedo and normal. Learn more about `texture maps <https://retryy.gitbook.io/tf2/wiki/create/texturemaps>`_ here.
-=======
-When we use vtf textures, we can only use the albedo and normal `maps <https://titanfall-skin-group.gitbook.io/titanfall-2-skin-creation/ms/genral-information/texture-maps>`_. 
 
 VTFEdit
 --------
@@ -105,7 +96,6 @@ VTFEdit
 
 .. _VTFEdit: https://nemstools.github.io/pages/VTFLib-Download.html
 
-<<<<<<< HEAD
 Launch `VTFEdit`_. Top left, click ``File``, ``Import``, find and Import your custom texture(s). 
 
 When importing your normal map. Choose to import as a ``Volume Map``
@@ -114,13 +104,12 @@ When importing your diffuse map. Choose to import as a ``Animated Map``
 More info about .vtf format possibilities `here <https://retryy.gitbook.io/tf2/wiki/create/formats>`_, or the official source docs `here <https://developer.valvesoftware.com/wiki/Valve_Texture_Format>`_.
 
 After that, save your new .vtf's into the same folder as your custom .vmt with a simple name.
-=======
+
 Launch `VTFEdit`_. Top left, click `File`, `Import`, find and Import your custom texture. After that, save your new .vtf into the same folder as your custom .vmt. 
 
 Configuring your .vmt
 ---------------------
 
-<<<<<<< HEAD
 To know which texture/texture map you have. Analyze `this <https://retryy.gitbook.io/tf2/wiki/create/texturemaps>`_ wiki.
 
 In the ``"$basetexture"`` argument. You'll enter your .vtf texture directory. We'll use ``models\weapons_r2\car_ctm\NAMEOFVTF``. This is pointing to your custom .vtf with the simple name. Do not add the ``.vtf`` file extension to the end of the directory; ``models\weapons_r2\car_ctm\NAMEOFVTF.vtf``, or the game cannot find the texture.
@@ -135,9 +124,6 @@ Final VPK folder
 Your root folder should look somewhat like this
 
 ::
-=======
-In the ``"$basetexture"`` "area". So i would put, `models\weapons_r2\vtfkraber\kraber_col`. Then do the same for your normal map, but when you import it, pick volume texture instead of animated texture. In `"$bumpmap"` put the path to your normal texture. Now create another vtf with literally any image. Put its path in `"$texture2"`. As far as i know, this is neccesary even though the texture isnt used. Your root folder should look somewhat like this::
-
 
 	root
 	├─ materials
@@ -154,7 +140,7 @@ In the ``"$basetexture"`` "area". So i would put, `models\weapons_r2\vtfkraber\k
 	        └─ w_car101.mdl
 
 Finished.
--------
+---------
 
 You're done! You just need to pack it into a vpk with the vpk tool (for our gun mod, we'd repack to ``englishclient_mp_common.pak000_dir.vpk``), and put it into a northstar mod. 
 
@@ -167,7 +153,7 @@ To add animation functionality, all we need to do is add a proxie and change our
 
 Create a .vtf texture with multiple frames imported to one .vtf texture. Put it as ``"$basecolor"``.
 
-At the bottom of your vmt but before the }, add this:
+At the bottom of your vmt but before the ``}``, add this:
 ::
 	"Proxies"
 	{
