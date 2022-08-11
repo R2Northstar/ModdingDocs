@@ -105,8 +105,6 @@ More info about .vtf format possibilities `here <https://retryy.gitbook.io/tf2/w
 
 After that, save your new .vtf's into the same folder as your custom .vmt with a simple name.
 
-Launch `VTFEdit`_. Top left, click `File`, `Import`, find and Import your custom texture. After that, save your new .vtf into the same folder as your custom .vmt. 
-
 Configuring your .vmt
 ---------------------
 
