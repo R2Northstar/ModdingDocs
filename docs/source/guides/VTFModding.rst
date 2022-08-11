@@ -36,6 +36,7 @@ VPK Tool
 
 .. _Harmony VPKTool: https://github.com/harmonytf/HarmonyVPKTool
 
+<<<<<<< HEAD
 You have 2 options for a VPK tool. Pick either the older VPK tool: `cra0 VPKTool`_ or the Newer VPK tool: `Harmony VPKTool`_ (better).
 
 With your VPK tool opened. 'Open' ``englishclient_mp_common.pak000_dir.vpk`` which is located in ``Titanfall2/vpk``. 
@@ -57,6 +58,7 @@ The string of text we need should look something like ``models\Weapons_R2\weapon
 
 Now, before you edit, you have to realize hex editors are just built different (cant help it). You cannot add or delete text with a hex editor, only replace. Go to the start of the path for the default textures, and change the path to anything else, as long as it starts with ``.models\weapons_r2``. 
 
+<<<<<<< HEAD
 We'll change the path from ``.models\Weapons_r2\car_smg\CAR_smg`` to ``.models\weapons_r2\car_ctm\car_ctm``.  Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
 
 Creating VMT
@@ -65,6 +67,13 @@ Creating VMT
 In the same folder you extracted your mdl's. Make a ``materials`` folder next to the ``models`` folder. 
 
 Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``\materials\weapons_r2\car_ctm\``, our .vmt file would be named ``car_ctm.vmt``. 
+=======
+We'll change the path from ``.models\Weapons_r2\car101\car_smg`` to ``.models/weapons_r2/car101/car_ctm``.  Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
+
+ Creating VMT
+-------------
+
+In the same folder you extracted your mdl's. Make a ``materials`` folder next to the ``models`` folder. Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``.models/weapons_r2/car101``, our .vmt file would be named ``car_ctm.vmt``. 
 
 Inside your .vmt paste:
 ::
@@ -84,7 +93,10 @@ Inside your .vmt paste:
 		"$nocull" "1"
 	}
 
+<<<<<<< HEAD
 When we use vtf textures, we can only use the albedo and normal. Learn more about `texture maps <https://retryy.gitbook.io/tf2/wiki/create/texturemaps>`_ here.
+=======
+When we use vtf textures, we can only use the albedo and normal `maps <https://titanfall-skin-group.gitbook.io/titanfall-2-skin-creation/ms/genral-information/texture-maps>`_. 
 
 VTFEdit
 --------
@@ -93,6 +105,7 @@ VTFEdit
 
 .. _VTFEdit: https://nemstools.github.io/pages/VTFLib-Download.html
 
+<<<<<<< HEAD
 Launch `VTFEdit`_. Top left, click ``File``, ``Import``, find and Import your custom texture(s). 
 
 When importing your normal map. Choose to import as a ``Volume Map``
@@ -101,10 +114,13 @@ When importing your diffuse map. Choose to import as a ``Animated Map``
 More info about .vtf format possibilities `here <https://retryy.gitbook.io/tf2/wiki/create/formats>`_, or the official source docs `here <https://developer.valvesoftware.com/wiki/Valve_Texture_Format>`_.
 
 After that, save your new .vtf's into the same folder as your custom .vmt with a simple name.
+=======
+Launch `VTFEdit`_. Top left, click `File`, `Import`, find and Import your custom texture. After that, save your new .vtf into the same folder as your custom .vmt. 
 
 Configuring your .vmt
 ---------------------
 
+<<<<<<< HEAD
 To know which texture/texture map you have. Analyze `this <https://retryy.gitbook.io/tf2/wiki/create/texturemaps>`_ wiki.
 
 In the ``"$basetexture"`` argument. You'll enter your .vtf texture directory. We'll use ``models\weapons_r2\car_ctm\NAMEOFVTF``. This is pointing to your custom .vtf with the simple name. Do not add the ``.vtf`` file extension to the end of the directory; ``models\weapons_r2\car_ctm\NAMEOFVTF.vtf``, or the game cannot find the texture.
@@ -119,6 +135,9 @@ Final VPK folder
 Your root folder should look somewhat like this
 
 ::
+=======
+In the ``"$basetexture"`` "area". So i would put, `models\weapons_r2\vtfkraber\kraber_col`. Then do the same for your normal map, but when you import it, pick volume texture instead of animated texture. In `"$bumpmap"` put the path to your normal texture. Now create another vtf with literally any image. Put its path in `"$texture2"`. As far as i know, this is neccesary even though the texture isnt used. Your root folder should look somewhat like this::
+
 
 	root
 	├─ materials
