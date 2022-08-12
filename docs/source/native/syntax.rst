@@ -19,12 +19,9 @@ Luckily, `samisalreadytaken has written a squirrel highlighter <https://gist.git
 
 VSCode
 ------
-VSCode has extensions avaliable for working with squirrel, and searching "squirrel" in the extensions marketplace will give you them. 
+For VSCode, rexx has made a syntax highlighting extension.
 
-However, installing this will only create an associastion for .nut files, and not .gnut files. 
-To fix this:
-
-1. Open a .gnut file
-2. Do CTRL+K, M (not CTRL+K, CTRL+M)
-3. Select ``Configure File Association for .gnut``
-4. Select ``Squirrel`` (only appears if you have the extension)
+1. Download the `.zip file here <https://github.com/R2Northstar/ModdingDocs/raw/main/files/VSCode-Respawn-Squirrel-Highlighting.zip>`
+2. Extract the zip
+3. Move its contents to ``your_home_directory/.vscode/extensions/``
+4. Reload VSCode and enable it
