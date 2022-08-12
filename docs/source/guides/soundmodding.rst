@@ -1,22 +1,12 @@
 Sound Modding
 ==============
 
-**Some of the terms and their meanings in this article;**
-
--  ``mod.json`` documented here: :doc:`/guides/gettingstarted`. You can find an example template in this article.
--  ``AudioSelectionStrategy`` (``sequential`` or ``random``): Selection
-   strategy for multiple override samples. If you have one sound or you want to play them in alphabetical order,
-   choose ``sequential``. If you have more than one sound and you want to randomize them, you can choose ``random``.
--  ``Audio Event IDs`` Every event has a different ID. In order for the game
-   to choose the sound it should play at that moment, it must first know
-   its event ID. To start to change sounds, you must identify the 
-   event ID which plays it first.
 
 Audio Type
 -----------
 
 -  You will need to use ``WAV`` format and either ``48000hz`` or ``44100hz`` sample rate.
--  more details later in :ref:`Creating Your Sound`
+-  More details below in `creating_your_sound`_
 
 Step 1 - Identifying the Sound
 -------------------------------
@@ -28,7 +18,7 @@ are happening at that moment on the console.
 For example, use your Grapple and open the console the event ID will be
 ``pilot_grapple_fire``
 
-Hot it looks in the console: |console|
+How it looks in the console: |console|
 
 All weapons, boosts, tacticals have different events IDs on different surfaces (concrete, solidmetal, wood, dirt etc.)
 That's why you must identify the exact event/s. Examples based on Grapple:
@@ -41,7 +31,8 @@ That's why you must identify the exact event/s. Examples based on Grapple:
 just in-match ones. For example:
 
 - The sound when you move the cursor to an option it will be ``menu_focus``, and clicking sound will be ``menu_accept`` or menu music ``mainmenu_music``
-- After every sound, you can check the console to identify it.
+
+Check the console often, as it'S easy to miss your sound - there can be a lot of sounds playing.
 
 Step 2 - Creating Folders
 --------------------------
@@ -60,7 +51,8 @@ Assuming the event name is ``pilot_grapple_fire``, the folder structure of your 
    └── mod.json
    
 
-Example of a ``mod.json``
+Example of a ``mod.json`` (documented here: :doc:`/guides/gettingstarted`)
+
 
 .. code-block:: json
 
@@ -78,7 +70,8 @@ Example of a ``mod.json``
 -  ``pilot_grapple_fire.json`` json used to configure the sound override, dont forget to edit.
 
 You will have to add that folder with your sound and the json for each event you want to override.
-The event JSON files must contain both EventId and AudioSelectionStrategy like this:
+The event JSON files must contain both ``EventId`` and ``AudioSelectionStrategy`` like this:
+
 
 .. code-block:: json
 
@@ -86,6 +79,14 @@ The event JSON files must contain both EventId and AudioSelectionStrategy like t
        "EventId": [ "pilot_grapple_fire" ],
        "AudioSelectionStrategy": "sequential"
    }
+
+The ``AudioSelectionStrategy`` can be either:
+
+- ``sequential``: If you have one sound or you want to play them in alphabetical order.
+- ``random``: If you have more than one sound and you want to randomize them.
+
+
+.. _creating_your_sound:
 
 Creating Your Sound
 --------------------
