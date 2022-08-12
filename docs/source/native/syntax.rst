@@ -21,7 +21,7 @@ VSCode
 ------
 For VSCode, rexx has made a syntax highlighting extension.
 
-1. Download the `.zip file here <https://github.com/R2Northstar/ModdingDocs/raw/main/files/VSCode-Respawn-Squirrel-Highlighting.zip>`
+1. Download the `.zip file here <https://github.com/R2Northstar/ModdingDocs/raw/main/files/VSCode-Respawn-Squirrel-Highlighting.zip>`_
 2. Extract the zip
 3. Move its contents to ``your_home_directory/.vscode/extensions/``
 4. Reload VSCode and enable it
