@@ -1,4 +1,4 @@
-Networking between VMs
+Communicating between CLIENT, UI and SERVER scripts"
 ~~~~~~~~~~~~~~~~~~~~~~
 
 All VMs (``CLIENT``, ``UI``, ``SERVER``) are seperate from each other and do not share any variables, even when running on the same machine.
@@ -136,9 +136,35 @@ The ``CLIENT`` vm can execute commands with the ``player.ClientCommand( string c
 ``CLIENT`` to ``UI`` vm
 =======================
 
-Create a global function in the ``UI`` vm and call it in the ``CLIENT`` vm with the ``RunUIScript( string identifier, ... )`` function. You can also pass parameters to the function.
+Create a global function in the ``UI`` vm and call it in the ``CLIENT`` vm with the ``RunUIScript( string identifier, ... )`` function. You can also pass parameters to the function. ``identifier`` is the name of the function you want to call.
+
+.. code-block:: javascript
+
+	#if UI
+	global function CallMe
+	
+	void function CallMe( int a, int b )
+	{
+		printt( a + b )
+	}
+	#elseif CLIENT
+	RunUIScript( "CallMe", 1, 2 ) // 3
+	#endif
 
 ``UI`` to ``CLIENT`` vm
 =======================
 
-Create a global function in the ``CLIENT`` vm and call it in the ``UI`` vm with the ``RunClientScript( string identifier, ... )`` function. You can also pass parameters to the function.
+Create a global function in the ``CLIENT`` vm and call it in the ``UI`` vm with the ``RunClientScript( string identifier, ... )`` function. You can also pass parameters to the function. ``identifier`` is the name of the function you want to call.
+
+.. code-block:: javascript
+
+	#if CLIENT
+	global function CallMe
+	
+	void function CallMe( int a, int b )
+	{
+		printt( a + b )
+	}
+	#elseif UI
+	RunClientScript( "CallMe", 1, 2 ) // 3
+	#endif

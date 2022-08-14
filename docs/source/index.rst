@@ -38,7 +38,6 @@ If you know anything about any function, object or concept please dont hesitate 
    /guides/gamemodemods
    /guides/soundmodding
    /guides/VTFModding
-   /guides/networking
    /guides/publishing
 
 .. toctree::
@@ -58,6 +57,7 @@ If you know anything about any function, object or concept please dont hesitate 
    /native/functions
    /native/tablesandarrays
    /native/async
+   /native/networking
    /native/class
    /native/useful
 
