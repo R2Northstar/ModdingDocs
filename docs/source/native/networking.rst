@@ -1,4 +1,4 @@
-Communicating between CLIENT, UI and SERVER scripts"
+Communicating between CLIENT, UI and SERVER scripts
 ~~~~~~~~~~~~~~~~~~~~~~
 
 All VMs (``CLIENT``, ``UI``, ``SERVER``) are seperate from each other and do not share any variables, even when running on the same machine.
@@ -138,6 +138,9 @@ The ``CLIENT`` vm can execute commands with the ``player.ClientCommand( string c
 
 Create a global function in the ``UI`` vm and call it in the ``CLIENT`` vm with the ``RunUIScript( string identifier, ... )`` function. You can also pass parameters to the function. ``identifier`` is the name of the function you want to call.
 
+Example:
+^^^^^^^^
+
 .. code-block:: javascript
 
 	#if UI
@@ -155,6 +158,9 @@ Create a global function in the ``UI`` vm and call it in the ``CLIENT`` vm with 
 =======================
 
 Create a global function in the ``CLIENT`` vm and call it in the ``UI`` vm with the ``RunClientScript( string identifier, ... )`` function. You can also pass parameters to the function. ``identifier`` is the name of the function you want to call.
+
+Example:
+^^^^^^^^
 
 .. code-block:: javascript
 
