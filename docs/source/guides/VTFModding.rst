@@ -47,26 +47,26 @@ Navigate to ``models/weapons/car101``. Extract all the viewmodel versions (ptpov
 Hex Editor
 ----------
 
-To change the path in the .mdl to the custom .vtf texture. We need a hex editor. I will use `HxD`_, but you can also use `ida`_, or anything else; its personal preference. 
+To change the path in the .mdl to the custom .vmt. We need a hex editor. I will use `HxD`_, but you can also use `ida`_, or anything else; its personal preference. 
 
 .. _HxD: https://mh-nexus.de/en/hxd/
 .. _ida: https://hex-rays.com/ida-free/
 
 
-In your hex editor. Open your .mdl. We need to get closer to the string we need or else you'll be scrolling and searching for hours. Search (ctrl+f) for skin_31. If you don't get any matches, try skn_31, skin31, elite, or prime.
+In your hex editor. Open your .mdl. We need to get closer to the string we need or else you'll be scrolling and searching for hours. Search:(CTRL+F) for skin_31. If you don't get any matches, try skn_31, skin31, elite, or prime.
 
-The string of text we need should look something like ``models\Weapons_R2\weaponname\weaponname_skin_31``. Near it, there should be the same text, but without the ``_skin_31``. This is the path to the default textures. 
+The path should look something like ``.models\Weapons_R2\weaponname\weaponname_skin_31``. Before this skin_31 path. We should find an almost exact path but without ``skin_31``. This is the path we want. This non-skin_31 path is the path to the default weapon skin.
 
-Now, before you edit, you have to realize hex editors are just built different (cant help it). You cannot add or delete text with a hex editor, only replace. Go to the start of the path for the default textures, and change the path to anything else, as long as it starts with ``.models\weapons_r2``. 
+Now, before you edit, you have to realize hex editors are just built different (cant help it). You cannot add or delete data with a hex editor, only replace it. 
 
-We'll change the path from ``.models\Weapons_r2\car_smg\CAR_smg`` to ``.models\weapons_r2\car_ctm\car_ctm``.  Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
+I recommend changing only the name towards the end of the path. We'll go from ``.models\Weapons_r2\car_smg\CAR_smg`` to ``.models\weapons_r2\car_smg\car_ctm``. Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
 
 Creating VMT
 -------------
 
 In the same folder you extracted your mdl's. Make a ``materials`` folder next to the ``models`` folder. 
 
-Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``.models/weapons_r2/car_cmt``, our .vmt file would be named ``car_ctm.vmt``. 
+Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``.models/weapons_r2/car_smg``, our .vmt file would be named ``car_ctm.vmt``. 
 
 Inside your .vmt paste:
 ::
@@ -110,11 +110,11 @@ Configuring your .vmt
 
 To know which texture/texture map you have. Analyze `this <https://retryy.gitbook.io/tf2/wiki/create/texturemaps>`_ wiki.
 
-In the ``"$basetexture"`` argument. You'll enter your .vtf texture directory. We'll use ``models\weapons_r2\car_ctm\NAMEOFVTF``. This is pointing to your custom .vtf with the simple name. Do not add the ``.vtf`` file extension to the end of the directory; ``models\weapons_r2\car_ctm\NAMEOFVTF.vtf``, or the game cannot find the texture.
+In the ``"$basetexture"`` argument. You'll enter your .vtf texture directory. We'll use ``models\weapons_r2\car_ctm\NAMEOFVTF``. This is pointing to your custom diffuse .vtf with the simple name. Do not add the ``.vtf`` file extension to the end of the directory; ``models\weapons_r2\car_ctm\NAMEOFVTF.vtf``, or the game cannot find the texture.
 
 Do the same for your normal map in the ``"$bumpmap"`` argument.
 
-Now create another vtf with literally any image. Put its path in ``"$texture2"`` argument. As far as i know, this is necessary even though the texture isn't used. (maybe this just for having normal maps but i've never used $texture2)
+Now create another vtf with literally any image. Put its path in ``"$texture2"`` argument. As far as i know, this is necessary even though the texture isn't used. (i never had to do this but maybe you need it)
 
 Final VPK folder
 ----------------
@@ -127,7 +127,7 @@ Your root folder should look somewhat like this
 	├─ materials
 	│  └─ models
 	│     └─ weapons_r2
-	│        └─ car_ctm
+	│        └─ car_smg
 	│           ├─ YOURTEXTURE.vtf
 	│           ├─ YOURTEXTURE.vtf
 	│           └─ car_ctm.vmt
