@@ -153,6 +153,7 @@ We can do the same thing for ``structTwo``
       //Since we gave it the same function the result is also the same
 
 Now that we have a struct we can also pass it as an argument in functions or return the struct from a function:
+
 .. code-block:: javascript 
 
     ExampleStruct function ChangeTheStruct(ExampleStruct struct){
@@ -165,7 +166,8 @@ Now that we have a struct we can also pass it as an argument in functions or ret
     }
 
 In the same way you can also use it as a type for arrays or tables:
-.. code.block:: javascript 
+
+.. code-block:: javascript 
 
     array<ExampleStruct> StructArray = []
     StructArray.append structOne
