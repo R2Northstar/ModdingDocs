@@ -94,7 +94,7 @@ You can not only pass variables but also functions with:``.*return type* functio
       string functionref(string) ExampleStringFunction //here you need to assing a function that returns a string and takes a string as an argument
     }
     
- You then need to creast instances of your struct to use it, like this:
+You then need to creast instances of your struct to use it, like this:
 .. code-block:: javascript
 
       void function VoidFuntion(){
