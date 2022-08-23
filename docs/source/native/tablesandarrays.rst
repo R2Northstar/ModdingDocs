@@ -78,7 +78,7 @@ Structs are a way of storing multiple variables in one object. To create a struc
 
     struct ExampleStruct {}
     
-Inside the brackets you can declare all the variables your struct should contain, you can also directly assing a standard value to a variable, if you dont override this value it will automatically be assigned.
+Inside the brackets you can declare all the variables your struct should contain, you can also directly assign a standard value to a variable, if you dont override this value it will automatically be assigned.
 
 You can not only pass variables but also functions with:``.*return type* functionref(*argument type*) *Name in the struct*``.
 
@@ -90,8 +90,8 @@ You can not only pass variables but also functions with:``.*return type* functio
       array<int> VariableArray
       int Optional = 1
       
-      void functionref() ExampleVoidFuncton //you need to assing a function that returns nothing and takes no arguments
-      string functionref(string) ExampleStringFunction //here you need to assing a function that returns a string and takes a string as an argument
+      void functionref() ExampleVoidFuncton //you need to assign a function that returns nothing and takes no arguments
+      string functionref(string) ExampleStringFunction //here you need to assign a function that returns a string and takes a string as an argument
     }
     
 You then need to create instances of your struct to use it, like this:
