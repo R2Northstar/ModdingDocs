@@ -97,7 +97,8 @@ You can not only pass variables but also functions with:``.*return type* functio
 You then need to create instances of your struct to use it, like this:
 
 .. code-block:: javascript
-
+      
+      //functions we need to assign, they are placeholders
       void function VoidFuntion(){
         //do sth
         return
@@ -108,11 +109,12 @@ You then need to create instances of your struct to use it, like this:
 
       ExampleStruct structOne = {VariableInt = 1, VariableString = "Hello World", VariableArray = [1,2,3],
                                   ExampleVoidFunction = VoidFunction, ExampleStringFunction = StringFuntion, ... }
+                                  
       ExampleStruct stuctTwo =  {VariableInt = 3, VariableString = "Hello Modders", VariableArray = [4,5,6],
                                   ExampleVoidFunction = VoidFunction, ExampleStringFunction = StringFuntion, Optional = 2}
       
       
-Now that we have an instance we can get the values out of it like this:
+Now that we have two instances we can get the values out of it like this:
 
 .. code-block:: javascript
 
@@ -165,14 +167,31 @@ Now that we have a struct we can also pass it as an argument in functions or ret
           struct.VariableInt = 1        
         }
         return struct
+        
     }
+
+You can also nest structs like this:
+
+.. code-block:: javascript
+
+    struct NewStruct{
+      Examplestruct CoolStruct
+      int CoolVariable
+    }
+    NewStruct s = { CoolStruct = structOne, CoolVariable = 1}
+    //we now have a struct inside a struct
+    print(s.CollStruct.VariableInt)
+    >>1
+    
+    
+``CoolStruct`` has the value of ``structOne`` we defined above thus the value output is the value from ``structOne.VariableInt``.
 
 In the same way you can also use it as a type for arrays or tables:
 
 .. code-block:: javascript 
 
     array<ExampleStruct> StructArray = []
-    StructArray.append structOne
+    StructArray.append( structOne )
     print(StructArray[0].VariableInt)
     >>1
     
