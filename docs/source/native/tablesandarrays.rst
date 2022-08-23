@@ -72,13 +72,13 @@ to create a 2d array you simply define the data type as beign an array of arrays
     >>5
 Structs
 --------
-Structs are a way of storing multiple variables in one object. To create a struct you just write
+Structs are a way of storing multiple variables in one object. To create a struct you just write:
 
 .. code-block:: javascript
 
     struct ExampleStruct {}
     
-inside the brackets you can declare all the variables your struct should contain, you can also directly assing a standart value to a variable, if you dont override this value it will automatically be assinged.
+Inside the brackets you can declare all the variables your struct should contain, you can also directly assing a standard value to a variable, if you dont override this value it will automatically be assigned.
 
 You can not only pass variables but also functions with:``.*return type* functionref(*argument type*) *Name in the struct*``.
 
@@ -94,7 +94,7 @@ You can not only pass variables but also functions with:``.*return type* functio
       string functionref(string) ExampleStringFunction //here you need to assing a function that returns a string and takes a string as an argument
     }
     
-You then need to creast instances of your struct to use it, like this:
+You then need to create instances of your struct to use it, like this:
 
 .. code-block:: javascript
 
@@ -122,7 +122,7 @@ Now that we have an instance we can get the values out of it like this:
       >> Hello World
       print(stuctOne.Optional)
       >> 1
-      // here you can see that we did not specifically declare the variable but it still has a value that was assinged in the struct directly
+      // here you can see that we did not specifically declare the variable but it still has a value that was assigned in the struct directly
       foreach(int a in structOne.VariableArray)
         print(a)
       >>1
@@ -131,9 +131,9 @@ Now that we have an instance we can get the values out of it like this:
       print(structOne.ExampleStringFunction("Hello"))
       >>Hello
  
-in struct one we have defined that ``ExampleStringFunction`` is assinged to ``StringFunction`` so we get the output if that function as a retult
+In struct one we have defined that ``ExampleStringFunction`` is assigned to ``StringFunction`` so we get the output if that function as a result.
       
-We can do the same thing for ``structTwo``
+We can do the same thing for ``structTwo``:
 
 
 .. code-block:: javascript
@@ -144,7 +144,7 @@ We can do the same thing for ``structTwo``
       >> Hello Modders
       print(stuctTwo.Optional)
       >> 2
-      // Now that we gave Optional a value it the old one is overriten 
+      // Now that we gave Optional a value the old one is overriten 
       foreach(int a in structTwo.VariableArray)
         print(a)
       >>4
