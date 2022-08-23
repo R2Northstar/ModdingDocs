@@ -95,6 +95,7 @@ You can not only pass variables but also functions with:``.*return type* functio
     }
     
 You then need to creast instances of your struct to use it, like this:
+
 .. code-block:: javascript
 
       void function VoidFuntion(){
