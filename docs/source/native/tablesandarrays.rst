@@ -130,7 +130,8 @@ Now that we have an instance we can get the values out of it like this:
       >>3
       print(structOne.ExampleStringFunction("Hello"))
       >>Hello
-      //in struct one we have defined that ``ExampleStringFunction`` is assinged to ``StringFunction`` so we get the output if that function as a retult
+ 
+in struct one we have defined that ``ExampleStringFunction`` is assinged to ``StringFunction`` so we get the output if that function as a retult
       
 We can do the same thing for ``structTwo``
 
