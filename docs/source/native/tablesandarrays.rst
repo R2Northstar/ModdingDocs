@@ -70,3 +70,108 @@ to create a 2d array you simply define the data type as beign an array of arrays
     array<array<int>> 2darray = [[1,2,3],[4,5,6],[7,8,9]]
     print(2darray[1][1])
     >>5
+Structs
+--------
+Structs are a way of storing multiple variables in one object. To create a struct you just write
+
+.. code-block:: javascript
+
+    struct ExampleStruct {}
+    
+inside the brackets you can declare all the variables your struct should contain, you can also directly assing a standart value to a variable, if you dont override this value it will automatically be assinged.
+
+You can not only pass variables but also functions with:``.*return type* functionref(*argument type*) *Name in the struct*``.
+
+.. code-block:: javascript
+  
+    struct ExampleStruckt {
+      int VariableInt
+      string VariableString
+      array<int> VariableArray
+      int Optional = 1
+      
+      void functionref() ExampleVoidFuncton //you need to assing a function that returns nothing and takes no arguments
+      string functionref(string) ExampleStringFunction //here you need to assing a function that returns a string and takes a string as an argument
+    }
+    
+ You then need to creast instances of your struct to use it, like this:
+.. code-block:: javascript
+
+      void function VoidFuntion(){
+        //do sth
+        return
+      }
+      void function StringFunction(string s){
+        return s
+      }
+
+      ExampleStruct structOne = {VariableInt = 1, VariableString = "Hello World", VariableArray = [1,2,3],
+                                  ExampleVoidFunction = VoidFunction, ExampleStringFunction = StringFuntion, ... }
+      ExampleStruct stuctTwo =  {VariableInt = 3, VariableString = "Hello Modders", VariableArray = [4,5,6],
+                                  ExampleVoidFunction = VoidFunction, ExampleStringFunction = StringFuntion, Optional = 2}
+      
+      
+Now that we have an instance we can get the values out of it like this:
+
+.. code-block:: javascript
+
+      print(structOne.VariableInt)
+      >> 1
+      print(structOne.VariableString)
+      >> Hello World
+      print(stuctOne.Optional)
+      >> 1
+      // here you can see that we did not specifically declare the variable but it still has a value that was assinged in the struct directly
+      foreach(int a in structOne.VariableArray)
+        print(a)
+      >>1
+      >>2
+      >>3
+      print(structOne.ExampleStringFunction("Hello"))
+      >>Hello
+      //in struct one we have defined that ``ExampleStringFunction`` is assinged to ``StringFunction`` so we get the output if that function as a retult
+      
+We can do the same thing for ``structTwo``
+
+
+.. code-block:: javascript
+
+      print(structTwo.VariableInt)
+      >> 2
+      print(structTwo.VariableString)
+      >> Hello Modders
+      print(stuctTwo.Optional)
+      >> 2
+      // Now that we gave Optional a value it the old one is overriten 
+      foreach(int a in structTwo.VariableArray)
+        print(a)
+      >>4
+      >>5
+      >>6
+      print(structTwo.ExampleStringFunction("Hello"))
+      >>Hello
+      //Since we gave it the same function the result is also the same
+
+Now that we have a struct we can also pass it as an argument in functions or return the struct from a function:
+.. code-block:: javascript 
+
+    ExampleStruct function ChangeTheStruct(ExampleStruct struct){
+        if(struct.VariableInt == 1)
+            return struct
+        else{
+          struct.VariableInt = 1        
+        }
+        return struct
+    }
+
+In the same way you can also use it as a type for arrays or tables:
+.. code.block:: javascript 
+
+    array<ExampleStruct> StructArray = []
+    StructArray.append structOne
+    print(StructArray[0].VariableInt)
+    >>1
+    
+    table<ExampleStruct, bool> StuctTable= {structOne: false}
+    print(StuctTable[stuctOne])
+    >>false
