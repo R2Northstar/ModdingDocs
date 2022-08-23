@@ -1,4 +1,4 @@
-Tables, Arrays and storing values
+Tables, Arrays, Structs and storing values
 =================================
 
 Within squirrel there are many ways to store information, but when storing an unspecified ammount of information, or storing information on a player-by-player basis, you need to use ``arrays`` or ``tables``.
