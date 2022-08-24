@@ -1,7 +1,7 @@
 Tables, Arrays, Structs and storing values
 =================================
 
-Within squirrel there are many ways to store information, but when storing an unspecified ammount of information, or storing information on a player-by-player basis, you need to use ``arrays`` or ``tables``.
+Within squirrel there are many ways to store information, but when storing an unspecified amount of information, or storing information on a player-by-player basis, you need to use ``arrays`` or ``tables``.
 
 Arrays
 ------
@@ -20,7 +20,7 @@ Arrays can store large sets of data and are indexed using numbers, starting from
 
 adding and removing values from arrays can be done using ``.append(value)`` and ``.remove(index)``. 
 
-additionally the index of values can be found using the ``.find`` function and the length by using the ``.len()`` function
+additionally the index of values can be found using the ``.find`` function and the length by using the ``.len()`` function:
 
 .. code-block:: javascript
 
@@ -84,7 +84,7 @@ You can not only pass variables but also functions with:``.*return type* functio
 
 .. code-block:: javascript
   
-    struct ExampleStruckt {
+    struct ExampleStruct {
       int VariableInt
       string VariableString
       array<int> VariableArray
@@ -181,7 +181,7 @@ You can also nest structs like this:
     }
     NewStruct s = { CoolStruct = structOne, CoolVariable = 1}
     //we now have a struct inside a struct
-    print(s.CollStruct.VariableInt)
+    print(s.CoolStruct.VariableInt)
     >>1
     
     
