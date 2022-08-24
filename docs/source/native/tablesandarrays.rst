@@ -113,7 +113,8 @@ You then need to create instances of your struct to use it, like this:
       ExampleStruct stuctTwo =  {VariableInt = 3, VariableString = "Hello Modders", VariableArray = [4,5,6],
                                   ExampleVoidFunction = VoidFunction, ExampleStringFunction = StringFuntion, Optional = 2}
       
-      
+
+For values that we do not declare like ``Optional`` in the case of ``structOne`` we just add a ``...`` as an argument.
 Now that we have two instances we can get the values out of it like this:
 
 .. code-block:: javascript
