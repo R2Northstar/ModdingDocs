@@ -199,3 +199,31 @@ In the same way you can also use it as a type for arrays or tables:
     table<ExampleStruct, bool> StuctTable= {structOne: false}
     print(StuctTable[stuctOne])
     >>false
+
+Globals
+-------
+
+Often you want to share variables between files when modding, in order for one file to recognize ``variables`` or ``functions`` of another we need to use the ``global`` keyword.
+We do this by declaring variables with the ``global`` keyword at the very beginning of the file:
+
+.. code-block:: javascript
+
+    global int global_int
+    global string global_string
+    global float global_float = 1.0 // declaring the value directly is possible but optional
+    global array<int> global_array
+    global function global_function //we only need to declare the function name not the type
+    global struct global_stuct
+    
+    global_int = 1
+    global_string = "Northstar is awesome"
+    global_array = [1,2,3,4]
+    void function global_function(){
+      //your code here
+    }
+    global_struct{
+      int a = 1
+    }
+    
+Notice how we do not have to define the ``variables`` or the ``functions`` right away.
+You can now use and change all the global variables in a different file.
