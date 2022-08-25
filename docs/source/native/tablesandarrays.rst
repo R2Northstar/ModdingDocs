@@ -199,31 +199,42 @@ In the same way you can also use it as a type for arrays or tables:
     table<ExampleStruct, bool> StuctTable= {structOne: false}
     print(StuctTable[stuctOne])
     >>false
-
-Globals
--------
-
-Often you want to share variables between files when modding, in order for one file to recognize ``variables`` or ``functions`` of another we need to use the ``global`` keyword.
-We do this by declaring variables with the ``global`` keyword at the very beginning of the file:
+    
+Alternatively you can define a struct and directly have it as an instance, the difference is that you can not create multiple strcuts of this type.
+This might be particularly useful when you want to share multiple variables at once between multiple files.
+You create one just like a regular struct, but the name is behind the closing bracket, like this:
 
 .. code-block:: javascript
 
-    global int global_int
-    global string global_string
-    global float global_float = 1.0 // declaring the value directly is possible but optional
-    global array<int> global_array
-    global function global_function //we only need to declare the function name not the type
-    global struct global_stuct
+    struct {
+      int CoolInt
+      string CoolString
+    } file
     
-    global_int = 1
-    global_string = "Northstar is awesome"
-    global_array = [1,2,3,4]
-    void function global_function(){
-      //your code here
-    }
-    global_struct{
-      int a = 1
-    }
+Now you do not need to create an instance to give the struct a value:
+
+.. code-block:: javascript
+
+    file.CoolInt = 5
+    print(file.CoolInt)
+    >>5
+
+When interacting with this type of struct the same rules apply as for the regular struct.
+
+Global variables and fucntions
+-------
+
+Often when creating a mod you need to access a ``variable`` or a ``function`` from another file, this can be achieved by using the ``global`` keyword.
+Global variables are just like regular variables and are declared the same way just with the keyword ``global`` in front of it.
+However they need to be declared at the very beginning of the file, but only in one file. NOT in all of them.
+
+.. code-block:: javascript
+
+    global int GlobalInt 
+    global array<int> GlobalArray
+    global function GlobalFunction //here you only need to give the function name not return type or arguments
     
-Notice how we do not have to define the ``variables`` or the ``functions`` right away.
-You can now use and change all the global variables in a different file.
+    //ofc you can also directly give global variables a value
+    global string GlobalString = "This is a global message"
+    
+Now you are able to use ``GlobalInt``, ``GlobalArray``, ``GlobalFunction`` and ``GlobalString`` in all your files.
