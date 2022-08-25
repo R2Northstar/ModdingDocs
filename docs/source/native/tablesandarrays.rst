@@ -80,7 +80,7 @@ Structs are a way of storing multiple variables in one object. To create a struc
     
 Inside the brackets you can declare all the variables your struct should contain, you can also directly assign a standard value to a variable, if you dont override this value it will automatically be assigned.
 
-You can not only pass variables but also functions with:``.*return type* functionref(*argument type*) *Name in the struct*``.
+You can not only pass variables but also functions with:``*return type* functionref(*argument type*) *Name in the struct*``.
 
 .. code-block:: javascript
   
