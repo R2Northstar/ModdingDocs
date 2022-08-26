@@ -238,3 +238,4 @@ However they need to be declared at the very beginning of the file, but only in 
     global string GlobalString = "This is a global message"
     
 Now you are able to use ``GlobalInt``, ``GlobalArray``, ``GlobalFunction`` and ``GlobalString`` in all your files.
+When using this make sure you do not accidentally make a new variable with the same name and type as a global variable as this will likely brake your code
