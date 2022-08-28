@@ -52,3 +52,19 @@ After you have set up the folder structure, head to `https://northstar.thunderst
 When uploading, it will verify your package structure and you can publish after it's successfully checked.
 
 To update a mod, change the version in ``mod.json`` and ``manifest.json``, and upload again. If the mod name is the same, it will update the previous version.
+
+
+Verified mods
+-------------
+
+If you server requires client-side mods, when people connect to it, they will see this kind of message:
+
+.. image:: ../img/missing_mod_screenshot.png
+  :width: 1000
+  :alt: Game client displays a "required mod" message.
+
+This requires players to manually download required mods, which prevents them from playing straight away, and thus breaks user experience.
+
+---
+
+For your mod to be verified, you need to follow the following rules:
