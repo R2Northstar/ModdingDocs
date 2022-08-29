@@ -65,6 +65,11 @@ If you server requires client-side mods, when people connect to it, they will se
 
 This requires players to manually download required mods, which prevents them from playing straight away, and thus breaks user experience.
 
----
+Fortunately, to counter that, Northstar integrates a *verified mod* feature: if a mod is missing and it has been verified by the Northstar team, game clients will automatically download it.
 
 For your mod to be verified, you need to follow the following rules:
+
+1. Source code is publicly available
+2. Mod is automatically uploaded to Thunderstore via continuous deployment
+3. Mod follows semantic versioning
+
