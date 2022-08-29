@@ -67,3 +67,12 @@ The ``path`` field must start with ``textures/`` and must not end with a file ex
 
     ``Attempted to add txtr asset '%s' that was not using a supported DDS type. Exiting...\n``
     where ``%s`` is the ``path`` of the asset.
+
+``disableStreaming``
+--------------------
+
+The ``disableStreaming`` field of a texture asset determines if the texture should use a starpak to store the higher resolution mip levels.
+
+It should be a boolean value, with ``true`` disabling the use of a starpak,
+
+``disableStreaming`` defaults to ``false`` if it is not present.
