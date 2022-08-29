@@ -70,6 +70,18 @@ Fortunately, to counter that, Northstar integrates a *verified mod* feature: if 
 For your mod to be verified, you need to follow the following rules:
 
 1. Source code is publicly available
-2. Mod is automatically uploaded to Thunderstore via continuous deployment
+2. Mod is automatically uploaded to Thunderstore via continuous deployment (check "Recommanded mod template" section below!)
 3. Mod follows semantic versioning
 
+Once your mod is ready, for it to be verified, you can open a pull request on this repository to add your mod: TODO
+
+You will need to do this each time you release a new version of your mod.
+
+Recommanded mod template
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+We recommand you to use the `AnActualEmerald mod template <https://github.com/GreenTF/NSModTemplate>`_, which integrates 
+a continuous integration job, which will automatically build your mod and upload it to Thunderstore each time you 
+create a GitHub release.
+
+If you want to tune CI more precisely, you'll find its `documentation here <https://github.com/GreenTF/upload-thunderstore-package>`_.
