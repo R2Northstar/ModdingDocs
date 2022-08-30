@@ -36,9 +36,15 @@ Check the console often, as it'S easy to miss your sound - there can be a lot of
 
 There's also a `list <https://gist.github.com/begin-theadventure/84c46e803aa358b102d754ff992ae9e4>`_ of all EvenIDs (audio).
 
-Audio can be played in-game from the console via script_ui EmitUISound(soundname).
+Sounds can be played in-game from the console via script_ui EmitUISound(soundname).
 
 Additionally `subtitles <https://gist.github.com/begin-theadventure>`_ in the form of plain text can also be useful.
+
+You can also export the sound with `LegionPlus <https://github.com/r-ex/LegionPlus>`_ instead of playing it in-game.
+
+Open LegionPlus.exe -> Load File -> Titanfall 2/r2/sound pick general.mbnk
+
+If you want to export only a specific sound use search. It's possible to export selected sounds and all (after a search it exports only the found assets).
 
 Step 2 - Creating Folders
 --------------------------
