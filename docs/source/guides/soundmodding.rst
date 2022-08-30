@@ -113,7 +113,7 @@ metadata.
 
 - Converter for `wav <https://gist.github.com/begin-theadventure/87e59b1aaf806fe542237f9e1a7fb2f6>`_ and `mp3 <https://gist.github.com/begin-theadventure/f2403ea22707e62d1ab44b19da535e37>`_
 
-On Linux you can also a bash script which will convert all wav or mp3 audio in the current directory to wav 16-bit 48000 Hz.
+On Linux you can also a shell script which will convert all wav or mp3 audio in the current directory to wav 16-bit 48000 Hz.
 
 Installation
 -------------
