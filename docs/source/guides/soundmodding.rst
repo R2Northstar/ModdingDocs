@@ -34,6 +34,12 @@ just in-match ones. For example:
 
 Check the console often, as it'S easy to miss your sound - there can be a lot of sounds playing.
 
+There's also a `list <https://gist.github.com/begin-theadventure/84c46e803aa358b102d754ff992ae9e4>`_ of all EvenIDs (audio).
+
+Audio can be played in-game from the console via script_ui EmitUISound(soundname).
+
+Additionally `subtitles <https://gist.github.com/begin-theadventure>`_ in the form of plain text can also be useful.
+
 Step 2 - Creating Folders
 --------------------------
 
@@ -98,6 +104,10 @@ the effects dropdown menu, then click ``Change Speed``. In the dialog set
 either ``Speed Multiplier`` to ``0.918`` or ``Percent Change`` to ``-8,200``. After
 that, export your track as ``wav`` and make sure you don't add any
 metadata.
+
+- Converter for `wav <https://gist.github.com/begin-theadventure/87e59b1aaf806fe542237f9e1a7fb2f6>`_ and `mp3 <https://gist.github.com/begin-theadventure/f2403ea22707e62d1ab44b19da535e37>`_
+
+On Linux you can also a bash script which will convert all wav or mp3 audio in the current directory to wav 16-bit 48000 Hz.
 
 Installation
 -------------
