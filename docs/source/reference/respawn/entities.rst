@@ -729,7 +729,7 @@ Shared
 
 	.. cpp:function:: void AddMod( string mod )
 
-	.. cpp:function:: void FireWeaponBullet_Special(vector origin, vector direction, int numShots, int damageType, bool unknownPurpose1, bool unknownPurpose2, bool unknownPurpose3, bool unknownPurpose4, bool unknownPurpose5, bool activeShot, bool doTraceBrushOnly)
+	.. cpp:function:: void FireWeaponBullet_Special(vector origin, vector direction, int numShots, int damageType, bool noAntilag, bool noSpread, bool onlyDamageEntitiesOnce, bool unknownPurpose, bool noTracers, bool activeShot, bool doTraceBrushOnly)
 
 	.. cpp:function:: string GetWeaponSettingString( string setting )
 
@@ -741,7 +741,7 @@ Shared
 
 	.. cpp:function:: int GetWeaponBurstFireCount()
 
-	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose1, bool unknown_purpose2 )
+	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose1, bool clearPartialLocks )
 
 	.. cpp:function:: vector SmartAmmo_GetFirePosition(entity target, int burstIndex)
 
