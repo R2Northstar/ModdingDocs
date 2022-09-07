@@ -8,6 +8,8 @@ Northstar API
     /reference/northstar/callbacks
     /reference/northstar/chathooks
     /reference/northstar/clientcommandsnotifications
+    /reference/northstar/dependencyconstants.rst
+    /reference/northstar/customdamagesources.rst
 
 Respawn API
 -----------
