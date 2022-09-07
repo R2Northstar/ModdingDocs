@@ -741,7 +741,7 @@ Shared
 
 	.. cpp:function:: int GetWeaponBurstFireCount()
 
-	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose1, bool clearPartialLocks )
+	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose, bool clearPartialLocks )
 
 	.. cpp:function:: vector SmartAmmo_GetFirePosition(entity target, int burstIndex)
 
@@ -917,7 +917,7 @@ Shared
 
 	.. cpp:function:: void InitMissileSpiral( vector pos, vector dir, int missileNumber, bool slowAndExpand, bool consistentSpacing )
 
-		If both ``slowAndExpand`` and ``consistentSpacing`` are true, rockets fly faster instead of normal ``slowAndExpand`` behavior.
+		If both ``slowAndExpand`` and ``consistentSpacing`` are true, missiles fly faster instead of normal ``slowAndExpand`` behavior.
 
 	.. cpp:function:: void SetSpeed( float speed )
 
