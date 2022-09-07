@@ -8,6 +8,7 @@ The position of topologies are relative to the position of their parent.
 Since the number of topologies that can be created is very limited and Vanilla uses most of the slots already, try to minimize your topology uses. Instead of creating new ones, check if you can use one that already exists:
 
 .. code-block:: javascript
+
             clGlobal.topoFullScreen
             clGlobal.topoCockpitHudPermanent
             clGlobal.topoTitanCockpitLowerHud
@@ -26,7 +27,7 @@ Creating Topologies
 
 .. cpp:function:: void RuiTopology_CreateSphere( vector origin, vector angles, vector right, vector down, COCKPIT_RUI_RADIUS, COCKPIT_RUI_WIDTH, COCKPIT_RUI_HEIGHT, float subDiv  )
     
-	Similar to ``RuiTopology_CreatePlane`` but creates an arched sphere instead of a plane. Unlike in ``RuiTopology_CreatePlane``, **``right`` and ``down`` are angles and not relative positions**. The width and height are instead controlled by their respective parameters.
+	Similar to ``RuiTopology_CreatePlane`` but creates an arched sphere instead of a plane. Unlike in ``RuiTopology_CreatePlane``, **right and down are angles and not relative positions**. The width and height are instead controlled by their respective parameters.
 
 .. cpp:function:: void RuiTopology_Destroy( var topology )
 
@@ -73,6 +74,7 @@ Worldspace Topology example
 
 .. code-block:: javascript
 
+	// REMEMBER TO DESTROY ALL TOPOS, RUIS AND PROPS YOU CREATE WHEN YOU NO LONGER NEED THEM
 	// ripped from respawn
 	var function Worldspace_CreateRUITopology( vector org, vector ang, float width, float height )
 	{
