@@ -689,7 +689,7 @@ Shared
 
 	.. cpp:function:: void RemoveMod( string mod )
 
-	.. cpp:function:: unknown<unknown> SmartAmmo_GetTargets()
+	.. cpp:function:: array<table> SmartAmmo_GetTargets()
 
 	.. cpp:function:: void SmartAmmo_TrackEntity(entity hitEnt, LMG_SMART_AMMO_TRACKER_TIME)
 
@@ -715,7 +715,7 @@ Shared
 
 	.. cpp:function:: void SetWeaponEnergyCost( int cost )
 
-	.. cpp:function::  entity FireWeaponBullet( vector origin, vector dir, int unknown_purpose, damageType )
+	.. cpp:function::  entity FireWeaponBullet( vector origin, vector dir, int numBullets, damageType )
 
 	.. cpp:function:: bool IsWeaponAdsButtonPressed()
 
@@ -867,7 +867,7 @@ Shared
 
 	.. cpp:function:: float GetExplosionRadius()
 
-	.. cpp:function:: void GrenadeExplode( vector unknown_purpose )
+	.. cpp:function:: void GrenadeExplode( vector normal )
 
 	.. cpp:function:: entity GetThrower()
 
@@ -879,7 +879,7 @@ Shared
 
 	.. cpp:function:: void InitMagnetic( float force, string attractKey )
 
-	.. cpp:function:: void ExplodeForCollisionCallback( vector unknown_purpose )
+	.. cpp:function:: void ExplodeForCollisionCallback( vector normal )
 
 	.. cpp:function:: void MarkAsAttached()
 
@@ -911,11 +911,13 @@ Shared
 
 	.. cpp:function:: void SetHomingSpeeds( int speed, int speed_for_dodging_player )
 
-	.. cpp:function:: void SetMissileTarget( enity target, vector unknown_purpose )
+	.. cpp:function:: void SetMissileTarget( enity target, vector offset )
 
 	.. cpp:function:: void SetMissileTargetPosition( vector pos )
 
-	.. cpp:function:: void InitMissileSpiral( vector pos, vector dir, int missileNumber, bool unknown_purpose1, bool unknown_purpose2 )
+	.. cpp:function:: void InitMissileSpiral( vector pos, vector dir, int missileNumber, bool slowAndExpand, bool consistentSpacing )
+
+		If both ``slowAndExpand`` and ``consistentSpacing`` are true, rockets fly faster instead of normal ``slowAndExpand`` behavior.
 
 	.. cpp:function:: void SetSpeed( float speed )
 
@@ -1367,7 +1369,7 @@ CTitanSoul
 
 	.. cpp:function:: void SetTitanSoulNetFloat( string key, float val )
 
-	.. cpp:function:: void SetTitanSoulNetFloatOverTime( string key, float unknown_purpose, float val )
+	.. cpp:function:: void SetTitanSoulNetFloatOverTime( string key, float val, float time )
 
 	.. cpp:function:: float GetCoreUseDuration()
 
