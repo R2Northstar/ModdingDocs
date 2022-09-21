@@ -67,6 +67,9 @@ This requires players to manually download required mods, which prevents them fr
 
 Fortunately, to counter that, Northstar integrates a *verified mod* feature: if a mod is missing and it has been verified by the Northstar team, game clients will automatically download it.
 
+.. note::
+    Only client-side mods that are required by a server are eligible for verification (*i.e* no need to verify **client-side only** mods like skins or server-only mods).
+
 For your mod to be verified, you need to follow the following rules:
 
 1. Source code is publicly available
