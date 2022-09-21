@@ -77,7 +77,7 @@ Once your mod is ready, for it to be verified, you can open a pull request on th
 
 You will need to do this each time you release a new version of your mod.
 
-Recommanded mod template
+Recommended mod template
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 We recommand you to use the `AnActualEmerald mod template <https://github.com/GreenTF/NSModTemplate>`_, which integrates 
