@@ -38,7 +38,7 @@ There's also a `list <https://gist.github.com/begin-theadventure/84c46e803aa358b
 
 Sounds can be played in-game from the console via script_ui EmitUISound(soundname).
 
-Additionally `subtitles <https://gist.github.com/begin-theadventure>`_ in the form of plain text can also be useful.
+Additionally `subtitles <https://gist.github.com/begin-theadventure/cf941af91cd158de4fde747ec78c2902>`_ in the form of plain text can also be useful.
 
 You can also export the sound with `LegionPlus <https://github.com/r-ex/LegionPlus>`_ instead of playing it in-game.
 
@@ -113,7 +113,7 @@ metadata.
 
 - Converter for `wav <https://gist.github.com/begin-theadventure/87e59b1aaf806fe542237f9e1a7fb2f6>`_ and `mp3 <https://gist.github.com/begin-theadventure/f2403ea22707e62d1ab44b19da535e37>`_
 
-On Linux you can also use shell scripts that convert all wav or mp3 audio files from the current directory (including folders) to wav 48000Hz 16-bit.
+On Linux you can also use shell scripts that convert all wav or mp3 audio files from the current directory (including folders) to wav 48000Hz 16-bit. They require ffmpeg to be installed.
 
 Installation
 -------------
