@@ -45,7 +45,6 @@ Creating Topologies
 
 .. cpp:function:: void RuiTopology_ShareWithCode( topology, ruiCode ) 
 	
-	Idk
 
 Drawcalls
 ^^^^^^
