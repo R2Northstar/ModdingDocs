@@ -118,7 +118,7 @@ The ``atlas`` field for a UI Image Atlas asset determines which texture asset it
     ``Required field 'atlas' not found for uimg asset '%s'. Exiting...\n``
 
     ``'atlas' field is not of required type 'string' for uimg asset '%s'. Exiting...\n``
-    
+
     where ``%s`` is the ``path`` field of the UI Image Atlas
 
 .. error:: 
@@ -160,8 +160,6 @@ An entry in the ``textures`` array must have both a ``width`` and a ``height`` f
 
     ``Required field 'height' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
 
-    where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
-
     ``'width' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
 
     ``'height' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
@@ -180,8 +178,6 @@ These fields determine the location of the top-left pixel in the UI texture.
     ``Required field 'posX' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
 
     ``Required field 'posY' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
-
-    where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
 
     ``'posX' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
 
