@@ -127,7 +127,6 @@ WAV to WAV 16-bit 48000 Hz:
     mv -f "${f%.wav}.new.wav" "$f"
   done
 
-
 MP3 to WAV to 16-bit 48000 Hz:
 
 .. code:: shell
