@@ -47,6 +47,7 @@ Examples:
         "name":"blue_fire",
         "assetsDir":"../depot",
         "outputDir":"../rpaks",
+        "version": 7,
         "files":[
             {
                 "$type":"txtr",
