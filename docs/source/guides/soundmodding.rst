@@ -36,11 +36,11 @@ Check the console often, as it's easy to miss your sound - there can be a lot of
 
 There's also a `list <https://gist.github.com/begin-theadventure/84c46e803aa358b102d754ff992ae9e4>`_ of all EvenIDs (audio).
 
-Sounds can be played in-game from the console via script_ui EmitUISound(soundname).
+Sounds can be played in-game from the console via ``script_ui EmitUISound(soundname)``.
 
 Additionally `subtitles <https://gist.github.com/begin-theadventure/cf941af91cd158de4fde747ec78c2902>`_ in the form of plain text can also be useful.
 
-You can also export the sound with `LegionPlus <https://github.com/r-ex/LegionPlus>`_ instead of playing it in-game.
+You can also export sounds with `LegionPlus <https://github.com/r-ex/LegionPlus>`_ instead of playing them in-game.
 
 Open LegionPlus.exe -> Load File -> Titanfall 2/r2/sound pick general.mbnk
 
