@@ -126,17 +126,22 @@ Below is an example of a map file that creates an RPak called ``example.rpak`` w
 - ``version``: the RPak version RePak will use when creating the RPaks. **Version 7 is Titanfall 2, version 8 is Apex Legends.**
 - ``files``: an array of all of the assets that RePak will create in the RPak.
 - ``$type``: the type of asset that this asset is, use ``txtr`` for textures.
-- ``path``: the path of the asset, used in texture assets for finding the image. **This must start with** ``texture/`` **and the rest should match the Name given by LegionPlus.**
+- ``path``: the path of the asset, used in texture assets for finding the image. **This should start with** ``texture/`` **and the rest should match the Name given by LegionPlus.**
 
 .. warning:: 
     If the ``path`` doesn't match up with the location of your file, RePak will throw an error
+
+.. warning::
+    If the ``path`` contains any ``\`` characters, make sure that you either replace them with ``/`` or you duplicate them (``\\``)
+
+    This is because ``\`` is the escape character in JSON, and will therefore break the ``path``
 
 Creating the RPak
 -----------------
 
 To create your RPak file, simply open ``pack_all.bat``.
 
-Alternatively, click and drag your map file over ``RePak.exe``. (I don't recommend this, its a pain)
+Alternatively, click and drag your map file over ``RePak.exe``. (I don't recommend this, it's a pain)
 
 **Look at the console for any errors.**
 If there are no errors, a .rpak file should have been created in the ``rpaks`` folder.
@@ -183,6 +188,8 @@ This field tells Northstar whether or not to load a specific RPak as soon as RPa
 
 The field is a boolean. (``true`` or ``false``) and should be formatted like ``"<target_rpak>": true`` or ``"<target_rpak>": false``
 
+Example: ``"my_new.rpak": true``
+
 Aliases
 *******
 
@@ -190,12 +197,16 @@ This field tells Northstar that a specific RPak should never be loaded, and a di
 
 The field should be formatted like ``"<target_rpak>": "<replacement_rpak>"``
 
+Example: ``"common.rpak": "my_new.rpak"``
+
 Postload
 ********
 
 This field tells Northstar that a specific RPak must be loaded directly after another specified RPak has finished loading.
 
 The field should be formatted like ``"<target_rpak>": "<rpak_to_load_after>"``
+
+Example: ``"my_new.rpak": "common.rpak"``
 
 .. warning:: 
     If an asset in your RPak references another asset, it must be loaded after the asset that it references, or the game will infinitely loop when launched.
