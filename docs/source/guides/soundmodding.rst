@@ -132,7 +132,7 @@ WAV to WAV 16-bit 48000 Hz:
 
       # todo
 
-   .. tab:: Linux - WAV
+   .. tab:: Linux
 
       ``wav_converter.sh``
 
@@ -155,7 +155,7 @@ MP3 to WAV to 16-bit 48000 Hz:
 
       # todo
 
-   .. tab:: Linux - MP3
+   .. tab:: Linux
 
       ``mp3-wav_converter.sh``
 
