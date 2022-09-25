@@ -43,7 +43,7 @@ Examples:
         "files":
         [
             {
-                "$type": "txtr"
+                "$type": "txtr",
                 "path": "textures/models/my_texture"
             }
         ]
@@ -69,6 +69,57 @@ Examples:
     The texture will replace any vanilla textures that have the same path. ( ``textures/models/my_texture`` )
     
     This is useful for creating basic skins and camos.
+
+3. Multiple Textures
+-------------------
+
+``example3.json``
+
+.. code-block:: json
+
+    {
+        "name": "example3",
+        "assetsDir": "../depot",
+        "outputDir": "../output",
+        "version": 7,
+        "files":
+        [
+            {
+                "$type": "txtr",
+                "path": "textures/models/my_texture_col"
+            },
+            {
+                "$type": "txtr",
+                "path": "textures/models/my_texture_nml"
+            },
+            {
+                "$type": "txtr",
+                "path": "textures/models/my_texture_spc"
+            }
+        ]
+    }
+
+.. code-block::
+
+    root
+    ├── RePak.exe
+    ├── maps
+    |   └─ example3.json
+    ├── depot
+    |   └─ textures
+    |       └─ models
+    |           ├─ my_texture_col.dds
+    |           ├─ my_texture_nml.dds
+    |           └─ my_texture_spc.dds
+    └── output
+        └─ example3.rpak
+
+.. note ::
+    This example map file creates an RPak named ``example3.rpak`` which contains 3 texture assets.
+
+.. note ::
+    This RPak is a good example of a skin that would normally require the skin tool to install.
+    The advantage of this method is that the skin can be uninstalled or temporarily disabled when packed as a mod.
 
 Structure:
 ==========
