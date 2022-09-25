@@ -107,7 +107,7 @@ On Windows you can (bulk) delete it with `Mp3tag <https://www.mp3tag.de/en/downl
 
 On Linux with `Metadata Cleaner <https://metadatacleaner.romainvigier.fr>`_ or a shell script (requires ffmpeg to be installed):
 
-``metadataremover.sh``
+``metadata_remover.sh``
 
 .. code:: shell
 
