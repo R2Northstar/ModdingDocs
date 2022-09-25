@@ -111,9 +111,34 @@ either ``Speed Multiplier`` to ``0.918`` or ``Percent Change`` to ``-8,200``. Af
 that, export your track as ``wav`` and make sure you don't add any
 metadata.
 
-- Converter for `wav <https://gist.github.com/begin-theadventure/87e59b1aaf806fe542237f9e1a7fb2f6>`_ and `mp3 <https://gist.github.com/begin-theadventure/f2403ea22707e62d1ab44b19da535e37>`_
+- Converters
 
-On Linux you can also use shell scripts that convert all wav or mp3 audio files from the current directory (including folders) to wav 48000Hz 16-bit. They require ffmpeg to be installed.
+On Linux you can also use shell scripts that convert all WAV or MP3 audio files from the current directory (including folders) to WAV 48000Hz 16-bit. They require ffmpeg to be installed.
+
+WAV to WAV 16-bit 48000 Hz:
+
+.. code:: shell
+
+  #!/bin/bash
+  shopt -s globstar nullglob
+  for f in *.wav **/*.wav
+  do
+    ffmpeg -i "$f" -acodec pcm_s16le -ar 48000 "${f%.wav}.new.wav"
+    mv -f "${f%.wav}.new.wav" "$f"
+  done
+
+
+MP3 to WAV to 16-bit 48000 Hz:
+
+.. code:: shell
+
+  #!/bin/bash
+  shopt -s globstar nullglob
+  for f in *.mp3
+  do
+    ffmpeg -i "${f}" -vn -c:a pcm_s16le  -ar 48000 "${f%.*}.wav"
+  done
+
 
 Installation
 -------------
