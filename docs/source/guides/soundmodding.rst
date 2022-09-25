@@ -115,27 +115,42 @@ metadata.
 
 On Linux you can also use shell scripts that convert all WAV or MP3 audio files from the current directory (including folders) to WAV 48000Hz 16-bit. They require ffmpeg to be installed.
 
-``wav_converter.sh`` - WAV to WAV 16-bit 48000 Hz:
+WAV to WAV 16-bit 48000 Hz:
 
-.. code:: shell
+.. tabs::
 
-  shopt -s globstar nullglob
-  for f in *.wav **/*.wav
-  do
-    ffmpeg -i "$f" -acodec pcm_s16le -ar 48000 "${f%.wav}.new.wav"
-    mv -f "${f%.wav}.new.wav" "$f"
-  done
+    .. code-tab:: powershell Windows
 
-``mp3-wav_converter.sh`` - MP3 to WAV to 16-bit 48000 Hz:
+      # todo
 
-.. code:: shell
+    .. code-tab:: bash Linux
 
-  shopt -s globstar nullglob
-  for f in *.mp3
-  do
-    ffmpeg -i "${f}" -vn -c:a pcm_s16le  -ar 48000 "${f%.*}.wav"
-  done
+      wav_converter.sh
 
+      shopt -s globstar nullglob
+      for f in *.wav **/*.wav
+      do
+        ffmpeg -i "$f" -acodec pcm_s16le -ar 48000 "${f%.wav}.new.wav"
+        mv -f "${f%.wav}.new.wav" "$f"
+      done
+
+MP3 to WAV to 16-bit 48000 Hz:
+
+.. tabs::
+
+    .. code-tab:: powershell Windows
+
+      # todo
+
+    .. code-tab:: bash Linux
+
+      mp3-wav_converter.sh
+      
+      shopt -s globstar nullglob
+      for f in *.mp3
+      do
+        ffmpeg -i "${f}" -vn -c:a pcm_s16le  -ar 48000 "${f%.*}.wav"
+      done
 
 Installation
 -------------
