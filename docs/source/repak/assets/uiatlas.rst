@@ -165,7 +165,7 @@ An entry in the ``textures`` array must have both a ``width`` and a ``height`` f
 
     ``'height' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...``
 
-    where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
+    where the first ``%s`` is the ``path`` field of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
 
 ``posX`` and ``posY``
 *********************
@@ -184,5 +184,5 @@ These fields determine the location of the top-left pixel in the UI texture.
 
     ``'posY' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...``
 
-    where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
+    where the first ``%s`` is the ``path`` field of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
 
