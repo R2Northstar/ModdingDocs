@@ -103,20 +103,25 @@ metadata.
 
 This is usually because there's some metadata left in the audio.
 
-On Windows you can (bulk) delete it with `Mp3tag <https://www.mp3tag.de/en/download.html>`_.
+.. tabs::
 
-On Linux with `Metadata Cleaner <https://metadatacleaner.romainvigier.fr>`_ or a shell script (requires ffmpeg to be installed):
+    .. tab:: powershell Windows
 
-``metadata_remover.sh``
+      You can (bulk) delete it with `Mp3tag <https://www.mp3tag.de/en/download.html>`_.
 
-.. code:: shell
+    .. tab:: bash Linux
+      You can (bulk) delete it withwith `Metadata Cleaner <https://metadatacleaner.romainvigier.fr>`_ or a shell script (requires ffmpeg to be installed):
 
-  shopt -s globstar nullglob
-  for f in *.wav **/*.wav
-  do
-    ffmpeg -i "$f" -map 0 -map_metadata -1 -c:v copy -c:a copy "${f%.wav}.new.wav"
-    mv -f "${f%.wav}.new.wav" "$f"
-  done
+      ``metadata_remover.sh``
+
+      .. code:: shell
+
+      shopt -s globstar nullglob
+      for f in *.wav **/*.wav
+      do
+        ffmpeg -i "$f" -map 0 -map_metadata -1 -c:v copy -c:a copy "${f%.wav}.new.wav"
+        mv -f "${f%.wav}.new.wav" "$f"
+      done
 
 Installation
 -------------
