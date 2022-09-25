@@ -115,11 +115,10 @@ metadata.
 
 On Linux you can also use shell scripts that convert all WAV or MP3 audio files from the current directory (including folders) to WAV 48000Hz 16-bit. They require ffmpeg to be installed.
 
-WAV to WAV 16-bit 48000 Hz:
+``wav_converter.sh`` - WAV to WAV 16-bit 48000 Hz:
 
 .. code:: shell
 
-  #!/bin/bash
   shopt -s globstar nullglob
   for f in *.wav **/*.wav
   do
@@ -127,11 +126,10 @@ WAV to WAV 16-bit 48000 Hz:
     mv -f "${f%.wav}.new.wav" "$f"
   done
 
-MP3 to WAV to 16-bit 48000 Hz:
+``mp3-wav_converter.sh`` - MP3 to WAV to 16-bit 48000 Hz:
 
 .. code:: shell
 
-  #!/bin/bash
   shopt -s globstar nullglob
   for f in *.mp3
   do
