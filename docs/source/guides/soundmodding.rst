@@ -107,9 +107,10 @@ On Windows you can (bulk) delete it with `Mp3tag <https://www.mp3tag.de/en/downl
 
 On Linux with `Metadata Cleaner <https://metadatacleaner.romainvigier.fr>`_ or a shell script (requires ffmpeg to be installed):
 
+``metadataremover.sh``
+
 .. code:: shell
 
-  #!/bin/bash
   shopt -s globstar nullglob
   for f in *.wav **/*.wav
   do
