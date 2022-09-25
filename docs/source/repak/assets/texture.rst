@@ -27,11 +27,15 @@ Examples:
 
     {
         "$type": "txtr",
-        "path": "textures/models/humans/test_texture"
+        "path": "textures/models/humans/test_texture",
+        "disableStreaming": true
     }
 
 .. note::
     The image file in this texture asset will be called ``test_texture.dds`` and will be at ``<ASSETSDIR>/textures/models/humans/test_texture.dds``
+
+.. note::
+    This texture will not be stored in a .starpak file, and all mip levels will be stored in the .rpak file
 
 Asset Structure:
 ================
@@ -50,19 +54,19 @@ It is also used as the asset's unique identifier, allowing other assets to refer
 
 The ``path`` field must start with ``textures/`` and must not end with a file extension.
 
-.. error ::
+.. error::
     If RePak is unable to locate a file at the given ``path``, it will output the following error to the console:
 
     ``Failed to find texture source file %s. Exiting...``
     where ``%s`` is the ``path`` field of the texture.
 
-.. error ::
+.. error::
     If the file at the given ``path`` is not a .dds file, RePak will output the following error to the console:
 
     ``Attempted to add txtr asset '%s' that was not a valid DDS file (invalid magic).``
     where ``%s`` is the ``path`` field of the texture.
 
-.. error ::
+.. error::
     If an unsupported .dds compression type is used, RePak will output the following error to the console:
 
     ``Attempted to add txtr asset '%s' that was not using a supported DDS type. Exiting...``
