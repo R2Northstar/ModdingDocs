@@ -115,16 +115,16 @@ The ``atlas`` field for a UI Image Atlas asset determines which texture asset it
 .. error::
     If the uimg asset doesn't contain a valid ``atlas`` field, RePak will output one of the following errors to the console:
 
-    ``Required field 'atlas' not found for uimg asset '%s'. Exiting...\n``
+    ``Required field 'atlas' not found for uimg asset '%s'. Exiting...``
 
-    ``'atlas' field is not of required type 'string' for uimg asset '%s'. Exiting...\n``
+    ``'atlas' field is not of required type 'string' for uimg asset '%s'. Exiting...``
 
     where ``%s`` is the ``path`` field of the UI Image Atlas
 
 .. error:: 
     If the texture asset cannot be found, RePak will output the following message to the console before exiting:
 
-    ``Atlas asset was not found when trying to add uimg asset '%s'. Make sure that the txtr is above the uimg in your map file. Exiting...\n"``
+    ``Atlas asset was not found when trying to add uimg asset '%s'. Make sure that the txtr is above the uimg in your map file. Exiting..."``
 
     where ``%s`` is the ``path`` field of the UI Image Atlas
 
@@ -142,9 +142,9 @@ An entry in the ``textures`` array must have a ``path`` field, as the game must 
 .. error::
     If the entry in the ``textures`` array doesn't contain a valid ``path`` field, RePak will output one of the following errors to the console:
 
-    ``Required field 'path' not found for a texture in uimg asset '%s'. Exiting...\n``
+    ``Required field 'path' not found for a texture in uimg asset '%s'. Exiting...``
 
-    ``'path' field is not of required type 'string' for a texture in uimg asset '%s'. Exiting...\n``
+    ``'path' field is not of required type 'string' for a texture in uimg asset '%s'. Exiting...``
 
     where ``%s`` is the ``path`` field of the UI Image Atlas
 
@@ -156,13 +156,13 @@ An entry in the ``textures`` array must have both a ``width`` and a ``height`` f
 .. error::
     If the entry in the ``textures`` array doesn't contain a valid ``width`` or a valid ``height`` field, RePak will output one of the following errors to the console:
 
-    ``Required field 'width' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``Required field 'width' not found for texture '%s' in uimg asset '%s'. Exiting...``
 
-    ``Required field 'height' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``Required field 'height' not found for texture '%s' in uimg asset '%s'. Exiting...``
 
-    ``'width' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``'width' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...``
 
-    ``'height' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``'height' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...``
 
     where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
 
@@ -175,13 +175,13 @@ These fields determine the location of the top-left pixel in the UI texture.
 .. error::
     If the entry in the ``textures`` array doesn't contain a valid ``posX`` or a valid ``posY`` field, RePak will output one of the following errors to the console:
 
-    ``Required field 'posX' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``Required field 'posX' not found for texture '%s' in uimg asset '%s'. Exiting...``
 
-    ``Required field 'posY' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``Required field 'posY' not found for texture '%s' in uimg asset '%s'. Exiting...``
 
-    ``'posX' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``'posX' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...``
 
-    ``'posY' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``'posY' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...``
 
     where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
 
