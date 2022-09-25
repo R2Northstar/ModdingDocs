@@ -112,6 +112,13 @@ It is used when logging information about the asset.
 
 The ``atlas`` field for a UI Image Atlas asset determines which texture asset it will use.
 
+.. error::
+    If the uimg asset doesn't contain a valid ``atlas`` field, RePak will output one of the following errors to the console:
+
+    ``Required field 'atlas' not found for uimg asset '%s'. Exiting...\n``
+    ``'atlas' field is not of required type 'string' for uimg asset '%s'. Exiting...\n``
+    where ``%s`` is the ``path`` field of the UI Image Atlas
+
 .. error:: 
     If the texture asset cannot be found, RePak will output the following message to the console before exiting:
 
@@ -130,9 +137,11 @@ Any number of UI textures may be contained within one UI Image Atlas.
 An entry in the ``textures`` array must have a ``path`` field, as the game must use it to identify and show the texture.
 
 .. error::
-    If the entry in the ``textures`` array doesn't contain a valid ``path`` field, RePak will output the following error to the console:
+    If the entry in the ``textures`` array doesn't contain a valid ``path`` field, RePak will output one of the following errors to the console:
 
-    THIS ERROR IS TODO IN CODE (#7)
+    ``Required field 'path' not found for a texture in uimg asset '%s'. Exiting...\n``
+    ``'path' field is not of required type 'string' for a texture in uimg asset '%s'. Exiting...\n``
+    where ``%s`` is the ``path`` field of the UI Image Atlas
 
 ``width`` and ``height``
 ************************
@@ -140,9 +149,15 @@ An entry in the ``textures`` array must have a ``path`` field, as the game must 
 An entry in the ``textures`` array must have both a ``width`` and a ``height`` field, these values should both be integers.
 
 .. error::
-    If the entry in the ``textures`` array doesn't contain a valid ``width`` and a valid ``height`` field, RePak will output the following error to the console:
+    If the entry in the ``textures`` array doesn't contain a valid ``width`` or a valid ``height`` field, RePak will output one of the following errors to the console:
 
-    THIS ERROR IS TODO IN CODE (#7)
+    ``Required field 'width' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``Required field 'height' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
+    where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
+
+    ``'width' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``'height' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
+    where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
 
 ``posX`` and ``posY``
 *********************
@@ -151,7 +166,13 @@ An entry in the ``textures`` array must have both a ``posX`` and a ``posY`` fiel
 These fields determine the location of the top-left pixel in the UI texture.
 
 .. error::
-    If the entry in the ``textures`` array doesn't contain a valid ``posX`` and a valid ``posY`` field, RePak will output the following error to the console:
+    If the entry in the ``textures`` array doesn't contain a valid ``posX`` or a valid ``posY`` field, RePak will output one of the following errors to the console:
 
-    THIS ERROR IS TODO IN CODE (#7)
+    ``Required field 'posX' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``Required field 'posY' not found for texture '%s' in uimg asset '%s'. Exiting...\n``
+    where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
+
+    ``'posX' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
+    ``'posY' field is not of required type 'number' for texture '%s' in uimg asset '%s'. Exiting...\n``
+    where the first ``%s`` is the path of the texture, and the second ``%s`` is the ``path`` field of the UI Image Atlas
 
