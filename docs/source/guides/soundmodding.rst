@@ -136,7 +136,9 @@ WAV to WAV 16-bit 48000 Hz:
 
       ``wav_converter.sh``
 
-         .. code-tab:: shell
+      .. tabs::
+
+         .. code-tab:: shell Script
 
             shopt -s globstar nullglob
             for f in *.wav **/*.wav
@@ -157,7 +159,9 @@ MP3 to WAV to 16-bit 48000 Hz:
 
       ``mp3-wav_converter.sh``
 
-         .. code-tab:: shell
+      .. tabs::
+
+         .. code-tab:: shell Script
       
             shopt -s globstar nullglob
             for f in *.mp3
