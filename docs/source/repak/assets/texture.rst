@@ -54,19 +54,19 @@ The ``path`` field must start with ``textures/`` and must not end with a file ex
     If RePak is unable to locate a file at the given ``path``, it will output the following error to the console:
 
     ``Failed to find texture source file %s. Exiting...``
-    where ``%s`` is the ``path`` of the asset.
+    where ``%s`` is the ``path`` field of the texture.
 
 .. error ::
     If the file at the given ``path`` is not a .dds file, RePak will output the following error to the console:
 
     ``Attempted to add txtr asset '%s' that was not a valid DDS file (invalid magic).``
-    where ``%s`` is the ``path`` of the asset.
+    where ``%s`` is the ``path`` field of the texture.
 
 .. error ::
     If an unsupported .dds compression type is used, RePak will output the following error to the console:
 
     ``Attempted to add txtr asset '%s' that was not using a supported DDS type. Exiting...``
-    where ``%s`` is the ``path`` of the asset.
+    where ``%s`` is the ``path`` field of the texture.
 
 ``disableStreaming``
 --------------------
