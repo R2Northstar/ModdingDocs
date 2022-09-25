@@ -2,7 +2,6 @@ Welcome to the Northstar Modding Documentation!
 ===============================================
 
 
-
 .. note::
 
    This project is under active development. Please PR everything you can!
@@ -61,6 +60,7 @@ If you know anything about any function, object or concept please dont hesitate 
    /native/functions
    /native/tablesandarrays
    /native/async
+   /native/networking
    /native/class
    /native/useful
 
