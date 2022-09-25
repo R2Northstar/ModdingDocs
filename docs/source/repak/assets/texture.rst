@@ -17,6 +17,9 @@ The image used by a texture must be in the .dds format and must be in one of the
 - BC4U
 - BC5U UNORM
 
+.. warning::
+    SRGB DDS compression types are preferred, as they can prevent the texture's colour from looking "washed out"
+
 Examples:
 =========
 
