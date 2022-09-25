@@ -110,7 +110,7 @@ This is usually because there's some metadata left in the audio.
       You can (bulk) delete it with `Mp3tag <https://www.mp3tag.de/en/download.html>`_.
 
     .. tab:: bash Linux
-      You can (bulk) delete it withwith `Metadata Cleaner <https://metadatacleaner.romainvigier.fr>`_ or a shell script (requires ffmpeg to be installed):
+      You can (bulk) delete it with `Metadata Cleaner <https://metadatacleaner.romainvigier.fr>`_ or a shell script (requires ffmpeg to be installed):
 
       ``metadata_remover.sh``
 
