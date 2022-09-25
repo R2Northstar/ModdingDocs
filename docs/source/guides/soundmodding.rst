@@ -121,7 +121,7 @@ metadata.
 
    .. tab:: Linux
 
-      On Linux you use shell scripts that convert all WAV or MP3 audio files from the current directory (including folders) to WAV 48000Hz 16-bit. They require ffmpeg to be installed.
+      On Linux you can use shell scripts that convert all WAV or MP3 audio files from the current directory (including folders) to WAV 48000Hz 16-bit. They require ffmpeg to be installed.
 
 
 WAV to WAV 16-bit 48000 Hz:
