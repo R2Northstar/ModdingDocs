@@ -88,8 +88,10 @@ After you have made the desired changes to the image, export it as a .dds file w
 |ExportDDS|
 
 .. warning:: 
-    Try to make your textures have dimensions that are powers of two, so that mipmaps can be used 
-    for example ``256x256`` ``512x512`` ``1024x512`` ``4096x1024`` are all fine, but ``350x700`` might cause issues.
+    Try to make your textures have dimensions that are powers of two, so that `mipmaps <https://en.wikipedia.org/wiki/Mipmap#Overview>`_ can be used. 
+    For example ``256x256`` ``512x512`` ``1024x512`` ``4096x1024`` are all fine, but ``350x700`` might cause issues.
+
+    |MipMaps|
 
 Place your newly created .dds file in the ``assets\texture`` folder, following the path in the Name you noted down above.
 In this example the .dds file would go in ``RePak\assets\texture\models\camo_skins``, with the path of the image being ``..\RePak\assets\texture\models\camo_skins\camo_skin04_col.dds``
@@ -234,3 +236,4 @@ The file structure of your ``paks`` folder should be similar to this:
 .. |ExportDDS| image:: https://user-images.githubusercontent.com/66967891/181824740-c8a6d1d7-234f-405d-a348-1287aa9bb168.png
 .. |ModStructure| image:: https://user-images.githubusercontent.com/66967891/181840035-3cfa24e0-efdd-49fa-85f6-60e6c4cc9a12.png
 .. |PaksStructure| image:: https://user-images.githubusercontent.com/66967891/181840126-98e48860-84d0-496d-8f2e-1cea4dea7363.png
+.. |MipMaps| image:: https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Mipmap_Aliasing_Comparison.png/1280px-Mipmap_Aliasing_Comparison.png
