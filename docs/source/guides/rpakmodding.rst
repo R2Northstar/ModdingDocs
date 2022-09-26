@@ -164,7 +164,7 @@ Inside the mod's folder, create a new folder, called ``paks``. Move your .rpak f
 
 |ModStructure|
 
-Inside the ``paks`` folder that you created, make a new .json file called ``rpak``.
+Inside the ``paks`` folder that you created, make a new .json file called ``rpak.json``.
 In this example, the ``camo_skin04_col.rpak`` rpak is completely replaced by ``example.rpak``.
 This is fine for camo RPaks, but isn't suitable for more complex RPaks
 
