@@ -225,7 +225,7 @@ The file structure of your ``paks`` folder should be similar to this:
 - ``example.rpak``: this is the RPak file that you made.
 - ``rpak.json``: this controls how the game loads your RPak files
 
-**After ``rpak.json`` is set up correctly, your RPak mod should be complete and functional!**
+**After** ``rpak.json`` **is set up correctly, your RPak mod should be complete and functional!**
 
 .. note::
     If when you test the rpak the colour looks weird, use SRGB in the .dds compression, or use non-SRGB if you were already using SRGB
