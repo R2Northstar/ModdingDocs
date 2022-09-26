@@ -83,6 +83,12 @@ Find the extracted file that LegionPlus created, and open it in some image editi
 .. warning::
     The image editing software you choose must be able to export images as .dds files
 
+    Examples of image editing software that supports .dds files:
+
+    - `GIMP <https://www.gimp.org/>`_ (No SRGB support)
+    - `paint.net <https://www.getpaint.net/>`_
+    - `Adobe Photoshop <https://www.adobe.com/uk/products/photoshop.html>`_
+
 After you have made the desired changes to the image, export it as a .dds file with DXT1 (BC1) compression and the same name as it had originally.
 
 |ExportDDS|
