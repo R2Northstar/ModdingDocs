@@ -146,7 +146,7 @@ metadata.
 
          .. tab:: MP3
 
-             MP3 to WAV to 16-bit 48000 Hz:
+             MP3 to WAV 16-bit 48000 Hz:
 
              ``mp3-wav_converter.sh``
 
