@@ -23,10 +23,10 @@ Respawn API
     /reference/respawn/topology
     /reference/respawn/clientcommands
     /reference/respawn/movers
-    
-    .. toctree::
-        :maxdepth: 2
 
-        /reference/respawn/hud_menus
-        /reference/respawn/hud_element_notation
-        /reference/respawn/hud_script
+.. toctree::
+    :maxdepth: 2
+
+    /reference/respawn/hud_menus
+    /reference/respawn/hud_element_notation
+    /reference/respawn/hud_script
