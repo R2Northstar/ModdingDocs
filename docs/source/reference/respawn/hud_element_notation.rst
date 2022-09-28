@@ -26,27 +26,27 @@ If you're working on a **menu**, you need a ``menu`` object that contains all el
 
 .. code-block::
 
-resource/ui/menus/profiles_menu.menu
-{
-	menu
-	{
-		ControlName Frame
-		xpos 0
-		ypos 0
-		zpos 3
-		wide f0
-		tall f0
-		autoResize 0
-		visible 1
-		enabled 1
-		pinCorner 0
-		PaintBackgroundType 0
-		infocus_bgcolor_override "0 0 0 0"
-		outoffocus_bgcolor_override "0 0 0 0"
+    resource/ui/menus/profiles_menu.menu
+    {
+        menu
+        {
+            ControlName Frame
+            xpos 0
+            ypos 0
+            zpos 3
+            wide f0
+            tall f0
+            autoResize 0
+            visible 1
+            enabled 1
+            pinCorner 0
+            PaintBackgroundType 0
+            infocus_bgcolor_override "0 0 0 0"
+            outoffocus_bgcolor_override "0 0 0 0"
 
-        // elements
+            // elements
+        }
     }
-}
 
 It usually doesn't matter if you use quotation marks to assign string values to parameters.
 
@@ -446,26 +446,26 @@ On top of that, logical operators like ``!``, ``&&`` and ``||`` are available as
 Example:
 ^^^^
 
-    .. code-block::
+.. code-block::
 
-        LoadingTip
-        {
-            ControlName				Label
-            ypos					10
-            wide					1630 [$WIDESCREEN_16_9]
-            wide					1441 [!$WIDESCREEN_16_9]
-            auto_tall_tocontents	1
-            labelText				""
-            textalign				"north-west"
-            font					Default_28
-            wrap 					1
-            fgcolor_override 		"217 170 75 255"
-            visible					0
+    LoadingTip
+    {
+        ControlName				Label
+        ypos					10
+        wide					1630 [$WIDESCREEN_16_9]
+        wide					1441 [!$WIDESCREEN_16_9]
+        auto_tall_tocontents	1
+        labelText				""
+        textalign				"north-west"
+        font					Default_28
+        wrap 					1
+        fgcolor_override 		"217 170 75 255"
+        visible					0
 
-            pin_to_sibling			LoadingGameMode
-            pin_corner_to_sibling	TOP_LEFT
-            pin_to_sibling_corner	BOTTOM_LEFT
-        }
+        pin_to_sibling			LoadingGameMode
+        pin_corner_to_sibling	TOP_LEFT
+        pin_to_sibling_corner	BOTTOM_LEFT
+    }
 
 Pinning
 ~~~~
