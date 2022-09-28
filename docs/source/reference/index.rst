@@ -24,6 +24,9 @@ Respawn API
     /reference/respawn/clientcommands
     /reference/respawn/movers
 
+HUD
+---
+
 .. toctree::
     :maxdepth: 2
 
