@@ -470,39 +470,39 @@ Example:
 Pinning
 ~~~~
 
-# ``CENTER``
+* ``CENTER``
 
     The calculated center of the element
 
-# ``TOP``
+* ``TOP``
 
     Element's top y bounds, x axis center.
 
-# ``BOTTOM``
+* ``BOTTOM``
 
     Element's lowest y bounds, x axis center.
 
-# ``LEFT``
+* ``LEFT``
 
     Element's lowest x bounds, y axis center.
 
-# ``RIGHT``
+* ``RIGHT``
 
     Element's highest x bounds, y axis center.
 
-# ``TOP_LEFT``
+* ``TOP_LEFT``
 
     Top left corner
 
-# ``TOP_RIGHT``
+* ``TOP_RIGHT``
 
     Top right corner
 
-# ``BOTTOM_LEFT``
+* ``BOTTOM_LEFT``
 
     Bottom left corner
 
-# ``BOTTOM_RIGHT``
+* ``BOTTOM_RIGHT``
 
     Bottom right corner
 
