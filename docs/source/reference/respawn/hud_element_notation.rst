@@ -50,7 +50,7 @@ resource/ui/menus/profiles_menu.menu
 
 It usually doesn't matter if you use quotation marks to assign string values to parameters.
 
-.. cpp:data:: base
+.. cpp:function:: base
 
 HUD & Panel files
 ----
@@ -78,7 +78,7 @@ Properties
 
 Capitalization of the properties shouldn't matter.
 
-.. cpp:data:: (ElementName)
+.. cpp:function:: (ElementName)
 
     This isn't a regular property and comes **before** the opening bracket
 
@@ -87,13 +87,13 @@ Capitalization of the properties shouldn't matter.
 Inheritance / Parenting
 ^^^^
 
-.. cpp:data:: ControlName
+.. cpp:function:: ControlName
 
     Controls what type of Component the element is and what parameters have an effect. Every element is required to have control name.
 
-.. cpp:data:: InheritProperties
+.. cpp:function:: InheritProperties
 
-.. cpp:data:: controlSettingsFile
+.. cpp:function:: controlSettingsFile
 
     Load a ``.res`` file. All elements in the settings file are instantiated and set as children of the element.
 
@@ -101,312 +101,312 @@ Inheritance / Parenting
 
 Identifying
 ^^^^
-.. cpp:data:: classname
+.. cpp:function:: classname
 
     Classname used for identifying groups of elements
 
-.. cpp:data:: scriptID
+.. cpp:function:: scriptID
 
     Set an unique integer id for this element that's retrievable in script.
 
 Position
 ^^^^
 
-.. cpp:data:: xpos
+.. cpp:function:: xpos
 
     Set the base x position relative to the element's sibling position.
 
     inverted when attached to the left corner or smth
 
-.. cpp:data:: ypos
+.. cpp:function:: ypos
 
     Set the base y position relative to the element's sibling position.
 
     inverted when attached to the top corner or smth
 
-.. cpp:data:: zpos
+.. cpp:function:: zpos
 
     The layer this element sits in. Elements with a higher z will be prioritized to be selected / focused. They are also drawn on top of elements with a lower z position.
 
 Dimensions
 ^^^^
 
-.. cpp:data:: wide
+.. cpp:function:: wide
 
     Set the base width of this element.
 
-.. cpp:data:: tall
+.. cpp:function:: tall
 
     Set the base height of this element.
 
-.. cpp:data:: scale
+.. cpp:function:: scale
 
     Float that scales the element.
 
 Text
 ^^^^
 
-.. cpp:data:: labelText
+.. cpp:function:: labelText
 
     Set the label text of this element, if it is a Label.
 
-.. cpp:data:: textAlignment
+.. cpp:function:: textAlignment
 
     Controls the element boundary point the element's text gets aligned with. ``east`` -> Left, ``north`` -> Top, ``west`` -> Right, ``south`` Bottom.
 
     You can also combine the directions like this: ``north-west``.
 
-.. cpp:data:: allcaps
+.. cpp:function:: allcaps
 
     Controls if the text of this element is rendered in all caps. Defaults to 0.
 
-.. cpp:data:: font
+.. cpp:function:: font
 
     Set the text font of this element.
 
-.. cpp:data:: textinsetx
+.. cpp:function:: textinsetx
 
-.. cpp:data:: textinsety
+.. cpp:function:: textinsety
 
-.. cpp:data:: dulltext
+.. cpp:function:: dulltext
 
-.. cpp:data:: brighttext
+.. cpp:function:: brighttext
 
-.. cpp:data:: textalign
+.. cpp:function:: textalign
 
-.. cpp:data:: NoWrap
+.. cpp:function:: NoWrap
 
     don't wrape text
 
-.. cpp:data:: wrap
+.. cpp:function:: wrap
 
     wrap text from east
 
-.. cpp:data:: centerwrap
+.. cpp:function:: centerwrap
 
     wrap text from center
 
-.. cpp:data:: keyboardTitle
+.. cpp:function:: keyboardTitle
 
-.. cpp:data:: keyboardDescription
+.. cpp:function:: keyboardDescription
 
-.. cpp:data:: selectedFont
+.. cpp:function:: selectedFont
 
-.. cpp:data:: text
+.. cpp:function:: text
 
-.. cpp:data:: multiline
+.. cpp:function:: multiline
 
     Set if the text input supports multiline input.
 
-.. cpp:data:: use_proportional_insets
+.. cpp:function:: use_proportional_insets
 
 
 Pinning
 ^^^^
 
-.. cpp:data:: pin_to_sibling
+.. cpp:function:: pin_to_sibling
 
     Controls the sibling this element will be pinned to. Takes an element's name as a parameter.
 
-.. cpp:data:: pin_corner_to_sibling
+.. cpp:function:: pin_corner_to_sibling
 
     Sets which corner of this element is pinned to the sibling.
 
-.. cpp:data:: pin_to_sibling_corner
+.. cpp:function:: pin_to_sibling_corner
 
     Set to which corner of the sibling this element is pinned to.
 
-.. cpp:data:: pinCorner
+.. cpp:function:: pinCorner
 
 Rui
 ^^^^
 
-.. cpp:data:: rui
+.. cpp:function:: rui
 
 Images
 ^^^^
 
-.. cpp:data:: image
+.. cpp:function:: image
 
-.. cpp:data:: scaleImage
+.. cpp:function:: scaleImage
 
-.. cpp:data:: fg_image
+.. cpp:function:: fg_image
 
 Navigation
 ^^^^
 
-.. cpp:data:: navUp
+.. cpp:function:: navUp
 
-.. cpp:data:: navDown
+.. cpp:function:: navDown
 
-.. cpp:data:: navLeft
+.. cpp:function:: navLeft
 
-.. cpp:data:: navRight
+.. cpp:function:: navRight
 
 Slider
 ^^^^
 
-.. cpp:data:: stepSize
+.. cpp:function:: stepSize
 
-.. cpp:data:: isValueClampedToStepSize
+.. cpp:function:: isValueClampedToStepSize
 
 
 Other
 ^^^^
 
-.. cpp:data:: visible
+.. cpp:function:: visible
 
     Controls if this element is rendered. Defaults to 1.
 
-.. cpp:data:: enable
+.. cpp:function:: enable
 
     Controls if this element starts enabled. Defaults to 1.
 
-.. cpp:data:: auto_wide_to_contents
+.. cpp:function:: auto_wide_to_contents
 
-.. cpp:data:: auto_wide_tocontents
+.. cpp:function:: auto_wide_tocontents
 
-.. cpp:data:: auto_tall_tocontents
+.. cpp:function:: auto_tall_tocontents
 
-.. cpp:data:: drawColor
+.. cpp:function:: drawColor
 
-.. cpp:data:: enabled
+.. cpp:function:: enabled
 
     Controls if this element is enabled. Only enabled elements can be focused / selected. Defaults to 1.
 
-.. cpp:data:: destination
+.. cpp:function:: destination
 
-.. cpp:data:: frame
+.. cpp:function:: frame
 
-.. cpp:data:: fieldName
+.. cpp:function:: fieldName
 
-.. cpp:data:: autoResize
+.. cpp:function:: autoResize
 
-.. cpp:data:: tabPosition
+.. cpp:function:: tabPosition
 
-.. cpp:data:: barCount
+.. cpp:function:: barCount
 
-.. cpp:data:: barSpacing
+.. cpp:function:: barSpacing
 
-.. cpp:data:: dialogstyle
+.. cpp:function:: dialogstyle
 
-.. cpp:data:: style
+.. cpp:function:: style
 
-.. cpp:data:: command
+.. cpp:function:: command
 
-.. cpp:data:: ActivationType
+.. cpp:function:: ActivationType
 
-.. cpp:data:: paintbackground
+.. cpp:function:: paintbackground
 
-.. cpp:data:: tabposition
+.. cpp:function:: tabposition
 
-.. cpp:data:: activeInputExclusivePaint
+.. cpp:function:: activeInputExclusivePaint
 
-.. cpp:data:: paintborder
+.. cpp:function:: paintborder
 
-.. cpp:data:: CircularEnabled
+.. cpp:function:: CircularEnabled
 
-.. cpp:data:: CircularClockwise
+.. cpp:function:: CircularClockwise
 
-.. cpp:data:: consoleStyle
+.. cpp:function:: consoleStyle
 
-.. cpp:data:: unicode
+.. cpp:function:: unicode
 
-.. cpp:data:: Default
+.. cpp:function:: Default
 
-.. cpp:data:: selected
+.. cpp:function:: selected
 
-.. cpp:data:: maxchars
+.. cpp:function:: maxchars
 
-.. cpp:data:: listName
+.. cpp:function:: listName
 
-.. cpp:data:: arrowsVisible
+.. cpp:function:: arrowsVisible
 
-.. cpp:data:: verifiedColumnWidth
+.. cpp:function:: verifiedColumnWidth
 
-.. cpp:data:: nameColumnWidth
+.. cpp:function:: nameColumnWidth
 
-.. cpp:data:: totalMembersColumnWidth
+.. cpp:function:: totalMembersColumnWidth
 
-.. cpp:data:: centerWrap
+.. cpp:function:: centerWrap
 
-.. cpp:data:: chatBorderThickness
+.. cpp:function:: chatBorderThickness
 
-.. cpp:data:: messageModeAlwaysOn
+.. cpp:function:: messageModeAlwaysOn
 
-.. cpp:data:: interactive
+.. cpp:function:: interactive
 
-.. cpp:data:: rowHeight
+.. cpp:function:: rowHeight
 
-.. cpp:data:: nameSpaceX
+.. cpp:function:: nameSpaceX
 
-.. cpp:data:: nameSpaceY
+.. cpp:function:: nameSpaceY
 
-.. cpp:data:: micWide
+.. cpp:function:: micWide
 
-.. cpp:data:: micTall
+.. cpp:function:: micTall
 
-.. cpp:data:: micSpaceX
+.. cpp:function:: micSpaceX
 
-.. cpp:data:: micOffsetY
+.. cpp:function:: micOffsetY
 
-.. cpp:data:: textHidden
+.. cpp:function:: textHidden
 
-.. cpp:data:: editable
+.. cpp:function:: editable
 
-.. cpp:data:: NumericInputOnly
+.. cpp:function:: NumericInputOnly
 
-.. cpp:data:: allowRightClickMenu
+.. cpp:function:: allowRightClickMenu
 
-.. cpp:data:: allowSpecialCharacters
+.. cpp:function:: allowSpecialCharacters
 
-.. cpp:data:: Command
+.. cpp:function:: Command
 
-.. cpp:data:: SelectedTextColor
+.. cpp:function:: SelectedTextColor
 
-.. cpp:data:: SelectedBgColor
+.. cpp:function:: SelectedBgColor
 
-.. cpp:data:: clip
+.. cpp:function:: clip
 
-.. cpp:data:: teamRelationshipFilter
+.. cpp:function:: teamRelationshipFilter
 
-.. cpp:data:: activeColumnWidth
+.. cpp:function:: activeColumnWidth
 
-.. cpp:data:: happyHourColumnWidth
+.. cpp:function:: happyHourColumnWidth
 
-.. cpp:data:: onlinePlayersColumnWidth
+.. cpp:function:: onlinePlayersColumnWidth
 
-.. cpp:data:: PaintBackgroundType
+.. cpp:function:: PaintBackgroundType
 
     // 0 for normal(opaque), 1 for single texture from Texture1, and 2 for rounded box w/ four corner textures
 
-.. cpp:data:: ConVar
+.. cpp:function:: ConVar
 
-.. cpp:data:: alpha
+.. cpp:function:: alpha
 
-.. cpp:data:: conCommand
+.. cpp:function:: conCommand
 
-.. cpp:data:: minValue
+.. cpp:function:: minValue
 
-.. cpp:data:: maxValue
+.. cpp:function:: maxValue
 
-.. cpp:data:: inverseFill
+.. cpp:function:: inverseFill
 
-.. cpp:data:: syncedConVar
+.. cpp:function:: syncedConVar
 
-.. cpp:data:: showConVarAsFloat
+.. cpp:function:: showConVarAsFloat
 
-.. cpp:data:: modal
+.. cpp:function:: modal
 
-.. cpp:data:: headerHeight
+.. cpp:function:: headerHeight
 
-.. cpp:data:: panelBorder
+.. cpp:function:: panelBorder
 
-.. cpp:data:: linespacing
+.. cpp:function:: linespacing
 
-.. cpp:data:: rightClickEvents
+.. cpp:function:: rightClickEvents
 
-.. cpp:data:: conCommandDefault
+.. cpp:function:: conCommandDefault
 
 Conditional Properties
 ~~~~
