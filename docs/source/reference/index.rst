@@ -28,7 +28,7 @@ HUD
 ---
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     /reference/respawn/hud_menus
     /reference/respawn/hud_element_notation
