@@ -110,11 +110,11 @@ Configuring your .vmt
 
 It's highly recommende to read `this <https://retryy.gitbook.io/tf2/wiki/create/texturemaps>`_ wiki to understand what texture maps you might want.
 
-In the ``"$basetexture"`` argument. You'll enter your .vtf texture directory. We'll use ``models\weapons_r2\car_ctm\NAMEOFVTF``. This is pointing to your custom diffuse .vtf with the simple name. Do not add the ``.vtf`` file extension to the end of the directory; ``models\weapons_r2\car_ctm\NAMEOFVTF.vtf``, or the game cannot find the texture.
+In the ``"$basetexture"`` argument enter your .vtf texture directory. We'll use ``models\weapons_r2\car_ctm\NAMEOFVTF``. This should point to your custom diffuse .vtf with the simple name. The game expects these paths to be without the ``.vtf`` file extension - don't add it.
 
-Do the same for your normal map in the ``"$bumpmap"`` argument.
+Do the same for adding your normal map with the ``"$bumpmap"`` argument.
 
-Now create another vtf with literally any image. Put its path in ``"$texture2"`` argument. As far as i know, this is necessary even though the texture isn't used. (i never had to do this but maybe you need it)
+In some cases you might have to create another vtf with literally any image. Put its path in the ``"$texture2"`` argument. As far as i know, this is sometimes necessary even though the texture isn't used.
 
 Final VPK folder
 ----------------
