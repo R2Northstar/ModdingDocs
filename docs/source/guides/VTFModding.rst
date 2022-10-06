@@ -40,7 +40,7 @@ You have 2 options for a VPK tool. Pick either the older VPK tool: `cra0 VPKTool
 
 With your VPK tool opened. 'Open' ``englishclient_mp_common.pak000_dir.vpk`` which is located in ``Titanfall2/vpk``. 
 
-Inside of the VPK. Not all guns are named the same in files as they are in game. Here is `list of weapon names <https://noskill.gitbook.io/titanfall2/documentation/file-location/weapon/weapon-model>`_ to help you out. 
+Inside of the VPK, not all guns filenames match their ingame names. Here is `list of weapon names <https://noskill.gitbook.io/titanfall2/documentation/file-location/weapon/weapon-model>`_ to help you out. 
 
 Navigate to ``models/weapons/car101``. Extract all the viewmodel versions (ptpov) and normal model (w) mdl's.
 
