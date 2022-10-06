@@ -22,7 +22,7 @@ Since the L-Star has a physical bullet that is counted as fx, we can edit how it
 VTF Skins
 ---------
 
-Since vtf modding was majorly for introducing custom weapon skins. Most of the development on VTF modding was designed focused on custom weapon skins. Although understanding how custom weapon VTF skins is specific, it is needed in order to VTF mod other textures. 
+Since vtf modding was originally for introducing custom weapon skins, most of the development on it was focused on that. The same concepts apply to modding other textures though.
 
 Most textures in the game use .dds but we can make them use .vtf. 
 
