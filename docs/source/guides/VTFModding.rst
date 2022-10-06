@@ -59,7 +59,7 @@ The path should look something like ``.models\Weapons_R2\weaponname\weaponname_s
 
 Before editing you need to be aware that hex editors cannot add or delete data, only replace it. 
 
-I recommend changing only the name towards the end of the path. We'll go from ``.models\Weapons_r2\car_smg\CAR_smg`` to ``.models\weapons_r2\car_smg\car_ctm``. Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
+I recommend changing only the last section of the path. We'll change``.models\Weapons_r2\car_smg\CAR_smg`` to ``.models\weapons_r2\car_smg\car_ctm``. Note the capitalization, some vpk repacking tools cannot repack properly if the changed path contains captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
 
 Creating VMT
 -------------
