@@ -57,7 +57,7 @@ In your hex editor. Open your .mdl. We need to get closer to the string we need 
 
 The path should look something like ``.models\Weapons_R2\weaponname\weaponname_skin_31``. Before this skin_31 path. We should find an almost exact path but without ``skin_31``. This is the path we want. This non-skin_31 path is the path to the default weapon skin.
 
-Now, before you edit, you have to realize hex editors are just built different (cant help it). You cannot add or delete data with a hex editor, only replace it. 
+Before editing you need to be aware that hex editors cannot add or delete data, only replace it. 
 
 I recommend changing only the name towards the end of the path. We'll go from ``.models\Weapons_r2\car_smg\CAR_smg`` to ``.models\weapons_r2\car_smg\car_ctm``. Note the capitalization. Some vpk repacking tools cannot repack properly if we edit in captials. Now do these changes for ``ptpov_`` and/or ``w_`` model(s). 
 
