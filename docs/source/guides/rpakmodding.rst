@@ -119,6 +119,7 @@ Below is an example of a map file that creates an RPak called ``example.rpak`` w
         "name":"example",
         "assetsDir":"../assets",
         "outputDir":"../rpaks",
+        "starpakPath": "example.starpak"
         "version": 7,
         "files":[
             {
@@ -131,6 +132,7 @@ Below is an example of a map file that creates an RPak called ``example.rpak`` w
 - ``name``: the name of the file that gets created by RePak.
 - ``assetsDir``: the folder that RePak bases the file path on when looking for textures.
 - ``outputDir``: the folder that RePak will put the files that it creates in.
+- ``starpakPath``: the path of the starpak file for streaming textures.
 - ``version``: the RPak version RePak will use when creating the RPaks. **Version 7 is Titanfall 2, version 8 is Apex Legends.**
 - ``files``: an array of all of the assets that RePak will create in the RPak.
 - ``$type``: the type of asset that this asset is, use ``txtr`` for textures.
@@ -228,6 +230,7 @@ The file structure of your ``paks`` folder should be similar to this:
 
     paks
     ├── example.rpak
+    ├── example.starpak
     └── rpak.json
 
 - ``example.rpak``: this is the RPak file that you made.
