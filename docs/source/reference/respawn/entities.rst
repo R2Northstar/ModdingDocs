@@ -1016,7 +1016,7 @@ Shared
 
 		Set the amount of energy consumed per use.
 
-	.. cpp:function::  entity FireWeaponBullet( vector origin, vector dir, int unknown_purpose, damageType )
+	.. cpp:function::  entity FireWeaponBullet( vector origin, vector dir, int numBullets, damageType )
 
 		Fires a hitscan bullet from this weapon.
 
@@ -1038,7 +1038,7 @@ Shared
 
 		Add a mod to this weapon
 
-	.. cpp:function:: void FireWeaponBullet_Special(vector origin, vector direction, int numShots, int damageType, bool unknownPurpose1, bool unknownPurpose2, bool unknownPurpose3, bool unknownPurpose4, bool unknownPurpose5, bool activeShot, bool doTraceBrushOnly)
+	.. cpp:function:: void FireWeaponBullet_Special(vector origin, vector direction, int numShots, int damageType, bool noAntilag, bool noSpread, bool onlyDamageEntitiesOnce, bool unknownPurpose, bool noTracers, bool activeShot, bool doTraceBrushOnly)
 
 	.. cpp:function:: string GetWeaponSettingString( string setting )
 
@@ -1050,7 +1050,7 @@ Shared
 
 	.. cpp:function:: int GetWeaponBurstFireCount()
 
-	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose1, bool unknown_purpose2 )
+	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose, bool clearPartialLocks )
 
 	.. cpp:function:: vector SmartAmmo_GetFirePosition(entity target, int burstIndex)
 
@@ -1196,7 +1196,7 @@ Shared
 
 		Get the explosion radius
 
-	.. cpp:function:: void GrenadeExplode( vector unknown_purpose )
+	.. cpp:function:: void GrenadeExplode( vector normal )
 
 		Explode this grenade now
 
@@ -1214,7 +1214,7 @@ Shared
 
 	.. cpp:function:: void InitMagnetic( float force, string attractKey )
 
-	.. cpp:function:: void ExplodeForCollisionCallback( vector unknown_purpose )
+	.. cpp:function:: void ExplodeForCollisionCallback( vector normal )
 
 	.. cpp:function:: void MarkAsAttached()
 
@@ -1252,11 +1252,13 @@ Shared
 
 	.. cpp:function:: void SetHomingSpeeds( int speed, int speed_for_dodging_player )
 
-	.. cpp:function:: void SetMissileTarget( enity target, vector unknown_purpose )
+	.. cpp:function:: void SetMissileTarget( enity target, vector offset )
 
 	.. cpp:function:: void SetMissileTargetPosition( vector pos )
 
 	.. cpp:function:: void InitMissileSpiral( vector pos, vector dir, int missileNumber, bool unknown_purpose1, bool unknown_purpose2 )
+
+ 		If both ``slowAndExpand`` and ``consistentSpacing`` are true, missiles fly faster instead of normal ``slowAndExpand`` behavior.
 
 	.. cpp:function:: void SetSpeed( float speed )
 
@@ -1760,7 +1762,7 @@ CTitanSoul
 
 	.. cpp:function:: void SetTitanSoulNetFloat( string key, float val )
 
-	.. cpp:function:: void SetTitanSoulNetFloatOverTime( string key, float unknown_purpose, float val )
+	.. cpp:function:: void SetTitanSoulNetFloatOverTime( string key, float val, float time )
 
 	.. cpp:function:: float GetCoreUseDuration()
 
