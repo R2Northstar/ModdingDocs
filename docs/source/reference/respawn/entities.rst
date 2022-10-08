@@ -731,9 +731,11 @@ Shared
 
 .. cpp:class:: CScriptProp / C_ScriptProp : extends CDynamicProp / C_DynamicProp
 
-	.. cpp:function:: unknown SetSmartAmmoLockType( unknown )
+	.. cpp:function:: void SetSmartAmmoLockType( int salt )
 
-	.. cpp:function:: unknown GetScriptPropFlags( unknown )
+
+
+	.. cpp:function:: int GetScriptPropFlags()
 
 CScriptProp
 ^^^^^^^^^^^
@@ -1105,6 +1107,8 @@ C_WeaponX
 .. cpp:class:: C_WeaponX : extends C_BaseCombatWeapon
 
 	.. cpp:function:: void PlayWeaponEffectReturnViewEffectHandle( asset fpEffect, asset unknown_purpose, string tag )
+
+		the second asset is probably the third person effect played.
 
 	.. cpp:function:: void SetViewmodelAmmoModelIndex( int index )
 
@@ -1961,7 +1965,9 @@ Shared
 
 	.. cpp:function:: int GetMeleeDamageMaxForTarget( entity target )
 
-	.. cpp:function:: float AISetting_MaxFlyingSpeed( unknown )
+	.. cpp:function:: float AISetting_MaxFlyingSpeed()
+
+		get the current flying speed of the npc.
 
 	.. cpp:function:: string AISetting_LeechAnimSet()
 
@@ -2014,7 +2020,9 @@ CAI_BaseNPC
 
 	.. cpp:function:: void SetAISettings( string settings )
 
-	.. cpp:function:: void SetCapabilityFlag( int flag, bool unknown_purpose )
+	.. cpp:function:: void SetCapabilityFlag( int flag, bool active )
+
+		Sets if a capability is available to the player
 
 	.. cpp:function:: void Anim_ScriptedPlayActivityByName( string activity, bool unknown_purpose1, float unknown_purpose2 )
 
@@ -2200,7 +2208,7 @@ Shared
 
 	.. cpp:function:: AnimRefPoint Anim_GetStartForRefPoint( string anim, vector origin, vector angles )
 
-	.. cpp:function:: unknown Anim_GetStartForRefPoint_Old( animation, origin, angles )
+	.. cpp:function:: vector Anim_GetStartForRefPoint_Old( animation, origin, angles )
 
 	.. cpp:function:: void Anim_PlayWithRefPoint( string animation, vector origin, vector angles, float blendTime )
 
@@ -2228,13 +2236,13 @@ CBaseAnimating
 
 	.. cpp:function:: void BecomeRagdoll( vector push, bool skipAnim )
 
-	.. cpp:function:: void Dissolve( int dissolveID, vector unknown_purpose1, int unknown_purpose2 )
+	.. cpp:function:: void Dissolve( int dissolveID, vector normal, int unknown_purpose )
 
 	.. cpp:function:: void Gib( vector forceVec )
 
 	.. cpp:function:: void SetContinueAnimatingAfterRagdoll( bool cont )
 
-	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2 )
+	.. cpp:function:: void PlayRecordedAnimation( asset animation, vector unknown_purpose1, vecor unknown_purpose2, float blendTime, entity ref )
 
 	.. cpp:function:: void SetRecordedAnimationPlaybackRate( float rate )
 
@@ -2257,7 +2265,7 @@ C_BaseAnimating
 
 	.. cpp:function:: void SetCycle( float cycle )
 
-	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool unknown_purpose, int bodygroup )
+	.. cpp:function:: void DoBodyGroupChangeScriptCallback( bool doCallback, int bodygroup )
 
 CPlayerDecoy / C_PlayerDecoy
 ----------------------------
@@ -2332,7 +2340,7 @@ CParticleSystem
 
 	.. cpp:function:: void SetStopType( string type )
 
-	.. cpp:function:: void SetControlPointEnt( int unknown_purpose, entity destEnt )
+	.. cpp:function:: void SetControlPointEnt( int controlPoint, entity destEnt )
 
 CVortexSphere / C_VortexSphere
 ------------------------------
