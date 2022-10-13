@@ -53,7 +53,7 @@ To change the path in the .mdl to the custom .vmt. We need a hex editor. I will 
 .. _ida: https://hex-rays.com/ida-free/
 
 
-In your hex editor. Open your .mdl. We need to get closer to the string we need or else you'll be scrolling and searching for hours. Search:(CTRL+F) for skin_31. If you don't get any matches, try skn_31, skin31, elite, or prime.
+Open your .mdl in your hex editor. We need to get closer to the string we need or else you'll be scrolling and searching for hours. Search:(CTRL+F) for skin_31. If you don't get any matches, try skn_31, skin31, elite, or prime.
 
 The path should look something like ``.models\Weapons_R2\weaponname\weaponname_skin_31``. Before this skin_31 path. We should find an almost exact path but without ``skin_31``. This is the path we want. This non-skin_31 path is the path to the default weapon skin.
 
@@ -66,7 +66,15 @@ Creating VMT
 
 In the same folder you extracted your mdl's. Make a ``materials`` folder next to the ``models`` folder. 
 
-Inside the ``materials`` folder. Recreate the path you hex edited, but the last name is a .vmt file. Not a folder. Our path of folders is ``.models/weapons_r2/car_smg``, our .vmt file would be named ``car_ctm.vmt``. 
+Recreate the path you change in the ``materials`` folder, such that the last section is a .vmt file. 
+
+::
+
+	materials
+	└─ models
+	      └─ weapons_r2
+	            └─ car_smg
+	                 └─ car_ctm.vmt
 
 Inside your .vmt paste:
 ::
