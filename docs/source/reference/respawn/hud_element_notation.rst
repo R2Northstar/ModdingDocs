@@ -415,31 +415,39 @@ You can declare properties for specific conditions by adding ``[CONDITION]`` aft
 
 Usable conditions are:
 
-* $WIN32
+.. cpp:function:: $WIN32
 
     game is running on 32 bit windows
 
-* $WINDOWS
+.. cpp:function:: $WINDOWS
 
     game is running on windows
 
-* $DURANGO
+.. cpp:function:: $DURANGO
 
     game is running on xbox
 
-* $PS4
+.. cpp:function:: $PS4
 
     game is running on a PS4
 
-* $GAMECONSOLE
+.. cpp:function:: $GAMECONSOLE
 
 * $WIDESCREEN_16_9
 
     game resolution is 16/9
 
-* $any language ...
+.. cpp:function:: $LANGUAGE
 
     the game's language.
+    
+    .. code-block::
+    
+            // use allcaps only in russian
+    		allCaps 				0 	[!$RUSSIAN]
+		    allCaps 				1 	[$RUSSIAN]
+
+       
 
 On top of that, logical operators like ``!``, ``&&`` and ``||`` are available as well.
 
@@ -470,39 +478,39 @@ Example:
 Pinning
 ~~~~
 
-* ``CENTER``
+.. cpp:function:: CENTER
 
     The calculated center of the element
 
-* ``TOP``
+.. cpp:function:: TOP
 
     Element's top y bounds, x axis center.
 
-* ``BOTTOM``
+.. cpp:function:: BOTTOM
 
     Element's lowest y bounds, x axis center.
 
-* ``LEFT``
+.. cpp:function:: LEFT
 
     Element's lowest x bounds, y axis center.
 
-* ``RIGHT``
+.. cpp:function:: RIGHT
 
     Element's highest x bounds, y axis center.
 
-* ``TOP_LEFT``
+.. cpp:function:: TOP_LEFT
 
     Top left corner
 
-* ``TOP_RIGHT``
+.. cpp:function:: TOP_RIGHT
 
     Top right corner
 
-* ``BOTTOM_LEFT``
+.. cpp:function:: BOTTOM_LEFT
 
     Bottom left corner
 
-* ``BOTTOM_RIGHT``
+.. cpp:function:: BOTTOM_RIGHT
 
     Bottom right corner
 
@@ -511,7 +519,7 @@ Units
 
 You can calculate the position or dimensions etc. with different units. If you provide no extra unit, the game uses pixels.
 
-* %x
+.. cpp:function:: %x
 
     x percent of the screen.
 
@@ -521,10 +529,10 @@ You can calculate the position or dimensions etc. with different units. If you p
         width   %100
         height  %100
 
-* fx
+.. cpp:function:: fx
 
     use 100%
 
-* c+/-x
+.. cpp:function:: c+/-x
 
     something with the screen edges not exactly sure how positions get calculated
