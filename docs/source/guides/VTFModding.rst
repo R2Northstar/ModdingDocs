@@ -26,7 +26,11 @@ Since vtf modding was originally for introducing custom weapon skins, most of th
 
 Most textures in the game use .dds but we can make them use .vtf. 
 
-What we'll be doing is extracting the model. Replacing the texture path in the mdl to lead to our texture. Then using our texture and allowing for extra properties.
+What we'll be doing is:
+
+  - Extracting the model.
+  - Replacing the texture path in the mdl to point to our texture.
+  - Allowing for extra properties on our texture.
 
 .. _VPK Tool: https://github.com/Wanty5883/Titanfall2/blob/master/tools/Titanfall_VPKTool3.4_Portable.zip
 
