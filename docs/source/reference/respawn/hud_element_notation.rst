@@ -50,8 +50,6 @@ If you're working on a **menu**, you need a ``menu`` object that contains all el
 
 It usually doesn't matter if you use quotation marks to assign string values to parameters.
 
-.. cpp:function:: base
-
 HUD & Panel files
 ----
 
@@ -433,7 +431,7 @@ Usable conditions are:
 
 .. cpp:function:: $GAMECONSOLE
 
-* $WIDESCREEN_16_9
+.. cpp:function:: $WIDESCREEN_16_9
 
     game resolution is 16/9
 
