@@ -13,9 +13,9 @@ In your ``mod.json``, add a ``before`` UI callback like this:
         {
             "Path": "ui/profiles_menu.nut",
             "RunOn": "UI",
-			"UICallback": {
-				"Before": "InitProfilesMenu",
-			}
+	"UICallback": {
+		"Before": "InitProfilesMenu",
+	}
         }
 
 In the script you referenced, create a global function in which you register your menu with the ``AddMenu`` function like this:
