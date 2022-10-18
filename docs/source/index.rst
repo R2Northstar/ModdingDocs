@@ -33,6 +33,7 @@ If you know anything about any function, object or concept please dont hesitate 
    /guides/cheatsheet
    /guides/moddingtutorials
    /guides/weaponmodding
+   /guides/rpakmodding
    /guides/localisation
    /guides/crosshairmodding
    /guides/settingsmods
@@ -63,3 +64,17 @@ If you know anything about any function, object or concept please dont hesitate 
    /native/class
    /native/useful
 
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: RePak Documentation
+
+   /repak/map
+   /repak/index
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Reverse Engineering Titanfall2
+
+   /reverse-engineering/introduction

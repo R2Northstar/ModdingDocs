@@ -32,7 +32,7 @@ just in-match ones. For example:
 
 - The sound when you move the cursor to an option it will be ``menu_focus``, and clicking sound will be ``menu_accept`` or menu music ``mainmenu_music``
 
-Check the console often, as it'S easy to miss your sound - there can be a lot of sounds playing.
+Check the console often, as it's easy to miss your sound - there can be a lot of sounds playing.
 
 Step 2 - Creating Folders
 --------------------------
@@ -98,6 +98,33 @@ the effects dropdown menu, then click ``Change Speed``. In the dialog set
 either ``Speed Multiplier`` to ``0.918`` or ``Percent Change`` to ``-8,200``. After
 that, export your track as ``wav`` and make sure you don't add any
 metadata.
+
+- White noise after the sound ends.
+
+This is usually because there's some metadata left in the audio.
+
+.. tabs::
+
+   .. tab:: Windows
+
+      You can bulk remove it with `Mp3tag <https://www.mp3tag.de/en/download.html>`_ or individually with Audacity.
+
+   .. tab:: Linux
+
+      You can bulk remove it with `Metadata Cleaner <https://metadatacleaner.romainvigier.fr>`_ or a shell script (requires ffmpeg to be installed) and also individually with Audacity.
+
+      ``metadata_remover.sh`` (WAV only)
+
+      .. tabs::
+
+         .. code-tab:: shell Script
+
+            shopt -s globstar nullglob
+            for f in *.wav **/*.wav
+            do
+              ffmpeg -i "$f" -map 0 -map_metadata -1 -c:v copy -c:a copy "${f%.wav}.new.wav"
+              mv -f "${f%.wav}.new.wav" "$f"
+            done
 
 Installation
 -------------
