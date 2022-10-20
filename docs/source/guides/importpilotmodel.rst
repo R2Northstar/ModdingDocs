@@ -83,7 +83,15 @@ Renaming and putting your model in the correct collection
 Rig the model to match the bones of the armature that came with the pilot model
 Create an armature modifier for your model’s body and head
 
-``IMAGE``
+.. Comment for laundros sexy copy pasta
+    .. image:: _static/image.png 
+    :align: center
+    :class: screenshot
+
+.. image:: _static/importpilotmodel/ss0-pilotBlenderArmature.png
+   :align: center
+   :class: screenshot
+
 
 Attach the model’s body and head to the armature
 The video does not have the model properly aligned with the armature. Please make sure your model is aligned with the armature before attaching the model to it
