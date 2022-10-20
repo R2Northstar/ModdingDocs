@@ -88,7 +88,8 @@ Create an armature modifier for your model’s body and head
     :align: center
     :class: screenshot
 
-.. image:: _static/importpilotmodel/ss0-pilotBlenderArmature.png
+.. importpilotmodel/
+.. image:: _static/ss0-pilotBlenderArmature.png
    :align: center
    :class: screenshot
 
