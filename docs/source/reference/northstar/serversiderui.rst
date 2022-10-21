@@ -134,7 +134,7 @@ Currently status messages are limited to 4 and there's no way to know if the pla
 
         void function TestStatusMessage_Threaded(entity player)
         {
-            string id = "DUMMY_2d1djada"
+            string id = UniqueString("DUMMY_")
 
             NSCreateStatusMessageOnPlayer(player, "Dummies on server", "[0/1]", id)
 
