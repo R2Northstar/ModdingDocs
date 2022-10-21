@@ -6,7 +6,7 @@ Northstar 1.10 introduced a server API that allows sending clients messages to d
 Polls
 ------
 
-.. image /_static/image.png
+.. image:: /_static/serversiderui/vote.png
   :align: center
   :class: screenshot
 
@@ -17,7 +17,7 @@ Polls
  Large Message
  ------
 
-.. image /_static/largemessage.gif
+.. image:: /_static/serversiderui/largemessage.gif
   :align: center
   :class: screenshot
   
@@ -26,7 +26,7 @@ Polls
 Info
 ------
 
-.. image /_static/info.gif
+.. image:: /_static/serversiderui/info.gif
   :align: center
   :class: screenshot
 
@@ -35,7 +35,7 @@ Info
 PopUp
 ------
 
-.. image /_static/popup.gif
+.. image:: /_static/serversiderui/popup.gif
   :align: center
   :class: screenshot
 
@@ -44,7 +44,7 @@ PopUp
 Announcement
 ------
 
-.. image /_static/announcement.gif
+.. image:: /_static/serversiderui/announcement.gif
   :align: center
   :class: screenshot
 
@@ -53,9 +53,9 @@ Announcement
 Status
 ------
 
-.. image /_static/status.gif
-  :align: center
-  :class: screenshot
+.. image:: /_static/serversiderui/status.gif
+   :align: center
+   :class: screenshot
 
 .. cpp:function:: void function NSCreateStatusMessageOnPlayer( entity player, string title, string description, string id )
 .. cpp:function:: void function NSEditStatusMessageOnPlayer( entity player, string title, string description, string id  )
