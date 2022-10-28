@@ -1,7 +1,7 @@
 HUD Menus
 ====
 
-Before working on HUD, it's recommended to `extract<https://noskill.gitbook.io/titanfall2/intro/duction/vpk-packpack>`_ the ``englishclient_frontend.bsp.pak000_dir.vpk`` vpk. This file contains all vanilla menus and UI logic and will be a very helpful reference!
+Before working on HUD, it's recommended to `extract <https://noskill.gitbook.io/titanfall2/intro/duction/vpk-packpack>`_ the ``englishclient_frontend.bsp.pak000_dir.vpk`` vpk. This file contains all vanilla menus and UI logic and will be a very helpful reference!
 
 Registering a menu
 ----
