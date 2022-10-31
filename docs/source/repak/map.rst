@@ -29,7 +29,7 @@ Examples:
     It also will have the name ``new.rpak`` and will be created in the ``./build`` folder.
 
 2. Single Texture + Single Starpak
--------------------
+----------------------------------
 
 ``example2.json``
 
@@ -74,7 +74,7 @@ Examples:
     This is useful for creating basic skins and camos.
 
 3. Multiple Textures + Multiple Starpaks
--------------------
+----------------------------------------
 
 ``example3.json``
 
@@ -138,7 +138,7 @@ Structure:
 ==========
 
 ``name``
-----
+--------
 
 The ``name`` field of a map file determines the name of the resulting RPak.
 
