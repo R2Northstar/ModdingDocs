@@ -25,5 +25,11 @@ https://github.com/snake-biscuits/bsp_tool
 Other:
 ------
 
-- Netradiant Custom Tutorial - Part 2: https://www.youtube.com/watch?v=JZO8H4rBqtA
-- How titanfall custom map: https://youtu.be/gmNzc5Go2ow
+Netradiant Custom Tutorial - Part 2:
+
+..  youtube:: JZO8H4rBqtA
+
+How titanfall custom map:
+
+..  youtube:: gmNzc5Go2ow
+
