@@ -42,6 +42,7 @@ If you know anything about any function, object or concept please dont hesitate 
    /guides/VTFModding
    /guides/publishing
    /guides/contributing
+   /guides/rsthelp
 
 .. toctree::
    :maxdepth: 3
