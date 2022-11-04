@@ -150,7 +150,7 @@ This is usually because there's some metadata left in the audio.
 
       On Linux you can use shell scripts that convert all WAV or MP3 audio files from the current directory (including folders) to WAV 48000Hz 16-bit. They require ffmpeg to be installed.
 
-      MP3 and format scripts don't delete previous files, so just search for them (.format) and delete them after conversion. WAV script automatically replaces old files.
+      MP3 and other formats scripts don't delete previous files, so just search for them (.format) and delete after conversion. WAV script automatically replaces old files.
 
       .. tabs::
 
@@ -184,7 +184,7 @@ This is usually because there's some metadata left in the audio.
          .. code-tab:: shell Script for other formats
             
             #Replace .format with the one you want to convert.
-            #format-wav_converter.sh``
+            #format-wav_converter.sh
             
             shopt -s globstar nullglob
             for f in *.format
