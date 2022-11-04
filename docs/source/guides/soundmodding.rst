@@ -154,14 +154,11 @@ This is usually because there's some metadata left in the audio.
 
       .. tabs::
 
-         .. tab:: WAV
-
-            WAV to WAV 16-bit 48000 Hz.
-
-            ``wav_converter.sh``
-
-         .. code-tab:: shell Script
-
+         .. code-tab:: shell WAV script
+            
+            #WAV to WAV 16-bit 48000 Hz.
+            #wav_converter.sh
+            
             shopt -s globstar nullglob
             for f in *.wav **/*.wav
             do
@@ -171,14 +168,11 @@ This is usually because there's some metadata left in the audio.
 
       .. tabs::
 
-         .. tab:: MP3
-
-             MP3 to WAV 16-bit 48000 Hz.
-
-             ``mp3-wav_converter.sh``
-
-         .. code-tab:: shell Script
-
+         .. code-tab:: shell MP3 Script
+            
+            #MP3 to WAV 16-bit 48000 Hz.
+            #mp3-wav_converter.sh
+            
             shopt -s globstar nullglob
             for f in *.mp3
             do
@@ -187,14 +181,11 @@ This is usually because there's some metadata left in the audio.
 
       .. tabs::
 
-         .. tab:: Other formats
-
-             Replace .format with the one you want to convert.
-
-             ``format-wav_converter.sh``
-
-         .. code-tab:: shell Script
-
+         .. code-tab:: shell Script for other formats
+            
+            #Replace .format with the one you want to convert.
+            #format-wav_converter.sh``
+            
             shopt -s globstar nullglob
             for f in *.format
             do
