@@ -26,7 +26,7 @@ Creates a poll on ``player``.
 
     void function CreateDummyPoll()
      {
-        array<string> options = [ "Me", "You", "Both of us" ]
+        array<string> options = [ "Vote for a map!", "Amongsus", "sussy", "when", "1.10", "hi H0l0" ]
         foreach(entity player in GetPlayerArray())
             NSCreatePollOnPlayer(player, "Vote who's the biggest dummy!", options, 30)
       }
@@ -95,7 +95,7 @@ Sends a smaller message to ``player`` which will appear from the center right.
   
     void function SendDummyInfoMessage(entity player)
     {
-        NSSendInfoMessageToPlayer(player, "If you're reading this your a dummy")
+        NSSendInfoMessageToPlayer(player, "we were sent at the same time but I was sent sooner")
     }
 
 PopUp
@@ -119,7 +119,7 @@ Send a small popup to ``player`` which will appear in the lower half of their sc
 
     void funcions SendDummyPopUp(entity player)
     {
-        NSSendPopUpMessageToPlayer(player, "Dummy")
+        NSSendPopUpMessageToPlayer(player, "very cool text I like")
     }
 
 Announcement
@@ -143,7 +143,7 @@ Sends a large announcement to ``player``.
 
       void function SendDummyAnnouncement(entity player)
       {
-          NSSendAnnouncementMessageToPlayer(player, "Large dummy", "Small dummy", <1,1,0>, 1, ANNOUNCEMENT_STYLE_QUICK)
+          NSSendAnnouncementMessageToPlayer(player, "Very cool announcement", "Hi Karma", <1,1,0>, 1, ANNOUNCEMENT_STYLE_QUICK)
       }
 
 Status
@@ -178,10 +178,10 @@ Deletes the status message which was created with ``id``
   
     void function TestStatusMessage_Threaded(entity player)
     {
-        string id = UniqueString("DUMMY_")
-        NSCreateStatusMessageOnPlayer(player, "Dummies on server", "[0/1]", id)
+        string id = UniqueString("votes#")
+        NSCreateStatusMessageOnPlayer(player, "have voted", "[0/12]", id)
         wait 3
-        NSEditStatusMessageOnPlayer(player, "Dummies on server", "[1/1]", id)
+        NSEditStatusMessageOnPlayer(player, "have voted", "[1/12]", id)
         wait 10
         NSDeleteStatusMessageOnPlayer(player, id)    
     }
