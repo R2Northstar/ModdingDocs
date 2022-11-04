@@ -163,6 +163,7 @@ Currently status messages are limited to 4 and there's no way to know if the pla
 .. cpp:function:: void  NSCreateStatusMessageOnPlayer( entity player, string title, string description, string id )
 
 Creates a status message on ``player``. ``id`` is used to identify and edit the message, make sure your id is unique!
+To generate a unique id, use UniqueString().
 
 .. cpp:function:: void  NSEditStatusMessageOnPlayer( entity player, string title, string description, string id  )
 
