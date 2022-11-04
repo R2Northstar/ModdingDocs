@@ -5,13 +5,15 @@ Documentation on rst can be difficult for many reasons.
 So this page to help smooth the entry difficulty curve so enable more contributions.
 You will still need to read rst external documentation, but this page holds useful links, resources, code blocks, and explanations.
 
-.. note:: 
-    Rst syntax and capability can change depending on extensions the documentation has.
+
+..  note:: The ``.rst`` files can be found in the ``docs/source`` directory. If you're adding a new file, make sure to link it in ``index.rst``
 
 External Rst Documentation:
 ^^^^
 
-Take links rankings lightly as every rst documentation provides provided value and presents information differently.
+Take links rankings lightly as every rst documentation provides value and presents information differently.
+
+.. note:: Rst syntax and capability can change depending on extensions the documentation has.
 
 1. Docutil: `https://docutils.sourceforge.io/docs/ref/rst/directives.html <https://docutils.sourceforge.io/docs/ref/rst/directives.html>`_
 2. Spinx Documentation: `https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_
@@ -22,9 +24,7 @@ Take links rankings lightly as every rst documentation provides provided value a
 Headers, Sections, Subsections, Subsubsections:
 ----
 
-
 .. important:: You need 5 specific symbols in a row to indicate a header type. 
-
 
 Standard and always applicable headers:
 #####
@@ -33,11 +33,12 @@ Standard and always applicable headers:
 2. ``^`` Subsection
 3. ``-`` Subsubsection
 
-Headers work much like a hierarchy. Having multiple Header 1's (``=``) on one page will likely break other headers, applicable on other headers as well.
+Headers work much like a hierarchy. Having multiple Header 1's (``=``) on one page will likely break other headers, applicable to other headers.
 
 **Examples:**
 
-The example below is a screenshot. This removes their hyperlinks, removing some functionality through this example. Should be of similar size when being used.
+The example below is a screenshot. This removes their hyperlinks, removing some functionality through this example.
+Should be of similar size though.
 
 .. figure:: /_static/rsthelp/staticHeaders.png
     :width: 220
@@ -62,6 +63,9 @@ Based off reference:
 These headers all indicate a header style with no specific size. 
 The initial use of them will indicate their size for the rest of the page.
 Depending on the header previous used before them, they will auto-scale to a sub version. 
+
+Recommended order:
+*****
 
 - ``#``
 - ``*``
@@ -196,21 +200,21 @@ This single figure is holding an image, codeblock, text, and even a table.
 Aligning is weird:
 #####
 
-This aligned image
+See this aligned image?
 
 .. image:: /_static/rsthelp/cutecat1x1.jpg
     :align: right
-    :width: 200px
+    :width: 250px
 
-It seems nice but it causes all the text to bundle up here to the left or right.
-Still workable just causes unnecessary confusion because the documentation you're writing.
-May not go along with the image it's right beside.
+It seems nice because it causes all the text to bundle up here to the left or right.
+This could improve readability but aligned content can make writing the documentation more difficult.
+The text and content may be misaligned so you just end desyncing up your documentation for the reader.
 
-Like now. The previous text has nothing to do with the cute cat here to the right.
+Like now. The previous text has nothing to do with the cute cat. Now that we're talking about the cat though.
 Isn't that cat cute? Imagine sleeping that good. Maybe it's napping.
 I wonder if the ratio of cute sleeper are higher for cats than for humans.
 
-Anyways: 
+Anyways.
 
 .. important:: You can align with ``:align: <parameter>``, available parameters are ``right``, ``left``, ``center``, ``top``, ``middle`` or ``bottom``.
 
@@ -252,12 +256,18 @@ Tables:
 
 TODO - Tables. Before learning tables. Learn References.
 
-.. danger:: TEST RST STUFF BELOW
-.. danger:: TEST RST STUFF BELOW
-.. danger:: TEST RST STUFF BELOW
-.. danger:: TEST RST STUFF BELOW
-.. danger:: TEST RST STUFF BELOW
-.. danger:: TEST RST STUFF BELOW
+.. image:: /_static/rsthelp/mpt.png
+    :height: 40
+.. danger:: **DANGER ZONE BELOW**
+.. danger:: **DANGER ZONE BELOW**
+.. danger:: **DANGER ZONE BELOW**
+.. danger:: **DANGER ZONE BELOW**
+.. danger:: **DANGER ZONE BELOW**
+.. image:: /_static/rsthelp/mpt.png
+    :height: 40
+
+DANGER ZONE
+^^^^^
 
 .. sidebar:: Sidebar Title
     :subtitle: Optional Sidebar Subtitle
@@ -267,7 +277,7 @@ TODO - Tables. Before learning tables. Learn References.
     interpreted as body elements.
 
 Titles, Sections, and Header being funny:
-^^^^^
+----
 
 .. sidebar:: My preferred order
     
