@@ -166,8 +166,6 @@ This is usually because there's some metadata left in the audio.
               mv -f "${f%.wav}.new.wav" "$f"
             done
 
-      .. tabs::
-
          .. code-tab:: shell MP3 Script
             
             #MP3 to WAV 16-bit 48000 Hz.
@@ -178,8 +176,6 @@ This is usually because there's some metadata left in the audio.
             do
               ffmpeg -i "${f}" -vn -c:a pcm_s16le  -ar 48000 "${f%.*}.wav"
             done
-
-      .. tabs::
 
          .. code-tab:: shell Script for other formats
             
