@@ -22,7 +22,6 @@ If you know anything about any function, object or concept please dont hesitate 
    :caption: Informed
    :hidden:
 
-
    /informed/tools
    /informed/contributing
 
@@ -42,15 +41,3 @@ If you know anything about any function, object or concept please dont hesitate 
    :hidden:
 
    /squirrelDoc/index
-
-.. toctree::
-   :caption: Reverse Engineering Titanfall2
-   :hidden:
-
-   /reverseEngineering/index
-
-.. toctree::
-   :caption: Mapping Tools
-   :hidden:
-
-   /mapping/info-dump
