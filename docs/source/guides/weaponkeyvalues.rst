@@ -7,9 +7,7 @@ Note that asset values are identical to strings in Key Value files.
 
 These can be modified with KeyValue modding, see here: :doc:`weaponmodding`
 
-The majority of these values are held in ``eWeaponVar`` and can be modified with attachments (named "Mods" in Key Value files).
-
-"\*" will be used to denote values that are not in ``eWeaponVar`` and cannot be modified with attachments.
+The majority of these values are held in ``eWeaponVar``. Those that are can be modified with attachments (named "Mods" in Key Value files); otherwise, they cannot.
 
 List of KeyValues
 ------------------------
