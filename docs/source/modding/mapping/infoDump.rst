@@ -1,4 +1,4 @@
-Info-Dump
+Info Dump
 =========
 
 Loosely structured dump of information to be sorted in the future:

@@ -2,7 +2,6 @@ Northstar API
 -------------
 
 .. toctree::
-    :maxdepth: 2
 
     /reference/northstar/callbacks
     /reference/northstar/chathooks
@@ -15,7 +14,6 @@ Respawn API
 -----------
 
 .. toctree::
-    :maxdepth: 2
 
     /reference/respawn/callbacks
     /reference/respawn/player
@@ -29,7 +27,6 @@ HUD
 ---
 
 .. toctree::
-    :maxdepth: 1
 
     /reference/respawn/hud_menus
     /reference/respawn/hud_element_notation

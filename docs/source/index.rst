@@ -17,71 +17,40 @@ For now we are focusing on moving over things that were documented in other plac
 
 If you know anything about any function, object or concept please dont hesitate to contribute it, even if its just a quick and dirty PR.
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   /guides/index
 
 .. toctree::
-   :maxdepth: 2
+   :caption: Informed
    :hidden:
-   :caption: Guides
 
-   /guides/gettingstarted
-   /guides/tools
-   /guides/cheatsheet
-   /guides/moddingtutorials
-   /guides/weaponmodding
-   /guides/rpakmodding
-   /guides/localisation
-   /guides/crosshairmodding
-   /guides/settingsmods
-   /guides/gamemodemods
-   /guides/soundmodding
-   /guides/VTFModding
-   /guides/publishing
-   /guides/contributing
+
+   /informed/tools
+   /informed/contributing
 
 .. toctree::
-   :maxdepth: 3
-   :hidden:
+   :caption: Modding
+
+   /modding/index
+
+.. toctree::
    :caption: Northstar API Documentation
+   :hidden:
 
-   /reference/index
+   /nsApiDoc/index
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
    :caption: Squirrel Documentation
+   :hidden:
 
-   /native/intro
-   /native/syntax
-   /native/functions
-   /native/tablesandarrays
-   /native/async
-   /native/networking
-   /native/class
-   /native/useful
+   /squirrelDoc/index
 
 .. toctree::
-   :maxdepth: 3
-   :hidden:
-   :caption: RePak Documentation
-
-   /repak/map
-   /repak/index
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
    :caption: Reverse Engineering Titanfall2
+   :hidden:
 
-   /reverse-engineering/introduction
+   /reverseEngineering/index
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
    :caption: Mapping Tools
+   :hidden:
 
    /mapping/info-dump

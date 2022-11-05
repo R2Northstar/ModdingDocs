@@ -1,4 +1,4 @@
-Getting Started
+Northstar Mods (getting started)
 ===================================
 
 Northstar supports the creation of many user mods. 
