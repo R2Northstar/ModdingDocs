@@ -8,7 +8,7 @@ Name|Type|eWeaponVar|Purpose|Notes
 
 ``broad``, ``broad_sp``: Moderate aim assist pull.
 
-``precise``,``precise_sp`` : High aim assist pull."
+``precise``, ``precise_sp``: High aim assist pull."
 ``aimassist_adspull_zoomEnd``|``float``|True|The fraction during aiming down sights at which aim assist pull ends.|
 ``aimassist_adspull_zoomStart``|``float``|True|The fraction during aiming down sights at which aim assist pull starts.|
 ``aimassist_disable_ads``|``bool``|True|Disables aim assist while aiming down sights.|
@@ -44,7 +44,7 @@ If true and magazine size is greater than 0, ammo is not removed from stockpile.
 ``attack_button_presses_ads``|``bool``|True|Enables/disables the attack button triggering aim down sights when held.|
 ``attack_button_presses_melee``|``bool``|True|Enables/disables the attack button triggering melee.|
 ``battle_chatter_event``|``string``|False|Unknown.|
-``bob_``||False|b_``. A set of values controlling view model bobbing while moving.|
+``bob_``|Various|False|A set of values controlling view model bobbing while moving.|
 ``body_skin``|``int``|True|Unknown.|
 ``body_type``|``string``|False|Unknown.|
 ``bodygroup1_name``|``string``|False|The name that body group 1 is tied to.|
@@ -148,7 +148,7 @@ Controls maximum range for hitscan shotgun attacks.
 Damage scales linearly between near to far distances and far to very far (if it is used) distances."
 ``damage_far_value``|``float``|True|Damage dealt to non-heavily armored targets at ``damage_far_distance``.|
 ``damage_far_value_titanarmor``|``float``|True|Damage dealt to heavily armored targets at ``damage_far_distance``. Optional.|"If unused, ``damage_far_value`` is applied instead."
-``damage_flags``|``int``|True|The damage flags used by the weapon. Only applies by default; flags be overwritten in script.|
+``damage_flags``|``int``|True|The damage flags used by the weapon. Only applies by default; flags can be overwritten in script.|
 ``damage_headshot_scale``|``float``|True|Scalar on headshot damage.|
 ``damage_heavyarmor_nontitan_scale``|``float``|True|Unknown.|
 ``damage_inverse_distance``|``float``|True|Distance used alongside ``inverse`` damage falloff type.|
@@ -380,7 +380,7 @@ Damage scales linearly between near to far distances and far to very far (if it 
 ``npc_use_long_duration``|``float``|True|Unknown.|
 ``npc_use_max_damage``|``float``|True|Maximum amount of damage taken before an NPC will use this weapon.|
 ``npc_use_min_damage``|``float``|True|Minimum amount of damage taken before an NPC will use this weapon.|
-``npc_use_min_projectile_damage``|``float``|True|Minimum amount of damage taken by projectiles before an NPC will use this weapon.|
+``npc_use_min_projectile_damage``|``float``|True|Minimum amount of damage taken from projectiles before an NPC will use this weapon.|
 ``npc_use_normal_duration``|``float``|False|Time in seconds that an NPC will use this weapon.|
 ``npc_use_short_duration``|``float``|True|Unknown.|
 ``npc_use_strict_muzzle_dir``|``bool``|True|Unknown.|
@@ -420,12 +420,12 @@ Damage scales linearly between near to far distances and far to very far (if it 
 ``ordnance_crosshair_always_on_start_index``|``int``|True|The index of a crosshair in the weapon's crosshair list to always have on. Used to show cooldowns as Pilot.|
 ``pass_through_damage_preserved_scale``|``float``|True|Scalar on damage dealt to following targets after the shot pierces through a target.|
 ``pass_through_depth``|``float``|True|The total amount of depth a shot can pierce through, inclusive. |
-``passive``|``string``|False|Determines what passive to give when the Core weapon starts attacking.|
+``passive``|``string``|False|Determines what passive to give when the Core weapon starts attacking.|"Only works for ``PAS_FUSION_CORE``, ``PAS_SHIELD_BOOST``, ``PAS_BERSERKER``, ``PAS_SHIFT_CORE``, and ``PAS_SMART_CORE``."
 ``pickup_hold_prompt``|``string``|False|Unknown.|
 ``pickup_press_prompt``|``string``|False|Unknown.|
 ``play_offhand_charging_anim``|``bool``|False|Enables/disables the standard charging animation of an offhand weapon for others.|
 ``play_offhand_fire_anim``|``bool``|False|Unknown.|
-``play_offhand_start_end_anim``|``bool``|False|Unknown.|"Only works for ``PAS_FUSION_CORE``, ``PAS_SHIELD_BOOST``, ``PAS_BERSERKER``, ``PAS_SHIFT_CORE``, and ``PAS_SMART_CORE``."
+``play_offhand_start_end_anim``|``bool``|False|Unknown.|
 ``playermodel``|``asset``|True|Model of the weapon shown to others when held.|
 ``pre_ignition_damage``|``int``|True|Damage dealt to non-heavily armored targets before ignition. (Missiles only)|
 ``pre_ignition_damage_titanarmor``|``int``|True|Damage dealt to heavily armored targets before ignition. (Missiles only)|
@@ -514,7 +514,7 @@ Not the time before firing is allowed. Animations can allow firing sooner at var
 ``shared_energy_charge_cost``|``int``|True|Amount of shared energy consumed per frame (60 times per second) while charging.|
 ``shared_energy_cost``|``int``|True|Amount of shared energy consumed on attack.|
 ``shortprintname``|``string``|True|Name displayed for the weapon in most places (e.g. loadout screen, weapon flyouts, pickups).|
-``show_grenade_indicator``|``bool``|False|Disables the nearby grenade indicator shown to nearby on grenades fired. (Grenades only)|
+``show_grenade_indicator``|``bool``|False|Disables the nearby grenade indicator shown to nearby targets on grenades fired. (Grenades only)|
 ``show_pre_modded_tracer``|``bool``|True|Unknown.|
 ``silenced``|``bool``|True|Unknown.|
 ``smart_ammo_active_shot_damage_multiplier``|``float``|True|Unknown.|
@@ -567,7 +567,7 @@ Not the time before firing is allowed. Animations can allow firing sooner at var
 ``smart_ammo_target_found_sound``|``string``|True|Sound effect played when a new target enters the search cone.|
 ``smart_ammo_target_lost_sound``|``string``|True|Sound effect played when locks on a target are lost.|
 ``smart_ammo_target_max_locks_heavy``|``int``|True|The maximum number of locks on a heavily armored target.|
-``smart_ammo_target_max_locks_normal``|``int``|True|The maximum number of locks on a non-heavily armored target.|"If unused, acquires locks to deal enough damage to kill the target's in a single burst (up to general maximum locks)."
+``smart_ammo_target_max_locks_normal``|``int``|True|The maximum number of locks on a non-heavily armored target.|"If unused, acquires locks to deal enough damage to kill the target in a single burst (up to general maximum locks)."
 ``smart_ammo_target_npc_lock_factor``|``float``|True|Unknown.|
 ``smart_ammo_targeting_time_max``|``float``|True|The maximum time in seconds it takes to acquire a lock. |
 ``smart_ammo_targeting_time_max_npc``|``float``|True|The maximum time in seconds it takes to acquire a lock on an NPC.|
@@ -641,10 +641,12 @@ Not the time before firing is allowed. Animations can allow firing sooner at var
 ``sustained_laser_radial_iterations``|``int``|True|The number of radial iterations the sustained laser is composed of.|
 ``sustained_laser_radial_step``|``int``|True|Scalar on the number of evenly spaced lasers created per radial iteration.|"1 radial iteration is required for the single center beam.
 
-Successive iterations generate ``2 ^ (i - 2) * sustained_laser_radial_step`` evenly spaced lasers in a circle, where ``i`` is the current iteration."
+Successive iterations generate ``2 ^ (i - 2) * sustained_laser_radial_step`` evenly spaced lasers in a circle, where ``i`` is the current iteration.
+
+E.g. 3 iterations and 3 step makes 1 center beam in the 1st iteration, 3 beams in the 2nd iteration, and 6 beams in the 3rd iteration."
 ``sustained_laser_radius``|``float``|True|The radius increase in sustained laser circles as the radial iteration increases.|
 ``sustained_laser_range``|``float``|True|The maximum range of the sustained laser.|
-``sway_``||False|ay_``. A large set of values controlling view model sway when held. |
+``sway_``|Various|False|A large set of values controlling view model sway when held.|
 ``threat_scope_bounds_height``|``float``|True|Used instead of tagname to manually specify threat scope height.|
 ``threat_scope_bounds_tagname1``|``string``|True|Determines one corner of the threat scope.|
 ``threat_scope_bounds_tagname2``|``string``|True|Determines one corner of the threat scope.|
@@ -666,21 +668,13 @@ Successive iterations generate ``2 ^ (i - 2) * sustained_laser_radial_step`` eve
 ``ui1_draw_cloaked``|``bool``|True|Enables/disables showing ui element 1 while cloaked.|
 ``ui1_enable``|``bool``|True|Enables/disables showing ui element 1.|"Additional values exist for ui elements up to ``ui8``."
 ``viewdrift_ads_air_scale_pitch``|``float``|True|The maximum absolute value pitch the user view will drift by when aiming down sights in the air. |
-``viewdrift_ads_air_scale_yaw``|``float``|True|The maximum absolute value yaw the user view will drift by when aiming down sights in the air. |
 ``viewdrift_ads_crouch_scale_pitch``|``float``|True|The maximum absolute value pitch the user view will drift by when grounded, aiming down sights, and crouched or sliding. |
-``viewdrift_ads_crouch_scale_yaw``|``float``|True|The maximum absolute value yaw the user view will drift by when grounded, aiming down sights, and crouched or sliding.|
 ``viewdrift_ads_speed_pitch``|``float``|True|Scalar on how quickly pitch viewdrift shifts while aiming down sights. |
-``viewdrift_ads_speed_yaw``|``float``|True|Scalar on how quickly yaw viewdrift shifts while aiming down sights.|
 ``viewdrift_ads_stand_scale_pitch``|``float``|True|The maximum absolute value pitch the user view will drift by when grounded, aiming down sights, and standing or sprinting.|
-``viewdrift_ads_stand_scale_yaw``|``float``|True|The maximum absolute value yaw the user view will drift by when grounded, aiming down sights, and standing or sprinting.|
 ``viewdrift_hipfire_air_scale_pitch``|``float``|True|The maximum absolute value pitch the user view will drift by when hipfiring in the air. |
-``viewdrift_hipfire_air_scale_yaw``|``float``|True|The maximum absolute value yaw the user view will drift by when hipfiring in the air. |
 ``viewdrift_hipfire_crouch_scale_pitch``|``float``|True|The maximum absolute value pitch the user view will drift by when grounded, hipfiring, and crouched or sliding. |
-``viewdrift_hipfire_crouch_scale_yaw``|``float``|True|The maximum absolute value yaw the user view will drift by when grounded, hipfiring, and crouched or sliding. |
 ``viewdrift_hipfire_speed_pitch``|``float``|True|Scalar on how quickly pitch viewdrift shifts while hipfiring. |
-``viewdrift_hipfire_speed_yaw``|``float``|True|Scalar on how quickly yaw viewdrift shifts while hipfiring. |
-``viewdrift_hipfire_stand_scale_pitch``|``float``|True|The maximum absolute value pitch the user view will drift by when grounded, hipfiring, and standing or sprinting. |
-``viewdrift_hipfire_stand_scale_yaw``|``float``|True|The maximum absolute value yaw the user view will drift by when grounded, hipfiring, and standing or sprinting. |
+``viewdrift_hipfire_stand_scale_pitch``|``float``|True|The maximum absolute value pitch the user view will drift by when grounded, hipfiring, and standing or sprinting.|"The same values exist for yaw viewdrift."
 ``viewkick_ads_weaponFraction``|``float``|True|Scalar on how much the weapon/reticle recoils separate from viewpoint while aiming down sights (i.e. how much your viewpoint counters the recoil).|
 ``viewkick_ads_weaponFraction_vmScale``|``float``|True|Scalar on how much the weapon viewmodel recoils while aiming down sights.|
 ``viewkick_air_scale_ads``|``float``|True|Scalar on recoil generated while aiming down sights when the user is not grounded (includes wallrunning).|
