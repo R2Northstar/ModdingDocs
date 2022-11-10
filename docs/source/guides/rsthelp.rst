@@ -20,6 +20,8 @@ Take links rankings lightly as every rst documentation provides value and presen
 3. Thomas Cokelaer: `https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.htmlr <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_
 4. Python DevGuide: `https://devguide.python.org/documentation/markup/ <https://devguide.python.org/documentation/markup/>`_
 5. GDAL: `https://gdal.org/contributing/rst_style.html <https://gdal.org/contributing/rst_style.html>`_
+6. Spinx-RTD-Theme: `https://sphinx-rtd-theme.readthedocs.io/en/stable/demo/demo.html#paragraph-level-markup <https://sphinx-rtd-theme.readthedocs.io/en/stable/demo/demo.html#paragraph-level-markup>`_
+7. Anaconda: `https://docs.anaconda.com/restructuredtext/detailed/ <https://docs.anaconda.com/restructuredtext/detailed/>`_
 
 Headers, Sections, Subsections, Subsubsections:
 ----
