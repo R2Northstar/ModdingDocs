@@ -2,18 +2,19 @@ Movers
 ======
 
 
-movers are entites that move smoothly.
+Movers are entites that move and rotate smoothly.
 ``script_mover`` allows for smooth movement and rotation contrary to ``script_mover_lightweight`` which is not able to rotate.
 
-Functions for creating movers and examples.
+Create a Mover
+-----
 
-these function are found in ``_utility.nut``
+These functions are not properties.
 
 .. cpp:function:: entity CreateExpensiveScriptMover( vector origin , vector angles )
 
    returns ``script_mover``
     
-.. cpp:function:: entity CreateExpensiveScriptMover( asset model, vector origin, vector angles, int solidType, float fadeDist )
+.. cpp:function:: entity CreateExpensiveScriptMoverModel( asset model, vector origin, vector angles, int solidType, float fadeDist )
 
     returns ``script_mover`` which has a model
 
@@ -29,7 +30,42 @@ these function are found in ``_utility.nut``
     
      returns ``script_mover`` which will be at the location of the owner
 
-to actually move movers you can use ``NonPhysicsMoveTo( dest, time, easeIn, easeOut )``
+Moving
+-----
+
+    .. cpp:function:: void NonPhysicsMoveTo( vector position, float time, float easeIn, float easeOut )
+
+    .. cpp:function:: void NonPhysicsMoveInWorldSpaceToLocalPos( vector localPos, float time, float easeIn, float easeOut )
+
+    .. cpp:function:: void NonPhysicsMoveWithGravity( vector velocityForOthers, vector fakeGravity )
+
+    .. cpp:function:: void NonPhysicsRotateTo( vector angles, float time, float easeIn, float easeOut )
+
+        Only usable by expensive movers
+
+    .. cpp:function:: void NonPhysicsRotate( vector angles, float speed )
+
+        Only usable by expensive movers
+
+    .. cpp:function:: void NonPhysicsStop()
+
+        Immediately stop this mover from moving
+
+Behaviour
+-----
+
+.. cpp:function:: void ChangeNPCPathsOnMove( bool recalculate )
+
+.. cpp:function:: void SetPusher( bool isPusher )
+
+    Pushers move everything that stands on top of them or next to them and can also kill entities by crushing them.
+
+.. cpp:function:: void NonPhysicsSetRotateModeLocal( bool useLocal )
+
+.. cpp:function:: void PhysicsDummyEnableMotion( bool enabled )
+
+Examples
+--------
 
 .. code-block:: javascript
 
@@ -47,18 +83,6 @@ to actually move movers you can use ``NonPhysicsMoveTo( dest, time, easeIn, ease
     // then stoping the mover in 0.5 seconds
     wait 0.5
     mover.NonPhysicsStop()
-
-Pushers
--------
-
-Pushers are movers but you make them pushers like this :
-``mover.SetPusher( true )``
-
-Pushers are great at moving anything and also can be used as a crusher.
-
-
-Examples
---------
 
 .. code-block:: javascript
     

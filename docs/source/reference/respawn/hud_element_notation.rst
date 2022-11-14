@@ -411,6 +411,8 @@ Conditional Properties
 
 You can declare properties for specific conditions by adding ``[CONDITION]`` after the property value.
 
+When putting a condition after an element's name, the element will only be created if the condition evaluates to true.
+
 Usable conditions are:
 
 .. cpp:function:: $WIN32
@@ -454,6 +456,24 @@ Example:
 
 .. code-block::
 
+    // This element only shows on pc
+	IngameTextChat [$WINDOWS]
+	{
+		ControlName				CBaseHudChat
+		InheritProperties		ChatBox
+
+		destination				"match"
+
+		visible 				0
+
+		pin_to_sibling			Screen
+		pin_corner_to_sibling	TOP_LEFT
+		pin_to_sibling_corner	TOP_LEFT
+		xpos					-45
+		ypos					-616
+	}
+
+    // This element has different widths depending on the game resolution
     LoadingTip
     {
         ControlName				Label
