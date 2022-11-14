@@ -58,4 +58,4 @@ Github Workflows
 
 If you want to create a Github repository for your mod, you can use a `template <https://github.com/GreenTF/NSModTemplate>`_ that automatically packages and uploads your mod to Thunderstore when you create a Github release of your mod.
 
-Github only supports files smaller than 100mb without using `git-lfs <https://git-lfs.github.com/>`_. Using git-lfs isn't recommended, you should use scripts that split your assets like in this `template <https://github.com/uniboi/NSModTemplate>`_
+Github only supports files smaller than 100mb without using `git-lfs <https://git-lfs.github.com/>`_. Using git-lfs isn't recommended. Instead you should use scripts that split your assets like in this `template <https://github.com/uniboi/NSModTemplate>`_
