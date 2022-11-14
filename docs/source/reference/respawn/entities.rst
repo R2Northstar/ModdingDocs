@@ -1054,7 +1054,7 @@ Shared
 
 	.. cpp:function:: int GetWeaponBurstFireCount()
 
-	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose1, bool unknown_purpose2 )
+	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose1, bool clearPartialLocks )
 
 	.. cpp:function:: vector SmartAmmo_GetFirePosition(entity target, int burstIndex)
 
@@ -1220,7 +1220,7 @@ Shared
 
 	.. cpp:function:: void InitMagnetic( float force, string attractKey )
 
-	.. cpp:function:: void ExplodeForCollisionCallback( vector unknown_purpose )
+	.. cpp:function:: void ExplodeForCollisionCallback( vector normal )
 
 	.. cpp:function:: void MarkAsAttached()
 
@@ -1258,7 +1258,7 @@ Shared
 
 	.. cpp:function:: void SetHomingSpeeds( int speed, int speed_for_dodging_player )
 
-	.. cpp:function:: void SetMissileTarget( enity target, vector unknown_purpose )
+	.. cpp:function:: void SetMissileTarget( enity target, vector offset )
 
 	.. cpp:function:: void SetMissileTargetPosition( vector pos )
 
@@ -1768,7 +1768,7 @@ CTitanSoul
 
 	.. cpp:function:: void SetTitanSoulNetFloat( string key, float val )
 
-	.. cpp:function:: void SetTitanSoulNetFloatOverTime( string key, float unknown_purpose, float val )
+	.. cpp:function:: void SetTitanSoulNetFloatOverTime( string key, float val, float time )
 
 	.. cpp:function:: float GetCoreUseDuration()
 
