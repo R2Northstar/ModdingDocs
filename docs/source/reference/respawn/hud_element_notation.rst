@@ -280,8 +280,6 @@ Other
 
 .. cpp:function:: autoResize
 
-.. cpp:function:: tabPosition
-
 .. cpp:function:: barCount
 
 .. cpp:function:: barSpacing
@@ -326,8 +324,6 @@ Other
 
 .. cpp:function:: totalMembersColumnWidth
 
-.. cpp:function:: centerWrap
-
 .. cpp:function:: chatBorderThickness
 
 .. cpp:function:: messageModeAlwaysOn
@@ -357,8 +353,6 @@ Other
 .. cpp:function:: allowRightClickMenu
 
 .. cpp:function:: allowSpecialCharacters
-
-.. cpp:function:: Command
 
 .. cpp:function:: SelectedTextColor
 

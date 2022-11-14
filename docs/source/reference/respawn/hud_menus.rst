@@ -141,7 +141,7 @@ Callbacks
 
     * ``eUIEvent.PANEL_SHOW``
 
-    *  ``eUIEvent.PANEL_HIDE``
+    * ``eUIEvent.PANEL_HIDE``
 
 .. cpp:function:: void AddButtonEventHandler( var button, int event, void functionref( var ) func )
 

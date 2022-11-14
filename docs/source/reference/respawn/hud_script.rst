@@ -97,19 +97,19 @@ Element Position
 
 	Move to relative x over time with interpolation.
 
-	* ``0``: linear interpolation
+	* ``INTERPOLATOR_LINEAR``: linear interpolation
 
-	* ``1``: acceleration
+	* ``INTERPOLATOR_ACCEL``: move with accelerating speed
 
-	* ``2``: deacceleration
+	* ``INTERPOLATOR_DEACCEL``: move with deaccelerating speed
 
-	* ``3``: one time bounce
+	* ``INTERPOLATOR_PULSE``: one time bounce
 
-	* ``4``: no transition
+	* ``INTERPOLATOR_FLICKER``: no transition
 
-	* ``5``: linear interpolation
+	* ``INTERPOLATOR_SIMPLESPLINE``: ease in / out
 
-	* ``6``: two bounces
+	* ``INTERPOLATOR_BOUNCE``: gravitational bounce
 
 .. cpp:function:: void Hud_SetYOverTime( var elem, int y, float transitionTime, int interpolation_mode = 0 )
 
