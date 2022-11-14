@@ -135,7 +135,7 @@ Statements
 
 If statements
 ---------------
-<>
+
 If statements use a similar style to most programming languages and will execute their asigned code if the test placed inside returns the boolean value true. If I wanted to have something occur if, and only if, our previous ``ReturnTrueOrFalse`` function returned true, then you can use:
 
 .. code-block:: javascript

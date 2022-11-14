@@ -167,6 +167,10 @@ is set, thread will end (after calling any `OnThreadEnd` methods).
 
         Disconnects the callback from the signal.
 
+	.. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
+
+		Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
+        
 	.. cpp:function:: void Fire( string signal, string param = "", float delay = 0, entity activator = null, entity caller = null )
 
 		Fire a signal on this entity, with optional parm and delay

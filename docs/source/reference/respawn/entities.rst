@@ -50,6 +50,18 @@ Shared
 
 		Halts this thread until a signal is activated for this entity
 
+	.. cpp:function:: void ConnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
+
+		Executes the callback function when the signal is fired.
+
+	.. cpp:function:: void DisconnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
+
+		Disconnects the callback from the signal.
+
+	.. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
+
+		Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
+
 	.. cpp:function:: vector GetOrigin()
 
 		Returns the Coordinates of this entity
@@ -586,23 +598,11 @@ CBaseEntity
 
 	.. cpp:function:: void RoundOriginAndAnglesToNearestNetworkValue()
 
-	.. cpp:function:: void ConnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
-
-		Executes the callback function when the signal is fired.
-
-	.. cpp:function:: void DisconnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
-
-		Disconnects the callback from the signal.
-
 	.. cpp:function:: void ClearBossPlayer()
 
 		Remove boss player reference from this entity.
 
 	.. cpp:function:: void Minimap_DisplayDefault( int team, entity ent )
-
-	.. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
-
-		Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
 
 	.. cpp:function:: void _typeof()
 
