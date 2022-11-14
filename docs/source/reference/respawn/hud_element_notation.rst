@@ -226,9 +226,19 @@ Images
 
 .. cpp:function:: image
 
+    vgui asset to render
+
 .. cpp:function:: scaleImage
 
 .. cpp:function:: fg_image
+
+.. cpp:function:: drawColor
+
+    apply this color on top. Format is "r g b a".
+
+.. cpp:function:: fillcolor
+
+    Fill transparent pixels with this color. Format is "r g b a"
 
 Navigation
 ^^^^
@@ -265,8 +275,6 @@ Other
 .. cpp:function:: auto_wide_tocontents
 
 .. cpp:function:: auto_tall_tocontents
-
-.. cpp:function:: drawColor
 
 .. cpp:function:: enabled
 
