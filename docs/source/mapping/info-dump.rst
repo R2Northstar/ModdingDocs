@@ -33,3 +33,16 @@ How titanfall custom map:
 
 ..  youtube:: gmNzc5Go2ow
 
+How to make corners correctly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Improper corners can cause the player to get stuck
+
+.. figure:: /_static/map-corners.png
+  :class: screenshot
+
+..  youtube:: mwvxonuCm8U
+
+Sample clip: https://cdn.discordapp.com/attachments/925435799057604709/1041813223420211220/Titanfall_2_2022-11-14_15-28-03.mp4
+
+Sample map: https://cdn.discordapp.com/attachments/925435799057604709/1041813222547791953/corner_test_map.map
