@@ -43,6 +43,8 @@ Improper corners can cause the player to get stuck
 
 ..  youtube:: mwvxonuCm8U
 
-Sample clip: https://cdn.discordapp.com/attachments/925435799057604709/1041813223420211220/Titanfall_2_2022-11-14_15-28-03.mp4
+Sample clip: 
+
+..  youtube:: zgWDme7Y6oI
 
 Sample map: https://cdn.discordapp.com/attachments/925435799057604709/1041813222547791953/corner_test_map.map
