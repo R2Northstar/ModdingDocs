@@ -33,6 +33,7 @@ If you know anything about any function, object or concept please dont hesitate 
    /guides/cheatsheet
    /guides/moddingtutorials
    /guides/weaponmodding
+   /guides/weaponkeyvalues
    /guides/rpakmodding
    /guides/localisation
    /guides/crosshairmodding
@@ -78,3 +79,10 @@ If you know anything about any function, object or concept please dont hesitate 
    :caption: Reverse Engineering Titanfall2
 
    /reverse-engineering/introduction
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Mapping Tools
+
+   /mapping/info-dump
