@@ -3,7 +3,7 @@
 Element Notation
 ====
 
-Elements are notated as `VDF<https://developer.valvesoftware.com/wiki/KeyValues>`_
+Elements are notated as `VDF <https://developer.valvesoftware.com/wiki/KeyValues>`_
 
 UI elements are created when a menu is initialized. References to the elements will stay the same, regardless if the menu is open or not.
 
