@@ -258,6 +258,8 @@ Example:
     .. |title| replace::
         This is realllllly useful for tables. This is reference usage.
 
+This is used right now. Check below for usage in example tables.
+
 .. |title| replace::
         This is realllllly useful for tables. This is reference usage.
 
@@ -267,6 +269,7 @@ Tables:
 TODO - Tables. Before learning tables. Learn References.
 
 Types: 
+#####
 
 Simple Simple:
 ::
@@ -282,10 +285,10 @@ Simple Simple:
 Simple: 
 :: 
 
-    ============= ============================
-     can merge!     Titles
-    ============= ============================
-     hi     elo      |title|
+    ====== ====== ============================
+    hi     elo     Titles
+    ====== ====== ============================
+    hi     elo      |title|
     ====== ====== ============================
 
 ====== ====== ============================
