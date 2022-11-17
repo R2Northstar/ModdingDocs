@@ -26,7 +26,7 @@ If you know anything about any function, object or concept please dont hesitate 
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Guides
+   :caption: Getting Started
 
    /guides/gettingstarted
    /guides/tools
