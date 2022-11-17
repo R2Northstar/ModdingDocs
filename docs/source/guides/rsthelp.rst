@@ -245,7 +245,6 @@ or topics which are very similar to admonitions.
 
     Description
 
-
 Source: `https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions <https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>`_
 
 References:
@@ -253,10 +252,56 @@ References:
 
 TODO - REALLY great for tables. Basically text links (i haven't done much testing).
 
+Example:
+::
+
+    .. |title| replace::
+    This is realllllly useful for tables. This is reference usage.
+
 Tables:
 -----
 
 TODO - Tables. Before learning tables. Learn References.
+
+Types: 
+
+Simple Simple:
+::
+
+    ====== ====== ============================
+     hi     elo      IM A Table
+    ====== ====== ============================
+
+====== ====== ============================
+ hi     elo      IM A Table
+====== ====== ============================
+
+Simple: 
+:: 
+
+    ============= ============================
+     can merge!     Titles
+    ============= ============================
+     hi     elo      IM A Table
+    ====== ====== ============================
+
+============= ============================
+ can merge!     Titles
+============= ============================
+  hi     elo      IM A Table
+====== ====== ============================
+
+Complex Complex:
+
+TODO
+
+Complex:
+
+TODO
+
+Complex Easiest:
+
+TODO
 
 .. image:: /_static/rsthelp/mpt.png
     :height: 40
