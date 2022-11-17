@@ -256,7 +256,10 @@ Example:
 ::
 
     .. |title| replace::
-    This is realllllly useful for tables. This is reference usage.
+        This is realllllly useful for tables. This is reference usage.
+
+.. |title| replace::
+        This is realllllly useful for tables. This is reference usage.
 
 Tables:
 -----
@@ -282,13 +285,13 @@ Simple:
     ============= ============================
      can merge!     Titles
     ============= ============================
-     hi     elo      IM A Table
+     hi     elo      |title|
     ====== ====== ============================
 
-============= ============================
- can merge!     Titles
-============= ============================
-  hi     elo      IM A Table
+====== ====== ============================
+ hi     elo     Titles
+====== ====== ============================
+  hi     elo      |title|
 ====== ====== ============================
 
 Complex Complex:
