@@ -97,10 +97,50 @@ You have now created and threaded both functions.
 Signals and flags
 ----------------------
 
+Signals and flags allow threads to wait for events before running some code.
+
 Signals
 ^^^^^^^^^^
 
-Signals and flags allow threads to wait for events before running some code.
+.. cpp:function:: void RegisterSignal( string signal )
+
+    Registers a Signals to use on any entity. It's required to register signals before using them.
+
+.. cpp:class:: CBaseEntity
+
+    :doc:`../reference/respawn/entities`
+
+	.. cpp:function:: void Signal( string signal )
+
+		Trigger a signal on this entity
+
+	.. cpp:function:: void EndSignal( string signal )
+
+		Ends this thread when the identifier is signaled on this entity
+
+	.. cpp:function:: void WaitSignal( string signal )
+
+		Halts this thread until a signal is activated for this entity
+
+    .. cpp:function:: void ConnectOutput( string signal, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
+
+        Register a callback that executes when the ``signal`` has been fired on this Entity
+
+    .. cpp:function:: void DisconnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
+
+        Disconnects the callback from the signal.
+
+	.. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
+
+		Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
+        
+	.. cpp:function:: void Fire( string signal, string param = "", float delay = 0, entity activator = null, entity caller = null )
+
+		Fire a signal on this entity, with optional parm and delay
+
+	.. cpp:function:: void FireNow( string output, string param = "", float delay = 0, entity activator = null, entity caller = null )
+
+		Fire a signal on this entity, with optional parm and delay (synchronous)
 
 For example, if we want to tell a player not to give up after being killed several times, we can write it this way:
 
@@ -149,36 +189,6 @@ run until player died 42 times.
 
 When you want your thread to die on a given event, you can use ``entity.EndSignal( "OnMultipleDeaths" )``; when said signal 
 is set, thread will end (after calling any `OnThreadEnd` methods).
-
-
-.. cpp:function:: void RegisterSignal( string signal )
-
-    Registers a Signals to use on any entity
-
-.. cpp:class:: CBaseEntity
-
-    :doc:`../reference/respawn/entities`
-
-    .. cpp:function:: void ConnectOutput( string signal, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
-
-        Register a callback that executes when the ``signal`` has been fired on this Entity
-
-    .. cpp:function:: void DisconnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
-
-        Disconnects the callback from the signal.
-
-	.. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
-
-		Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
-        
-	.. cpp:function:: void Fire( string signal, string param = "", float delay = 0, entity activator = null, entity caller = null )
-
-		Fire a signal on this entity, with optional parm and delay
-
-	.. cpp:function:: void FireNow( string output, string param = "", float delay = 0, entity activator = null, entity caller = null )
-
-		Fire a signal on this entity, with optional parm and delay (synchronous)
-
 
 Flags
 ^^^^^^^^^^
