@@ -110,15 +110,15 @@ Signals
 
     :doc:`../reference/respawn/entities`
 
-	.. cpp:function:: void Signal( string signal )
+	.. cpp:function:: void Signal( string signal, table<var, var> results = null )
 
-		Trigger a signal on this entity
+		Trigger a signal on this entity. The passed ``results`` will be returned by ``WaitSignal``.
 
 	.. cpp:function:: void EndSignal( string signal )
 
 		Ends this thread when the identifier is signaled on this entity
 
-	.. cpp:function:: void WaitSignal( string signal )
+	.. cpp:function:: table<var, var> WaitSignal( string signal )
 
 		Halts this thread until a signal is activated for this entity
 
@@ -141,6 +141,21 @@ Signals
 	.. cpp:function:: void FireNow( string output, string param = "", float delay = 0, entity activator = null, entity caller = null )
 
 		Fire a signal on this entity, with optional parm and delay (synchronous)
+
+It's also possible to trigger and catch signals with methods that aren't properties of an entity.
+
+.. cpp:function:: void Signal( entity ent, string signal, table<var, var> results = null )
+
+    Trigger a signal on ``ent``. The passed ``results`` will be returned by ``WaitSignal``.
+
+.. cpp:function:: table<var, var> WaitSignal( entity ent, ... )
+
+    Wait for any of the passed signals to be triggered.
+
+    .. code-block:: javascript
+
+        // Wait for the NPC to die, delete, or get leeched, then remove the npc from the array
+	    WaitSignal( ent, "OnDeath", "OnDestroy", "OnLeeched" )
 
 For example, if we want to tell a player not to give up after being killed several times, we can write it this way:
 
