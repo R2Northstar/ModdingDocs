@@ -10,7 +10,7 @@ In threaded functions, it's possible to halt a threaded function with ``wait`` s
 
 You can use the ``IsNewThread()`` function to determine if the current function is threaded off.
 
-For more information, check out the `squirrel documentation on threads <http://www.squirrel-lang.org/squirreldoc/reference/language/threads.html>` and `sq functions of threads <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#thread>`. rsquirrel is very similar to vanilla squirrel in this regard.
+For more information, check out the `squirrel documentation on threads <http://www.squirrel-lang.org/squirreldoc/reference/language/threads.html>`_ and `sq functions of threads <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#thread>`_. rsquirrel is very similar to vanilla squirrel in this regard.
 
 Spinning off a thread
 ^^^^
@@ -56,7 +56,7 @@ To wait a single frame, don't use ``wait 0`` since it doesn't actually wait a ga
 When using infinite loops it's important to work with ``wait`` statements to avoid the game freezing.
 
 Example Script
---------------
+^^^^
 
 .. code-block:: javascript
 
