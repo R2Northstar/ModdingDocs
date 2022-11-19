@@ -1,98 +1,74 @@
-Threading, Async, and timers
+Threads, Signals and Flags
 ============================
-When using timers or infinite statements such as ``while(true)`` or ``wait`` it is important to use ``thread`` before the function in order to prevent crashes or freezes.
 
-What is ``thread``?
--------------------
-The ``thread`` term is used to tell squirrel to run the following function **separately** from the rest of the game, while in a simple scripts code is run sequentially(line 1,2,3 etc)
-if a line of code would last forever or need to function in parallel to normal gameplay, such as a  ``wait`` command, it is important to use ``thread`` or the game will get stuck processing that line indefinitely
-and will not move to the next lines, causing crashes or freezes. 
+Threads
+----
 
-How do i use ``thread``?
-------------------------
-Using thread is fairly simple, if we have a function called ``delayannouncement`` that chooses one player as "it" 10 seconds after spawning we cannot use this function on its own, instead calling it with a thread by simply calling
+Squirrel allows scripts to spin off function calls in a thread. All subsequential function calls will be threaded as well.
 
-``thread delayannouncement()``
+In threaded functions, it's possible to halt a threaded function with ``wait`` statements, signals, flags and by suspending a thread object.
 
-The same applies to a ``while(true)`` function, for example ``almostover`` a function that checks every 5 seconds to see if the game has 2 or less minutes left and announces it if so.
+You can use the ``IsNewThread()`` function to determine if the current function is threaded off.
 
-``thread almostover()``
+For more information, check out the `squirrel documentation on threads <http://www.squirrel-lang.org/squirreldoc/reference/language/threads.html>` and `sq functions of threads <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#thread>`. rsquirrel is very similar to vanilla squirrel in this regard.
+
+Spinning off a thread
+^^^^
+
+To create a new coroutine, call a function with the ``thread`` keyword before.
+
+.. code-block:: javascript
+
+    thread void function(){}()
+    thread MyFunction()
+
+To get a thread object, use the ``newthread`` function.
+
+.. code-block:: javascript
+
+    void function CoroutineExample()
+    {
+        suspend( "passback" ) // passback is optional
+        print( "threaded statement" )
+    }
+
+    var co = newthread( CoroutineExample )
+    var suspendedReturn = co.call() // you NEED to use .call, invoking the function with () won't work
+
+
+wait
+^^^^
+
+The ``wait`` statement halts threads for a set amount of time specified after the ``wait`` keyword. Integers and floats are accepted as times in seconds.
+
+.. code-block:: javascript
+
+    void function WaitExample( float n )
+    {
+        wait 1 // wait 1 second
+        wait n // wait n seconds
+    }
+
+    thread WaitExample( 0.5 ) // thread will halt for a total 1.5 seconds
+
+To wait a single frame, don't use ``wait 0`` since it doesn't actually wait a game frame. For example, if you have a client loop that does wait 0 even if the game is paused the loop will still run. Use ``WaitFrame()`` instead.
+
+When using infinite loops it's important to work with ``wait`` statements to avoid the game freezing.
 
 Example Script
 --------------
-lets try implement both of our scripts from the previous 2 sections, as well as a callback to trigger the script.
-
-First, lets add our callback to the gamemodes core function. 
-
-.. code-block:: javascript^^
-
-    global function GamemodeTag_Init
-
-
-    void function GamemodeTag_Init(){
-    AddCallback_GameStateEnter( eGameState.Playing, MatchStart )
-    }
-
-Then lets define the function matchstart and have it simply thread our two important functions.
 
 .. code-block:: javascript
 
-    void Matchstart{
-        thread delayannouncement()
-        thread almostover()
+    void function SetPositionDelayed( entity ent, vector pos, float delay )
+    {
+        wait delay
+        ent.SetOrigin( pos )
     }
 
-This script waits 10 seconds, picks a player and announces that player as "it" however being ``it`` currently does nothing, we will define that later.
+    SetPositionDelayed( player, <0, 0, 100>, 5.0 )
+    SetPositionDelayed( player, <0, 0, 50>, 2.5 ) // this will finish sooner.
 
-.. code-block:: javascript
-
-    void delayannouncement(){
-    wait 10.0 
-    string chosenplayer = GetPlayerArray()[RandomInt(GetPlayerArray().len())]
-    string message = chosenplayer + " is it!"
-    foreach ( entity player in GetPlayerArray() )
-        SendHudMessage( player, message, -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
-    }
-
-This function will now repeat endlessly, waiting 5 seconds before each repeat. make sure to add a ``return`` or ``break`` statement to prevent the message looping every 5 seconds after, unless you want that
-
-.. code-block:: javascript
-
-    void almostover(){
-        while(true){
-            if(GameTime_TimeLeftSeconds() < 120){
-                foreach ( entity player in GetPlayerArray() )
-                    SendHudMessage( player, "Two minutes left!", -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
-                    break
-                }
-                wait 5.0
-            }
-        }
-
-You can also set up some code to be executed when a thread ends:
-
-.. code-block:: javascript
-
-    void killPlayerAfterAfewMoments(entity player) {
-        OnThreadEnd(
-            // you have to explicitely capture all variables you want to use inside function
-            function() : ( player )
-            {
-                if ( !IsValid( player ))
-                    return
-
-                SendHudMessage( player, "Time to sleep, fella!", -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
-                player.Die()
-            }
-        )
-
-        // Do something time consuming
-    }
-
-    thread killPlayerAfterAFewMoments( GetPlayerArray()[0] )
-
-
-You have now created and threaded both functions.
 
 Signals and flags
 ----------------------
