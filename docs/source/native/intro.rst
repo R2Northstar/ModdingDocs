@@ -18,7 +18,7 @@ All variables and functions in squirrel must have a type defined on declaration
     function dosomething()
 
 
-is only acceptable in ``untyped`` scripts
+is only acceptable in ``untyped`` scripts. In general, prefer the following:
 
 .. code-block:: javascript
 
