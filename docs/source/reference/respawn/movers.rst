@@ -8,8 +8,6 @@ Movers are entites that move and rotate smoothly.
 Create a Mover
 -----
 
-These functions are not properties.
-
 .. cpp:function:: entity CreateExpensiveScriptMover( vector origin , vector angles )
 
    returns ``script_mover``
