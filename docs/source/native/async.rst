@@ -12,6 +12,8 @@ You can use the ``IsNewThread()`` function to determine if the current function 
 
 For more information, check out the `squirrel documentation on threads <http://www.squirrel-lang.org/squirreldoc/reference/language/threads.html>`_ and `sq functions of threads <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#thread>`_. rsquirrel is very similar to vanilla squirrel in this regard.
 
+A thread is considered finished, after the threaded function returned a value. This may be ``null``.
+
 Spinning off a thread
 ^^^^
 
@@ -34,7 +36,7 @@ To get a thread object, use the ``newthread`` function.
 
     var co = newthread( CoroutineExample )
     var suspendedReturn = co.call() // you NEED to use .call, invoking the function with () won't work
-
+    co.wakeup() // continue thread
 
 wait
 ^^^^
@@ -54,6 +56,53 @@ The ``wait`` statement halts threads for a set amount of time specified after th
 To wait a single frame, don't use ``wait 0`` since it doesn't actually wait a game frame. For example, if you have a client loop that does wait 0 even if the game is paused the loop will still run. Use ``WaitFrame()`` instead.
 
 When using infinite loops it's important to work with ``wait`` statements to avoid the game freezing.
+
+If you want to wait until a thread is finished, you can spin off the thread that you wait for with the ``waitthread`` keyword.
+
+.. code-block:: javascript
+
+    void function ParentThread()
+    {
+        printt( "pre spinoff " + string( Time() ) )
+        waitthread void function()
+        {
+            printt( "mid spinoff " + string( Time() ) )
+            wait 1
+        }
+        printt( "post spinoff" + string( Time() ) )
+    }
+
+OnThreadEnd
+^^^^
+
+Use the ``OnThreadEnd`` function to execute a callback after a thread has ended. This is useful for cleanup functions that remove entities after they're used or similar.
+
+.. code-block:: javascript
+
+    void function PlayIncomingFX( vector origin, int teamNum )
+    {
+        wait 1.50
+        EmitSoundAtPosition( teamNum, origin, "Titan_1P_Warpfall_Start" )
+
+        local colorVec = Vector( 0, 255, 0 )
+        entity cpoint = CreateEntity( "info_placement_helper" )
+        SetTargetName( cpoint, UniqueString( "pickup_controlpoint" ) )
+        DispatchSpawn( cpoint )
+        cpoint.SetOrigin( colorVec )
+        entity glowFX = PlayFXWithControlPoint( INCOMING_SPAWN_FX, origin, cpoint, -1, null, null, C_PLAYFX_LOOP )
+
+        OnThreadEnd(
+            function() : ( glowFX, cpoint )
+            {
+                if ( IsValid( glowFX ) )
+                    glowFX.Destroy()
+                if ( IsValid( cpoint ) )
+                    cpoint.Destroy()
+            }
+        )
+
+        wait 1.25
+    }
 
 Example Script
 ^^^^
@@ -132,6 +181,13 @@ It's also possible to trigger and catch signals with methods that aren't propert
 
         // Wait for the NPC to die, delete, or get leeched, then remove the npc from the array
 	    WaitSignal( ent, "OnDeath", "OnDestroy", "OnLeeched" )
+
+.. cpp:function:: void EndSignal( entity ent, string signal )
+
+    Ends this thread when the identifier is signaled on ``ent``
+
+Example
+~~~~
 
 For example, if we want to tell a player not to give up after being killed several times, we can write it this way:
 
@@ -254,6 +310,8 @@ Flags
 
     Splits the value of the keyvalues of the entity on the index ``field`` on ``" "``
 
+Example
+~~~~
 
 .. code-block:: javascript
 
