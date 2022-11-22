@@ -117,10 +117,10 @@ If you don't know how many parameters you get at compile time, you can use impli
   XParameters( "req", "optional", 1, 2, [ 3, 4, 5 ], { tableKey = "string" } ) // prints 1, 2, [array instance], [table instance]
   XParameters( "req", "opt" )
 
-Locals relocalisation
+Implicit Capture
 -----
 
-It's not possible to use locals from a parent function, but you can "relocate" locals to an anonymous function
+It's not possible to use locals from a parent function, but it is possible to capture them in anonymous functions. 
 
 .. code-block:: javascript
 
