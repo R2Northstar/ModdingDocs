@@ -72,3 +72,12 @@ Arrays can only have their content typed as they will only be indexable by integ
 .. code-block:: javascript
 
     array<entity> players = GetPlayerArray()
+      
+.. error:: 
+
+    The rsquirrel lexer recognizes the bitwise right shift operator instead of nested content types, so you are required to leave a space between types containing more content types.
+
+    .. code-block:: javascript
+
+        array<array<int>> badNested // COMPILE ERROR
+        array< array<int> > nested
