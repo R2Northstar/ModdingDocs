@@ -135,17 +135,17 @@ Signals
 
     :doc:`../reference/respawn/entities`
 
-	.. cpp:function:: void Signal( string signal, table<var, var> results = null )
+    .. cpp:function:: void Signal( string signal, table<var, var> results = null )
 
-		Trigger a signal on this entity. The passed ``results`` will be returned by ``WaitSignal``.
+	Trigger a signal on this entity. The passed ``results`` will be returned by ``WaitSignal``.
 
-	.. cpp:function:: void EndSignal( string signal )
+    .. cpp:function:: void EndSignal( string signal )
 
-		Ends this thread when the identifier is signaled on this entity
+	Ends this thread when the identifier is signaled on this entity
 
-	.. cpp:function:: table<var, var> WaitSignal( string signal )
+    .. cpp:function:: table<var, var> WaitSignal( string signal )
 
-		Halts this thread until a signal is activated for this entity
+	Halts this thread until a signal is activated for this entity
 
     .. cpp:function:: void ConnectOutput( string signal, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
 
@@ -155,17 +155,17 @@ Signals
 
         Disconnects the callback from the signal.
 
-	.. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
+    .. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
 
-		Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
+	Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
         
-	.. cpp:function:: void Fire( string signal, string param = "", float delay = 0, entity activator = null, entity caller = null )
+    .. cpp:function:: void Fire( string signal, string param = "", float delay = 0, entity activator = null, entity caller = null )
 
-		Fire a signal on this entity, with optional parm and delay
+	Fire a signal on this entity, with optional parm and delay
 
-	.. cpp:function:: void FireNow( string output, string param = "", float delay = 0, entity activator = null, entity caller = null )
+    .. cpp:function:: void FireNow( string output, string param = "", float delay = 0, entity activator = null, entity caller = null )
 
-		Fire a signal on this entity, with optional parm and delay (synchronous)
+	Fire a signal on this entity, with optional parm and delay (synchronous)
 
 It's also possible to trigger and catch signals with methods that aren't properties of an entity.
 
