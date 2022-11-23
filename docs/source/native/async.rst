@@ -169,7 +169,7 @@ Signals
 
 It's also possible to trigger and catch signals with methods that aren't properties of an entity.
 
-.. cpp:function:: void Signal( entity ent, string signal, table<var, var> results = null )
+.. cpp:function:: void Signal( var obj, string signal, table<var, var> results = null )
 
     Trigger a signal on ``ent``. The passed ``results`` will be returned by ``WaitSignal``.
 
@@ -182,7 +182,7 @@ It's also possible to trigger and catch signals with methods that aren't propert
         // Wait for the NPC to die, delete, or get leeched, then remove the npc from the array
 	    WaitSignal( ent, "OnDeath", "OnDestroy", "OnLeeched" )
 
-.. cpp:function:: void EndSignal( entity ent, string signal )
+.. cpp:function:: void EndSignal( var obj, string signal )
 
     Ends this thread when the identifier is signaled on ``ent``
 
