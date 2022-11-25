@@ -164,7 +164,7 @@ Loops
 Loops are used to execute the same code n times.
 
 While Loops
------
+~~~~
 
 A while loop runs as long as the condition evaluates to a truthy value.
 
@@ -181,7 +181,7 @@ A while loop runs as long as the condition evaluates to a truthy value.
   }
 
 Do While Loop
------
+~~~~
 
 A do while loop is the same as a while loop but the condition is checked **after** the body is executed.
 
@@ -193,7 +193,7 @@ A do while loop is the same as a while loop but the condition is checked **after
   } while( false )
 
 For Loop
-----
+~~~~
 
 A for loop also runs until a condition is met however it provides you with a counter variable.
 
@@ -215,6 +215,7 @@ The Syntax is as follows: ``for( int counter; condition; behaviour_after_body_ex
   }
 
 Foreach Loop
+~~~~
 
 A foreach loop iterates over a ``table`` or an ``array`` and executes for each entry. The loop provides you with an optional counter for arrays or key for tables.
 
