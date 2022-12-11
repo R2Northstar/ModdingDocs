@@ -111,7 +111,8 @@ For example: if you use ``44100khz`` and the sound is slightly too high pitched 
 
 If you're unsure which to use, or the sound still seems too high, or low pitched, you can use  `LegionPlus <https://github.com/r-ex/LegionPlus>`_ to determine the original rate.
 
-After that, export your track as ``wav``. Make sure you don't add any metadata as this will cause white noise to be at the end of the sound.
+After that, export your track as a 16-bit ``wav`` file (any other bit-depth will make Northstar crash).
+Make sure you don't add any metadata as this will cause white noise to be at the end of the sound.
 
 
 .. _issues_with_sounds:
