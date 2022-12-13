@@ -26,10 +26,10 @@ These should be applied to your client or server's launch commandline.
 
     * - Name
       - Description
-    * - `-allowlocalhttp`
+    * - ``-allowlocalhttp``
       - Disables private network checks for HTTP requests, allowing any IPv4 and IPv6 host to be used.
-    * - `-disablehttprequests`
+    * - ``-disablehttprequests``
       - Disables HTTP requests. Any attempts at making requests will fail.
-    * - `-disablehttpssl`
+    * - ``-disablehttpssl``
       - Disables SSL verifications, useful when the host's SSL certificate is invalid, and insecure HTTP cannot be used.
 
