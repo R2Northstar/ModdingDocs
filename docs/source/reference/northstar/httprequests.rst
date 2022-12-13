@@ -10,7 +10,7 @@ a database with an API so that your servers can save player stats.
 Security Limitations
 ====================
 
-For security reasons, private network hosts are blocked by default, meaning you cannot make HTTP requests to them.
+For security reasons, private network hosts, such as ``localhost`` or ``192.168.1.106`` are blocked by default, meaning you cannot make HTTP requests to them.
 This includes a blanket ban on IPv6 hosts.
 
 You are also limited to HTTP and HTTPS for protocols. Any other protocols will prevent the request from being made.
