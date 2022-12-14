@@ -42,6 +42,7 @@ This section documents all the available functions, structs and enums used to ma
 
     HTTP requests are multithreaded, as such they will run in the background until completion, whether successful or failed.
     Be mindful of how many requests you make at a time, as you may potentially get ratelimited or blacklisted by the remote host.
+    Use the callbacks to execute code when a request has completed.
 
 Data
 ^^^^
@@ -162,3 +163,47 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 
 Functions
 ^^^^^^^^^
+
+Use these to make HTTP requests.
+
+.. cpp:function:: bool NSHttpRequest( HttpRequest requestParameters, void functionref( HttpRequestResponse ) onSuccess = null, void functionref( HttpRequestFailure ) onFailure = null )
+
+    Launches a HTTP request with the given request data.
+    This function is async, and the provided callbacks will be called when it is completed, if any.
+
+    **Parameters:**
+
+    - ``HttpRequest requestParameters`` - The parameters to use for this request.
+    - ``void functionref( HttpRequestResponse ) onSuccess`` - The callback to execute if the request is successful.
+    - ``void functionref( HttpRequestFailure ) onFailure`` - The callback to execute if the request has failed.
+
+    **Returns:** 
+    
+    - Whether or not the request has been successfully started.
+
+    **Example:**
+
+    Below is a working example of an HTTP request for a mod.
+    As you can see, you can either use named functions for the callbacks, or create lambdas.
+    Lambdas are particularly useful as they let you capture local variables of the functions to re-use later
+    such as ``callback`` in this example. 
+
+    .. code-block:: javascript
+
+        HttpRequest request
+        request.method = HttpRequestMethod.GET
+        request.url = "https://my.spyglass.api/sanctions/get_by_id"
+        request.queryParameters[ "id" ] <- [ id.tostring() ]
+
+        void functionref( HttpRequestResponse ) onSuccess = void function ( HttpRequestResponse response ) : ( callback )
+        {
+            SpyglassApi_OnQuerySanctionByIdSuccessful( response, callback )
+        }
+
+        void functionref( HttpRequestFailure ) onFailure = void function ( HttpRequestFailure failure ) : ( callback )
+        {
+            SpyglassApi_OnQuerySanctionByIdFailed( failure, callback )
+        }
+
+        return NSHttpRequest( request, onSuccess, onFailure )
+
