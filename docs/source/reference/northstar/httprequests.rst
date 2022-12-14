@@ -7,16 +7,15 @@ HTTP requests allow you to query online APIs, and retrieve data.
 This is particularly useful for custom APIs you might want to build for your servers, for instance if you want to wrap 
 a database with an API so that your servers can save player stats.
 
-Security Limitations
---------------------
+.. warning::
+    
+    For security reasons, private network hosts, such as ``localhost`` or ``192.168.1.106`` are blocked by default, meaning you cannot make HTTP requests to them.
+    This includes a blanket ban on IPv6 hosts.
 
-For security reasons, private network hosts, such as ``localhost`` or ``192.168.1.106`` are blocked by default, meaning you cannot make HTTP requests to them.
-This includes a blanket ban on IPv6 hosts.
-
-You are also limited to HTTP and HTTPS for protocols. Any other protocols will prevent the request from being made.
+    You are also limited to ``HTTP`` and ``HTTPS`` for protocols. Any other protocols will prevent the request from being made.
 
 Launch Arguments
-^^^^^^^^^^^^^^^^
+----------------
 
 There are a few launch arguments you may use to bypass some of the limitations, or outright disable HTTP requests.
 
