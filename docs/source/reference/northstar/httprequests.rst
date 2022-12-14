@@ -88,7 +88,7 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 
 .. cpp:struct:: HttpRequest
 
-    Contains the settings for a HTTP request. This is used for the more flexible :ref:`NSHttpRequest <>` function.
+    Contains the settings for a HTTP request. This is used for the more flexible :ref:`NSHttpRequest <_httpapi_funcs_nshttprequest>` function.
 
 	.. cpp:var:: (HttpRequestMethod) int method
 
@@ -165,6 +165,8 @@ Functions
 ^^^^^^^^^
 
 Use these to make HTTP requests.
+
+.. _httpapi_funcs_nshttprequest:
 
 .. cpp:function:: bool NSHttpRequest( HttpRequest requestParameters, void functionref( HttpRequestResponse ) onSuccess = null, void functionref( HttpRequestFailure ) onFailure = null )
 
