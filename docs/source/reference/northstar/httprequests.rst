@@ -196,16 +196,16 @@ Use these to make HTTP requests.
         request.method = HttpRequestMethod.GET
         request.url = "https://my.spyglass.api/sanctions/get_by_id"
         request.queryParameters[ "id" ] <- [ id.tostring() ]
-
+        
         void functionref( HttpRequestResponse ) onSuccess = void function ( HttpRequestResponse response ) : ( callback )
         {
-            SpyglassApi_OnQuerySanctionByIdSuccessful( response, callback )
+			SpyglassApi_OnQuerySanctionByIdSuccessful( response, callback )
         }
-
+        
         void functionref( HttpRequestFailure ) onFailure = void function ( HttpRequestFailure failure ) : ( callback )
         {
-            SpyglassApi_OnQuerySanctionByIdFailed( failure, callback )
+			SpyglassApi_OnQuerySanctionByIdFailed( failure, callback )
         }
-
+        
         return NSHttpRequest( request, onSuccess, onFailure )
 
