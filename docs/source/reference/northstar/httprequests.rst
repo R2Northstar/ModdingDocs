@@ -54,25 +54,25 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 
     Contains the different allowed methods for a HTTP request.
 
-    .. cpp:var:: GET = 0
+    .. cpp:var:: GET
 
         Uses the ``GET`` HTTP method for the request.
-	.. cpp:var:: POST = 1 
+	.. cpp:var:: POST
 
         Uses the ``POST`` HTTP method for the request.
-	.. cpp:var:: HEAD = 2
+	.. cpp:var:: HEAD
 
         Uses the ``HEAD`` HTTP method for the request.
-	.. cpp:var:: PUT = 3
+	.. cpp:var:: PUT
 
         Uses the ``PUT`` HTTP method for the request.
-	.. cpp:var:: DELETE = 4
+	.. cpp:var:: DELETE
 
         Uses the ``DELETE`` HTTP method for the request.
-	.. cpp:var:: PATCH = 5
+	.. cpp:var:: PATCH
 
         Uses the ``PATCH`` HTTP method for the request.
-	.. cpp:var:: OPTIONS = 6
+	.. cpp:var:: OPTIONS
         
         Uses the ``OPTIONS`` HTTP method for the request.
 
