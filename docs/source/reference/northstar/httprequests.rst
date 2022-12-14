@@ -8,7 +8,7 @@ This is particularly useful for custom APIs you might want to build for your ser
 a database with an API so that your servers can save player stats.
 
 Security Limitations
-====================
+--------------------
 
 For security reasons, private network hosts, such as ``localhost`` or ``192.168.1.106`` are blocked by default, meaning you cannot make HTTP requests to them.
 This includes a blanket ban on IPv6 hosts.
@@ -33,3 +33,77 @@ These should be applied to your client or server's launch commandline.
     * - ``-disablehttpssl``
       - Disables SSL verifications, useful when the host's SSL certificate is invalid, and insecure HTTP cannot be used.
 
+
+HTTP API
+--------
+
+This section documents all the available functions, structs and enums used to make HTTP request in Squirrel scripts.
+
+.. warning::
+
+    HTTP requests are multithreaded, as such they will run in the background until completion, whether successful or failed.
+    Be mindful of how many requests you make at a time, as you may potentially get ratelimited or blacklisted by the remote host.
+
+Data
+^^^^
+
+The HTTP system uses a few enums and structs for requests and their callbacks.
+
+.. _httpapi_enums_httpmethod:
+
+.. cpp:struct:: HttpRequestMethod
+
+    Contains the different allowed methods for a HTTP request.
+
+    .. cpp:var:: GET = 0
+
+        Uses the ``GET`` HTTP method for the request.
+	.. cpp:var:: POST = 1 
+
+        Uses the ``POST`` HTTP method for the request.
+	.. cpp:var:: HEAD = 2
+
+        Uses the ``HEAD`` HTTP method for the request.
+	.. cpp:var:: PUT = 3
+
+        Uses the ``PUT`` HTTP method for the request.
+	.. cpp:var:: DELETE = 4
+
+        Uses the ``DELETE`` HTTP method for the request.
+	.. cpp:var:: PATCH = 5
+
+        Uses the ``PATCH`` HTTP method for the request.
+	.. cpp:var:: OPTIONS = 6
+        
+        Uses the ``OPTIONS`` HTTP method for the request.
+
+
+.. _httpapi_structs_request:
+
+.. cpp:struct:: HttpRequest
+
+    Contains the settings for a HTTP request. This is used for the more flexible :ref:`NSHttpRequest <>` function.
+
+	.. cpp:var:: int method
+
+        :ref:`HTTP method <_httpapi_enums_httpmethod>` used for this HTTP request.
+	.. cpp:var:: string url
+
+        Base URL of this HTTP request.
+	.. cpp:var:: table< string, array< string > > headers
+
+        Headers used for this HTTP request. Some may get overridden or ignored.
+	.. cpp:var:: table< string, array< string > > queryParameters
+
+        Query parameters for this HTTP request.
+	.. cpp:var:: string contentType = "application/json; charset=utf-8"
+
+        The content type of this HTTP request. Defaults to application/json & UTF-8 charset.
+	.. cpp:var:: string body
+
+        The body of this HTTP request. If set, will override queryParameters.
+	.. cpp:var:: int timeout = 60
+
+        The timeout for this HTTP request in seconds. Must be between 1 and 60
+	.. cpp:var:: string userAgent
+        If set, the override to use for the User-Agent header.
