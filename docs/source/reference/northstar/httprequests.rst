@@ -2,7 +2,7 @@ HTTP Requests
 =============
 
 As of v1.12.0, you can now make HTTP requests from Squirrel scripts.
-HTTP requests allow you to query online APIs, and retrieve data. 
+HTTP requests allow you to query online APIs, send, retrieve data and much more. 
 
 This is particularly useful for custom APIs you might want to build for your servers, for instance if you want to wrap 
 a database with an API so that your servers can save player stats.
@@ -88,7 +88,7 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 
 .. cpp:struct:: HttpRequest
 
-    Contains the settings for a HTTP request. This is used for the more flexible :ref:`NSHttpRequest <_httpapi_funcs_nshttprequest>` function.
+    Contains the settings for a HTTP request. This is used for the more flexible :cpp:func:`NSHttpRequest` function.
 
 	.. cpp:var:: (HttpRequestMethod) int method
 
@@ -164,8 +164,6 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 Functions
 ^^^^^^^^^
 
-Use these to make HTTP requests.
-
 .. _httpapi_funcs_nshttprequest:
 
 .. cpp:function:: bool NSHttpRequest( HttpRequest requestParameters, void functionref( HttpRequestResponse ) onSuccess = null, void functionref( HttpRequestFailure ) onFailure = null )
@@ -208,4 +206,5 @@ Use these to make HTTP requests.
         }
         
         return NSHttpRequest( request, onSuccess, onFailure )
+
 
