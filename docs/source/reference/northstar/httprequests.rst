@@ -52,17 +52,18 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 
 .. cpp:struct:: HttpRequestMethod
 
-    Contains the different allowed methods for a HTTP request.
+    Contains the different allowed methods for a HTTP request. Please work.
 
     .. cpp:var:: GET
-
         Uses the ``GET`` HTTP method for the request.
+
 	.. cpp:var:: POST
-
         Uses the ``POST`` HTTP method for the request.
-	.. cpp:var:: HEAD
 
+	.. cpp:var:: HEAD
         Uses the ``HEAD`` HTTP method for the request.
+
+
 	.. cpp:var:: PUT
 
         Uses the ``PUT`` HTTP method for the request.
