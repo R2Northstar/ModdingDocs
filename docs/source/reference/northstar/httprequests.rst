@@ -314,3 +314,21 @@ Functions
 		{
 			printt( "Successfully attempted to upload player connection stats to API." )
 		} 
+
+
+
+.. _httpapi_funcs_nsissuccesshtppcode:
+
+.. cpp:function:: bool NSIsSuccessHttpCode( int statusCode )
+
+	Checks whether or not the given HTTP status code is considered a "success" code.
+	This is true for status codes between 200 and 299.
+
+	**Parameters:**
+
+	- ``int statusCode`` - The status code to verify.
+
+	**Returns:**
+
+	- Whether or not the given status code is considered successful.
+
