@@ -123,6 +123,12 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 		If set, the override to use for the User-Agent header.
 
 
+.. warning:: 
+
+	Only ``POST`` requests can send a body to the remote end. You may only choose to send a body, or query parameters. 
+	Having both will give priority to the body and clear the parameters.
+
+
 .. _httpapi_structs_httprequestresponse:
 
 .. cpp:struct:: HttpRequestResponse
@@ -208,6 +214,8 @@ Functions
 		
 		return NSHttpRequest( request, onSuccess, onFailure )
 
+
+
 .. _httpapi_funcs_nshttpget:
 
 .. cpp:function:: bool NSHttpGet( string url, table< string, array< string > > queryParameters = {}, void functionref( HttpRequestResponse ) onSuccess = null, void functionref( HttpRequestFailure ) onFailure = null  )
@@ -248,3 +256,61 @@ Functions
 		
 		return NSHttpGet( "https://my.spyglass.api/sanctions/get_by_id", params, onSuccess, onFailure )
 
+
+.. _httpapi_funcs_nshttppostquery:
+
+.. cpp:function:: bool NSHttpPostQuery( string url, table< string, array< string > > queryParameters, void functionref( HttpRequestResponse ) onSuccess = null, void functionref( HttpRequestFailure ) onFailure = null )
+
+	Launches an HTTP POST request at the specified URL with the given query parameters.
+	Shortcut wrapper of NSHttpRequest().
+	This function is async, and the provided callbacks will be called when it is completed, if any.
+
+	**Parameters:**
+
+	- ``string url`` - The url to make the HTTP request at.
+	- ``[OPTIONAL] table< string, array< string > > queryParameters`` - A table of key value parameters to insert in the url. 
+	- ``[OPTIONAL] void functionref( HttpRequestResponse ) onSuccess`` - The callback to execute if the request is successful.
+	- ``[OPTIONAL] void functionref( HttpRequestFailure ) onFailure`` - The callback to execute if the request has failed.
+
+	**Returns:** 
+	
+	- Whether or not the request has been successfully started.
+
+
+.. _httpapi_funcs_nshttppostbody:
+
+.. cpp:function:: bool NSHttpPostBody( string url, string body, void functionref( HttpRequestResponse ) onSuccess = null, void functionref( HttpRequestFailure ) onFailure = null )
+
+	Launches an HTTP POST request at the specified URL with the given body.
+	Shortcut wrapper of NSHttpRequest().
+	This function is async, and the provided callbacks will be called when it is completed, if any.
+
+	This is the more interesting POST function, as you can use it to convert a table into JSON and "POST" it to the remote server.
+
+	**Parameters:**
+
+	- ``string url`` - The url to make the HTTP request at.
+	- ``string body`` - The body to send with the request. Expects JSON by default. 
+	- ``[OPTIONAL] void functionref( HttpRequestResponse ) onSuccess`` - The callback to execute if the request is successful.
+	- ``[OPTIONAL] void functionref( HttpRequestFailure ) onFailure`` - The callback to execute if the request has failed.
+
+	**Returns:** 
+	
+	- Whether or not the request has been successfully started.
+
+	**Example:**
+
+	In this example, we'll convert a table to JSON, and send it over to a web API.
+
+	.. code-block:: javascript
+
+		table myData = {}
+		myData[ "uid" ] <- player.GetUID()
+		myData[ "username" ] <- player.GetPlayerName()
+		myData[ "isBot" ] <- player.IsBot().tostring()
+
+		string json = EncodeJSON( myData )
+		if ( NSHttpPostBody( "https://api.stats.tf/player/connect", json ) )
+		{
+			printt( "Successfully attempted to upload player connection stats to API." )
+		} 
