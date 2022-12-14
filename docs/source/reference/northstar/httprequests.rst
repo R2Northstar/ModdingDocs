@@ -322,6 +322,7 @@ Functions
 .. cpp:function:: bool NSIsSuccessHttpCode( int statusCode )
 
 	Checks whether or not the given HTTP status code is considered a "success" code.
+	
 	This is true for status codes between 200 and 299.
 
 	**Parameters:**
