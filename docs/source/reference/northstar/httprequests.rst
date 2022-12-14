@@ -54,26 +54,31 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 
     Contains the different allowed methods for a HTTP request. Please work.
 
-    .. cpp:member:: GET
+    .. cpp:member:: GET = 0
 
         Uses the ``GET`` HTTP method for the request.
-        
-	.. cpp:member:: POST
+
+	.. cpp:member:: POST = 1
 
         Uses the ``POST`` HTTP method for the request.
-	.. cpp:member:: HEAD
+
+	.. cpp:member:: HEAD = 2
 
         Uses the ``HEAD`` HTTP method for the request.
-	.. cpp:member:: PUT
+
+	.. cpp:member:: PUT = 3
 
         Uses the ``PUT`` HTTP method for the request.
-	.. cpp:member:: DELETE
+
+	.. cpp:member:: DELETE = 4
 
         Uses the ``DELETE`` HTTP method for the request.
-	.. cpp:member:: PATCH
+
+	.. cpp:member:: PATCH = 5
 
         Uses the ``PATCH`` HTTP method for the request.
-	.. cpp:member:: OPTIONS
+
+	.. cpp:member:: OPTIONS = 6
         
         Uses the ``OPTIONS`` HTTP method for the request.
 
@@ -87,23 +92,32 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 	.. cpp:var:: int method
 
         :ref:`HTTP method <_httpapi_enums_httpmethod>` used for this HTTP request.
+
 	.. cpp:var:: string url
 
         Base URL of this HTTP request.
+
 	.. cpp:var:: table< string, array< string > > headers
 
         Headers used for this HTTP request. Some may get overridden or ignored.
+
 	.. cpp:var:: table< string, array< string > > queryParameters
 
         Query parameters for this HTTP request.
+
 	.. cpp:var:: string contentType = "application/json; charset=utf-8"
 
         The content type of this HTTP request. Defaults to application/json & UTF-8 charset.
+
 	.. cpp:var:: string body
 
         The body of this HTTP request. If set, will override queryParameters.
+
 	.. cpp:var:: int timeout = 60
 
-        The timeout for this HTTP request in seconds. Must be between 1 and 60
+        The timeout for this HTTP request in seconds. Clamped between 1 and 60.
+
 	.. cpp:var:: string userAgent
+
         If set, the override to use for the User-Agent header.
+
