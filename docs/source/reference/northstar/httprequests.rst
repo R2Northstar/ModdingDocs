@@ -57,6 +57,7 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
     .. cpp:member:: GET
 
         Uses the ``GET`` HTTP method for the request.
+        
 	.. cpp:member:: POST
 
         Uses the ``POST`` HTTP method for the request.
