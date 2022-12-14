@@ -50,30 +50,29 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 
 .. _httpapi_enums_httpmethod:
 
-.. cpp:struct:: HttpRequestMethod
+.. cpp:enum:: HttpRequestMethod
 
     Contains the different allowed methods for a HTTP request. Please work.
 
-    .. cpp:var:: GET
+    .. cpp:member:: GET
+
         Uses the ``GET`` HTTP method for the request.
+	.. cpp:member:: POST
 
-	.. cpp:var:: POST
         Uses the ``POST`` HTTP method for the request.
+	.. cpp:member:: HEAD
 
-	.. cpp:var:: HEAD
         Uses the ``HEAD`` HTTP method for the request.
-
-
-	.. cpp:var:: PUT
+	.. cpp:member:: PUT
 
         Uses the ``PUT`` HTTP method for the request.
-	.. cpp:var:: DELETE
+	.. cpp:member:: DELETE
 
         Uses the ``DELETE`` HTTP method for the request.
-	.. cpp:var:: PATCH
+	.. cpp:member:: PATCH
 
         Uses the ``PATCH`` HTTP method for the request.
-	.. cpp:var:: OPTIONS
+	.. cpp:member:: OPTIONS
         
         Uses the ``OPTIONS`` HTTP method for the request.
 
