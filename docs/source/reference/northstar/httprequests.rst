@@ -83,15 +83,15 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
         Uses the ``OPTIONS`` HTTP method for the request.
 
 
-.. _httpapi_structs_request:
+.. _httpapi_structs_httprequest:
 
 .. cpp:struct:: HttpRequest
 
     Contains the settings for a HTTP request. This is used for the more flexible :ref:`NSHttpRequest <>` function.
 
-	.. cpp:var:: int method
+	.. cpp:var:: (HttpRequestMethod) int method
 
-        :ref:`HTTP method <_httpapi_enums_httpmethod>` used for this HTTP request.
+        HTTP method used for this HTTP request.
 
 	.. cpp:var:: string url
 
@@ -121,3 +121,44 @@ The HTTP system uses a few enums and structs for requests and their callbacks.
 
         If set, the override to use for the User-Agent header.
 
+
+.. _httpapi_structs_httprequestresponse:
+
+.. cpp:struct:: HttpRequestResponse
+
+    Contains the response from the remote host for a successful HTTP request.
+
+	.. cpp:var:: int statusCode
+
+        The status code returned by the remote the call was made to.
+
+	.. cpp:var:: string body
+
+        The body of the response.
+
+	.. cpp:var:: string rawHeaders
+
+        The raw headers returned by the remote.
+
+	.. cpp:var:: table< string, array< string > > headers
+
+        A key -> values table of headers returned by the remote.
+
+
+.. _httpapi_structs_httprequestfailure:
+
+.. cpp:struct:: HttpRequestFailure
+
+    Contains the failure code and message when Northstar fails to make a HTTP request.
+
+	.. cpp:var:: int errorCode
+
+        The status code returned by the remote the call was made to.
+
+	.. cpp:var:: string errorMessage
+
+        The reason why this HTTP request failed.
+
+
+Functions
+^^^^^^^^^
