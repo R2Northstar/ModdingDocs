@@ -174,8 +174,8 @@ Functions
     **Parameters:**
 
     - ``HttpRequest requestParameters`` - The parameters to use for this request.
-    - ``void functionref( HttpRequestResponse ) onSuccess`` - The callback to execute if the request is successful.
-    - ``void functionref( HttpRequestFailure ) onFailure`` - The callback to execute if the request has failed.
+    - ``[OPTIONAL] void functionref( HttpRequestResponse ) onSuccess`` - The callback to execute if the request is successful.
+    - ``[OPTIONAL] void functionref( HttpRequestFailure ) onFailure`` - The callback to execute if the request has failed.
 
     **Returns:** 
     
@@ -184,7 +184,8 @@ Functions
     **Example:**
 
     Below is a working example of an HTTP request for a mod.
-    As you can see, you can either use named functions for the callbacks, or create lambdas.
+    
+	As you can see, you can either use named functions for the callbacks, or create lambdas.
     Lambdas are particularly useful as they let you capture local variables of the functions to re-use later
     such as ``callback`` in this example. 
 
@@ -207,4 +208,43 @@ Functions
         
         return NSHttpRequest( request, onSuccess, onFailure )
 
+.. _httpapi_funcs_nshttpget:
+
+.. cpp:function:: bool NSHttpGet( string url, table< string, array< string > > queryParameters = {}, void functionref( HttpRequestResponse ) onSuccess = null, void functionref( HttpRequestFailure ) onFailure = null  )
+
+    Launches an HTTP GET request at the specified URL with the given query parameters.
+	Shortcut wrapper of NSHttpRequest().
+    This function is async, and the provided callbacks will be called when it is completed, if any.
+
+    **Parameters:**
+
+    - ``string url`` - The url to make the HTTP request at.
+	- ``[OPTIONAL] table< string, array< string > > queryParameters`` - A table of key value parameters to insert in the url. 
+    - ``[OPTIONAL] void functionref( HttpRequestResponse ) onSuccess`` - The callback to execute if the request is successful.
+    - ``[OPTIONAL] void functionref( HttpRequestFailure ) onFailure`` - The callback to execute if the request has failed.
+
+    **Returns:** 
+    
+    - Whether or not the request has been successfully started.
+
+    **Example:**
+
+    This is the same example as NSHttpRequest()'s example. However, it uses this function instead.
+    
+    .. code-block:: javascript
+
+		table<string, array<string> > params
+        params[ "id" ] <- [ id.tostring() ]
+        
+        void functionref( HttpRequestResponse ) onSuccess = void function ( HttpRequestResponse response ) : ( callback )
+        {
+			SpyglassApi_OnQuerySanctionByIdSuccessful( response, callback )
+        }
+        
+        void functionref( HttpRequestFailure ) onFailure = void function ( HttpRequestFailure failure ) : ( callback )
+        {
+			SpyglassApi_OnQuerySanctionByIdFailed( failure, callback )
+        }
+        
+        return NSHttpGet( "https://my.spyglass.api/sanctions/get_by_id", params, onSuccess, onFailure )
 
