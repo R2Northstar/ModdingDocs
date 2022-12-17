@@ -12,6 +12,7 @@ Northstar API
     /reference/northstar/serversiderui.rst
     /reference/northstar/httprequests.rst
     /reference/northstar/jsonparsing.rst
+    /reference/northstar/usefulfuncs.rst
 
 Respawn API
 -----------
