@@ -62,6 +62,22 @@ additionally the index of values can be found using the ``.find()`` function and
 
 Build in functions for arrays can be found `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#id1>`_
 
+Static Arrays
+-------------
+
+If you know the exact length of the array ahead of time, you can use static arrays. Static arrays are initialized with default values so you can access values without writing them.
+
+The syntax for static arrays is ``type[size]``.
+
+.. code-block:: javascript
+
+  int[3] stArr
+  printt( stArr[2] ) // note that this index isn't explicitly initialized
+
+.. note::
+
+  Static arrays don't have access to inbuilt functions of regular arrays.
+
 Tables
 ------
 Tables are similar to arrays but with one primary difference, rather than use a numerical index system tables allow you do define your own indexes, similar to pythons ``dict`` type.
