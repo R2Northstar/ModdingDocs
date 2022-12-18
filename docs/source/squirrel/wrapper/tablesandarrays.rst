@@ -6,7 +6,7 @@ Within squirrel there are many ways to store information, but when storing an un
 Strings
 -------
 
-Strings in squirrel represent an array of chars, however chars are not their own type in squirrel, as they are represent by integers. To initialize a sting yo use the ``string`` keyword:
+Strings in squirrel represent an array of chars, however chars are not their own type in squirrel, as they are represent by integers. To initialize a string, use the ``string`` keyword:
 
 .. code-block:: javascript
 
@@ -18,7 +18,7 @@ To get the string of the char, you need to:
 .. code-block:: javascript
 
   int charInt = Hello[0]
-  int charString = charint.tostring()
+  int charString = charint.tochar()
 
 build in functions can be found on the official site `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#string>`_ .
 
@@ -39,7 +39,7 @@ Arrays can store large sets of data and are indexed using numbers, starting from
 
 adding and removing values from arrays can be done using ``.append(value)`` and ``.remove(index)``. 
 
-additionally the index of values can be found using the ``.find`` function and the length by using the ``.len()`` function:
+additionally the index of values can be found using the ``.find()`` function and the length by using the ``.len()`` function:
 
 .. code-block:: javascript
 
