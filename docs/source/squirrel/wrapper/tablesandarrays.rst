@@ -22,6 +22,24 @@ To get the string of the char, you need to:
 
 build in functions can be found on the official site `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#string>`_ .
 
+Assets
+~~~~~~
+
+Assets are strings that describe a path to a resource like models or RUI assets.
+
+You can declare asset literals with a $ symbol
+
+.. code-block:: javascript
+
+  asset m = $"path/to/my/model.mdl"
+
+You can convert strings to assets with the ``StringToAsset``method added by Northstar.
+
+.. code-block:: javascript
+
+  string s = format( "path/to/my/%s", "model.mdl" )
+  asset m = StringToAsset( s )
+
 Arrays
 ------
 
@@ -288,3 +306,85 @@ When interacting with this type of struct the same rules apply as for the regula
 
 
 Complex types can also all be nested.
+
+
+Vectors
+--------
+
+Vectors are a type that store three floats in one object. They are declared using the ``< >`` operators. The values are seperated with a ``,``.
+Here the first number represents the X, the 2nd the Y, and the 3rd the Z coordinate.
+
+.. code-block:: javascript
+
+  vector myFirstVector = <0, 120, 40>
+  
+
+We can then get the coordinates out of the vecotr with:
+
+.. code-block:: javascript
+
+  float x = myFirstVector.x
+  float y = myFirstVector.y 
+  float z = myFirstVector.z 
+
+Entities
+------
+
+Entities are objects thats the interacts with. These includ players, NPCs, Guns etc.
+
+There are a variety of fucntions to create an entity, there is no standard format for all of them.
+
+Most in game entities inherit from the ``CBaseEntity`` or ``C_BaseEntity`` class respectively. Read more about them here: :doc:`../../reference/respawn/entities`
+
+A fast way to create an entity is to use:
+
+
+.. code-block:: javascript
+  
+  entity myFisrtNPC = CreateNPC( NpcName, team, origin, angles )
+  
+However there are a lot more functions to create entities, a lot of them are very specific, here it is useful to look at reference code.
+
+By default an entity can be of value ``null`` and does not need to be ``ornull`` casted
+
+Functionrefs
+------
+
+You can declare a function as a variable, this is especially useful in function arguments.
+
+You declare a functionref with the return type, the ``functionref`` key word , and the variable name.
+
+.. code-block:: javascript
+
+  void functionref(string) p = void function(string str){ /* your code could be here */}
+
+
+You can then just call the fucntion by its functionref name.
+
+.. code-block:: javascript
+
+  void CallFunction(void functionref(string) func ){
+    func()
+  }
+
+ornull
+------
+
+To declare a type to contain a value or ``null``, declare the variable like this: ``type ornull identifier``.
+
+.. code-block:: javascript
+  
+  int ornull number = CoinFlip() ? null : 0
+  if( !number )
+    return
+  int( number )
+  
+typedef
+-----
+
+To alias a type, use ``typedef``. Typedefs can optionally be global as well
+
+.. code-block:: javascript
+  
+  global typedef DontDoThis var
+  typedef crazyArray array<MyStruct[1]>[2] ornull
