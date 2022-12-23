@@ -134,9 +134,23 @@ Turret functions
 
 .. cpp:function:: void function UpdateTurretClientSideParticleEffects( entity turret )
 
-
+Rest so far to be sorted
+~~~~~~~~
 
 .. cpp:function:: array<entity> function GetAllMinions()
+
+.. cpp:function:: entity function GetLocalClientPlayer()
+
+    .. note:: this function only exists on clients
+
+.. cpp:function:: array<entity> function GetPlayerArray()
+
+    .. note::
+        A cleaner way to get a player:
+
+        .. cpp:function:: entity function GetPlayerByIndex( int index )
+
+.. cpp:function:: array<entity> function GetPlayerArrayOfTeam(int team)
 
 .. cpp:function:: void function DropWeapon( entity npc )
 
@@ -155,7 +169,9 @@ Titans
 
 .. cpp:function:: void function DelayShieldDecayTime( entity soul, float delay )
 
-.. cpp:function:: void GiveAllTitans()
+.. cpp:function:: void function GiveAllTitans()
+
+.. cpp:function:: float ornull function GetTitanCoreTimeRemaining( entity player )
 
 
 Gamemode functions
@@ -169,6 +185,11 @@ Gamemode functions
     Returns the local player's UID, else ``null``.
     Available on CLIENT, UI and SERVER VM.
 
+.. cpp:function:: bool function IsMultiplayer()
+
+.. cpp:function:: bool function IsSingleplayer()
+
+.. cpp:function:: string function GetMapName()
 
 
 Threaded conditonals
@@ -218,10 +239,10 @@ Shitpost functions
 
 
 Type Utilities 
-~~~~~~~~~~~~
+--------
 
 Table
-~~~~~
+~~~~~~
 
 .. cpp:function:: void function TableRemoveInvalid( table<entity, entity> Table )
 
@@ -234,6 +255,10 @@ Table
 
 Arrays
 ~~~~~~
+
+.. cpp:function:: int function array.find(var value)
+
+    .. warning:: this returns ``-1`` if the item was not found in the array
 
 .. cpp:function:: array.fastremove(var)
 
@@ -251,9 +276,40 @@ Arrays
 
     changes the size of the array to the first int, new slots will be filled with the 2nd argument. 
 
+.. cpp:function:: array.sort( compare_func = null )
+
+.. note::
+    
+
+    Array Sort Functions: 
+    
+    A few build in functions you can give as arguments to sort a function.
+    
+    .. cpp:function:: int function SortLowest( var a, var b )
+
+    .. cpp:function:: int function SortHighest( var a, var b )
+
+    .. cpp:function:: int function SortItemsAlphabetically(var a, var b )
+
+    .. cpp:function:: int function SortAlphabetize( var a, var b )
+    
+    .. cpp:function:: int function SortStringAlphabetize( string a, string b )
+
+    .. cpp:function:: int function SortStringAsset( asset a, asset b )
+
+    .. cpp:function:: int function SortBySpawnTime( entity a, entity b )
+
+    
+.. cpp:function:: array.reverse()
+    
+    reverse the array in place
+
+.. cpp:function:: array.slice(int start, int end = null)
+
+    .. note:: Returns a section of the array as new array. Copies from start to the end (not included). If start is negative the index is calculated as length + start, if end is negative the index is calculated as length + end. If end is omitted end is equal to the array length.
 
 String
-~~~~~~~~
+~~~~~
 
 .. cpp:function:: var function UniqueString( titleString = "" )
 
@@ -265,4 +321,53 @@ String
 
 .. cpp:function:: string function format( string template, ... )
 
-    .. note:: UNI YOU DO THIS YOU LITTLE SHIT <3
+    Returns a formatted template
+
+.. cpp:function:: string function Localize( string token )
+    
+    .. note::
+
+        replaces text that should be localzied on the client
+
+        .. code-block:: javascript
+
+            string localized = Localize( token )
+
+.. cpp:function:: int ornull function string.find( string s )
+
+    .. warning::
+
+        returns ``null`` if the string is not found.
+        
+        You can eliminate the possibility of the returned index being null by casting like this:
+
+        .. code-block:: javascript
+
+            int ornull index = GetMapName().find( "mp" )
+
+            if( !index )
+                return
+            int( index )
+            int n = index + 1 //now we do not need the ornull anymore
+
+.. cpp:function:: string function string.slice( int start, int end = null )
+
+
+Float
+~~~~~~
+
+.. cpp:function:: float function RandomFloatRange( float min, float max)
+
+Integer
+~~~~
+
+.. cpp:function:: int function RandomIntRange( int min, int max )
+
+.. cpp:function:: int function RandomIntRangeInclusive( int min, int max )
+
+Vectors
+~~~~~~
+
+.. cpp:function:: vector function RandomVec( float range )
+
+    
