@@ -4,6 +4,29 @@ Datatables
 Examples:
 =========
 
+1. Example Datatable Asset
+------------------------
+
+.. code-block:: json
+
+    {
+        "$type": "dtbl",
+        "path": "datatable/custom_datatable",
+    }
+
+2. Example Datatable ``.csv`` File
+------------------------
+
+.. csv-table:: 
+   :header: "setFile", "titanRef", "difficulty", "isPrime", "coreBuildingIcon"
+   :widths: auto
+
+   "titan_buddy", "bt", "1", "0", "rui\\titan_loadout\\core\\titan_core_burst_core"
+   "titan_atlas_tracker", "tone", "2", "0", "rui\\titan_loadout\\core\\titan_core_salvo"
+   "titan_ogre_meteor", "scorch", "3", "0", "rui\\titan_loadout\\core\\titan_core_flame_wave"
+
+   "string", "string", "int", "bool", "asset"
+
 Asset Structure:
 ================
 
