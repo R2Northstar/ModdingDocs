@@ -43,7 +43,7 @@ VPK Tool
 
 You have 2 options for a VPK tool. Pick either the older VPK tool: `cra0 VPKTool`_ or the Newer VPK tool: `Harmony VPKTool`_ (better).
 
-With your VPK tool opened. 'Open' ``englishclient_mp_common.pak000_dir.vpk`` which is located in ``Titanfall2/vpk``. 
+With your VPK tool opened. 'Open' ``englishclient_mp_common.bsp.pak000_dir.vpk`` which is located in ``Titanfall2/vpk``. 
 
 Inside of the VPK, not all guns filenames match their ingame names. Here is `list of weapon names <https://noskill.gitbook.io/titanfall2/documentation/file-location/weapon/weapon-model>`_ to help you out. 
 
@@ -164,7 +164,7 @@ You're done! You just need to pack it into a vpk with a vpk tool (for our gun mo
 
 Help with repacking `here <https://noskill.gitbook.io/titanfall2/intro/duction/vpk-packpack>`_, and help with Northstar mods `here <https://r2northstar.readthedocs.io/en/latest/guides/gettingstarted.html>`_.
 
-Making your Skin Animated
+Making Your Skin Animated
 -------------------------
 
 To add animation functionality, all we need to do is add a Proxie; which is just a modifier inside a ``.vmt``, and change our albedo vtf texture. 
