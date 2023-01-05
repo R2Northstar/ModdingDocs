@@ -18,14 +18,14 @@ Exporting the pilot model from the VPK
 
 * Locate your ``Titanfall 2`` game folder:
 
-  * For Origin: you should find it in this directory “OriginGames/Titanfall2”
+  * For Origin (Default): ``OriginGames/Titanfall2``
  
-  * For Steam: you should find it in this directory “Steam/steamapps/common/Titanfall2”
+  * For Steam: ``Steam/steamapps/common/Titanfall2``
 
 * Open ``Titanfall VPK Tool`` and press the open button at the top left.
 
 
-* Step by step first expand the `models` folder > `humans` folder > click on the `pilots` folder.
+* Step by step first expand the ``models`` > ``humans`` > click on the ``pilots`` folder.
 
 * The files have different names that correspond to their pilot classes;
   
@@ -50,9 +50,9 @@ Exporting the POV model (Optional)
 
 Do the following if you want your model to be visible from the perspective of anyone using the modified model:
 
-* Expand the models folder, then the weapons folder, then click on the arms folder
+* Expand the ``models folder`` > ``weapons folder`` > ``arms folder.``
 
-* Repeat the same process used for exporting the pilot model to export the POV file
+* Repeat the same process used for exporting the ``pilot model`` to export the POV file.
 
 
 Decompiling the pilot model
@@ -60,14 +60,14 @@ Decompiling the pilot model
 
 * Open `Crowbar`_
 
-* Select Decompile at the top.
+* Select ``Decompile`` at the top.
 
-* Click on the browse button next to “MDL input” then locate and select your exported pilot model.
+* Click on the browse button next to ``MDL input`` then locate and select your exported pilot model.
 
-* Click on the browse button next to “Output to” then choose any location you want the decompiled model to go to.
+* Click on the browse button next to ``Output to`` then choose any location you want the decompiled model to go to.
 
-Modifying the model with Blender
---------------------------------
+Modifying the model with `Blender`_
+------------------------------------
 
 * Open `Blender`_
 
@@ -83,14 +83,14 @@ Modifying the model with Blender
 
 * Make any changes you want.
 
-* The head of your model should be separate from the rest of the body. You can use the bisect tool in edit mode to separate the head if it isn’t already.
+* The head of your model should be separate from the rest of the body. You can use the ``bisect tool`` in edit mode to separate the head if it isn’t already.
 
   * `Separating the head <https://drive.google.com/file/d/1l_FXbB0H6ptSjR44CXC1OflIcytmB5XA>`_  
 * Make sure the body and head of your model match the names of the pilot model.
 
 * Drag your model’s head and body into the correct collection.
 
-* Delete the pilot models head and body after doing so.
+* Delete the ``pilot models head and body`` after doing so.
 
   * `Renaming and putting your model in the correct collection <https://drive.google.com/file/d/12uy3Zje7q8OSShrTNSU8JMrvbFxGaaL0/view>`_
 
@@ -112,15 +112,15 @@ Modifying the model with Blender
 
 * If you only have one texture for your model just create one material for your entire model.
 
-  * Use LegionPlus to view paths for materials.
+  * Use `LegionPlus`_ to view paths for materials.
 
 |image2|
 
-* Once you have made all the changes you wanted to, select Scene Properties, Source Engine Export, then set the export format to SMD and set an export path.
+* Once you have made all the changes you wanted to, select ``Scene Properties`` > ``Source Engine Export`` then set the export format to ``SMD`` and set an export path.
 
 |image3|
 
-* Copy the `qc <https://developer.valvesoftware.com/wiki/QC>`_ file to the same location where you exported the model.
+* Copy the `QC <https://developer.valvesoftware.com/wiki/QC>`_ file to the same location where you exported the model.
 
 Modifying the POV model (Optional)
 ----------------------------------
@@ -134,7 +134,7 @@ Modifying the POV model (Optional)
 Using `LegionPlus`_ to view paths
 ----------------------------------
 
-* Open LegionPlus,
+* Open `LegionPlus`_
 * Select ``Load File,``
 * Follow the directory that matches your launcher,
   
@@ -142,8 +142,8 @@ Using `LegionPlus`_ to view paths
   
   * ``Origin Games/Titanfall2/r2/paks/Win64/common.rpak``
   
-* Type the file name of the pilot into the search bar to view texture and material paths.
-* View file paths to create paths in RePak.
+* Type the file name of the pilot into the search bar to view ``texture`` and ``material paths.``
+* View file paths to create paths in ``RePak.``
 
 
 Recompiling the Model
@@ -161,7 +161,7 @@ Making a PAK file
 * It’s recommended to use Visual Studio Code when making RPak maps.
 
 
-Making changes to the `qc`_ file (Optional)
+Making changes to the `QC`_ file (Optional)
 -------------------------------------------
 |image4|
 
@@ -173,8 +173,8 @@ Creating a Northstar mod
 Documented in `Getting Started <https://r2northstar.readthedocs.io/en/latest/guides/gettingstarted.html>`_
 
 * Create a folder that matches this file structure,
-* Only create the weapons folder and everything else within it if you made a pov model.
-
+* Only create the weapons folder and everything else within it IF you made a ``pov model.``
+:: 
 
     AuthorName.Mod
     ├──mod
