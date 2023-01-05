@@ -35,6 +35,7 @@ If you know anything about any function, object or concept please dont hesitate 
    /guides/weaponmodding
    /guides/weaponkeyvalues
    /guides/rpakmodding
+   /guides/importpilotmodel
    /guides/localisation
    /guides/crosshairmodding
    /guides/settingsmods
