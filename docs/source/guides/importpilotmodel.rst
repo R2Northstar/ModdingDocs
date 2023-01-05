@@ -79,9 +79,7 @@ Modifying the model with `Blender`_
 
 * Select ``File`` at the top left > ``Import`` > ``Source Engine``
 
-* Locate and select the ``decompiled pilot model.``
-
-* Make any changes you want.
+* Locate and select the ``decompiled pilot model`` and make any changes you want.
 
 * The head of your model should be separate from the rest of the body. You can use the ``bisect tool`` in edit mode to separate the head if it isn’t already.
 
@@ -135,7 +133,7 @@ Using `LegionPlus`_ to view paths
 ----------------------------------
 
 * Open `LegionPlus`_
-* Select ``Load File,``
+* Select ``Load File``
 * Follow the directory that matches your launcher,
   
   * ``Steam/steamapps/common/Titanfall2/r2/paks/Win64/common.rpak``
