@@ -175,18 +175,18 @@ Documented in `Getting Started <https://r2northstar.readthedocs.io/en/latest/gui
 :: 
 
     AuthorName.Mod
-    ├──mod
-    |   └──models
-    |       └──humans
-    |           └──pilots
-    |               └──ModifiedCustomModel
-    |       └──weapons
-    |           └──arms
-    |               └──ModifiedPovModel
-    ├──paks
-    |   ├──rpak.json
-    |   ├──example.rpak
-    |   └──preloadexample.rpak
+    ├── mod
+    |   └── models
+    |       └── humans
+    |           └── pilots
+    |               └── ModifiedCustomModel
+    |       └── weapons
+    |           └── arms
+    |               └── ModifiedPovModel
+    ├── paks
+    |   ├── rpak.json
+    |   ├── YourRpakFile.rpak
+    |   └── PreLoadRpak.rpak
     └──mod.json
 
 
