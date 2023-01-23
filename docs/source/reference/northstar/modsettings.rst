@@ -101,25 +101,11 @@ API
   * ``void functionref() onPress`` - callback that gets triggered when this button is pressed.
   * ``int stackPos``
 
-Wrapper
-^^^^
-
-To create custom wrapper functions you need to specify the stack position where the root of your Mod Setting declarations take place.
-  
-  Example
-  ~~~~
-  
-  .. code-block:: javascript
-  
-    void function AddModSettingsDropDown( string displayName, array<string> options )
-    {
-      AddModSettingsButton( displayName, void function() { OpenDropDown( options ) }, 3 )
-    }
-    
-  Note that in this example the stack position is ``3``, since ``AddModSettingsButton`` needs to walk one additional step to the callback function.
-
-Example
+Examples
 ----
+
+Settings Declaration
+^^^^
 
 .. code-block:: javascript
 
@@ -132,3 +118,17 @@ Example
   AddModCategory( "Visuals" )
   AddConVarSetting( "my_mod_display_color", "Display Color", "vector" )
   AddModSettingsButton( "Preview", void function(){ AdvanceMenu( "MyModMenu" ) } )  // Assumes you have "MyModMenu" set up etc.
+  
+Wrapper
+^^^^
+
+To create custom wrapper functions you need to specify the stack position where the root of your Mod Setting declarations take place.
+  
+.. code-block:: javascript
+  
+  void function AddModSettingsDropDown( string displayName, array<string> options )
+  {
+    AddModSettingsButton( displayName, void function() { OpenDropDown( options ) }, 3 )
+  }
+
+Note that in this example the stack position is ``3``, since ``AddModSettingsButton`` needs to walk one additional step to the callback function.
