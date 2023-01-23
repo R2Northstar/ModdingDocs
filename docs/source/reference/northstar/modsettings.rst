@@ -49,7 +49,7 @@ API
 
   **Parameters:**
   
-  * ``string conVar`` - the conVar this setting modifies
+  * ``string conVar`` - the ConVar this setting modifies
   * ``string displayName`` - The display string of this setting. This can be a localization token.
   * ``string type = ""`` - Optional type of this ConVar. This guards against users inserting invalid values.
   * ``int stackPos = 2``
@@ -100,7 +100,24 @@ API
   * ``string conVar`` - the conVar this setting modifies
   * ``void functionref() onPress`` - callback that gets triggered when this button is pressed.
   * ``int stackPos``
+
+Wrapper
+^^^^
+
+  To create custom wrapper functions you need to specify the stack position where the root of your Mod Setting declarations take place.
   
+  Example
+  ~~~~
+  
+  .. code-block:: javascript
+  
+    void function AddModSettingsDropDown( string displayName, array<string> options )
+    {
+      AddModSettingsButton( displayName, void function() { OpenDropDown( options ) }, 3 )
+    }
+    
+  Note that in this example the stack position is ``3``, since ``AddModSettingsButton`` needs to walk one additional step to the callback function.
+
 Example
 ----
 
