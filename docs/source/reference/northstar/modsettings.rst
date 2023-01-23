@@ -104,7 +104,7 @@ API
 Wrapper
 ^^^^
 
-  To create custom wrapper functions you need to specify the stack position where the root of your Mod Setting declarations take place.
+To create custom wrapper functions you need to specify the stack position where the root of your Mod Setting declarations take place.
   
   Example
   ~~~~
