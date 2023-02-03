@@ -363,12 +363,12 @@ A boolean expression which tells the game when and in which context to compile t
    * - MAP_mp_box
      - True if the given map name is being loaded
    * - GAMEMODE_at
-     - True of the given game mode is being loaded
+     - True if the given game mode is being loaded
 
 
 ``( CLIENT || SERVER ) && MP`` - Compiles on both client and server only in multiplayer.
 
-``CLIENT && SP && MAP_sp_boomtown`` - Compiles only on client in singleplayer only when the map ``sp_boomtown`` is loaded. ( Here ``SP`` isn't needed as ``sp_boomtown`` is isngleplayer only )
+``CLIENT && SP && MAP_sp_boomtown`` - Compiles only on client in singleplayer only when the map ``sp_boomtown`` is loaded. ( Here ``SP`` isn't needed as ``sp_boomtown`` is singleplayer only )
 
 ``CLIENT && GAMEMODE_aitdm`` - Compiles on client on both singleplayer and multiplayer only when the ``aitdm`` gamemode is set. ( ``aitdm`` is attrition which is multiplayer only so this script may compile error in singleplayer )
 
