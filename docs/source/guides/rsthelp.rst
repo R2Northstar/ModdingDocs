@@ -130,7 +130,7 @@ Captions:
 Figures:
 *****
 
-.. figure:: /_static/rsthelp/cutecat1x1.jpg
+.. figure:: /_static/rsthelp/cutecat1x1.png
     :width: 250
     :figwidth: 250
 
@@ -139,7 +139,7 @@ Figures:
 Images attempting:
 #####
 
-.. image:: /_static/rsthelp/cutecat1x1.jpg
+.. image:: /_static/rsthelp/cutecat1x1.png
     :height: 250
     :align: center
 
@@ -178,7 +178,7 @@ Figures doing a little more:
 
 This single figure is holding an image, codeblock, text, and even a table.
 
-.. figure:: /_static/rsthelp/cutecat1x1.jpg
+.. figure:: /_static/rsthelp/cutecat1x1.png
     :width: 250
     :figwidth: 250
 
@@ -190,7 +190,7 @@ This single figure is holding an image, codeblock, text, and even a table.
 
     even another image!!! (nested)
 
-    .. figure:: /_static/rsthelp/cutecat1x1.jpg
+    .. figure:: /_static/rsthelp/cutecat1x1.png
         :scale: 20
 
     also tables.
@@ -204,7 +204,7 @@ Aligning is weird:
 
 See this aligned image?
 
-.. image:: /_static/rsthelp/cutecat1x1.jpg
+.. image:: /_static/rsthelp/cutecat1x1.png
     :align: right
     :width: 250px
 
