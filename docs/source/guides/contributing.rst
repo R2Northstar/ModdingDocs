@@ -35,6 +35,11 @@ You need to have a relatively recent version of Python installed - 3.8 or higher
         cd ModdingDocs
         ./run.sh
 
+.. warning::
+    On Windows, if you are not able to run the script by running `./run.ps1`, try running it with: `powershell.exe -ExecutionPolicy Bypass -File .\run.ps1`
+
+    After this you should be able to run with just `./run.ps1`.
+
 VSCode
 ^^^^^
 
