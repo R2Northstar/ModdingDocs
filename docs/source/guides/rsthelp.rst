@@ -1,8 +1,8 @@
 Rst Help
 =====
 
-Documentation on rst can be difficult for many reasons. 
-So this page to help smooth the entry difficulty curve so enable more contributions.
+Writing documentation in rst can be difficult for many reasons. 
+So this page to help smooth the entry difficulty curve to enable more contributions.
 You will still need to read rst external documentation, but this page holds useful links, resources, code blocks, and explanations.
 
 
@@ -26,7 +26,7 @@ Take links rankings lightly as every rst documentation provides value and presen
 Headers, Sections, Subsections, Subsubsections:
 ----
 
-.. important:: You need 5 specific symbols in a row to indicate a header type. 
+.. important:: You need at least 5 specific symbols in a row to indicate a header type. 
 
 Standard and always applicable headers:
 #####
