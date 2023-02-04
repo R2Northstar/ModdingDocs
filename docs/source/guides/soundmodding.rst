@@ -34,6 +34,18 @@ just in-match ones. For example:
 
 Check the console often, as it's easy to miss your sound - there can be a lot of sounds playing.
 
+There's also a `list <https://gist.github.com/begin-theadventure/84c46e803aa358b102d754ff992ae9e4>`_ of all EvenIDs (audio).
+
+Sounds can be played in-game from the console via ``script_ui EmitUISound(soundname)``.
+
+Additionally `subtitles <https://gist.github.com/begin-theadventure/cf941af91cd158de4fde747ec78c2902>`_ in the form of plain text can also be useful.
+
+You can also export sounds with `LegionPlus <https://github.com/r-ex/LegionPlus>`_ instead of playing them in-game.
+
+Open LegionPlus.exe -> Load File -> Titanfall 2/r2/sound pick general.mbnk
+
+If you want to export only a specific sound use search. It's possible to export selected sounds and all (after a search it exports only the found assets).
+
 Step 2 - Creating Folders
 --------------------------
 
@@ -92,16 +104,24 @@ Creating Your Sound
 --------------------
 - **Recommended tool:** `Audacity <https://www.audacityteam.org/download/>`_
 
-Open/Add your audio as a track to Audacity and set your sample rate to
-either ``48000hz`` or ``44100hz``. In Audacity, select your entire track, open
-the effects dropdown menu, then click ``Change Speed``. In the dialog set
-either ``Speed Multiplier`` to ``0.918`` or ``Percent Change`` to ``-8,200``. After
-that, export your track as ``wav`` and make sure you don't add any
-metadata.
+Open/Add your audio as a track to Audacity and set the project rate accordingly.
+Either ``48000hz`` or ``44100hz`` can work well in most cases, but a few sounds don't use either. Which sampling rate you should use depends on the original sound's sampling rate.
 
+For example: if you use ``44100khz`` and the sound is slightly too high pitched in game, use ``48000khz``. If you use ``48000khz`` and it's slightly low pitched in game, use ``44100khz``.
+
+If you're unsure which to use, or the sound still seems too high, or low pitched, you can use  `LegionPlus <https://github.com/r-ex/LegionPlus>`_ to determine the original rate.
+
+After that, export your track as a 16-bit ``wav`` file (any other bit-depth will cause Northstar to crash).
+Make sure you don't add any metadata as this will cause white noise to be at the end of the sound.
+
+
+.. _issues_with_sounds:
+
+Issues With Sounds
+--------------------
 - White noise after the sound ends.
 
-This is usually because there's some metadata left in the audio.
+This is usually because there's some metadata left in the audio. Remove it to fix this issue.
 
 .. tabs::
 
@@ -124,6 +144,66 @@ This is usually because there's some metadata left in the audio.
             do
               ffmpeg -i "$f" -map 0 -map_metadata -1 -c:v copy -c:a copy "${f%.wav}.new.wav"
               mv -f "${f%.wav}.new.wav" "$f"
+            done
+            
+- Sound is slightly higher/lower pitched in game.
+ 
+ This is usually because the sampling rate of your sound doesn't match the original sound's sampling rate.
+ 
+ You can use a tool like Audacity to resample your sound to match the original rate. Consult :ref:`_creating_your_sound` for more information.
+
+.. _sound_tools:
+
+Sound Tools
+--------------------
+- Converters
+
+.. tabs::
+
+   .. tab:: Windows
+
+      # todo
+
+   .. tab:: Linux
+
+      On Linux you can use shell scripts that convert all WAV or MP3 audio files from the current directory (including folders) to WAV 48000Hz 16-bit. They require ffmpeg to be installed.
+
+      MP3 and other formats scripts don't delete previous files, so just search for them (.format) and delete after conversion. WAV script automatically replaces old files.
+
+      .. tabs::
+
+         .. code-tab:: shell WAV script
+            
+            #WAV to WAV 16-bit 48000 Hz.
+            #wav_converter.sh
+            
+            shopt -s globstar nullglob
+            for f in *.wav **/*.wav
+            do
+              ffmpeg -i "$f" -acodec pcm_s16le -ar 48000 "${f%.wav}.new.wav"
+              mv -f "${f%.wav}.new.wav" "$f"
+            done
+
+         .. code-tab:: shell MP3 Script
+            
+            #MP3 to WAV 16-bit 48000 Hz.
+            #mp3-wav_converter.sh
+            
+            shopt -s globstar nullglob
+            for f in *.mp3
+            do
+              ffmpeg -i "${f}" -vn -c:a pcm_s16le  -ar 48000 "${f%.*}.wav"
+            done
+
+         .. code-tab:: shell Script for other formats
+            
+            #Replace .format with the one you want to convert.
+            #format-wav_converter.sh
+            
+            shopt -s globstar nullglob
+            for f in *.format
+            do
+              ffmpeg -i "${f}" -vn -c:a pcm_s16le  -ar 48000 "${f%.*}.wav"
             done
 
 Installation
