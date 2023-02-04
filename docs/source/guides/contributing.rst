@@ -1,16 +1,12 @@
 Contributing to ModdingDocs
-===========================
-
-All contributions to ModdingDocs are welcome. To add a change simply make a pull request to the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_.
+=====
 
 ModdingDocs uses `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredText>`_.
 
-A cheatsheet for reStructuredText syntax can be found here: https://docs.generic-mapping-tools.org/6.2/rst-cheatsheet.html
-
-The ``.rst`` files can be found in the ``docs/source`` directory. If you're adding a new file, make sure to link it in ``index.rst``
+All contributions to ModdingDocs are welcome. To add a change simply make a pull request to the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_.
 
 Contributing without a local build
-----------------------------------
+^^^^^
 You don't necessarily need to set up a local build environment.
 
 To contribute without doing so, you can just edit the files in an editor of your choice and create a GitHub pull request from them.
@@ -21,10 +17,9 @@ This should take you to a online version of the docs with your PRs changes.
 
 
 Building locally
-----------------
+^^^^^
 
 You need to have a relatively recent version of Python installed - 3.8 or higher. `Download here <https://www.python.org/downloads/>`_
-
 
 .. tabs::
 
@@ -45,9 +40,8 @@ You need to have a relatively recent version of Python installed - 3.8 or higher
 
     After this you should be able to run with just `./run.ps1`.
 
-
 VSCode
----------------
+^^^^^
 
 If you're using `Visual Studio Code <https://code.visualstudio.com/>`_, the following extensions might be of interest:
 
