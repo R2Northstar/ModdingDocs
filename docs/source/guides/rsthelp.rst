@@ -134,7 +134,7 @@ Figures:
     :width: 250
     :figwidth: 250
 
-    hello i'm a caption.
+    hello I'm a caption.
 
 Images attempting:
 #####
