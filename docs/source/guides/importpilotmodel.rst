@@ -15,13 +15,25 @@ Tools:
 .. _mdlshit: https://github.com/headassbtw/mdlshit-binaries
 .. _Text Editors: https://retryy.gitbook.io/tf2/Wiki/Tools/general-pc-tools#text-editing
 
-Download each tool. "Titanfall VPK Tool" is the vpk tool used. Made by cra0.
+Download each tool. 
 
-======================== =========================== ===================
-   `Legion+`_              `RePak`_                    `mdlshit`_
-   `Text Editors`_         `Blender`_                    `Crowbar`_
-`Titanfall VPK Tools`_   `Blender Source Tools`_           
-======================== =========================== ===================
+`Text Editors`_ - Just a text editor
+
+`Titanfall VPK Tools`_ - VPK viewer, extractor, and repacker.
+   "Titanfall VPK Tool" is the vpk tool used. Made by cra0.
+
+`Crowbar`_ - Decompile, recompile, and a ton of other model and source asset stuff
+
+`Blender`_ - 2D/3D Workspace
+
+`Blender Source Tools`_ - Source Tools plugin for Blender
+
+`Legion+`_  - Texture, audio, shaderset, and material exporter
+   "Normal" Legion doesn't work
+
+`RePak`_ - Create Apex and Titanfall 2 .rpak for textures
+
+`mdlshit`_ - Magically convert .mdl to "titanfall 2" .mdl 
 
 Exporting the pilot model from the vpk
 ^^^^^
