@@ -347,11 +347,11 @@ A boolean expression which tells the game when and in which context to compile t
    * - Name
      - Description
    * - SERVER
-     - Server per-level script VM
+     - Server script VM, recompiles on map change
    * - CLIENT
-     - Client per-level script VM
+     - Client script VM, recompiles on map change
    * - UI
-     - UI script VM
+     - UI script VM, recompiles on when `uiscript_reset` is ran
    * - SP
      - Singleplayer
    * - MP
@@ -370,7 +370,7 @@ A boolean expression which tells the game when and in which context to compile t
 
 ``CLIENT && SP && MAP_sp_boomtown`` - Compiles only on client in singleplayer only when the map ``sp_boomtown`` is loaded. ( Here ``SP`` isn't needed as ``sp_boomtown`` is singleplayer only )
 
-``CLIENT && GAMEMODE_aitdm`` - Compiles on client on both singleplayer and multiplayer only when the ``aitdm`` gamemode is set. ( ``aitdm`` is attrition which is multiplayer only so this script may compile error in singleplayer )
+``CLIENT && GAMEMODE_aitdm`` - Compiles on client on both singleplayer and multiplayer only when the ``aitdm`` gamemode is set. ( ``aitdm`` is attrition which is multiplayer only so this script only compiles on multiplayer )
 
 
 ClientCallback / ServerCallback
