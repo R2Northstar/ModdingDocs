@@ -42,6 +42,14 @@ File editors
 
   * `Kate syntax highlighting for Squirrel <https://gist.github.com/CTalvio/6de535f9258cfebd71ab64d7e6af4ee6>`_
 
+Version control
+^^^^^^^^^^^^^^^
+
+* `git <https://git-scm.com/>`_
+
+  * `GitHub <https://github.com/>`_
+  * `GitLab <https://about.gitlab.com/>`_
+
 Graphics / animation / color editors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * `Paint.net <https://www.getpaint.net>`_
@@ -80,3 +88,12 @@ Driver editors
 * `Ninja Ripper v1.7.1 <https://gamebanana.com/tools/5638>`_
 
 Highly recommended to check the `NoSkill Gitbook modding section <https://noskill.gitbook.io/titanfall2/how-to-start-modding/modding-introduction/modding-tools>`_ for more tools.
+
+Setting up your development environment
+---------------------------------------
+
+Using *git* as your source control and GitHub or GitLab as your online repo is highly recommended. This allows you to keep track of the changes you make so that in the case something breaks, you can revert back to a working version and compare the versions to see which change may have introduced the breakage.
+
+An introduction to *git* can be found here: https://www.youtube.com/watch?v=hwP7WQkmECE
+
+A video guide to using *GitHub* can be found here: https://www.youtube.com/watch?v=HkdAHXoRtos
