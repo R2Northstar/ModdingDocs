@@ -28,6 +28,6 @@ Example for modding crossshairs using keyvalues: :doc:`crosshairmodding`
    :hidden:
    :caption: Squirrel
    
-   /guides/keyValueModding/wrapper/crosshairmodding
-   /guides/keyValueModding/wrapper/localisation
-   /guides/keyValueModding/wrapper/weaponkeyvalues
+   /guides/keyValueModding/crosshairmodding
+   /guides/keyValueModding/localisation
+   /guides/keyValueModding/weaponkeyvalues
