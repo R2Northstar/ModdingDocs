@@ -34,15 +34,21 @@ To fix this:
 4. Select ``Squirrel`` (only appears if you have the extension)
 
 
+Kate
+-----
+
+`Kate syntax highlighting for Squirrel <https://gist.github.com/CTalvio/6de535f9258cfebd71ab64d7e6af4ee6>`_
+
+
 .. toctree::
     :maxdepth: 2
     :hidden:
     :caption: Squirrel
 
-    /squirrel/wrapper/intro
-    /squirrel/wrapper/tablesandarrays
-    /squirrel/wrapper/functions
-    /squirrel/wrapper/statements
-    /squirrel/wrapper/class
-    /squirrel/wrapper/async
-    /squirrel/wrapper/networking
+    /squirrel/intro
+    /squirrel/tablesandarrays
+    /squirrel/functions
+    /squirrel/statements
+    /squirrel/class
+    /squirrel/async
+    /squirrel/networking
