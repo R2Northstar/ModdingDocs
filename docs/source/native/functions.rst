@@ -238,10 +238,6 @@ A foreach loop iterates over a ``table`` or an ``array`` and executes for each e
   {
     printt( k, v )
   }
-.. code-block:: javascript
-
-  array<int> somelist = [0, 5, 6, 4, 11]
-  for(int i = 0; i < somelist.len(); i++)
 
 Implicit conditional behavior
 -----------------
