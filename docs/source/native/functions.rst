@@ -228,7 +228,7 @@ A foreach loop iterates over a ``table`` or an ``array`` and executes for each e
   }
 
   // prints 0 1, 1 2, 2 3, 3 4
-  foreach( int index; int value in arr )
+  foreach( int index, int value in arr )
   {
     printt( index, value )
   }
