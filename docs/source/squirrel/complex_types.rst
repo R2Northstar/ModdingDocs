@@ -18,9 +18,9 @@ To get the string of the char, you need to:
 .. code-block:: javascript
 
   int charInt = Hello[0]
-  int charString = charint.tochar()
+  string charString = charInt.tochar()
 
-build in functions can be found on the official site `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#string>`_ .
+built in functions can be found on the official site `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#string>`_ .
 
 Assets
 ~~~~~~
@@ -49,10 +49,8 @@ Arrays can store large sets of data and are indexed using numbers, starting from
 
     array<int> numbers = [1,2,3,4,5,6,7,8,9,10]
 
-    printt(numbers[0])
-    >>1
-    printt(numbers[5])
-    >>6
+    printt(numbers[0]) // 1
+    printt(numbers[5]) // 6
 
 
 adding and removing values from arrays can be done using ``.append(value)`` and ``.remove(index)``. 
@@ -63,22 +61,17 @@ additionally the index of values can be found using the ``.find()`` function and
 
     array<int> numbers = [1,2,3,4,5,6,7,8,9,10]
 
-    printt(numbers.find(3))
-    >>2
-    printt(numbers[5])
-    >>6
+    printt(numbers.find(3)) // 2
+    printt(numbers[5]) // 6
     numbers.remove(5)
-    printt(numbers[5])
-    >>7
-    printt(numbers.len())
-    >>9
+    printt(numbers[5]) // 7
+    printt(numbers.len()) // 9
     array<int> empty = []
     empty.append(5)
-    printt(empty[0])
-    >>5
+    printt(empty[0]) // 5
 
 
-Build in functions for arrays can be found `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#id1>`_
+Built in functions for arrays can be found `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#id1>`_
 
 Static Arrays
 -------------
@@ -99,7 +92,7 @@ The syntax for static arrays is ``type[size]``.
 Tables
 ------
 Tables are similar to arrays but with one primary difference, rather than use a numerical index system tables allow you do define your own indexes, similar to pythons ``dict`` type.
-Creation of a table is done in a similar way to arrays, however may have 2 types declared for the type of the index and the type of the content, much like arrays this will default to ``var`` if ignored
+Creation of a table is done in a similar way to arrays, however may have 2 types declared for the type of the index and the type of the content, like arrays this will default to ``var`` if ignored
 
 There are multiple ways to define a table with the ``[]`` when declaring a key you type a literal
 
@@ -127,27 +120,24 @@ To read a value from a table you use the array syntax but instead of an index yo
 
 .. code-block:: javascript
     
-    printt(playerKills[player])
-    >> 5
+    printt(playerKills[player]) // 5
 
-The build in functions for arrays can be found `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#table>`_
+The built in functions for arrays can be found `here <http://www.squirrel-lang.org/squirreldoc/reference/language/builtin_functions.html#table>`_
 
 .. warning:: 
 
-  The functions ``table.key()`` and ``table.value()`` are disabled in rSquirrel, as an alternative you can use: ``TableKeysToArray(table)``
+  The functions ``table.key()`` and ``table.value()`` are not available in rSquirrel, as an alternative you can use ``TableKeysToArray(table)``
 
 
 Structs
 --------
-Structs are a way of storing multiple variables in one object. To create a struct you just write:
+Structs are a way of storing multiple variables in one object. To create a struct type you just write:
 
 .. code-block:: javascript
 
     struct ExampleStruct {}
     
 Inside the brackets you can declare all the variables your struct should contain, you can also directly assign a standard value to a variable, if you dont override this value it will automatically be assigned.
-
-You can not only pass variables but also functions with:``*return type* functionref(*argument type*) *Name in the struct*``.
 
 .. code-block:: javascript
   
@@ -167,7 +157,7 @@ You then need to create instances of your struct to use it, like this:
       
       //functions we need to assign, they are placeholders
       void function VoidFuntion(){
-        //do sth
+        //do smth
         return
       }
       void function StringFunction(string s){
@@ -198,26 +188,21 @@ Now that we have two instances we can get the values out of it like this:
 
 .. code-block:: javascript
 
-      printt(structOne.VariableInt)
-      >> 1
-      printt(structOne.VariableString)
-      >> Hello World
-      printt(stuctOne.Optional)
-      >> 1
+      printt(structOne.VariableInt) // 1
+      printt(structOne.VariableString) // "Hello World"
+      printt(stuctOne.Optional) // 1
 
       // here you can see that we did not specifically declare the variable but it still has a value that was assigned in the struct directly
       foreach(int a in structOne.VariableArray)
         printt(a)
-      >>1
-      >>2
-      >>3
-      print(structOne.ExampleStringFunction("Hello"))
-      >>Hello
+        // 0: 1
+        // 1: 2
+        // 2: 3
+      print(structOne.ExampleStringFunction("Hello")) // "Hello"
  
 In struct one we have defined that ``ExampleStringFunction`` is assigned to ``StringFunction`` so we get the output if that function as a result.
       
 We can do the same thing for ``structTwo``:
-
 
 .. code-block:: javascript
 
@@ -375,9 +360,9 @@ To declare a type to contain a value or ``null``, declare the variable like this
 .. code-block:: javascript
   
   int ornull number = CoinFlip() ? null : 0
-  if( !number )
+  if( number == null )
     return
-  int( number )
+  expect int( number ) // cast `number` to an integer since it can now never be null
   
 typedef
 -----

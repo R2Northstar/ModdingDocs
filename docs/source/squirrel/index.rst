@@ -46,7 +46,7 @@ Kate
     :caption: Squirrel
 
     /squirrel/intro
-    /squirrel/tablesandarrays
+    /squirrel/complex_types
     /squirrel/functions
     /squirrel/statements
     /squirrel/class
