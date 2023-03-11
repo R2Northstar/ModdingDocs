@@ -228,15 +228,15 @@ A foreach loop iterates over a ``table`` or an ``array`` and executes for each e
   }
 
   // prints 0 1, 1 2, 2 3, 3 4
-  foreach( int i; int v in arr )
+  foreach( int index; int value in arr )
   {
-    printt( i, v )
+    printt( index, value )
   }
 
   // prints key1 mapped value 1, key2 mapped value 2
-  foreach( string k, string v in map )
+  foreach( string key, string value in map )
   {
-    printt( k, v )
+    printt( key, value )
   }
 
 Implicit conditional behavior
