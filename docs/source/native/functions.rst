@@ -276,7 +276,7 @@ Note that while functions always need ``{}``, single-line ``if``/``else`` statem
 .. code-block:: javascript
 
   if(ReturnTrueOrFalse())
-    print("Only called if true")
+    printt("Only called if true")
 
 Now let's make a more complicated function that will use the previous script to determine true or false, printing a list each time it returns true:
 
@@ -286,7 +286,7 @@ Now let's make a more complicated function that will use the previous script to 
   void function ThisDoesStuff(){
     while(ReturnTrueOrFalse()){
       foreach( int information in someinformation){
-        print(information)
+        printt(information)
       }
     }
   }
