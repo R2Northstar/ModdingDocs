@@ -52,7 +52,7 @@ The networked ``CLIENT`` function has to be global
 
 	#if CLIENT
 	global function Server_GetNetworkedVariable // make the networked function only global on CLIENT
-	#endif
+	#endif //CLIENT
 
 	global function Spaceship_Network // this gets executed on both CLIENT & SERVER
 
@@ -72,7 +72,7 @@ The networked ``CLIENT`` function has to be global
 	{
 		printt("got integer", number)
 	}
-	#endif
+	#endif //CLIENT
 
 Calling the ``CLIENT`` function ``Server_GetNetworkedVariable`` on ``SERVER`` vm:
 
