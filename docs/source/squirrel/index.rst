@@ -1,6 +1,7 @@
 rSquirrel
 =========
-Squirrel is the programming language used by Respawn to code Titanfall 2, however it was heavily modified fron the origin version, it was roughly forked at version 2.3 .
+Squirrel is the programming language used by Respawn to code Titanfall 2, however it was heavily modified fron the original version, it was roughly forked at version 2.3 .
+The most notable change is the additon of types to the language.
 
 Syntax Highlighting
 -------------------
