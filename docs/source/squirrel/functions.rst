@@ -1,12 +1,12 @@
 Functions
 =========
 
-The vast majority of GNUT modding within northstar will be done through functions, so understanding the formatting of functions is important.
+The vast majority of GNUT modding within northstar will be done through functions, so understanding the syntax of functions is important.
 
 Declaring Functions
 --------------------
 
-Functions in squirrel are first defined by stating the **output** followed by the keyword **function**. For example, if you wanted to define a function that returns TRUE or FALSE you would type:
+Functions in squirrel are first defined by stating the **return type** (output) followed by the keyword **function**. For example, if you wanted to define a function that returns TRUE or FALSE you would type:
 
 .. code-block:: javascript
 

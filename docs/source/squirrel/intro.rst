@@ -6,7 +6,7 @@ Squirrel has similar primitive types to most programming languages like java or 
 Integer
 ------
 
-The keyword to initialize an int in squirrel is ``int``. It represents a 32-bit whole number.
+The type for an interger (whole number) in squirrel is ``int``. It represents a 32-bit whole number.
 It is declared like this:
 
 .. code-block:: javascript
@@ -44,14 +44,14 @@ Floats are non whole numbers, they are declared with the ``float`` keyword.
 
     float number = 5.69420
 
-You can also assing fractions but you need to use floasts in those too:
+You can also assign fractions but you need to use decimal points:
 
 .. code-block:: javascript
 
     float number = 5.0/2.0 // has the value 2.5
     float number = 5/2 // Will compile BUT with value 2
 
-Build in functions to cast a float:
+Built-in functions to cast floats to other types:
 
 .. cpp:function:: int float.tointeger()
 
@@ -76,7 +76,7 @@ They can also accept expressions
 
     bool TrueOrFalse = 1 == 2
 
-Build in functions to cast a boolean:
+Built-in functions to cast a boolean:
 
 .. cpp:function:: int boolean.tointeger()
 
@@ -102,7 +102,7 @@ Variables
 
 Variables that can represent any type (complex or primitive) can be initialized with the keyword ``var``
 
-There are no build in functions for ``var``.
+There are no built-in functions for ``var``.
 To convert a type to other types you can use the ``expect`` keyword.
 
 .. code-block:: javascript

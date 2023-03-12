@@ -304,7 +304,7 @@ Here the first number represents the X, the 2nd the Y, and the 3rd the Z coordin
   vector myFirstVector = <0, 120, 40>
   
 
-We can then get the coordinates out of the vecotr with:
+We can then get the coordinates out of the vector with:
 
 .. code-block:: javascript
 
