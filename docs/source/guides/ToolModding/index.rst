@@ -1,9 +1,9 @@
-Tool Modding
+Modding Tools
 ------------
 
 .. toctree:: 
 
-    /guides/ToolModding/rpakmodding
-    /guides/ToolModding/soundmodding
-    /guides/ToolModding/tools
-    /guides/ToolModding/VTFModding
+    /guides/tools/rpakmodding
+    /guides/tools/soundmodding
+    /guides/tools/tools
+    /guides/tools/VTFModding
