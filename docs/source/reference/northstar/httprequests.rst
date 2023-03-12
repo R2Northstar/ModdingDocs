@@ -1,4 +1,4 @@
-HTTP Requests
+HTTP and JSON
 =============
 
 As of v1.12.0, you can now make HTTP requests from Squirrel scripts.
