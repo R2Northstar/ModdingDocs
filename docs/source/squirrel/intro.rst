@@ -113,9 +113,8 @@ To convert a type to other types you can use the ``expect`` keyword.
 Global variables and functions
 -------
 
-Often when creating a mod you need to access a ``variable`` or a ``function`` from another file, this can be achieved by using the ``global`` keyword.
-Global variables are just like regular variables and are declared the same way just with the keyword ``global`` in front of it.
-However they need to be declared at the very beginning of the file, but only in one file. NOT in all of them.
+When creating a mod, you might want to allow other files or mods to access a ``variable`` or a ``function``, this can be achieved by declaring them using the ``global`` keyword.
+They act like any other variable or function, but can be accessed from any other file or mod. They should be declared at the top of your file, and have a unique name which doesn't appear as a global in any other file, mod, or built-in squirrel code.
 
 .. code-block:: javascript
 
