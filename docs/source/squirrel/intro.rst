@@ -26,7 +26,7 @@ Alternatively you can also write the number in HEX code or as a single ASCII cha
     number = 'c' // IS VALID
     number = "c" // NOT VALID
 
-Build in functions to cast ab integer:
+Built-in functions to cast integers to other types:
 
 .. cpp:function:: float integer.tofloat()
 
