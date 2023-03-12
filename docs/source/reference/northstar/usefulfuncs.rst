@@ -84,11 +84,22 @@ Take weapon from Entity
 Validity checks for player
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. cpp:function:: bool function PlayerCanTeleportHere( entity player, vector testOrg, entity ignoreEnt = null ) //TODO: This is a copy of SP's PlayerPosInSolid(). Not changing it to avoid patching SP. Merge into one function next game
+.. cpp:function:: bool function PlayerCanTeleportHere( entity player, vector testOrg, entity ignoreEnt = null )
+
+    .. note::
+        Respawn comment next to the function:
+
+        ``TODO: This is a copy of SP's PlayerPosInSolid(). Not changing it to avoid patching SP. Merge into one function next game``
+
 
 .. cpp:function:: bool function PlayerSpawnpointIsValid( entity ent )
 
-.. cpp:function:: bool function EntityInSolid( entity ent, entity ignoreEnt = null, int buffer = 0 ) //TODO:  This function returns true for a player standing inside a friendly grunt. It also returns true if you are right up against a ceiling.Needs fixing for next game
+.. cpp:function:: bool function EntityInSolid( entity ent, entity ignoreEnt = null, int buffer = 0 ) 
+
+    .. note::
+        Respawn comment next to the function:
+
+        ``TODO:  This function returns true for a player standing inside a friendly grunt. It also returns true if you are right up against a ceiling.Needs fixing for next game``
 
 .. cpp:function:: bool function EntityInSpecifiedEnt( entity ent, entity specifiedEnt, int buffer = 0 )
 
@@ -177,7 +188,11 @@ Titans
 Gamemode functions
 -------------
 
-.. cpp:function:: int function GetCurrentWinner( int defaultWinner = TEAM_MILITIA ) //maybe doesnt work for FFA???
+.. cpp:function:: int function GetCurrentWinner( int defaultWinner = TEAM_MILITIA )
+
+    .. note::
+
+        Does not work for FFA modes
 
 
 .. cpp:function:: string NSGetLocalPlayerUID()
