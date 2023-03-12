@@ -13,8 +13,6 @@ Contents
 
 These docs contain info on squirrel usage and northstar/respawn functions. Its very much WIP.
 
-For now we are focusing on moving over things that were documented in other places (discord, pastebin, gists etc.).
-
 If you know anything about any function, object or concept please dont hesitate to contribute it, even if its just a quick and dirty PR.
 
 Cheatsheet
