@@ -3,5 +3,5 @@ Scripting tutorials
 
 .. toctree:: 
 
-    /guides/scriptingGuides/gamemodemods
+    /guides/scripting/gamemodemods
 

@@ -42,9 +42,9 @@ Cheatsheet
    :caption: Guides
 
    /guides/gettingstarted
-   /guides/keyValueModding/index
-   /guides/scriptingGuides/index
-   /guides/ToolModding/index
+   /guides/keyvalue/index
+   /guides/scripting/index
+   /guides/tools/index
    /guides/moddingtutorials
    /guides/publishing
    /guides/contributing
