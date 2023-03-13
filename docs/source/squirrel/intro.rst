@@ -66,8 +66,6 @@ Boolean
 
 Booleans are a value that either represent ``true`` or ``false`` and are declared with the keyword ``bool``
 
-Build in functions to changes typed of a variable for integers are 
-
 .. code-block:: javascript
 
     bool TrueOrFalse = true
