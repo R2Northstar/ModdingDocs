@@ -5,15 +5,15 @@ for plugins you can use any language that be compiled into a dll.
 But its better to use either ``rust`` or ``c++``.
 
 plugins with c++
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 c++ is used in northstar and titanfall so it makes it easy to work with titanfall's engine.
 
 A template for c++ plugins would be the unfinished `discord rpc v2 <https://github.com/R2Northstar/NorthstarDiscordRPC/tree/rewrite>`__.
-it is some parts of northstar commbied with custom stuff.
+it has some parts of northstar combied with custom stuff.
 
 plugins with rust
-^^^^^^^^^^^^^^^^^^^^^^
-altought rust isn't used by northstar or titanfall, 
+^^^^^^^^^^^^^^^^^
+altought rust isn't used by northstar or titanfall,
 it is arguably the best language for plugins because of `rrplug <https://github.com/catornot/rrplug>`__
 
 a good example of a rust plugin with rrplug is `furnace <https://github.com/catornot/furnace>`_
@@ -23,8 +23,7 @@ a good example of a rust plugin with rrplug is `furnace <https://github.com/cato
 
 what a plugin dll needs?
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-the plugin system looks for a manfest in the dll inserted with windres.
+the plugin system looks for a manifest in the dll inserted with windres.
 
 the other things are function exports for each callback.
 
