@@ -40,7 +40,7 @@ Built-in functions to cast integers to other types:
 Float 
 -----
 
-Floats are non whole numbers, they are declared with the ``float`` keyword.
+Floating-point numbers are numbers with decimal places, they are declared with the ``float`` keyword.
 
 .. code-block:: javascript
 
@@ -72,7 +72,7 @@ Build in functions to changes typed of a variable for integers are
 
     bool TrueOrFalse = true
 
-They can also accept expressions
+They can also accept comnparison expressions, which return a boolean
 
 .. code-block:: javascript
 
