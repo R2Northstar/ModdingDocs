@@ -87,3 +87,10 @@ If you know anything about any function, object or concept please dont hesitate 
    :caption: Mapping Tools
 
    /mapping/info-dump
+
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Plugins
+
+   /plugins/index
