@@ -33,7 +33,7 @@ You can declare asset literals with a $ symbol
 
   asset m = $"path/to/my/model.mdl"
 
-You can convert strings to assets with the ``StringToAsset``method added by Northstar.
+You can convert strings to assets with the ``StringToAsset`` method added by Northstar.
 
 .. code-block:: javascript
 
@@ -337,11 +337,13 @@ Functionrefs
 
 You can declare a function as a variable, this is especially useful in function arguments.
 
-You declare a functionref with the return type, the ``functionref`` key word , and the variable name.
+You declare a functionref with the return type, the ``functionref`` key word, the arugment types and the variable name.
+
+That variable will be of type ``functionref``
 
 .. code-block:: javascript
 
-  void functionref(string) p = void function(string str){ /* your code could be here */}
+  void functionref(string) MyReference = void function(string str){ /* your code could be here */}
 
 
 You can then just call the fucntion by its functionref name.
@@ -349,7 +351,7 @@ You can then just call the fucntion by its functionref name.
 .. code-block:: javascript
 
   void CallFunction(void functionref(string) func ){
-    func()
+    func("hello")
   }
 
 ornull
