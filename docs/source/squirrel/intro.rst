@@ -90,6 +90,23 @@ Built-in functions to cast a boolean:
 
     returns ``1.0`` or ``0.0``
 
+Variables
+----
+
+Variables that can represent any type (complex or primitive) can be initialized with the keyword ``var``
+
+There are no build-in function to cast to var.
+
+.. code-block:: javascript
+
+    var anyValue = "String"
+    var two = 2
+
+Alternatively, you can use the ``local`` keyword from vanilla squirrel, allthough this is highly discouraged it acts the same.
+
+
+Easy casting
+------------
 
 For all previous types you can also cast them by using the ``type( variable )`` notation:
 
@@ -97,18 +114,13 @@ For all previous types you can also cast them by using the ``type( variable )`` 
 
     int number = int ( "5" ) 
 
-Variables
-----
-
-Variables that can represent any type (complex or primitive) can be initialized with the keyword ``var``
-
-There are no built-in functions for ``var``.
-To convert a type to other types you can use the ``expect`` keyword.
+To convert a ``var`` to other types you need use the ``expect`` keyword:
 
 .. code-block:: javascript
 
     var numberVar = 2
     int numberInt = expect int(numberVar)
+
 
 Global variables and functions
 -------
