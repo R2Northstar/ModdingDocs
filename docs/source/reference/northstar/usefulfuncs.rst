@@ -229,7 +229,7 @@ Threaded conditonals
 .. cpp:function:: var function WaittillPlayDeployAnims( ref )
 
 
-Shitpost functions
+Random functions
 ------------------
 
 .. cpp:function:: bool function IsPlayerMalePilot( entity player )
