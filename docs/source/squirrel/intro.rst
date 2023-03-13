@@ -19,12 +19,14 @@ They can be assigned expressions
 
     number = 5 + 10 - 5
 
-Alternatively you can also write the number in HEX code or as a single ASCII character with ''
+Alternatively you can also write the number in HEX code or as a single ASCII character with ``''``
 
 .. code-block:: javascript
 
     number = 'c' // IS VALID
     number = "c" // NOT VALID
+
+A list of all the ASCII values can be found `here <https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange#ASCII-Tabelle>`_  
 
 Built-in functions to cast integers to other types:
 
