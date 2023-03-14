@@ -11,6 +11,7 @@ Northstar API
     /reference/northstar/serversiderui
     /reference/northstar/httprequests
     /reference/northstar/usefulfuncs
+    /reference/northstar/serverdialog
 
 Respawn API
 ===========
