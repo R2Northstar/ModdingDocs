@@ -125,6 +125,7 @@ To read a value from a table you use the array syntax but instead of an index yo
 To check if the table has a certain key, you can use the "in" keyword:
 
 .. code-block:: javascript
+    
     table<string, int> playerNames = {}
     if( "key" in playerNames ) 
     {
