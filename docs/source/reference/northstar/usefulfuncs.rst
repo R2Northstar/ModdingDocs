@@ -312,7 +312,7 @@ Arrays
 
         .. cpp:function:: int function SortStringAsset( asset a, asset b )
 
-    .. cpp:function:: int function SortBySpawnTime( entity a, entity b )
+        .. cpp:function:: int function SortBySpawnTime( entity a, entity b )
     
     Functions for score comparison
 
