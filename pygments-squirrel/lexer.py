@@ -1,16 +1,16 @@
-from pygments.lexer import RegexLexer, words, include, default, bygroups, using, this
+from pygments.lexer import RegexLexer, bygroups, default, include, this, using, words
 from pygments.token import (
-    Text,
+    Comment,
     Generic,
     Keyword,
-    String,
     Name,
-    Comment,
     Number,
     Operator,
     Punctuation,
-    Whitespace,
+    String,
+    Text,
     Token,
+    Whitespace,
 )
 
 # test: py -m pygments -v -x -f html -O full,debug_token_types -l pygments-squirrel/lexer.py:SquirrelLexer sq.gnut > test.html; start test.html
@@ -72,13 +72,18 @@ class SquirrelLexer(RegexLexer):
                 "arguments",
             ),
             include("type"),
-            (r"(?<=\w)(\.\w+)", Name.Attribute),
+            (r"(?<=\w)(\.)(\w+)", bygroups(Punctuation, Name.Attribute)),
+            (
+                r"(?<=\w)(\.)(\w+)(=)",
+                bygroups(Punctuation, Name.Attribute, Punctuation),
+            ),
             (
                 r"([a-zA-Z_]\w*)(\s*)(=)",
                 bygroups(Name.Variable, Whitespace, Punctuation),
             ),
             include("values"),
             (r"[a-zA-Z_.]\w*", Name.Variable),
+            (r"[\{\}\(\)]", Punctuation),
         ],
         "funcname": [
             (r"[a-zA-Z_]\w*", Name.Function),
@@ -87,17 +92,12 @@ class SquirrelLexer(RegexLexer):
         ],
         "sig": [
             (
-                r"(?<=[,(])(\s*?)(?=[a-zA-Z_]\w*\s*?[,)])",
-                # only one type, not type space name (note: what did i mean?)
-                bygroups(Whitespace),
-                "typeb",
-            ),
-            (
                 r"([a-zA-Z_]\w*)(\s*?)(?=[,)])",
                 bygroups(Name.Variable, Whitespace),
             ),
             (r",", Punctuation),
             (r"=", Punctuation, "value"),
+            include("operators"),
             (r"[)]", Punctuation, "#pop"),
             include("typed_name"),
         ],
@@ -111,7 +111,7 @@ class SquirrelLexer(RegexLexer):
         ],
         "typed_name": [
             include("type"),
-            (r"[a-zA-Z_]\w*", Generic.Error),
+            (r"[a-zA-Z_]\w*", Name.Variable),
         ],
         "type": [
             (
@@ -139,9 +139,10 @@ class SquirrelLexer(RegexLexer):
             (r"(,)", Punctuation),  # end of argument
             (r"\[", Punctuation, "array"),
             (r"{", Punctuation, "structure"),
+            (r"[a-zA-Z_]\w*", Name.Variable),
+            include("funcname"),
             include("operators"),
             include("values"),
-            # (r"[a-zA-Z_]\w*", Name.Variable),
             include("namedargs"),
         ],
         "namedargs": [(r"(\w+?)(=)", bygroups(Name.Variable, Punctuation))],
@@ -164,7 +165,7 @@ class SquirrelLexer(RegexLexer):
         ],
         "comment_multiline": [
             (r"[^*/]", Comment.Multiline),
-            (r"/\*", Comment.Multiline, "#push"),
+            (r"/\*", Comment.Multiline),
             (r"\*/", Comment.Multiline, "#pop"),
             (r"[*/]", Comment.Multiline),
         ],
