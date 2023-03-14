@@ -9,6 +9,15 @@ Note that the Northstar name (``Northstar.Xyz``) is reserved for mods that come 
 
 It is recommended to upload the source code of your mod to a public repository like `Github <https://github.com/>`_ to give your users a place to suggest changes and leave feedback in an organised manner.
 
+If the changes your mod makes can be represented in screenshots, gameplay recordings, or GIFs, consider adding those to your README. This way anyone coming across your mod can tell which aspects of the game it changes even before installing it.
+
+To do so, simply upload the image or gif to a host of your choice (Imgur, GitHub, and even Discord all work). To display the image directly on your page in Thunderstore, add the following line to your README:
+
+.. code:: markdown
+
+    ![alt text, this text shows up when image cannot be loaded](https://example.com/image/to/link/to.gif)
+
+
 Thunderstore
 ------------
 
@@ -43,3 +52,10 @@ After you have set up the folder structure, head to `https://northstar.thunderst
 When uploading, it will verify your package structure and you can publish after it's successfully checked.
 
 To update a mod, change the version in ``mod.json`` and ``manifest.json``, and upload again. If the mod name is the same, it will update the previous version.
+
+Github Workflows
+----------------
+
+If you want to create a Github repository for your mod, you can use a `template <https://github.com/GreenTF/NSModTemplate>`_ that automatically packages and uploads your mod to Thunderstore when you create a Github release of your mod.
+
+Github only supports files smaller than 100mb without using `git-lfs <https://git-lfs.github.com/>`_. Using git-lfs isn't recommended. Instead you should use scripts that split your assets like in this `template <https://github.com/uniboi/NSModTemplate>`_
