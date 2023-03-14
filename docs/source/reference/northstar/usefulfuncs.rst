@@ -293,8 +293,9 @@ Arrays
 
 .. cpp:function:: array.sort( compare_func = null )
 
-.. note::
-    
+
+.. dropdown:: Test
+    :open:
 
     Array Sort Functions: 
     
@@ -349,7 +350,7 @@ Arrays
     .. cpp:function:: int function CompareTitanKills( entity a, entity b )
 
 
-    
+
 .. cpp:function:: array.reverse()
     
     reverse the array in place
