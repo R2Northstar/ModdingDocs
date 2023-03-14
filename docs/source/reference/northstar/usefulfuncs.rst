@@ -295,7 +295,7 @@ Arrays
 
 .. note::
 
-    A few build-in functions you can give as arguments to sort an array.
+    A few built-in functions you can give as arguments to sort an array.
 
     .. dropdown:: Array Sort Functions
 
