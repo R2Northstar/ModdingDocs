@@ -313,6 +313,41 @@ Arrays
     .. cpp:function:: int function SortStringAsset( asset a, asset b )
 
     .. cpp:function:: int function SortBySpawnTime( entity a, entity b )
+    
+    Functions for score comparisont
+
+    .. cpp:function:: int function CompareKills( entity a, entity b )
+
+    .. cpp:function:: int function CompareAssaultScore( entity a, entity b )
+
+    .. cpp:function:: int function CompareScore( entity a, entity b )
+    
+    .. cpp:function:: int function CompareAssault( entity a, entity b )
+    
+    .. cpp:function:: int function CompareDefense( entity a, entity b )
+
+    .. cpp:function:: int function CompareLTS( entity a, entity b )
+
+    .. cpp:function:: int function CompareCP( entity a, entity b )
+
+    .. cpp:function:: int function CompareCTF( entity a, entity b )
+
+    .. cpp:function:: int function CompareSpeedball( entity a, entity b )
+
+    .. cpp:function:: int function CompareMFD( entity a, entity b )
+
+    .. cpp:function:: int function CompareScavenger( entity a, entity b )
+
+    .. cpp:function:: int function CompareFW( entity a, entity b )
+
+    .. cpp:function:: int function CompareHunter( entity a, entity b )
+
+    .. cpp:function:: int function CompareATCOOP( entity a, entity b )
+
+    .. cpp:function:: int function CompareFD( entity a, entity b )
+
+    .. cpp:function:: int function CompareTitanKills( entity a, entity b )
+
 
     
 .. cpp:function:: array.reverse()
