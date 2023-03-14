@@ -295,10 +295,9 @@ Arrays
 
 .. note::
 
-    .. dropdown:: Array Sort Functions
-        :open:
+    A few build in functions you can give as arguments to sort an array.
 
-        A few build in functions you can give as arguments to sort a function.
+    .. dropdown:: Array Sort Functions
 
         .. cpp:function:: int function SortLowest( var a, var b )
 
