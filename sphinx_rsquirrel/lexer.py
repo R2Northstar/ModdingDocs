@@ -13,7 +13,7 @@ from pygments.token import (
     Whitespace,
 )
 
-# test: py -m pygments -v -x -f html -O full,debug_token_types -l pygments-squirrel/lexer.py:SquirrelLexer sq.gnut > test.html; start test.html
+# test: hwatch -t -N --no-help-banner -c py -m pygments -x -O"full,debug_token_types" -l .\pygments-squirrel\lexer.py:SquirrelLexer test.gnut
 
 
 class SquirrelLexer(RegexLexer):

@@ -1,1 +1,0 @@
-py -m pygments -x -f html -O full,debug_token_types -l pygments-squirrel/lexer.py:SquirrelLexer sq.gnut > test.html; start test.html
