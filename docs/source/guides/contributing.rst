@@ -7,7 +7,7 @@ All contributions to ModdingDocs are welcome.
 
 Including:
 
-- Issues with your knowledge or info dumps.
+- GitHub Issues containing any knowledge you want to share
 - Pull Requests with changes to the docs, even small ones
   
 **What do I need to know to contribute?**
