@@ -13,7 +13,8 @@ from pygments.token import (
     Whitespace,
 )
 
-# test: hwatch -t -N --no-help-banner -c py -m pygments -x -O"full,debug_token_types" -l .\pygments-squirrel\lexer.py:SquirrelLexer test.gnut
+# test: hwatch -t -N --no-help-banner -c py -m pygments -x -O"full,debug_token_types" -l .\sphinx_rsquirrel\lexer.py:SquirrelLexer test.gnut
+# py -m pygments -v -f html -x -O"full,debug_token_types" -l .\sphinx_rsquirrel\lexer.py:SquirrelLexer test.gnut
 
 
 class SquirrelLexer(RegexLexer):
@@ -45,7 +46,7 @@ class SquirrelLexer(RegexLexer):
     tokens = {
         "values": [
             (r"[^\S\n]+", Whitespace),
-            (r"(\"(\\.|.)*?[\"\n])", String),
+            (r"(\$?\"(\\.|.)*?[\"\n])", String),
             (r"-?([0-9]+(([.]([0-9]+)?)(e[-]?[0-9]+)?))", Number.Float),
             (r"(0x[0-9a-fA-F]+|0[0-7]+|-?[0-9]+|'[a-f]')", Number.Integer),
             include("constants"),
@@ -83,7 +84,7 @@ class SquirrelLexer(RegexLexer):
             ),
             include("values"),
             (r"[a-zA-Z_.]\w*", Name.Variable),
-            (r"[\{\}\(\)]", Punctuation),
+            (r"[\{\}\(\)\[\]]", Punctuation),
         ],
         "funcname": [
             (r"[a-zA-Z_]\w*", Name.Function),
@@ -95,6 +96,7 @@ class SquirrelLexer(RegexLexer):
                 r"([a-zA-Z_]\w*)(\s*?)(?=[,)])",
                 bygroups(Name.Variable, Whitespace),
             ),
+            (r"[\[<]", Generic.Error, "array"),
             (r",", Punctuation),
             (r"=", Punctuation, "value"),
             include("operators"),
@@ -137,7 +139,7 @@ class SquirrelLexer(RegexLexer):
         "arguments": [
             (r"\)", Punctuation, "#pop"),  # end of arguments
             (r"(,)", Punctuation),  # end of argument
-            (r"\[", Punctuation, "array"),
+            (r"[\[<]", Punctuation, "array"),
             (r"{", Punctuation, "structure"),
             (r"[a-zA-Z_]\w*", Name.Variable),
             include("funcname"),
@@ -149,15 +151,16 @@ class SquirrelLexer(RegexLexer):
         "structure": [
             (r"}", Punctuation, "#pop"),  # end of structure
             (r"(,)( )", bygroups(Punctuation, Whitespace)),  # end of member
-            (r"\[", Punctuation, "array"),
+            (r"[\[<]", Punctuation, "array"),
             include("namedargs"),
             (r"\.\.\.", Punctuation),
         ],
         "array": [
-            (r"\]", Punctuation, "#pop"),
-            (r"(,)( )", bygroups(Punctuation, Whitespace)),  # end of member
+            (r"[\]>]", Punctuation, "#pop"),
+            (r"(,)( ?)", bygroups(Punctuation, Whitespace)),  # end of member
             (r" ", Whitespace),  # end of member
             (r"/\*.+?\*/", Comment),
+            include("values"),
         ],
         "comments": [
             (r"(//.*?$)", Comment.Single),
@@ -174,6 +177,9 @@ class SquirrelLexer(RegexLexer):
             (
                 words(
                     (
+                        "=",
+                        ";",
+                        ":",
                         "!",
                         "!=",
                         "||",
@@ -181,7 +187,8 @@ class SquirrelLexer(RegexLexer):
                         "&&",
                         "<=",
                         "=>",
-                        "> ",
+                        ">",
+                        "<",
                         "+",
                         "+=",
                         "-",
@@ -189,14 +196,14 @@ class SquirrelLexer(RegexLexer):
                         "/",
                         "/=",
                         "*",
-                        "*= ",
+                        "*=",
                         "%",
                         "%=",
                         "++",
                         "--",
                         "<-",
                         "&",
-                        "^ ",
+                        "^",
                         "|",
                         "~",
                         ">>",
