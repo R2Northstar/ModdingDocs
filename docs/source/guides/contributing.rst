@@ -1,6 +1,8 @@
 Contributing to ModdingDocs
 ===========================
 
+TEST
+
 All contributions to ModdingDocs are welcome. To add a change simply make a pull request to the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_.
 
 ModdingDocs uses `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredText>`_.
