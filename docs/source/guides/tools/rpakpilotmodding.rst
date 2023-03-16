@@ -198,10 +198,10 @@ Select ``Compile``
 Click on the Browse button next to ``QC input`` then locate and select your modified model.
 Next, Click on the Browse button next to ``Output to`` then choose a location to output the model to.
 
-Making a Pak file
+Making an RPak file
 ^^^^^
 
-Follow this `tutorial <https://r2northstar.readthedocs.io/en/latest/guides/rpakmodding.html>`_ to create a pak file
+Follow this `tutorial <https://r2northstar.readthedocs.io/en/latest/guides/rpakmodding.html>`_ to create a RPak file
 
 Making changes to the qc file (Optional)
 ^^^^^
@@ -231,7 +231,7 @@ Create a folder that matches the below file structure
     |   └──models
     |       └──humans
     |           └──pilots
-    |               └──customModel
+    |               └──customModel.mdl
     ├──paks
     |   ├──rpak.json
     |   ├──example.rpak
