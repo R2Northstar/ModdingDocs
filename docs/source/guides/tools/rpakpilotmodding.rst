@@ -235,7 +235,6 @@ Create a folder that matches the below file structure
     ├──paks
     |   ├──rpak.json
     |   ├──example.rpak
-    |   └──preloadexample.rpak
     └──mod.json
 
 Credits: 
