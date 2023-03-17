@@ -58,7 +58,8 @@ Add one button to the given struct, the text is localised. The callback function
             NSSendServerDialog(player, dialog)
     }
 
-**Example**
+Code example
+------------
 
 the folowing code produces this output: 
 
