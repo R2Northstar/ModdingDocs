@@ -37,10 +37,6 @@ Send a dialog to a player with only the given message as data.
             NSSendMessageServerDialog( player, "Hello There" )
     }
 
-.. figure:: /_static/serverdialog/messageexample.png
-  :align: center
-  :class: screenshot
-
 **Definition:**
 
 .. cpp:function:: void NSAddDialogButton( ServerDialogData dialog, string text, void functionref( entity ) callback )
@@ -62,7 +58,23 @@ Add one button to the given struct, the text is localised. The callback function
             NSSendServerDialog(player, dialog)
     }
 
-.. figure:: /_static/serverdialog/buttonexample.png
+**Example**
+
+the folowing code produces this output: 
+
+.. code-block::
+
+    ServerDialogData dialog
+    dialog.header = "This is the header"
+    dialog.message = "this is the body, it is green \n \n Hello There \n \n General Kenobi"
+    dialog.messageColor = [0,200,0,100]
+    dialog.showSpinner = true
+    dialog.showPCBackButton = true
+    AddDialogButton( dialog, "Button 1 %%$r2_ui/menus/loadout_icons/primary_weapon/primary_kraber%%", ButtonImcPressed )
+    SendServerDialog( player, dialog )
+
+
+.. figure:: /_static/serverdialog/dialogexample.png
   :align: center
   :class: screenshot
 
