@@ -13,13 +13,9 @@ it has some parts of northstar combied with custom stuff.
 
 plugins with rust
 ^^^^^^^^^^^^^^^^^
-altought rust isn't used by northstar or titanfall,
-it is arguably the best language for plugins because of `rrplug <https://github.com/catornot/rrplug>`__
+Although Rust isn't used by Northstar or Titanfall, it can easily be used for plugins thanks to `rrplug <https://github.com/catornot/rrplug>`__
 
 a good example of a rust plugin with rrplug is `furnace <https://github.com/catornot/furnace>`_
-
-..
-    this wasn't biased at all. trust me
 
 what a plugin dll needs?
 ^^^^^^^^^^^^^^^^^^^^^^^^
