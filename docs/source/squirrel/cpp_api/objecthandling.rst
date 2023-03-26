@@ -9,8 +9,7 @@ Object creation and handling
 
 .. note::
 
-    Some descriptions are taken from the `Squirrel Documentation<
-    http://www.squirrel-lang.org/mainsite/squirreldoc/reference/api_reference.html>`_
+    Some descriptions are taken from the `Squirrel Documentation<http://www.squirrel-lang.org/mainsite/squirreldoc/reference/api_reference.html>`_
 
 .. cpp:class:: SquirrelManagerBase
 
