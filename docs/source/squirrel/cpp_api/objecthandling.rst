@@ -154,6 +154,7 @@ Getting Objects from the stack
 .. _getConstants:
 
 .. cpp:function:: SQTable* getConstants(HSquirrelVM* sqvm)
+
     :param HSquirrelVM* sqvm: the target vm
     :returns: the table of constants
 
@@ -177,6 +178,11 @@ Stack info
 .. _sq_getfunction:
 
 .. cpp:function:: int sq_getfunction(HSquirrelVM* sqvm, const SQChar* name, SQObject* returnObj, const SQChar* signature)
+
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQChar* name: the function name to search for
+    :param SQObject* returnObj:
+    :param SQChar* signature:
 
     returns ``0`` if the function was found.
 
@@ -279,6 +285,8 @@ Stack manipulation
 .. _removefromstack:
 
 .. cpp:function:: __int64 removeFromStack(HSquirrelVM* sqvm)
+
+    :param HSquirrelVM* sqvm: the target vm
 
     pops the topmost item of the stack.
 
