@@ -82,29 +82,60 @@ Getting Objects from the stack
 
 .. cpp:function:: SQBool getbool(HSquirrelVM* sqvm, const SQInteger stackpos)
 
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQInteger stackpos: stack position of the object
+    :returns: The value of the object
+
 .. _getinteger:
 
 .. cpp:function:: SQInteger getinteger(HSquirrelVM* sqvm, const SQInteger stackpos)
+
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQInteger stackpos: stack position of the object
+    :returns: The value of the object
+
 
 .. _getfloat:
 
 .. cpp:function:: SQFloat getfloat(HSquirrelVM* sqvm, const SQInteger stackpos)
 
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQInteger stackpos: stack position of the object
+    :returns: The value of the object
+
+
 .. _getstring:
 
 .. cpp:function:: SQChar* getstring(HSquirrelVM* sqvm, const SQInteger stackpos)
+
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQInteger stackpos: stack position of the object
+    :returns: The value of the object
+
 
 .. _getvector:
 
 .. cpp:function:: Vector3 getvector(HSquirrelVM* sqvm, const SQInteger stackpos)
 
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQInteger stackpos: stack position of the object
+    :returns: The value of the object
+
+
 .. _getasset:
 
 .. cpp:function:: SQChar* getasset(HSquirrelVM* sqvm, const SQInteger stackpos)
 
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQInteger stackpos: stack position of the object
+    :returns: The value of the object
+
+
 .. _getConstants:
 
 .. cpp:function:: SQTable* getConstants(HSquirrelVM* sqvm)
+    :param HSquirrelVM* sqvm: the target vm
+    :returns: the table of constants
 
     Pushes the constants table to the stack.
 
@@ -151,7 +182,9 @@ Arrays
 
 .. cpp:function:: SQRESULT newarray(HSquirrelVM* sqvm, const SQInteger size = 0)
 
+.. _arrayappend:
 
+.. cpp:function:: SQRESULT arrayappend(HSquirrelVM* sqvm, const SQInteger stackpos)
 
 Tables
 ~~~~~~
