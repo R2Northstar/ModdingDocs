@@ -30,11 +30,29 @@ Return a string from a native registered function:
         return SQRESULT_NOTNULL; // Signal that the topmost item on the stack is returned by this function
     }
 
+.. code-block:: cpp
+
+    ADD_SQFUNC("array ornull", CPlugComplex, "int n", "returns null", ScriptContext::CLIENT | ScriptContext::SERVER | ScriptContext::UI)
+    {
+        SQInteger n = g_pSquirrel<context>->getinteger(sqvm, 1);
+
+        if (n == 0)
+            return SQRESULT_NULL;
+
+        g_pSquirrel<context>->newarray(sqvm, 0);
+        g_pSquirrel<context>->pushinteger(sqvm, n);
+        g_pSquirrel<context>->arrayappend(sqvm, 2);
+        g_pSquirrel<context>->pushinteger(sqvm, n * 2);
+        g_pSquirrel<context>->arrayappend(sqvm, 2);
+
+        return SQRESULT_NOTNULL; // return the array [ n, n * 2 ]
+    }
+
 Return a complex ``ornull`` type:
 
 .. code-block:: cpp
 
-    ADD_SQFUNC("ornull int", CPlugComplex, "int n", "returns null", ScriptContext::CLIENT | ScriptContext::UI)
+    ADD_SQFUNC("ornull int", CPlugComplex, "int n", "returns null", ScriptContext::CLIENT | ScriptContext::SERVER | ScriptContext::UI)
     {
         SQInteger n = g_pSquirrel<context>->getinteger(sqvm, 1);
         
