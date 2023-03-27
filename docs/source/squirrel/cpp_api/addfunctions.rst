@@ -10,7 +10,7 @@ Inside the macro you have access to the Squirrel Manager of the context the func
 
 .. cpp:function:: macro ADD_SQFUNC(return_type, funcName, argTypes, helpText, runOnContext)
 
-    :param return_type: the squirrel return type the compiler expects from this function
+    :param return_type: The squirrel return type the compiler expects from this function
     :param funcName: The squirrel function name
     :param argTypes: The args with types the compiler expects
     :param helpText: A help text describing the function
@@ -70,6 +70,27 @@ Return a complex ``ornull`` type:
 
 Replacing Squirrel Functions
 ----------------------------
+
+You can use the ``REPLACE_SQFUNC`` macro to replace an existing sq function.
+
+.. cpp:function:: macro REPLACE_SQFUNC(funcName, runOnContext)
+
+    :param funcName: The name of the function to replace
+    :param runOnContext: The contexts that have access to this function
+
+It's also possible to add an override directly with the ``AddFuncOverride`` funciton of the ``SquirrelManager`` class.
+
+.. cpp_function:: void AddFuncOverride(std::string name, SQFunction func)
+
+    :param std::string name: The name of the function to override
+    :param SQFunc func: A function object that replaces the logic
+
+.. code-block:: cpp
+
+    // Replaces dangerous vanilla functions to only log their call with no further logic.
+	g_pSquirrel<context>->AddFuncOverride("DevTextBufferWrite", SQ_StubbedFunc<context, "DevTextBufferWrite">);
+	g_pSquirrel<context>->AddFuncOverride("DevTextBufferClear", SQ_StubbedFunc<context, "DevTextBufferClear">);
+	g_pSquirrel<context>->AddFuncOverride("DevTextBufferDumpToFile", SQ_StubbedFunc<context, "DevTextBufferDumpToFile">);
 
 Script Contexts
 ---------------
