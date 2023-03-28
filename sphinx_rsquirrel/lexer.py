@@ -103,6 +103,7 @@ class SquirrelLexer(RegexLexer):
             (r"[\[<]", Generic.Error, "array"),
             (r",", Punctuation),
             (r"=", Punctuation, "value"),
+            (r"\.\.\.", Keyword.Pseudo),
             include("operators"),
             (r"[)]", Punctuation, "#pop"),
             include("typed_name"),
@@ -238,7 +239,11 @@ class SquirrelLexer(RegexLexer):
         "constants": [
             (
                 words(
-                    ("true", "false", "null", "..."),
+                    (
+                        "true",
+                        "false",
+                        "null",
+                    ),
                     suffix=r"\b",
                 ),
                 Keyword.Constant,

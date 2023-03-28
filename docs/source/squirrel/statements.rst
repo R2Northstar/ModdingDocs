@@ -81,7 +81,7 @@ The Syntax is as follows: ``for( int counter; condition; behaviour_after_body_ex
   {
     print( arr[i] )
   }
-
+  
 Foreach Loop
 ~~~~~~~~~~~~
 
