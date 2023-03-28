@@ -42,6 +42,7 @@ class SquirrelLexer(RegexLexer):
         "const",
         "static",
         "local",
+        "typedef",
     ]
     tokens = {
         "values": [
@@ -63,10 +64,12 @@ class SquirrelLexer(RegexLexer):
         "statement": [
             (r"#.*", Comment.Preproc),
             (r"(function)(\s+)", bygroups(Keyword, Whitespace), "funcname"),
-            (r"(class)(\s+)", bygroups(Keyword, Whitespace), "classname"),
+            (
+                r"(class)(\s+)([a-zA-Z_]\w*)",
+                bygroups(Keyword, Whitespace, Name.Class),
+            ),
+            (r"(struct|enum)( ?)(\{)", bygroups(Name.Class, Whitespace, Punctuation)),
             include("declarations"),
-            (r"struct", Name.Class),
-            (r"enum", Name.Class),
             (
                 r"(\.?)([a-zA-Z_]\w*)(\s*?)(\()",
                 bygroups(Punctuation, Name.Function, Whitespace, Punctuation),
@@ -83,6 +86,7 @@ class SquirrelLexer(RegexLexer):
                 bygroups(Name.Variable, Whitespace, Punctuation),
             ),
             include("values"),
+            include("tableaccess"),
             (r"[a-zA-Z_.]\w*", Name.Variable),
             (r"[\{\}\(\)\[\]]", Punctuation),
         ],
@@ -105,6 +109,7 @@ class SquirrelLexer(RegexLexer):
         ],
         "itype": [
             (r"[>]", Punctuation, "#pop"),
+            include("tableaccess"),
             include("typed_name"),
         ],
         "typeb": [
@@ -123,6 +128,8 @@ class SquirrelLexer(RegexLexer):
             ),
             (words(_keyword_types, suffix=r"\b"), Keyword.Type),
             (words(_builtin_names, suffix=r"\b"), Name.Builtin),
+            include("constants"),
+            (r"ornull", Keyword.Type),
             (
                 r"(\s*?)(functionref)(\()",
                 bygroups(Whitespace, Name.Builtin.Type, Punctuation),
@@ -131,7 +138,6 @@ class SquirrelLexer(RegexLexer):
             (",", Punctuation),
             include("whitespace"),
         ],
-        "classname": [(r"[a-zA-Z_]\w*", Name.Class, "#pop")],
         "whitespace": [
             (r"\n", Whitespace),
             (r"[^\S\n]+", Whitespace),
@@ -139,6 +145,7 @@ class SquirrelLexer(RegexLexer):
         "arguments": [
             (r"\)", Punctuation, "#pop"),  # end of arguments
             (r"(,)", Punctuation),  # end of argument
+            include("tableaccess"),
             (r"[\[<]", Punctuation, "array"),
             (r"{", Punctuation, "structure"),
             (r"[a-zA-Z_]\w*", Name.Variable),
@@ -152,11 +159,20 @@ class SquirrelLexer(RegexLexer):
             (r"}", Punctuation, "#pop"),  # end of structure
             (r"(,)( )", bygroups(Punctuation, Whitespace)),  # end of member
             (r"[\[<]", Punctuation, "array"),
+            include("constants"),
             include("namedargs"),
-            (r"\.\.\.", Punctuation),
+        ],
+        "tableaccess": [
+            (r"(\w+)(\[)", bygroups(Name.Variable, Punctuation), "tablekey"),
+        ],
+        "tablekey": [
+            (r"\]", Punctuation, "#pop"),  # end of structure
+            include("values"),
+            (r"[a-zA-Z_]\w*", Name.Variable),
         ],
         "array": [
             (r"[\]>]", Punctuation, "#pop"),
+            include("tableaccess"),
             (r"(,)( ?)", bygroups(Punctuation, Whitespace)),  # end of member
             (r" ", Whitespace),  # end of member
             (r"/\*.+?\*/", Comment),
@@ -180,6 +196,7 @@ class SquirrelLexer(RegexLexer):
                         "=",
                         ";",
                         ":",
+                        "?",
                         "!",
                         "!=",
                         "||",
@@ -221,11 +238,7 @@ class SquirrelLexer(RegexLexer):
         "constants": [
             (
                 words(
-                    (
-                        "true",
-                        "false",
-                        "null",
-                    ),
+                    ("true", "false", "null", "..."),
                     suffix=r"\b",
                 ),
                 Keyword.Constant,
