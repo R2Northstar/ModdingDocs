@@ -10,5 +10,5 @@ All functions and macros documented are defined and used in the Northstar Client
     :maxdepth: 2
 
     /squirrel/cpp_api/objecthandling
-    /squirrel/cpp_api/objectmanipulations
+    /squirrel/cpp_api/objectmanipulation
     /squirrel/cpp_api/addfunctions
