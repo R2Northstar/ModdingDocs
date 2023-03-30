@@ -107,7 +107,7 @@ Examples
 Settings Declaration
 ^^^^
 
-.. code-block:: javascript
+.. code-block::
 
   AddModTitle( "#MY_LOCALIZED_MOD_TITLE" )
   
