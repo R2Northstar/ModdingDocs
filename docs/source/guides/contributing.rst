@@ -1,11 +1,20 @@
 Contributing to ModdingDocs
 ===========================
 
-All contributions to ModdingDocs are welcome. To add a change simply make a pull request to the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_.
+**How can I contribute?**
+
+All contributions to ModdingDocs are welcome. 
+
+Including:
+
+- GitHub Issues containing any knowledge you want to share
+- Pull Requests with changes to the docs, even small ones
+  
+**What do I need to know to contribute?**
 
 ModdingDocs uses `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredText>`_.
 
-A cheatsheet for reStructuredText syntax can be found here: https://docs.generic-mapping-tools.org/6.2/rst-cheatsheet.html
+Cheatsheet for reStructuredText syntax: https://docs.generic-mapping-tools.org/6.2/rst-cheatsheet.html.
 
 The ``.rst`` files can be found in the ``docs/source`` directory. If you're adding a new file, make sure to link it in ``index.rst``
 
@@ -25,20 +34,23 @@ Building locally
 
 You need to have a relatively recent version of Python installed - 3.8 or higher. `Download here <https://www.python.org/downloads/>`_
 
+.. tab-set::
 
-.. tabs::
+    .. tab-item:: Windows
 
-    .. code-tab:: powershell Windows
+        .. code-block:: powershell
 
-        git clone https://github.com/R2Northstar/ModdingDocs/
-        cd ModdingDocs
-        ./run.ps1
+            git clone https://github.com/R2Northstar/ModdingDocs/
+            cd ModdingDocs
+            ./run.ps1
     
-    .. code-tab:: bash Linux
+    .. tab-item:: Linux
 
-        git clone https://github.com/R2Northstar/ModdingDocs/
-        cd ModdingDocs
-        ./run.sh
+        .. code-block:: bash
+
+            git clone https://github.com/R2Northstar/ModdingDocs/
+            cd ModdingDocs
+            ./run.sh
 
 .. warning::
     On Windows, if you are not able to run the script by running `./run.ps1`, try running it with: `powershell.exe -ExecutionPolicy Bypass -File .\run.ps1`

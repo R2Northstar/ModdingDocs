@@ -18,9 +18,10 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
-    "sphinx_tabs.tabs",
+    "sphinx_design",
     "sphinxcontrib.youtube",
     "sphinx_copybutton",
+    "sphinx_rsquirrel",
 ]
 
 intersphinx_mapping = {
@@ -58,3 +59,5 @@ html_theme_options = {
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
+
+highlight_language = "squirrel"
