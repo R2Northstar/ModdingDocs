@@ -14,7 +14,7 @@ Shows the given player the dialog with the data from the struct.
 
 **Example:**
 
-.. code-block:: javascript
+.. code-block::
 
     ServerDialogData dialog
     dialog.message = "Hello there"
