@@ -1,17 +1,17 @@
-Object creation and handling
-============================
-
 .. warning::
 
     Parameters or descriptions may be wrong or incomplete
 
-    This list is incomplete and only lists methods available in ``squirrel.h`` in the Launcher.
-
-.. note::
+    This list is incomplete and only lists methods available in `squirrel.h <https://github.com/R2Northstar/NorthstarLauncher/blob/main/NorthstarDLL/squirrel/squirrel.h>`_.
 
     Some descriptions are taken from the `Squirrel Documentation <http://www.squirrel-lang.org/mainsite/squirreldoc/reference/api_reference.html>`_
 
-.. cpp:class:: SquirrelManagerBase
+Object creation and handling
+============================
+
+.. cpp:class:: SquirrelManager
+
+    You can access all sq functions only with a ``SquirrelManager`` instance. You have one available inside the ``ADD_SQFUNC`` macro.
 
 Pushing Objects to the stack
 ----------------------------
@@ -21,16 +21,16 @@ Pushing Objects to the stack
 .. cpp:function:: void pushbool(HSquirrelVM* sqvm, const SQBool bVal)
 
     :param HSquirrelVM* sqvm: the target VM
-    :param SQInteger bVal: the bool that has to be pushed
+    :param SQInteger bVal: the bool that will be pushed
 
-    pushes a bool to the stack
+    pushes a boolean to the stack
 
 .. _pushinteger:
 
 .. cpp:function:: void pushinteger(HSquirrelVM* sqvm, const SQInteger iVal)
 
     :param HSquirrelVM* sqvm: the target VM
-    :param SQInteger iVal: the integer that has to be pushed
+    :param SQInteger iVal: the integer that will be pushed
 
     pushes an integer to the stack
 
@@ -39,7 +39,7 @@ Pushing Objects to the stack
 .. cpp:function:: void pushfloat(HSquirrelVM* sqvm, const SQFloat fVal)
 
     :param HSquirrelVM* sqvm: the target VM
-    :param SQInteger fVal: the float that has to be pushed
+    :param SQInteger fVal: the float that will be pushed
 
     pushes a float to the stack
 
@@ -48,7 +48,7 @@ Pushing Objects to the stack
 .. cpp:function:: void pushstring(HSquirrelVM* sqvm, const SQChar* sVal, int length = -1)
 
     :param HSquirrelVM* sqvm: the target VM
-    :param SQChar* sVal: pointer to the string that has to be pushed
+    :param SQChar* sVal: the string that will be pushed
     :param int len: length of the string ``sVal``
     :remarks: if the parameter length is less than 0 the VM will calculate the length using ``strlen``
 
@@ -59,7 +59,7 @@ Pushing Objects to the stack
 .. cpp:function:: void pushasset(HSquirrelVM* sqvm, const SQChar* sVal, int length = -1)
 
     :param HSquirrelVM* sqvm: the target VM
-    :param SQChar* sVal: pointer to the string that has to be pushed
+    :param SQChar* sVal: the string that will be pushed
     :param int len: length of the string ``sVal``
     :remarks: if the parameter length is less than 0 the VM will calculate the length using ``strlen``
 
@@ -70,7 +70,7 @@ Pushing Objects to the stack
 .. cpp:function:: void pushvector(HSquirrelVM* sqvm, const Vector3 vVal)
 
     :param HSquirrelVM* sqvm: the target VM
-    :param Vector3 vVal: vector that has to be pushed
+    :param Vector3 vVal: the vector that will be pushed
 
     pushes a vector to the stack
 
@@ -79,7 +79,7 @@ Pushing Objects to the stack
 .. cpp:function:: void pushobject(HSquirrelVM* sqvm, SQObject obj)
 
     :param HSquirrelVM* sqvm: the target VM
-    :param SQObject obj: the object that has to be pushed
+    :param SQObject obj: the object that will be pushed
 
     pushes an object like functions to the stack
 
@@ -93,7 +93,7 @@ Pushing Objects to the stack
 
 .. note::
 
-    ``sq_pushnull`` (``0x33D0``) isn't included in ``squirrel.h`` right now.
+    ``sq_pushnull`` (``0x33D0``) and more aren't included in ``squirrel.h`` right now but may be in the future.
 
 Getting Objects from the stack
 ------------------------------

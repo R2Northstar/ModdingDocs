@@ -78,7 +78,7 @@ You can use the ``REPLACE_SQFUNC`` macro to replace an existing sq function.
     :param funcName: The name of the function to replace
     :param runOnContext: The contexts that have access to this function
 
-It's also possible to add an override directly with the ``AddFuncOverride`` funciton of the ``SquirrelManager`` class.
+It's also possible to add an override directly with the ``AddFuncOverride`` function of the ``SquirrelManager`` class.
 
 .. cpp_function:: void AddFuncOverride(std::string name, SQFunction func)
 
@@ -88,9 +88,9 @@ It's also possible to add an override directly with the ``AddFuncOverride`` func
 .. code-block:: cpp
 
     // Replaces dangerous vanilla functions to only log their call with no further logic.
-	g_pSquirrel<context>->AddFuncOverride("DevTextBufferWrite", SQ_StubbedFunc<context, "DevTextBufferWrite">);
-	g_pSquirrel<context>->AddFuncOverride("DevTextBufferClear", SQ_StubbedFunc<context, "DevTextBufferClear">);
-	g_pSquirrel<context>->AddFuncOverride("DevTextBufferDumpToFile", SQ_StubbedFunc<context, "DevTextBufferDumpToFile">);
+    g_pSquirrel<context>->AddFuncOverride("DevTextBufferWrite", SQ_StubbedFunc<context, "DevTextBufferWrite">);
+    g_pSquirrel<context>->AddFuncOverride("DevTextBufferClear", SQ_StubbedFunc<context, "DevTextBufferClear">);
+    g_pSquirrel<context>->AddFuncOverride("DevTextBufferDumpToFile", SQ_StubbedFunc<context, "DevTextBufferDumpToFile">);
 
 Script Contexts
 ---------------
@@ -192,3 +192,20 @@ Errors
     :param HSquirrelVM* sqvm: the target vm
     :param SQChar* error: string thrown
     :returns: ``SQRESULT_ERROR``
+
+    Throws an error with ``error`` being the thrown object.
+
+    .. code-block:: cpp
+
+        ADD_SQFUNC("void", CPlugThrowTest, "", "", ScriptContext::UI)
+        {
+            return g_pSquirrel<context>->raiseerror(sqvm, "test error");
+        }
+
+        /* sq:
+        try {
+            CPlugThrowTest()
+        } catch(e) {
+            print(e) // "test error"
+        }
+        */

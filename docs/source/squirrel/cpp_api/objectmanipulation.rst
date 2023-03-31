@@ -47,7 +47,7 @@ Tables
     :param HSquirrelVM* sqvm: the target vm
     :returns: a ``SQRESULT``
 
-    creates a new table and pushes it onto the stack
+    creates a new table and pushes it onto the stack.
 
 .. _newslot:
 
@@ -70,11 +70,19 @@ Tables
         pushstring(sqvm, "key2");
         pushasset(sqvm, "value2");
         newslot(sqvm, -3);
+        // slot 3
+        pushstring(sqvm, "key3");
+        newtable(sqvm);
+        pushstring(sqvm, "sub");
+        pushinteger(sqvm, 13);
+        newslot(sqvm, -3);
+        newslot(sqvm, -3);
 
         /*
             The table on the stack now looks like this:
             {
                 key = "value"
                 key2 = $"value2"
+                key3 = { sub = 13 }
             }
         */
