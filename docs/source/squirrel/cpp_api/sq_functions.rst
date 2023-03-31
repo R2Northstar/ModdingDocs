@@ -1,5 +1,5 @@
-Squirrel Functions API
-======================
+Squirrel Functions
+==================
 
 Adding Squirrel Functions
 -------------------------
@@ -52,7 +52,7 @@ Return a complex ``ornull`` type:
 
 .. code-block:: cpp
 
-    ADD_SQFUNC("ornull int", CPlugComplex, "int n", "returns null", ScriptContext::CLIENT | ScriptContext::SERVER | ScriptContext::UI)
+    ADD_SQFUNC("int ornull", CPlugComplex, "int n", "returns null", ScriptContext::CLIENT | ScriptContext::SERVER | ScriptContext::UI)
     {
         SQInteger n = g_pSquirrel<context>->getinteger(sqvm, 1);
         
@@ -109,3 +109,86 @@ Squirrel functions need to return a ``SQRESULT``. Valid results are
 - ``SQRESULT_NULL`` - This function returns ``null``. Nothing is left over on the stack.
 - ``SQRESULT_NOTNULL`` - This functions returns the last item on the stack.
 - ``SQRESULT_ERROR`` - This function has thrown an error.
+
+Calling
+-------
+
+.. _Call:
+
+.. cpp:function:: SQRESULT Call(const char* funcname)
+
+    :param char* funcname: Name of the function to call
+    
+    This function assumes the squirrel VM is stopped/blocked at the moment of call
+
+    Calling this function while the VM is running is likely to result in a crash due to stack destruction
+
+    If you want to call into squirrel asynchronously, use `AsyncCall`_ instead.
+
+    .. code-block:: cpp
+
+        Call("PluginCallbackTest"); // PluginCallbackTest()
+
+.. _Call_args:
+
+.. cpp:function:: SQRESULT Call(const char* funcname, Args... args)
+
+    :param char* funcname: Name of the function to call
+    :param Args... args: vector of args to pass to the function
+
+    .. code-block:: cpp
+
+        Call("PluginCallbackTest", "param"); // PluginCallbackTest("param")
+
+.. _AsyncCall:
+
+.. cpp:function:: SquirrelMessage AsyncCall(std::string funcname)
+
+    :param char* funcname: Name of the function to call
+
+    This function schedules a call to be executed on the next frame
+
+    This is useful for things like threads and plugins, which do not run on the main thread.
+
+.. _AsyncCall_args:
+
+.. cpp:function:: SquirrelMessage AsyncCall(std::string funcname, Args... args)
+
+    :param char* funcname: Name of the function to call
+    :param Args... args: vector of args to pass to the function
+
+.. __call:
+
+.. cpp:function:: SQRESULT _call(HSquirrelVM* sqvm, const SQInteger args)
+
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQInteger args: number of arguments to call this function with
+
+    ``_call`` adds one to the ``args`` count for ``this``.
+
+    .. code-block:: cpp
+
+        SQObject functionobj {};
+        int result = g_pSquirrel<context>->sq_getfunction(sqvm, "PluginCallbackTest", &functionobj, 0);
+
+        if (result != 0)
+        {
+            spdlog::error("Unable to find function. Is it global?");
+            return SQRESULT_ERROR;
+        }
+
+        g_pSquirrel<context>->pushobject(sqvm, &functionobj);
+        g_pSquirrel<context>->pushroottable(sqvm);
+        g_pSquirrel<context>->pushstring(sqvm, "param");
+        return g_pSquirrel<context>->_call(sqvm, 1); // PluginCallbackTest("param")
+
+Errors
+------
+
+.. _raiseerror:
+
+.. cpp:function:: SQRESULT raiseerror(HSquirrelVM* sqvm, const SQChar* error)
+
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQChar* error: string thrown
+    :returns: ``SQRESULT_ERROR``

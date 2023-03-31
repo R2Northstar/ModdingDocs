@@ -172,16 +172,13 @@ Getting Objects from the stack
 
         removeFromStack(sqvm); // don't forget this!
 
-Stack info
-----------
-
 .. _sq_getfunction:
 
 .. cpp:function:: int sq_getfunction(HSquirrelVM* sqvm, const SQChar* name, SQObject* returnObj, const SQChar* signature)
 
     :param HSquirrelVM* sqvm: the target vm
     :param SQChar* name: the function name to search for
-    :param SQObject* returnObj:
+    :param SQObject* returnObj: reference to the object to hold the function object
     :param SQChar* signature:
 
     returns ``0`` if the function was found.
@@ -198,6 +195,10 @@ Stack info
 
 .. cpp:function:: SQRESULT get(HSquirrelVM* sqvm, const SQInteger stackpos)
 
+    :param HSquirrelVM* sqvm: the target vm
+    :param SQInteger stackpos: stack position of the object
+    :returns: an ``SQRESULT`` that indicates whether or not the access was successful.
+
 Stack manipulation
 ------------------
 
@@ -209,13 +210,25 @@ Stack manipulation
 
     pops the topmost item of the stack.
 
-Other Sections (TODO)
-------------
+Stack Infos
+-----------
 
-sq_stackinfos
+.. _sq_stackinfos:
 
-getcallingmod
+.. cpp:function:: SQRESULT sq_stackinfos(HSquirrelVM* sqvm, int level, SQStackInfos& out)
 
-_call
+    :param HSquirrelVM* sqvm: the target vm
+    :param int level: stack depth of the info
+    :param SQStackInfos& out: instance that will hold the information
 
-raiseerror
+.. _getcallingmod:
+
+.. cpp:function:: Mod* getcallingmod(HSquirrelVM* sqvm, int depth = 0)
+
+    :param HSquirrelVM* sqvm: the target vm
+    :param int depth: stack depth of the origin mod
+    :returns: Pointer to the Mod object at the stack depth
+
+    .. note::
+
+        Not available in `plugins <https://github.com/R2Northstar/NorthstarLauncher/blob/main/NorthstarDLL/plugins/plugin_abi.h>`_
