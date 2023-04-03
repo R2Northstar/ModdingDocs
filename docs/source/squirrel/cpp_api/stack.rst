@@ -20,10 +20,10 @@ See this example stack for reference:
 .. csv-table::
     :header: "Stack", "Positive index", "Negative index"
 
-    "p4" "4" "-1"
-    "p3" "3" "-2"
-    "p2" "2" "-3"
-    "p1" "1" "-4"
+    "p4", "4", "-1"
+    "p3", "3", "-2"
+    "p2", "2", "-3"
+    "p1", "1", "-4"
 
 Stack manipulation
 ------------------
