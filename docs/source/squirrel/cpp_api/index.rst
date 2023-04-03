@@ -9,6 +9,7 @@ All functions and macros documented are defined and used in the Northstar Client
 .. toctree::
     :maxdepth: 2
 
+    /squirrel/cpp_api/stack
     /squirrel/cpp_api/objecthandling
     /squirrel/cpp_api/objectmanipulation
     /squirrel/cpp_api/sq_functions
