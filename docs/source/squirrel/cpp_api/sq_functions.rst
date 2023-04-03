@@ -71,6 +71,10 @@ Return a complex ``ornull`` type:
 Replacing Squirrel Functions
 ----------------------------
 
+.. note::
+
+    Replacing functions is not possible in plugins
+
 You can use the ``REPLACE_SQFUNC`` macro to replace an existing sq function.
 
 .. cpp:function:: macro REPLACE_SQFUNC(funcName, runOnContext)

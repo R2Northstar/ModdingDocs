@@ -193,22 +193,42 @@ Getting Objects from the stack
             return SQRESULT_ERROR;
         }
 
+.. _getentity:
+
+.. cpp:function:: T* getentity(HSquirrelVM* sqvm, SQInteger iStackPos)
+
+    :param HSquirrelVM* sqvm: The target vm
+    :param SQInteger iStackPos: Stack position of the entity
+
+.. _sq_getentityfrominstance:
+
+.. cpp:function:: void* __sq_getentityfrominstance(CSquirrelVM* sqvm, SQObject* pInstance, char** ppEntityConstant)
+
+    :param CSquirrelVM* sqvm: The target vm
+    :param SQObject* pInstance: Instance holding an entity
+    :param char** ppEntityConstant: Entity constant like `_sq_GetEntityConstant_CBaseEntity`_
+
+.. _sq_GetEntityConstant_CBaseEntity:
+
+.. cpp:function:: char** __sq_GetEntityConstant_CBaseEntity()
+
+    There are entity constants for other types, but seemingly CBaseEntity's is the only one needed
+
+.. _sq_getobject:
+
+.. cpp:function:: __sq_getobject(HSquirrelVM* sqvm, SQInteger iStackPos, SQObject* obj)
+
+    :param HSquirrelVM* sqvm: The target vm
+    :param SQInteger iStackPos: Stack position of the object
+    :param SQObject* obj: Pointer that will hold the object
+
+.. _get:
+
 .. cpp:function:: SQRESULT get(HSquirrelVM* sqvm, const SQInteger stackpos)
 
     :param HSquirrelVM* sqvm: the target vm
     :param SQInteger stackpos: stack position of the object
     :returns: an ``SQRESULT`` that indicates whether or not the access was successful.
-
-Stack manipulation
-------------------
-
-.. _removefromstack:
-
-.. cpp:function:: __int64 removeFromStack(HSquirrelVM* sqvm)
-
-    :param HSquirrelVM* sqvm: the target vm
-
-    pops the topmost item of the stack.
 
 Stack Infos
 -----------

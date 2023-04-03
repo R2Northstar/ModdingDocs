@@ -86,3 +86,40 @@ Tables
                 key3 = { sub = 13 }
             }
         */
+
+Userdata
+~~~~~~~~
+
+.. _createuserdata:
+
+.. cpp:function:: T* createuserdata(HSquirrelVM* sqvm, SQInteger size)
+
+    :param HSquirrelVM* sqvm: The target vm
+    :param SQInteger size: bit size of the userdata object
+
+    When the function sq_newuserdata is called,
+    Squirrel allocates a new userdata with the specified size,
+    returns a pointer to his payload buffer and push the object in the stack;
+    at this point the application can do whatever it want with this memory chunk,
+    the VM will automatically take cake of the memory deallocation like for every other built-in type.
+    A userdata can be passed to a function or stored in a table slot. By default Squirrel cannot manipulate directly userdata;
+    however is possible to assign a delegate to it and define a behavior like it would be a table.
+    Because the application would want to do something with the data stored in a userdata object when it get deleted,
+    is possible to assign a callback that will be called by the VM just before deleting a certain userdata.
+    This is done through the API call sq_setreleasehook.
+
+.. _setuserdatatypeid:
+
+.. cpp:function:: SQRESULT setuserdatatypeid(HSquirrelVM* sqvm, const SQInteger stackpos, uint64_t typeId)
+
+    :param HSquirrelVM* sqvm: The target vm
+    :param SQInteger stackpos: Stack position of the userdata
+
+.. _getuserdata:
+
+.. cpp:function:: SQRESULT getuserdata(HSquirrelVM* sqvm, const SQInteger stackpos, T* data, uint64_t* typeId)
+
+    :param HSquirrelVM* sqvm: The target vm
+    :param SQInteger stackpos: Stack position of the userdata
+    :param T* data: Pointer to an arbitrary variable the userdata gets mapped to
+    :param uint64_t* typeid: Pointer to a variable edited to hold the userdata type
