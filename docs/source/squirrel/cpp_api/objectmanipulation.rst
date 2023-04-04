@@ -101,7 +101,7 @@ Userdata
     Squirrel allocates a new userdata with the specified size,
     returns a pointer to his payload buffer and push the object in the stack;
     at this point the application can do whatever it want with this memory chunk,
-    the VM will automatically take cake of the memory deallocation like for every other built-in type.
+    the VM will automatically take care of the memory deallocation like for every other built-in type.
     A userdata can be passed to a function or stored in a table slot. By default Squirrel cannot manipulate directly userdata;
     however is possible to assign a delegate to it and define a behavior like it would be a table.
     Because the application would want to do something with the data stored in a userdata object when it get deleted,

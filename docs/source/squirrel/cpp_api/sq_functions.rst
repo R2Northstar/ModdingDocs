@@ -8,6 +8,8 @@ You can use the ``ADD_SQFUNC`` macro defined in ``squirrelautobind.h`` to easily
 
 Inside the macro you have access to the Squirrel Manager of the context the function has been called from and the SQVM.
 
+Parameters are the initial stack in the function context.
+
 .. cpp:function:: macro ADD_SQFUNC(return_type, funcName, argTypes, helpText, runOnContext)
 
     :param return_type: The squirrel return type the compiler expects from this function

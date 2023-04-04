@@ -3,8 +3,8 @@ Stack
 
 Squirrel exchanges values with the virtual machine through a stack.
 This mechanism has been inherited from the language Lua.
-For instance to call a Squirrel function from C it is necessary to push the function and the arguments in the stack and then invoke the function;
-also when Squirrel calls a C function the parameters will be in the stack as well.
+For instance to call a Squirrel function from native code it is necessary to push the function and the arguments in the stack and then invoke the function;
+also when Squirrel calls a native function the parameters will be in the stack as well.
 
 Stack Indexes
 -------------
