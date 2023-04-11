@@ -1,9 +1,9 @@
 DamageInfo
 ==========
 
-DamageInfo is a specific, data type, though of intance ``var`` used in :doc:`rSquirrel <../../squirrel/index>` by Respawn to store information about an attack in one variable.
+DamageInfo is a specific, data type, though of instance ``var`` used in :doc:`rSquirrel <../../squirrel/index>` by Respawn to store information about an attack in one variable.
 
-Most commonly you will find ``damageinfo`` as an argument in a kill or damage callback. Respawn made some helper functions that help us extract or set cetrain stats in a ``damageinfo``
+Most commonly you will find ``damageinfo`` as an argument in a kill or damage callback. Respawn made some helper functions that help us extract or set certain stats in a ``damageinfo``
 
 
 Getter functions
