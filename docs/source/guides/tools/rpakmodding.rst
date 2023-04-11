@@ -33,7 +33,7 @@ Once it has been downloaded, it is recommended to set up your file structure as 
 
     Depending on the version of RePak, some of these folders and files might be already there for you
 
-.. code-block::
+.. code-block:: text
 
     RePak
     ├── RePak.exe
@@ -134,7 +134,7 @@ Below is an example of a map file that creates an RPak called ``example.rpak`` w
         "name":"example",
         "assetsDir":"../assets",
         "outputDir":"../rpaks",
-        "starpakPath": "example.starpak"
+        "starpakPath": "example.starpak",
         "version": 7,
         "files":[
             {
@@ -241,7 +241,7 @@ The file structure of your ``paks`` folder should be similar to this:
 
 |PaksStructure|
 
-.. code-block::
+.. code-block:: text
 
     paks
     ├── example.rpak

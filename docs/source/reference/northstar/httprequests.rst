@@ -1,4 +1,4 @@
-HTTP Requests
+HTTP and JSON
 =============
 
 As of v1.12.0, you can now make HTTP requests from Squirrel scripts.
@@ -195,7 +195,7 @@ Functions
 	Lambdas are particularly useful as they let you capture local variables of the functions to re-use later
 	such as ``callback`` in this example. 
 
-	.. code-block:: javascript
+	.. code-block::
 
 		HttpRequest request
 		request.method = HttpRequestMethod.GET
@@ -239,7 +239,7 @@ Functions
 
 	This is the same example as NSHttpRequest()'s example. However, it uses this function instead.
 	
-	.. code-block:: javascript
+	.. code-block::
 
 		table<string, array<string> > params
 		params[ "id" ] <- [ id.tostring() ]
@@ -302,7 +302,7 @@ Functions
 
 	In this example, we'll convert a table to JSON, and send it over to a web API.
 
-	.. code-block:: javascript
+	.. code-block::
 
 		table myData = {}
 		myData[ "uid" ] <- player.GetUID()
@@ -333,3 +333,51 @@ Functions
 
 	- Whether or not the given status code is considered successful.
 
+
+
+
+JSON API
+--------
+
+.. warning::
+
+	The JSON parser currently supports the following types for values: ``string``, ``integer``, ``float``, ``bool``, ``table``, and ``array``.
+
+	Tables and arrays can only hold supported types. Unsupported types will be ignored. Keys can only be strings.
+
+	The JSON parser currently does not support keys holding ``null`` values, and simply won't include them in decoded tables or encoded JSON strings.
+
+
+.. _json_funcs_decodejson:
+
+
+.. cpp:function:: table DecodeJSON( string json, bool fatalParseErrors = false )
+
+	Converts a JSON string to a Squirrel table.
+	
+	**Parameters:**
+
+	- ``string json`` - The JSON string to decode into a table.
+	- ``[OPTIONAL] bool fatalParseErrors`` - Whether or not parsing errors should throw a fatal script error. Default to false.
+
+	**Returns:** 
+	
+	- The table decoded from the JSON string on success, or an empty table ``{}`` on parse failure (if fatalParseErrors is false).
+
+
+.. _json_funcs_encodejson:
+
+
+.. cpp:function:: string EncodeJSON( table data )
+
+	Converts a Squirrel table to a JSON string.
+
+	**Parameters:**
+
+	- ``table data`` - The table to encode to a JSON string.
+
+	**Returns:** 
+	
+	- The JSON string parsed from the Squirrel table.
+
+Paired with :doc:`/reference/northstar/httprequests`, this allows you to send and retrieve JSON data from external sources.

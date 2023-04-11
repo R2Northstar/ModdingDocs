@@ -1,21 +1,20 @@
 Northstar API
--------------
+=============
 
 .. toctree::
     :maxdepth: 2
 
     /reference/northstar/callbacks
     /reference/northstar/chathooks
-    /reference/northstar/clientcommandsnotifications
-    /reference/northstar/dependencyconstants.rst
-    /reference/northstar/customdamagesources.rst
-    /reference/northstar/serversiderui.rst
-    /reference/northstar/httprequests.rst
-    /reference/northstar/jsonparsing.rst
+    /reference/northstar/dependencyconstants
+    /reference/northstar/customdamagesources
+    /reference/northstar/serversiderui
+    /reference/northstar/httprequests
+    /reference/northstar/usefulfuncs
     /reference/northstar/modsettings.rst
 
 Respawn API
------------
+===========
 
 .. toctree::
     :maxdepth: 2
@@ -29,7 +28,7 @@ Respawn API
     /reference/respawn/movers
 
 HUD
----
+===
 
 .. toctree::
     :maxdepth: 1

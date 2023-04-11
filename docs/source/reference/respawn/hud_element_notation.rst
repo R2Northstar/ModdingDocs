@@ -53,7 +53,7 @@ If you're working on a **menu**, you need a ``menu`` object that contains all el
 It usually doesn't matter if you use quotation marks to assign string values to parameters.
 
 HUD & Panel files
-----
+-----------------
 
 The first line of a ``.menu`` or ``.res`` file needs to be the resource path to itself, starting from the resource folder.
 
@@ -74,7 +74,7 @@ The rest of the file needs to be wrapped in curly brackets.
     }
 
 Properties
-~~~~
+~~~~~~~~~~
 
 Capitalization of the properties shouldn't matter.
 
@@ -85,7 +85,7 @@ Capitalization of the properties shouldn't matter.
     Unique string identifier used in scripts to look up an element. Every element is required to have a name.
 
 Inheritance / Parenting
-^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. cpp:function:: ControlName
 
@@ -100,7 +100,7 @@ Inheritance / Parenting
     ``Hud_GetChild`` only works if the parent element is (has the ``ControlName``) a **CNestedPanel**!
 
 Identifying
-^^^^
+^^^^^^^^^^^
 .. cpp:function:: classname
 
     Classname used for identifying groups of elements
@@ -110,7 +110,7 @@ Identifying
     Set an unique integer id for this element that's retrievable in script.
 
 Position
-^^^^
+^^^^^^^^
 
 .. cpp:function:: xpos
 
@@ -445,7 +445,7 @@ Usable conditions are:
 
     the game's language.
     
-    .. code-block::
+    .. code-block:: text
     
             // use allcaps only in russian
     		allCaps 				0 	[!$RUSSIAN]
@@ -458,7 +458,7 @@ On top of that, logical operators like ``!``, ``&&`` and ``||`` are available as
 Example:
 ^^^^
 
-.. code-block::
+.. code-block:: text
 
     // This element only shows on pc
 	IngameTextChat [$WINDOWS]
