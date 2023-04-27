@@ -1,4 +1,4 @@
-C Interface
+C++ Interface
 ================
 
 The Squirrel VMs can be manipulated and controlled by Northstar and Plugins.
