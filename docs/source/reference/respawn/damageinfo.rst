@@ -114,15 +114,19 @@ Global
 
 
 Extracting information
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 You are able to get additional information about the damage dealt useing ``damageTypes``, you can get those either directly or with the ``DamageInfo_GetDamageType( damageInfo )``.
 You are then able to check for certain information using the damageFlags 
 
 .. dropdown:: Damage flags 
-    ===================      =====
-    Variable name            Value
-    ===================      =====
+
+    List of all Damage flags
+
+
+    ======================    =======
+    Variable name             Value
+    ======================    =======
     DF_GIB					  1
     DF_DISSOLVE				  2
     DF_INSTANT				  3
@@ -155,13 +159,16 @@ You are then able to check for certain information using the damageFlags
     DF_DOOM_PROTECTED		  30
     DF_DOOM_FATALITY		  31
     DF_NO_HITBEEP			  32
-    ===================      =====
-
+    ======================    =======
+    
 
 
 .. dropdown:: Damage types
 
+
     .. code-block:: 
+
+
         global enum damageTypes
         {
             gibs 				= (DF_GIB)
@@ -187,14 +194,15 @@ You are then able to check for certain information using the damageFlags
         }
 
 
+
 Now you can check for any of these by using the bitwise and operator ``&``
 
 .. code-block::
 
-    isHeadshot = bool( damageType & DF_HEADSHOT )
+    bool isHeadshot = bool( damageType & DF_HEADSHOT )
 
 you can also combine two with the bitwise or operator ``|`` liek this:
 
 .. code-block::
 
-    isHeadshotWithShotgun = bool( damageType & DF_HEADSHOT ) | bool( damageType & DF_SHOTGUN )
+    bool isHeadshotWithShotgun = bool( damageType & DF_HEADSHOT ) | bool( damageType & DF_SHOTGUN )
