@@ -29,7 +29,7 @@ Send a dialog to a player with only the given message as data.
 
 **Example:**
 
-.. code-block:: javascript
+.. code-block::
 
     void function SendMessageToAll()
     {
@@ -45,7 +45,7 @@ Add one button to the given struct, the text is localised. The callback function
 
 **Example:**
 
-.. code-block:: javascript
+.. code-block::
 
     void function SendDialogToAll()
     {
