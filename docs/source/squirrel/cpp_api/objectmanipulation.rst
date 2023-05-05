@@ -90,6 +90,10 @@ Tables
 Structs
 ~~~~~~~
 
+.. note::
+
+    These functions aren't available for plugins yet.
+
 .. _pushnewstructinstance:
 
 .. cpp:function:: SQRESULT::SQRESULT_NULL pushnewstructinstance(HSquirrelVM* sqvm, int fieldCount)
