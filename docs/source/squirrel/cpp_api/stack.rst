@@ -30,12 +30,16 @@ Stack manipulation
 
 The Squirrel API offers several functions to push and retrieve data from the Stack.
 
-Currently there are no more functions implemented in ``squirrel.h``.
-
 .. _removefromstack:
 
 .. cpp:function:: __int64 removeFromStack(HSquirrelVM* sqvm)
 
+    .. note::
+
+        This function (``server.dll+0x7000```) is not available in the launcher or plugins at the moment.
+
+        You can open a PR if you need it now.
+
     :param HSquirrelVM* sqvm: the target vm
 
-    pops the topmost item of the stack.
+    pops the top item of the stack.

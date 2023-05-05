@@ -155,6 +155,15 @@ Getting Objects from the stack
 
 .. cpp:function:: SQTable* getConstants(HSquirrelVM* sqvm)
 
+    .. note::
+
+        This function (``server.dll+0x5920```) is not available in the launcher or plugins at the moment.
+
+        You can open a PR if you need it now.
+
+        To define an integer constant you can use :ref:`defconst <defconst>` instead.
+
+
     :param HSquirrelVM* sqvm: the target vm
     :returns: the table of constants
 
@@ -249,6 +258,8 @@ Getting Objects from the stack
     :param SQInteger stackpos: stack position of the object
     :returns: an ``SQRESULT`` that indicates whether or not the access was successful.
 
+    pops a key from the stack and performs a get operation on the object at the position idx in the stack; and pushes the result in the stack.
+
 Stack Infos
 -----------
 
@@ -271,3 +282,16 @@ Stack Infos
     .. note::
 
         Not available in `plugins <https://github.com/R2Northstar/NorthstarLauncher/blob/main/NorthstarDLL/plugins/plugin_abi.h>`_
+
+Other
+-----
+
+.. _defconst:
+
+.. cpp:function:: void defconst(CSquirrelVM* csqvm, const SQChar* pName, int nValue)
+
+    :param CSquirrelVM* csqvm: the target vm
+    :param SQChar* pName: the constant name
+    :param int nValue: the constant value
+
+    defines a global squirrel integer constant
