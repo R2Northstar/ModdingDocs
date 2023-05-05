@@ -172,7 +172,7 @@ Getting Objects from the stack
 
         removeFromStack(sqvm); // don't forget this!
 
-.. _sq_getfunction:
+.. _sq-getfunction:
 
 .. cpp:function:: int sq_getfunction(HSquirrelVM* sqvm, const SQChar* name, SQObject* returnObj, const SQChar* signature)
 
@@ -200,7 +200,7 @@ Getting Objects from the stack
     :param HSquirrelVM* sqvm: The target vm
     :param SQInteger iStackPos: Stack position of the entity
 
-.. _sq_getentityfrominstance:
+.. _sq-getentityfrominstance:
 
 .. cpp:function:: void* __sq_getentityfrominstance(CSquirrelVM* sqvm, SQObject* pInstance, char** ppEntityConstant)
 
@@ -214,7 +214,7 @@ Getting Objects from the stack
 
     There are entity constants for other types, but seemingly CBaseEntity's is the only one needed
 
-.. _sq_getobject:
+.. _sq-getobject:
 
 .. cpp:function:: SQRESULT __sq_getobject(HSquirrelVM* sqvm, SQInteger iStackPos, SQObject* obj)
 
@@ -252,7 +252,7 @@ Getting Objects from the stack
 Stack Infos
 -----------
 
-.. _sq_stackinfos:
+.. _sq-stackinfos:
 
 .. cpp:function:: SQRESULT sq_stackinfos(HSquirrelVM* sqvm, int level, SQStackInfos& out)
 

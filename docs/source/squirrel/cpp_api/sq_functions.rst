@@ -121,7 +121,7 @@ Calling
 
         Call("PluginCallbackTest"); // PluginCallbackTest()
 
-.. _Call_args:
+.. _Call-args:
 
 .. cpp:function:: SQRESULT Call(const char* funcname, Args... args)
 
@@ -142,7 +142,7 @@ Calling
 
     This is useful for things like threads and plugins, which do not run on the main thread.
 
-.. _AsyncCall_args:
+.. _AsyncCall-args:
 
 .. cpp:function:: SquirrelMessage AsyncCall(std::string funcname, Args... args)
 
