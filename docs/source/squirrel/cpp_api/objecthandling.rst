@@ -216,11 +216,30 @@ Getting Objects from the stack
 
 .. _sq_getobject:
 
-.. cpp:function:: __sq_getobject(HSquirrelVM* sqvm, SQInteger iStackPos, SQObject* obj)
+.. cpp:function:: SQRESULT __sq_getobject(HSquirrelVM* sqvm, SQInteger iStackPos, SQObject* obj)
 
     :param HSquirrelVM* sqvm: The target vm
     :param SQInteger iStackPos: Stack position of the object
     :param SQObject* obj: Pointer that will hold the object
+
+    ``obj`` will be overwritten to hold the squirrel object.
+
+    This example adds a native function with the :ref:`ADD_SQFUNC <sq-api-register-native-functions-c-macro>` macro.
+    The function takes a function reference as a callback and calls it immediately.
+    More information about function calls are available :ref:`here <sq-api-calling-functions>`
+
+    .. code-block:: cpp
+
+        ADD_SQFUNC("void", SQCallbackTest, "void functionref()", "", ScriptContext::UI)
+        {
+            SQObject fn; // Make an empty sqobject. This will hold the function object later
+            g_pSquirrel<context>->__sq_getobject(sqvm, 1, &fn); // Assign the function object to the SQOBJECT
+            g_pSquirrel<context>->pushobject(sqvm, &fn); // Push the function object for the call
+            g_pSquirrel<context>->pushroottable(sqvm); // Push the root table for the function stack
+            g_pSquirrel<context>->__sq_call(sqvm, 1, false, true); // call the function with one parameter (the 'this' object)
+
+            return SQRESULT_NULL;
+        }
 
 .. _get:
 
