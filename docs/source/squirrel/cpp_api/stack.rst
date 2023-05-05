@@ -9,7 +9,7 @@ also when Squirrel calls a native function the parameters will be in the stack a
 Stack Indexes
 -------------
 
-Many API functions can arbitrarily refer to any element in the stack through an index. The stack indexes follow those conventions:
+Many API functions can arbitrarily refer to any element in the stack through an index. The stack indexes follow these conventions:
 
 - 1 is the stack base
 - Negative indexes are considered an offset from top of the stack. For instance -1 is always the last item pushed to the stack
