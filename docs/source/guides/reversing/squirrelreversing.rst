@@ -1,7 +1,7 @@
 Pushing Values to the SQVM Stack
 ================================
 
-Before starting to reverse engineer pushing values to the Squirrel stack it's recommended to read the `Squirrel documentation
+Before starting to reverse engineer how to push values to the Squirrel stack, it's recommended to read the `Squirrel documentation
 <http://www.squirrel-lang.org/squirreldoc/index.html>`_, especially the `Embedding-
 <http://www.squirrel-lang.org/squirreldoc/reference/embedding_squirrel.html>`_ and `API Reference
 <http://www.squirrel-lang.org/squirreldoc/reference/api_reference.html>`_.
