@@ -74,7 +74,7 @@ Because the squirrel function executes native code, the callback ``FUN_18029a630
     }
 
 From this you can assume that native closures in squirrel_re still use the ``SQRESULT`` convention.
-It's also obvious that either ``FUN_180003710`` or ``FUN_18001d840`` pushes a boolean to the stack. It's probably ``FUN_180003710`` because it takes an extra parameter but you can check ``IsClient`` at ``server.dll+0x`` as a reference.
+It's also obvious that either ``FUN_180003710`` or ``FUN_18001d840`` pushes a boolean to the stack. It's probably ``FUN_180003710`` because it takes an extra parameter but you can check ``IsClient`` at ``server.dll+0x29a4d0`` as a reference.
 
 .. code-block:: c
 
