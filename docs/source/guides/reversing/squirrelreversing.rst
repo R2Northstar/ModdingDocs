@@ -37,7 +37,7 @@ In vanilla Squirrel you can push values with functions like ``sq_pushbool``. Sin
 To start you'll need a simple Squirrel function that is executing native code without any calculations or similar, like ``IsServer``, or ``IsClient``.
 These Squirrel functions are registered in native code and return ``true`` / ``false`` if the script VM is being ran in the ``SERVER`` or ``CLIENT``.
 
-You can search for a string in memory with ``Search > Memory``. Select ``String`` as the format you're searching for look for ``IsServer``.
+You can search for a string in memory with ``Search > Memory``. Select ``String`` as the format you're searching for and enter ``IsServer`` as the search value.
 
 The first occurence is at ``server.dll+0x2b44f3``. If you wait for the function to be decompiled, you'll see the string in this code:
 
@@ -73,7 +73,7 @@ Because the squirrel function executes native code, the callback ``FUN_18029a630
         return uVar2;
     }
 
-From this you can assume that native closures in squirrel_re still use the ``SQRESULT`` convention.
+From this you can assume that native closures in squirrel_re still use the ``SQRESULT`` convention, because the closure returns ``-1`` if ``FUN_18001d840`` returns ``NULL``, which is typically an error and ``1`` if nothing happens.
 It's also obvious that either ``FUN_180003710`` or ``FUN_18001d840`` pushes a boolean to the stack. It's probably ``FUN_180003710`` because it takes an extra parameter but you can check ``IsClient`` at ``server.dll+0x29a4d0`` as a reference.
 
 .. code-block:: c
