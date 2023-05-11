@@ -27,7 +27,7 @@ Before you can start reverse engineering you need to install software to disasse
 
 5. Open ``server.dll`` in the Ghidra project overview. When Ghidra asks you if you want to analyse the file now, click yes. You do not need to change any analysis settings.
 
-6. Wait for ghidra to finish the analysis.
+6. Wait for Ghidra to finish the analysis.
 
 Understanding native Squirrel Closures
 --------------------------------------
