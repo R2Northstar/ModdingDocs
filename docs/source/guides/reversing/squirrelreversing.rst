@@ -14,12 +14,17 @@ Setup
 Before you can start reverse engineering you need to install software to disassemble and decompile the binaries. This guide will use `Ghidra
 <https://ghidra-sre.org/>`_, an open source reverse engineering tool developed by the NSA.
 
+Since code decompiled by Ghidra is often closer to the raw assembly than the original code, you might want to use `IDA
+<https://hex-rays.com/>`_ for decompilation.
+Keep in mind that IDA is not open source and the free version is lacking a lot of features and only offers a cloud decompiler.
+
 1. Download the latest Ghidra archive from the `Github releases page
    <https://github.com/NationalSecurityAgency/ghidra/releases>`_. Usually the archive is called like ``ghidra_[version]_PUBLIC_[date]``.
 
 2. Unzip the archive in a new folder.
 
-3. Run ``ghidraRun.bat`` on windows or if you're on Linux make ``ghidraRun`` executable and run it.
+3. Run ``ghidraRun.bat`` on windows or if you're on Linux make ``ghidraRun`` executable and run it. On Linux, there's a `Flatpak image
+   <https://flathub.org/apps/org.ghidra_sre.Ghidra>`_ available as well.
 
 3. Create a new project under ``File > New Project`` and select ``Non-Shared Project``, then hit next. Afterwards select a location for the project and a name like ``Titanfall2``.
 
