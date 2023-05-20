@@ -1,5 +1,5 @@
-DamageInfo
-==========
+DamageInfo & damageSourceId
+===========================
 
 DamageInfo is a specific, data type, though of instance ``var`` used in :doc:`rSquirrel <../../squirrel/index>` by Respawn to store information about an attack in one variable.
 
