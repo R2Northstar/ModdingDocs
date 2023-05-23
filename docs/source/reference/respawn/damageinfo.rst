@@ -1,4 +1,4 @@
-DamageInfo and DamageType
+DamageInfo
 =========================
 
 DamageInfo is a specific, data type, though of instance ``var`` used in :doc:`rSquirrel <../../squirrel/index>` by Respawn to store information about an attack in one variable.
@@ -12,6 +12,15 @@ Getter functions
 .. cpp:function:: int DamageInfo_GetDamageSourceIdentifier( var damageInfo )
 
     returns the ``eDamageSourceId``
+    
+    ``damageSourceId`` is an ``int`` that references an ``enum`` and can be used to identify what source damage came from. 
+
+    ``damageSourceId`` is mostly found as an argument in some kill and damage related functions. Respawn has created a function that will attempt to localise the damageSourceId inputed.
+    To add your own custom ``damageSourceID`` , see: :doc:`customdamagesources`
+
+    Other useful functions can be found in the ``damageinfo`` section of this page and in :doc:`entities`
+
+    ``GetObitFromdamageSourceId`` is a global function that attempts to localise the ``damageSourceId`` inputed, if it cannot get a localised string it will simply return the localisation string of the source.
 
 
 .. cpp:function:: float DamageInfo_GetDamage( var damageInfo )
@@ -113,6 +122,9 @@ Global
 .. cpp:function:: bool IsSuicide( entity attacker, entity victim, int damageSourceId )
 
 
+.. cpp:function:: string GetObitFromdamageSourceId( int damageSourceId )
+
+
 Extracting information
 ----------------------
 
@@ -201,7 +213,7 @@ Now you can check for any of these by using the bitwise and operator ``&``
 
     bool isHeadshot = bool( damageType & DF_HEADSHOT )
 
-you can also combine two with the bitwise or operator ``|`` liek this:
+you can also combine two with the bitwise or operator ``|`` like this:
 
 .. code-block::
 
