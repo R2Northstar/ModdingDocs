@@ -15,7 +15,7 @@ Editing an existing Model
 While creating an entire Model from scratch is possible it would be an extremely long and tedious task. Instead its recommended to use an existing Model as your base.
 
 
-Perquisites
+Prequisites
 -----------
 •	`Blender <https://www.blender.org/download/>`__ (min. 2.92)
 •	`Blender Source Tools <https://developer.valvesoftware.com/wiki/Blender_Source_Tools>`__  (refer to Download page for install instructions)
