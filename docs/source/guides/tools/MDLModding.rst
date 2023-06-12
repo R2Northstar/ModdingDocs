@@ -29,8 +29,8 @@ Prequisites
 
         - `Alien Swarm <https://store.steampowered.com/app/630/Alien_Swarm/>`__ (FREE) (and its Authoring Tools `Alien Swarm SDK <https://developer.valvesoftware.com/wiki/Authoring_Tools/SDK_(Alien_Swarm)>`__)
               
-•	`MDLSHIT <https://github.com/headassbtw/mdlshit>`__ 
-•	`Harmony VPK <https://github.com/harmonytf/HarmonyVPKTool>`__
+•	`mdlshit <https://github.com/headassbtw/mdlshit>`__ 
+•	`Harmony VPK <https://github.com/harmonytf/HarmonyVPKTool>`__ (optional if you want to extract the model yourself)
 
 .. note::
     This Guide is tailored towards users with atleast some experience with Blender. If you are new to Blender I recommend you to first familiarize yourself with the basics of Blender. There are many tutorials on the Internet that can help you with that.
