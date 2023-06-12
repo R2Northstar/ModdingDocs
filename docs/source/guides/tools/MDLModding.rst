@@ -19,16 +19,18 @@ Prequisites
 -----------
 •	`Blender <https://www.blender.org/download/>`__ (min. 2.92)
 •	`Blender Source Tools <https://developer.valvesoftware.com/wiki/Blender_Source_Tools>`__  (refer to Download page for install instructions)
-•	`Crowbar <https://steamcommunity.com/groups/CrowbarTool>`__
+•	`Crowbar <https://steamcommunity.com/groups/CrowbarTool>`__ (min 0.74)
 
         - One of the following two games on Steam:
 
         - `Portal 2 <https://store.steampowered.com/app/620/Portal_2/>`__ (and its Authoring Tools `Portal 2 SDK <https://developer.valvesoftware.com/wiki/Authoring_Tools/SDK_(Portal_2)>`__)  
 
         - `SourceFilmMaker <https://store.steampowered.com/app/1840/Source_Filmmaker/>`__ (FREE)
+
+        - `Alien Swarm <https://store.steampowered.com/app/630/Alien_Swarm/>`__ (FREE) (and its Authoring Tools `Alien Swarm SDK <https://developer.valvesoftware.com/wiki/Authoring_Tools/SDK_(Alien_Swarm)>`__)
               
 •	`MDLSHIT <https://github.com/headassbtw/mdlshit>`__ 
-•	`HARMONY VPK <https://github.com/harmonytf/HarmonyVPKTool>`__
+•	`Harmony VPK <https://github.com/harmonytf/HarmonyVPKTool>`__
 
 .. note::
     This Guide is tailored towards users with atleast some experience with Blender. If you are new to Blender I recommend you to first familiarize yourself with the basics of Blender. There are many tutorials on the Internet that can help you with that.
@@ -46,14 +48,14 @@ Workflow
 --------
 The workflow for editing a model is as follows:
 
-•	Extract the model using `HARMONY VPK <#harmony-vpk>`__
+•	Extract the model using `HARMONY VPK <#harmony-vpk>`__ or Downloading the model from the `Titanfall 2 Skin Modding Repo <https://github.com/BigSpice/TitanFall-2-Skin-Modding/tree/main/Models_MDL_Format>`__
 •	Decompile the model using `CROWBAR <#crowbar>`__
 •	Importing the model in `BLENDER <#blender>`__
 •	Editing the model to our liking
 •	Assigning a material to parts of our model
 •	Exporting the model from `BLENDER <#blender>`__
 •	Compiling using `CROWBAR <#crowbar>`__
-•	Combing the MDL file with other output files using `MDLSHIT <#mdlshit>`__
+•	Converting the MDL file with other output files using `MDLSHIT <#mdlshit>`__
 
 
 Blender
@@ -99,6 +101,9 @@ We will add a cube to the side of the Flatline and assign a custom material to i
 
 Step 1: Extracting
 ------------------
+
+.. note::
+    Can be skipped if you downloaded the model from the `Titanfall 2 Skin Modding Repo <https://github.com/BigSpice/TitanFall-2-Skin-Modding/tree/main/Models_MDL_Format>`__.
 
 - Open HARMONY VPK.
 - On the top right click on the ``Open VPK`` button.
