@@ -25,7 +25,7 @@ Now to actually draw anything you can use the following function:
 
 .. cpp:function:: void DebugDrawCube( vector cubeCenter, float cubeSize, int r, int g, int b, bool throughSolid, float time )
 
-.. cpp:function:: viud DebugDrawBox( vector org, vector min, vector max, int r, int g, int b, int a, float time)
+.. cpp:function:: void DebugDrawBox( vector org, vector min, vector max, int r, int g, int b, int a, float time)
 
 .. cpp:function:: void DrawAngledBox( vector org, vector ang, vector mins, vector maxs, int r, int g, int b, bool throughSolid, float time )
 
