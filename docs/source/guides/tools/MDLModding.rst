@@ -180,6 +180,9 @@ Setup Crowbar (one time only)
 
   - ``No P4``
   - ``Verbose``
+  
+  Set ``Game that has the model compiler`` to the game you selected in the ``Set Up Games`` tab on the top left.
+
 - This concludes the setup for crowbar these settings will be saved and you will not need to do this again.
   
 
@@ -262,8 +265,8 @@ Step 7: Compiling the model
 - Crowbar now compiles the model and outputs the files to the ``compiled`` folder in the same folder as the ``.qc`` file, inside the ``compiled`` folder you will find the full folder path of the model (for example ``models\weapons\vinson\``).
   
     .. note::
-        Usually the error is self explainatory and you can fix it by yourself. 
-        By default Crowbar will not output a compiled file if any errors occur during the compilation process.
+    Usually the error is self explainatory and you can fix it by yourself. 
+    By default Crowbar will not output a compiled file if any errors occur during the compilation process.
 
 Step 8: Combining model files
 -----------------------------
@@ -276,3 +279,25 @@ Step 8: Combining model files
 - Press the ``Check`` button.
 - Press the ``Convert`` button.
 - MDLShit will now combine the files into a single ``_conv.mdl`` file, this is our final exported and working model you can now close MDLShit and use that model in a mod.
+
+
+
+Common errors
+-------------
+
+In this list the word ``<filename>`` will be used to refer to the name of the file that is causing the error and X will refer to a number depending on your file, ``line`` will refer to the line in the qc file that is causing the error.
+The following words correspond to the following:
+
+- ``<filename>``: The name of the file that is causing the error.
+- ``<line>``: The line in the qc file that is causing the error.
+
+``modelpath.qc(<line>): - could not load file '<<filename>.smd'``:
+    This error means that the qc file is trying to reference a file that does not exist, make sure that the file is in the same folder as the qc file and that the name of the file is correct.
+    If the above solution does not work think about if you need said file actually, if not you can remove it from the qc file. Or if you need it you can create it yourself.
+    You can also see if a Physics or LOD file is the missing file, if it is make sure you have the correct settings in Crowbar for the file to be generated.
+
+``Crowbar ERROR: The model compiler, "<filename>", does not exist.``
+
+``Crowbar ERROR: The game's "<filename>" file does not exist.``
+    
+    Mostly happens if you did not properly set up Crowbar, make sure you followed the steps in `Setup Crowbar </guides/tools/mdlmodding.html#setup-crowbar-one-time-only>`__.
