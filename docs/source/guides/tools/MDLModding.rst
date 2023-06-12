@@ -299,5 +299,4 @@ The following words correspond to the following:
 ``Crowbar ERROR: The model compiler, "<filename>", does not exist.``
 
 ``Crowbar ERROR: The game's "<filename>" file does not exist.``
-    
     Mostly happens if you did not properly set up Crowbar, make sure you followed the steps in `Setup Crowbar </guides/tools/mdlmodding.html#setup-crowbar-one-time-only>`__.
