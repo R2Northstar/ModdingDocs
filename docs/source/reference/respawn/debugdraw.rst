@@ -3,7 +3,7 @@ Debug drawing
 
 In Titanfall it is possible to draw shapes in 3D, from the SERVER and CLIENT VM, using the debug draw functions, however in order for them to actually render you will need to set ``enable_debug_overlay 1`` in your launch config or console.
 
-Now to actually draw anything you can use the following function:
+These debug drawing functions are available:
 
 .. cpp:function:: void DebugDrawLine( vector start, vector end, int r, int b, int g, bool drawThroughObject, float time)
 
