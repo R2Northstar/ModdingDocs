@@ -21,7 +21,7 @@ Prequisites
 •	`Blender Source Tools <https://developer.valvesoftware.com/wiki/Blender_Source_Tools>`__  (refer to Download page for install instructions)
 •	`Crowbar <https://steamcommunity.com/groups/CrowbarTool>`__ (min 0.74)
 
-        - One of the following games on Steam:
+        - One of the following on Steam:
 
         - `Portal 2 <https://store.steampowered.com/app/620/Portal_2/>`__ (and its Authoring Tools `Portal 2 SDK <https://developer.valvesoftware.com/wiki/Authoring_Tools/SDK_(Portal_2)>`__)  
 
