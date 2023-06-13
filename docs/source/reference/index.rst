@@ -22,12 +22,13 @@ Respawn API
 
     /reference/respawn/callbacks
     /reference/respawn/player
-    /reference/respawn/entities
     /reference/respawn/rui
     /reference/respawn/topology
     /reference/respawn/clientcommands
     /reference/respawn/movers
     /reference/respawn/damageinfo
+    /reference/respawn/entities/server/index
+    /reference/respawn/entities/client/index
 
 HUD
 ===
