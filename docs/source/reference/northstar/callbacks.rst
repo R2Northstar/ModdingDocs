@@ -87,6 +87,11 @@ lobby\\_private_lobby.gnut:
 .. cpp:function:: bool ClientCommandCallback_PrivateMatchSetPlaylistVarOverride( entity player, array<string> args )
 .. cpp:function:: bool ClientCommandCallback_ResetMatchSettingsToDefault( entity player, array<string> args )
 
+melee\\sh_melee.gnut:
+^^^^^^^^^^^^^^^^^^^^
+
+.. cpp:function:: void AddCallback_IsValidMeleeExecutionTarget( bool functionref( entity attacker, entity target ) callbackFunc )
+
 mp\\_ai_mp.gnut:
 ^^^^^^^^^^^^^^^
 
