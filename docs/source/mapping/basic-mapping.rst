@@ -18,18 +18,14 @@ Textures:
 
 Use the following link to download a resource pack to be used later on in the guide. Importing and using textures will be based off of this.
 
-Download the ``Titanfall2.zip`` from the latest release page for the textures_.
-
-.. _latest release page for the textures: https://github.com/MRVN-Radiant/MRVN-Resource-Pack/releases/
+Download the ``Titanfall2.zip`` from the `latest release page for the textures <https://github.com/MRVN-Radiant/MRVN-Resource-Pack/releases/>`_.
 
 Other kindes of editors:
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 You'll also need any kind of text editor (the basic built in Windows one will do), and an image editor (if wanting to add custom textures/loadscreens).
 
-This guide will assume you're using GIMP_ as an image editor, however you can adjust the wording of the guide for yourself if you'd rather use another image editor.
-
-.. _GIMP: https://www.gimp.org/
+This guide will assume you're using `GIMP <https://www.gimp.org/>`_ as an image editor, however you can adjust the wording of the guide for yourself if you'd rather use another image editor.
 
 Very fast (slightly out of date) tutorial:
 ------------------------------------------
@@ -111,15 +107,15 @@ Create the files shown below inside the `Titanfall2/R2Northstar/mods` directory.
 
 Then, open the `mod.json` file in a text editor and enter the following content:
 
-.. code-block:: text
+.. code-block::
 
-{
-    "Name": "Test Map",
-    "Description": "Custom test map made in Radiant!",
-    "Version": "1.0.0",
-    "LoadPriority": 1,
-    "RequiredOnClient": true
-}
+	{
+    		"Name": "Test Map",
+    		"Description": "Custom test map made in Radiant!",
+    		"Version": "1.0.0",
+    		"LoadPriority": 1,
+    		"RequiredOnClient": true
+	}
 
 Now, back in Radiant, in the top left corner of Radiant's window, hit `File > Save as` then navigate to the `maps` folder that we made earlier. Here, name the map `mp_test` (try to keep the `mp_` in the name, regardless of what you name it), then hit `Save`.
 
@@ -132,7 +128,7 @@ To load your map, open Northstar, then hit `Launch Northstar`, then hit `Private
 Creating textures to add:
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Adding textures to the editor is relatively simple and very fast once you get used to it. To do this, we'll need to create a `.png`, `.vtf`, and `.vmt` file. You can use any photo editor that you like, however I use GIMP and as such will design this guide to describe how to use it to create textures. If using GIMP, install the [GIMP .vtf addon](https://github.com/Artfunkel/gimp-vtf/releases) to create `.vtf` files properly.
+Adding textures to the editor is relatively simple and very fast once you get used to it. To do this, we'll need to create a `.png`, `.vtf`, and `.vmt` file. You can use any photo editor that you like, however I use GIMP and as such will design this guide to describe how to use it to create textures. If using GIMP, install the `GIMP .vtf addon <https://github.com/Artfunkel/gimp-vtf/releases>`_ to create `.vtf` files properly.
 
 First off, make sure the layer you're working with is 128x128 pixels. In GIMP, you can do this by hitting `File > New` and changing the dimensions to `128x128` (if it automatically changes the other number, try hitting the "unlink" or chain button next to the dimensions to stop them from auto adjusting)
 
@@ -184,12 +180,12 @@ Replicate the file format shown below (this assumes you've followed the guide to
 
 After doing this, place the `test.vtf` file we exported from GIMP earlier into the `mod\materials\world` folder. After you do this, create a file named `test.vmt`. Then, open `test.vmt` in a text editor of your choice and enter the following:
 
-.. code-block:: test
+.. code-block::
 
-"$LightMappedGeneric"
-{
-    "$basetexture" "world/test"
-}
+	"$LightMappedGeneric"
+	{
+    	"$basetexture" "world/test"
+	}
 
 Note how we do *not* end the mention of the file with the `.vtf` file extension, despite the texture having the extension!
 
@@ -218,7 +214,7 @@ Adding a loading screen:
 
 Adding loading screens requires the use of `RePak` to create a `.rpak` file to be used for your map. Setting up RePak is a somewhat lengthy process.
 
-First, [download RePak.exe](https://github.com/r-ex/RePak/releases)
+First, `download RePak.exe <https://github.com/r-ex/RePak/releases>`_
 
 Then, make a folder for RePak and replicate the file format shown below:
 
@@ -238,32 +234,32 @@ We'll first create the `loadscreen.json`. One way to do this is to open the file
 
 .. code-block:: text
 
-{
-    "name": "mp_test_loadscreen",
-    "assetsDir": "../assets",
-    "outputDir": "../rpaks",
-    "version": 7,
-    "files":[
-        {
-            "$type": "txtr",
-            "path":    "texture/loadscreens/test_loadscreen",
+	{
+    		"name": "mp_test_loadscreen",
+   	 	"assetsDir": "../assets",
+    		"outputDir": "../rpaks",
+   		 "version": 7,
+   		 "files":[
+     		   {
+       		     "$type": "txtr",
+       		     "path":    "texture/loadscreens/test_loadscreen",
             "saveDebugName": true    
-        },
-        {
-            "saveDebugName": false,
-            "$type":"matl",
-            "version":12,
-            "path":"loadscreens/mp_test_widescreen",
-            "type": "gen",
-            "subtype":"loadscreen",
-            "surface": "default",
-            "width": 1920,
-            "height": 1080,
-            "textures":["texture/loadscreens/test_loadscreen"]
+     		   },
+     		   {
+       		     "saveDebugName": false,
+       		     "$type":"matl",
+        	     "version":12,
+        	     "path":"loadscreens/mp_test_widescreen",
+        	     "type": "gen",
+        	     "subtype":"loadscreen",
+        	     "surface": "default",
+        	     "width": 1920,
+        	     "height": 1080,
+        	     "textures":["texture/loadscreens/test_loadscreen"]
             
-        }
-    ]
-}
+       		 }
+   	    ]
+	}
 
 Next, we'll create `pack_all.bat`. Right click on `pack_all.bat`, then click `Edit`, and enter the following into the file:
 
@@ -296,15 +292,15 @@ After you've done this and RePak has created the `.rpak`, you should see a file 
 Adding the loadscreen to the Northstar mod (updated mod format):
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a folder called `paks` in the root of your mod's directory. Inside of here, place `mp_test_loadscreen.rpak` that we exported from RePak earlier and create a file called `rpak.json`. Open `rpak.json` in a text editor and put in the text shown below:
+Create a folder called `paks` in the root of your mod's directory. Inside of here, place the `mp_test_loadscreen.rpak` file that we exported from RePak earlier and create a file called `rpak.json`. Open `rpak.json` in a text editor and put in the text shown below:
 
 .. code-block:: text
 
-{
-	"Postload": {
-		"mp_test_loadscreen.rpak": "common.rpak"
+	{
+		"Postload": {
+			"mp_test_loadscreen.rpak": "common.rpak"
+		}
 	}
-}
 
 Testing the loadscreen:
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -340,7 +336,6 @@ Other:
 Netradiant Custom Tutorial - Part 2:
 
 ..  youtube:: JZO8H4rBqtA
-
 
 How to make corners correctly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
