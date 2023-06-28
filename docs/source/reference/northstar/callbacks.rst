@@ -95,9 +95,9 @@ melee\\sh_melee.gnut:
    This callback gets triggered after the melee button is pressed to check if the action to execute the target is still valid. 
    If one of the added callbacks return false the target won't be executed and will just be meleed.
 
-.. note::
+   .. note::
 
-   The execution prompt still pops up.
+      The execution prompt still pops up.
 
 mp\\_ai_mp.gnut:
 ^^^^^^^^^^^^^^^
