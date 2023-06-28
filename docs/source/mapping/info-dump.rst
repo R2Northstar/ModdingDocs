@@ -1,7 +1,7 @@
-Info-Dump
+Basic Mapping
 =========
 
-Loosely structured dump of information to be sorted in the future:
+The following is a very simple guide to the basics of the Radiant editor used to make mods in Titanfall 2.
 
 Tools:
 ------
@@ -13,6 +13,13 @@ Level editor for Respawn Entertainment Source based games.
 
 https://github.com/F1F7Y/MRVN-radiant
 
+Textures:
+^^^^^^^^^
+
+Use the following link to download a resource pack to be used later on in the video. This pack isn't neccesary, but it will be what importing textures is based of off.
+
+Download the `Titanfall2.zip` from the [latest release page for the textures](https://github.com/MRVN-Radiant/MRVN-Resource-Pack/releases)
+
 BSP Tool:
 ^^^^^^^^^
 Python library for analysing .bsp files
@@ -21,7 +28,6 @@ https://github.com/snake-biscuits/bsp_tool
 
 **Docs:** https://github.com/snake-biscuits/bsp_tool/blob/master/docs/supported/titanfall.md
 
-
 Other:
 ------
 
@@ -29,9 +35,7 @@ Netradiant Custom Tutorial - Part 2:
 
 ..  youtube:: JZO8H4rBqtA
 
-How titanfall custom map:
 
-..  youtube:: gmNzc5Go2ow
 
 How to make corners correctly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -48,3 +52,271 @@ Sample clip:
 ..  youtube:: zgWDme7Y6oI
 
 Sample map: https://cdn.discordapp.com/attachments/925435799057604709/1041813222547791953/corner_test_map.map
+
+Very fast (slightly out of date) tutorial:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+How titanfall custom map:
+
+..  youtube:: gmNzc5Go2ow
+
+Actual Guide:
+^^^^^^^^^^^^^
+
+Setting up Radiant:
+
+Move both the Radiant download and Textures folder download to a memorable file (I, for one, put both inside my base documents folder)
+
+When you open up radiant, make sure to select your textures folder as the textures folder you already downloaded.
+
+Basics of Radiant:
+^^^^^^^^^^^^^^^^^^
+
+The extreme basics of the editor are mainly just the brush tool to create objects in your map. You can create objects with this simply by dragging over the desired area on the left, with the object being created once you stop dragging the mouse. You can change the size of this later by dragging the side you want to change after creating the object. You can edit the Y value (height) of an object by cyciling to the Y axis view (red outline on the left side of the eidotr) by cycling through the axis views by hitting `ctrl + tab`. Once you get to the Y axis view, drag the object around and resize it as you please. In the Y axis view, dragging up/down changes the level the object is placed on, and dragging the smaller bar below the object, you can make it taller/shorter.
+
+Getting into the actual editor, the process for making a map can be relatively simple (albeit time consuming). For starters, you'll probably want to make a "skybox" so you don't get into the game and see a mess of unrefreshing Source skybox. To do this, drag a square over the area you want to make the "skybox" for to create the box, and adjust it's height accordingly. You can always change this later if you accidentally make it too big or too small.
+
+After getting the dimensions you'd like for the "skybox", you'll want to search for and hit the "Make a room" button in the editor. This converts the giant mess of object that you created into 6 thin walls on the perimeter of the object. The textures given to these walls will be used as the skybox for your map. (skyboxes don't currently work properly in Radiant)
+
+Next, we'll create a basic platform. To do this, simply do the same thing you did before to create an object. However, this time instead of stretching the Y axis to be really tall, you'll want to stretch it to be really short (preferably, as short as it will go. This way, you won't waste space in the map and it will run slightly better in the case that performance ends up mattering) and use `ctrl + tab` to cycle over to the X axis view (blue outline on the left side of the editor) and move the base to be inside of the "skybox" you created. Then, make sure it's on a good Y level by checking the Y axis view and adjusting the platform to be at a decent height (probably about halfway through the walls on the Y axis). Then, in the bottom right of the editor you'll notice a collection of images. You can set these images to be used in the editor on specific objects, *however* only the `toolskybox` texture is the only one that will appear in game without adding textures to your game. This will be covered later, after adding proper spawns.
+
+For now, just set all textures to be `toolskybox` by clicking on the object you want to change the texture of, then clicking `toolskybox`
+
+Adding spawns:
+^^^^^^^^^^^^^^
+
+To add spawns to your map, right click on the axis viewer on the left of the editor and hover over the `info` list, then click on `info_spawnpoint_human`. The model of a pilot this spawns is set to represent both the spawnpoint and the height of the player when they spawn. Adjust this model of a pilot to sit on your platform (anywhere on it works), making sure it's on the correct Y level. Then, you'll want to click on it to select it (if not already selected) and press `N` or in the top left of the editor window, click `View` then click `Entity inspector`.
+
+This screen that opens up is a very important screen for managing spawn points, and should look the same as the one below
+
+From here you can input a number of different settings to make the spawn work to your liking. In the `teamnum` tab you can set the team that you'd like the sapawn to use. Note that it defaults to `1`, which isn't a valid number for an actual spawn. On the top half of the Entity Inspector window, you can see a list of details describing what each thing means. The `teamnum` under `keys` shows you the different numbers you can input, and what each of them mean. For this tutorial, we'll be using the team `-1` to allow any team to spawn there. 
+
+After setting the team, you *have* to set the `targetname` to be something specific. Personally, I rename them to `human_spawn_{SPAWN NUMBER}`, replacing `{SPAWN NUMBER}` with the number of spawn that it is. When you create your first spawn, this should be `human_spawn_1`, your second spawn should be `human_spawn_2`, and so on (using this format, of course. You can name this whatever, it's just what I use)
+
+Initial Mod structure (testing the map):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+At this point, you can actually load into your map! For this guide, we'll be creating a mod folder inside your Titanfall 2 directory directly.
+
+Create the files shown below inside the `Titanfall2/R2Northstar/mods` directory. You can change names as you please, however if you encounter issues try using the names as given below.
+
+.. code-block:: text
+
+  Testmap
+  ├──mod.json
+  └─mod
+     └─maps
+
+Then, open the `mod.json` file in a text editor and enter the following content:
+
+.. code-block:: text
+
+
+    "Name": "Test Map",
+    "Description": "Custom test map made in Radiant!",
+    "Version": "1.0.0",
+    "LoadPriority": 1,
+    "RequiredOnClient": true
+
+
+Now, back in Radiant, in the top left corner of Radiant's window, hit `File > Save as` then navigate to the `maps` folder that we made earlier. Here, name the map `mp_test` (try to keep the `mp_` in the name, regardless of what you name it), then hit `Save`. After this, there's one last thing to do before we can test the map. This is building the BSP. To do this, hit `Build` in the top left corner of Radiant, then click `Simple BSP`. Do this every time you make an edit to the map.
+
+From here if you've followed the guide fully, you should be able to load your map in game! This does have a slight bit of a process however
+
+To load your map, open Northstar, then hit `Launch Northstar`, then hit `Private Match`. From here when in the Private Match screen, hover over `Private Match`, then click `Settings`. In here, disable `Classic MP`. After doing this, go back to the main Private Match screen, open the console with `~`, and type `map mp_test`. Northstar will then load the custom map! Note that the loading screen will show the map name as `mp_test` and not something "normal" and localized like the other maps do, and the loading screen will be a giant missing texture. We will also go over solving this later.
+
+Creating textures to add:
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Adding textures to the editor is relatively simple and very fast once you get used to it. To do this, we'll need to create a `.png`, `.vtf`, and `.vmt` file. You can use any photo editor that you like, however I use GIMP and as such will design this guide to describe how to use it to create textures. If using GIMP, install the [GIMP .vtf addon](https://github.com/Artfunkel/gimp-vtf/releases) to create `.vtf` files properly.
+
+First off, make sure the layer you're working with is 128x128 pixels. In GIMP, you can do this by hitting `File > New` and changing the dimensions to `128x128` (if it automatically changes the other number, try hitting the "unlink" or chain button next to the dimensions to stop them from auto adjusting)
+
+After this, create whatever image you want. Note that you will probably encounter issues if trying to create an image with transparency in it. 
+
+Once the image creation is done, click `File > Export as` (if using GIMP), then export the image as `test.png`, then export again as `test.vtf`, using the default settings given and just hitting export when the screen comes up. Note that we don't yet create a `.vmt`!
+
+The following is the part of importing files that *can* be tricky if you aren't sure how to do it. The file path in Radiant and your mod *must* match! With the way that it's done, we'll have to go over mod structure again.
+
+Adding textures to Radiant:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Adding the textures is probably the hardest part of this simple guide. This guide will go over one specific way to add textures to your mod.
+
+The `.png` file we created earlier will go into the folder that Radiant uses for textures, while the `.vtf` we created earlier will go into the mod folder.
+
+First, adding the texture to the editor. To do this, we'll replicate the following folder structure
+
+.. code-block:: text
+
+  Titanfall2(textures)
+  └─textures
+    └─world
+      └─test.png
+
+After adding the `.png` file, make sure to hit the green arrows and "refresh" button in the bottom right textures tab of Radiant. Then, click on `world` in this part of the editor, and you'll see the added `test` texture! After doing this, you can click on objects in your map and give them your new texture (in the editor)!
+
+Updated Mod structure (addding textures to Northstar with the mod):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Now, adding the texture to the mod's files. This is the tricker part of adding textures.
+
+Replicate the file format shown below (this assumes you've followed the guide to this point and already have the first version of the map files created):
+
+.. code-block:: text
+
+  Testmap
+  ├──mod.json
+  └─mod
+    ├──materials
+    |  └─world
+    └─maps
+      ├──mp_test.map
+      └─mp_test.bsp
+
+After doing this, place the `test.vtf` file we exported from GIMP earlier into the `mod\materials\world` folder. After you do this, create a file named `test.vmt`. Then, open `test.vmt` in a text editor of your choice and enter the following:
+
+.. code-block:: test
+
+"$LightMappedGeneric"
+{
+    "$basetexture" "world/test"
+}
+
+Note how we do *not* end the mention of the file with the `.vtf` file extension, despite the texture having the extension!
+
+Testing the added textures:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Once you do everything leading up to this point, your mod folder should look something like this:
+
+.. code-block:: text
+
+  Testmap
+  ├──mod.json
+  └─mod
+    ├──materials
+    |  └─world
+    |    ├──test.vmt
+    |    └─test.vtf
+    └─maps
+      ├──mp_test.map
+      └─mp_test.bsp
+
+After doing this, you should be able to load the map as you did previously, but this time with the added textures! (assuming you edited some objects to use the new textures)
+
+Adding a loading screen:
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Adding loading screens requires the use of `RePak` to create a `.rpak` file to be used for your map. Setting up RePak is a somewhat lengthy process.
+
+First, [download RePak.exe](https://github.com/r-ex/RePak/releases)
+
+Then, make a folder for RePak and replicate the file format shown below:
+
+.. code-block:: text
+
+  RePak
+  ├──assets
+  |  └─texture
+  |    └─loadscreens
+  ├──maps
+  |  └─loadscreen.json
+  ├──rpaks
+  ├──pack_all.bat
+  └─RePak.exe
+
+We'll first create the `loadscreen.json`. One way to do this is to open the file in a text editor and put in the text shown below:
+
+.. code-block:: text
+
+{
+    "name": "mp_test_loadscreen",
+    "assetsDir": "../assets",
+    "outputDir": "../rpaks",
+    "version": 7,
+    "files":[
+        {
+            "$type": "txtr",
+            "path":    "texture/loadscreens/test_loadscreen",
+            "saveDebugName": true    
+        },
+        {
+            "saveDebugName": false,
+            "$type":"matl",
+            "version":12,
+            "path":"loadscreens/mp_test_widescreen",
+            "type": "gen",
+            "subtype":"loadscreen",
+            "surface": "default",
+            "width": 1920,
+            "height": 1080,
+            "textures":["texture/loadscreens/test_loadscreen"]
+            
+        }
+    ]
+}
+
+Next, we'll create `pack_all.bat`. Right click on `pack_all.bat`, then click `Edit`, and enter the following into the file:
+
+.. code-block:: text
+
+for %%i in ("%~dp0maps\*") do "%~dp0RePak.exe" "%%i"
+pause
+
+Now, we can finally get to creating the loading screen. To do this, you'll want to create or import any image you want into GIMP. From here, press `shift + s`, and type in the dimensions `1920` for width and `1080` for height. These are the dimensions used to make a proper loading screen. After you've imported and scaled your image, in the top right of GIMP click `File > Export as`, then enter `test_loadscreen.dds` and set the `Compression method` to `DXT1`. After doing this, move the image to be inside of the `loadscreens` folder we created inside the RePak folder earlier.
+
+After doing this, the RePak folder should look like this:
+
+.. code-block:: text
+
+  RePak
+  ├──assets
+  |  └─texture
+  |    └─loadscreens
+  |      └─test_loadscreen.dds
+  ├──maps
+  |  └─loadscreen.json
+  ├──rpaks
+  ├──pack_all.bat
+  └─RePak.exe
+
+If you've followed everything so far, double click on `pack_all.bat`. This will open a command prompt with some information given to you, which for this case you can simply skip past by hitting any key on your keyboard. 
+
+After you've done this and RePak has created the `.rpak`, you should see a file called `mp_test_loadscreen.rpak` in the `rpaks` folder of RePak.
+
+Adding the loadscreen to the Northstar mod (updated mod format):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create a folder called `paks` in the root of your mod's directory. Inside of here, place `mp_test_loadscreen.rpak` that we exported from RePak earlier and create a file called `rpak.json`. Open `rpak.json` in a text editor and put in the text shown below:
+
+.. code-block:: text
+
+{
+	"Postload": {
+		"mp_test_loadscreen.rpak": "common.rpak"
+	}
+}
+
+Testing the loadscreen:
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If you've followed everything to this point, your mod folder should look something like this:
+
+.. code-block:: text
+
+  Testmap
+  ├──mod.json
+  ├──mod
+  |  ├──materials
+  |  |  └─world
+  |  |    ├──test.vmt
+  |  |    └─test.vtf
+  |  └─maps
+  |    ├──mp_test.map
+  |    └─mp_test.bsp
+  └─paks
+    ├──mp_test_loadscreen.rpak
+    └─rpak.json
+
+After all of this, the map should have a loading screen when loading it as we did before. 
