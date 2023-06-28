@@ -40,8 +40,14 @@ Actual Mapping Guide:
 ---------------------
 
 Setting up Radiant:
+^^^^^^^^^^^^^^^^^^^
 
-Move both the Radiant download and Textures folder download to a memorable file (I, for one, put both inside a custom folder to use for the guide's screenshots). Make sure the `Titanfall2` folder used for textures is inside another folder, for example:
+Move both the Radiant download and Textures folder download to a memorable file (I, for one, put both inside a custom folder to use for the guide's screenshots as shown below) 
+
+.. image:: modding-guide-images/setting-up-radiant.png
+	:width: 600
+
+Make sure the `Titanfall2` folder used for textures is inside another folder, for example:
 
 .. code-block:: text
 
