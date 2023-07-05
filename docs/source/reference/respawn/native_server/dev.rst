@@ -16,8 +16,8 @@ Command Line
 
 .. cpp:function:: void Dev_CommandLineAddParm( string param )
 
-Stripped Developer Utils
-------------------------
+Developer Utils
+---------------
 
 .. cpp:function:: array<asset> GetModelViewerList()
 
@@ -37,6 +37,11 @@ Stripped Developer Utils
 
   Prints to the game's spam logfile (usually stored in DevNet).
 
+.. cpp:function:: void CodeWarning( string s )
+
+Performance
+-----------
+
 .. cpp:function:: void PerfInitLabel( string s, int n )
 
 .. cpp:function:: void PerfStart( int n )
@@ -53,7 +58,8 @@ Stripped Developer Utils
 
 .. cpp:function:: void RProfEnd( int n )
 
-.. cpp:function:: void CodeWarning( string s )
+DevP4
+-----
 
 .. cpp:function:: void DevP4Checkout( string s )
 
