@@ -1,4 +1,4 @@
-Debug drawing
+Debug Drawing
 =============
 
 .. note::
