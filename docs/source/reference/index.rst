@@ -20,6 +20,7 @@ Respawn API
 .. toctree::
     :maxdepth: 2
 
+    /reference/respawn/native_server/index
     /reference/respawn/callbacks
     /reference/respawn/player
     /reference/respawn/entities
