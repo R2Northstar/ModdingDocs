@@ -61,6 +61,10 @@ Performance
 DevP4
 -----
 
+.. error::
+
+  Stripped in Northstar for security.
+
 .. cpp:function:: void DevP4Checkout( string s )
 
 .. cpp:function:: void DevP4Add( string s )
@@ -70,7 +74,7 @@ DevTextBuffer
 
 .. error::
 
-  Stripped in northstar for security.
+  Stripped in Northstar for security.
 
 .. cpp:function:: void DevTextBufferWrite( string s )
 
