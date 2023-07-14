@@ -9,7 +9,7 @@ Script Managed Entity Arrays
 
 .. cpp:function:: void RemoveFromScriptManagedEntArray( int index, entity ent )
 
-.. cpp:function:: void GetScriptManagedEntArrayLen( int index )
+.. cpp:function:: int GetScriptManagedEntArrayLen( int index )
 
 .. cpp:function:: array<entity> GetScriptManagedEntArray( int index )
 
