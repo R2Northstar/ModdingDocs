@@ -10,9 +10,9 @@ SaveGames
 
 .. cpp:function:: void SaveGame_CreateWithCommitDelay( string saveName, int saveVersion, float delay, int trycount )
 
-  Doa a save.
+  Do a save.
   
-  Will call back ``bool CodeCallback_SaveGameIsSafeToCommit()`` to validate it is ok to commit the save file.
+  Will call back ``bool CodeCallback_SaveGameIsSafeToCommit()`` to validate if it is ok to commit the save file.
 
 .. cpp:function:: void SaveGame_Commit()
 
