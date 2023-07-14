@@ -271,7 +271,7 @@ This is the way you will usually do it when reimporting a model that you have ed
 - Set the name of the material to its NAME in the game files
 
     .. note::
-    with dmx files you can set the material path later on in the export menu. If you have multiple needed paths we will talk about that in the compile step.
+    with dmx files you can set the material path later on in the export menu. If you have multiple needed paths we will talk about that in the next step `Multiple Material Paths  <#step-5-5-multiple-material-paths-dmx>`__.
     This is why we set the name of the material to its name in the game files instead of its path.
 
 - Exit ``EDIT Mode``.
@@ -280,6 +280,24 @@ This is the way you will usually do it when reimporting a model that you have ed
     .. note:: 
     To clearify: the material of a mesh or individual faces in the game will be associated using the name of the assigned material in Blender.
 
+
+Step 5.5: Multiple Material Paths (dmx)
+---------------------------------------
+
+If you have materials with multiple paths (different folders in the game files) you will want to use the ``$renamematerial`` command in the qc file.
+Usage:
+
+    .. code-block:: text
+
+        $renamematerial	<current material>	<new material>
+
+Example:
+
+    .. code-block:: text
+
+        $renamematerial	"models\weapons_r2\coolmaterial\cool_material"	"models\amazing\uncoolmaterial\cool_material2"
+
+Command docs: `VALVe developer docs $renamematerial <https://developer.valvesoftware.com/wiki/$renamematerial>`__
 
 Step 6: Exporting from Blender
 ------------------------------
@@ -315,7 +333,7 @@ Step 7: Compiling the model
 
     If you have multiple bodygroups you will need to do this for each bodygroup, if you have multiple meshes in a bodygroup you will need to do this for each mesh in the bodygroup.
     We do this so Crowbar uses the dmx files instead of the smd files when compiling the model.
-    
+
 - Open Crowbar.
 - Select the ``Compile`` tab on the top.
 - Click on the ``Browse`` button on the top right.
