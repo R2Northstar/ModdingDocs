@@ -77,7 +77,7 @@ If you want to pass a function as a parameter to another function, for example a
   CallLiteral( FnLiteral )
 
 
-..note ::
+.. note ::
 
   In ``untyped`` files you may leave out the return type of the function reference. Like in function declarations this will default to ``var`` being the return type.
 
