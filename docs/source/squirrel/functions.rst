@@ -60,7 +60,7 @@ Optional parameters must be declared after all required parameters.
 Passing Functions as parameters
 -------------------------------
 
-If you want to pass a function as a parameter to another function, for example as a callback set their type as ``functionref( [parameters] )``.
+If you want to pass a function as a parameter to another function, for example as a callback set their type as ``[return type] functionref( [parameters] )``.
 
 .. code-block::
 
@@ -69,12 +69,15 @@ If you want to pass a function as a parameter to another function, for example a
     printt( req + opt )
   }
 
-  void function CallLiteral( functionref( int, int ) literal )
+  void function CallLiteral( void functionref( int, int ) literal )
   {
     literal( RandomInt( 5 ) )
   }
 
   CallLiteral( FnLiteral )
+
+
+You are able to leave out the return type of the functionref if your file is ``untyped``, however this is discouraged to keep compatabliliy.
 
 Calling Functions
 -----------------
