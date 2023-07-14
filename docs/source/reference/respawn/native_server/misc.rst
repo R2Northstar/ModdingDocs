@@ -93,7 +93,7 @@ Player Utils
 
 .. cpp:function:: entity GetWindowHint( vector startPos, number radius, number height, vector dir, number distance, number gravity, number margin, entity ignoreEnt )
 
-  "Returns the best window hint.
+  Returns the best window hint.
 
 .. cpp:function:: void ScreenFade( entity player, number r, number g, number b, number fadeTime, number fadeHold, int fadeFlags )
 
