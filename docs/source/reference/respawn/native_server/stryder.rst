@@ -32,8 +32,6 @@ Methods for communication with the vanilla master server
 
 .. cpp:function:: void SendTrainingGauntletStatsToBackend( entity player, number numRunsBeforeBeatRequiredTime, number numChallengeRuns, number bestTime )
 
-  0x18cfe0
-
 .. cpp:function:: bool IsMatchmakingServer()
 
 .. cpp:function:: bool ShouldSendDevStats()
