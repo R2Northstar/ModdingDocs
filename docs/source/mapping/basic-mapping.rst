@@ -44,8 +44,7 @@ Setting up Radiant:
 
 Move both the Radiant download and Textures folder download to a memorable file (I, for one, put both inside a custom folder to use for the guide's screenshots as shown below) 
 
-.. image:: modding-guide-images/setting-up-radiant.png
-	:width: 600
+|MRVN-Radiant setup|
 
 Make sure the `Titanfall2` folder used for textures is inside another folder, for example:
 
@@ -358,3 +357,5 @@ Sample clip:
 ..  youtube:: zgWDme7Y6oI
 
 Sample map: https://cdn.discordapp.com/attachments/925435799057604709/1041813222547791953/corner_test_map.map
+
+.. |MRVN-Radiant setup| image:: mapping-guide-images/setting-up-radiant.png
