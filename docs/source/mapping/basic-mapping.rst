@@ -382,6 +382,6 @@ Sample map: https://cdn.discordapp.com/attachments/925435799057604709/1041813222
 .. |Making skybox a room| image:: mapping-guide-images/skybox-make-a-room.gif
 .. |Making a platform| image:: mapping-guide-images/skybox-make-a-platform.gif
 .. |Adding a spawn| image:: mapping-guide-images/add-pilot-spawn.gif
-.. |Default pilot entity inspector| images:: mapping-guide-images/entity-inspector-pilot-default.png
+.. |Default pilot entity inspector| image:: mapping-guide-images/entity-inspector-pilot-default.png
 .. |Change one side of an object texture| image:: mapping-guide-images/one-side-texture-change.gif
 .. |Change how a texture fits on an object| image:: mapping-guide-images/change-texture-fitting.gif
