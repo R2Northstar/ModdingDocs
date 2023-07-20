@@ -151,6 +151,8 @@ First off, make sure the layer you're working with is 128x128 pixels. In GIMP, y
 
 After this, create whatever image you want. Note that you will probably encounter issues if trying to create an image with transparency in it. This guide will be using an orange box with a slight outline, partially to showcase fitting the texture to the object and partially because I already have it laying around. I'll attach the ``.png`` version here, if you want to mess around with it before creating your own texture (just make sure to export it as ``.vtf`` from GIMP as well)
 
+|Example image|
+
 Once the image creation is done, click ``File > Export as`` (if using GIMP), then export the image as ``test.png``, then export again as ``test.vtf``, using the default settings given and just hitting export when the screen comes up. Note that we don't yet create a ``.vmt``!
 
 The following is the part of importing files that `can` be tricky if you aren't sure how to do it. The file path in Radiant and your mod *must* match! With the way that it's done, we'll have to go over mod structure again.
@@ -383,5 +385,6 @@ Sample map: https://cdn.discordapp.com/attachments/925435799057604709/1041813222
 .. |Making a platform| image:: mapping-guide-images/skybox-make-a-platform.gif
 .. |Adding a spawn| image:: mapping-guide-images/add-pilot-spawn.gif
 .. |Default pilot entity inspector| image:: mapping-guide-images/entity-inspector-pilot-default.png
+.. |Example texture| image:: mapping-guide-images/test.png
 .. |Change one side of an object texture| image:: mapping-guide-images/one-side-texture-change.gif
 .. |Change how a texture fits on an object| image:: mapping-guide-images/change-texture-fitting.gif
