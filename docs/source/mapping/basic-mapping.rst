@@ -57,7 +57,7 @@ Make sure the ``Titanfall2`` folder used for textures is inside another folder, 
      ├──shaders
      └─textures
 
-When you open up Radiant, make sure to select your textures folder as the one *holding* the `T`Titanfall2`` folder.
+When you open up Radiant, make sure to select your textures folder as the one *holding* the ``Titanfall2`` folder.
 
 Basics of Radiant:
 ^^^^^^^^^^^^^^^^^^
@@ -294,7 +294,7 @@ Next, we'll create ``pack_all.bat``. Right click on ``pack_all.bat``, then click
 for %%i in ("%~dp0maps\*") do "%~dp0RePak.exe" "%%i"
 pause
 
-Now, we can finally get to creating the loading screen. To do this, you'll want to create or import any image you want into GIMP. From here, press ``shift + s``, and type in the dimensions `1920` for width and `1080` for height. These are the dimensions used to make a proper loading screen. After you've imported and scaled your image, in the top right of GIMP click ``File > Export as``, then enter ``test_loadscreen.dds`` and set the ``Compression method`` to ``DXT1``. After doing this, move the image to be inside of the ``loadscreens`` folder we created inside the RePak folder earlier.
+Now, we can finally get to creating the loading screen. To do this, you'll want to create or import any image you want into GIMP. From here, press ``shift + s``, and type in the dimensions ``1920`` for width and ``1080`` for height. These are the dimensions used to make a proper loading screen. After you've imported and scaled your image, in the top right of GIMP click ``File > Export as``, then enter ``test_loadscreen.dds`` and set the ``Compression method`` to ``DXT1``. After doing this, move the image to be inside of the ``loadscreens`` folder we created inside the RePak folder earlier.
 
 After doing this, the RePak folder should look like this:
 
@@ -323,10 +323,12 @@ Create a folder called ``paks`` in the root of your mod's directory. Inside of h
 .. code-block:: text
 
 	{
-		"Postload": {
-			"mp_test_loadscreen.rpak": "common.rpak"
+		"Preload": {
+			"mp_test_loadscreen.rpak": "false"
 		}
 	}
+
+If this doesn't work, make sure the names match up properly, that the image is ``1920`` x ``1080``, and that you used compression method ``DXT1`` when exporting the image from your image editor.
 
 Testing the loadscreen:
 ^^^^^^^^^^^^^^^^^^^^^^^
