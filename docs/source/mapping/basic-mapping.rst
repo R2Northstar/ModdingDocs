@@ -291,8 +291,8 @@ Next, we'll create ``pack_all.bat``. Right click on ``pack_all.bat``, then click
 
 .. code-block:: text
 
-for %%i in ("%~dp0maps\*") do "%~dp0RePak.exe" "%%i"
-pause
+	for %%i in ("%~dp0maps\*") do "%~dp0RePak.exe" "%%i"
+	pause
 
 Now, we can finally get to creating the loading screen. To do this, you'll want to create or import any image you want into GIMP. From here, press ``shift + s``, and type in the dimensions ``1920`` for width and ``1080`` for height. These are the dimensions used to make a proper loading screen. After you've imported and scaled your image, in the top right of GIMP click ``File > Export as``, then enter ``test_loadscreen.dds`` and set the ``Compression method`` to ``DXT1``. After doing this, move the image to be inside of the ``loadscreens`` folder we created inside the RePak folder earlier.
 
