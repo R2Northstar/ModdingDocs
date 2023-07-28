@@ -76,7 +76,7 @@ After getting the dimensions you'd like for the "skybox", you'll want to search 
 
 |Making skybox a room|
 
-Next, we'll create a basic platform. To do this, simply do the same thing you did before to create an object. However, this time instead of stretching the Y axis to be really tall, you'll want to stretch it to be really short (preferably, as short as it will go. This way, you won't waste space in the map and it will run slightly better in the case that performance ends up mattering) and use `ctrl + tab` to cycle over to the X axis view (blue outline on the left side of the editor) and move the base to be inside of the "skybox" you created. Then, make sure it's on a good Y level by checking the Y axis view and adjusting the platform to be at a decent height (probably about halfway through the walls on the Y axis). Then, in the bottom right of the editor you'll notice a collection of images. You can set these images to be used in the editor on specific objects, *however* only the `toolskybox` texture is the only one that will appear in game without adding textures to your game. This will be covered later, after adding proper spawns.
+Next, we'll create a basic platform. To do this, simply do the same thing you did before to create an object. However, this time instead of stretching the Y axis to be really tall, you'll want to stretch it to be really short (preferably, as short as it will go. This way, you won't waste space in the map and it will run slightly better in the case that performance ends up mattering) and use `ctrl + tab` to cycle over to the X axis view (blue outline on the left side of the editor) and move the base to be inside of the "skybox" you created. Then, make sure it's on a good Y level by checking the Y axis view and adjusting the platform to be at a decent height (probably about halfway through the walls on the Y axis). Then, in the bottom right of the editor you'll notice a collection of images. You can set these images to be used in the editor on specific objects, *however* ``toolskybox`` is the only texture that will appear in game without adding textures to your game. This will be covered later, after adding proper spawns.
 
 |Making a platform|
 
@@ -89,7 +89,7 @@ To add spawns to your map, right click on the axis viewer and hover over the ``i
 
 |Adding a spawn|
 
-Then, you'll want to click on it to select it (if not already selected) and press `N` or, in the top left of the editor window, click ``View`` then click ``Entity inspector``. The screen that this opens up is a very important screen for managing spawn points, and should look the same as the one below:
+Then, you'll want to click on it to select it (if not already selected) and press ``N`` or, in the top left of the editor window, click ``View`` and then click ``Entity inspector``. The screen that this opens up is a very important screen for managing spawn points, and should look the same as the one below:
 
 |Default pilot entity inspector|
 
@@ -100,7 +100,7 @@ After setting the team, you *have* to set the ``targetname`` to be something spe
 Adding titan spawns:
 ^^^^^^^^^^^^^^^^^^^^
 
-You `can` skip these spawns, however if you try to spawn in a titan on your map, not having a titan spawn will just crash the game.
+You `can` skip these spawns, however if you try to spawn in a titan on your map without one, the server will crash.
 
 To add a titan spawn, we use a very similar process to pilot spawns.
 
@@ -122,7 +122,7 @@ Create the files shown below inside the ``Titanfall2/R2Northstar/mods`` director
   └─mod
      └─maps
 
-Then, open the `mod.json` file in a text editor and enter the following content:
+Then, open the ``mod.json`` file in a text editor and enter the following content:
 
 .. code-block::
 
@@ -136,18 +136,18 @@ Then, open the `mod.json` file in a text editor and enter the following content:
 
 Now, back in Radiant, in the top left corner of Radiant's window, hit ``File > Save as`` then navigate to the ``maps`` folder that we made earlier. Here, name the map ``mp_test`` (try to keep the ``mp_`` in the name, regardless of what you name it), then hit ``Save``.
 
-After this, there's one last thing to do before we can test the map. This is building the BSP. To do this, hit ``Build`` in the top left corner of Radiant, then click ``Simple BSP``. Do this every time you make an edit to the map.
+After this, there's one last thing to do before we can test the map. This is building the BSP. To do this, hit ``Build`` in the top left corner of Radiant, then click ``Simple BSP``. Do this every time you go to test/use the map.
 
 From here if you've followed the guide fully, you should be able to load your map in game! This does have a slight bit of a process however.
 
-To load your map, open Northstar, then hit `Launch Northstar`, then hit `Private Match`. From here, when in the Private Match screen, hover over `Private Match`, then click `Settings`. In here, disable `Classic MP`. After doing this, go back to the main Private Match screen, open the console with ``~``, and type ``map mp_test``. Northstar will then load the custom map! Note that the loading screen will show the map name as ``mp_test`` and not something "normal" and localized like the other maps do (example: the Glitch loading screen shows the map name as ``GLITCH`` and not ``MP_GLITCH``), and the loading screen will be a giant missing texture. We will also go over solving this later.
+To load your map, open Northstar, then hit ``Launch Northstar``, then hit ``Private Match``. From here, when in the Private Match screen, hover over ``Private Match``, then click ``Settings``. In here, disable ``Classic MP``. After doing this, go back to the main Private Match screen, open the console with ``~``, and type ``map mp_test``. Northstar will then load the custom map! Note that the loading screen will show the map name as ``MP_TEST`` and not something "normal" and localized like the other maps do (example: the Glitch loading screen shows the map name as ``GLITCH`` and not ``MP_GLITCH``). The loading screen will also be a giant missing texture. We will also go over solving this later.
 
 Creating textures to add:
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Adding textures to the editor is relatively simple and very fast once you get used to it. To do this, we'll need to create a `.png`, `.vtf`, and `.vmt` file. You can use any photo editor that you like, however I use GIMP and as such will design this guide to describe how to use it to create textures. If using GIMP, install the `GIMP .vtf addon <https://github.com/Artfunkel/gimp-vtf/releases>`_ to create ``.vtf`` files properly.
+Adding textures to the editor is relatively simple and very fast once you get used to it. To do this, we'll need to create a ``.png``, ``.vtf``, and ``.vmt`` file. You can use any photo editor that you like, however I use GIMP and as such will design this guide to describe how to use it to create textures. If using GIMP, install the `GIMP .vtf addon <https://github.com/Artfunkel/gimp-vtf/releases>`_ to create ``.vtf`` files properly.
 
-First off, make sure the layer you're working with is 128x128 pixels. In GIMP, you can do this by hitting ``File > New`` and changing the dimensions to `128x128` (if it automatically changes the other number, try hitting the "unlink" or chain button next to the dimensions to stop them from auto adjusting)
+First off, make sure the layer you're working with is 128x128 pixels. In GIMP, you can do this by hitting ``File > New`` and changing the dimensions to ``128x128`` (if it automatically changes the other number, try hitting the "unlink" or chain button next to the dimensions to stop them from auto adjusting)
 
 After this, create whatever image you want. Note that you will probably encounter issues if trying to create an image with transparency in it. This guide will be using an orange box with a slight outline, partially to showcase fitting the texture to the object and partially because I already have it laying around. I'll attach the ``.png`` version here, if you want to mess around with it before creating your own texture (just make sure to export it as ``.vtf`` from GIMP as well)
 
@@ -174,7 +174,7 @@ First, adding the texture to the editor. To do this, we'll replicate the followi
       └─world
         └─test.png
 
-After adding the ``.png`` file, make sure to hit the green arrows and "refresh" button in the bottom right textures tab of Radiant. Then, click on `world` in this part of the editor, and you'll see the added `test` texture! After doing this, you can click on objects in your map and give them your new texture (in the editor)!
+After adding the ``.png`` file, make sure to hit the green arrows and "refresh" button in the bottom right textures tab of Radiant. Then, click on `world` in this part of the editor, and you'll see the added ``test`` texture! After doing this, you can click on objects in your map and give them your new texture (in the editor)!
 
 If you only want one side of an object to have a texture, hit ``ctrl`` and click on the side of the texture that you want to change. Make sure to hit ``ctrl`` and click on the side of the object again after editing it to de-select it.
 
@@ -204,7 +204,7 @@ Replicate the file format shown below (this assumes you've followed the guide to
 
 Note that your ``maps`` folder might hold things like autosaves when working like this. You only need the ``mp_test.map`` and ``mp_test.bsp`` files for the map to work.
 
-After doing this, place the `test.vtf` file we exported from GIMP earlier into the `mod\materials\world` folder. After you do this, create a file named `test.vmt`. Then, open `test.vmt` in a text editor of your choice and enter the following:
+After doing this, place the ``test.vtf`` file we exported from GIMP earlier into the ``mod\materials\world`` folder. After you do this, create a file named ``test.vmt``. Then, open ``test.vmt`` in a text editor of your choice and enter the following:
 
 .. code-block::
 
