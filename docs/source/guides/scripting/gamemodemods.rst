@@ -171,7 +171,7 @@ Let's begin the process by first creating the file ``sh_gamemode_simplerandomise
 		GameMode_AddClientInit( GAMEMODE_SIMPLERANDOMISER, ClGamemodeRand_Init ) // client side initializing function
 	#endif
 	#if !UI
-		GameMode_SetScoreCompareFunc( GAMEMODE_TBAG, CompareAssaultScore ) 
+		GameMode_SetScoreCompareFunc( GAMEMODE_SIMPLERANDOMISER, CompareAssaultScore ) 
                 // usually compares which team's score is higher and places the winning team on top of the losing team in the scoreboard
 	#endif
     }
