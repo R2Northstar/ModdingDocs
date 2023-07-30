@@ -154,7 +154,7 @@ Let's begin the process by first creating the file ``sh_gamemode_simplerandomise
 
 	AddPrivateMatchModeSettingEnum("#PL_rand", "rand_enableannouncements", ["#SETTING_DISABLED", "#SETTING_ENABLED"], "1")
 	// creates a togglable riff whether or not we want to announce a text to the client
-	AddPrivateMatchModeSettingArbitrary("#PL_rand", "rand_announcementduration", 3)
+	AddPrivateMatchModeSettingArbitrary("#PL_rand", "rand_announcementduration", "3")
 	// Creates a riff with an arbitrary numerical value for how long the announcement text remains on screen
 	// These riffs can be accessed from server configs or from the private match settings screen, under the "Simple Randomiser" category
         
@@ -196,7 +196,7 @@ Now that we're done, name this file ``sh_gamemode_simplerandomiser.nut`` and pla
 
 Server-side function
 --------------------
-Now that we're down with defining the gamemode, its time to focus on the component on what makes the gamemode function in-game. For this, it will be mostly handled by the server scripts, so head into ``_gamemode_simplerandomiser.nut`` to begin writing the randomizing script.
+Now that we're down with defining the gamemode, its time to focus on the component on that makes the gamemode function in-game. For this, it will be mostly handled by the server scripts, so head into ``_gamemode_simplerandomiser.nut`` to begin writing the randomizing script.
 
 .. code-block::
     
