@@ -20,11 +20,11 @@ In your ``mod.json``, add a ``Before`` UI callback like this:
 
 In the script you referenced, create a global in which you register your menu with the ``AddMenu`` like this:
 
-.. code-block:: javascript
+.. code-block::
 
-    global InitProfilesMenu
+    global function InitProfilesMenu
 
-    void InitProfilesMenu()
+    void function InitProfilesMenu()
     {
         AddMenu( "MenuName", $"path/to/menu.menu"  )
     }
@@ -35,13 +35,13 @@ The returns ``void`` and takes no parameters. It gets called once the menu is in
 
 It's recommended to create a file struct in which you store menu states:
 
-.. code-block:: javascript
+.. code-block::
 
     struct {
         var menu
     } file
 
-    void MenuInitCallback()
+    void function MenuInitCallback()
     {
         file.menu = GetMenu( "MenuName" )
     }

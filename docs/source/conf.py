@@ -21,6 +21,7 @@ extensions = [
     "sphinx_design",
     "sphinxcontrib.youtube",
     "sphinx_copybutton",
+    "sphinx_rsquirrel",
 ]
 
 intersphinx_mapping = {
@@ -58,3 +59,9 @@ html_theme_options = {
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
+
+highlight_language = "squirrel"
+
+# furo theme specific
+pygments_dark_style = "one-dark"
+

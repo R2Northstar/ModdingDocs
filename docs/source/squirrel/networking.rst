@@ -36,7 +36,7 @@ Example
 
 mod.json extract:
 
-.. code-block:: javascript
+.. code-block:: json
 	
 		"Scripts": [
 		{
@@ -56,7 +56,7 @@ sh_spaceships.nut:
 
 The networked ``CLIENT`` function has to be global
 
-.. code-block:: javascript
+.. code-block::
 
 	#if CLIENT
 	global function Server_GetNetworkedVariable // make the networked function only global on CLIENT
@@ -84,7 +84,7 @@ The networked ``CLIENT`` function has to be global
 
 Calling the ``CLIENT`` function ``Server_GetNetworkedVariable`` on ``SERVER`` vm:
 
-.. code-block:: javascript
+.. code-block::
 
 	// player: CPlayer entity that should execute the function
 	// func: function identifier string
@@ -120,10 +120,10 @@ and execute with the function serverside:
 .. cpp:function:: ServerToClientStringCommand( entity player /*CPlayer*/, string command )
 
 
-Example:
-^^^^^^^^
+Example
+^^^^^^^
 
-.. code-block:: javascript
+.. code-block::
 
 	void function MessageUtils_ClientInit()
 	{
@@ -135,6 +135,19 @@ Example:
 		// client side command handle logic ...
 	}
 
+``SERVER`` to ``UI`` vm
+=======================
+
+.. cpp:function:: Remote_CallFunction_UI( entity player, string functionName, ... )
+
+	Given a player, function name, and optional parameters, call function in UI script. Allowed var types are null, bool, int, and float.
+
+Example
+^^^^^^^
+
+.. code-block::
+
+	Remote_CallFunction_UI( player, "ScriptCallback_UnlockAchievement", achievementID )
 
 ``CLIENT`` to ``SERVER`` vm
 ===========================
@@ -163,7 +176,7 @@ Since version 1.5 mods can receive notifications when a client command has been 
 
     Example usage with the :doc:`PrivateMatchLaunch` clientcommand
 
-    .. code-block:: javascript
+    .. code-block::
 
         void function init(){
             AddClientCommandNotifyCallback("PrivateMatchLaunch", started)
@@ -185,10 +198,10 @@ Create a global function in the ``UI`` vm and call it in the ``CLIENT`` vm with 
 
 You can also pass parameters to the function. ``identifier`` is the name of the function you want to call.
 
-Example:
-^^^^^^^^
+Example
+^^^^^^^
 
-.. code-block:: javascript
+.. code-block::
 
 	#if UI
 	global function CallMe
@@ -211,10 +224,10 @@ Create a global function in the ``CLIENT`` vm and call it in the ``UI`` vm with 
 
 You can also pass parameters to the function. ``identifier`` is the name of the function you want to call.
 
-Example:
-^^^^^^^^
+Example
+^^^^^^^
 
-.. code-block:: javascript
+.. code-block::
 
 	#if CLIENT
 	global function CallMe
