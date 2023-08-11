@@ -14,7 +14,7 @@ For a graphic reprasentation of the Server and Client class inheritance, refer t
 	This List of Classes and their Methods is incomplete!
 
 
-CBaseEntity / C_BaseEntityF
+CBaseEntity / C_BaseEntity
 --------------------------
 
 Basic enitity that most other entities inherit from.
