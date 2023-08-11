@@ -14,7 +14,7 @@ For a graphic reprasentation of the Server and Client class inheritance, refer t
 	This List of Classes and their Methods is incomplete!
 
 
-CBaseEntity / C_BaseEntity
+CBaseEntity / C_BaseEntityF
 --------------------------
 
 Basic enitity that most other entities inherit from.
@@ -1655,7 +1655,8 @@ C_Player
 
 	.. cpp:function:: void ClientCommand( string command )
 
-		Executes a command on the player's client.
+		Executes a command on the player's client. For a server to execute a console command on a client, the client has to launch the game with the ``norestrictservercommands`` launch argument for security reasons.
+
 
 	.. cpp:function:: entity GetCockpit()
 
