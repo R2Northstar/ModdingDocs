@@ -1655,7 +1655,7 @@ C_Player
 
 	.. cpp:function:: void ClientCommand( string command )
 
-		Executes a command on the player's client. The command only gets executed when the player has launched Northstar with the ``norestrictservercommands`` launch argument for security reasons.
+		Executes a command on the player's client.
 
 	.. cpp:function:: entity GetCockpit()
 
