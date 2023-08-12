@@ -14,9 +14,9 @@ To actually save the file you use:
 
     **Parameters:**
 
-    - ``string file`` - The name of the file you want to store, this supports sub folders. Needs to be with the file type (e.g. ``/TitanData/tone.txt``)
+    - ``string file`` - The name of the file you want to store, this supports sub folders. Needs to be with the file type (e.g. ``/TitanData/tone.txt``).
 
-    - ``string data`` - The saved data, this can be any valid String
+    - ``string data`` - The saved data, this can be any valid String.
 
 Alternatively if you want a faster way to store :ref:`table_overview` you can use:
 
@@ -24,9 +24,9 @@ Alternatively if you want a faster way to store :ref:`table_overview` you can us
 
     **Parameters:**
 
-    - ``string file`` - The name of the file you want to store, this supports sub folders. Doesn't have to be ``.json`` but will use the correct formatting for a ``.json``
+    - ``string file`` - The name of the file you want to store, this supports sub folders. Doesn't have to be ``.json`` but will use the correct formatting for a ``.json``.
 
-    - ``table data`` -  The table that will be written to the file, this only supports the types specified in the :ref:`json_overview`
+    - ``table data`` -  The table that will be written to the file, this only supports the types specified in the :ref:`json_overview`.
 
 Loading a file
 --------------
@@ -35,11 +35,11 @@ Loading a file
 
     **Parameters:**
 
-    - ``string file`` - This is the name of the file you want to load, it has the same formating as in ``NSSaveFile``
+    - ``string file`` - This is the name of the file you want to load, it has the same formating as in ``NSSaveFile``.
 
     - ``void functionref( string ) onSuccess`` - The function that gets exectued when the file is successfully loaded, the parameter ``string`` is the content of the loaded file.
 
-    - ``void functionref() onFailure = null`` - The function that gets exectued when the loading was NOT successful, by default the function is just ``null``
+    - ``void functionref() onFailure = null`` - The function that gets exectued when the loading was NOT successful, by default the function is just ``null``.
 
     .. note::
         If you are having trouble with functionrefs you can read up on them here: :ref:`functionref_overview`
@@ -47,7 +47,7 @@ Loading a file
 
     **Returns:**
 
-    - Returns ``true`` if the file was found, and ``false`` else.
+    - Returns ``true`` if the file was found, otherwise it returns ``false``.
 
 You can also get all saved file:
 
@@ -55,7 +55,7 @@ You can also get all saved file:
 
     **Parameters:**
 
-    - ``string path = ""`` - Gets all files in a specified path, by default its just ``<profile>/saves/<mod directory name>``
+    - ``string path = ""`` - Gets all files in a specified path, by default its just ``<profile>/saves/<mod directory name>``.
 
     **Returns:**
 
@@ -68,7 +68,7 @@ Deleting a file
 
     **Parameters:**
 
-    - ``string file`` - This is the name of the file you want to check exsits, it has the same formating as in ``NSSaveFile``
+    - ``string file`` - This is the name of the file you want to check exsits, it has the same formating as in ``NSSaveFile``.
 
 
 File checks
@@ -78,11 +78,11 @@ File checks
 
     **Parameters:**
 
-    - ``string file`` - This is the name of the file you want to check exsits, it has the same formating as in ``NSSaveFile``
+    - ``string file`` - This is the name of the file you want to check exsits, it has the same formating as in ``NSSaveFile``.
 
     **Returns:**
 
-    - Returns ``true`` if the file was found, and ``false`` else.
+    - Returns ``true`` if the file was found, otherwise it returns ``false``.
 
 
 .. cpp:function:: int NSGetFileSize(string file)
@@ -103,11 +103,11 @@ File checks
 
     **Parameters:**
 
-    - ``string file`` - This is the path you want to check
+    - ``string file`` - This is the path you want to check.
 
     **Returns:**
 
-    - Returns ``true`` if the path is a folder, and ``false`` else.
+    - Returns ``true`` if the path is a folder, otherwise it returns ``false``.
 
 .. cpp:function:: int NSGetTotalSpaceRemaining()
 
