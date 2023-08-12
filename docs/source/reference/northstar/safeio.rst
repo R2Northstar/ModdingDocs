@@ -6,7 +6,7 @@ If you want to store an extended amount of data in your mod it is not sustainabl
 
 Saving a file
 -------------
-To save a file you need the content you want to save as a :ref:`strings-overview` , for this the :ref:`json_overview` functions can be useful if you want to store more complex types.
+To save a file you need the content you want to save as :ref:`strings-overview` , for this the :ref:`json_overview` functions can be useful if you want to ``tables`` or ``arrays``.
 
 To actually save the file you use:
 
@@ -35,7 +35,7 @@ Loading a file
 
     **Parameters:**
 
-    - ``string file`` - This is the name of the file you want to check exsits, it has the same formating as in ``NSSaveFile``
+    - ``string file`` - This is the name of the file you want to load, it has the same formating as in ``NSSaveFile``
 
     - ``void functionref( string ) onSuccess`` - The function that gets exectued when the file is successfully loaded, the parameter ``string`` is the content of the loaded file.
 
