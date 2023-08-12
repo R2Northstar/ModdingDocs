@@ -3,6 +3,9 @@ Complex types
 
 Within squirrel there are many ways to store information, but when storing an unspecified amount of information, or storing information on a player-by-player basis, you need to use ``arrays`` or ``tables``.
 
+
+.. _strings-overview:
+
 Strings
 -------
 
@@ -89,6 +92,8 @@ The syntax for static arrays is ``type[size]``.
 .. note::
 
   Static arrays don't have access to inbuilt functions of regular arrays.
+
+.. _table_overview:
 
 Tables
 ------
@@ -343,8 +348,10 @@ However there are a lot more functions to create entities, a lot of them are ver
 
 By default an entity can be of value ``null`` and does not need to be ``ornull`` casted
 
+.. _functionref_overview:
+
 Functionrefs
-------
+-----------
 
 You can declare a function as a variable, this is especially useful in function arguments.
 
