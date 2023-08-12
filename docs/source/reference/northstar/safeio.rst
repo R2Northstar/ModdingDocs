@@ -86,4 +86,4 @@ File checks
     :returns: Amount of bytes you have left to write on.
 
     .. note::
-        The max size of data you can store is ``50MB``
+        The max size of data you can store is ``50MB`` per mod.
