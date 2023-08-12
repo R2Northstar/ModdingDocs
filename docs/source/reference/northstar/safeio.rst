@@ -39,9 +39,6 @@ Loading a file
     .. note::
         If you are having trouble with functionrefs you can read up on them here: :ref:`functionref_overview`
 
-
-    :returns: ``true`` if the file was found, otherwise it returns ``false``.
-
 You can also get all saved file:
 
 .. cpp:function:: array<string> function NSGetAllFiles( string path = "" )
