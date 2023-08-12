@@ -44,7 +44,7 @@ You can convert strings to assets with the ``StringToAsset`` method added by Nor
   string s = format( "path/to/my/%s", "model.mdl" )
   asset m = StringToAsset( s )
 
-.. _arrays-overview:
+.. _arrays_overview:
 
 Arrays
 ------
