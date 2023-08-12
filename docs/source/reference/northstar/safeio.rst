@@ -6,7 +6,7 @@ If you want to store an extended amount of data in your mod it is not sustainabl
 
 Saving a file
 -------------
-To save a file you need the content you want to save as :ref:`strings-overview` , for this the :ref:`json_overview` functions can be useful if you want to store :ref:`table_overview` or :ref:`arrays-overview`.
+To save a file you need the content you want to save as :ref:`strings-overview` , for this the :ref:`json_overview` functions can be useful if you want to store :ref:`table_overview` or :ref:`arrays_overview`.
 
 To actually save the file you use:
 
