@@ -1,12 +1,12 @@
 Safe I/O
 ========
 
-If you want to store an extended amount of data in your mod it is not sustainable to only use ConVars. With Safe I/O you are able to write to one folder (``<profile>/saves/<mod directory name>``), in this folder you can store files of any type, useful examples would be ``.txt`` or ``.json``.
+If you want to store an extended amount of data in your mod it is not sustainable to only use ConVars as they are limited in space and easily reset. With Safe I/O you are able to write to one folder (``<profile>/saves/<mod directory name>``), in this folder you can store files of any type, and also create sub-folders, useful examples would be ``.txt`` or ``.json``.
 
 
 Saving a file
 -------------
-To save a file you need the content you want to save as :ref:`strings-overview` , for this the :ref:`json_overview` functions can be useful if you want to ``tables`` or ``arrays``.
+To save a file you need the content you want to save as :ref:`strings-overview` , for this the :ref:`json_overview` functions can be useful if you want to store ``tables`` or ``arrays``.
 
 To actually save the file you use:
 
