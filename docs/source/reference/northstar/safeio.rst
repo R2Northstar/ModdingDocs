@@ -84,3 +84,6 @@ File checks
 .. cpp:function:: int NSGetTotalSpaceRemaining()
 
     :returns: Amount of bytes you have left to write on.
+
+    .. note::
+        The max size of data you can store is ``50MB``
