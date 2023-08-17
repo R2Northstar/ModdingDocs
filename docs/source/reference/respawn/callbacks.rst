@@ -268,8 +268,8 @@ weapons/_weapon_utility.nut:
 .. cpp:function:: unknown ServerCallback_GuidedMissileDestroyed()
 .. cpp:function:: unknown ServerCallback_AirburstIconUpdate( toggle )
 
-server.dll CodeCallbacks
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+server.dll CodeCallbacks:
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. cpp:function:: void CodeCallback_PlayerDecoyDie( entity, int )
 .. cpp:function:: void CodeCallback_PlayerDecoyDissolve( entity, int )
