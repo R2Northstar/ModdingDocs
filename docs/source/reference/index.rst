@@ -10,7 +10,9 @@ Northstar API
     /reference/northstar/customdamagesources
     /reference/northstar/serversiderui
     /reference/northstar/httprequests
+    /reference/northstar/msinterface
     /reference/northstar/usefulfuncs
+    /reference/northstar/modsettings.rst
 
 Respawn API
 ===========
@@ -18,6 +20,7 @@ Respawn API
 .. toctree::
     :maxdepth: 2
 
+    /reference/respawn/native_server/index
     /reference/respawn/callbacks
     /reference/respawn/player
     /reference/respawn/entities
