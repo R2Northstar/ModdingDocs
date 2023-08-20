@@ -11,7 +11,6 @@ Northstar API
     /reference/northstar/serversiderui
     /reference/northstar/httprequests
     /reference/northstar/usefulfuncs
-    /reference/northstar/serverdialog
 
 Respawn API
 ===========
@@ -26,7 +25,7 @@ Respawn API
     /reference/respawn/topology
     /reference/respawn/clientcommands
     /reference/respawn/movers
-
+    /reference/respawn/dialog
 HUD
 ===
 
