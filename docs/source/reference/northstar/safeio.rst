@@ -1,7 +1,7 @@
 Safe I/O
 ========
 
-If you want to store an extended amount of data in your mod it is not sustainable to only use ConVars as they are limited in space and easily reset. With Safe I/O you are able to write to one folder (``<profile>/saves/<mod directory name>``). In this folder you can store text files of any type (e.g. ``.txt``, ``.json``), it's also possible to use non text file formats (e.g. ``.exe``) however you wont be able to run them on youre PC. It also allows for sub-folders.
+If you want to store an extended amount of data in your mod it is not sustainable to only use ConVars as they are limited in space and easily reset. With Safe I/O you are able to write to one folder (``<profile>/saves/<mod directory name>``). In this folder you can store text files of any type (e.g. ``.txt``, ``.json``), it's also possible to use non text file formats (e.g. ``.exe``) however you wont be able to run them on your PC. It also allows for sub-folders.
 
 
 Saving a file
