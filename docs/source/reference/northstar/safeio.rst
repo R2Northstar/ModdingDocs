@@ -69,7 +69,7 @@ File checks
 
     :param string file: This is the name of the file you want to get the file size from.
 
-    :returns: kB size of the specified file.
+    :returns: KB size of the specified file.
 
     .. warning::
         This fucntion will raise an error when the file doesnt exist.
@@ -83,7 +83,7 @@ File checks
 
 .. cpp:function:: int NSGetTotalSpaceRemaining()
 
-    :returns: Amount of kB you have left to write on.
+    :returns: Amount of KB you have left to write on.
 
     .. note::
         The max size of data you can store is ``50MB`` per mod. Can be overritten with ``-maxfoldersize BYTES`` in the launch args.
