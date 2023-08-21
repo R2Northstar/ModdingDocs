@@ -1,30 +1,57 @@
 Damage History 
 ==============
 
-Damage history stores the information of damage in a struct.
+After a player recieves damage it is stored by the game in an array of the following struct. The information in that struct is final and changeing it does not affect the game.
 
 DamageHistoryStruct
 -------------------
-============================ ===================================================================
-Variable name                short description
-============================ ===================================================================
-string attackerName          name of the attacker
-string attackerPetName       name of the titan
-vector origin                position of the victim
-float damage                 The amount of damage inflicted
-int damageType               A value from the :ref:`damage-flag-overview`
-int damageSourceId           Damage souce ID from the gun ( :ref:`damage-source-id-overview` )
-entity attacker              Entity of the attacker
-int attackerEHandle          
-float attackerHealthPercent  How much health the attacker has in %
-float time                   When the damage was inflicted
-array<string> weaponMods     Array of mods on the attacking gun
-bool victimIsTitan           ``true`` if the victim died in the Titan
-bool rodeoDamage             ``true`` if the damage was inflicted in rodeo mode
-============================ ===================================================================
 
-Getting the damage history
---------------------------
+.. cpp:struct:: DamageHistoryStruct
+    
+    .. cpp:var:: string attackerName
+	
+        name of the attacker 
+    .. cpp:var:: string attackerPetName
+	
+        name of the titan    
+    .. cpp:var:: vector origin
+	
+        position of the victim    
+    .. cpp:var:: float damage
+	
+        The amount of damage inflicted    
+    .. cpp:var:: int damageType
+	
+        A value from the :ref:`damage-flag-overview`    
+    .. cpp:var:: int damageSourceId
+	
+        Damage souce ID from the gun ( :ref:`damage-source-id-overview` )
+    .. cpp:var:: entity attacker
+	
+        Entity of the attacker    
+    .. cpp:var:: int attackerEHandle
+	
+    
+    .. cpp:var:: float attackerHealthPercent
+	
+        How much health the attacker has in %
+    
+    .. cpp:var:: float time
+	
+        When the damage was inflicted
+    
+    .. cpp:var:: array<string> weaponMods
+	
+        Array of mods on the attacking gun    
+    
+    .. cpp:var:: bool victimIsTitan
+	
+        ``true`` if the victim died in the Titan
+    
+    .. cpp:var:: bool rodeoDamage
+
+        ``true`` if the damage was inflicted in rodeo mode
+
 
 Geting the info from the entity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -45,9 +72,7 @@ Getter functions
 Setter functions
 ^^^^^^^^^^^^^^^^
 
-
 .. cpp:function:: DamageHistoryStruct function StoreDamageHistoryAndUpdate( entity storeEnt, float maxTime, float damage, vector damageOrigin, int damageType, int damageSourceId, entity attacker = null, array<string> weaponMods = [] )
-
 
 .. cpp:function:: void function UpdateDamageHistory( entity player, float maxTime, float time )
 
@@ -60,7 +85,7 @@ Setter functions
     :param float time: How old the damage history can be in seconds.
 
 
-Build in Checks
+Built in Checks
 ---------------
 
 .. cpp:function:: float function GetLastDamageTime( entity player )
@@ -77,11 +102,11 @@ Build in Checks
 
     .. note:: 
 
-        The ``AssistingPlayerStruct`` has the following elements:
+        .. cpp:struct:: AssistingPlayerStruct
 
-        * entity player
-        * int damageSourceId
-        * float assistTime
+            .. cpp:var:: entity player
+            .. cpp:var:: int damageSourceId
+            .. cpp:var:: float assistTime
 
 .. cpp:function:: array<DamageHistoryStruct> function GetRodeoAttacksByPlayer( entity player, entity attacker, float time )
 .. cpp:function:: string function GetLastDamageSourceStringForAttacker( entity victim, entity attacker )
