@@ -56,7 +56,7 @@ DamageHistoryStruct
 Getting the info from the entity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can get the damage history for any player entity with ``player.e.recentDamageHistory``, this is of the type ``array<DamageHistoryStruct>`` and gets automatically updated by the game. The higher the index the older the ``DamageHistoryStruct`` is ( so you would get the most recent struct you do ``player.e.recentDamageHistory[ 0 ]`` ).
+You can get the damage history for any player entity with ``player.e.recentDamageHistory``, this is of the type ``array<DamageHistoryStruct>`` and gets automatically updated by the game. The higher the index the older the ``DamageHistoryStruct`` is ( so to get the most recent struct you do ``player.e.recentDamageHistory[ 0 ]`` ).
 
 Getter functions
 ^^^^^^^^^^^^^^^^
