@@ -63,7 +63,7 @@ Getter functions
 
 .. cpp:function:: array<DamageHistoryStruct> GetDamageEventsForTime( entity player, float time )
 
-    :param entity player: The player you want the damage histroy from.
+    :param entity player: The player you want the damage history from.
 
     :param float time: How old the damage history can be in seconds.
 
