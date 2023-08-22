@@ -78,7 +78,7 @@ Setter functions
 
     Removes all ``DamageHistoryStruct`` in the time frame ``time - maxTime``
 
-    :param entity player: The player you want to update the damage histroy from.
+    :param entity player: The player you want to update the damage history from.
 
     :param float maxTime: How old the damage history can maximally be
 
