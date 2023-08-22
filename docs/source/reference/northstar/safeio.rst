@@ -1,7 +1,7 @@
 Safe I/O
 ========
 
-If you want to store an extended amount of data in your mod it is not sustainable to only use ConVars as they are limited in space and easily reset. With Safe I/O you are able to write to one folder (``<profile>/saves/<mod directory name>``). In this folder you can store text files of any type (e.g. ``.txt``, ``.json``), it's also possible to use non text file formats (e.g. ``.exe``) however you wont be able to run them on your PC. It also allows for sub-folders.
+If you want to store an extended amount of data in your mod it is not sustainable to only use ConVars as they are limited in space and easily reset. With Safe I/O you are able to write to one folder (``<profile>/saves/<mod directory name>``). In this folder you can store text files of any type (e.g. ``.txt``, ``.json``), it's also possible to use non text file formats (e.g. ``.exe``) however you won't be able to run them on your PC. It also allows for sub-folders.
 
 
 Saving a file
@@ -32,9 +32,9 @@ Loading a file
 
     :param string file: This is the name of the file you want to load, it has the same formating as in ``NSSaveFile``.
 
-    :param void functionref( string ) onSuccess: The function that gets exectued when the file is successfully loaded, the parameter ``string`` is the content of the loaded file.
+    :param void functionref( string ) onSuccess: The function that gets execued when the file is successfully loaded, the parameter ``string`` is the content of the loaded file.
 
-    :param void functionref() onFailure = null: The function that gets exectued when the loading was NOT successful, by default the function is just ``null``.
+    :param void functionref() onFailure = null: The function that gets execued when the loading was NOT successful, by default the function is just ``null``.
 
     .. note::
         If you are having trouble with functionrefs you can read up on them here: :ref:`functionref_overview`
@@ -86,4 +86,4 @@ File checks
     :returns: Amount of KB you have left to write on.
 
     .. note::
-        The max size of data you can store is ``50MB`` per mod. Can be overritten with ``-maxfoldersize BYTES`` in the launch args.
+        The max size of data you can store is ``50MB`` per mod. Can be overwritten with ``-maxfoldersize BYTES`` in the launch args.
