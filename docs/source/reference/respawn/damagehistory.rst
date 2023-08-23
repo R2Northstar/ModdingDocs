@@ -10,13 +10,13 @@ DamageHistoryStruct
     
     .. cpp:var:: string attackerName
 	
-        name of the attacker 
+        Name of the attacker 
     .. cpp:var:: string attackerPetName
 	
-        name of the titan    
+        Name of the titan    
     .. cpp:var:: vector origin
 	
-        position of the victim    
+        Position of the victim    
     .. cpp:var:: float damage
 	
         The amount of damage inflicted    
