@@ -3,8 +3,8 @@ Dialog
 
 Dialogs are a way for a client to open a text window with up to 4 buttons.
 
-Dialog struct
--------------
+Dialog structs
+--------------
 
 All the data in the struct that can be changed by the server.
 
@@ -59,17 +59,14 @@ All the data in the struct that can be changed by the server.
     .. cpp:var:: bool useFullMessageHeight = false                    
 
          Creates a larger dialog window even if there is no text or buttons to fill that space
-    .. cpp:var:: array<ServerDialogButtonData> buttonData             
+    .. cpp:var:: array<DialogButtonData> buttonData             
 
          Stores the information added by the ``AddDialogButton`` function
     .. cpp:var:: array<DialogFooterData> footerData                   
 
          Stores the information added by the ``AddDialogFooter`` function
 
-Related structs 
----------------
-
-.. cpp:struct:: DialogMessageRuiData:
+.. cpp:struct:: DialogMessageRuiData
 
     .. cpp:var:: string message = ""
     .. cpp:var:: vector style1Color = <1.0, 1.0, 1.0>
@@ -79,15 +76,12 @@ Related structs
     .. cpp:var:: float style2FontScale = 1.0
     .. cpp:var:: float style3FontScale = 1.0
 
-
 .. cpp:struct:: DialogButtonData
 
     .. cpp:var:: string label
     .. cpp:var:: void functionref() activateFunc
     .. cpp:var:: string focusMessage
     .. cpp:var:: bool startFocused
-
-
 
 .. cpp:struct:: DialogFooterData
 
@@ -105,13 +99,12 @@ Functions
     :param DialogData dialog: Instance of a DialogData struct
 
     **Example**
-    
+
     .. code-block::
 
         DialogData dialog
         dialog.message = "Hello there"
         OpenDialog( dialog )
-
 
 .. cpp:function:: void AddDialogButton( DialogData dialog, string text, void functionref() callback )
 
@@ -137,15 +130,13 @@ Functions
             OpenDialog( dialog )
         }
 
-
-.. cpp:function:: void AddDialogFooter( DialogData dialog, string text)
+.. cpp:function:: void AddDialogFooter( DialogData dialog, string text )
 
     Adds a footer to the dialog struct
 
     :param DialogData dialog: Instance of a DialogData struct
 
     :param string text: The Text that is shown on the button, supports some assets with ``%ASSET PATH%``
-
 
 
 .. cpp:function:: bool IsDialogActive( DialogData dialogData )
