@@ -98,23 +98,20 @@ Related structs
 Functions
 ---------
 
-**Definition:**
-
 .. cpp:function:: void OpenDialog( DialogData dialog )
 
     Shows the local player the dialog with the data from the struct.
 
     :param DialogData dialog: Instance of a DialogData struct
 
-**Example:**
+    **Example**
+    
+    .. code-block::
 
-.. code-block::
+        DialogData dialog
+        dialog.message = "Hello there"
+        OpenDialog( dialog )
 
-    DialogData dialog
-    dialog.message = "Hello there"
-    OpenDialog( dialog )
-
-**Definition:**
 
 .. cpp:function:: void AddDialogButton( DialogData dialog, string text, void functionref() callback )
 
@@ -126,21 +123,20 @@ Functions
 
     :param void functionref() callback: Function that is executed when the button is pressed.
 
-**Example:**
+    **Example**
 
-.. code-block::
+    .. code-block::
 
-    void function SendDialogWithButton()
-    {
-        DialogData dialog
-        dialog.message = "Hello there"
-        AddDialogButton(dialog, "Button 1 %%$r2_ui/menus/loadout_icons/primary_weapon/primary_kraber%%", void function():() {
-            printt( "pressed button 1" )
-        })
-        OpenDialog( dialog )
-    }
+        void function SendDialogWithButton()
+        {
+            DialogData dialog
+            dialog.message = "Hello there"
+            AddDialogButton(dialog, "Button 1 %%$r2_ui/menus/loadout_icons/primary_weapon/primary_kraber%%", void function():() {
+                printt( "pressed button 1" )
+            })
+            OpenDialog( dialog )
+        }
 
-**Definition:**
 
 .. cpp:function:: void AddDialogFooter( DialogData dialog, string text)
 
@@ -151,7 +147,6 @@ Functions
     :param string text: The Text that is shown on the button, supports some assets with ``%ASSET PATH%``
 
 
-**Definition:**
 
 .. cpp:function:: bool IsDialogActive( DialogData dialogData )
 
