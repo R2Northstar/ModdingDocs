@@ -8,59 +8,91 @@ Dialog struct
 
 All the data in the struct that can be changed by the server.
 
-===================================================       =========================================================================
-Name of the struct content and standard value              description of the content
-===================================================       =========================================================================
-``var menu``                                              The instance of the menu
-``string header``                                         The headline of the dialog
-``string message``                                        The body of text under the headline, it supports newline with ``\n``
-``DialogMessageRuiData &ruiMessage``                      Stores relevant RUI data
-``array<int> messageColor = [161, 161, 161, 255]``        The colour of the message body, in the format of RGBA
-``string image``                                          Path to the asset of the image displayed on the left of the text body
-``string rightImage = $""``                               Path to the asset of the image displayed on the right of the text body
-``bool forceChoice = false``                              unknown 
-``bool noChoice = false``                                 unknown
-``bool noChoiceWithNavigateBack = false``                 unknown
-``bool showSpinner = false``                              Sets the left image as an animated spinner 
-``bool showPCBackButton = false``                         Shows an additional button below all other buttons that closes the dialog for the client when pressed, works the same as pressing the ``esc`` button
-``float inputDisableTime = 0``                            How long it takes before the client is able to press a button
-``table<int,bool> coloredButton``                         The int is the index of the Button
-``bool darkenBackground = false``                         Darkens the colour of the dialog window slightly
-``bool useFullMessageHeight = false``                     Creates a larger dialog window even if there is no text or buttons to fill that space
-``array<ServerDialogButtonData> buttonData``              Stores the information added by the ``AddDialogButton`` function
-``array<DialogFooterData> footerData``                    Stores the information added by the ``AddDialogFooter`` function
-===================================================       =========================================================================
+.. cpp:struct:: DialogData
+    
+
+    .. cpp:var:: var menu                                             
+
+         The instance of the menu
+    .. cpp:var:: string header                                        
+
+         The headline of the dialog
+    .. cpp:var:: string message                                       
+
+         The body of text under the headline, it supports newline with ``\n``
+    .. cpp:var:: DialogMessageRuiData &ruiMessage                     
+
+         Stores relevant RUI data
+    .. cpp:var:: array<int> messageColor = [161, 161, 161, 255]       
+
+        The colour of the message body, in the format of RGBA
+    .. cpp:var:: string image                                         
+
+         Path to the asset of the image displayed on the left of the text body
+    .. cpp:var:: string rightImage = $""                              
+
+         Path to the asset of the image displayed on the right of the text body
+    .. cpp:var:: bool forceChoice = false                             
+
+         unknown 
+    .. cpp:var:: bool noChoice = false                                
+
+         unknown
+    .. cpp:var:: bool noChoiceWithNavigateBack = false                
+
+         unknown
+    .. cpp:var:: bool showSpinner = false                             
+
+         Sets the left image as an animated spinner 
+    .. cpp:var:: bool showPCBackButton = false                        
+
+         Shows an additional button below all other buttons that closes the dialog for the client when pressed, works the same as pressing the ``esc`` button
+    .. cpp:var:: float inputDisableTime = 0                           
+
+         How long it takes before the client is able to press a button
+    .. cpp:var:: table<int,bool> coloredButton                        
+
+         The int is the index of the Button
+    .. cpp:var:: bool darkenBackground = false                        
+
+         Darkens the colour of the dialog window slightly
+    .. cpp:var:: bool useFullMessageHeight = false                    
+
+         Creates a larger dialog window even if there is no text or buttons to fill that space
+    .. cpp:var:: array<ServerDialogButtonData> buttonData             
+
+         Stores the information added by the ``AddDialogButton`` function
+    .. cpp:var:: array<DialogFooterData> footerData                   
+
+         Stores the information added by the ``AddDialogFooter`` function
 
 Related structs 
 ---------------
 
-DialogMessageRuiData:
-^^^^^^^^^^^^^^^^^^^^^
+.. cpp:struct:: DialogMessageRuiData:
 
-    * string message = ""
-    * vector style1Color = <1.0, 1.0, 1.0>
-    * vector style2Color = <0.5, 0.5, 0.5>
-    * vector style3Color = <0.5, 0.5, 0.5>
-    * float style1FontScale = 1.0
-    * float style2FontScale = 1.0
-    * float style3FontScale = 1.0
+    .. cpp:var:: string message = ""
+    .. cpp:var:: vector style1Color = <1.0, 1.0, 1.0>
+    .. cpp:var:: vector style2Color = <0.5, 0.5, 0.5>
+    .. cpp:var:: vector style3Color = <0.5, 0.5, 0.5>
+    .. cpp:var:: float style1FontScale = 1.0
+    .. cpp:var:: float style2FontScale = 1.0
+    .. cpp:var:: float style3FontScale = 1.0
 
 
-DialogButtonData
-^^^^^^^^^^^^^^^^
+.. cpp:struct:: DialogButtonData
 
-	* string label
-	* void functionref() activateFunc
-	* string focusMessage
-	* bool startFocused
+    .. cpp:var:: string label
+    .. cpp:var:: void functionref() activateFunc
+    .. cpp:var:: string focusMessage
+    .. cpp:var:: bool startFocused
 
 
 
-DialogFooterData
-^^^^^^^^^^^^^^^^
+.. cpp:struct:: DialogFooterData
 
-	* string label
-	* void functionref() activateFunc
+    .. cpp:var:: string label
+    .. cpp:var:: void functionref() activateFunc
 
 
 Functions
@@ -141,7 +173,7 @@ the folowing code produces this output:
     dialog.showSpinner = true
     dialog.showPCBackButton = true
     AddDialogButton( dialog, "Button 1 %%$r2_ui/menus/loadout_icons/primary_weapon/primary_kraber%%", ButtonOnePressed )
-    SendServerDialog( player, dialog )
+    OpenDialog( dialog )
 
 
 .. figure:: /_static/serverdialog/dialogexample.png
