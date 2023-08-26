@@ -93,7 +93,7 @@ Code Callbacks
 .. cpp:function:: void CodeCallback_ZiplineStop( entity player )
 .. cpp:function:: bool CodeCallback_IsValidRodeoTarget( entity player, entity rodeoTarget )
 .. cpp:function:: var CodeCallback_OnRodeoAttach( entity rider, entity rodeoTarget )
-.. cpp:function:: void CodeCallback_TitanRiderEntVarChanged( entity soul, int rodeoSlotIndex, entity oldRider, entity newRider) )
+.. cpp:function:: void CodeCallback_TitanRiderEntVarChanged( entity soul, int rodeoSlotIndex, entity oldRider, entity newRider )
 .. cpp:function:: bool CodeCallback_OnVortexHitBullet(  entity weapon, entity vortexSphere, var damageInfo )
 .. cpp:function:: bool CodeCallback_OnVortexHitProjectile( entity weapon, entity vortexSphere, entity attacker, entity projectile, vector contactPos )
 .. cpp:function:: void CodeCallback_OnTurretCancelPressed( entity player )
