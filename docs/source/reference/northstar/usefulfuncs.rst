@@ -376,7 +376,7 @@ String
     
     .. note::
 
-        replaces text that should be localzied on the client
+        replaces text that should be localized on the client
 
         .. code-block::
 
