@@ -6,8 +6,8 @@ project = "Northstar Modding"
 copyright = "2022, Northstar Developer Team"
 author = "Northstar Developer Team"
 
-release = "0.1"
-version = "0.1.0"
+release = ""
+version = ""
 
 
 # -- General configuration
