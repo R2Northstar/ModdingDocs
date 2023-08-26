@@ -6,10 +6,6 @@ project = "Northstar Modding"
 copyright = "2022, Northstar Developer Team"
 author = "Northstar Developer Team"
 
-release = ""
-version = ""
-
-
 # -- General configuration
 
 extensions = [
