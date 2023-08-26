@@ -34,6 +34,9 @@ Code Callbacks
 .. cpp:function:: void CodeCallback_EmbarkTitan( entity player, entity titan) 
 .. cpp:function:: bool CodeCallback_EmbarkTitanFromGrapple( entity player, entity titan )
 .. cpp:function:: void CodeCallback_OnWeaponAttack( entity player, entity weapon, string weaponName, int ammoUsed )
+
+    .. warning::
+        This code callback does not work
 .. cpp:function:: void CodeCallback_OnPrecache()
 .. cpp:function:: void CodeCallback_OnVehiclePass( table params )
 .. cpp:function:: bool CodeCallback_ForceAIMissPlayer( entity npc, entity player )
