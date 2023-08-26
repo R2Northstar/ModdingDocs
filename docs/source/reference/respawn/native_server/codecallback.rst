@@ -3,7 +3,7 @@ Code Callbacks
 
 .. warning::
 
-    Not all of these are fully implemented, eithr check the asset dump or try it out.
+    Not all of these are fully implemented, either check the asset dump or try it out.
 
 .. cpp:function:: void CodeCallback_PlayerDecoyDie( entity, int )
 .. cpp:function:: void CodeCallback_PlayerDecoyDissolve( entity, int )
