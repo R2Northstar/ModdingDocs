@@ -1,5 +1,5 @@
-Dialog
-======
+Dialogs
+=======
 
 Dialogs are a way for a client to open a text window with up to 4 buttons.
 
