@@ -1,5 +1,5 @@
-Dialog
-======
+Dialogs
+=======
 
 Dialogs are a way for a client to open a text window with up to 4 buttons.
 
@@ -145,6 +145,9 @@ Functions
 
     :returns: ``true`` if the dialog with that struct is currently open, otherwise it returns ``false``
 
+.. cpp:function:: void OpenErrorDialog( string errorDetails )
+
+    :param string errorDetails: User facing information about the error
 Code example
 ------------
 
