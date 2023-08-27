@@ -6,7 +6,7 @@ Dialogs are a way for a client to open a text window with up to 4 buttons.
 Dialog structs
 --------------
 
-All the data in the struct that can be changed by the server.
+All the data in the struct that can be changed.
 
 .. cpp:struct:: DialogData
     
