@@ -419,4 +419,3 @@ Vectors
 
 .. cpp:function:: vector function RandomVec( float range )
 
-    
