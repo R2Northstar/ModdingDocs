@@ -1,5 +1,5 @@
 BIK Video Modding
-===============================================
+========
 
 Prequisites to Video Modding
 ~~~~~~~~~~~~~
