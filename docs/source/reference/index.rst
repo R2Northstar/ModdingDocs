@@ -12,7 +12,8 @@ Northstar API
     /reference/northstar/httprequests
     /reference/northstar/msinterface
     /reference/northstar/usefulfuncs
-    /reference/northstar/modsettings.rst
+    /reference/northstar/modsettings
+    /reference/northstar/safeio
 
 Respawn API
 ===========
@@ -28,6 +29,7 @@ Respawn API
     /reference/respawn/topology
     /reference/respawn/clientcommands
     /reference/respawn/movers
+    /reference/respawn/damagehistory
 
 HUD
 ===
