@@ -10,7 +10,7 @@ Prequisites to Video Modding
     
 
 Converting the Video
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 1. Open RAD Video Tools
 2. Browse to your Video in the File Browser and select it
