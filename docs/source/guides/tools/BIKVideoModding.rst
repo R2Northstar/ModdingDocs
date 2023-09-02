@@ -31,6 +31,7 @@ Making a Main Menu Video Mod
     .. code-block:: text
 
         author.mod/
+        ├─ mod.json
         ├─ media/
         │  ├─ menu_act01.bik
 5. Your mod should now load a custom Main Menu Video
