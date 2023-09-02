@@ -2,7 +2,7 @@ BIK Video Modding
 =================
 
 Prequisites to Video Modding
-~~~~~~~~~~~~~~~~~~~
+============================
 
 - `The RAD Video Tools <http://www.radgametools.com/bnkdown.htm>`__ installed on your PC
 .. note::
