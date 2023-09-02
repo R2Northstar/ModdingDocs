@@ -12,5 +12,5 @@ Contributing
 
 The only prerequisites are python and pip. On Linux simply run `run.sh` in the root dir and in windows execute `run.ps1` with powershell in the root dir. You may need to change the Powershell execution policies in order to run the script.
 
-Running the script will install all dependencies required and build the docs locally. The local version is available at [port 8000](http://127.0.0.1:8000/).
+Running the script will install all dependencies required and build the docs locally. The local version is available at [port 8000](http://127.0.0.1:8000/). The server will get opened in your browser when the script finishes.
 When you change a file the server will automatically rebuild it and refresh your browser window.
