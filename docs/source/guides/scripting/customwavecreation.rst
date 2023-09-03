@@ -215,7 +215,7 @@ index
 Cheat Sheet
 ^^^^^^^^^^^
 
-.. note ::
+.. note::
     This cheat sheet is a reference point to help make your scripts for missions
 
 
