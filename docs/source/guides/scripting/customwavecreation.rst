@@ -107,7 +107,7 @@ some other Event types that you can use in your own script:
 
 The Global and Void function
 ****************************
-.. code-block :: json
+.. code-block::
 
     global function initFrontierDefenseData
     void function initFrontierDefenseData()
