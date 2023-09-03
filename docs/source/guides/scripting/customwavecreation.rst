@@ -24,7 +24,7 @@ Creating Custom Waves for Frontier Defense can be a little tricky as it needs a 
 
 Here is a basic setup of the things mentioned above that would let the script run:
 
-.. code-block:: json
+.. code-block:: 
 
     global function initFrontierDefenseData
     void function initFrontierDefenseData()
