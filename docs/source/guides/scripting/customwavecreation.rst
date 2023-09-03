@@ -61,7 +61,7 @@ Explaining What Everything Does in the Script
 Here is another example of a mission I made to better explain 
 some other Event types that you can use in your own script:
 
-.. code-block ::
+.. code-block::
 
     global function initFrontierDefenseData
     void function initFrontierDefenseData()
