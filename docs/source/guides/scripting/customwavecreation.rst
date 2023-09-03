@@ -1,6 +1,6 @@
 Creating Custom Waves for Frontier Defense
 ==========================================
-.. Warning ::
+.. Warning::
     There are two different branches for Frontier Defense as of writing this: ``9/1/2023``. What this means there is the `Vanilla`_ branch and the `Experimental`_ 
     branch of Frontier Defense. Anytime that something isn't in the `Vanilla`_ branch will have a warning on it stating that it is from the `Experimental`_ branch.
 
