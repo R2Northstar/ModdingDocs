@@ -273,7 +273,7 @@ Troubleshooting
 
 - Instead of ending with index++:
 
-.. code-block:: json
+.. code-block::
 
     wave1.append(CreateDroppodGruntEvent(< 4120,800,1004 >,"",index++))
     wave1.append(CreateDroppodGruntEvent(< 4150,730,1004 >,"",index++))
