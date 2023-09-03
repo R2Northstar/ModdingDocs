@@ -7,4 +7,5 @@ In depth tutorials
 
     /guides/scripting/gamemodemods
     /guides/scripting/custommenus
+    /guides/scripting/customwavecreation
 
