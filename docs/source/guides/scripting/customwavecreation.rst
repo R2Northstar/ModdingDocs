@@ -125,7 +125,7 @@ Brackets
 
 ShopPosition and Angles
 ***********************
-.. code-block :: json
+.. code-block::
 
     shopPosition = < -3862,1267,1060 >
     shopAngles =  <0,30,0>
