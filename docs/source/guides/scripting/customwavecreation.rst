@@ -148,7 +148,7 @@ SpawnPosition and Angles
 int index
 *********
 
-.. code-block :: json
+.. code-block::
     
     int index = 1
 
