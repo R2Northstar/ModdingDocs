@@ -116,7 +116,7 @@ The Global and Void function
 
 Brackets
 ********
-.. code-block :: json
+.. code-block::
 
     {
     }
