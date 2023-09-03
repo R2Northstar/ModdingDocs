@@ -158,7 +158,7 @@ int index
 waveEvents
 **********
 
-.. code-block :: json
+.. code-block::
 
     array<WaveEvent> wave1
     waveEvents.append(wave1)
