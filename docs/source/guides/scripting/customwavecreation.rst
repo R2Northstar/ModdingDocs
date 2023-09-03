@@ -135,7 +135,7 @@ ShopPosition and Angles
 
 SpawnPosition and Angles
 ************************
-.. code-block :: json
+.. code-block::
 
     FD_spawnPosition = < -838,2629,1592 >
     FD_spawnAngles = < 0,180,0 >
