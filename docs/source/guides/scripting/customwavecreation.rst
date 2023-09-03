@@ -188,7 +188,7 @@ Appending Wave Events
 - ``index++`` or ``0`` is very important to include at the end of your variable listing as shown in the example above, if you do not include it, your script **will crash**!
     - The difference between the two is, ``index++`` advances the script one line in the array as ``0`` is used on the very last wave append to end the array. Failure to include ``0`` at the end of an array **will crash**!
 
-.. note ::
+.. note::
     It is very important to keep track of what wave number you are making it for and to document that number for that array. The number can be any number, it can even be inconsistant as long as it's the same number for that array. Failure to do so will cause the script **to crash**!
 
 What Events Can I Make?
