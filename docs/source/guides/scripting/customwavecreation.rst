@@ -167,7 +167,7 @@ waveEvents
 
 Appending Wave Events
 *********************
-.. code-block :: json
+.. code-block::
 
     array<WaveEvent> wave1
     wave1.append(CreateSmokeEvent(< 4060,771,1004 >,90,index++))
