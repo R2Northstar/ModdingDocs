@@ -8,7 +8,7 @@ Creating Custom Waves for Frontier Defense
     Another thing to note, I'm not very good at wording or documenting in general, so if anyone has changes to word anything better
     feel free to do so.
 
-.. note ::
+.. note::
     One last note, when I will be referencing wave(s) as a mission, the overall script to save the headache for wording.
 
 Introductory
