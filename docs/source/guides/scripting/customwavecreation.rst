@@ -1,18 +1,14 @@
-Creating Custom Waves for Frontier Defense
-==========================================
+Creating Custom Missions for Frontier Defense
+=============================================
 .. Warning::
     There are two different branches for Frontier Defense as of writing this: ``9/1/2023``. What this means there is the `Vanilla`_ branch and the `Experimental`_ 
     branch of Frontier Defense. Anytime that something isn't in the `Vanilla`_ branch will have a warning on it stating that it is from the `Experimental`_ branch.
 
 .. note::
-    Another thing to note, I'm not very good at wording or documenting in general, so if anyone has changes to word anything better
-    feel free to do so.
-
-.. note::
     One last note, when I will be referencing wave(s) as a mission, the overall script to save the headache for wording.
 
 Introductory
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------
 Creating Custom Waves for Frontier Defense can be a little tricky as it needs a few things at minimum to run properly. As such you need the following to get it to run properly:
 
 - Shop Position
@@ -56,7 +52,7 @@ Will be explaining below what everything means with some extra event types and v
 
 
 Explaining What Everything Does in the Script 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------
 
 Here is another example of a mission I made to better explain 
 some other Event types that you can use in your own script:
@@ -78,35 +74,24 @@ some other Event types that you can use in your own script:
         wave1.append(CreateWaitForTimeEvent(5,index++))
         wave1.append(CreateWarningEvent(FD_IncomingWarnings.ArcTitanAlt,index++))
         wave1.append(CreateArcTitanEvent(< 4300,771,1004 >,< 0,180,0 >,"",index++))
-        wave1.append(CreateDroppodGruntEvent(< 4060,771,1004 >,"",index++))
-        wave1.append(CreateDroppodGruntEvent(< 3975,1950,1004 >,"",index++))
-        wave1.append(CreateDroppodGruntEvent(< 4516,1423,1004 >,"",index++))
         wave1.append(CreateDroppodGruntEvent(< 3733,100,1004 >,"",0))
         waveEvents.append(wave1)
         index=1
         array<WaveEvent> wave2
         wave2.append(CreateWarningEvent(FD_IncomingWarnings.LightWave,index++))
         wave2.append(CreateDroppodStalkerEvent(< 2851,4146,1000 >,"",index++))
-        wave2.append(CreateDroppodStalkerEvent(< 3194,4841,1000 >,"",index++))
         wave2.append(CreateLegionTitanEvent(< 4060,771,1004 >,< 0,180,0 >,"",index++))
-        wave2.append(CreateWaitUntilAliveEvent(5,index++))
         wave2.append(CreateWaitForTimeEvent(3,index++))
         wave2.append(CreateWarningEvent(FD_IncomingWarnings.MortarTitanIntro,index++))
         wave2.append(CreateMortarTitanEvent(< 2176,-3541,878 >,< 0,180,0 >,index++))
-        wave2.append(CreateMortarTitanEvent(< 1710,-3738,906 >,< 0,180,0 >,index++))
-        wave2.append(CreateMortarTitanEvent(< 3666,-3132,860 >,< 0,180,0 >,index++))
         wave2.append(CreateWaitForTimeEvent(3,index++))
-        wave2.append(CreateCloakDroneEvent(< 3666,-3132,2000 >,< 0,0,0 >,index++))
-        wave2.append(CreateMortarTitanEvent(< 2864,4075,952 >,< 0,180,0 >,index++))
-        wave2.append(CreateMortarTitanEvent(< 2650,4484,988 >,< 0,180,0 >,index++))
         wave2.append(CreateMortarTitanEvent(< 2240,4887,1011 >,< 0,180,0 >,index++))
-        wave2.append(CreateCloakDroneEvent(< 2240,4887,2000 >,< 0,0,0 >,0))
         waveEvents.append(wave2)
 
     }
 
-The Global and Void function
-****************************
+Init Functions
+##############
 .. code-block::
 
     global function initFrontierDefenseData
@@ -115,7 +100,7 @@ The Global and Void function
 - These are what starts the script and calls the functions needed for the gamemode.
 
 Brackets
-********
+########
 .. code-block::
 
     {
@@ -124,7 +109,7 @@ Brackets
 - This is what houses the main script from start to finish
 
 ShopPosition and Angles
-***********************
+#######################
 .. code-block::
 
     shopPosition = < -3862,1267,1060 >
@@ -134,7 +119,7 @@ ShopPosition and Angles
 - shopAngles spawns the shop with rotations if defined via Y,A,P (Yaw, Angle, Pitch)
 
 SpawnPosition and Angles
-************************
+########################
 .. code-block::
 
     FD_spawnPosition = < -838,2629,1592 >
@@ -146,7 +131,7 @@ SpawnPosition and Angles
     Without spawnPosition and spawnAngles, the game **will crash!**
 
 int index
-*********
+#########
 
 .. code-block::
     
@@ -156,7 +141,7 @@ int index
 
 
 waveEvents
-**********
+##########
 
 .. code-block::
 
@@ -166,7 +151,7 @@ waveEvents
 - This is the heart of the script, what tells the game where to spawn/do in-game Events.
 
 Appending Wave Events
-*********************
+#####################
 .. code-block::
 
     array<WaveEvent> wave1
@@ -174,9 +159,6 @@ Appending Wave Events
     wave1.append(CreateWaitForTimeEvent(5,index++))
     wave1.append(CreateWarningEvent(FD_IncomingWarnings.ArcTitanAlt,index++))
     wave1.append(CreateArcTitanEvent(< 4300,771,1004 >,< 0,180,0 >,"",index++))
-    wave1.append(CreateDroppodGruntEvent(< 4060,771,1004 >,"",index++))
-    wave1.append(CreateDroppodGruntEvent(< 3975,1950,1004 >,"",index++))
-    wave1.append(CreateDroppodGruntEvent(< 4516,1423,1004 >,"",index++))
     wave1.append(CreateDroppodGruntEvent(< 3733,100,1004 >,"",0))
     waveEvents.append(wave1)
 
@@ -192,59 +174,134 @@ Appending Wave Events
     It is very important to keep track of what wave number you are making it for and to document that number for that array. The number can be any number, it can even be inconsistant as long as it's the same number for that array. Failure to do so will cause the script **to crash**!
 
 What Events Can I Make?
-***********************
+#######################
 
 - There are over 26 different events you can make on the `Vanilla`_ branch of Frontier Defense (39 from the `Experimental`_ branch)
 - There are two different types of events you can make, there are ``Enemies`` and ``Logic``
     - The Enemy events are self explanatory, they spawn the enemy at XYZ(and YAP, depending on if it uses that variable).
-    - The Logic events is what controls how the script runs
-- 
+    - The Logic events is what controls how the script runs (Mainly CreateWaitForTimeEvent and CreateWaitUntilAliveEvent)
+
+Enemy Events
+^^^^^^^^^^^^
+
+- There are over 21 different enemy types that can be spawned in
+    - ``Normal`` (DropPod: Grunt, Ticks, Stalkers, Spectres, Reapers, CloakDrones, Drones)
+    - ``Titans`` (Monarch, Legion, Tone, Ronin, Scorch, Ion, NorthstarSniper, ToneSniper)
+    - ``Special Titans`` (Arc, Nuke, Mortar)
+    - ``Custom Enemy Types`` (GenericSpawn and GenericTitan)
+    - ``Smoke`` 
+    - The typical structure for adding an enemy goes as follows(Template For every Enemy will be in `Cheat Sheet`_):
+.. error::
+    If you do not include spaces between the coordinates and angle brackets (<>), the game **will crash!** This applies to anything with coordinates in the script. 
+.. note::
+    The "" references route points that every maps has, a list will be in `Cheat Sheet`_. It is also Recommended to know said routes as if you spawn an enemy across the map from the route point, it will ignore harvester direction and try to get to the start of the route on the map, then to the harvester.
+        - Normal ``wave#.append(Create"EnemyTypeHere"Event(< X,Y,Z >,"",index++/0))``
+
+
+Logic Events
+^^^^^^^^^^^^
+
+- Logic Events is what tells the script when and how to execute the code, or to announce something during the wave (CreateWarningEvent)
+- There is over 4 different types of Logic Events
+    - ``CreateWaitForTimeEvent``
+        - As what it suggests, it waits for a certain amount of time (in seconds, can be a decimal) before executing the next line of code in the script.
+    - ``CreateWaitUntilAliveEvent``
+        - This Event waits to start the next line of code based on how many enemies are alive on the map.
+            - ``Ex``: we set the event to be 5, and we spawn over 8 enemies before this event, the code will wait to execute the next line of code until the enemy count on the map drops to 5 or lower(**Not Meaning Overall Enemy Count!!!**).
+    - ``CreateWaitUntilAliveWeightedEvent`` (This event is mostly broken as Zanieon, the main developer for Frontier Defense, doesn't even know what it does.).
+        - As Zanieon sums it up: Ngl but this is confusing af to "guess" how the fuck the weights works, say 15 means 3 Titans, but what if i want only the titans to count? i can't because 15 infantry units may get in the way, this a bad way to control the spawning flow.
+    - ``CreateWarningEvent``
+        - This event creates a warning event for Droz or Davis to announce to everyone on the server what's coming in a wave.
+
+.. dropdown:: CreateWarningEvents Variables
+
+     - CloakDrone
+     - ArcTitan
+     - Reaper
+     - MortarTitan
+     - NukeTitan
+     - ReaperAlt
+     - Ticks
+     - Stalkers
+     - MortarSpectre
+     - ReaperTicks
+     - Flyers
+     - EliteTitans (`Experimental`_ Branch!)
+     - infantry
+     - CloakDroneIntro
+     - EnemyTitansIncoming
+     - MortarTitansIntro
+     - NukeTitanIntro
+     - ArcTitanInto
+     - TitanfallBlocked (`Experimental`_ Branch!)
+     - PreNukeTitan
+     - PreMortarTitan
+     - PreArcTitan
+     - Everything
+     - LightWave
+     - MediumWave
+     - HeavyWave
+     - NoMoreTitansInWave
+     - ArcTitanAlt
+     - ComboNukeMortar
+     - ComboArcNuke
+     - ComboNukeCloak
+     - ComboNukeTrain
+     
+
+
+.. note::
+    It is very important to include logic (Mainly WaitForTime and WaitUntilAlive) in your script or it may cause a **crash** if you are spamming a lot of enemies at once!
 
 index
-*****
+#####
 - This tell the script to advance squirrel's index to 1, it is used between waves. It is needed or the script **will crash**!
 
-  
+Using Both Event Types in The Example Script
+--------------------------------------------
 
+- Lets add A few enemy types and Logic to our Example script from above.
+    - For our wave1 array, let's add another Grunt Droppod, a Reaper, and some Logic
 
-
-
-
+.. note::
+    It's best not to spam Titans on Wave 1 as no player has a titan, so it's better to lightly spam grunts, if your sadistic enough!
 
 
 Cheat Sheet
-^^^^^^^^^^^
+-----------
 
 .. note::
     This cheat sheet is a reference point to help make your scripts for missions
 
 
 Shop
-----
+####
+
 - ``shopPosition = <X,Y,Z>`` As what it suggests, it spawns the shop at in-game coordinates.
 - ``shopAngles = <Y,A,P>`` As what it suggests, it changes the shops rotation by either the Yaw, Angle, or Pitch.
 
 Spawning Types(For Pilots):  
----------------------------
+###########################
 
-- ``FD_DropPodSpawns.append(<X,Y,Z>)`` 
-
+- ``FD_DropPodSpawns.append(< X,Y,Z >)`` 
+    - Spawns you in a drop pod and drops you at In-game Coords.
+    - Ex. FD_DropPodSpawns.append(< -3000, 226, 1158 >)
 
 Wave Events:
-------------
+############
 
 
 Enemy Types:
-------------
+############
 
 Normal AI:
-**********
+^^^^^^^^^^
 
 Titans:
-*******
+^^^^^^^
 
 Elite Titans:
-*************
+^^^^^^^^^^^^^
 .. Warning ::
     The Elite Titans are from the `Experimental`_ branch! Use that branch if you want to use Elite Titans!
 
@@ -265,7 +322,7 @@ An example of this would be:
 
 
 Troubleshooting
-^^^^^^^^^^^^^^^
+###############
 
 ``[SERVER] Index "#" is beyond array size of #``
 
@@ -292,7 +349,7 @@ It needs to end with 0:
     array<WaveEvent> wave2
 
 Game Limitations
-^^^^^^^^^^^^^^^^
+################
 
 - ``511 Enemies in one wave`` and ``511 Waves at a time``
     - What this means is you can have up to 511 enemies each wave and have up to 511 waves in your mission script. 
