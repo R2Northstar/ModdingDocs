@@ -36,3 +36,26 @@ Making a Main Menu Video Mod
         │  ├─ menu_act01.bik
 5. Your mod should now load a custom Main Menu Video
 
+
+Playing a Custom BIK Video
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Not only can you replace the pre-existing BIK files Respawn uses, you can also make your own custom ones and play them whenever you like with console commands.
+
+``playvideo [videoname] [horizontal resolution] [vertical resolution]`` will played the named BIK file within the specified resolution.
+
+**EX.** ``playvideo myvideoname 100 100`` will play the BIK file named "myvideoname" within a 100x100 resolution square in the top-left corner.
+
+The ``stopvideos`` command will end any currently playing BIK videos.
+
+With these commands, BIK files can be used as a substitute for custom audio outside of audio overrides. Videos running in a 1x1 resolution in the top-left corner will be nearly unnoticeable outside of whatever audio they're playing.
+
+Some things to note while using custom BIK videos:
+
+* BIKs will always play anchored to the top-left corner of the screen.
+* If a resolution is not entered within the playvideo command, it will be auto-filled by whatever the current window's resolution is.
+* Videos will **NOT** stretch based on resolution, any extra space is just black.
+* You can also convert files like .mp3 and .wav into .bik. **HOWEVER**, the audio quality in-game diminishes considerably.
+* While BIKs are allowed to have transparency, Titanfall 2 does not process it appropriately.
+* BIK videos will layer on top of each other based on when their command is run. There is no way to change how they are layered.
+* When a BIK video ends, if there are any other videos currently running above it, they will be forced to disappear for a single frame right before that video ends. This causes a noticeable flicker for any BIKs that are being used for actual video rather than just sound.
