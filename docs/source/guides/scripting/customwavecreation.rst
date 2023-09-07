@@ -464,10 +464,10 @@ To this:
 
 Game Limitations
 ################
-- You can spawn up to 36 enemies at once on the map, anything past that the engine starts to flip out and things start to get buggy!
+You can spawn up to 36 enemies at once on the map, anything past that the engine starts to flip out and things start to get buggy!
 
-- ``511 Enemies in one wave`` and ``511 Waves at a time``
-    - What this means is you can have up to 511 enemies each wave and have up to 511 waves in your mission script. 
+``511 Enemies in one wave`` and ``511 Waves at a time``
+    What this means is you can have up to 511 enemies each wave and have up to 511 waves in your mission script. 
 
 .. _Experimental: https://github.com/Zanieon/NorthstarMods/tree/gamemode_fd_experimental
 .. _Vanilla: https://github.com/R2Northstar/NorthstarMods/tree/gamemode_fd
