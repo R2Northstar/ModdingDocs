@@ -15,4 +15,5 @@ A vector literal is a comma seperated list of expressions that evaluate to eithe
 .. code-block::
 
    vector v = < 1, 2.5, 3 >
-   printt( v.x, v.y, v.z ) // 1 2.5 3
+   v.y = 2
+   printt( v.x, v.y, v.z ) // 1 2 3
