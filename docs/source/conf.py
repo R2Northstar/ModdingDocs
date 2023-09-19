@@ -18,6 +18,7 @@ extensions = [
     "sphinxcontrib.youtube",
     "sphinx_copybutton",
     "sphinx_rsquirrel",
+    "sphinxext.opengraph",
 ]
 
 intersphinx_mapping = {
@@ -35,23 +36,8 @@ exclude_patterns = ["_build"]
 html_theme = "furo"
 
 html_static_path = ["_static"]
-html_css_files = [
-    "styles/main.css",
-]
-
-
-html_theme_options = {
-    "light_css_variables": {
-        "color-brand-primary": "#7C4DFF",
-        "color-brand-content": "#7C4DFF",
-    },
-    "dark_css_variables": {
-        "color-background-primary": "#14141E",
-        "color-background-secondary": "#20202F",
-        "color-background-hover": "#10101F",
-        "color-highlight-on-target": "#10101F",
-    },
-}
+ogp_site_url = "https://r2northstar.readthedocs.io/"
+ogp_image = "https://northstar.tf/assets/logo_1k.png"
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
@@ -60,4 +46,3 @@ highlight_language = "squirrel"
 
 # furo theme specific
 pygments_dark_style = "one-dark"
-
