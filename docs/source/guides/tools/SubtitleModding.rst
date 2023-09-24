@@ -1,8 +1,8 @@
 Subtitle Modding
-===========
+================
 
 Subtitles Overview
--------------------------
+------------------
 
 In Titanfall 2 Subtitles are stored in ``.dat`` files which are essentially just "Valve Close Caption Data" files.
 These files are located in the frontend VPK's.
@@ -10,7 +10,7 @@ These files are located in the frontend VPK's.
 
 Prequisites
 -----------
-•	`VCCDSON <https://github.com/EM4Volts/vccdson>`__ 
+	`VCCDSON <https://github.com/EM4Volts/vccdson>`__ 
 
 
 .. note::
@@ -24,12 +24,17 @@ Editing Subtitles
 -----------------
 1. With a valid installation of Python 3 and VCCDSON just drag your desired subtitle ``.dat`` file on VCCDSON's ``main.py``.
 2. Open the newly created ``.json`` and edit the Subtitles to your liking.
+
+    .. note::
+        Only edit the "subtitle_string" sections, dont touch the hashes or you will break the functionality of the subtitle.
+
 3. When done drag the ``.json`` on VCCDSON's ``main.py``.
 4. Your new subtitle ``.dat`` should now be created.
 
+
     
 Commands
-^^^^^^^^^
+^^^^^^^^
 
 Subtitle strings can contain command blocks, recognizable by them being enclosed in < >
 
@@ -52,5 +57,16 @@ Subtitle strings can contain command blocks, recognizable by them being enclosed
 .. cpp:var:: <I>
     
     The following text will be italic.
+
+
+
+Hashes
+^^^^^^
+
+The Hashes in the files are used to associate an sound event id with an subtitle.
+
+The Hashes are a CRC32 hash of the lowercase eventid string.
+
+Someone could make a new subtitle for an Sound that has none by simply lowercase crc32 hashing the eventid's string and then adding it to the json file.
 
 
