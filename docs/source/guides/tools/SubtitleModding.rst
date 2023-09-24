@@ -1,5 +1,5 @@
 Subtitle Modding
-===========
+================
 
 Subtitles Overview
 ------------------
