@@ -10,7 +10,7 @@ These files are located in the frontend VPK's.
 
 Prequisites
 -----------
-•	`VCCDSON <https://github.com/EM4Volts/vccdson>`__ 
+	`VCCDSON <https://github.com/EM4Volts/vccdson>`__ 
 
 
 .. note::
