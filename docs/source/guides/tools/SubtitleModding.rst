@@ -2,7 +2,7 @@ Subtitle Modding
 ===========
 
 Subtitles Overview
--------------------------
+------------------
 
 In Titanfall 2 Subtitles are stored in ``.dat`` files which are essentially just "Valve Close Caption Data" files.
 These files are located in the frontend VPK's.
