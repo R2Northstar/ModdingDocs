@@ -9,3 +9,4 @@ Modding Tools
     /guides/tools/VTFModding
     /guides/tools/MDLModding
     /guides/tools/BIKVideoModding
+    /guides/tools/SubtitleModding
