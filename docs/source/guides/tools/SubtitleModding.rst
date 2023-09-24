@@ -29,7 +29,7 @@ Editing Subtitles
 
     
 Commands
-^^^^^^^^^
+^^^^^^^^
 
 Subtitle strings can contain command blocks, recognizable by them being enclosed in < >
 
