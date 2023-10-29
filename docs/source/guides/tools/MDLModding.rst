@@ -26,8 +26,6 @@ Prequisites
         - `Portal 2 <https://store.steampowered.com/app/620/Portal_2/>`__ (and its Authoring Tools `Portal 2 SDK <https://developer.valvesoftware.com/wiki/Authoring_Tools/SDK_(Portal_2)>`__)  
 
         - `SourceFilmMaker <https://store.steampowered.com/app/1840/Source_Filmmaker/>`__ (FREE)
-
-        - `Alien Swarm <https://store.steampowered.com/app/630/Alien_Swarm/>`__ (FREE) (and its Authoring Tools `Alien Swarm SDK <https://developer.valvesoftware.com/wiki/Authoring_Tools/SDK_(Alien_Swarm)>`__)
               
 •	`mdlshit <https://github.com/headassbtw/mdlshit>`__ 
 •	`Harmony VPK <https://github.com/harmonytf/HarmonyVPKTool>`__ (optional if you want to extract the model yourself)
@@ -338,6 +336,7 @@ Step 7: Compiling the model
 - Select the ``Compile`` tab on the top.
 - Click on the ``Browse`` button on the top right.
 - Select the ``.qc`` file you want to compile (for example ``ptpov_vinson.qc``).
+- Choose your game from the dropdown labeled ``Games that has the model compiler`` (for example ``Portal 2``)
 - Press the ``Compile`` button.
 - Crowbar now compiles the model and outputs the files to the ``compiled`` folder in the same folder as the ``.qc`` file, inside the ``compiled`` folder you will find the full folder path of the model (for example ``models\weapons\vinson\``).
   
@@ -378,4 +377,4 @@ The following words correspond to the following:
 ``Crowbar ERROR: The model compiler, "<filename>", does not exist.``
 
 ``Crowbar ERROR: The game's "<filename>" file does not exist.``
-    Mostly happens if you did not properly set up Crowbar, make sure you followed the steps in `Setup Crowbar </guides/tools/mdlmodding.html#setup-crowbar-one-time-only>`__.
+    Mostly happens if you did not properly set up Crowbar, make sure you set the ``Game that has the model compiler`` to `your prerequisite game <https://r2northstar.readthedocs.io/en/latest/guides/tools/MDLModding.html#prequisites>`__.
