@@ -46,7 +46,7 @@ Move both the MRVN-Radiant and Textures folder downloads to a memorable file (I,
 
 |MRVN-Radiant setup|
 
-Make sure the ``Titanfall2`` folder used for textures is inside another folder, for example:
+The ``Titanfall2`` folder used for textures can either be inside a random folder, or inside one made specially for it, as shown below
 
 .. code-block:: text
 
@@ -57,7 +57,7 @@ Make sure the ``Titanfall2`` folder used for textures is inside another folder, 
      ├──shaders
      └─textures
 
-When you open up Radiant, make sure to select your textures folder as the one *holding* the ``Titanfall2`` folder.
+When you open up Radiant, make sure to select your textures folder as the ``Titanfall2`` folder, and not the one *holding* the ``Titanfall2`` folder.
 
 Basics of Radiant:
 ^^^^^^^^^^^^^^^^^^
