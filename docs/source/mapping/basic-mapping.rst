@@ -379,7 +379,7 @@ Sample clip:
 
 ..  youtube:: zgWDme7Y6oI
 
-Sample map: https://cdn.discordapp.com/attachments/925435799057604709/1041813222547791953/corner_test_map.map
+Sample map: :doc:`mapping-guide-files/corner_test_map.map`
 
 .. |MRVN-Radiant setup| image:: mapping-guide-images/setting-up-radiant.png
 .. |Basic skybox creation| image:: mapping-guide-images/skybox-creation.gif
