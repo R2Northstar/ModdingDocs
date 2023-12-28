@@ -230,7 +230,7 @@ Once you do everything leading up to this point, your mod folder should look som
     |    ├──test.vmt
     |    └─test.vtf
     └─maps
-      ├──mp_test.map
+      ├─mp_test.map
       └─mp_test.bsp
 
 After doing this, you should be able to load the map as you did previously, but this time with the added textures! (assuming you edited some objects to use the new textures)
