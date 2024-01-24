@@ -53,6 +53,13 @@ When uploading, it will verify your package structure and you can publish after 
 
 To update a mod, change the version in ``mod.json`` and ``manifest.json``, and upload again. If the mod name is the same, it will update the previous version.
 
+Github Workflows
+----------------
+
+If you want to create a Github repository for your mod, you can use a `template <https://github.com/GreenTF/NSModTemplate>`_ that automatically packages and uploads your mod to Thunderstore when you create a Github release of your mod.
+
+Github only supports files smaller than 100mb without using `git-lfs <https://git-lfs.github.com/>`_. Using git-lfs isn't recommended. Instead you should use scripts that split your assets like in this `template <https://github.com/uniboi/NSModTemplate>`_
+
 Verified mods
 -------------
 
@@ -69,20 +76,4 @@ Fortunately, to counter that, Northstar integrates a *verified mod* feature: if 
 .. note::
     Only client-side mods that are required by a server are eligible for verification (*i.e* no need to verify **client-side only** mods like skins or server-only mods).
 
-For your mod to be verified, you need to follow the following rules:
-
-1. Source code is publicly available
-2. Mod is automatically uploaded to Thunderstore via continuous deployment (check "Recommanded mod template" section below!)
-3. Mod follows semantic versioning
-
-Once your mod is ready, for it to be verified, you can open a pull request on this repository to add your mod: TODO
-
-You will need to do this each time you release a new version of your mod.
-
-Github Workflows
-----------------
-
-If you want to create a Github repository for your mod, you can use a `template <https://github.com/GreenTF/NSModTemplate>`_ that automatically packages and uploads your mod to Thunderstore when you create a Github release of your mod.
-
-Github only supports files smaller than 100mb without using `git-lfs <https://git-lfs.github.com/>`_. Using git-lfs isn't recommended. Instead you should use scripts that split your assets like in this `template <https://github.com/uniboi/NSModTemplate>`_
-
+If you're interested in verifying mods, you'll find all instructions on the `verified mods repository <https://github.com/R2Northstar/VerifiedMods>`_.
