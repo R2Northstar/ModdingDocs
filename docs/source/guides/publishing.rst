@@ -53,7 +53,6 @@ When uploading, it will verify your package structure and you can publish after 
 
 To update a mod, change the version in ``mod.json`` and ``manifest.json``, and upload again. If the mod name is the same, it will update the previous version.
 
-
 Verified mods
 -------------
 
@@ -80,11 +79,10 @@ Once your mod is ready, for it to be verified, you can open a pull request on th
 
 You will need to do this each time you release a new version of your mod.
 
-Recommended mod template
-^^^^^^^^^^^^^^^^^^^^^^^^
+Github Workflows
+----------------
 
-We recommand you to use the `AnActualEmerald mod template <https://github.com/GreenTF/NSModTemplate>`_, which integrates 
-a continuous integration job, which will automatically build your mod and upload it to Thunderstore each time you 
-create a GitHub release.
+If you want to create a Github repository for your mod, you can use a `template <https://github.com/GreenTF/NSModTemplate>`_ that automatically packages and uploads your mod to Thunderstore when you create a Github release of your mod.
 
-If you want to tune CI more precisely, you'll find its `documentation here <https://github.com/GreenTF/upload-thunderstore-package>`_.
+Github only supports files smaller than 100mb without using `git-lfs <https://git-lfs.github.com/>`_. Using git-lfs isn't recommended. Instead you should use scripts that split your assets like in this `template <https://github.com/uniboi/NSModTemplate>`_
+

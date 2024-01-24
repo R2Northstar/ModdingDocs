@@ -3,6 +3,8 @@
 Element Notation
 ====
 
+Elements are notated as `VDF <https://developer.valvesoftware.com/wiki/KeyValues>`_
+
 UI elements are created when a menu is initialized. References to the elements will stay the same, regardless if the menu is open or not.
 
 It is not possible to create elements at runtime so you have to define all elements a menu or panel contains beforehand in appropriate files.
@@ -51,7 +53,7 @@ If you're working on a **menu**, you need a ``menu`` object that contains all el
 It usually doesn't matter if you use quotation marks to assign string values to parameters.
 
 HUD & Panel files
-----
+-----------------
 
 The first line of a ``.menu`` or ``.res`` file needs to be the resource path to itself, starting from the resource folder.
 
@@ -72,7 +74,7 @@ The rest of the file needs to be wrapped in curly brackets.
     }
 
 Properties
-~~~~
+~~~~~~~~~~
 
 Capitalization of the properties shouldn't matter.
 
@@ -83,7 +85,7 @@ Capitalization of the properties shouldn't matter.
     Unique string identifier used in scripts to look up an element. Every element is required to have a name.
 
 Inheritance / Parenting
-^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. cpp:function:: ControlName
 
@@ -98,7 +100,7 @@ Inheritance / Parenting
     ``Hud_GetChild`` only works if the parent element is (has the ``ControlName``) a **CNestedPanel**!
 
 Identifying
-^^^^
+^^^^^^^^^^^
 .. cpp:function:: classname
 
     Classname used for identifying groups of elements
@@ -108,7 +110,7 @@ Identifying
     Set an unique integer id for this element that's retrievable in script.
 
 Position
-^^^^
+^^^^^^^^
 
 .. cpp:function:: xpos
 
@@ -226,9 +228,19 @@ Images
 
 .. cpp:function:: image
 
+    vgui asset to render
+
 .. cpp:function:: scaleImage
 
 .. cpp:function:: fg_image
+
+.. cpp:function:: drawColor
+
+    apply this color on top. Format is "r g b a".
+
+.. cpp:function:: fillcolor
+
+    Fill transparent pixels with this color. Format is "r g b a"
 
 Navigation
 ^^^^
@@ -266,8 +278,6 @@ Other
 
 .. cpp:function:: auto_tall_tocontents
 
-.. cpp:function:: drawColor
-
 .. cpp:function:: enabled
 
     Controls if this element is enabled. Only enabled elements can be focused / selected. Defaults to 1.
@@ -279,8 +289,6 @@ Other
 .. cpp:function:: fieldName
 
 .. cpp:function:: autoResize
-
-.. cpp:function:: tabPosition
 
 .. cpp:function:: barCount
 
@@ -326,8 +334,6 @@ Other
 
 .. cpp:function:: totalMembersColumnWidth
 
-.. cpp:function:: centerWrap
-
 .. cpp:function:: chatBorderThickness
 
 .. cpp:function:: messageModeAlwaysOn
@@ -357,8 +363,6 @@ Other
 .. cpp:function:: allowRightClickMenu
 
 .. cpp:function:: allowSpecialCharacters
-
-.. cpp:function:: Command
 
 .. cpp:function:: SelectedTextColor
 
@@ -411,6 +415,8 @@ Conditional Properties
 
 You can declare properties for specific conditions by adding ``[CONDITION]`` after the property value.
 
+When putting a condition after an element's name, the element will only be created if the condition evaluates to true.
+
 Usable conditions are:
 
 .. cpp:function:: $WIN32
@@ -439,7 +445,7 @@ Usable conditions are:
 
     the game's language.
     
-    .. code-block::
+    .. code-block:: text
     
             // use allcaps only in russian
     		allCaps 				0 	[!$RUSSIAN]
@@ -452,8 +458,26 @@ On top of that, logical operators like ``!``, ``&&`` and ``||`` are available as
 Example:
 ^^^^
 
-.. code-block::
+.. code-block:: text
 
+    // This element only shows on pc
+	IngameTextChat [$WINDOWS]
+	{
+		ControlName				CBaseHudChat
+		InheritProperties		ChatBox
+
+		destination				"match"
+
+		visible 				0
+
+		pin_to_sibling			Screen
+		pin_corner_to_sibling	TOP_LEFT
+		pin_to_sibling_corner	TOP_LEFT
+		xpos					-45
+		ypos					-616
+	}
+
+    // This element has different widths depending on the game resolution
     LoadingTip
     {
         ControlName				Label
@@ -513,7 +537,7 @@ Pinning
     Bottom right corner
 
 Units
-^^^^
+~~~~
 
 You can calculate the position or dimensions etc. with different units. If you provide no extra unit, the game uses pixels.
 
@@ -534,3 +558,8 @@ You can calculate the position or dimensions etc. with different units. If you p
 .. cpp:function:: c+/-x
 
     something with the screen edges not exactly sure how positions get calculated
+
+Including KeyValues
+~~~~
+
+To include another KeyValue file, use ``#base "filepath"`` at the top of a VDF file.

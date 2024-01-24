@@ -4,22 +4,28 @@ version = "0.1.0"
 description = "This repo contains the technical documentation on all things related to making Northstar mods."
 authors = ["R2Northstar"]
 license = "MIT"
+packages = [
+    { include = "docs/source/**/*.py" },
+    { include = "sphinx_rsquirrel" },
+]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-Sphinx = "^5.0.2"
-furo = "^2022.6.21"
+python = "^3.9"
+Sphinx = "^7.2.6"
+furo = "^2023.09.10"
 sphinx-autobuild = "^2021.3.14"
-sphinx-tabs = "^3.4.1"
-sphinxcontrib-youtube = "^1.2.0"
-sphinx-copybutton = "^0.5.0"
+sphinxcontrib-youtube = "^1.4.0"
+sphinx-copybutton = "^0.5.2"
+sphinx-design = "^0.5.0"
+pygments = { extras = ["plugins"], version = "^2.16.1" }
+sphinxext-opengraph = "^0.8.2"
+
 
 [tool.poetry.dev-dependencies]
 
+[tool.poetry.plugins."pygments.lexers"]
+"squirrel" = "squirrel_support:SquirrelLexer"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-build = 'moddingdocs:build'

@@ -6,10 +6,6 @@ project = "Northstar Modding"
 copyright = "2022, Northstar Developer Team"
 author = "Northstar Developer Team"
 
-release = "0.1"
-version = "0.1.0"
-
-
 # -- General configuration
 
 extensions = [
@@ -18,9 +14,11 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
-    "sphinx_tabs.tabs",
+    "sphinx_design",
     "sphinxcontrib.youtube",
     "sphinx_copybutton",
+    "sphinx_rsquirrel",
+    "sphinxext.opengraph",
 ]
 
 intersphinx_mapping = {
@@ -56,5 +54,13 @@ html_theme_options = {
     },
 }
 
+ogp_site_url = "https://r2northstar.readthedocs.io/"
+ogp_image = "https://northstar.tf/assets/logo_1k.png"
+
 # -- Options for EPUB output
 epub_show_urls = "footnote"
+
+highlight_language = "squirrel"
+
+# furo theme specific
+pygments_dark_style = "one-dark"

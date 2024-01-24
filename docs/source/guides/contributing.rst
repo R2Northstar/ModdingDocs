@@ -1,11 +1,20 @@
 Contributing to ModdingDocs
 ===========================
 
-All contributions to ModdingDocs are welcome. To add a change simply make a pull request to the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_.
+**How can I contribute?**
+
+All contributions to ModdingDocs are welcome. 
+
+Including:
+
+- GitHub Issues containing any knowledge you want to share
+- Pull Requests with changes to the docs, even small ones
+  
+**What do I need to know to contribute?**
 
 ModdingDocs uses `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredText>`_.
 
-A cheatsheet for reStructuredText syntax can be found here: https://docs.generic-mapping-tools.org/6.2/rst-cheatsheet.html
+Cheatsheet for reStructuredText syntax: https://docs.generic-mapping-tools.org/6.2/rst-cheatsheet.html.
 
 The ``.rst`` files can be found in the ``docs/source`` directory. If you're adding a new file, make sure to link it in ``index.rst``
 
@@ -23,84 +32,30 @@ This should take you to a online version of the docs with your PRs changes.
 Building locally
 ----------------
 
-First, you need to have a relatively recent version of Python installed - 3.8 or higher. `Download here <https://www.python.org/downloads/>`_
+You need to have a relatively recent version of Python installed - 3.8 or higher. `Download here <https://www.python.org/downloads/>`_
 
-tl:dr;
-^^^^^^
+.. tab-set::
 
-.. tabs::
+    .. tab-item:: Windows
 
-    .. code-tab:: powershell Windows
+        .. code-block:: powershell
 
-        git clone https://github.com/R2Northstar/ModdingDocs/
-        cd ModdingDocs
-        py -m pip install poetry
-        py -m poetry install
-        py -m poetry run build
+            git clone https://github.com/R2Northstar/ModdingDocs/
+            cd ModdingDocs
+            ./run.ps1
     
-    .. code-tab:: bash Linux
+    .. tab-item:: Linux
 
-        git clone https://github.com/R2Northstar/ModdingDocs/
-        cd ModdingDocs
-        python3 -m pip install poetry
-        python3 -m poetry install
-        python3 -m poetry run build
+        .. code-block:: bash
 
+            git clone https://github.com/R2Northstar/ModdingDocs/
+            cd ModdingDocs
+            ./run.sh
 
+.. warning::
+    On Windows, if you are not able to run the script by running `./run.ps1`, try running it with: `powershell.exe -ExecutionPolicy Bypass -File .\run.ps1`
 
-Explanation
-^^^^^^^^^^^
-
-Open a terminal wherever you want the files to end up and clone the `ModdingDocs repo <https://github.com/R2Northstar/ModdingDocs/>`_, e.g.
-
-
-.. code:: bash
-
-    git clone https://github.com/R2Northstar/ModdingDocs/
-    cd ModdingDocs
-
-Your terminal should now be open in the ModdingDocs folder.
-
-Next, you need to install `Poetry <https://python-poetry.org/docs/cli/>`_, the dependency management and build tool used:
-
-.. tabs::
-
-    .. code-tab:: powershell Windows
-        
-        py -m pip install poetry
-        
-    .. code-tab:: bash Linux
-
-        python3 -m pip install poetry
-
-Now, tell poetry to install this project and its dependencies.
-
-.. tabs::
-
-    .. code-tab:: powershell Windows
-        
-        py -m poetry install
-        
-    .. code-tab:: bash Linux
-
-        python3 -m poetry install
-
-
-After this is done downloading and setting up all the dependencies, you can build it with:
-
-
-.. tabs::
-
-    .. code-tab:: powershell Windows
-        
-        py -m poetry run build
-        
-    .. code-tab:: bash Linux
-
-        python3 -m poetry run build
-
-
-This should rebuild the docs on changes and open them in your default browser with live reloading.
+    After this you should be able to run with just `./run.ps1`.
 
 
 VSCode

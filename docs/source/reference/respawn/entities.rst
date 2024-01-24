@@ -17,7 +17,7 @@ For a graphic reprasentation of the Server and Client class inheritance, refer t
 CBaseEntity / C_BaseEntity
 --------------------------
 
-Basic enitity that most other entities inherit from.
+Basic entity that most other entities inherit from.
 
 Shared
 ^^^^^^
@@ -38,7 +38,7 @@ Shared
 
 	.. cpp:function:: void Signal( string signal )
 
-		:doc: `../../native/async`
+		:doc:`../../native/async`
 
 		Signals on this entity
 
@@ -49,6 +49,18 @@ Shared
 	.. cpp:function:: void WaitSignal( string signal )
 
 		Halts this thread until a signal is activated for this entity
+
+	.. cpp:function:: void ConnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
+
+		Executes the callback function when the signal is fired.
+
+	.. cpp:function:: void DisconnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
+
+		Disconnects the callback from the signal.
+
+	.. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
+
+		Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
 
 	.. cpp:function:: vector GetOrigin()
 
@@ -357,7 +369,7 @@ Shared
 
 		Returns ``true```if this entity is the gameworld
 
-	.. cpp:function:: void DispatchImpactEffects( entity ent, vector startPos, vector endPos, vector hitNormal, enitity prop, int propIndex, int damageType, int impactIndex, entity orig, int impactEffectFlags )
+	.. cpp:function:: void DispatchImpactEffects( entity ent, vector startPos, vector endPos, vector hitNormal, entity prop, int propIndex, int damageType, int impactIndex, entity orig, int impactEffectFlags )
 
 	.. cpp:function:: void IsPlayerDecoy()
 
@@ -586,23 +598,11 @@ CBaseEntity
 
 	.. cpp:function:: void RoundOriginAndAnglesToNearestNetworkValue()
 
-	.. cpp:function:: void ConnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
-
-		Executes the callback function when the signal is fired.
-
-	.. cpp:function:: void DisconnectOutput( string event, void functionref( entity trigger, entity activator, entity caller, var value ) callback )
-
-		Disconnects the callback from the signal.
-
 	.. cpp:function:: void ClearBossPlayer()
 
 		Remove boss player reference from this entity.
 
 	.. cpp:function:: void Minimap_DisplayDefault( int team, entity ent )
-
-	.. cpp:function:: void AddOutput( string outputName, string | entity target, string inputName, string parameter = "", float delay = 0, float maxFires = 0 )
-
-		Connects an output on this entity to an input on another entity via code.  The ``target`` can be a name or a named entity.
 
 	.. cpp:function:: void _typeof()
 
@@ -1044,7 +1044,7 @@ Shared
 
 	.. cpp:function:: string GetWeaponSettingString( string setting )
 
-	.. cpp:function:: void SmartAmmo_UntrackEntity(entity target)
+	.. cpp:function:: void SmartAmmo_UntrackEntity( entity target )
 
 	.. cpp:function:: string GetSmartAmmoWeaponType()
 
@@ -1054,7 +1054,7 @@ Shared
 
 	.. cpp:function:: void SmartAmmo_Clear( bool unknown_purpose, bool clearPartialLocks )
 
-	.. cpp:function:: vector SmartAmmo_GetFirePosition(entity target, int burstIndex)
+	.. cpp:function:: vector SmartAmmo_GetFirePosition( entity target, int burstIndex )
 
 	.. cpp:function:: array<entity> SmartAmmo_GetStoredTargets()
 
@@ -1206,7 +1206,7 @@ Shared
 
 	.. cpp:function:: entity GetThrower()
 
-		Get the enitity that has thrown this grenade
+		Get the entity that has thrown this grenade
 
 	.. cpp:function:: bool GrenadeHasIgnited()
 
@@ -1398,7 +1398,7 @@ Shared
 
 	.. cpp:function:: int GetObjectiveIndex()
 
-	.. cpp:function:: enitity GetPredictedFirstPersonProxy()
+	.. cpp:function:: entity GetPredictedFirstPersonProxy()
 
 	.. cpp:function:: int GetPetTitanMode()
 
@@ -1548,7 +1548,7 @@ CPlayer
 
 	.. cpp:function:: void CockpitStartDisembark()
 
-	.. cpp:function:: void NotifyDidDamage( entity damagedEnt, int hitbox, vector damagePosition, int customDamageType, float damage, int damageFlags, int hitGroup, enitity weapon, float distanceFromAttackOrigin )
+	.. cpp:function:: void NotifyDidDamage( entity damagedEnt, int hitbox, vector damagePosition, int customDamageType, float damage, int damageFlags, int hitGroup, entity weapon, float distanceFromAttackOrigin )
 
 	.. cpp:function:: void Server_SetDodgePower( float dodgePower )
 
@@ -1655,7 +1655,8 @@ C_Player
 
 	.. cpp:function:: void ClientCommand( string command )
 
-		Executes a command on the player's client. The command only gets executed when the player has launched Northstar with the ``norestrictservercommands`` launch argument for security reasons.
+		Executes a command on the player's client. For a server to execute a console command on a client, the client has to launch the game with the ``norestrictservercommands`` launch argument for security reasons.
+
 
 	.. cpp:function:: entity GetCockpit()
 
@@ -1809,7 +1810,7 @@ Shared
 
 	.. cpp:function:: entity GetOffhandWeapon( int slot )
 
-	.. cpp:function:: enitity GetActiveWeapon()
+	.. cpp:function:: entity GetActiveWeapon()
 
 	.. cpp:function:: entity GetLatestPrimaryWeapon()
 
@@ -1841,7 +1842,7 @@ Shared
 
 	.. cpp:function:: bool ContextAction_IsMeleeExecutionTarget()
 
-	.. cpp:function:: enitity GetFirstRodeoRider()
+	.. cpp:function:: entity GetFirstRodeoRider()
 
 		Returns the first rodeo rider found or null if there are none.
 
@@ -2312,7 +2313,7 @@ CTurret
 
 	.. cpp:function:: entity GetDriver()
 
-	.. cpp:function:: voit SetDriver( enitity driver )
+	.. cpp:function:: voit SetDriver( entity driver )
 
 C_Titan_Cockpit
 ---------------
@@ -2369,7 +2370,7 @@ CVortexSphere
 
 	.. cpp:function:: void DisableVortexBlockLOS()
 
-	.. cpp:function:: enitity GetOwnerWeapon()
+	.. cpp:function:: entity GetOwnerWeapon()
 
 	.. cpp:function:: void AddBulletToSphere()
 
