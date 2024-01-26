@@ -89,4 +89,4 @@ Cheatsheet
     :hidden:
     :caption: Mapping Tools
 
-    /mapping/info-dump
+    /mapping/basic-mapping
