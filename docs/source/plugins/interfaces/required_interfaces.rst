@@ -84,3 +84,11 @@ PluginCallbacks
 
       If you want to call any squirrel functions, you need to make sure the state of the vm allows it. If you're not in the context of a native closure and want to call a squirrel function, you need to implement a buffer that calls objects in this Callback.
 
+
+.. cpp:struct:: PluginNorthstarData
+
+    Data passed to plugins on initialization
+
+    .. cpp:var:: HMODULE pluginHandle
+
+    The handle of this plugin used for logging
