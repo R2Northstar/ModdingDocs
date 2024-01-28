@@ -1,13 +1,7 @@
-NSSys
-=====
+Northstar Interfaces
+====================
 
-.. cpp:enum:: LogLevel
-
-    .. cpp:enumerator:: INFO
-
-    .. cpp:enumerator:: WARN
-
-    .. cpp:enumerator:: ERR
+Interfaces exposed by ``northstar.dll``
 
 .. cpp:struct:: NSSys
 
@@ -24,3 +18,12 @@ NSSys
     .. cpp:function:: void Reload(HMODULE handle)
 
       Reload a plugin by it's handle
+
+.. cpp:enum:: LogLevel
+
+    .. cpp:enumerator:: INFO
+
+    .. cpp:enumerator:: WARN
+
+    .. cpp:enumerator:: ERR
+
