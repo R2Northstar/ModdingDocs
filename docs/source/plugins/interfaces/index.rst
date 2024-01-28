@@ -6,4 +6,5 @@ Interfaces do things
 .. toctree::
     :maxdepth: 2
 
-    /plugins/interfaces/northstar/index
+    /plugins/interfaces/required_interfaces
+    /plugins/interfaces/northstar
