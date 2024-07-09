@@ -59,3 +59,21 @@ Github Workflows
 If you want to create a Github repository for your mod, you can use a `template <https://github.com/GreenTF/NSModTemplate>`_ that automatically packages and uploads your mod to Thunderstore when you create a Github release of your mod.
 
 Github only supports files smaller than 100mb without using `git-lfs <https://git-lfs.github.com/>`_. Using git-lfs isn't recommended. Instead you should use scripts that split your assets like in this `template <https://github.com/uniboi/NSModTemplate>`_
+
+Verified mods
+-------------
+
+If you server requires client-side mods, when people connect to it, they will see this kind of message:
+
+.. image:: ../img/missing_mod_screenshot.png
+  :width: 1000
+  :alt: Game client displays a "required mod" message.
+
+This requires players to manually download required mods, which prevents them from playing straight away, and thus breaks user experience.
+
+Fortunately, to counter that, Northstar integrates a *verified mod* feature: if a mod is missing and it has been verified by the Northstar team, game clients will automatically download it.
+
+.. note::
+    Only client-side mods that are required by a server are eligible for verification (*i.e* no need to verify **client-side only** mods like skins or server-only mods).
+
+If you're interested in verifying mods, you'll find all instructions on the `verified mods repository <https://github.com/R2Northstar/VerifiedMods>`_.
