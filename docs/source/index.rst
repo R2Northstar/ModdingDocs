@@ -96,5 +96,6 @@ Cheatsheet
     :hidden:
     :caption: Plugins
 
+    /plugins/interfaces/index
     /plugins/interfacesapi
     /plugins/resources
