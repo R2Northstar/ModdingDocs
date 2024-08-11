@@ -1,4 +1,4 @@
-rSquirrel
+reSquirrel
 =========
 
 Squirrel is the programming language used by Respawn. A lot of the logic for the game is written in squirrel scripts because of how convenient it is, even for people with little programming knowledge.
@@ -33,9 +33,11 @@ the top 2. Navigate through the tabs to find what you want to change 3. Click it
 
 VSCode
 ------
+RespawnSquirrel has been added to the vscode marketplace, you can download it here:
 
-1. Download the [extension](https://discord.com/channels/920776187884732556/950322078945538058/1144711876123574392)
-2. Unpack the zip in the extension folder in your vscode install location
+https://marketplace.visualstudio.com/items?itemName=FrothyWi-Fi.rspn-squirrel
+
+Otherwise you can simply search "Respawn Squirrel" in the extensions tab
 
 Kate
 ----
