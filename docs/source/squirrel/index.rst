@@ -1,4 +1,4 @@
-reSquirrel
+rSquirrel
 =========
 
 Squirrel is the programming language used by Respawn. A lot of the logic for the game is written in squirrel scripts because of how convenient it is, even for people with little programming knowledge.
