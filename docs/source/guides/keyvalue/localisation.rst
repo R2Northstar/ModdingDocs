@@ -14,6 +14,7 @@ Languages natively supported by Titanfall2 are:
 - German
 - Italian
 - Japanese
+- Polish
 - Portuguese
 - Russian
 - Spanish
