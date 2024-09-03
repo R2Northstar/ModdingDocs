@@ -31,13 +31,12 @@ written a squirrel highlighter
 the top 2. Navigate through the tabs to find what you want to change 3. Click its
 '`Styler`' button and make the changes you wish to
 
-VSCode
-------
-RespawnSquirrel has been added to the vscode marketplace, you can download it here:
+Visual Studio Code
+------------------
+Respawn Squirrel has been added to the VS Code marketplace, you can download it here:
+https://marketplace.visualstudio.com/items?itemName=Sandwhiched.rspn-squirrel
 
-https://marketplace.visualstudio.com/items?itemName=FrothyWi-Fi.rspn-squirrel
-
-Otherwise you can simply search "Respawn Squirrel" in the extensions tab
+Otherwise you can simply search "Respawn Squirrel" in the extensions tab.
 
 Kate
 ----
