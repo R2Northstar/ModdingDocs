@@ -209,8 +209,8 @@ set the value to some Regex that matches the maps that you wish.
 - ``foo.rpak``: this RPak will be loaded on all maps.
 - ``bar.rpak``: this RPak will be loaded on all maps that contain ``mp_`` in their name
 - ``baz.rpak``: this RPak will be loaded on all maps that contain ``mp_glitch`` in their name (``mp_glitch`` being the intended map)
-- ``qux.rpak``: this RPak will be loaded on all maps that contain either ``mp_coliseum``, ``mp_colony02``, or ``mp_glitch`` in their name.
-So ``mp_glitch``, ``mp_colony02``, ``mp_coliseum`` and notably, also ``mp_coliseum_column``.
+- | ``qux.rpak``: this RPak will be loaded on all maps that contain either ``mp_coliseum``, ``mp_colony02``, or ``mp_glitch`` in their name.
+  | So ``mp_glitch``, ``mp_colony02``, ``mp_coliseum`` and notably, also ``mp_coliseum_column``.
 
 RPak loading - OLD
 ******************
