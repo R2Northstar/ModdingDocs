@@ -182,8 +182,41 @@ Inside the mod's folder, create a new folder, called ``paks``. Move your .rpak f
 |ModStructure|
 
 Inside the ``paks`` folder that you created, make a new .json file called ``rpak.json``.
-In this example, the ``camo_skin04_col.rpak`` rpak is completely replaced by ``example.rpak``.
-This is fine for camo RPaks, but isn't suitable for more complex RPaks
+In this example, the ``example.rpak`` RPak is loaded on every map.
+This is fine for camo RPaks, but isn't suitable for more complex RPaks.
+
+.. code-block:: json
+
+    {
+        "example.rpak": "."
+    }
+
+Dynamic Map loading
+*******************
+
+To dynamically load your RPak, add an entry to the ``rpak.json`` that matches the path to the RPak (relative to the ``rpak.json`` file) and
+set the value to some Regex that matches the maps that you wish.
+
+.. code-block:: json
+
+    {
+        "foo.rpak": ".",
+        "bar.rpak": "mp_",
+        "baz.rpak": "mp_glitch",
+        "qux.rpak": "mp_coliseum|mp_colony02|mp_glitch"
+    }
+
+- ``foo.rpak``: this RPak will be loaded on all maps.
+- ``bar.rpak``: this RPak will be loaded on all maps that contain ``mp_`` in their name
+- ``baz.rpak``: this RPak will be loaded on all maps that contain ``mp_glitch`` in their name (``mp_glitch`` being the intended map)
+- ``qux.rpak``: this RPak will be loaded on all maps that contain either ``mp_coliseum``, ``mp_colony02``, or ``mp_glitch`` in their name.
+So ``mp_glitch``, ``mp_colony02``, ``mp_coliseum`` and notably, also ``mp_coliseum_column``.
+
+RPak loading - OLD
+******************
+
+.. warning:: 
+    Using this old mod structure for your ``rpak.json`` file is deprecated and may stop being supported by Northstar at any time.
 
 .. code-block:: json
 
@@ -209,6 +242,9 @@ This is fine for camo RPaks, but isn't suitable for more complex RPaks
 Preload
 *******
 
+.. warning:: 
+    "Preload" is now deprecated. New RPak mods should use dynamic map loading to load their RPaks.
+
 This field tells Northstar whether or not to load a specific RPak as soon as RPak loading starts.
 
 The field is a boolean. (``true`` or ``false``) and should be formatted like ``"<target_rpak>": true`` or ``"<target_rpak>": false``
@@ -218,6 +254,9 @@ Example: ``"my_new.rpak": true``
 Aliases
 *******
 
+.. warning:: 
+    "Aliases" is now deprecated. New RPak mods should use dynamic map loading to load their RPaks.
+
 This field tells Northstar that a specific RPak should never be loaded, and a different RPak should be loaded instead.
 
 The field should be formatted like ``"<target_rpak>": "<replacement_rpak>"``
@@ -226,6 +265,9 @@ Example: ``"common.rpak": "my_new.rpak"``
 
 Postload
 ********
+
+.. warning:: 
+    Postload is now deprecated. New RPak mods should use dynamic map loading to load their RPaks.
 
 This field tells Northstar that a specific RPak must be loaded directly after another specified RPak has finished loading.
 
