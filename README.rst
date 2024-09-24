@@ -1,6 +1,9 @@
 Titanfall 2 + Northstar Modding Docs
 ====================================
 
+.. warning::
+    **The ModdingDocs are outdated and have been deprecated in favour of the new** `Northstar Documentation <https://docs.northstar.tf/Modding/>`_!
+
 This repo contains documentation and guides on most things you need to know about creating mods for Northstar.
 
 Especially the technical documentation is not done yet and might be incorrect or outdated in some places.

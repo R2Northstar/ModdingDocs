@@ -5,6 +5,10 @@
 project = "Northstar Modding"
 copyright = "2022, Northstar Developer Team"
 author = "Northstar Developer Team"
+rst_prolog = """
+.. warning::
+    **The ModdingDocs are outdated and have been deprecated in favour of the new** `Northstar Documentation <https://docs.northstar.tf/Modding/>`_!
+"""
 
 # -- General configuration
 
